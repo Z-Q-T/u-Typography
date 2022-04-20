@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>https://naivexcited.github.io/Utypography/posts/</loc>
     <lastmod>2022-04-19T19:25:06+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>https://naivexcited.github.io/Utypography/</loc>
     <lastmod>2022-04-19T19:25:06+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/%E7%AC%AC%E4%B8%80%E4%B8%AA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</loc>
+    <loc>https://naivexcited.github.io/Utypography/posts/%E7%AC%AC%E4%B8%80%E4%B8%AA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2022-04-19T19:25:06+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://naivexcited.github.io/Utypography/categories/</loc>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://naivexcited.github.io/Utypography/tags/</loc>
   </url>
 </urlset>
