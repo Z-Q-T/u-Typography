@@ -20,7 +20,8 @@ function(a, b) { "object" == typeof module && "object" == typeof module.exports 
         return b.innerHTML = '<h-char unicode="' + c + '" class="biaodian cjk ' + f(a) + '">' + a + "</h-char>", b.firstChild
     }
 
-    function f(a) { return a.match(R["char"].biaodian.open) ? "bd-open" : a.match(R["char"].biaodian.close) ? "bd-close bd-end" : a.match(R["char"].biaodian.end) ? /(?:\u3001|\u3002|\uff0c)/i.test(a) ? "bd-end bd-cop" : "bd-end" : a.match(new RegExp(Q.biaodian.liga)) ? "bd-liga" : a.match(new RegExp(Q.biaodian.middle)) ? "bd-middle" : "" }
+    function f(a) { return a.match(R["char"].biaodian.open) ? "bd-open" : a.match(R["char"].biaodian.close) ? "bd-close bd-end" : a.match(R["char"].biaodian.end) ? /(?:\u3001|\u3002|\uff0c|\uff1f|\uff01|\uff1a|\uff1b)/i.test(a) ? "bd-end bd-cop" : "bd-end" : a.match(new RegExp(Q.biaodian.liga)) ? "bd-liga" : a.match(new RegExp(Q.biaodian.middle)) ? "bd-middle" : "" }
+    // 这一句好像是写逗号、顿号、句号、问号、叹号、冒号、分号与左标点的挤压
 
     function g(a, b) { var c, d = S.create("canvas"); return d.width = "50", d.height = "20", d.style.display = "none", L.appendChild(d), c = d.getContext("2d"), c.textBaseline = "top", c.font = "15px " + b + ", sans-serif", c.fillStyle = "black", c.strokeStyle = "black", c.fillText(a, 0, 0), { node: d, context: c, remove: function() { S.remove(d, L) } } }
 
@@ -279,15 +280,15 @@ function(a, b) { "object" == typeof module && "object" == typeof module.exports 
                         ["\u31b7[\u030d\u0358]", "\udb8c\uddb7"]
                     ]
                 },
-                "inaccurate-char": [
-                    ["[\u2022\u2027]", "\xb7"],
-                    ["\u22ef\u22ef", "\u2026\u2026"],
-                    ["\u2500\u2500", "\u2014\u2014"],
-                    ["\u2035", "\u2018"],
-                    ["\u2032", "\u2019"],
-                    ["\u2036", "\u201c"],
-                    ["\u2033", "\u201d"]
-                ]
+                // "inaccurate-char": [
+                //     ["[\u2022\u2027]", "\xb7"],
+                //     ["\u22ef\u22ef", "\u2026\u2026"],
+                //     ["\u2500\u2500", "\u2014\u2014"],
+                //     ["\u2035", "\u2018"],
+                //     ["\u2032", "\u2019"],
+                //     ["\u2036", "\u201c"],
+                //     ["\u2033", "\u201d"]
+                // ]
             }
         }();
     O.UNICODE = Q, O.TYPESET = R, O.UNICODE.cjk = O.UNICODE.hanzi, O.UNICODE.greek = O.UNICODE.ellinika, O.UNICODE.cyrillic = O.UNICODE.kirillica, O.UNICODE.hangul = O.UNICODE.eonmun, O.UNICODE.zhuyin.ruyun = O.UNICODE.zhuyin.checked, O.TYPESET["char"].cjk = O.TYPESET["char"].hanzi, O.TYPESET["char"].greek = O.TYPESET["char"].ellinika, O.TYPESET["char"].cyrillic = O.TYPESET["char"].kirillica, O.TYPESET["char"].hangul = O.TYPESET["char"].eonmun, O.TYPESET.group.hangul = O.TYPESET.group.eonmun, O.TYPESET.group.cjk = O.TYPESET.group.hanzi;
