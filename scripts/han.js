@@ -630,7 +630,7 @@ function(a, b) { "object" == typeof module && "object" == typeof module.exports 
     }, O.correctBasicBD = O.correctBiaodian, O.correctBD = O.correctBiaodian, S.extend(O.fn, { biaodian: null, correctBiaodian: function() { return this.biaodian = O.correctBiaodian(this.context), this }, revertCorrectedBiaodian: function() { try { this.biaodian.revert("all") } catch (a) {} return this } }), O.fn.correctBasicBD = O.fn.correctBiaodian, O.fn.revertBasicBD = O.fn.revertCorrectedBiaodian;
     var X = "<<hws>>",
         Y = S.create("h-hws");
-    Y.setAttribute("hidden", ""), Y.innerHTML = " ";
+    Y.setAttribute("hidden", ""), Y.innerHTML = " "; //这里在中文和西文之间插入间距，Y.innerHTML = " "的引号里面放的是四分空
     var Z;
     S.extend(O, {
         renderHWS: function(a, b) {
