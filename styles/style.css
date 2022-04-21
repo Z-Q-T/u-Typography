@@ -1,0 +1,10 @@
+html {
+  font-size: 18px; 
+  font-family: 'Segoe UI', "HYqihei 45S", sans-serif; 
+  text-shadow: gray;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+}
