@@ -3,10 +3,25 @@ html {
     /* font-family: 'Segoe UI', "HYqihei 45S", sans-serif;  */
     font-family: "Source Han Sans SC", sans-serif;
     text-shadow: gray;
+    tab-size: 2em;
+    text-justify: auto;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-character;
 }
 
 img {
     display: block;
     margin: 0 auto;
     width: 500px;
+}
+
+.JianGeHao {
+    margin: 0% -0.25em;
+}
+
+.BanZiXian {
+    vertical-align: 8%;
 }

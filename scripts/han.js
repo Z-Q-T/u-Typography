@@ -217,7 +217,7 @@ function(a, b) { "object" == typeof module && "object" == typeof module.exports 
     }, O.fn.init.prototype = O.fn, O.init = function() { return O.init = O().render() };
     var Q = {
             punct: { base: "[\u2026,.;:!?\u203d_]", sing: "[\u2010-\u2014\u2026]", middle: "[\\/~\\-&\u2010-\u2014_]", open: "['\"\u2018\u201c\\(\\[\xa1\xbf\u2e18\xab\u2039\u201a\u201c\u201e]", close: "['\"\u201d\u2019\\)\\]\xbb\u203a\u201b\u201d\u201f]", end: "['\"\u201d\u2019\\)\\]\xbb\u203a\u201b\u201d\u201f\u203c\u203d\u2047-\u2049,.;:!?]" },
-            biaodian: { base: "[\ufe30\uff0e\u3001\uff0c\u3002\uff1a\uff1b\uff1f\uff01\u30fc]", liga: "[\u2014\u2026\u22ef]", middle: "[\xb7\uff3c\uff0f\uff0d\u30a0\uff06\u30fb\uff3f]", open: "[\u300c\u300e\u300a\u3008\uff08\u3014\uff3b\uff5b\u3010\u3016\u201C]", close: "[\u300d\u300f\u300b\u3009\uff09\u3015\uff3d\uff5d\u3011\u3017\u201D]", end: "[\u300d\u300f\u300b\u3009\uff09\u3015\uff3d\uff5d\u3011\u3017\ufe30\uff0e\u3001\uff0c\u3002\uff1a\uff1b\uff1f\uff01\u30fc\u201D]" },
+            biaodian: { base: "[\ufe30\uff0e\u3001\uff0c\u3002\uff1a\uff1b\uff1f\uff01\u30fc]", liga: "[\u2014\u2026\u22ef]", middle: "[\xb7\uff3c\uff0f\uff0d\u30a0\uff06\u30fb\uff3f\u00b7]", open: "[\u300c\u300e\u300a\u3008\uff08\u3014\uff3b\uff5b\u3010\u3016\u201C]", close: "[\u300d\u300f\u300b\u3009\uff09\u3015\uff3d\uff5d\u3011\u3017\u201D]", end: "[\u300d\u300f\u300b\u3009\uff09\u3015\uff3d\uff5d\u3011\u3017\ufe30\uff0e\u3001\uff0c\u3002\uff1a\uff1b\uff1f\uff01\u30fc\u201D]" },
             hanzi: { base: "[\u4e00-\u9fff\u3400-\u4db5\u31c0-\u31e3\u3007\ufa0e\ufa0f\ufa11\ufa13\ufa14\ufa1f\ufa21\ufa23\ufa24\ufa27-\ufa29]|[\ud800-\udbff][\udc00-\udfff]", desc: "[\u2ff0-\u2ffa]", radical: "[\u2f00-\u2fd5\u2e80-\u2ef3]" },
             latin: { base: "[A-Za-z0-9\xc0-\xff\u0100-\u017f\u0180-\u024f\u2c60-\u2c7f\ua720-\ua7ff\u1e00-\u1eff]", combine: "[\u0300-\u0341\u1dc0-\u1dff]" },
             ellinika: { base: "[0-9\u0370-\u03ff\u1f00-\u1fff]", combine: "[\u0300-\u0345\u1dc0-\u1dff]" },
@@ -258,7 +258,8 @@ function(a, b) { "object" == typeof module && "object" == typeof module.exports 
                 C = Q.zhuyin["final"],
                 D = Q.zhuyin.tone + "|" + Q.zhuyin.checked;
             return {
-                "char": { //punct: { all: new RegExp("(" + f + ")", "g"), open: new RegExp("(" + b + ")", "g"), end: new RegExp("(" + c + ")", "g"), sing: new RegExp("(" + e + ")", "g") }, 
+                "char": {
+                    punct: { all: new RegExp("(" + f + ")", "g"), open: new RegExp("(" + b + ")", "g"), end: new RegExp("(" + c + ")", "g"), sing: new RegExp("(" + e + ")", "g") },
                     biaodian: { all: new RegExp("(" + l + ")", "g"), open: new RegExp("(" + g + ")", "g"), close: new RegExp("(" + h + ")", "g"), end: new RegExp("(" + i + ")", "g"), liga: new RegExp("(" + k + ")", "g") },
                     hanzi: new RegExp("(" + r + ")", "g"),
                     latin: new RegExp("(" + t + ")", "ig"),
