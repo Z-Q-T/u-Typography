@@ -1,6 +1,8 @@
 html {
+	box-sizing: border-box;
+	display: block;
 	font-size: 22px;
-    line-height: 40px;
+	line-height: 40px;
 	/* font-family: 'Segoe UI', "HYqihei 45S", sans-serif;  */
 	font-family: "Source Han Sans SC", sans-serif;
 	text-shadow: gray;
@@ -8,6 +10,51 @@ html {
 	text-justify: auto;
 }
 
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+/* * {
+	margin: 0;
+	border: 0;
+	padding: 0;
+} */
+/* body{
+	height: 100%;
+} */
+
+header,
+footer {
+	height: 100px;
+}
+
+#main {
+	display: flex;
+	min-height: 1000px;
+}
+#left {
+	background-color: aquamarine;
+	/* display: inline; */
+	flex: 1;
+}
+#middle {
+	background-color: indianred;
+	/* display: inline; */
+	flex: 2;
+}
+#right {
+	background-color: yellow;
+	/* display: inline; */
+	flex: 1;
+}
+h1{
+	font-size: 30px;
+	line-height: 20px;
+	position: relative; 
+	top: 20px;
+	vertical-align: bottom;
+}
 p {
 	text-align: justify;
 	/* text-justify: inter-character; */
@@ -22,17 +69,18 @@ img {
 
 .JianGeHao {
 	font-size: 0.7rem;
-    margin: 0% -0.1rem;
-    line-height: 0.5rem;
+	margin: 0% -0.1rem;
+	line-height: 0.5rem;
 	vertical-align: 0.1rem;
-	
 }
 
-.PoZheHao, .YiZiXian, .BanZiXian {
-    line-height: 0.5rem;
+.PoZheHao,
+.YiZiXian,
+.BanZiXian {
+	line-height: 0.5rem;
 	vertical-align: 0.1rem;
-    /* transform: translateY(1rem); */
-    /* margin: -0.5rem 0; */
+	/* transform: translateY(1rem); */
+	/* margin: -0.5rem 0; */
 }
 
 .Latin {
