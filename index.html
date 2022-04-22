@@ -17,24 +17,39 @@
 </head>
 
 <body>
-  <header style="background-color:#FFA500;">
-    <!-- <h1>网页的主标题</h1> -->
-  </header>
-  <div id="main">
-    <div id="left"></div>
-    <div id="middle"></div>
-    <div id="right"></div>
-  </div>
-  <footer style="background-color:#FFA500;text-align:center;">
-    Copyright  我</div>
-    <!-- 破折号用two-em-dash代替。省略号前面加一个零宽空格&#8203;。中文一级引号用双弯引号，二级引号用单线直角引号（这是为了规避西文里的省文撇的换行问题） -->
 
-    <script src="scripts/han.js"></script>
-    <script>
-      Han(document.querySelector('.entry'))
-        .renderJiya()
-        .renderHWS()
-    </script>
+  <div id="maxPage">
+
+    <!-- <div id="main"> -->
+      <div id="leftPart"><div id="leftSticky"></div></div>
+      <div id="middlePart"></div>
+      <div id="rightPart"></div>
+    <!-- <div id="leftContainer"></div> -->
+      <!-- <div id="leftSticky"><div id="veryLeft"></div>最左</div> -->
+    
+    <!-- <article>
+      </article> -->
+    <!-- </div> -->
+    <!-- <div id="left">
+      <div class="lorem">最左</div>
+      <div class="lorem">目录栏</div>
+    </div>
+    <div id="middle">
+      <div class="lorem">中间的</div>
+    </div>
+    <div id="right">
+      <div class="lorem">右边的</div>
+    </div> -->
+  </div>
+
+  <!-- 破折号用two-em-dash代替。省略号前面加一个零宽空格&#8203;。中文一级引号用双弯引号，二级引号用单线直角引号（这是为了规避西文里的省文撇的换行问题） -->
+
+  <script src="scripts/han.js"></script>
+  <script>
+    Han(document.querySelector('.entry'))
+      .renderJiya()
+      .renderHWS()
+  </script>
 
 
 </body>
