@@ -1,0 +1,341 @@
+@charset "UTF-8";
+
+/*! 漢字標準格式 v3.3.0 | MIT License | css.hanzi.co */
+
+
+/*! Han.css: the CSS typography framework optimised for Hanzi */
+
+article h1+blockquote,
+article h1+h2,
+article h1+h3,
+article h1+h4,
+article h1+h5,
+article h1+h6,
+article h1+ol,
+article h1+p,
+article h1+section>blockquote:first-child,
+article h1+section>h2:first-child,
+article h1+section>h3:first-child,
+article h1+section>h4:first-child,
+article h1+section>h5:first-child,
+article h1+section>h6:first-child,
+article h1+section>ol:first-child,
+article h1+section>p:first-child,
+article h1+section>ul:first-child,
+article h1+ul,
+article h2+blockquote,
+article h2+h2,
+article h2+h3,
+article h2+h4,
+article h2+h5,
+article h2+h6,
+article h2+ol,
+article h2+p,
+article h2+section>blockquote:first-child,
+article h2+section>h2:first-child,
+article h2+section>h3:first-child,
+article h2+section>h4:first-child,
+article h2+section>h5:first-child,
+article h2+section>h6:first-child,
+article h2+section>ol:first-child,
+article h2+section>p:first-child,
+article h2+section>ul:first-child,
+article h2+ul,
+article h3+blockquote,
+article h3+h3,
+article h3+h4,
+article h3+h5,
+article h3+h6,
+article h3+ol,
+article h3+p,
+article h3+section>blockquote:first-child,
+article h3+section>h3:first-child,
+article h3+section>h4:first-child,
+article h3+section>h5:first-child,
+article h3+section>h6:first-child,
+article h3+section>ol:first-child,
+article h3+section>p:first-child,
+article h3+section>ul:first-child,
+article h3+ul,
+article h4+blockquote,
+article h4+h4,
+article h4+h5,
+article h4+h6,
+article h4+ol,
+article h4+p,
+article h4+section>blockquote:first-child,
+article h4+section>h4:first-child,
+article h4+section>h5:first-child,
+article h4+section>h6:first-child,
+article h4+section>ol:first-child,
+article h4+section>p:first-child,
+article h4+section>ul:first-child,
+article h4+ul,
+article h5+blockquote,
+article h5+h5,
+article h5+h6,
+article h5+ol,
+article h5+p,
+article h5+section>blockquote:first-child,
+article h5+section>h5:first-child,
+article h5+section>h6:first-child,
+article h5+section>ol:first-child,
+article h5+section>p:first-child,
+article h5+section>ul:first-child,
+article h5+ul,
+article h6+blockquote,
+article h6+h6,
+article h6+ol,
+article h6+p,
+article h6+section>blockquote:first-child,
+article h6+section>h6:first-child,
+article h6+section>ol:first-child,
+article h6+section>p:first-child,
+article h6+section>ul:first-child,
+article h6+ul {
+    margin-top: -1em
+}
+
+article {
+    line-height: 1.7;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto
+}
+
+article li,
+article p {
+    text-align: justify;
+    text-justify: inter-ideograph
+}
+
+.poem-like p,
+p.poem-like {
+    margin-left: 2em
+}
+
+@media only screen and (max-width:480px) {
+    .poem-like p,
+    article blockquote,
+    p.poem-like {
+        margin-left: 1em
+    }
+    blockquote,
+    figure {
+        margin-left: 1em;
+        margin-right: 1em
+    }
+}
+
+figure blockquote {
+    margin: 0
+}
+
+blockquote blockquote {
+    margin-left: 1em;
+    margin-right: 1em
+}
+
+h-hws,
+h-hws[hidden] {
+    display: inline;
+    visibility: hidden;
+    /* font: 1em Arial */
+}
+
+
+/* h-hws.quote-inner,
+h-hws.quote-outer:lang(zh-CN),
+h-hws.quote-outer:lang(zh-Hans),
+h-hws[hidden].quote-inner,
+h-hws[hidden].quote-outer:lang(zh-CN),
+h-hws[hidden].quote-outer:lang(zh-Hans), */
+
+
+/* 不太清楚是干啥的，但似乎注释掉也没事 */
+
+code h-hws,
+code h-hws[hidden],
+kbd h-hws,
+kbd h-hws[hidden],
+pre h-hws,
+pre h-hws[hidden],
+samp h-hws,
+samp h-hws[hidden] {
+    display: none
+}
+
+@font-face {
+    src: url(./font/han-space.woff?v3.3.0) format("woff"), url(./font/han-space.otf?v3.3.0) format("opentype");
+    font-family: "Han Space";
+    unicode-range: U+20
+}
+
+h-char.bd-hangable:lang(zh) h-cs,
+h-char.bd-hangable:lang(zh) h-cs[hidden],
+h-char.bd-hangable:lang(zh-HK) h-cs,
+h-char.bd-hangable:lang(zh-HK) h-cs[hidden],
+h-char.bd-hangable:lang(zh-Hant) h-cs,
+h-char.bd-hangable:lang(zh-Hant) h-cs[hidden],
+h-char.bd-hangable:lang(zh-TW) h-cs,
+h-char.bd-hangable:lang(zh-TW) h-cs[hidden],
+h-cs,
+h-cs[hidden] {
+    display: inline;
+    visibility: inherit;
+    font-family: inherit;
+    font-size: inherit
+}
+
+h-cs.hangable-outer,
+h-cs.hangable-outer[hidden] {
+    display: inline;
+    font: 1em "Han Space"
+}
+
+h-cs.hangable-outer:lang(zh-HK),
+h-cs.hangable-outer:lang(zh-Hant),
+h-cs.hangable-outer:lang(zh-TW),
+h-cs.hangable-outer[hidden]:lang(zh-HK),
+h-cs.hangable-outer[hidden]:lang(zh-Hant),
+h-cs.hangable-outer[hidden]:lang(zh-TW) {
+    display: none
+}
+
+h-char.bd-hangable:lang(ja),
+h-char.bd-hangable:lang(zh-CN),
+h-char.bd-hangable:lang(zh-Hans) {
+    position: relative
+}
+
+h-char.bd-hangable:lang(ja):after,
+h-char.bd-hangable:lang(zh-CN):after,
+h-char.bd-hangable:lang(zh-Hans):after {
+    display: none!important
+}
+
+h-char.bd-hangable:lang(ja):before,
+h-char.bd-hangable:lang(zh-CN):before,
+h-char.bd-hangable:lang(zh-Hans):before {
+    display: inline!important;
+    content: " ";
+    font: 1em "Han Space", Menlo, Consolas, Courier
+}
+
+h-char.bd-hangable:lang(ja)>h-inner,
+h-char.bd-hangable:lang(zh-CN)>h-inner,
+h-char.bd-hangable:lang(zh-Hans)>h-inner {
+    -moz-text-emphasis: none;
+    -webkit-text-emphasis: none;
+    text-emphasis: none;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    text-indent: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    line-height: 1.1
+}
+
+h-ru h-char.bd-hangable:lang(ja)>h-inner,
+h-ru h-char.bd-hangable:lang(zh-CN)>h-inner,
+h-ru h-char.bd-hangable:lang(zh-Hans)>h-inner,
+ruby h-char.bd-hangable:lang(ja)>h-inner,
+ruby h-char.bd-hangable:lang(zh-CN)>h-inner,
+ruby h-char.bd-hangable:lang(zh-Hans)>h-inner {
+    position: relative
+}
+
+h-char.bd-jiya.bd-end:after,
+h-char.bd-jiya.bd-open:before,
+h-cs,
+h-cs[hidden] {
+    display: none;
+    visibility: hidden;
+    content: " ";
+    font: .825em Courier;
+    letter-spacing: 0;
+    white-space: normal
+}
+
+h-char.bd-jiya.bd-close:after,
+h-char.bd-jiya.bd-cop:after,
+h-char.bd-jiya.bd-open:before,
+h-char.bd-jiya[unicode=ff0e]:after,
+h-cs.jinze-outer,
+h-cs.jinze-outer[hidden] {
+    display: inline
+}
+
+h-char.bd-jiya.bd-open>h-inner {
+    margin-left: -.5em
+}
+
+h-char.bd-jiya.bd-close>h-inner,
+h-char.bd-jiya.bd-cop>h-inner,
+h-char.bd-jiya[unicode=ff0e]>h-inner {
+    letter-spacing: -.5em
+}
+
+h-char.bd-consecutive.bd-end:not(.end-portion):after,
+h-char.bd-consecutive.bd-open[prev=bd-open]:before,
+h-char.bd-jiya.bd-cop:lang(zh-HK):after,
+h-char.bd-jiya.bd-cop:lang(zh-Hant):after,
+h-char.bd-jiya.bd-cop:lang(zh-TW):after,
+h-cs.jiya-outer.bd-end:not(.end-portion) {
+    display: none
+}
+
+h-char.bd-jiya.bd-cop:lang(zh-HK)>h-inner,
+h-char.bd-jiya.bd-cop:lang(zh-Hant)>h-inner,
+h-char.bd-jiya.bd-cop:lang(zh-TW)>h-inner {
+    letter-spacing: inherit
+}
+
+h-cs.jiya-outer.bd-end[next=bd-open] {
+    display: inline
+}
+
+h-char.bd-consecutive.bd-open[prev*=bd-cop]:lang(zh-HK):before,
+h-char.bd-consecutive.bd-open[prev*=bd-cop]:lang(zh-Hant):before,
+h-char.bd-consecutive.bd-open[prev*=bd-cop]:lang(zh-TW):before,
+h-cs.jiya-outer.bd-end:lang(zh-HK),
+h-cs.jiya-outer.bd-end:lang(zh-Hant),
+h-cs.jiya-outer.bd-end:lang(zh-TW),
+h-cs.jiya-outer[prev*=bd-cop]:lang(zh-HK),
+h-cs.jiya-outer[prev*=bd-cop]:lang(zh-Hant),
+h-cs.jiya-outer[prev*=bd-cop]:lang(zh-TW) {
+    display: none
+}
+
+h-char.bd-consecutive[unicode=b7]:not(.end-portion),
+h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
+    letter-spacing: -.5em
+}
+
+h-char.bd-consecutive.bd-liga:not(.end-portion) {
+    margin-right: -.25em
+}
+
+h-char[display-as] {
+    position: relative;
+    display: inline-block
+}
+
+h-char[display-as] h-inner {
+    color: transparent
+}
+
+h-char[display-as]:after {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    content: attr(display-as)
+}
+
+h-char[display-as].comb-liga:after {
+    font-family: "Romanization Sans", "Zhuyin Kaiti"
+}

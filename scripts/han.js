@@ -156,9 +156,9 @@ void function (global, factory) {
             base: '[︰．、，。：；？！ー]',
             liga: '[—…⋯]',
             middle: '[·＼／－゠＆・＿·]',
-            open: '[「『《〈（〔［｛【〖〘〚“‘]',
-            close: '[」』》〉）〕］｝】〗〙〛”’]',
-            end: '[」』》〉）〕］｝】〗〙〛”’︰．、，。：；？！ー]'
+            open: '[「『《〈（〔［｛【〖〘〚“]',
+            close: '[」』》〉）〕］｝】〗〙〛”]',
+            end: '[」』》〉）〕］｝】〗〙〛”︰．、，。：；？！ー]'
         },
 
         /**
@@ -2381,27 +2381,27 @@ void function (global, factory) {
         // 'fangsong-gb': Han.detectFont( '"Han Fangsong GB"' )
     })
 
-    Han.correctBiaodian = function (context) {
-        var context = context || document
-        var finder = Han.find(context)
+    // Han.correctBiaodian = function (context) {
+    //     var context = context || document
+    //     var finder = Han.find(context)
 
-        finder
-            .avoid('h-char')
-            .replace(/([‘“])/g, function (portion) {
-                var $char = Han.createBDChar(portion.text)
-                $char.classList.add('bd-open', 'punct')
-                return $char
-            })
-            .replace(/([’”])/g, function (portion) {
-                var $char = Han.createBDChar(portion.text)
-                $char.classList.add('bd-close', 'bd-end', 'punct')
-                return $char
-            })
+    //     finder
+    //         .avoid('h-char')
+    //         .replace(/([‘“])/g, function (portion) {
+    //             var $char = Han.createBDChar(portion.text)
+    //             $char.classList.add('bd-open', 'punct')
+    //             return $char
+    //         })
+    //         .replace(/([’”])/g, function (portion) {
+    //             var $char = Han.createBDChar(portion.text)
+    //             $char.classList.add('bd-close', 'bd-end', 'punct')
+    //             return $char
+    //         })
 
-        return Han.support.unicoderange
-            ? finder
-            : finder.charify({ biaodian: true })
-    }
+    //     return Han.support.unicoderange
+    //         ? finder
+    //         : finder.charify({ biaodian: true })
+    // }
 
     Han.correctBasicBD = Han.correctBiaodian
     Han.correctBD = Han.correctBiaodian

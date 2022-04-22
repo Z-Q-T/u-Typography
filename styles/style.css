@@ -10,6 +10,7 @@ html {
 p {
     text-align: justify;
     text-justify: inter-character;
+    /* 中文齐行往字间插入间距 */
 }
 
 img {
@@ -24,4 +25,9 @@ img {
 
 .BanZiXian {
     vertical-align: 8%;
+}
+
+.Latin{
+    text-justify: inter-word;
+    /* 西文齐行往词间插入间距 */
 }
