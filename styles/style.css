@@ -62,17 +62,10 @@ html {
 	/* display: inline-block; */
 	float: right;
 }
-#main {
-	width: 1920px;
-	min-height: 1500px;
-	background-color: orange;
-	margin: 0 auto;
-	height: auto;
-	display: block;
-}
+
 #leftSticky{
-	width: 6rem;
-	min-height: 500px;
+	width: 24rem;
+	min-height: 700px;
 	display: inline-block;
 	position: sticky;
 	top: 0;
@@ -80,13 +73,17 @@ html {
 	background-color: blue;
 }
 
-	/* position: sticky; top: 0px; */
-	/* flex: 1; */
-#veryLeft{
+#leftSide{
 	display: inline-block;
-	width: 100px;
+	width: 6rem;
 	min-height: 300px;
 	background-color: green;
+}
+#menu{
+	width: 18rem;
+	min-height: 600px;
+	background-color: cyan;
+	float: right;
 }
 article{
 	width: 32rem;
@@ -98,18 +95,7 @@ article{
 	top: 0;
 	left: 30rem; */
 }
-#middle {
-	width: 36rem;
-	background-color: indianred;
-	display: inline;
-	/* flex: 2; */
-}
-#right {
-	width: 30rem;
-	background-color: yellow;
-	display: inline;
-	/* flex: 1; */
-}
+
 .lorem {
 	padding: 10px;
 }
