@@ -10,7 +10,7 @@ html {
 
 p {
 	text-align: justify;
-	text-justify: inter-character;
+	/* text-justify: inter-character; */
 	/* 中文齐行往字间插入间距 */
 }
 
@@ -21,10 +21,10 @@ img {
 }
 
 .JianGeHao {
-	font-size: 0.8rem;
-    margin: 0% -0.15rem;
+	font-size: 0.7rem;
+    margin: 0% -0.1rem;
     line-height: 0.5rem;
-	vertical-align: 0.08rem;
+	vertical-align: 0.1rem;
 	
 }
 
@@ -36,6 +36,6 @@ img {
 }
 
 .Latin {
-	text-justify: inter-word;
+	/* text-justify: inter-word; */
 	/* 西文齐行往词间插入间距 */
 }
