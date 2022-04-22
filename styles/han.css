@@ -1769,6 +1769,7 @@ article blockquote blockquote {
 h-hws,
 h-hws[hidden] {
   display: inline;
+  visibility: hidden;
   /* font-family: Arial; */
 }
 /* h-hws:before,

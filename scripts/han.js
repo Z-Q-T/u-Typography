@@ -426,8 +426,10 @@ void function (global, factory) {
              */
             hws: {
                 base: [
-                    new RegExp('(' + rHan + ')(' + rAlph + '|' + rPtOpen + ')', 'ig'),
-                    new RegExp('(' + rAlph + '|' + rPtEnd + ')(' + rHan + ')', 'ig')
+                    new RegExp('(' + rHan + '|' + rBDOpen + '|' + rBDLiga + ')(' + rAlph + '|' + rPtOpen + ')', 'ig'),
+                    //［汉字或中文开标点］和［西文或西文开标点］之间加间距
+                    new RegExp('(' + rAlph + '|' + rPtEnd + ')(' + rHan + '|' + rBDEnd + '|' + rBDLiga + ')', 'ig')
+                    //［西文或西文尾标点］和［汉字或中文尾标点］之间加间距
                 ],
 
                 strict: [
