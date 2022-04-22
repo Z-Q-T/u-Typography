@@ -1,33 +1,41 @@
 html {
-    font-size: 18px;
-    /* font-family: 'Segoe UI', "HYqihei 45S", sans-serif;  */
-    font-family: "Source Han Sans SC", sans-serif;
-    text-shadow: gray;
-    tab-size: 2em;
-    text-justify: auto;
+	font-size: 22px;
+    line-height: 40px;
+	/* font-family: 'Segoe UI', "HYqihei 45S", sans-serif;  */
+	font-family: "Source Han Sans SC", sans-serif;
+	text-shadow: gray;
+	tab-size: 2em;
+	text-justify: auto;
 }
 
 p {
-    text-align: justify;
-    text-justify: inter-character;
-    /* 中文齐行往字间插入间距 */
+	text-align: justify;
+	text-justify: inter-character;
+	/* 中文齐行往字间插入间距 */
 }
 
 img {
-    display: block;
-    margin: 0 auto;
-    width: 500px;
+	display: block;
+	margin: 0 auto;
+	width: 500px;
 }
 
 .JianGeHao {
-    margin: 0% -0.25em;
+	font-size: 0.8rem;
+    margin: 0% -0.15rem;
+    line-height: 0.5rem;
+	vertical-align: 0.08rem;
+	
 }
 
-.BanZiXian {
-    vertical-align: 8%;
+.PoZheHao, .YiZiXian, .BanZiXian {
+    line-height: 0.5rem;
+	vertical-align: 0.1rem;
+    /* transform: translateY(1rem); */
+    /* margin: -0.5rem 0; */
 }
 
-.Latin{
-    text-justify: inter-word;
-    /* 西文齐行往词间插入间距 */
+.Latin {
+	text-justify: inter-word;
+	/* 西文齐行往词间插入间距 */
 }
