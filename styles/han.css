@@ -196,7 +196,7 @@ textarea {
   -webkit-appearance: none;
 }
 html {
-  line-height: 1.3;
+  /* line-height: 1.3; */
   -webkit-font-smoothing: subpixel-antialiased;
 }
 ol,

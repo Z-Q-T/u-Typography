@@ -5,7 +5,6 @@ html {
 	line-height: 40px;
 	/* font-family: 'Segoe UI', "HYqihei 45S", sans-serif;  */
 	font-family: "Source Han Sans SC", sans-serif;
-	text-shadow: gray;
 	tab-size: 2em;
 	text-justify: auto;
 }
@@ -21,8 +20,10 @@ html {
 	padding: 0;
 } */
 /* body{
-	height: 100%;
-} */
+	padding:0px;
+	margin:0px;
+	border:0px;
+	} */
 
 header,
 footer {
