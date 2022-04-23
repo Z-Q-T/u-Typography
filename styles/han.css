@@ -1714,9 +1714,9 @@ article h1 + section > h2:first-child,
 article h2 + section > h2:first-child {
   margin-top: -1em;
 }
-article {
+/* article {
   line-height: 1.7;
-}
+} */
 article {
   -moz-hyphens: auto;
   -ms-hyphens: auto;

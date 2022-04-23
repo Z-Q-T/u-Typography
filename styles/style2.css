@@ -5,7 +5,7 @@ html {
 	line-height: 40px;
 	/* font-family: 'Segoe UI', "HYqihei 45S", sans-serif;  */
 	font-family: "Source Han Sans SC", sans-serif;
-	tab-size: 2em;
+	tab-size: 3rem;
 	text-justify: auto;
 }
 
@@ -31,6 +31,7 @@ html {
 	font-family: "Hei";
 	src: local("Source Han Sans SC");
 }
+
 /* 基本属性 */
 #whole {
 	height: auto;
@@ -58,7 +59,7 @@ html {
 }
 
 #mainTitle {
-	padding: 20px;
+	padding: 20px 0;
 	height: 400px;
 	display: inline-block;
 	position: absolute;
@@ -77,12 +78,12 @@ html {
 #menuList {
 	display: block;
 	position: absolute;
-	top: 500px;
+	top: 420px;
 	left: 0;
 	background-color: darkgrey;
 }
 #mainContent {
-	padding: 20px;
+	padding: 20px 0;
 	display: block;
 	height: auto;
 	position: relative;
@@ -95,9 +96,22 @@ article {
 	position: relative;
 	top: 0;
 	background-color: beige;
+	line-height: 1.85rem;
+}
+.sideNote {
+	display: inline-block;
+	/* float: right; */
+	position: absolute;
+	/* margin-left: 0; */
+	left: 39rem;
+	width: 18rem;
+	clear: both;
+    font-size: 0.75rem;
+    line-height: 1.4rem;
 }
 
-/* 宽度大于1860的窗口，或经过1.25倍放大的宽度大于2325的窗口
+/* 【1】
+宽度大于1860的窗口，或经过1.25倍放大的宽度大于2325的窗口
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
 正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
 @media screen and (min-width: 1860px) {
@@ -122,6 +136,9 @@ article {
 	#mainContent {
 		width: 57rem;
 		left: 24rem;
+	}
+	article {
+		margin-right: 21rem;
 	}
 }
 
@@ -207,23 +224,23 @@ article {
 		width: 27rem;
 		display: block;
 		/* left: 9rem; */
-        margin: 0 auto;
+		margin: 0 auto;
 		position: static;
 	}
 	#menuContainer {
 		width: 27rem;
 		position: static;
-        margin: 0 auto;
+		margin: 0 auto;
 	}
-    #menuList{
-        position: relative;
-        top: 0;
-    }
+	#menuList {
+		position: relative;
+		top: 0;
+	}
 	#mainContent {
 		width: 27rem;
 		/* left: 15rem; */
 		position: static;
-        margin: 0 auto;
+		margin: 0 auto;
 	}
 }
 /* 宽度小于660的窗口，或经过1.25倍放大的宽度小于825的窗口
@@ -240,34 +257,33 @@ article {
 		position: static;
 	}
 	#page {
-        left: 1rem;
+		left: 1rem;
 		width: calc(100% - 2rem);
 		display: block;
-        position: relative;
-		
+		position: relative;
 	}
 
 	#mainTitle {
 		width: 100%;
 		display: block;
 		/* left: 9rem; */
-        margin: 0 auto;
+		margin: 0 auto;
 		position: static;
 	}
 	#menuContainer {
 		width: 100%;
 		position: static;
-        margin: 0 auto;
+		margin: 0 auto;
 	}
-    #menuList{
-        position: relative;
-        top: 0;
-    }
+	#menuList {
+		position: relative;
+		top: 0;
+	}
 	#mainContent {
 		width: 100%;
 		/* left: 15rem; */
 		position: static;
-        margin: 0 auto;
+		margin: 0 auto;
 	}
 }
 .lorem {
@@ -275,8 +291,9 @@ article {
 }
 h1 {
 	font-family: "Song Cu";
-	font-size: 30px;
-	line-height: 30px;
+	font-size: 2.4rem;
+	line-height: 3.6rem;
+	margin-top: 150px;
 }
 h2 {
 	font-family: "Song Cu";
@@ -284,6 +301,7 @@ h2 {
 p {
 	text-align: justify;
 	text-indent: 3em;
+	line-height: 2rem;
 	/* margin: 0; */
 	/* text-justify: inter-character; */
 	/* 中文齐行往字间插入间距 */
