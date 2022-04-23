@@ -32,185 +32,90 @@ html {
 	src: local("Source Han Sans SC");
 }
 /* 基本属性 */
-#maxPage {
-	/* display: flex; */
-	/* width: 96rem; */
+#whole {
 	min-height: 1500px;
+    width: 1860px;
 	margin: 0 auto;
-	/* background-color: red; */
-	/* overflow: hidden; */
+    background-color: red;
+    position: relative;
+    top: 0;
 }
-
-#leftPart {
-	min-height: 1500px;
-	background-color: orange;
-	/* display: inline-block; */
-	float: left;
-	position: relative;
-	left: 0;
-	top: 0;
-}
-#middlePart {
-	min-height: 1200px;
-	background-color: yellow;
-	display: inline-block;
-	position: relative;
-}
-#rightPart {
-	min-height: 800px;
-	background-color: yellowgreen;
-	/* display: inline-block; */
-	float: right;
-}
-
-#leftSticky {
+#bar{
 	min-height: 700px;
+    width: 6rem;
 	display: inline-block;
 	position: sticky;
 	top: 0;
 	left: 0;
 	background-color: blue;
 }
+#page{
+    width: 81rem;
+    min-height: 1500px;
+    display: inline-block;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    left: 9rem;
 
-#mainTitle {
-	display: inline-block;
-	position: absolute;
-	height: 10rem;
-	z-index: 9;
-	background-color: brown;
 }
-#menu {
-	display: inline-block;
-	min-height: 600px;
-	background-color: cyan;
-	float: right;
+
+#mainTitle{
+    width: 57rem;
+    height: 400px;
+    position: absolute;
+    top: 0%;
+    left: 24rem;
+    background-color: orange;
 }
-#leftSide {
-	display: inline-block;
-	min-height: 300px;
-	background-color: green;
-	margin-right: 3rem;
+#menu{
+    height: 1000px;
+    width: 18rem;
+    position: sticky;
+    top: 0;
+    left:0;
+    background-color: green;
+}
+#mainContent{
+    width: 57rem;
+    height: 1000px;
+    position: absolute;
+    left: 24rem;
+    top: 400px;
+    background-color: blueviolet;
 }
 
 /* 宽度大于1860的窗口，或经过1.25倍放大的宽度大于2325的窗口
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
 正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
-@media screen and (min-width: 1860px) {
+/* @media screen and (min-width: 1860px) {
 	#maxPage {
 		width: 1860px;
 		background-color: black;
 	}
 
-	#leftPart {
-		width: 27rem;
-	}
-	#middlePart {
-		width: 36rem;
-
-		left: 6rem;
-	}
-	#rightPart {
-		width: 21rem;
-	}
-
-	#leftSticky {
-		width: 27rem;
-	}
-
-	#leftSide {
-		width: 6rem;
-	}
-	#mainTitle {
-		width: 60rem;
-		left: 660px;
-	}
-	#menu {
-		width: 18rem;
-	}
-
-	/* position: absolute;
-	top: 0;
-	left: 30rem; */
-}
+} */
 
 /* 宽度1380—1860的窗口，或经过1.25倍放大的宽度1725—2325的窗口
 适用于1440宽的屏幕，或经过1.25倍放大的1920宽的屏幕
 正文每行30字，字号20。边注每行16字，字号15；宽度等同于正文12字 */
-@media screen and (min-width: 1380px) and (max-width: 1860px) {
+/* @media screen and (min-width: 1380px) and (max-width: 1860px) {
 	#maxPage {
 		width: 1380px;
 		background-color: purple;
-	}
+	} 
 
-	#leftPart {
-		width: 18rem;
-		min-height: 1500px;
-	}
-	#middlePart {
-		width: 30rem;
-		left: 3rem;
-	}
-	#rightPart {
-		width: 15rem;
-	}
-
-	#leftSticky {
-		width: 18rem;
-	}
-
-	#leftSide {
-		width: 3rem;
-	}
-	#mainTitle {
-		width: 48rem;
-		left: 21rem;
-	}
-	#menu {
-		width: 12rem;
-	}
-}
+}*/
 /* 宽度1020—1380的窗口，或经过1.25倍放大的宽度1275—1725的窗口
 适用于1080宽的屏幕，或经过1.25倍放大的1440宽的屏幕
 正文每行27字，字号20。边注每行12字，字号15；宽度等同于正文9字 */
-@media screen and (min-width: 1020px) and (max-width: 1380px) {
+/* @media screen and (min-width: 1020px) and (max-width: 1380px) {
 	#maxPage {
 		width: 1020px;
 		background-color: navy;
 	}
 
-	#leftPart {
-		width: 3rem;
-		min-height: 1500px;
-	}
-	#middlePart {
-		width: 27rem;
-		left: 6rem;
-	}
-	#rightPart {
-		width: 12rem;
-	}
-
-	#leftSticky {
-		width: 3rem;
-	}
-
-	#leftSide {
-		width: 3rem;
-	}
-	#mainTitle {
-		width: 42rem;
-		left: 9rem;
-	}
-	#menu {
-		width: 27rem;
-		display: inline-block;
-		position: absolute;
-		height: 15rem;
-		left: 9rem;
-		top: 10rem;
-		z-index: 9;
-	}
-}
+} */
 .lorem {
 	padding: 10px;
 }
