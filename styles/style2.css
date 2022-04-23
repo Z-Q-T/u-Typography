@@ -34,14 +34,14 @@ html {
 /* 基本属性 */
 #whole {
 	height: auto;
-    /* height: max-content; */
+	/* height: max-content; */
 	margin: 0 auto;
-    background-color: red;
-    position: relative;
-    top: 0;
+	background-color: red;
+	position: relative;
+	top: 0;
 }
-#bar{
-    padding: 20px;
+#bar {
+	padding: 20px;
 	height: 100%;
 	display: inline-block;
 	position: fixed;
@@ -49,52 +49,52 @@ html {
 	left: 0;
 	background-color: blue;
 }
-#page{
-    height: 100%;
-    display: inline-block;
-    background-color: yellow;
-    position: relative;
-    top: 0;
+#page {
+	height: 100%;
+	display: inline-block;
+	background-color: yellow;
+	position: relative;
+	top: 0;
 }
 
-#mainTitle{
-    padding: 20px;
-    height: 400px;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    background-color: orange;
+#mainTitle {
+	padding: 20px;
+	height: 400px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	background-color: orange;
 }
-#menuContainer{
-    padding: 20px;
-    height: 400px;
-    display: block;
-    position: sticky;
-    top: 0;
-    left:0;
-    background-color: green;
+#menuContainer {
+	padding: 20px;
+	height: 400px;
+	display: block;
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: green;
 }
-#menuList{
-    display: block;
-    position: absolute;
-    top: 500px;
-    left: 0;
-    background-color: darkgrey;
+#menuList {
+	display: block;
+	position: absolute;
+	top: 500px;
+	left: 0;
+	background-color: darkgrey;
 }
-#mainContent{
-    padding: 20px;
-    display: block;
-    height: auto;
-    position: relative;
-    top: 0px;
-    background-color: blueviolet;
+#mainContent {
+	padding: 20px;
+	display: block;
+	height: auto;
+	position: relative;
+	top: 0px;
+	background-color: blueviolet;
 }
-article{
-    display: block;
-    height: auto;
-    position: relative;
-    top: 0;
-    background-color: beige;
+article {
+	display: block;
+	height: auto;
+	position: relative;
+	top: 0;
+	background-color: beige;
 }
 
 /* 宽度大于1860的窗口，或经过1.25倍放大的宽度大于2325的窗口
@@ -102,28 +102,27 @@ article{
 正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
 @media screen and (min-width: 1860px) {
 	#whole {
-        width: 1860px;
-    }
-    #bar{
-        width: 6rem;
-    }
-    #page{
-        width: 81rem;
-        left: 9rem;
-    
-    }
-    
-    #mainTitle{
-        width: 57rem;
-        left: 24rem;
-    }
-    #menuContainer{
-        width: 18rem;
-    }
-    #mainContent{
-        width: 57rem;
-        left: 24rem;
-    }
+		width: 1860px;
+	}
+	#bar {
+		width: 6rem;
+	}
+	#page {
+		width: 81rem;
+		left: 9rem;
+	}
+
+	#mainTitle {
+		width: 57rem;
+		left: 24rem;
+	}
+	#menuContainer {
+		width: 18rem;
+	}
+	#mainContent {
+		width: 57rem;
+		left: 24rem;
+	}
 }
 
 /* 宽度1380—1860的窗口，或经过1.25倍放大的宽度1725—2325的窗口
@@ -131,62 +130,145 @@ article{
 正文每行30字，字号20。边注每行16字，字号15；宽度等同于正文12字 */
 @media screen and (min-width: 1380px) and (max-width: 1860px) {
 	#whole {
-        width: 1380px;
-        background-color: black;
-    }
-    #bar{
-        width: 3rem;
-    }
-    #page{
-        width: 60rem;
-        left: 6rem;
-    
-    }
-    
-    #mainTitle{
-        width: 45rem;
-        left: 15rem;
-    }
-    #menuContainer{
-        width: 12rem;
-    }
-    #mainContent{
-        width: 45rem;
-        left: 15rem;
-    }
+		width: 1380px;
+		background-color: black;
+	}
+	#bar {
+		width: 3rem;
+	}
+	#page {
+		width: 60rem;
+		left: 6rem;
+	}
 
+	#mainTitle {
+		width: 45rem;
+		left: 15rem;
+	}
+	#menuContainer {
+		width: 12rem;
+	}
+	#mainContent {
+		width: 45rem;
+		left: 15rem;
+	}
 }
 /* 宽度1020—1380的窗口，或经过1.25倍放大的宽度1275—1725的窗口
 适用于1080宽的屏幕，或经过1.25倍放大的1440宽的屏幕
 正文每行27字，字号20。边注每行12字，字号15；宽度等同于正文9字 */
 @media screen and (min-width: 1020px) and (max-width: 1380px) {
 	#whole {
-        width: 1020px;
-        background-color: navy;
-    }
-    #bar{
-        width: 3rem;
-    }
-    #page{
-        width: 39rem;
-        left: 9rem;
-        }
-    
-    #mainTitle{
-        width: 39rem;
-        /* left: 9rem; */
-        position: static;
-    }
-    #menuContainer{
-        width: 39rem;
-        position: static;
-    }
-    #mainContent{
-        width: 39rem;
-        /* left: 15rem; */
-        position: static;
-    }
+		width: 1020px;
+		background-color: navy;
+	}
+	#bar {
+		width: 3rem;
+	}
+	#page {
+		width: 39rem;
+		left: 9rem;
+	}
 
+	#mainTitle {
+		width: 39rem;
+		/* left: 9rem; */
+		position: static;
+	}
+	#menuContainer {
+		width: 39rem;
+		position: static;
+	}
+	#mainContent {
+		width: 39rem;
+		/* left: 15rem; */
+		position: static;
+	}
+}
+/* 宽度660—1020的窗口，或经过1.25倍放大的宽度825—1275的窗口
+正文每行27字，字号20。*/
+@media screen and (min-width: 660px) and (max-width: 1020px) {
+	#whole {
+		width: 660px;
+		background-color: cadetblue;
+	}
+	#bar {
+		height: 100px;
+		width: 100%;
+		display: block;
+		position: static;
+	}
+	#page {
+		width: 660px;
+		display: block;
+		/* left: 9rem; */
+	}
+
+	#mainTitle {
+		width: 27rem;
+		display: block;
+		/* left: 9rem; */
+        margin: 0 auto;
+		position: static;
+	}
+	#menuContainer {
+		width: 27rem;
+		position: static;
+        margin: 0 auto;
+	}
+    #menuList{
+        position: relative;
+        top: 0;
+    }
+	#mainContent {
+		width: 27rem;
+		/* left: 15rem; */
+		position: static;
+        margin: 0 auto;
+	}
+}
+/* 宽度小于660的窗口，或经过1.25倍放大的宽度小于825的窗口
+正文字号20。*/
+@media screen and (max-width: 660px) {
+	#whole {
+		width: 100%;
+		background-color: firebrick;
+	}
+	#bar {
+		height: 100px;
+		width: 100%;
+		display: block;
+		position: static;
+	}
+	#page {
+        left: 1rem;
+		width: calc(100% - 2rem);
+		display: block;
+        position: relative;
+		
+	}
+
+	#mainTitle {
+		width: 100%;
+		display: block;
+		/* left: 9rem; */
+        margin: 0 auto;
+		position: static;
+	}
+	#menuContainer {
+		width: 100%;
+		position: static;
+        margin: 0 auto;
+	}
+    #menuList{
+        position: relative;
+        top: 0;
+    }
+	#mainContent {
+		width: 100%;
+		/* left: 15rem; */
+		position: static;
+        margin: 0 auto;
+	}
 }
 .lorem {
 	padding: 10px;
