@@ -33,89 +33,161 @@ html {
 }
 /* 基本属性 */
 #whole {
-	min-height: 1500px;
-    width: 1860px;
+	height: auto;
+    /* height: max-content; */
 	margin: 0 auto;
     background-color: red;
     position: relative;
     top: 0;
 }
 #bar{
-	min-height: 700px;
-    width: 6rem;
+    padding: 20px;
+	height: 100%;
 	display: inline-block;
-	position: sticky;
+	position: fixed;
 	top: 0;
 	left: 0;
 	background-color: blue;
 }
 #page{
-    width: 81rem;
-    min-height: 1500px;
+    height: 100%;
     display: inline-block;
     background-color: yellow;
-    position: absolute;
+    position: relative;
     top: 0;
-    left: 9rem;
-
 }
 
 #mainTitle{
-    width: 57rem;
+    padding: 20px;
     height: 400px;
+    display: inline-block;
     position: absolute;
-    top: 0%;
-    left: 24rem;
+    top: 0;
     background-color: orange;
 }
-#menu{
-    height: 1000px;
-    width: 18rem;
+#menuContainer{
+    padding: 20px;
+    height: 400px;
+    display: block;
     position: sticky;
     top: 0;
     left:0;
     background-color: green;
 }
-#mainContent{
-    width: 57rem;
-    height: 1000px;
+#menuList{
+    display: block;
     position: absolute;
-    left: 24rem;
-    top: 400px;
+    top: 500px;
+    left: 0;
+    background-color: darkgrey;
+}
+#mainContent{
+    padding: 20px;
+    display: block;
+    height: auto;
+    position: relative;
+    top: 0px;
     background-color: blueviolet;
+}
+article{
+    display: block;
+    height: auto;
+    position: relative;
+    top: 0;
+    background-color: beige;
 }
 
 /* 宽度大于1860的窗口，或经过1.25倍放大的宽度大于2325的窗口
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
 正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
-/* @media screen and (min-width: 1860px) {
-	#maxPage {
-		width: 1860px;
-		background-color: black;
-	}
-
-} */
+@media screen and (min-width: 1860px) {
+	#whole {
+        width: 1860px;
+    }
+    #bar{
+        width: 6rem;
+    }
+    #page{
+        width: 81rem;
+        left: 9rem;
+    
+    }
+    
+    #mainTitle{
+        width: 57rem;
+        left: 24rem;
+    }
+    #menuContainer{
+        width: 18rem;
+    }
+    #mainContent{
+        width: 57rem;
+        left: 24rem;
+    }
+}
 
 /* 宽度1380—1860的窗口，或经过1.25倍放大的宽度1725—2325的窗口
 适用于1440宽的屏幕，或经过1.25倍放大的1920宽的屏幕
 正文每行30字，字号20。边注每行16字，字号15；宽度等同于正文12字 */
-/* @media screen and (min-width: 1380px) and (max-width: 1860px) {
-	#maxPage {
-		width: 1380px;
-		background-color: purple;
-	} 
+@media screen and (min-width: 1380px) and (max-width: 1860px) {
+	#whole {
+        width: 1380px;
+        background-color: black;
+    }
+    #bar{
+        width: 3rem;
+    }
+    #page{
+        width: 60rem;
+        left: 6rem;
+    
+    }
+    
+    #mainTitle{
+        width: 45rem;
+        left: 15rem;
+    }
+    #menuContainer{
+        width: 12rem;
+    }
+    #mainContent{
+        width: 45rem;
+        left: 15rem;
+    }
 
-}*/
+}
 /* 宽度1020—1380的窗口，或经过1.25倍放大的宽度1275—1725的窗口
 适用于1080宽的屏幕，或经过1.25倍放大的1440宽的屏幕
 正文每行27字，字号20。边注每行12字，字号15；宽度等同于正文9字 */
-/* @media screen and (min-width: 1020px) and (max-width: 1380px) {
-	#maxPage {
-		width: 1020px;
-		background-color: navy;
-	}
+@media screen and (min-width: 1020px) and (max-width: 1380px) {
+	#whole {
+        width: 1020px;
+        background-color: navy;
+    }
+    #bar{
+        width: 3rem;
+    }
+    #page{
+        width: 39rem;
+        left: 9rem;
+        }
+    
+    #mainTitle{
+        width: 39rem;
+        /* left: 9rem; */
+        position: static;
+    }
+    #menuContainer{
+        width: 39rem;
+        position: static;
+    }
+    #mainContent{
+        width: 39rem;
+        /* left: 15rem; */
+        position: static;
+    }
 
-} */
+}
 .lorem {
 	padding: 10px;
 }
