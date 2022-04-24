@@ -8,8 +8,9 @@
 }
 @font-face {
 	font-family: "Hei";
-	src: local("Source Han Sans SC"), local("Noto Sans SC"),
-		url("https://fonts.googleapis.com/css?family=Noto+Sans+SC");
+	src: 
+	local("Source Han Sans SC"), local("Noto Sans SC")
+		/* url("https://fonts.googleapis.com/css?family=Noto+Sans+SC"); */
 }
 @font-face {
 	font-family: "Serif";
@@ -19,13 +20,15 @@
 	font-family: "Sans";
 	src: url();
 }
+
+
 html {
 	box-sizing: border-box;
 	display: block;
 	font-size: 20px;
 	line-height: 40px;
 	/* font-family: 'Segoe UI', "HYqihei 45S", sans-serif;  */
-	font-family: "Hei", sans-serif;
+	font-family: "Hei","Noto Sans SC", sans-serif;
 	tab-size: 3rem;
 	text-justify: auto;
 }
@@ -118,6 +121,57 @@ article {
 	line-height: 1.4rem;
 }
 
+
+
+.lorem {
+	padding: 10px;
+}
+h1 {
+	font-family: "Song Cu";
+	font-size: 2.4rem;
+	line-height: 3.6rem;
+	margin-top: 150px;
+}
+h2 {
+	font-family: "Song Cu";
+}
+p {
+	text-align: justify;
+	text-indent: 3rem;
+	line-height: 2rem;
+	/* margin: 0; */
+	/* text-justify: inter-character; */
+	/* 中文齐行往字间插入间距 */
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	width: 500px;
+}
+
+.JianGeHao {
+	font-size: 0.7rem;
+	margin: 0% -0.1rem;
+	line-height: 0.5rem;
+	vertical-align: 0.1rem;
+}
+
+.PoZheHao,
+.YiZiXian,
+.BanZiXian {
+	line-height: 0.5rem;
+	vertical-align: 0.1rem;
+	/* transform: translateY(1rem); */
+	/* margin: -0.5rem 0; */
+}
+
+.Latin {
+	font-family: "Source Sans Pro";
+	hyphens: auto;
+	/* text-justify: inter-word; */
+	/* 西文齐行往词间插入间距 */
+}
 /* 【1】
 宽度大于1860的窗口，或经过1.25倍放大的宽度大于2325的窗口
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
@@ -345,52 +399,3 @@ article {
 	}
 }
 
-.lorem {
-	padding: 10px;
-}
-h1 {
-	font-family: "Song Cu";
-	font-size: 2.4rem;
-	line-height: 3.6rem;
-	margin-top: 150px;
-}
-h2 {
-	font-family: "Song Cu";
-}
-p {
-	text-align: justify;
-	text-indent: 3em;
-	line-height: 2rem;
-	/* margin: 0; */
-	/* text-justify: inter-character; */
-	/* 中文齐行往字间插入间距 */
-}
-
-img {
-	display: block;
-	margin: 0 auto;
-	width: 500px;
-}
-
-.JianGeHao {
-	font-size: 0.7rem;
-	margin: 0% -0.1rem;
-	line-height: 0.5rem;
-	vertical-align: 0.1rem;
-}
-
-.PoZheHao,
-.YiZiXian,
-.BanZiXian {
-	line-height: 0.5rem;
-	vertical-align: 0.1rem;
-	/* transform: translateY(1rem); */
-	/* margin: -0.5rem 0; */
-}
-
-.Latin {
-	font-family: "Source Sans Pro";
-	hyphens: auto;
-	/* text-justify: inter-word; */
-	/* 西文齐行往词间插入间距 */
-}
