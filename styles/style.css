@@ -31,6 +31,7 @@ html {
 	font-family: "Hei","Noto Sans SC", sans-serif;
 	tab-size: 3rem;
 	text-justify: auto;
+	text-rendering: geometricPrecision
 }
 
 *,
@@ -119,6 +120,7 @@ article {
 	clear: both;
 	font-size: 0.75rem;
 	line-height: 1.4rem;
+	white-space: break-spaces;
 }
 
 
@@ -157,7 +159,10 @@ img {
 	vertical-align: 0.1rem;
 }
 
-.PoZheHao,
+.PoZheHao{
+	font-feature-settings: "fwid";
+	transform: scaleY(1.5);
+}
 .YiZiXian,
 .BanZiXian {
 	line-height: 0.5rem;
