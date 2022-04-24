@@ -100,14 +100,12 @@ article {
 }
 .sideNote {
 	display: inline-block;
-	/* float: right; */
+    text-indent: 0;
 	position: absolute;
 	/* margin-left: 0; */
-	left: 39rem;
-	width: 18rem;
 	clear: both;
-    font-size: 0.75rem;
-    line-height: 1.4rem;
+	font-size: 0.75rem;
+	line-height: 1.4rem;
 }
 
 /* 【1】
@@ -140,9 +138,14 @@ article {
 	article {
 		margin-right: 21rem;
 	}
+	.sideNote {
+		left: 39rem;
+		width: 18rem;
+	}
 }
 
-/* 宽度1380—1860的窗口，或经过1.25倍放大的宽度1725—2325的窗口
+/* 【2】
+宽度1380—1860的窗口，或经过1.25倍放大的宽度1725—2325的窗口
 适用于1440宽的屏幕，或经过1.25倍放大的1920宽的屏幕
 正文每行30字，字号20。边注每行16字，字号15；宽度等同于正文12字 */
 @media screen and (min-width: 1380px) and (max-width: 1860px) {
@@ -169,8 +172,16 @@ article {
 		width: 45rem;
 		left: 15rem;
 	}
+	article {
+		margin-right: 15rem;
+	}
+	.sideNote {
+		left: 33rem;
+		width: 12rem;
+	}
 }
-/* 宽度1020—1380的窗口，或经过1.25倍放大的宽度1275—1725的窗口
+/* 【3】
+宽度1020—1380的窗口，或经过1.25倍放大的宽度1275—1725的窗口
 适用于1080宽的屏幕，或经过1.25倍放大的1440宽的屏幕
 正文每行27字，字号20。边注每行12字，字号15；宽度等同于正文9字 */
 @media screen and (min-width: 1020px) and (max-width: 1380px) {
@@ -200,8 +211,16 @@ article {
 		/* left: 15rem; */
 		position: static;
 	}
+	article {
+		margin-right: 12rem;
+	}
+	.sideNote {
+		left: 30rem;
+		width: 9rem;
+	}
 }
-/* 宽度660—1020的窗口，或经过1.25倍放大的宽度825—1275的窗口
+/* 【4】
+宽度660—1020的窗口，或经过1.25倍放大的宽度825—1275的窗口
 正文每行27字，字号20。*/
 @media screen and (min-width: 660px) and (max-width: 1020px) {
 	#whole {
@@ -242,8 +261,20 @@ article {
 		position: static;
 		margin: 0 auto;
 	}
+	article {
+		margin: 1rem 0;
+	}
+	.sideNote {
+		float: right;
+		clear: both;
+		position: relative;
+		/* left: 30rem; */
+		width: 9rem;
+        margin-left: 3rem;
+	}
 }
-/* 宽度小于660的窗口，或经过1.25倍放大的宽度小于825的窗口
+/* 【5】
+宽度小于660的窗口，或经过1.25倍放大的宽度小于825的窗口
 正文字号20。*/
 @media screen and (max-width: 660px) {
 	#whole {
@@ -285,7 +316,26 @@ article {
 		position: static;
 		margin: 0 auto;
 	}
+    article {
+		margin: 1rem 0;
+        text-align: left !important;
+	}
+    p{
+        text-align: left !important;
+    }
+	.sideNote {
+        float: right;
+        clear: both;
+        position: relative;
+        left: 0%;
+        width: calc(50% - 2rem);
+        margin-left: 2.5rem;
+        margin-right: 1.5rem;
+        /* margin: 0% 2rem; */
+	}
 }
+
+
 .lorem {
 	padding: 10px;
 }
@@ -330,6 +380,8 @@ img {
 }
 
 .Latin {
+    font-family: "Source Sans Pro";
+    hyphens: auto;
 	/* text-justify: inter-word; */
 	/* 西文齐行往词间插入间距 */
 }
