@@ -152,20 +152,21 @@ img {
 	margin: 0 auto;
 	width: 500px;
 }
-
+/* 间隔号· */
 .JianGeHao {
 	font-size: 0.7rem;
 	margin: 0% -0.1rem;
 	line-height: 0.5rem;
 	vertical-align: 0.1rem;
 }
-
+/* 破折号⸺ */
 .PoZheHao{
 	font-feature-settings: "fwid";
 	transform: scaleY(1.5);
 	display: inline-block;
 	text-indent: 0;
 }
+/* 一字线—半字线– */
 .YiZiXian,
 .BanZiXian {
 	line-height: 0.5rem;
@@ -173,7 +174,7 @@ img {
 	/* transform: translateY(1rem); */
 	/* margin: -0.5rem 0; */
 }
-
+/* 拉丁文本 */
 .Latin {
 	font-family: "Source Sans Pro";
 	hyphens: auto;
