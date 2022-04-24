@@ -1871,11 +1871,12 @@ h-cs,
 h-cs[hidden] {
   display: none;
   visibility: hidden;
-  content: " ";
-  font: .825em Courier;
+  content: " ";
+  font: 1em ;
   letter-spacing: 0;
   white-space: normal;
 }
+/* 上面设置标点挤压后留出的间距，1个半宽空格 */
 h-cs.jinze-outer,
 h-cs.jinze-outer[hidden] {
   display: inline;
