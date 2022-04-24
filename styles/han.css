@@ -1883,19 +1883,20 @@ h-cs[hidden] {
 
   /* font-family: inherit; */
   /* white-space: pre-line; */
-/* 上面设置标点挤压后留出的间距 */
+
 h-char.bd-jiya.bd-end:after,
 h-char.bd-jiya.bd-open:before,
 h-cs,
 h-cs[hidden] {
-    display: none;
-    visibility: hidden;
-    content: " ";
-    font-size: .825em;
-    font-family: monospace;
-    letter-spacing: 0;
-    white-space: normal
+  visibility: visible;
+  content: " ";
+  font-size: 1em;
+  font-family: inherit;
+  letter-spacing: 0.276em;
+  white-space: normal;
+  line-height: 1em;
 }
+/* 上面设置标点挤压后留出的间距 */
 
 h-cs.jinze-outer,
 h-cs.jinze-outer[hidden] {
