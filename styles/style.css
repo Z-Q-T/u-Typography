@@ -5,7 +5,7 @@ html {
 	line-height: 40px;
 	/* font-family: 'Segoe UI', "HYqihei 45S", sans-serif;  */
 	font-family: "Source Han Sans SC", sans-serif;
-	tab-size: 2em;
+	tab-size: 3rem;
 	text-justify: auto;
 }
 
@@ -31,193 +31,319 @@ html {
 	font-family: "Hei";
 	src: local("Source Han Sans SC");
 }
-/* 基本属性 */
-#maxPage {
-	/* display: flex; */
-	/* width: 96rem; */
-	min-height: 1500px;
-	margin: 0 auto;
-	/* background-color: red; */
-	/* overflow: hidden; */
-}
 
-#leftPart {
-	min-height: 1500px;
-	background-color: orange;
-	/* display: inline-block; */
-	float: left;
+/* 基本属性 */
+#whole {
+	height: auto;
+	/* height: max-content; */
+	margin: 0 auto;
+	background-color: red;
 	position: relative;
-	left: 0;
 	top: 0;
 }
-#middlePart {
-	min-height: 1200px;
-	background-color: yellow;
+#bar {
+	padding: 20px;
+	height: 100%;
 	display: inline-block;
-	position: relative;
-}
-#rightPart {
-	min-height: 800px;
-	background-color: yellowgreen;
-	/* display: inline-block; */
-	float: right;
-}
-
-#leftSticky {
-	min-height: 700px;
-	display: inline-block;
-	position: sticky;
+	position: fixed;
 	top: 0;
 	left: 0;
 	background-color: blue;
 }
+#page {
+	height: 100%;
+	display: inline-block;
+	background-color: yellow;
+	position: relative;
+	top: 0;
+}
 
 #mainTitle {
+	padding: 20px 0;
+	height: 400px;
 	display: inline-block;
 	position: absolute;
-	height: 10rem;
-	z-index: 9;
-	background-color: brown;
+	top: 0;
+	background-color: orange;
 }
-#menu {
-	display: inline-block;
-	min-height: 600px;
-	background-color: cyan;
-	float: right;
-}
-#leftSide {
-	display: inline-block;
-	min-height: 300px;
+#menuContainer {
+	padding: 20px;
+	height: 400px;
+	display: block;
+	position: sticky;
+	top: 0;
+	left: 0;
 	background-color: green;
-	margin-right: 3rem;
+}
+#menuList {
+	display: block;
+	position: absolute;
+	top: 420px;
+	left: 0;
+	background-color: darkgrey;
+}
+#mainContent {
+	padding: 20px 0;
+	display: block;
+	height: auto;
+	position: relative;
+	top: 0px;
+	background-color: blueviolet;
+}
+article {
+	display: block;
+	height: auto;
+	position: relative;
+	top: 0;
+	background-color: beige;
+	line-height: 1.85rem;
+}
+.sideNote {
+	display: inline-block;
+    text-indent: 0;
+	position: absolute;
+	/* margin-left: 0; */
+	clear: both;
+	font-size: 0.75rem;
+	line-height: 1.4rem;
 }
 
-/* 宽度大于1860的窗口，或经过1.25倍放大的宽度大于2325的窗口
+/* 【1】
+宽度大于1860的窗口，或经过1.25倍放大的宽度大于2325的窗口
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
 正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
 @media screen and (min-width: 1860px) {
-	#maxPage {
+	#whole {
 		width: 1860px;
-		background-color: black;
 	}
-
-	#leftPart {
-		width: 27rem;
-	}
-	#middlePart {
-		width: 36rem;
-
-		left: 6rem;
-	}
-	#rightPart {
-		width: 21rem;
-	}
-
-	#leftSticky {
-		width: 27rem;
-	}
-
-	#leftSide {
+	#bar {
 		width: 6rem;
 	}
-	#mainTitle {
-		width: 60rem;
-		left: 660px;
+	#page {
+		width: 81rem;
+		left: 9rem;
 	}
-	#menu {
+
+	#mainTitle {
+		width: 57rem;
+		left: 24rem;
+	}
+	#menuContainer {
 		width: 18rem;
 	}
-
-	/* position: absolute;
-	top: 0;
-	left: 30rem; */
+	#mainContent {
+		width: 57rem;
+		left: 24rem;
+	}
+	article {
+		margin-right: 21rem;
+	}
+	.sideNote {
+		left: 39rem;
+		width: 18rem;
+	}
 }
 
-/* 宽度1380—1860的窗口，或经过1.25倍放大的宽度1725—2325的窗口
+/* 【2】
+宽度1380—1860的窗口，或经过1.25倍放大的宽度1725—2325的窗口
 适用于1440宽的屏幕，或经过1.25倍放大的1920宽的屏幕
 正文每行30字，字号20。边注每行16字，字号15；宽度等同于正文12字 */
 @media screen and (min-width: 1380px) and (max-width: 1860px) {
-	#maxPage {
+	#whole {
 		width: 1380px;
-		background-color: purple;
+		background-color: black;
 	}
-
-	#leftPart {
-		width: 18rem;
-		min-height: 1500px;
-	}
-	#middlePart {
-		width: 30rem;
-		left: 3rem;
-	}
-	#rightPart {
-		width: 15rem;
-	}
-
-	#leftSticky {
-		width: 18rem;
-	}
-
-	#leftSide {
+	#bar {
 		width: 3rem;
 	}
-	#mainTitle {
-		width: 48rem;
-		left: 21rem;
+	#page {
+		width: 60rem;
+		left: 6rem;
 	}
-	#menu {
+
+	#mainTitle {
+		width: 45rem;
+		left: 15rem;
+	}
+	#menuContainer {
+		width: 12rem;
+	}
+	#mainContent {
+		width: 45rem;
+		left: 15rem;
+	}
+	article {
+		margin-right: 15rem;
+	}
+	.sideNote {
+		left: 33rem;
 		width: 12rem;
 	}
 }
-/* 宽度1020—1380的窗口，或经过1.25倍放大的宽度1275—1725的窗口
+/* 【3】
+宽度1020—1380的窗口，或经过1.25倍放大的宽度1275—1725的窗口
 适用于1080宽的屏幕，或经过1.25倍放大的1440宽的屏幕
 正文每行27字，字号20。边注每行12字，字号15；宽度等同于正文9字 */
 @media screen and (min-width: 1020px) and (max-width: 1380px) {
-	#maxPage {
+	#whole {
 		width: 1020px;
 		background-color: navy;
 	}
-
-	#leftPart {
-		width: 3rem;
-		min-height: 1500px;
-	}
-	#middlePart {
-		width: 27rem;
-		left: 6rem;
-	}
-	#rightPart {
-		width: 12rem;
-	}
-
-	#leftSticky {
+	#bar {
 		width: 3rem;
 	}
-
-	#leftSide {
-		width: 3rem;
+	#page {
+		width: 39rem;
+		left: 9rem;
 	}
+
 	#mainTitle {
-		width: 42rem;
-		left: 9rem;
+		width: 39rem;
+		/* left: 9rem; */
+		position: static;
 	}
-	#menu {
-		width: 27rem;
-		display: inline-block;
-		position: absolute;
-		height: 15rem;
-		left: 9rem;
-		top: 10rem;
-		z-index: 9;
+	#menuContainer {
+		width: 39rem;
+		position: static;
+	}
+	#mainContent {
+		width: 39rem;
+		/* left: 15rem; */
+		position: static;
+	}
+	article {
+		margin-right: 12rem;
+	}
+	.sideNote {
+		left: 30rem;
+		width: 9rem;
 	}
 }
+/* 【4】
+宽度660—1020的窗口，或经过1.25倍放大的宽度825—1275的窗口
+正文每行27字，字号20。*/
+@media screen and (min-width: 660px) and (max-width: 1020px) {
+	#whole {
+		width: 660px;
+		background-color: cadetblue;
+	}
+	#bar {
+		height: 100px;
+		width: 100%;
+		display: block;
+		position: static;
+	}
+	#page {
+		width: 660px;
+		display: block;
+		/* left: 9rem; */
+	}
+
+	#mainTitle {
+		width: 27rem;
+		display: block;
+		/* left: 9rem; */
+		margin: 0 auto;
+		position: static;
+	}
+	#menuContainer {
+		width: 27rem;
+		position: static;
+		margin: 0 auto;
+	}
+	#menuList {
+		position: relative;
+		top: 0;
+	}
+	#mainContent {
+		width: 27rem;
+		/* left: 15rem; */
+		position: static;
+		margin: 0 auto;
+	}
+	article {
+		margin: 1rem 0;
+	}
+	.sideNote {
+		float: right;
+		clear: both;
+		position: relative;
+		/* left: 30rem; */
+		width: 9rem;
+        margin-left: 3rem;
+	}
+}
+/* 【5】
+宽度小于660的窗口，或经过1.25倍放大的宽度小于825的窗口
+正文字号20。*/
+@media screen and (max-width: 660px) {
+	#whole {
+		width: 100%;
+		background-color: firebrick;
+	}
+	#bar {
+		height: 100px;
+		width: 100%;
+		display: block;
+		position: static;
+	}
+	#page {
+		left: 1rem;
+		width: calc(100% - 2rem);
+		display: block;
+		position: relative;
+	}
+
+	#mainTitle {
+		width: 100%;
+		display: block;
+		/* left: 9rem; */
+		margin: 0 auto;
+		position: static;
+	}
+	#menuContainer {
+		width: 100%;
+		position: static;
+		margin: 0 auto;
+	}
+	#menuList {
+		position: relative;
+		top: 0;
+	}
+	#mainContent {
+		width: 100%;
+		/* left: 15rem; */
+		position: static;
+		margin: 0 auto;
+	}
+    article {
+		margin: 1rem 0;
+        text-align: left !important;
+	}
+    p{
+        text-align: left !important;
+    }
+	.sideNote {
+        float: right;
+        clear: both;
+        position: relative;
+        left: 0%;
+        width: calc(50% - 2rem);
+        margin-left: 2.5rem;
+        margin-right: 1.5rem;
+        /* margin: 0% 2rem; */
+	}
+}
+
+
 .lorem {
 	padding: 10px;
 }
 h1 {
 	font-family: "Song Cu";
-	font-size: 30px;
-	line-height: 30px;
+	font-size: 2.4rem;
+	line-height: 3.6rem;
+	margin-top: 150px;
 }
 h2 {
 	font-family: "Song Cu";
@@ -225,6 +351,7 @@ h2 {
 p {
 	text-align: justify;
 	text-indent: 3em;
+	line-height: 2rem;
 	/* margin: 0; */
 	/* text-justify: inter-character; */
 	/* 中文齐行往字间插入间距 */
@@ -253,6 +380,8 @@ img {
 }
 
 .Latin {
+    font-family: "Source Sans Pro";
+    hyphens: auto;
 	/* text-justify: inter-word; */
 	/* 西文齐行往词间插入间距 */
 }
