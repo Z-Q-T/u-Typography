@@ -126,7 +126,12 @@ article {
 .sideNoteIndex{
 	white-space: break-spaces;
 }
-
+/* h-char.bd-jiya.bd-open:before,
+h-char.bd-jiya.bd-end:after,
+h-cs,
+h-cs[hidden] {
+  font-family: "Hei","Noto Sans SC", sans-serif;
+} */
 
 
 .lorem {
