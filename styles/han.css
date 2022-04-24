@@ -1866,7 +1866,7 @@ h-ru h-char.bd-hangable:lang(zh-CN) > h-inner,
 h-ru h-char.bd-hangable:lang(ja) > h-inner {
   position: relative;
 }
-h-char.bd-jiya.bd-open:before,
+/* h-char.bd-jiya.bd-open:before,
 h-char.bd-jiya.bd-end:after,
 h-cs,
 h-cs[hidden] {
@@ -1874,14 +1874,28 @@ h-cs[hidden] {
   visibility: visible;
   content: " ";
   font-family: "Hei","Noto Sans SC", sans-serif;
-  /* font-family: inherit; */
+  
   font-size: 2.231em ;
   line-height: 0.01em;
   letter-spacing: 0;
   white-space: normal;
+} */
+
+  /* font-family: inherit; */
   /* white-space: pre-line; */
-}
 /* 上面设置标点挤压后留出的间距 */
+h-char.bd-jiya.bd-end:after,
+h-char.bd-jiya.bd-open:before,
+h-cs,
+h-cs[hidden] {
+    display: none;
+    visibility: hidden;
+    content: " ";
+    font-size: .825em;
+    font-family: monospace;
+    letter-spacing: 0;
+    white-space: normal
+}
 
 h-cs.jinze-outer,
 h-cs.jinze-outer[hidden] {
