@@ -1871,7 +1871,7 @@ h-char.bd-jiya.bd-end:after,
 h-cs,
 h-cs[hidden] {
   display: none;
-  visibility: hidden;
+  visibility: visible;
   content: " ";
   /* font-family: "Hei","Noto Sans SC", sans-serif; */
   font-family: inherit;
