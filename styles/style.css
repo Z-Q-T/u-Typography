@@ -162,6 +162,8 @@ img {
 .PoZheHao{
 	font-feature-settings: "fwid";
 	transform: scaleY(1.5);
+	display: inline-block;
+	text-indent: 0;
 }
 .YiZiXian,
 .BanZiXian {
