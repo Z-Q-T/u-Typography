@@ -31,7 +31,8 @@ html {
 	font-family: "Hei","Noto Sans SC", sans-serif;
 	tab-size: 3rem;
 	text-justify: auto;
-	text-rendering: geometricPrecision
+	text-rendering: geometricPrecision;
+	-webkit-text-size-adjust: none;
 }
 
 *,
