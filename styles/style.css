@@ -8,9 +8,8 @@
 }
 @font-face {
 	font-family: "Hei";
-	src: 
-	local("Source Han Sans SC"), local("Noto Sans SC")
-		/* url("https://fonts.googleapis.com/css?family=Noto+Sans+SC"); */
+	src: local("Source Han Sans SC"), local("Noto Sans SC");
+	/* url("https://fonts.googleapis.com/css?family=Noto+Sans+SC"); */
 }
 @font-face {
 	font-family: "Serif";
@@ -20,7 +19,10 @@
 	font-family: "Sans";
 	src: url();
 }
-
+@font-face {
+	font-family: "FangKai";
+	src: local("LXGW WenKai");
+}
 
 html {
 	box-sizing: border-box;
@@ -28,7 +30,7 @@ html {
 	font-size: 20px;
 	line-height: 40px;
 	/* font-family: 'Segoe UI', "HYqihei 45S", sans-serif;  */
-	font-family: "Hei","Noto Sans SC", sans-serif;
+	font-family: "Hei", "Noto Sans SC", sans-serif;
 	tab-size: 3rem;
 	text-justify: auto;
 	text-rendering: geometricPrecision;
@@ -45,7 +47,6 @@ html {
 	border: 0;
 	padding: 0;
 }
-
 
 /* 基本属性 */
 #whole {
@@ -123,7 +124,7 @@ article {
 	line-height: 1.4rem;
 	/* white-space: break-spaces; */
 }
-.sideNoteIndex{
+.sideNoteIndex {
 	white-space: break-spaces;
 }
 /* h-char.bd-jiya.bd-open:before,
@@ -132,7 +133,6 @@ h-cs,
 h-cs[hidden] {
   font-family: "Hei","Noto Sans SC", sans-serif;
 } */
-
 
 .lorem {
 	padding: 10px;
@@ -154,7 +154,12 @@ p {
 	/* text-justify: inter-character; */
 	/* 中文齐行往字间插入间距 */
 }
-
+blockquote {
+	font-family: "LXGW WenKai";
+}
+.cu {
+	font-family: "LXGW WenKai Screen";
+}
 img {
 	display: block;
 	margin: 0 auto;
@@ -168,7 +173,7 @@ img {
 	vertical-align: 0.1rem;
 }
 /* 破折号⸺ */
-.PoZheHao{
+.PoZheHao {
 	font-feature-settings: "fwid";
 	transform: scaleY(1.5);
 	display: inline-block;
@@ -415,4 +420,3 @@ img {
 		/* margin: 0% 2rem; */
 	}
 }
-
