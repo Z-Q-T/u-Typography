@@ -155,11 +155,12 @@ p {
 	/* 中文齐行往字间插入间距 */
 }
 blockquote {
+	font-family: 'Alegreya';
 	font-family: "LXGW WenKai";
+	/* font-family: "LXGW WenKai Screen"; */
+	
 }
-.cu {
-	font-family: "LXGW WenKai Screen";
-}
+	
 img {
 	display: block;
 	margin: 0 auto;
