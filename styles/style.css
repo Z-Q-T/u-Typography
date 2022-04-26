@@ -46,7 +46,8 @@ html {
 	tab-size: 3rem;
 	text-justify: auto;
 	text-rendering: geometricPrecision;
-	-webkit-text-size-adjust: none;
+	background-color: rgb(253,253,250);
+	/* -webkit-text-size-adjust: none; */
 }
 
 *,
@@ -92,7 +93,7 @@ html {
 	display: inline-block;
 	position: absolute;
 	top: 0;
-	background-color: orange;
+	/* background-color: orange; */
 }
 #menuContainer {
 	padding: 20px;
@@ -123,7 +124,7 @@ article {
 	height: auto;
 	position: relative;
 	top: 0;
-	background-color: beige;
+	/* background-color: beige; */
 	line-height: 1.85rem;
 }
 .sideNote {
