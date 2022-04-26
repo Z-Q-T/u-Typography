@@ -1,23 +1,35 @@
 @font-face {
-	font-family: "Song";
-	src: local("Source Han Serif SC");
-}
-@font-face {
-	font-family: "Song cu";
-	src: local("Source Han Serif SC Bold");
-}
-@font-face {
-	font-family: "Hei";
+	font-family: "HEI";
 	src: local("Source Han Sans SC"), local("Noto Sans SC");
-	/* url("https://fonts.googleapis.com/css?family=Noto+Sans+SC"); */
 }
 @font-face {
-	font-family: "Serif";
-	src: url();
+	font-family: "SONG";
+	src: local("Source Han Serif SC Bold"), local("Noto Serif SC Bold");
 }
 @font-face {
-	font-family: "Sans";
-	src: url();
+	font-family: "SANS";
+	src: local("Source Sans Pro");
+}
+@font-face {
+	font-family: "SANS i";
+	src: local("Source Sans Pro Italic");
+}
+@font-face {
+	font-family: "SERIF";
+	src: local("Source Serif Pro");
+}
+@font-face {
+	font-family: "SERIF i";
+	src: local("Source Serif Pro Italic");
+}
+
+@font-face {
+	font-family: "SERIF-d";
+	src: local("Source Serif Pro Semibold");
+}
+@font-face {
+	font-family: "SERIF-d i";
+	src: local("Source Serif Pro Semibold Italic");
 }
 @font-face {
 	font-family: "FangKai";
@@ -30,7 +42,7 @@ html {
 	font-size: 20px;
 	line-height: 40px;
 	/* font-family: 'Segoe UI', "HYqihei 45S", sans-serif;  */
-	font-family: "Hei", "Noto Sans SC", sans-serif;
+	font-family: "HEI", "Noto Sans SC", sans-serif;
 	tab-size: 3rem;
 	text-justify: auto;
 	text-rendering: geometricPrecision;
@@ -53,7 +65,7 @@ html {
 	height: auto;
 	/* height: max-content; */
 	margin: 0 auto;
-	background-color: red;
+	/* background-color: red; */
 	position: relative;
 	top: 0;
 }
@@ -64,19 +76,19 @@ html {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: blue;
+	/* background-color: blue; */
 }
 #page {
 	height: 100%;
 	display: inline-block;
-	background-color: yellow;
+	/* background-color: yellow; */
 	position: relative;
 	top: 0;
 }
 
 #mainTitle {
-	padding: 20px 0;
-	height: 400px;
+	/* padding: 20px 0; */
+	height: 20rem;
 	display: inline-block;
 	position: absolute;
 	top: 0;
@@ -89,22 +101,22 @@ html {
 	position: sticky;
 	top: 0;
 	left: 0;
-	background-color: green;
+	/* background-color: green; */
 }
 #menuList {
 	display: block;
 	position: absolute;
 	top: 420px;
 	left: 0;
-	background-color: darkgrey;
+	/* background-color: darkgrey; */
 }
 #mainContent {
-	padding: 20px 0;
+	padding: 4rem 0;
 	display: block;
 	height: auto;
 	position: relative;
 	top: 0px;
-	background-color: blueviolet;
+	/* background-color: blueviolet; */
 }
 article {
 	display: block;
@@ -138,13 +150,24 @@ h-cs[hidden] {
 	padding: 10px;
 }
 h1 {
-	font-family: "Song Cu";
+	font-family: "SONG";
 	font-size: 2.4rem;
 	line-height: 3.6rem;
-	margin-top: 150px;
+	margin-top: 8rem;
 }
 h2 {
-	font-family: "Song Cu";
+	font-family: "SONG";
+	font-size: 1.5rem;
+	line-height: 2.4rem;
+	text-align: center;
+	margin: 5rem auto 3rem auto;
+}
+h3{
+	font-family: "SONG";
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	text-align: center;
+	margin: 4rem auto 2rem auto;
 }
 p {
 	text-align: justify;
@@ -155,12 +178,11 @@ p {
 	/* 中文齐行往字间插入间距 */
 }
 blockquote {
-	font-family: 'Alegreya';
+	font-family: "Alegreya";
 	font-family: "LXGW WenKai";
 	/* font-family: "LXGW WenKai Screen"; */
-	
 }
-	
+
 img {
 	display: block;
 	margin: 0 auto;

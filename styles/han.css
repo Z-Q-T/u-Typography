@@ -217,19 +217,20 @@ pre {
 a {
   text-decoration: inherit;
 }
+/* 下面是设置着重号 */
 em:lang(zh),
 em:lang(ja) {
-  -moz-text-emphasis: filled circle;
-  -webkit-text-emphasis: filled circle;
-  text-emphasis: filled circle;
-  -moz-text-emphasis-position: under;
-  -webkit-text-emphasis-position: under;
+  /* -moz-text-emphasis: filled circle; */
+  /* -webkit-text-emphasis: filled circle; */
+  text-emphasis: "▪";
+  /* -moz-text-emphasis-position: under; */
+  /* -webkit-text-emphasis-position: under; */
   text-emphasis-position: under;
   font-style: inherit;
-  border-bottom: 2px dotted;
-  padding-bottom: .05em;
-  border-bottom-width: -webkit-calc(0px);
-  padding-bottom: -webkit-calc(0px);
+  /* border-bottom: 2px dotted; */
+  /* padding-bottom: .05em; */
+  /* border-bottom-width: -webkit-calc(0px); */
+  /* padding-bottom: -webkit-calc(0px); */
 }
 em:lang(ja) {
   -moz-text-emphasis: filled sesame;
