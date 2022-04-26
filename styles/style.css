@@ -261,7 +261,7 @@ img {
 @media screen and (min-width: 1380px) and (max-width: 1860px) {
 	#whole {
 		width: 1380px;
-		background-color: black;
+		/* background-color: black; */
 	}
 	#bar {
 		width: 3rem;
@@ -297,7 +297,7 @@ img {
 @media screen and (min-width: 1020px) and (max-width: 1380px) {
 	#whole {
 		width: 1020px;
-		background-color: navy;
+		/* background-color: navy; */
 	}
 	#bar {
 		width: 3rem;
@@ -335,7 +335,7 @@ img {
 @media screen and (min-width: 660px) and (max-width: 1020px) {
 	#whole {
 		width: 660px;
-		background-color: cadetblue;
+		/* background-color: cadetblue; */
 	}
 	#bar {
 		height: 100px;
@@ -389,7 +389,7 @@ img {
 @media screen and (max-width: 660px) {
 	#whole {
 		width: 100%;
-		background-color: firebrick;
+		/* background-color: firebrick; */
 	}
 	#bar {
 		height: 100px;
