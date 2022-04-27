@@ -3,7 +3,7 @@
 	src: local("Source Han Sans SC"), local("Noto Sans SC");
 }
 @font-face {
-	font-family: "SONG";
+	font-family: "song";
 	src: local("Source Han Serif SC Semibold"), local("Noto Serif SC Semiold");
 }
 @font-face {
@@ -32,7 +32,7 @@
 	src: local("Source Serif Pro Semibold Italic");
 }
 @font-face {
-	font-family: "FangKai";
+	font-family: "FANG-KAI";
 	src: local("LXGW WenKai");
 }
 
@@ -150,20 +150,20 @@ h-cs[hidden] {
 	padding: 10px;
 }
 h1 {
-	font-family: "SONG", "Noto Serif SC";
+	font-family: "song", "Noto Serif SC";
 	font-size: 2.4rem;
 	line-height: 3.6rem;
 	margin-top: 8rem;
 }
 h2 {
-	font-family: "SONG", "Noto Serif SC";
+	font-family: "song", "Noto Serif SC";
 	font-size: 1.5rem;
 	line-height: 2.4rem;
 	text-align: center;
 	margin: 5rem auto 3rem auto;
 }
 h3{
-	font-family: "SONG", "Noto Serif SC";
+	font-family: "song", "Noto Serif SC";
 	font-size: 1.2rem;
 	line-height: 1.8rem;
 	text-align: center;
@@ -178,10 +178,10 @@ p {
 	/* 中文齐行往字间插入间距 */
 }
 .song2{
-	font-family: "SONG","Noto Serif SC";
+	font-family: "song","Noto Serif SC";
 }
 .song3{
-	font-family: "SONG","Noto Serif SC";
+	font-family: "song","Noto Serif SC";
 }
 
 blockquote {
