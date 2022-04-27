@@ -280,7 +280,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: monospace, monospace, sans-serif;
+  font-family: monospace, sans-serif;
 }
 i:lang(zh),
 var:lang(zh),
