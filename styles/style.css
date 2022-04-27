@@ -236,6 +236,16 @@ h-hws[hidden]:before {
 	font-size: 1em;
 	letter-spacing: -0.35em;
 }
+/* 标点挤压间距 */
+h-char.bd-jiya.bd-end:after,
+h-char.bd-jiya.bd-open:before,
+h-cs,
+h-cs[hidden] {
+  font-family: "CODE", "Courier Prime", monospace;
+  font-size: 1em;
+  letter-spacing: -0.1em;
+  /* line-height: 1em; */
+}
 /* h-hws,
 h-hws[hidden] {
 	font-family: "CODE", "Courier Prime", monospace;

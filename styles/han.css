@@ -1901,11 +1901,8 @@ h-cs,
 h-cs[hidden] {
   visibility: visible;
   content: " ";
-  font-size: 1em;
-  font-family: inherit;
-  letter-spacing: 0.276em;
   white-space: normal;
-  line-height: 1em;
+  /* line-height: 1em; */
 }
 /* 上面设置标点挤压后留出的间距 */
 
