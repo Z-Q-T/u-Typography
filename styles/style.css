@@ -46,7 +46,7 @@ html {
 	tab-size: 3rem;
 	text-justify: auto;
 	text-rendering: geometricPrecision;
-	background-color: rgb(253,253,250);
+	background-color: rgb(238, 238, 225);
 	/* -webkit-text-size-adjust: none; */
 }
 
@@ -177,6 +177,18 @@ p {
 	/* margin: 0; */
 	/* text-justify: inter-character; */
 	/* 中文齐行往字间插入间距 */
+}
+.song1{
+	font-family: "Source Han Serif SC","Noto Serif SC";
+	font-weight: 400;
+}
+.song2{
+	font-family: "Source Han Serif SC","Noto Serif SC";
+	font-weight: 500;
+}
+.song3{
+	font-family: "Source Han Serif SC","Noto Serif SC";
+	font-weight: 600;
 }
 blockquote {
 	font-family: "Alegreya";
