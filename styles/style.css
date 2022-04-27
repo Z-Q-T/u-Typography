@@ -4,7 +4,7 @@
 }
 @font-face {
 	font-family: "SONG";
-	src: local("Source Han Serif SC Bold"), local("Noto Serif SC Bold");
+	src: local("Source Han Serif SC Semibold"), local("Noto Serif SC Semiold");
 }
 @font-face {
 	font-family: "SANS";
@@ -41,7 +41,6 @@ html {
 	display: block;
 	font-size: 20px;
 	line-height: 40px;
-	/* font-family: 'Segoe UI', "HYqihei 45S", sans-serif;  */
 	font-family: "HEI", "Noto Sans SC", sans-serif;
 	tab-size: 3rem;
 	text-justify: auto;
@@ -178,18 +177,13 @@ p {
 	/* text-justify: inter-character; */
 	/* 中文齐行往字间插入间距 */
 }
-.song1{
-	font-family: "Source Han Serif SC","Noto Serif SC";
-	font-weight: 400;
-}
 .song2{
-	font-family: "Source Han Serif SC","Noto Serif SC";
-	font-weight: 500;
+	font-family: "SONG","Noto Serif SC";
 }
 .song3{
-	font-family: "Source Han Serif SC","Noto Serif SC";
-	font-weight: 600;
+	font-family: "SONG","Noto Serif SC";
 }
+
 blockquote {
 	font-family: "Alegreya";
 	font-family: "LXGW WenKai";
