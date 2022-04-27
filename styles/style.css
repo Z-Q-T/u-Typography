@@ -3,7 +3,7 @@
 	src: local("Source Han Sans SC"), local("Noto Sans SC");
 }
 @font-face {
-	font-family: "song";
+	font-family: "SONG";
 	src: local("Source Han Serif SC Semibold"), local("Noto Serif SC Semiold");
 }
 @font-face {
@@ -21,6 +21,10 @@
 @font-face {
 	font-family: "SERIF i";
 	src: local("Source Serif Pro Italic");
+}
+@font-face {
+	font-family: "CODE";
+	src: local("Courier Prime");
 }
 
 @font-face {
@@ -150,20 +154,20 @@ h-cs[hidden] {
 	padding: 10px;
 }
 h1 {
-	font-family: "song", "Noto Serif SC";
+	font-family: "SONG", "Noto Serif SC";
 	font-size: 2.4rem;
 	line-height: 3.6rem;
 	margin-top: 8rem;
 }
 h2 {
-	font-family: "song", "Noto Serif SC";
+	font-family: "SONG", "Noto Serif SC";
 	font-size: 1.5rem;
 	line-height: 2.4rem;
 	text-align: center;
 	margin: 5rem auto 3rem auto;
 }
-h3{
-	font-family: "song", "Noto Serif SC";
+h3 {
+	font-family: "SONG", "Noto Serif SC";
 	font-size: 1.2rem;
 	line-height: 1.8rem;
 	text-align: center;
@@ -177,11 +181,11 @@ p {
 	/* text-justify: inter-character; */
 	/* 中文齐行往字间插入间距 */
 }
-.song2{
-	font-family: "song","Noto Serif SC";
+.song2 {
+	font-family: "SONG", "Noto Serif SC";
 }
-.song3{
-	font-family: "song","Noto Serif SC";
+.song3 {
+	font-family: "SONG", "Noto Serif SC";
 }
 
 blockquote {
@@ -224,6 +228,20 @@ img {
 	/* text-justify: inter-word; */
 	/* 西文齐行往词间插入间距 */
 }
+/* 中西文之间插入四分空 */
+h-hws:before,
+h-hws[hidden]:before {
+	/* content: " "; */
+	font-family: "CODE", "Courier Prime", monospace;
+	font-size: 1em;
+	letter-spacing: -0.35em;
+}
+/* h-hws,
+h-hws[hidden] {
+	font-family: "CODE", "Courier Prime", monospace;
+	font-size: 0.833em;
+} */
+
 /* 【1】
 宽度大于1860的窗口，或经过1.25倍放大的宽度大于2325的窗口
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕

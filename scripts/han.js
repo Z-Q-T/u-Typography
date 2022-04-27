@@ -2432,7 +2432,7 @@ void function (global, factory) {
 
     var $hws = $.create('h-hws')
     $hws.setAttribute('hidden', '')
-    $hws.innerHTML = ' '//这里在中文和西文之间插入间距，innerHTML = " "的引号里面放的是四分空
+    $hws.innerHTML = ' '//这里在中文和西文之间插入间距，innerHTML = " "的引号里面放的是空格，然后设定用等宽字体，计算出四分之一个EM的大小
 
     function sharingSameParent($a, $b) {
         return $a && $b && $a.parentNode === $b.parentNode

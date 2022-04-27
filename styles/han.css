@@ -1765,17 +1765,27 @@ article blockquote blockquote {
     margin-right: 1em;
   }
 }
+/* 这里设置中西文之间的间距 */
+/* h-hws:after,
+h-hws[hidden]:after{
+  display: inline;
+  visibility: visible;
+  content: " ";
+  font-size: 0.833em;
+  font-family: "CODE", "Courier Prime", monospace;
+  white-space: normal;
+} */
 h-hws,
 h-hws[hidden] {
   display: inline;
   visibility: hidden;
-  /* font-family: Arial; */
 }
-/* h-hws:before,
+h-hws:before,
 h-hws[hidden]:before {
-  content: "　";
+  content: " ";
+  visibility: visible;
+}
 
-} */
 code h-hws,
 code h-hws[hidden],
 kbd h-hws,
