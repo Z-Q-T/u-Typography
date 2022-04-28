@@ -59,8 +59,8 @@
             </div>
             <div id="mainContent">
                 <article>
-                    <p>更换字体<a href="javascript:changefont('SONG', 'Noto Serif SC')">宋</a><a href="javascript:changefont('HEI', 'Noto Sans SC')">黑</a>
-                    <p>
+                    <!-- <p>更换字体<a href="javascript:changefont('SONG', 'Noto Serif SC')">宋</a><a href="javascript:changefont('HEI', 'Noto Sans SC')">黑</a>
+                    </p>
                         <script>
                             function changefont(type) {
                                 //     document.getElementsByTagName("p").style.fontFamily = type;
@@ -68,7 +68,21 @@
                                     e.style.fontFamily = type;
                                 });
                             }
-                        </script>
+                        </script> -->
+                        <p>更换字体<a href="javascript:changefontSONG()">宋</a><a href="javascript:changefontHEI()">黑</a>
+                        </p>
+                            <script>
+                                function changefontSONG() {
+                                    document.body.querySelectorAll("p").forEach((e) => {
+                                        e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
+                                    });
+                                }
+                                function changefontHEI() {
+                                    document.body.querySelectorAll("p").forEach((e) => {
+                                        e.style.fontFamily = "HEI" + "," + "Noto Sans SC";
+                                    });
+                                }
+                            </script>
                     <p>他近来觉得孤冷得可怜。</p>
                     <p>他的早熟的性情，竟把他挤到与世人绝不相容的境地去，世人与他的中间介在的那一道屏障，愈筑愈高了。</p>
                     <p>天气一天一天地清凉起来，他的学校开学之后，已经快半个月了。那一天正是九月的二十二日。</p>
