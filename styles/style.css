@@ -24,9 +24,12 @@
 }
 @font-face {
 	font-family: "CODE";
-	src: local("courier prime");
+	src: local("Source Code Pro");
 }
-
+@font-face {
+	font-family: "CODE m";
+	src: local("Source Code Pro Medium");
+}
 @font-face {
 	font-family: "SERIF-d";
 	src: local("Source Serif Pro Semibold");
@@ -181,10 +184,8 @@ p {
 	/* text-justify: inter-character; */
 	/* 中文齐行往字间插入间距 */
 }
-.song2 {
-	font-family: "SONG", "Noto Serif SC";
-}
-.song3 {
+
+.song {
 	font-family: "SONG", "Noto Serif SC";
 }
 
@@ -194,9 +195,9 @@ blockquote {
 	/* font-family: "LXGW WenKai Screen"; */
 }
 pre {
-	font-family: "CODE", "Courier Prime", monospace;
-	font-size: 1rem;
-	line-height: 2rem;
+	font-family: "CODE", "Source Code Pro", monospace;
+	font-size: 0.8rem;
+	line-height: 1.4rem;
 	hyphens: none;
 	text-align: left;
 	margin: 2rem 0;
@@ -204,7 +205,18 @@ pre {
 	/* text-indent: 3rem; */
 	white-space: pre-wrap;
 }
-
+.code-m{
+	font-family: "CODE m", "Source Code Pro", monospace;
+	font-weight: 500;
+	font-size: 0.8rem;
+	line-height: 1.4rem;
+	hyphens: none;
+	text-align: left;
+	margin: 2rem 0;
+	padding-left: 3rem;
+	/* text-indent: 3rem; */
+	white-space: pre-wrap;
+}
 img {
 	display: block;
 	margin: 0 auto;
@@ -243,7 +255,7 @@ img {
 h-hws:before,
 h-hws[hidden]:before {
 	/* content: " "; */
-	font-family: "CODE", "Courier Prime", monospace;
+	font-family: "CODE", "Source Code Pro", monospace;
 	font-size: 1em;
 	letter-spacing: -0.35em;
 }
@@ -252,7 +264,7 @@ h-char.bd-jiya.bd-end:after,
 h-char.bd-jiya.bd-open:before,
 h-cs,
 h-cs[hidden] {
-	font-family: "CODE", "Courier Prime", monospace;
+	font-family: "CODE", "Source Code Pro", monospace;
 	font-size: 1em;
 	letter-spacing: -0.1em;
 	/* line-height: 1em; */
