@@ -24,12 +24,15 @@
 }
 @font-face {
 	font-family: "CODE";
-	src: local("Source Code Pro");
+	src: local("Source Code Pro Medium");
+	font-style: normal
 }
 @font-face {
-	font-family: "CODE m";
-	src: local("Source Code Pro Medium");
+	font-family: "CODE";
+	src: local("Source Code Pro Medium Italic");
+	font-style: italic;
 }
+/* 
 @font-face {
 	font-family: "SERIF-d";
 	src: local("Source Serif Pro Semibold");
@@ -41,7 +44,7 @@
 @font-face {
 	font-family: "FANG-KAI";
 	src: local("LXGW WenKai");
-}
+} */
 
 html {
 	box-sizing: border-box;
@@ -205,17 +208,14 @@ pre {
 	/* text-indent: 3rem; */
 	white-space: pre-wrap;
 }
-.code-m{
-	font-family: "CODE m", "Source Code Pro", monospace;
-	font-weight: 500;
-	font-size: 0.8rem;
-	line-height: 1.4rem;
-	hyphens: none;
-	text-align: left;
-	margin: 2rem 0;
-	padding-left: 3rem;
-	/* text-indent: 3rem; */
-	white-space: pre-wrap;
+code{
+	font-family: "CODE", "Source Code Pro", monospace;
+	font-size: 1em;
+}
+kbd{
+	font-family: "CODE", "Source Code Pro", monospace;
+	font-style: italic;
+	font-size: 1em;
 }
 img {
 	display: block;
