@@ -55,7 +55,7 @@ html {
 	tab-size: 3rem;
 	text-justify: auto;
 	text-rendering: geometricPrecision;
-	background-color: rgb(238, 238, 225);
+	background-color: rgb(240, 238, 235);
 	/* -webkit-text-size-adjust: none; */
 	font-synthesis: none;
 }
@@ -76,7 +76,7 @@ html {
 	height: auto;
 	/* height: max-content; */
 	margin: 0 auto;
-	/* background-color: red; */
+	background-color: red;
 	position: relative;
 	top: 0;
 }
@@ -87,12 +87,12 @@ html {
 	position: fixed;
 	top: 0;
 	left: 0;
-	/* background-color: blue; */
+	background-color: rgb(232, 226, 220);
 }
 #page {
 	height: 100%;
 	display: inline-block;
-	/* background-color: yellow; */
+	background-color: yellow;
 	position: relative;
 	top: 0;
 }
@@ -103,7 +103,7 @@ html {
 	display: inline-block;
 	position: absolute;
 	top: 0;
-	/* background-color: orange; */
+	background-color: orange;
 }
 #menuContainer {
 	padding: 20px;
@@ -112,14 +112,14 @@ html {
 	position: sticky;
 	top: 0;
 	left: 0;
-	/* background-color: green; */
+	background-color: green;
 }
 #menuList {
 	display: block;
 	position: absolute;
 	top: 420px;
 	left: 0;
-	/* background-color: darkgrey; */
+	background-color: darkgrey;
 }
 #mainContent {
 	padding: 4rem 0;
@@ -127,14 +127,14 @@ html {
 	height: auto;
 	position: relative;
 	top: 0px;
-	/* background-color: blueviolet; */
+	background-color: blueviolet;
 }
 article {
 	display: block;
 	height: auto;
 	position: relative;
 	top: 0;
-	/* background-color: beige; */
+	background-color: beige;
 	line-height: 1.85rem;
 }
 .sideNote {
@@ -168,15 +168,15 @@ h1 {
 }
 h2 {
 	font-family: "SONG", "Noto Serif SC";
-	font-size: 1.5rem;
-	line-height: 2.4rem;
+	font-size: 1.8rem;
+	line-height: 2.6rem;
 	text-align: center;
 	margin: 5rem auto 3rem auto;
 }
 h3 {
 	font-family: "SONG", "Noto Serif SC";
-	font-size: 1.2rem;
-	line-height: 1.8rem;
+	font-size: 1.4rem;
+	line-height: 2rem;
 	text-align: center;
 	margin: 4rem auto 2rem auto;
 }
@@ -277,31 +277,31 @@ h-hws[hidden] {
 } */
 
 /* 【1】
-宽度大于1860的窗口，或经过1.25倍放大的宽度大于2325的窗口
+宽度大于1820的窗口，或经过1.25倍放大的宽度大于2275的窗口
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
 正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
-@media screen and (min-width: 1860px) {
+@media screen and (min-width: 1820px) {
 	#whole {
-		width: 1860px;
+		width: 1820px;
 	}
 	#bar {
-		width: 6rem;
+		width: 3rem;
 	}
 	#page {
-		width: 81rem;
+		width: 78rem;
 		left: 9rem;
 	}
 
 	#mainTitle {
 		width: 57rem;
-		left: 24rem;
+		left: 21rem;
 	}
 	#menuContainer {
 		width: 18rem;
 	}
 	#mainContent {
 		width: 57rem;
-		left: 24rem;
+		left: 21rem;
 	}
 	article {
 		margin-right: 21rem;
@@ -313,10 +313,10 @@ h-hws[hidden] {
 }
 
 /* 【2】
-宽度1380—1860的窗口，或经过1.25倍放大的宽度1725—2325的窗口
+宽度1380—1820的窗口，或经过1.25倍放大的宽度1725—2275的窗口
 适用于1440宽的屏幕，或经过1.25倍放大的1920宽的屏幕
 正文每行30字，字号20。边注每行16字，字号15；宽度等同于正文12字 */
-@media screen and (min-width: 1380px) and (max-width: 1860px) {
+@media screen and (min-width: 1380px) and (max-width: 1820px) {
 	#whole {
 		width: 1380px;
 		/* background-color: black; */
