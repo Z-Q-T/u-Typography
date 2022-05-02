@@ -1,0 +1,67 @@
+/* 基本属性 */
+#whole {
+	background-color: red;
+}
+#bar {
+	background-color: lightgray;
+}
+#page {
+	background-color: yellow;
+}
+#mainTitleArea {
+	background-color: orange;
+}
+#menuContainer {
+	background-color: green;
+}
+#menuList {
+	background-color: darkgrey;
+}
+#mainContent {
+	background-color: blueviolet;
+}
+article {
+	background-color: beige;
+}
+
+/* 【1】
+宽度大于1820的窗口，或经过1.25倍放大的宽度大于2275的窗口
+适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
+正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
+@media screen and (min-width: 1820px) {
+}
+
+/* 【2】
+宽度1380—1820的窗口，或经过1.25倍放大的宽度1725—2275的窗口
+适用于1440宽的屏幕，或经过1.25倍放大的1920宽的屏幕
+正文每行30字，字号20。边注每行16字，字号15；宽度等同于正文12字 */
+@media screen and (min-width: 1380px) and (max-width: 1820px) {
+	#whole {
+		background-color: black;
+	}
+}
+/* 【3】
+宽度1020—1380的窗口，或经过1.25倍放大的宽度1275—1725的窗口
+适用于1080宽的屏幕，或经过1.25倍放大的1440宽的屏幕
+正文每行27字，字号20。边注每行12字，字号15；宽度等同于正文9字 */
+@media screen and (min-width: 1020px) and (max-width: 1380px) {
+	#whole {
+		background-color: navy;
+	}
+}
+/* 【4】
+宽度660—1020的窗口，或经过1.25倍放大的宽度825—1275的窗口
+正文每行27字，字号20。*/
+@media screen and (min-width: 660px) and (max-width: 1020px) {
+	#whole {
+		background-color: cadetblue;
+	}
+}
+/* 【5】
+宽度小于660的窗口，或经过1.25倍放大的宽度小于825的窗口
+正文字号20。*/
+@media screen and (max-width: 660px) {
+	#whole {
+		background-color: firebrick;
+	}
+}

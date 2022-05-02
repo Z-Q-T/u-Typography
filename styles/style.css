@@ -4,7 +4,13 @@
 }
 @font-face {
 	font-family: "SONG";
-	src: local("Source Han Serif SC Semibold"), local("Noto Serif SC Semiold");
+	src: local("Source Han Serif SC Semibold"), local("Noto Serif SC Semibold");
+	font-weight: 600;
+}
+@font-face {
+	font-family: "SONG";
+	src: local("Source Han Serif SC Bold"), local("Noto Serif SC Bold");
+	font-weight: 700;
 }
 @font-face {
 	font-family: "SANS";
@@ -16,11 +22,27 @@
 }
 @font-face {
 	font-family: "SERIF";
-	src: local("Source Serif Pro");
+	src: local("Source Serif Pro Semibold");
+	font-weight: 600;
+	font-style: normal;
 }
 @font-face {
-	font-family: "SERIF i";
-	src: local("Source Serif Pro Italic");
+	font-family: "SERIF";
+	src: local("Source Serif Pro Semibold Italic");
+	font-weight: 600;
+	font-style: italic;
+}
+@font-face {
+	font-family: "SERIF";
+	src: local("Source Serif Pro Bold");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "SERIF";
+	src: local("Source Serif Pro Bold Italic");
+	font-weight: 700;
+	font-style: italic;
 }
 @font-face {
 	font-family: "CODE";
@@ -76,7 +98,7 @@ html {
 	height: auto;
 	/* height: max-content; */
 	margin: 0 auto;
-	background-color: red;
+	/* background-color: red; */
 	position: relative;
 	top: 0;
 }
@@ -87,23 +109,66 @@ html {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: rgb(232, 226, 220);
+	/* background-color: rgb(232, 226, 220); */
 }
 #page {
 	height: 100%;
 	display: inline-block;
-	background-color: yellow;
+	/* background-color: yellow; */
 	position: relative;
 	top: 0;
 }
 
-#mainTitle {
+#mainTitleArea {
 	/* padding: 20px 0; */
 	height: 20rem;
+	width: 57rem;
 	display: inline-block;
 	position: absolute;
 	top: 0;
-	background-color: orange;
+	margin-left: 21rem;
+	/* background-color: orange; */
+}
+#index {
+	display: inline-block;
+	position: absolute;
+	left: -13rem;
+	top: 8rem;
+	width: 10rem;
+	text-align: right;
+	z-index: 5;
+	font-family: "SERIF", "Source Serif Pro";
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+#decoLine{
+	display: inline-block;
+	position: absolute;
+	width: 10px;
+	height: 140px;
+	background-color: black;
+}
+#title{
+	display: inline-block;
+	position: absolute;
+	/* left: -13rem; */
+	top: 7.5rem;
+	width: 36rem;
+}
+#timeAuthorRevision {
+	display: inline-block;
+	position: absolute;
+	width: 18rem;
+	left: 39rem;
+	top: 8rem;
+	font-size: 0.75rem;
+	font-family: "HEI", "Noto Sans SC", sans-serif;
+	line-height: 1.5rem;
+}
+li::marker{
+	content: "";
+	display: none !important;
+	visibility: hidden !important;
 }
 #menuContainer {
 	padding: 20px;
@@ -112,14 +177,14 @@ html {
 	position: sticky;
 	top: 0;
 	left: 0;
-	background-color: green;
+	/* background-color: green; */
 }
 #menuList {
 	display: block;
 	position: absolute;
 	top: 420px;
 	left: 0;
-	background-color: darkgrey;
+	/* background-color: darkgrey; */
 }
 #mainContent {
 	padding: 4rem 0;
@@ -127,14 +192,14 @@ html {
 	height: auto;
 	position: relative;
 	top: 0px;
-	background-color: blueviolet;
+	/* background-color: blueviolet; */
 }
 article {
 	display: block;
 	height: auto;
 	position: relative;
 	top: 0;
-	background-color: beige;
+	/* background-color: beige; */
 	line-height: 1.85rem;
 }
 .sideNote {
@@ -147,7 +212,7 @@ article {
 	line-height: 1.4rem;
 	/* white-space: break-spaces; */
 }
-.sideNoteIndex {
+.tabulation {
 	white-space: break-spaces;
 }
 /* h-char.bd-jiya.bd-open:before,
@@ -162,12 +227,14 @@ h-cs[hidden] {
 }
 h1 {
 	font-family: "SONG", "Noto Serif SC";
-	font-size: 2.4rem;
-	line-height: 3.6rem;
-	margin-top: 8rem;
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 4rem;
+	/* margin-top: 8rem; */
 }
 h2 {
 	font-family: "SONG", "Noto Serif SC";
+	font-weight: 700;
 	font-size: 1.8rem;
 	line-height: 2.6rem;
 	text-align: center;
@@ -175,6 +242,7 @@ h2 {
 }
 h3 {
 	font-family: "SONG", "Noto Serif SC";
+	font-weight: 700;
 	font-size: 1.4rem;
 	line-height: 2rem;
 	text-align: center;
