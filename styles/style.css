@@ -168,10 +168,13 @@ left: 1.5rem;
 	font-family: "HEI", "Noto Sans SC", sans-serif;
 	line-height: 1.5rem;
 }
+li{
+	list-style-type: none;
+}
 li::marker{
 	content: "";
 	display: none !important;
-	visibility: hidden !important;
+	/* visibility: hidden !important; */
 }
 #menuContainer {
 	padding: 20px;
