@@ -147,13 +147,16 @@ html {
 	width: 10px;
 	height: 140px;
 	background-color: black;
+	top: 8rem;
+left: 1.5rem;
 }
 #title{
 	display: inline-block;
 	position: absolute;
 	/* left: -13rem; */
-	top: 7.5rem;
+	top: 7.25rem;
 	width: 36rem;
+	padding-left: 3rem;
 }
 #timeAuthorRevision {
 	display: inline-block;
@@ -235,15 +238,15 @@ h1 {
 h2 {
 	font-family: "SONG", "Noto Serif SC";
 	font-weight: 700;
-	font-size: 1.8rem;
-	line-height: 2.6rem;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
 	text-align: center;
 	margin: 5rem auto 3rem auto;
 }
 h3 {
 	font-family: "SONG", "Noto Serif SC";
 	font-weight: 700;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	line-height: 2rem;
 	text-align: center;
 	margin: 4rem auto 2rem auto;
