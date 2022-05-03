@@ -77,7 +77,7 @@ html {
 	tab-size: 3rem;
 	text-justify: auto;
 	text-rendering: geometricPrecision;
-	background-color: rgb(245, 245, 230);
+	background-color: rgb(250, 250, 245);
 	/* -webkit-text-size-adjust: none; */
 	font-synthesis: none;
 }
@@ -111,6 +111,9 @@ html {
 	left: 0;
 	/* background-color: rgb(232, 226, 220); */
 }
+#logo-50px {
+	width: 40px;
+}
 #page {
 	height: 100%;
 	display: inline-block;
@@ -127,13 +130,14 @@ html {
 	position: absolute;
 	top: 0;
 	margin-left: 21rem;
+	z-index: 4;
 	/* background-color: orange; */
 }
 #index {
 	display: inline-block;
 	position: absolute;
 	left: -10rem;
-	top: 8rem;
+	top: 7.75rem;
 	width: 10rem;
 	text-align: right;
 	z-index: 5;
@@ -141,16 +145,16 @@ html {
 	font-weight: 600;
 	font-size: 1.5rem;
 }
-#decoLine{
+#decoLine {
 	display: inline-block;
 	position: absolute;
-	width: 10px;
+	width: 9px;
 	height: 140px;
 	background-color: black;
 	top: 8rem;
-left: 1.5rem;
+	left: 1.4rem;
 }
-#title{
+#title {
 	display: inline-block;
 	position: absolute;
 	/* left: -13rem; */
@@ -163,22 +167,23 @@ left: 1.5rem;
 	position: absolute;
 	width: 18rem;
 	left: 39rem;
-	top: 8rem;
+	top: 7.75rem;
 	font-size: 0.75rem;
 	font-family: "HEI", "Noto Sans SC", sans-serif;
 	line-height: 1.5rem;
 }
-li{
+li {
 	list-style-type: none;
 }
-li::marker{
+li::marker {
 	content: "";
 	display: none !important;
 	/* visibility: hidden !important; */
 }
 #toc-Container {
-	padding: 20px;
+	/* padding: 20px; */
 	height: 400px;
+	width: 18rem;
 	display: block;
 	position: sticky;
 	top: 0;
@@ -189,9 +194,9 @@ li::marker{
 	display: block;
 	position: absolute;
 	width: 18rem;
-	top: 420px;
+	top: 425px;
 	left: 0;
-	color: rgb(115, 104, 72);
+	color: rgb(188, 168, 139);
 	opacity: 0.2;
 	transition-property: all;
 	transition-timing-function: ease-in-out;
@@ -205,7 +210,7 @@ li::marker{
 	transition-duration: 100ms;
 	/* background-color: darkgrey; */
 }
-#tableOfContent li{
+#tableOfContent li {
 	margin: 1rem 0;
 	font-family: "SONG", "Noto Serif SC";
 	font-weight: 700;
@@ -213,16 +218,14 @@ li::marker{
 	line-height: 1.5rem;
 }
 #mainContent {
-	padding: 4rem 0;
+	padding: 2rem 0;
 	display: block;
 	height: auto;
 	position: relative;
 	top: 0px;
 	/* background-color: blueviolet; */
 }
-#logo-50px{
-	width: 50px;
-}
+
 article {
 	display: block;
 	height: auto;
