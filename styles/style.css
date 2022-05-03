@@ -1,3 +1,8 @@
+:root{
+	--colour-iden-1:rgb(188, 168, 139);
+	--colour-iden-2:rgb(207, 193, 172);
+}
+
 @font-face {
 	font-family: "HEI";
 	src: local("Source Han Sans SC"), local("Noto Sans SC");
@@ -54,6 +59,7 @@
 	src: local("Source Code Pro Medium Italic");
 	font-style: italic;
 }
+
 /* 
 @font-face {
 	font-family: "SERIF-d";
@@ -136,14 +142,15 @@ html {
 #index {
 	display: inline-block;
 	position: absolute;
-	left: -10rem;
-	top: 7.75rem;
+	left: -13rem;
+	top: 8rem;
 	width: 10rem;
 	text-align: right;
 	z-index: 5;
 	font-family: "SERIF", "Source Serif Pro";
 	font-weight: 600;
 	font-size: 1.5rem;
+	line-height: 2rem;
 }
 #decoLine {
 	display: inline-block;
@@ -153,21 +160,23 @@ html {
 	background-color: black;
 	top: 8rem;
 	left: 1.4rem;
+	visibility: hidden;
 }
 #title {
 	display: inline-block;
 	position: absolute;
 	/* left: -13rem; */
-	top: 7.25rem;
-	width: 36rem;
-	padding-left: 3rem;
+	top: 8rem;
+	width: auto;
+	/* border-bottom: var(--colour-iden) solid 6px; */
+	/* padding-bottom: 0.75rem; */
 }
 #timeAuthorRevision {
 	display: inline-block;
 	position: absolute;
 	width: 18rem;
 	left: 39rem;
-	top: 7.75rem;
+	top: 8rem;
 	font-size: 0.75rem;
 	font-family: "HEI", "Noto Sans SC", sans-serif;
 	line-height: 1.5rem;
@@ -196,7 +205,7 @@ li::marker {
 	width: 18rem;
 	top: 425px;
 	left: 0;
-	color: rgb(188, 168, 139);
+	color: var(--colour-iden-1);
 	opacity: 0.2;
 	transition-property: all;
 	transition-timing-function: ease-in-out;
@@ -261,8 +270,18 @@ h1 {
 	font-family: "SONG", "Noto Serif SC";
 	font-weight: 700;
 	font-size: 3rem;
-	line-height: 4rem;
+	line-height: 3rem;
+	/* text-decoration-line: underline;
+	text-decoration-color: var(--colour-iden);
+	text-decoration-style: solid; */
 	/* margin-top: 8rem; */
+}
+h1 div{
+	box-shadow: inset 0em -0.15em var(--colour-iden-2);
+	height: 3.25rem;
+	width: fit-content;
+	display: block;
+	margin-bottom: 0.75rem;
 }
 h2 {
 	font-family: "SONG", "Noto Serif SC";
