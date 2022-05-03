@@ -77,7 +77,7 @@ html {
 	tab-size: 3rem;
 	text-justify: auto;
 	text-rendering: geometricPrecision;
-	background-color: rgb(240, 238, 235);
+	background-color: rgb(245, 245, 230);
 	/* -webkit-text-size-adjust: none; */
 	font-synthesis: none;
 }
@@ -132,7 +132,7 @@ html {
 #index {
 	display: inline-block;
 	position: absolute;
-	left: -13rem;
+	left: -10rem;
 	top: 8rem;
 	width: 10rem;
 	text-align: right;
@@ -176,7 +176,7 @@ li::marker{
 	display: none !important;
 	/* visibility: hidden !important; */
 }
-#menuContainer {
+#toc-Container {
 	padding: 20px;
 	height: 400px;
 	display: block;
@@ -185,12 +185,32 @@ li::marker{
 	left: 0;
 	/* background-color: green; */
 }
-#menuList {
+#tableOfContent {
 	display: block;
 	position: absolute;
+	width: 18rem;
 	top: 420px;
 	left: 0;
+	color: rgb(115, 104, 72);
+	opacity: 0.2;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	transition-duration: 100ms;
 	/* background-color: darkgrey; */
+}
+#tableOfContent:hover {
+	opacity: 1;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	transition-duration: 100ms;
+	/* background-color: darkgrey; */
+}
+#tableOfContent li{
+	margin: 1rem 0;
+	font-family: "SONG", "Noto Serif SC";
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.5rem;
 }
 #mainContent {
 	padding: 4rem 0;
@@ -199,6 +219,9 @@ li::marker{
 	position: relative;
 	top: 0px;
 	/* background-color: blueviolet; */
+}
+#logo-50px{
+	width: 50px;
 }
 article {
 	display: block;
@@ -292,11 +315,11 @@ kbd {
 	font-style: italic;
 	font-size: 1em;
 }
-img {
+/* img {
 	display: block;
 	margin: 0 auto;
 	width: 500px;
-}
+} */
 /* 间隔号· */
 .JianGeHao {
 	font-size: 0.7rem;
@@ -314,8 +337,8 @@ img {
 /* 一字线—半字线– */
 .YiZiXian,
 .BanZiXian {
-	line-height: 0.5rem;
-	vertical-align: 0.1rem;
+	line-height: 0.5em;
+	vertical-align: 0.1em;
 	/* transform: translateY(1rem); */
 	/* margin: -0.5rem 0; */
 }
