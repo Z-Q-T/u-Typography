@@ -5,7 +5,13 @@
 
 @font-face {
 	font-family: "HEI";
-	src: local("Source Han Sans SC"), local("Noto Sans SC");
+	src: local("Source Han Sans SC Regular"), local("Noto Sans SC Regular");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "HEI";
+	src: local("Source Han Sans SC Medium"), local("Noto Sans SC Medium");
+	font-weight: 500;
 }
 @font-face {
 	font-family: "SONG";
@@ -120,38 +126,62 @@ html {
 #logo-50px {
 	width: 40px;
 }
-#changeTypefaceMenuButton {
+#changeTypefaceMenu-Button {
 	width: 40px;
-	height: 60px;
+	height: 50px;
 	position: fixed;
 	bottom: 50px;
 	left: 15px;
 }
-#changeTypefaceMenuButtonSVG {
-	width: 6px;
+#changeTypefaceMenu-ButtonSVG {
+	width: 4px;
 	fill: var(--colour-iden-2);
 	position: relative;
-	left: 17px;
-	top: 15px;
+	left: 18px;
+	top: 6px;
 }
 #changeTypefaceMenu {
 	width: 50px;
-	height: 200px;
-	background-color: black;
+	height: 300px;
+	background-color: var(--colour-iden-2);
 	position: fixed;
 	left: 10px;
 	bottom: 60px;
 	border-radius: 25px;
 	display: block;
 	visibility: hidden;
+	opacity: 0;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	transition-duration: 100ms;
+	font-size: 0.75rem;
+	text-align: center;
+	line-height: 1rem;
 }
-#changeTypefaceMenuButton:hover + #changeTypefaceMenu {
+#changeTypefaceMenu-Button:hover + #changeTypefaceMenu {
 	/* display: block; */
 	visibility: visible;
+	opacity: 1;
 	transition-property: all;
+	transition-timing-function: ease-in-out;
+	transition-duration: 100ms;
 }
 #changeTypefaceMenu:hover{
 	visibility: visible;
+	opacity: 1;
+}
+.changeTypefaceMenu-Section{
+	margin: 0.5rem auto;
+}
+.changeTypefaceMenu-SONG{
+	margin: 0.5rem auto;
+	width: 20px;
+	height: 20px;
+}
+.changeTypefaceMenu-HEI{
+	margin: 0.5rem auto;
+	width: 20px;
+	height: 20px;
 }
 /* #changeTypefaceMenu:target{
 	display: block;
