@@ -11,10 +11,13 @@
 #mainTitleArea {
 	background-color: orange;
 }
-#menuContainer {
+#toc-PlaceHolder{
+	background-color: darkcyan;
+}
+#toc-Container {
 	background-color: green;
 }
-#menuList {
+#tableOfContent {
 	background-color: darkgrey;
 }
 #mainContent {

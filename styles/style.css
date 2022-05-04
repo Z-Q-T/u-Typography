@@ -120,6 +120,16 @@ html {
 #logo-50px {
 	width: 40px;
 }
+#pageTypography{
+	width: 40px;
+	font-family: "SERIF", "Source Serif Pro";
+	font-weight: 600;
+	font-size: 0.75rem;
+	text-align: center;
+	position: fixed;
+	bottom: 10px;
+	left: 15px;
+}
 #page {
 	height: 100%;
 	display: inline-block;
@@ -189,9 +199,17 @@ li::marker {
 	display: none !important;
 	/* visibility: hidden !important; */
 }
+#toc-PlaceHolder{
+	height: 300px;
+	width: 18rem;
+	display: block;
+	position: sticky;
+	top: 0;
+	left: 0;
+}
 #toc-Container {
 	/* padding: 20px; */
-	height: 400px;
+	height: 100px;
 	width: 18rem;
 	display: block;
 	position: sticky;
@@ -203,7 +221,7 @@ li::marker {
 	display: block;
 	position: absolute;
 	width: 18rem;
-	top: 425px;
+	top: 125px;
 	left: 0;
 	color: var(--colour-iden-1);
 	opacity: 0.2;
