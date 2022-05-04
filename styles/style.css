@@ -1,6 +1,6 @@
-:root{
-	--colour-iden-1:rgb(188, 168, 139);
-	--colour-iden-2:rgb(207, 193, 172);
+:root {
+	--colour-iden-1: rgb(188, 168, 139);
+	--colour-iden-2: rgb(207, 193, 172);
 }
 
 @font-face {
@@ -120,7 +120,43 @@ html {
 #logo-50px {
 	width: 40px;
 }
-#pageTypography{
+#changeTypefaceMenuButton {
+	width: 40px;
+	height: 60px;
+	position: fixed;
+	bottom: 50px;
+	left: 15px;
+}
+#changeTypefaceMenuButtonSVG {
+	width: 6px;
+	fill: var(--colour-iden-2);
+	position: relative;
+	left: 17px;
+	top: 15px;
+}
+#changeTypefaceMenu {
+	width: 50px;
+	height: 200px;
+	background-color: black;
+	position: fixed;
+	left: 10px;
+	bottom: 60px;
+	border-radius: 25px;
+	display: block;
+	visibility: hidden;
+}
+#changeTypefaceMenuButton:hover + #changeTypefaceMenu {
+	/* display: block; */
+	visibility: visible;
+	transition-property: all;
+}
+#changeTypefaceMenu:hover{
+	visibility: visible;
+}
+/* #changeTypefaceMenu:target{
+	display: block;
+} */
+#pageTypography {
 	width: 40px;
 	font-family: "SERIF", "Source Serif Pro";
 	font-weight: 600;
@@ -199,7 +235,7 @@ li::marker {
 	display: none !important;
 	/* visibility: hidden !important; */
 }
-#toc-PlaceHolder{
+#toc-PlaceHolder {
 	height: 300px;
 	width: 18rem;
 	display: block;
@@ -294,7 +330,7 @@ h1 {
 	text-decoration-style: solid; */
 	/* margin-top: 8rem; */
 }
-h1 div{
+h1 div {
 	box-shadow: inset 0em -0.15em var(--colour-iden-2);
 	height: 3.25rem;
 	width: fit-content;
