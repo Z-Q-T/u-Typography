@@ -25,7 +25,7 @@
 /* 标点黑体 */
 @font-face{
 	font-family: "HEI BiaoDian";
-	src:local("Source Han Sans SC Regular"), local("Noto Sans SC Regular");
+	src:local("Source Han Sans SC"), local("Noto Sans SC");
 	font-weight: 400;
 }
 /* 宋体 */
