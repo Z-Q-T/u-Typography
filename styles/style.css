@@ -1,22 +1,32 @@
 :root {
 	--colour-paper: rgb(250, 250, 245);
-	--colour-changeType-inactive:rgb(70, 70, 70);
+	--colour-changeType-inactive: rgb(70, 70, 70);
 	--colour-changeType-active: rgb(190, 176, 156);
 	--colour-changeType-hover: rgb(123, 117, 106);
 	--colour-iden-1: rgb(174, 157, 133);
 	--colour-iden-2: rgb(207, 193, 172);
 	--colour-iden-3: rgb(239, 235, 229);
+	/* --font-ZhengWen-HEI: "HYQiHei 60S", "HYQiHei 55S", "HarmonyOS Sans SC", "HarmonyOS Sans SC Medium", "Source Han Sans SC","Noto Sans SC","FZYouHei_GBK 509R", sans-serif; */
 }
 /* 黑体 */
+
+/* 正文黑体 */
 @font-face {
 	font-family: "HEI";
-	src: local("Source Han Sans SC Regular"), local("Noto Sans SC Regular");
+	src: local("HYQiHei-600S Regular"), local("HYQiHei-55S Book"), local("HarmonyOS Sans SC"), local("MiSans Regular"), local("Source Han Sans SC Regular"), local("Noto Sans SC Regular");
 	font-weight: 400;
 }
+/* 标题黑体 */
 @font-face {
 	font-family: "HEI";
-	src: local("Source Han Sans SC Medium"), local("Noto Sans SC Medium");
+	src: local("HYQiHei-70S DemiBold"), local("HYQiHei-65S Medium"), local("HarmonyOS Sans SC Medium"),local("Source Han Sans SC Medium"), local("Noto Sans SC Medium"),local("FZYouHei_GBK 509R");
 	font-weight: 500;
+}
+/* 标点黑体 */
+@font-face{
+	font-family: "HEI BiaoDian";
+	src:local("Source Han Sans SC Regular"), local("Noto Sans SC Regular");
+	font-weight: 400;
 }
 /* 宋体 */
 @font-face {
@@ -195,6 +205,7 @@ html {
 	font-size: 0.6rem;
 	text-align: center;
 	line-height: 0.75rem;
+	box-shadow: 0px 0px 10px var(--colour-iden-1);
 }
 #changeTypeMenu-Button:hover + #changeTypeMenu {
 	/* display: block; */
@@ -213,7 +224,7 @@ html {
 	line-height: 1.5em;
 	color: rgb(208, 208, 208);
 }
-.changeTypeMenu-seperator{
+.changeTypeMenu-seperator {
 	width: 20px;
 	height: 1px;
 	background-color: rgb(114, 114, 114);
@@ -441,9 +452,15 @@ h-cs[hidden] {
   font-family: "Hei","Noto Sans SC", sans-serif;
 } */
 
-.lorem {
-	padding: 10px;
+/* 标点符号定死用思源黑体 */
+h-char.bd-jiya.bd-open > h-inner,
+h-char.bd-jiya.bd-close > h-inner,
+h-char.bd-jiya.bd-cop > h-inner,
+h-char.bd-jiya[unicode="ff0e"] > h-inner {
+	font-family: "HEI BiaoDian", "Noto Sans SC";
+	font-weight: 400;
 }
+
 h1 {
 	font-family: "SONG", "Noto Serif SC";
 	font-weight: 700;
@@ -478,6 +495,7 @@ h3 {
 	margin: 4rem auto 2rem auto;
 }
 p {
+	/* font-family: var(--font-ZhengWen-HEI); */
 	text-align: justify;
 	text-indent: 3rem;
 	line-height: 2rem;
