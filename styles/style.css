@@ -6,7 +6,7 @@
 	--colour-iden-2: rgb(207, 193, 172);
 	--colour-iden-3: rgb(239, 235, 229);
 }
-
+/* 黑体 */
 @font-face {
 	font-family: "HEI";
 	src: local("Source Han Sans SC Regular"), local("Noto Sans SC Regular");
@@ -17,6 +17,7 @@
 	src: local("Source Han Sans SC Medium"), local("Noto Sans SC Medium");
 	font-weight: 500;
 }
+/* 宋体 */
 @font-face {
 	font-family: "SONG";
 	src: local("Source Han Serif SC Semibold"), local("Noto Serif SC Semibold");
@@ -27,13 +28,43 @@
 	src: local("Source Han Serif SC Bold"), local("Noto Serif SC Bold");
 	font-weight: 700;
 }
+/* 无衬线体 */
 @font-face {
 	font-family: "SANS";
 	src: local("Source Sans Pro");
+	font-weight: 400;
+	font-style: normal;
 }
 @font-face {
-	font-family: "SANS i";
+	font-family: "SANS";
 	src: local("Source Sans Pro Italic");
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: "SANS";
+	src: local("Source Sans Pro Semibold");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: "SANS";
+	src: local("Source Sans Pro Semibold Italic");
+	font-weight: 600;
+	font-style: italic;
+}
+/* 衬线体 */
+@font-face {
+	font-family: "SERIF";
+	src: local("Source Serif Pro");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "SERIF";
+	src: local("Source Serif Pro Italic");
+	font-weight: 400;
+	font-style: italic;
 }
 @font-face {
 	font-family: "SERIF";
@@ -59,6 +90,7 @@
 	font-weight: 700;
 	font-style: italic;
 }
+/* 代码等宽体 */
 @font-face {
 	font-family: "CODE";
 	src: local("Source Code Pro Medium");
@@ -216,18 +248,18 @@ html {
 #changeTypeMenu-ZhengWen-HEI:hover,
 #changeTypeMenu-BianZhu-SONG:hover,
 #changeTypeMenu-BianZhu-HEI:hover {
-	background-color: var(--colour-changeType-hover)!important;
+	background-color: var(--colour-changeType-hover) !important;
 }
 .changeTypeMenu-Section a {
 	text-decoration: none;
 	/* text-decoration-color:black; */
 	color: black;
 }
-#changeTypeMenu-BiaoTi-SONG,
+/* #changeTypeMenu-BiaoTi-SONG,
 #changeTypeMenu-ZhengWen-HEI,
 #changeTypeMenu-BianZhu-HEI {
 	background-color: var(--colour-changeType-active);
-}
+} */
 
 /* #changeTypeMenu:target{
 	display: block;
@@ -496,11 +528,15 @@ kbd {
 }
 /* 拉丁文本 */
 .Latin {
-	font-family: "Source Sans Pro";
+	font-family: "SANS", "Source Sans Pro";
+	font-weight: 400;
 	hyphens: auto;
+	font-size: 1.1em;
+	line-height: 1em;
 	/* text-justify: inter-word; */
 	/* 西文齐行往词间插入间距 */
 }
+
 /* 中西文之间插入四分空 */
 h-hws:before,
 h-hws[hidden]:before {
