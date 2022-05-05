@@ -13,19 +13,23 @@
 /* 正文黑体 */
 @font-face {
 	font-family: "HEI";
-	src: local("HYQiHei-600S Regular"), local("HYQiHei-55S Book"), local("HarmonyOS Sans SC"), local("MiSans Regular"), local("Source Han Sans SC Regular"), local("Noto Sans SC Regular");
+	src: local("HYQiHei-60S Regular"), local("HYQiHei-55S Book"),
+		local("HarmonyOS Sans SC"), local("MiSans Regular"),
+		local("Source Han Sans SC Regular"), local("Noto Sans SC Regular");
 	font-weight: 400;
 }
 /* 标题黑体 */
 @font-face {
 	font-family: "HEI";
-	src: local("HYQiHei-70S DemiBold"), local("HYQiHei-65S Medium"), local("HarmonyOS Sans SC Medium"),local("Source Han Sans SC Medium"), local("Noto Sans SC Medium"),local("FZYouHei_GBK 509R");
+	src: local("HYQiHei-70S DemiBold"), local("HYQiHei-65S Medium"),
+		local("HarmonyOS Sans SC Medium"), local("Source Han Sans SC Medium"),
+		local("Noto Sans SC Medium"), local("FZYouHei_GBK 509R");
 	font-weight: 500;
 }
 /* 标点黑体 */
-@font-face{
+@font-face {
 	font-family: "HEI BiaoDian";
-	src:local("Source Han Sans SC"), local("Noto Sans SC");
+	src: local("Source Han Sans SC"), local("Noto Sans SC");
 	font-weight: 400;
 }
 /* 宋体 */
