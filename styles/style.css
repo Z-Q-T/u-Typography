@@ -13,9 +13,7 @@
 /* 正文黑体 */
 @font-face {
 	font-family: "HEI";
-	src: local("HYQiHei-60S Regular"), local("HYQiHei-55S Book"),
-		local("HarmonyOS Sans SC"), local("MiSans Regular"),
-		local("Source Han Sans SC Regular"), local("Noto Sans SC Regular");
+	src: local("HYQiHei-55S Book"),local("HYQiHei-60S Regular"), local("HarmonyOS Sans SC"), local("MiSans Regular"), local("Source Han Sans SC Regular"), local("Noto Sans SC Regular");
 	font-weight: 400;
 }
 /* 标题黑体 */

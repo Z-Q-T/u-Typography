@@ -2574,7 +2574,7 @@ void function (global, factory) {
         ret = div.firstChild.offsetWidth !== div.lastChild.offsetWidth
         $.remove(div)
         return ret
-    }
+    }//不知道是什么东西，但它在请求字体，耗流量，把它禁了试试
 
     function insertHangableCS($jinze) {
         var $cs = $jinze.nextSibling
@@ -2589,7 +2589,7 @@ void function (global, factory) {
         }
     }
 
-    Han.support['han-space'] = detectSpaceFont()
+    Han.support['han-space'] = detectSpaceFont()//不知道是什么东西，但它在请求字体，耗流量，把它禁了试试
 
     $.extend(Han, {
         detectSpaceFont: detectSpaceFont,
@@ -2637,7 +2637,7 @@ void function (global, factory) {
                 )
             return finder
         }
-    })
+    })//不知道是什么东西，但它在请求字体，耗流量，把它禁了试试
 
     $.extend(Han.fn, {
         renderHanging: function () {
