@@ -1,7 +1,8 @@
 :root {
 	--colour-paper: rgb(250, 250, 245);
+	--colour-changeType-inactive:rgb(70, 70, 70);
 	--colour-changeType-active: rgb(190, 176, 156);
-	--colour-changeType-hover: rgb(221, 215, 204);
+	--colour-changeType-hover: rgb(123, 117, 106);
 	--colour-iden-1: rgb(174, 157, 133);
 	--colour-iden-2: rgb(207, 193, 172);
 	--colour-iden-3: rgb(239, 235, 229);
@@ -178,20 +179,20 @@ html {
 }
 #changeTypeMenu {
 	width: 40px;
-	height: 400px;
+	height: 407px;
 	background-color: black;
 	position: fixed;
 	left: 15px;
 	bottom: 60px;
 	border-radius: 20px;
-	padding-top: 0.5rem;
+	padding-top: 6px;
 	display: block;
-	/* visibility: hidden; */
-	/* opacity: 0; */
+	visibility: hidden;
+	opacity: 0;
 	transition-property: all;
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
-	font-size: 0.75rem;
+	font-size: 0.6rem;
 	text-align: center;
 	line-height: 0.75rem;
 }
@@ -209,8 +210,14 @@ html {
 }
 .changeTypeMenu-Section {
 	margin: 1rem auto;
-	line-height: 2em;
-	color: rgb(177, 177, 177);
+	line-height: 1.5em;
+	color: rgb(208, 208, 208);
+}
+.changeTypeMenu-seperator{
+	width: 20px;
+	height: 1px;
+	background-color: rgb(114, 114, 114);
+	margin: 25px auto 0px;
 }
 #changeTypeMenu-BiaoTi-SONG,
 #changeTypeMenu-BiaoTi-HEI,
@@ -223,12 +230,16 @@ html {
 	width: 25px;
 	height: 25px;
 	border-radius: 12.5px;
-	background-color: var(--colour-paper);
+	background-color: var(--colour-changeType-inactive);
+	font-size: 0.75rem;
 	line-height: 1em;
 	text-align: center;
 	padding: 4px;
-	color: black;
+	color: white;
 	cursor: pointer;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	transition-duration: 100ms;
 }
 #changeTypeMenu-BiaoTi-SONG,
 #changeTypeMenu-ZhengWen-SONG,
@@ -249,6 +260,9 @@ html {
 #changeTypeMenu-BianZhu-SONG:hover,
 #changeTypeMenu-BianZhu-HEI:hover {
 	background-color: var(--colour-changeType-hover) !important;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	transition-duration: 100ms;
 }
 .changeTypeMenu-Section a {
 	text-decoration: none;
@@ -408,6 +422,8 @@ article {
 .sideNote {
 	display: inline-block;
 	text-indent: 0;
+	font-family: "HEI", "Noto Sans SC";
+	font-weight: 400;
 	position: absolute;
 	/* margin-left: 0; */
 	clear: both;
@@ -527,7 +543,14 @@ kbd {
 	/* margin: -0.5rem 0; */
 }
 /* 拉丁文本 */
-.Latin {
+.Latin-BiaoTi {
+	font-family: "SERIF", "Source Serif Pro";
+	font-weight: 600;
+	hyphens: auto;
+	font-size: 1.1em;
+	line-height: 1em;
+}
+.Latin-ZhengWen {
 	font-family: "SANS", "Source Sans Pro";
 	font-weight: 400;
 	hyphens: auto;
