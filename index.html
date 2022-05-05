@@ -59,11 +59,11 @@
                     <a id="changeTypeMenu-BiaoTi-HEI">黑
                     </a>
                 </div>
-                <div class="changeTypeMenu-Section">正文<div id="changeTypeMenu-ZhengWen-SONG"><a href="javascript:changefont_ZhengWen_SONG()">宋</a></div>
-                    <div id="changeTypeMenu-ZhengWen-HEI"><a href="javascript:changefont_ZhengWen_HEI()">黑</a></div>
+                <div class="changeTypeMenu-Section">正文<a id="changeTypeMenu-ZhengWen-SONG">宋</a>
+                    <a id="changeTypeMenu-ZhengWen-HEI">黑</a>
                 </div>
-                <div class="changeTypeMenu-Section">边注<div id="changeTypeMenu-BianZhu-SONG"><a href="javascript:changefont_BianZhu_SONG()">宋</a></div>
-                    <div id="changeTypeMenu-BianZhu-HEI"><a href="javascript:changefont_BianZhu_HEI()">黑</a></div>
+                <div class="changeTypeMenu-Section">边注<a id="changeTypeMenu-BianZhu-SONG">宋</a>
+                    <a id="changeTypeMenu-BianZhu-HEI">黑</a>
                 </div>
             </div>
             <!-- <img id="changeTypeMenu" src="images/三点-竖.svg" alt="更换字体｜change typeface"> -->
@@ -173,6 +173,7 @@
     <script src="scripts/script.js"></script>
     <script src="scripts/han.js"></script>
     <script>
+        changeTypeMenu_initialActive()
         Han(document.querySelector('.entry'))
             .renderJiya()
             .renderHWS()
