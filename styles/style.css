@@ -1,6 +1,7 @@
 :root {
 	--colour-paper: rgb(250, 250, 245);
-	--colour-changeType-Active: rgb(190, 176, 156);
+	--colour-changeType-active: rgb(190, 176, 156);
+	--colour-changeType-hover: rgb(221, 215, 204);
 	--colour-iden-1: rgb(174, 157, 133);
 	--colour-iden-2: rgb(207, 193, 172);
 	--colour-iden-3: rgb(239, 235, 229);
@@ -179,8 +180,13 @@ html {
 	line-height: 2em;
 	color: rgb(177, 177, 177);
 }
-.changeTypeMenu-SONG,
-.changeTypeMenu-HEI {
+#changeTypeMenu-BiaoTi-SONG,
+#changeTypeMenu-BiaoTi-HEI,
+#changeTypeMenu-ZhengWen-SONG,
+#changeTypeMenu-ZhengWen-HEI,
+#changeTypeMenu-BianZhu-SONG,
+#changeTypeMenu-BianZhu-HEI {
+	display: block;
 	margin: 0.5rem auto;
 	width: 25px;
 	height: 25px;
@@ -190,18 +196,27 @@ html {
 	text-align: center;
 	padding: 4px;
 	color: black;
+	cursor: pointer;
 }
-.changeTypeMenu-SONG {
+#changeTypeMenu-BiaoTi-SONG,
+#changeTypeMenu-ZhengWen-SONG,
+#changeTypeMenu-BianZhu-SONG {
 	font-family: "SONG", "Noto Serif SC";
 	font-weight: 600;
 }
-.changeTypeMenu-HEI {
+#changeTypeMenu-BiaoTi-HEI,
+#changeTypeMenu-ZhengWen-HEI,
+#changeTypeMenu-BianZhu-HEI {
 	font-family: "HEI", "Noto Sans SC";
 	font-weight: 400;
 }
-.changeTypeMenu-SONG:hover,
-.changeTypeMenu-HEI:hover {
-	background-color: rgb(221, 215, 204);
+#changeTypeMenu-BiaoTi-SONG:hover,
+#changeTypeMenu-BiaoTi-HEI:hover,
+#changeTypeMenu-ZhengWen-SONG:hover,
+#changeTypeMenu-ZhengWen-HEI:hover,
+#changeTypeMenu-BianZhu-SONG:hover,
+#changeTypeMenu-BianZhu-HEI:hover {
+	background-color: var(--colour-changeType-hover)!important;
 }
 .changeTypeMenu-Section a {
 	text-decoration: none;
@@ -211,7 +226,7 @@ html {
 #changeTypeMenu-BiaoTi-SONG,
 #changeTypeMenu-ZhengWen-HEI,
 #changeTypeMenu-BianZhu-HEI {
-	background-color: var(--colour-changeType-Active);
+	background-color: var(--colour-changeType-active);
 }
 
 /* #changeTypeMenu:target{
