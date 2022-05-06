@@ -57,13 +57,13 @@
 }
 /* 正文标点宋体 */
 @font-face {
-	font-family: "SONG";
+	font-family: "SONG-BiaoDian";
 	src: local("Source Han Serif SC Semibold"), local("Noto Serif SC Semibold"),local("Source Han Serif CN Semibold");
 	font-weight: 600;
 }
 /* 标题标点宋体 */
 @font-face {
-	font-family: "SONG";
+	font-family: "SONG-BiaoDian";
 	src: local("Source Han Serif SC Bold"), local("Noto Serif SC Bold"),local("Source Han Serif CN Bold");
 	font-weight: 700;
 }
@@ -186,6 +186,7 @@ html {
 	background-color: var(--colour-paper);
 	/* -webkit-text-size-adjust: none; */
 	font-synthesis: none;
+	/* vertical-align: bottom; */
 }
 
 *,
@@ -197,6 +198,7 @@ html {
 	margin: 0;
 	border: 0;
 	padding: 0;
+	/* vertical-align: inherit; */
 }
 
 /* 基本属性 */
@@ -499,14 +501,44 @@ h-cs[hidden] {
   font-family: "Hei","Noto Sans SC", sans-serif;
 } */
 
-/* 标点符号定死用思源黑体 */
+
+/* 标题标点符号用思源宋体 */
+h1 h-char.bd-jiya.bd-open > h-inner,
+h1 h-char.bd-jiya.bd-close > h-inner,
+h1 h-char.bd-jiya.bd-cop > h-inner,
+h1 h-char.bd-jiya[unicode="ff0e"] > h-inner {
+	font-family: "SONG-BiaoDian", "Noto Serif SC" !important;
+	font-weight: 700 !important;
+	line-height: 0.1em;
+}
+
+/* 正文标点符号用思源黑体 */
 h-char.bd-jiya.bd-open > h-inner,
 h-char.bd-jiya.bd-close > h-inner,
 h-char.bd-jiya.bd-cop > h-inner,
 h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-family: "HEI-BiaoDian", "Noto Sans SC";
 	font-weight: 400;
+	line-height: 0.1em;
 }
+/* 边注标点符号用思源黑体 */
+.sideNote h-char.bd-jiya.bd-open > h-inner,
+.sideNote h-char.bd-jiya.bd-close > h-inner,
+.sideNote h-char.bd-jiya.bd-cop > h-inner,
+.sideNote h-char.bd-jiya[unicode="ff0e"] > h-inner {
+	font-family: "HEI-BiaoDian", "Noto Sans SC" !important;
+	font-weight: 400 !important;
+	line-height: 0.1em;
+}
+/* 正文标点符号用思源宋体 */
+/* h-char.bd-jiya.bd-open > h-inner,
+h-char.bd-jiya.bd-close > h-inner,
+h-char.bd-jiya.bd-cop > h-inner,
+h-char.bd-jiya[unicode="ff0e"] > h-inner {
+	font-family: "SONG-BiaoDian", "Noto Serif SC";
+	font-weight: 600;
+} */
+
 
 h1 {
 	font-family: "SONG", "Noto Serif SC";
@@ -632,6 +664,7 @@ h-hws[hidden]:before {
 	font-family: "CODE", "Source Code Pro", monospace;
 	font-size: 1em;
 	letter-spacing: -0.35em;
+	line-height: 0.1em;
 }
 /* 标点挤压间距 */
 h-char.bd-jiya.bd-end:after,
@@ -641,7 +674,7 @@ h-cs[hidden] {
 	font-family: "CODE", "Source Code Pro", monospace;
 	font-size: 1em;
 	letter-spacing: -0.1em;
-	/* line-height: 1em; */
+	line-height: 0.1em;
 }
 /* h-hws,
 h-hws[hidden] {
