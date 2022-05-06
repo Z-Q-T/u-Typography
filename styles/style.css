@@ -8,102 +8,147 @@
 	--colour-iden-3: rgb(239, 235, 229);
 	/* --font-ZhengWen-HEI: "HYQiHei 60S", "HYQiHei 55S", "HarmonyOS Sans SC", "HarmonyOS Sans SC Medium", "Source Han Sans SC","Noto Sans SC","FZYouHei_GBK 509R", sans-serif; */
 }
-/* 黑体 */
+
+/* 下面字体的名称要按照 “full font name” 属性来写 */
+
+/* 【中文】 */
+
+
+/* ==黑体== */
 
 /* 正文黑体 */
 @font-face {
 	font-family: "HEI";
-	src: local("HYQiHei-55S Book"),local("HYQiHei-60S Regular"), local("HarmonyOS Sans SC"), local("MiSans Regular"), local("Source Han Sans SC Regular"), local("Noto Sans SC Regular");
+	src: local("HYQiHei-55S Book"),local("HYQiHei-60S Regular"), local("HarmonyOS Sans SC"), local("MiSans Regular"), local("Source Han Sans SC"), local("Noto Sans SC"), local("Source Han Sans CN");
 	font-weight: 400;
 }
 /* 标题黑体 */
 @font-face {
 	font-family: "HEI";
-	src: local("HYQiHei-70S DemiBold"), local("HYQiHei-65S Medium"),
-		local("HarmonyOS Sans SC Medium"), local("Source Han Sans SC Medium"),
-		local("Noto Sans SC Medium"), local("FZYouHei_GBK 509R");
+	src: local("HYQiHei-75S Bold"), local("HYQiHei-70S DemiBold"), local("HarmonyOS Sans SC Bold"), local("HarmonyOS Sans SC Medium"), local("MiSans Demibold"), local("MiSans Semibold"), local("Source Han Sans SC Medium"),local("Noto Sans SC Medium"), local("Source Han Sans CN Medium");
 	font-weight: 500;
 }
-/* 标点黑体 */
+/* 正文标点黑体 */
 @font-face {
-	font-family: "HEI BiaoDian";
-	src: local("Source Han Sans SC"), local("Noto Sans SC");
+	font-family: "HEI-BiaoDian";
+	src: local("Source Han Sans SC"), local("Noto Sans SC"), local("Source Han Sans CN");
 	font-weight: 400;
 }
-/* 宋体 */
+/* 标题标点黑体 */
+@font-face {
+	font-family: "HEI-BiaoDian";
+	src: local("Source Han Sans SC Medium"), local("Noto Sans SC Medium"), local("Source Han Sans CN Medium");
+	font-weight: 500;
+}
+
+/* ==宋体== */
+
+/* 正文宋体 */
 @font-face {
 	font-family: "SONG";
-	src: local("Source Han Serif SC Semibold"), local("Noto Serif SC Semibold");
+	src: local("Source Han Serif SC Semibold"), local("Noto Serif SC Semibold"),local("Source Han Serif CN Semibold"),local("FZYaSongGBK");
 	font-weight: 600;
 }
+/* 标题宋体 */
 @font-face {
 	font-family: "SONG";
-	src: local("Source Han Serif SC Bold"), local("Noto Serif SC Bold");
+	src: local("Source Han Serif SC Bold"), local("Noto Serif SC Bold"),local("Source Han Serif CN Bold"),local("FZYaSong-B-GBK"),local("FZYaSongGBK Bold");
 	font-weight: 700;
 }
-/* 无衬线体 */
+/* 正文标点宋体 */
+@font-face {
+	font-family: "SONG";
+	src: local("Source Han Serif SC Semibold"), local("Noto Serif SC Semibold"),local("Source Han Serif CN Semibold");
+	font-weight: 600;
+}
+/* 标题标点宋体 */
+@font-face {
+	font-family: "SONG";
+	src: local("Source Han Serif SC Bold"), local("Noto Serif SC Bold"),local("Source Han Serif CN Bold");
+	font-weight: 700;
+}
+
+
+/* 【西文】 */
+
+/* ==无衬线体== */
+
+/* 正文无衬线正体 */
 @font-face {
 	font-family: "SANS";
 	src: local("Source Sans Pro");
 	font-weight: 400;
 	font-style: normal;
 }
+/* 正文无衬线斜体 */
 @font-face {
 	font-family: "SANS";
 	src: local("Source Sans Pro Italic");
 	font-weight: 400;
 	font-style: italic;
 }
+/* 标题无衬线正体 */
 @font-face {
 	font-family: "SANS";
 	src: local("Source Sans Pro Semibold");
 	font-weight: 600;
 	font-style: normal;
 }
+/* 标题无衬线斜体 */
 @font-face {
 	font-family: "SANS";
 	src: local("Source Sans Pro Semibold Italic");
 	font-weight: 600;
 	font-style: italic;
 }
-/* 衬线体 */
+
+/* ==衬线体== */
+
+/* 正文衬线正体 */
 @font-face {
 	font-family: "SERIF";
 	src: local("Source Serif Pro");
 	font-weight: 400;
 	font-style: normal;
 }
+/* 正文衬线斜体 */
 @font-face {
 	font-family: "SERIF";
 	src: local("Source Serif Pro Italic");
 	font-weight: 400;
 	font-style: italic;
 }
+/* 标题衬线正体 */
 @font-face {
 	font-family: "SERIF";
 	src: local("Source Serif Pro Semibold");
 	font-weight: 600;
 	font-style: normal;
 }
+/* 标题衬线斜体 */
 @font-face {
 	font-family: "SERIF";
 	src: local("Source Serif Pro Semibold Italic");
 	font-weight: 600;
 	font-style: italic;
 }
+/* ？ */
 @font-face {
 	font-family: "SERIF";
 	src: local("Source Serif Pro Bold");
 	font-weight: 700;
 	font-style: normal;
 }
+/* ？ */
 @font-face {
 	font-family: "SERIF";
 	src: local("Source Serif Pro Bold Italic");
 	font-weight: 700;
 	font-style: italic;
 }
-/* 代码等宽体 */
+
+/* ==代码等宽体== */
+
 @font-face {
 	font-family: "CODE";
 	src: local("Source Code Pro Medium");
@@ -459,7 +504,7 @@ h-char.bd-jiya.bd-open > h-inner,
 h-char.bd-jiya.bd-close > h-inner,
 h-char.bd-jiya.bd-cop > h-inner,
 h-char.bd-jiya[unicode="ff0e"] > h-inner {
-	font-family: "HEI BiaoDian", "Noto Sans SC";
+	font-family: "HEI-BiaoDian", "Noto Sans SC";
 	font-weight: 400;
 }
 
