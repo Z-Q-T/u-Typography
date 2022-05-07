@@ -13,31 +13,39 @@
 
 /* 【中文】 */
 
-
 /* ==黑体== */
 
 /* 正文黑体 */
 @font-face {
 	font-family: "HEI";
-	src: local("HYQiHei-55S Book"),local("HYQiHei-60S Regular"), local("HarmonyOS Sans SC"), local("MiSans Regular"), local("Source Han Sans SC"), local("Noto Sans SC"), local("Source Han Sans CN");
+	src: local("HYQiHei-55S Book"), local("HYQiHei-60S Regular"),
+		local("HarmonyOS Sans SC"), local("MiSans Regular"),
+		local("Source Han Sans SC"), local("Noto Sans SC"),
+		local("Source Han Sans CN");
 	font-weight: 400;
 }
 /* 标题黑体 */
 @font-face {
 	font-family: "HEI";
-	src: local("HYQiHei-75S Bold"), local("HYQiHei-70S DemiBold"), local("HarmonyOS Sans SC Bold"), local("HarmonyOS Sans SC Medium"), local("MiSans Demibold"), local("MiSans Semibold"), local("Source Han Sans SC Medium"),local("Noto Sans SC Medium"), local("Source Han Sans CN Medium");
+	src: local("HYQiHei-75S Bold"), local("HYQiHei-70S DemiBold"),
+		local("HarmonyOS Sans SC Bold"), local("HarmonyOS Sans SC Medium"),
+		local("MiSans Demibold"), local("MiSans Semibold"),
+		local("Source Han Sans SC Medium"), local("Noto Sans SC Medium"),
+		local("Source Han Sans CN Medium");
 	font-weight: 500;
 }
 /* 正文标点黑体 */
 @font-face {
 	font-family: "HEI-BiaoDian";
-	src: local("Source Han Sans SC"), local("Noto Sans SC"), local("Source Han Sans CN");
+	src: local("Source Han Sans SC"), local("Noto Sans SC"),
+		local("Source Han Sans CN");
 	font-weight: 400;
 }
 /* 标题标点黑体 */
 @font-face {
 	font-family: "HEI-BiaoDian";
-	src: local("Source Han Sans SC Medium"), local("Noto Sans SC Medium"), local("Source Han Sans CN Medium");
+	src: local("Source Han Sans SC Medium"), local("Noto Sans SC Medium"),
+		local("Source Han Sans CN Medium");
 	font-weight: 500;
 }
 
@@ -46,28 +54,32 @@
 /* 正文宋体 */
 @font-face {
 	font-family: "SONG";
-	src: local("Source Han Serif SC Semibold"), local("Noto Serif SC Semibold"),local("Source Han Serif CN Semibold"),local("FZYaSongGBK");
+	src: local("Source Han Serif SC Semibold"), local("Noto Serif SC Semibold"),
+		local("Source Han Serif CN Semibold"), local("FZYaSongGBK");
 	font-weight: 600;
 }
 /* 标题宋体 */
 @font-face {
 	font-family: "SONG";
-	src: local("Source Han Serif SC Bold"), local("Noto Serif SC Bold"),local("Source Han Serif CN Bold"),local("FZYaSong-B-GBK"),local("FZYaSongGBK Bold");
+	src: local("Source Han Serif SC Bold"), local("Noto Serif SC Bold"),
+		local("Source Han Serif CN Bold"), local("FZYaSong-B-GBK"),
+		local("FZYaSongGBK Bold");
 	font-weight: 700;
 }
 /* 正文标点宋体 */
 @font-face {
 	font-family: "SONG-BiaoDian";
-	src: local("Source Han Serif SC Semibold"), local("Noto Serif SC Semibold"),local("Source Han Serif CN Semibold");
+	src: local("Source Han Serif SC Semibold"), local("Noto Serif SC Semibold"),
+		local("Source Han Serif CN Semibold");
 	font-weight: 600;
 }
 /* 标题标点宋体 */
 @font-face {
 	font-family: "SONG-BiaoDian";
-	src: local("Source Han Serif SC Bold"), local("Noto Serif SC Bold"),local("Source Han Serif CN Bold");
+	src: local("Source Han Serif SC Bold"), local("Noto Serif SC Bold"),
+		local("Source Han Serif CN Bold");
 	font-weight: 700;
 }
-
 
 /* 【西文】 */
 
@@ -378,7 +390,7 @@ html {
 	font-family: "SERIF", "Source Serif Pro";
 	font-weight: 600;
 	font-size: 1.5rem;
-	line-height: 2rem;
+	line-height: 1.5rem;
 }
 #decoLine {
 	display: inline-block;
@@ -398,6 +410,20 @@ html {
 	width: auto;
 	/* border-bottom: var(--colour-iden) solid 6px; */
 	/* padding-bottom: 0.75rem; */
+}
+/* .titleAdjust{
+	font-family: "HEI", "Noto Sans SC", sans-serif;
+} */
+
+h1 div {
+	box-shadow: inset 0em -0.15em var(--colour-iden-2);
+	font-family: "HEI", "Noto Sans SC", sans-serif;
+	font-size: 3rem;
+	line-height: 4rem;
+	height: 3rem;
+	width: fit-content;
+	display: block;
+	margin-bottom: 1rem;
 }
 #timeAuthorRevision {
 	display: inline-block;
@@ -501,7 +527,6 @@ h-cs[hidden] {
   font-family: "Hei","Noto Sans SC", sans-serif;
 } */
 
-
 /* 标题标点符号用思源宋体 */
 h1 h-char.bd-jiya.bd-open > h-inner,
 h1 h-char.bd-jiya.bd-close > h-inner,
@@ -513,10 +538,10 @@ h1 h-char.bd-jiya[unicode="ff0e"] > h-inner {
 }
 
 /* 正文标点符号用思源黑体 */
-h-char.bd-jiya.bd-open > h-inner,
-h-char.bd-jiya.bd-close > h-inner,
-h-char.bd-jiya.bd-cop > h-inner,
-h-char.bd-jiya[unicode="ff0e"] > h-inner {
+article h-char.bd-jiya.bd-open > h-inner,
+article h-char.bd-jiya.bd-close > h-inner,
+article h-char.bd-jiya.bd-cop > h-inner,
+article h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-family: "HEI-BiaoDian", "Noto Sans SC";
 	font-weight: 400;
 	line-height: 0.1em;
@@ -539,24 +564,21 @@ h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-weight: 600;
 } */
 
-
-h1 {
+h1 .titleLine {
 	font-family: "SONG", "Noto Serif SC";
 	font-weight: 700;
 	font-size: 3rem;
-	line-height: 3rem;
+	vertical-align: sub;
+	line-height: 4rem;
+	position: relative;
+	top: -20px;
 	/* text-decoration-line: underline;
 	text-decoration-color: var(--colour-iden);
 	text-decoration-style: solid; */
 	/* margin-top: 8rem; */
 }
-h1 div {
-	box-shadow: inset 0em -0.15em var(--colour-iden-2);
-	height: 3.25rem;
-	width: fit-content;
-	display: block;
-	margin-bottom: 0.75rem;
-}
+/* h1 div { */
+
 h2 {
 	font-family: "SONG", "Noto Serif SC";
 	font-weight: 700;

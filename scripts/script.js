@@ -20,7 +20,7 @@ function changeTypeMenu_switchColour(active, inactive) {
 
 // 标题换宋体
 document.getElementById('changeTypeMenu-BiaoTi-SONG').onclick = function changefont_BiaoTi_SONG() {
-    document.body.querySelectorAll("h1,h2,h3,#tableOfContent li").forEach((e) => {
+    document.body.querySelectorAll(".titleLine,h2,h3,#tableOfContent li").forEach((e) => {
         e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
         e.style.fontWeight = "700";
     });//换中文
@@ -29,12 +29,15 @@ document.getElementById('changeTypeMenu-BiaoTi-SONG').onclick = function changef
         e.style.fontWeight = "600";
         e.style.fontSize="1.1em";
     });//换西文
+    document.body.querySelectorAll("h1 h-char.bd-jiya.bd-open > h-inner, h1 h-char.bd-jiya.bd-close > h-inner, h1 h-char.bd-jiya.bd-cop > h-inner, h1 h-char.bd-jiya[unicode='ff0e'] > h-inner").forEach((e) => {
+        e.style.cssText = "font-family: 'SONG-BiaoDian', 'Noto Serif SC' !important; font-weight: 700 !important;";
+    });//换标点
 
     changeTypeMenu_switchColour("#changeTypeMenu-BiaoTi-SONG", "#changeTypeMenu-BiaoTi-HEI");
 }
 // 标题换黑体
 document.getElementById('changeTypeMenu-BiaoTi-HEI').onclick = function changefont_BiaoTi_HEI() {
-    document.body.querySelectorAll("h1,h2,h3,#tableOfContent li").forEach((e) => {
+    document.body.querySelectorAll(".titleLine,h2,h3,#tableOfContent li").forEach((e) => {
         e.style.fontFamily = "HEI" + "," + "Noto Sans SC";
         e.style.fontWeight = "500";
     });//换中文
@@ -43,6 +46,9 @@ document.getElementById('changeTypeMenu-BiaoTi-HEI').onclick = function changefo
         e.style.fontWeight = "600";
         e.style.fontSize="1em";
     });//换西文
+    document.body.querySelectorAll("h1 h-char.bd-jiya.bd-open > h-inner, h1 h-char.bd-jiya.bd-close > h-inner, h1 h-char.bd-jiya.bd-cop > h-inner, h1 h-char.bd-jiya[unicode='ff0e'] > h-inner").forEach((e) => {
+        e.style.cssText = "font-family: 'HEI-BiaoDian', 'Noto Sans SC' !important; font-weight: 500 !important;";
+    });//换标点
 
     changeTypeMenu_switchColour("#changeTypeMenu-BiaoTi-HEI", "#changeTypeMenu-BiaoTi-SONG");
 
@@ -58,7 +64,7 @@ document.getElementById('changeTypeMenu-ZhengWen-SONG').onclick = function chang
         e.style.fontWeight = "400";
         e.style.fontSize="1.05em";
     });//换西文
-    document.body.querySelectorAll("h-char.bd-jiya.bd-open > h-inner, h-char.bd-jiya.bd-close > h-inner, h-char.bd-jiya.bd-cop > h-inner, h-char.bd-jiya[unicode='ff0e'] > h-inner").forEach((e) => {
+    document.body.querySelectorAll("article h-char.bd-jiya.bd-open > h-inner, article h-char.bd-jiya.bd-close > h-inner, article h-char.bd-jiya.bd-cop > h-inner, article h-char.bd-jiya[unicode='ff0e'] > h-inner").forEach((e) => {
         e.style.fontFamily = "SONG-BiaoDian" + "," + "Noto Serif SC";
         e.style.fontWeight = "600";
     });//换标点
@@ -76,7 +82,7 @@ document.getElementById('changeTypeMenu-ZhengWen-HEI').onclick = function change
         e.style.fontWeight = "400";
         e.style.fontSize="1.1em";
     });//换西文
-    document.body.querySelectorAll("h-char.bd-jiya.bd-open > h-inner, h-char.bd-jiya.bd-close > h-inner, h-char.bd-jiya.bd-cop > h-inner, h-char.bd-jiya[unicode='ff0e'] > h-inner").forEach((e) => {
+    document.body.querySelectorAll("article h-char.bd-jiya.bd-open > h-inner, article h-char.bd-jiya.bd-close > h-inner, article h-char.bd-jiya.bd-cop > h-inner, article h-char.bd-jiya[unicode='ff0e'] > h-inner").forEach((e) => {
         e.style.fontFamily = "HEI-BiaoDian" + "," + "Noto Sans SC";
         e.style.fontWeight = "400";
     });//换标点
