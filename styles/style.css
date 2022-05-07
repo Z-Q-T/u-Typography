@@ -515,6 +515,7 @@ article {
 	clear: both;
 	font-size: 0.75rem;
 	line-height: 1.4rem;
+	color: rgb(46, 46, 46);
 	/* white-space: break-spaces; */
 }
 .tabulation {
@@ -666,7 +667,7 @@ kbd {
 	font-family: "SERIF", "Source Serif Pro";
 	font-weight: 600;
 	hyphens: auto;
-	font-size: 1.1em;
+	font-size: 1.05em;
 	line-height: 1em;
 }
 .Latin-ZhengWen {
@@ -677,6 +678,13 @@ kbd {
 	line-height: 1em;
 	/* text-justify: inter-word; */
 	/* 西文齐行往词间插入间距 */
+}
+.Latin-BianZhu{
+	font-family: "SANS", "Source Sans Pro";
+	font-weight: 400;
+	hyphens: auto;
+	font-size: 1.1em;
+	line-height: 1em;
 }
 
 /* 中西文之间插入四分空 */

@@ -27,7 +27,7 @@ document.getElementById('changeTypeMenu-BiaoTi-SONG').onclick = function changef
     document.body.querySelectorAll(".Latin-BiaoTi").forEach((e) => {
         e.style.fontFamily = "'SERIF'" + "," + "Source Serif Pro";
         e.style.fontWeight = "600";
-        e.style.fontSize="1.1em";
+        e.style.fontSize="1.05em";
     });//换西文
     document.body.querySelectorAll("h1 h-char.bd-jiya.bd-open > h-inner, h1 h-char.bd-jiya.bd-close > h-inner, h1 h-char.bd-jiya.bd-cop > h-inner, h1 h-char.bd-jiya[unicode='ff0e'] > h-inner").forEach((e) => {
         e.style.cssText = "font-family: 'SONG-BiaoDian', 'Noto Serif SC' !important; font-weight: 700 !important;";
@@ -44,7 +44,7 @@ document.getElementById('changeTypeMenu-BiaoTi-HEI').onclick = function changefo
     document.body.querySelectorAll(".Latin-BiaoTi").forEach((e) => {
         e.style.fontFamily = "SANS" + "," + "Source Sans Pro";
         e.style.fontWeight = "600";
-        e.style.fontSize="1em";
+        e.style.fontSize="1.1em";
     });//换西文
     document.body.querySelectorAll("h1 h-char.bd-jiya.bd-open > h-inner, h1 h-char.bd-jiya.bd-close > h-inner, h1 h-char.bd-jiya.bd-cop > h-inner, h1 h-char.bd-jiya[unicode='ff0e'] > h-inner").forEach((e) => {
         e.style.cssText = "font-family: 'HEI-BiaoDian', 'Noto Sans SC' !important; font-weight: 500 !important;";
