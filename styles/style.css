@@ -244,7 +244,7 @@ html {
 	border-radius: 20px;
 	background-color: rgb(174, 157, 133, 0);
 }
-#changeTypeMenu-Button:hover{
+#changeTypeMenu-Button:hover {
 	background-color: rgb(174, 157, 133, 0.2);
 	transition-property: all;
 	transition-timing-function: ease-in-out;
@@ -257,14 +257,25 @@ html {
 	left: 18px;
 	top: 4px;
 }
-#changeTypeMenu-Hint{
-	font-size: 0.6rem;
+#changeTypeMenu-Hint {
+	font-size: 0.5rem;
+	line-height: 0.6rem;
 	display: block;
-	position: absolute;
+	position: fixed;
+	bottom: 55px;
+	left: 65px;
 	visibility: hidden;
-
-	/* TODO */
+	opacity: 0;
+	width: 5rem;
+	color: rgb(145, 145, 145);
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	transition-duration: 300ms;
 }
+/* #changeTypeMenu-Hint-Title{
+	font-size: 0.6rem;
+	line-height: 0.6rem;
+} */
 #changeTypeMenu {
 	width: 40px;
 	height: 407px;
@@ -286,12 +297,12 @@ html {
 	line-height: 0.75rem;
 	box-shadow: 0px 0px 10px var(--colour-iden-1);
 }
-/* #changeTypeMenu-Button:hover + #changeTypeMenu {
+/* #changeTypeMenu-Button:hover + #changeTypeMenu-Hint {
 	visibility: visible;
 	opacity: 1;
 	transition-property: all;
 	transition-timing-function: ease-in-out;
-	transition-duration: 100ms;
+	transition-duration: 300ms;
 } */
 /* #changeTypeMenu:hover {
 	visibility: visible;
@@ -407,7 +418,7 @@ html {
 	font-family: "SERIF", "Source Serif Pro";
 	font-weight: 600;
 	font-size: 1.5rem;
-	line-height: 1.5rem;
+	line-height: 1em;
 }
 #decoLine {
 	display: inline-block;
@@ -424,7 +435,7 @@ html {
 	position: absolute;
 	/* left: -13rem; */
 	top: 8rem;
-	width: auto;
+	width: 36rem;
 	/* border-bottom: var(--colour-iden) solid 6px; */
 	/* padding-bottom: 0.75rem; */
 }
@@ -432,6 +443,7 @@ html {
 	font-family: "HEI", "Noto Sans SC", sans-serif;
 } */
 
+/* 这个是在开头弄一个思源黑体的零宽空格用来定位的 */
 h1 div {
 	box-shadow: inset 0em -0.15em var(--colour-iden-2);
 	font-family: "HEI", "Noto Sans SC", sans-serif;
@@ -450,7 +462,11 @@ h1 div {
 	top: 8rem;
 	font-size: 0.75rem;
 	font-family: "HEI", "Noto Sans SC", sans-serif;
-	line-height: 1.5rem;
+	line-height: 1.8em;
+}
+#timeAuthorRevision time{
+	font-family: "SANS", "Source Sans Pro";
+	font-weight: 400;
 }
 li {
 	list-style-type: none;
@@ -582,7 +598,7 @@ h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-weight: 600;
 } */
 
-#tryButton{
+#tryButton {
 	position: absolute;
 	top: 100px;
 	left: 100px;
@@ -591,7 +607,7 @@ h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	height: 120px;
 	display: block;
 }
-#tryMenu{
+#tryMenu {
 	position: absolute;
 	top: 500px;
 	left: 500px;
@@ -601,7 +617,7 @@ h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	display: block;
 	visibility: hidden;
 }
-h1 .titleLine {
+.titleLine {
 	font-family: "SONG", "Noto Serif SC";
 	font-weight: 700;
 	font-size: 3rem;
@@ -614,7 +630,6 @@ h1 .titleLine {
 	text-decoration-style: solid; */
 	/* margin-top: 8rem; */
 }
-/* h1 div { */
 
 h2 {
 	font-family: "SONG", "Noto Serif SC";
@@ -715,7 +730,7 @@ kbd {
 	/* text-justify: inter-word; */
 	/* 西文齐行往词间插入间距 */
 }
-.Latin-BianZhu{
+.Latin-BianZhu {
 	font-family: "SANS", "Source Sans Pro";
 	font-weight: 400;
 	hyphens: auto;
@@ -763,10 +778,9 @@ h-hws[hidden] {
 		width: 78rem;
 		left: 9rem;
 	}
-
-	#mainTitle {
-		width: 57rem;
-		left: 21rem;
+	.titleLine {
+		font-size: 3rem;
+		line-height: 4rem;
 	}
 	#menuContainer {
 		width: 18rem;
@@ -800,12 +814,33 @@ h-hws[hidden] {
 		width: 60rem;
 		left: 6rem;
 	}
-
-	#mainTitle {
-		width: 45rem;
-		left: 15rem;
+	#index {
+		font-size: 1.25rem;
 	}
-	#menuContainer {
+	#mainTitleArea {
+		margin-left: 15rem;
+		width: 45rem;
+	}
+	#title {
+		width: 30rem;
+	}
+	.titleLine {
+		font-size: 2.5rem;
+		line-height: 3.3rem;
+	}
+	h1 div {
+		margin-bottom: 0.8rem;
+		font-size: 2.5rem;
+		line-height: 3.75rem;
+		height: 2.5rem;
+	}
+	#timeAuthorRevision {
+		width: 12rem;
+		left: 33rem;
+		font-size: 0.65rem;
+		tab-size: 3em;
+	}
+	#tableOfContent {
 		width: 12rem;
 	}
 	#mainContent {
@@ -836,16 +871,36 @@ h-hws[hidden] {
 		width: 39rem;
 		left: 9rem;
 	}
+	#index {
+		font-size: 1.125rem;
+	}
+	#mainTitleArea {
+		margin-left: 0rem;
+		width: 39rem;
+	}
+	#title {
+		width: 27rem;
+	}
+	.titleLine {
+		font-size: 2.25rem;
+		line-height: 3rem;
+	}
+	h1 div {
+		margin-bottom: 0.75rem;
+		font-size: 2.25rem;
+		line-height: 3.5rem;
+		height: 2.25rem;
+	}
+	#timeAuthorRevision {
+		width: 9rem;
+		left: 30rem;
+		font-size: 0.6rem;
+		tab-size: 3em;
+	}
+	#tableOfContent {
+		display: none;
+	}
 
-	#mainTitle {
-		width: 39rem;
-		/* left: 9rem; */
-		position: static;
-	}
-	#menuContainer {
-		width: 39rem;
-		position: static;
-	}
 	#mainContent {
 		width: 39rem;
 		/* left: 15rem; */
@@ -886,11 +941,10 @@ h-hws[hidden] {
 		margin: 0 auto;
 		position: static;
 	}
-	#menuContainer {
-		width: 27rem;
-		position: static;
-		margin: 0 auto;
+	#tableOfContent {
+		display: none;
 	}
+
 	#menuList {
 		position: relative;
 		top: 0;
