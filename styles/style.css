@@ -313,7 +313,7 @@ html {
 	line-height: 1.5em;
 	color: rgb(208, 208, 208);
 }
-.changeTypeMenu-seperator {
+.changeTypeMenu-Seperator {
 	width: 20px;
 	height: 1px;
 	background-color: rgb(114, 114, 114);
@@ -407,20 +407,56 @@ html {
 	z-index: 4;
 	/* background-color: orange; */
 }
-#index {
-	visibility: hidden;
+#metaInfo {
+	/* visibility: hidden; */
 	display: inline-block;
 	position: absolute;
-	left: -13rem;
-	top: 8rem;
-	width: 10rem;
-	text-align: right;
+	left: -21rem;
+	top: 8.5rem;
+	width: 18rem;
 	z-index: 5;
+	text-align: center;
+	color: black;
+	line-height: 1em;
+	font-size: 0.75rem;
+}
+#index,
+#time,
+#author,
+.metaInfo-Seperator {
+	display: block;
+}
+#index {
 	font-family: "SERIF", "Source Serif Pro";
 	font-weight: 600;
-	font-size: 1.5rem;
-	line-height: 1em;
+	font-size: 1rem;
+	/* color: var(--colour-iden-1); */
 }
+.metaInfo-Seperator {
+	height: 1px;
+	width: 40px;
+	margin: 1rem auto;
+	background-color: rgb(175, 175, 175);
+}
+#time,
+#author {
+	font-family: "HEI", "Noto Sans SC", sans-serif;
+}
+#time time {
+	font-family: "SANS", "Source Sans Pro";
+	font-weight: 400;
+	font-size: 1.1em;
+}
+li {
+	list-style-type: none;
+	margin-bottom: 0.2em;
+}
+li::marker {
+	content: "";
+	display: none !important;
+	/* visibility: hidden !important; */
+}
+
 #decoLine {
 	display: inline-block;
 	position: absolute;
@@ -455,30 +491,7 @@ html {
 	display: block;
 	margin-bottom: 1rem;
 } */
-#timeAuthorRevision {
-	display: inline-block;
-	position: absolute;
-	width: 18rem;
-	left: 39rem;
-	top: 8rem;
-	font-size: 0.75rem;
-	font-family: "HEI", "Noto Sans SC", sans-serif;
-	line-height: 1.5em;
-	color: rgb(147, 147, 147);
-	visibility: hidden;
-}
-#timeAuthorRevision time{
-	font-family: "SANS", "Source Sans Pro";
-	font-weight: 400;
-}
-li {
-	list-style-type: none;
-}
-li::marker {
-	content: "";
-	display: none !important;
-	/* visibility: hidden !important; */
-}
+
 #toc-PlaceHolder {
 	height: 300px;
 	width: 18rem;
@@ -508,6 +521,7 @@ li::marker {
 	transition-property: all;
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
+	text-align: center;
 	/* background-color: darkgrey; */
 }
 #tableOfContent:hover {
@@ -793,9 +807,7 @@ h-hws[hidden] {
 		font-size: 3rem;
 		line-height: 4rem;
 	}
-	#menuContainer {
-		width: 18rem;
-	}
+
 	#mainContent {
 		width: 57rem;
 		left: 21rem;
@@ -825,8 +837,18 @@ h-hws[hidden] {
 		width: 60rem;
 		left: 6rem;
 	}
+	#metaInfo {
+		width: 12rem;
+		top: 8.25rem;
+		left: -15rem;
+		font-size: 0.625rem;
+	}
 	#index {
-		font-size: 1.25rem;
+		font-size: 0.85rem;
+	}
+	.metaInfo-Seperator {
+		width: 35px;
+		margin: 0.85rem auto;
 	}
 	#mainTitleArea {
 		margin-left: 15rem;
@@ -849,10 +871,12 @@ h-hws[hidden] {
 	}
 	#tableOfContent {
 		width: 12rem;
+		top: 105px;
 	}
 	#mainContent {
 		width: 45rem;
 		left: 15rem;
+		padding: 1rem 0 2rem 0;
 	}
 	article {
 		margin-right: 15rem;
@@ -878,15 +902,34 @@ h-hws[hidden] {
 		width: 39rem;
 		left: 9rem;
 	}
-	#index {
-		font-size: 1.125rem;
+	#metaInfo {
+		/* visibility: hidden; */
+		display: block;
+		position: relative;
+		left: 9rem;
+		top: 0rem;
+		width: 9rem;
+		margin: 4rem 0;
+		font-size: 0.5625rem;
 	}
+	#index {
+		font-size: 0.75rem;
+	}
+	.metaInfo-Seperator {
+		width: 30px;
+		margin: 0.75rem auto;
+	}
+	/* #metaInfo {
+		font-size: 1.125rem;
+	} */
 	#mainTitleArea {
 		margin-left: 0rem;
 		width: 39rem;
 	}
 	#title {
-		width: 39	rem;
+		display: block;
+		position: static;
+		width: 39rem;
 	}
 	.titleLine {
 		font-size: 2.25rem;
@@ -900,20 +943,27 @@ h-hws[hidden] {
 		font-size: 0.6rem;
 		tab-size: 3em;
 	}
+	#toc-PlaceHolder {
+		display: none;
+	}
+	#toc-Container {
+		display: none;
+	}
 	#tableOfContent {
 		display: none;
 	}
 
 	#mainContent {
 		width: 39rem;
-		/* left: 15rem; */
-		position: static;
+		padding: 2rem 0 2rem 0;
+		margin-top: 24rem;
 	}
 	article {
 		margin-right: 12rem;
 	}
 	h3 {
-		font-size: 1.125rem;}
+		font-size: 1.125rem;
+	}
 	.sideNote {
 		left: 30rem;
 		width: 9rem;
@@ -946,14 +996,16 @@ h-hws[hidden] {
 		margin: 0 auto;
 		position: static;
 	}
+	#toc-PlaceHolder {
+		display: none;
+	}
+	#toc-Container {
+		display: none;
+	}
 	#tableOfContent {
 		display: none;
 	}
 
-	#menuList {
-		position: relative;
-		top: 0;
-	}
 	#mainContent {
 		width: 27rem;
 		/* left: 15rem; */
@@ -964,7 +1016,8 @@ h-hws[hidden] {
 		margin: 1rem 0;
 	}
 	h3 {
-		font-size: 1.125rem;}
+		font-size: 1.125rem;
+	}
 	.sideNote {
 		float: right;
 		clear: both;
@@ -1002,15 +1055,13 @@ h-hws[hidden] {
 		margin: 0 auto;
 		position: static;
 	}
-	#menuContainer {
-		width: 100%;
-		position: static;
-		margin: 0 auto;
+	#toc-PlaceHolder {
+		display: none;
 	}
-	#menuList {
-		position: relative;
-		top: 0;
+	#toc-Container {
+		display: none;
 	}
+
 	#mainContent {
 		width: 100%;
 		/* left: 15rem; */
