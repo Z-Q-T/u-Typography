@@ -408,6 +408,7 @@ html {
 	/* background-color: orange; */
 }
 #index {
+	visibility: hidden;
 	display: inline-block;
 	position: absolute;
 	left: -13rem;
@@ -435,7 +436,7 @@ html {
 	position: absolute;
 	/* left: -13rem; */
 	top: 8rem;
-	width: 36rem;
+	width: 57rem;
 	/* border-bottom: var(--colour-iden) solid 6px; */
 	/* padding-bottom: 0.75rem; */
 }
@@ -444,7 +445,7 @@ html {
 } */
 
 /* 这个是在开头弄一个思源黑体的零宽空格用来定位的 */
-h1 div {
+/* h1 div {
 	box-shadow: inset 0em -0.15em var(--colour-iden-2);
 	font-family: "HEI", "Noto Sans SC", sans-serif;
 	font-size: 3rem;
@@ -453,7 +454,7 @@ h1 div {
 	width: fit-content;
 	display: block;
 	margin-bottom: 1rem;
-}
+} */
 #timeAuthorRevision {
 	display: inline-block;
 	position: absolute;
@@ -462,7 +463,9 @@ h1 div {
 	top: 8rem;
 	font-size: 0.75rem;
 	font-family: "HEI", "Noto Sans SC", sans-serif;
-	line-height: 1.8em;
+	line-height: 1.5em;
+	color: rgb(147, 147, 147);
+	visibility: hidden;
 }
 #timeAuthorRevision time{
 	font-family: "SANS", "Source Sans Pro";
@@ -547,7 +550,7 @@ article {
 	/* margin-left: 0; */
 	clear: both;
 	font-size: 0.75rem;
-	line-height: 1.4rem;
+	line-height: 1.2rem;
 	color: rgb(46, 46, 46);
 	/* white-space: break-spaces; */
 }
@@ -618,19 +621,27 @@ h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	visibility: hidden;
 }
 .titleLine {
+	display: block;
 	font-family: "SONG", "Noto Serif SC";
 	font-weight: 700;
 	font-size: 3rem;
-	vertical-align: sub;
+	/* vertical-align: sub; */
 	line-height: 4rem;
 	position: relative;
-	top: -20px;
+	top: -10px;
+	/* box-shadow: inset 0em -0.15em var(--colour-iden-2); */
+	height: 3rem;
+	width: fit-content;
+	margin-bottom: 1rem;
 	/* text-decoration-line: underline;
 	text-decoration-color: var(--colour-iden);
 	text-decoration-style: solid; */
 	/* margin-top: 8rem; */
 }
-
+/* h1{
+	width: fit-content;
+	border-bottom: 5px var(--colour-iden-2) solid;
+} */
 h2 {
 	font-family: "SONG", "Noto Serif SC";
 	font-weight: 700;
@@ -822,16 +833,12 @@ h-hws[hidden] {
 		width: 45rem;
 	}
 	#title {
-		width: 30rem;
+		width: 45rem;
 	}
 	.titleLine {
 		font-size: 2.5rem;
 		line-height: 3.3rem;
-	}
-	h1 div {
 		margin-bottom: 0.8rem;
-		font-size: 2.5rem;
-		line-height: 3.75rem;
 		height: 2.5rem;
 	}
 	#timeAuthorRevision {
@@ -879,16 +886,12 @@ h-hws[hidden] {
 		width: 39rem;
 	}
 	#title {
-		width: 27rem;
+		width: 39	rem;
 	}
 	.titleLine {
 		font-size: 2.25rem;
 		line-height: 3rem;
-	}
-	h1 div {
 		margin-bottom: 0.75rem;
-		font-size: 2.25rem;
-		line-height: 3.5rem;
 		height: 2.25rem;
 	}
 	#timeAuthorRevision {
@@ -909,6 +912,8 @@ h-hws[hidden] {
 	article {
 		margin-right: 12rem;
 	}
+	h3 {
+		font-size: 1.125rem;}
 	.sideNote {
 		left: 30rem;
 		width: 9rem;
@@ -958,6 +963,8 @@ h-hws[hidden] {
 	article {
 		margin: 1rem 0;
 	}
+	h3 {
+		font-size: 1.125rem;}
 	.sideNote {
 		float: right;
 		clear: both;
