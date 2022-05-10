@@ -253,9 +253,10 @@ html {
 #changeTypeMenu-ButtonSVG {
 	width: 4px;
 	fill: var(--colour-iden-2);
-	position: relative;
-	left: 18px;
-	top: 4px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -10px 0 0 -2px;
 }
 #changeTypeMenu-Hint {
 	font-size: 0.5rem;
@@ -574,6 +575,7 @@ article {
 }
 .tabulation {
 	white-space: break-spaces;
+	tab-size: 3rem;
 }
 /* h-char.bd-jiya.bd-open:before,
 h-char.bd-jiya.bd-end:after,
@@ -1041,6 +1043,7 @@ h-hws[hidden] {
 		width: 9rem;
 		margin: 4rem 0;
 		font-size: 0.5625rem;
+		z-index: 15;
 	}
 	#index {
 		font-size: 0.75rem;
@@ -1157,6 +1160,7 @@ h-hws[hidden] {
 		width: 9rem;
 		margin: 4rem auto;
 		font-size: 0.5625rem;
+		z-index: 15;
 	}
 	#index {
 		font-size: 0.75rem;
