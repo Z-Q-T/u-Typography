@@ -231,7 +231,7 @@ html {
 	left: 0;
 	/* background-color: rgb(232, 226, 220); */
 }
-#logo-50px {
+#logo {
 	width: 40px;
 }
 #changeTypeMenu-Button {
@@ -788,11 +788,14 @@ h-hws[hidden] {
 	font-size: 0.833em;
 } */
 
+/* ————————响应式设计———————— */
+/* 留20px的滚动条的空间 */
+
 /* 【1】
 宽度大于1820的窗口，或经过1.25倍放大的宽度大于2275的窗口
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
 正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
-@media screen and (min-width: 1820px) {
+@media screen and (min-width: 1840px) {
 	#whole {
 		width: 1820px;
 	}
@@ -825,7 +828,7 @@ h-hws[hidden] {
 宽度1380—1820的窗口，或经过1.25倍放大的宽度1725—2275的窗口
 适用于1440宽的屏幕，或经过1.25倍放大的1920宽的屏幕
 正文每行30字，字号20。边注每行16字，字号15；宽度等同于正文12字 */
-@media screen and (min-width: 1380px) and (max-width: 1820px) {
+@media screen and (min-width: 1400px) and (max-width: 1840px) {
 	#whole {
 		width: 1380px;
 		/* background-color: black; */
@@ -890,7 +893,7 @@ h-hws[hidden] {
 宽度1020—1380的窗口，或经过1.25倍放大的宽度1275—1725的窗口
 适用于1080宽的屏幕，或经过1.25倍放大的1440宽的屏幕
 正文每行27字，字号20。边注每行12字，字号15；宽度等同于正文9字 */
-@media screen and (min-width: 1020px) and (max-width: 1380px) {
+@media screen and (min-width: 1040px) and (max-width: 1400px) {
 	#whole {
 		width: 1020px;
 		/* background-color: navy; */
@@ -953,6 +956,7 @@ h-hws[hidden] {
 		width: 39rem;
 		padding: 2rem 0 2rem 0;
 		margin-top: 24rem;
+		left: 0rem;
 	}
 	article {
 		margin-right: 12rem;
@@ -968,27 +972,31 @@ h-hws[hidden] {
 /* 【4】
 宽度660—1020的窗口，或经过1.25倍放大的宽度825—1275的窗口
 正文每行27字，字号20。*/
-@media screen and (min-width: 660px) and (max-width: 1020px) {
+@media screen and (min-width: 680px) and (max-width: 1040px) {
 	#whole {
 		width: 660px;
 		/* background-color: cadetblue; */
 	}
 	#bar {
-		height: 80px;
+		height: 70px;
 		width: 100%;
 		display: block;
 		position: fixed;
 		z-index: 10;
 		background-color: var(--colour-paper);
 	}
+	#logo {
+		width: auto;
+		height: 30px;
+	}
 	#changeTypeMenu-Button {
-		top: 20px;
+		top: 15px;
 		right: 65px;
 		left: auto;
 		bottom: auto;
 	}
 	#pageTypography {
-		top: 10px;
+		top: 15px;
 		right: 15px;
 		left: auto;
 		bottom: auto;
@@ -996,7 +1004,7 @@ h-hws[hidden] {
 	#page {
 		width: 660px;
 		display: block;
-		/* left: 9rem; */
+		left: 0rem;
 	}
 
 	#mainTitleArea {
@@ -1026,7 +1034,7 @@ h-hws[hidden] {
 	#title {
 		display: block;
 		position: static;
-		width: 39rem;
+		width: 30rem;
 	}
 	.titleLine {
 		font-size: 2.25rem;
@@ -1065,7 +1073,7 @@ h-hws[hidden] {
 		float: right;
 		clear: both;
 		position: relative;
-		/* left: 30rem; */
+		left: 0rem;
 		width: 9rem;
 		margin-left: 3rem;
 		margin-top: 1rem;
@@ -1075,7 +1083,7 @@ h-hws[hidden] {
 /* 【5】
 宽度小于660的窗口，或经过1.25倍放大的宽度小于825的窗口
 正文字号20。*/
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 680px) {
 	#whole {
 		width: 100%;
 		/* background-color: firebrick; */
