@@ -135,19 +135,18 @@
 	font-style: italic;
 }
 /* ？ */
-@font-face {
+/* @font-face {
 	font-family: "SERIF";
 	src: local("Source Serif Pro Bold");
 	font-weight: 700;
 	font-style: normal;
 }
-/* ？ */
 @font-face {
 	font-family: "SERIF";
 	src: local("Source Serif Pro Bold Italic");
 	font-weight: 700;
 	font-style: italic;
-}
+} */
 
 /* ==代码等宽体== */
 
@@ -162,6 +161,8 @@
 	font-style: italic;
 }
 
+/* —————————————————————————————— */
+
 :root {
 	--colour-paper: rgb(248, 248, 244);
 	--colour-changeType-inactive: rgb(70, 70, 70);
@@ -175,7 +176,6 @@
 	--font-sans:"SANS", "Source Sans Pro", sans-serif;
 	--font-serif:"SERIF", "Source Serif Pro", serif;
 	--font-code:"CODE", "Source Code Pro", monospace;
-	/* --font-ZhengWen-HEI: "HYQiHei 60S", "HYQiHei 55S", "HarmonyOS Sans SC", "HarmonyOS Sans SC Medium", "Source Han Sans SC","Noto Sans SC","FZYouHei_GBK 509R", sans-serif; */
 }
 
 html {
@@ -275,14 +275,14 @@ html {
 	height: 407px;
 	background-color: black;
 	position: fixed;
-	/* left: 15px; */
-	/* bottom: 110px; */
 	border-radius: 20px;
 	padding-top: 6px;
 	display: block;
+	/* left: 15px; */
+	/* bottom: 110px; */
 	/* visibility: hidden; */
 	/* opacity: 1; */
-	/*这些写在HTML里了*/
+	/*这些用HTML和JavaScript来控制*/
 	transition-property: all;
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
@@ -363,15 +363,7 @@ html {
 	/* text-decoration-color:black; */
 	color: black;
 }
-/* #changeTypeMenu-BiaoTi-SONG,
-#changeTypeMenu-ZhengWen-HEI,
-#changeTypeMenu-BianZhu-HEI {
-	background-color: var(--colour-changeType-active);
-} */
 
-/* #changeTypeMenu:target{
-	display: block;
-} */
 #pageTypography-Button {
 	width: 34px;
 	height: 24px;
@@ -475,7 +467,7 @@ li::marker {
 	/* visibility: hidden !important; */
 }
 
-#decoLine {
+/* #decoLine {
 	display: inline-block;
 	position: absolute;
 	width: 9px;
@@ -484,7 +476,7 @@ li::marker {
 	top: 8rem;
 	left: 1.4rem;
 	visibility: hidden;
-}
+} */
 #title {
 	display: inline-block;
 	position: absolute;
@@ -634,25 +626,7 @@ h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-weight: 600;
 } */
 
-#tryButton {
-	position: absolute;
-	top: 100px;
-	left: 100px;
-	background-color: aqua;
-	width: 120px;
-	height: 120px;
-	display: block;
-}
-#tryMenu {
-	position: absolute;
-	top: 500px;
-	left: 500px;
-	background-color: blueviolet;
-	width: 200px;
-	height: 400px;
-	display: block;
-	visibility: hidden;
-}
+
 .titleLine {
 	display: block;
 	font-family: var(--font-song);
@@ -701,9 +675,6 @@ p {
 	/* 中文齐行往字间插入间距 */
 }
 
-.song {
-	font-family: var(--font-song);
-}
 
 /* blockquote {
 	font-family: "Alegreya";
@@ -806,10 +777,10 @@ h-hws[hidden] {
 	font-size: 0.833em;
 } */
 
-/* ————————响应式设计———————— */
+/* ————————————响应式设计———————————— */
 /* 留20px的滚动条的空间 */
 
-/* 【1】
+/* 【1】#############################
 宽度大于1820的窗口，或经过1.25倍放大的宽度大于2275的窗口
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
 正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
@@ -842,7 +813,7 @@ h-hws[hidden] {
 	}
 }
 
-/* 【2】
+/* 【2】#############################
 宽度1380—1820的窗口，或经过1.25倍放大的宽度1725—2275的窗口
 适用于1440宽的屏幕，或经过1.25倍放大的1920宽的屏幕
 正文每行30字，字号20。边注每行16字，字号15；宽度等同于正文12字 */
@@ -907,7 +878,7 @@ h-hws[hidden] {
 		width: 12rem;
 	}
 }
-/* 【3】
+/* 【3】#############################
 宽度1020—1380的窗口，或经过1.25倍放大的宽度1275—1725的窗口
 适用于1080宽的屏幕，或经过1.25倍放大的1440宽的屏幕
 正文每行27字，字号20。边注每行12字，字号15；宽度等同于正文9字 */
@@ -987,7 +958,7 @@ h-hws[hidden] {
 		width: 9rem;
 	}
 }
-/* 【4】
+/* 【4】#############################
 宽度660—1020的窗口，或经过1.25倍放大的宽度825—1275的窗口
 正文每行27字，字号20。*/
 @media screen and (min-width: 680px) and (max-width: 1040px) {
@@ -1023,7 +994,7 @@ h-hws[hidden] {
 		left: auto;
 		bottom: auto;
 	}
-	#gradient {
+	/* #gradient {
 		display: block;
 		position: fixed;
 		width: 100%;
@@ -1032,7 +1003,7 @@ h-hws[hidden] {
 			var(--colour-paper),
 			rgba(248, 248, 244, 0)
 		);
-	}
+	} */
 	#page {
 		width: 660px;
 		display: block;
@@ -1115,7 +1086,7 @@ h-hws[hidden] {
 		margin-bottom: 1rem;
 	}
 }
-/* 【5】
+/* 【5】#############################
 宽度小于660的窗口，或经过1.25倍放大的宽度小于825的窗口
 正文字号20。*/
 @media screen and (max-width: 680px) {
