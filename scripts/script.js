@@ -125,20 +125,85 @@ document.getElementById('changeTypeMenu-BianZhu-HEI').onclick = function changef
 
 
 
-var button = document.getElementById("changeTypeMenu-Button");
-var menu = document.getElementById("changeTypeMenu");
+let button = document.getElementById("changeTypeMenu-Button");
+
+
+
+
 button.onclick = function () {
-    var i = menu.style.visibility;
-    if (i == "hidden") {
-        menu.style.visibility = "visible";
-        menu.style.opacity="1";
-        menu.style.bottom="110px";
+    let menu = document.getElementById("changeTypeMenu");
+    let menuVisibility = menu.style.visibility;
+    let size = window.innerWidth;
+    if (size < 1040) {
+        if (menuVisibility == "hidden") {
+            menu.style.visibility = "visible";
+            menu.style.opacity = "1";
+            menu.style.top = "60px";
+        } else {
+            menu.style.visibility = "hidden";
+            menu.style.opacity = "0";
+            menu.style.top = "50px";
+        }
     } else {
-        menu.style.visibility = "hidden";
-        menu.style.opacity="0";
-        menu.style.bottom="100px";
+        if (menuVisibility == "hidden") {
+            menu.style.visibility = "visible";
+            menu.style.opacity = "1";
+            menu.style.bottom = "110px";
+        } else {
+            menu.style.visibility = "hidden";
+            menu.style.opacity = "0";
+            menu.style.bottom = "100px";
+        }
     }
 }
+function displayWindowSize() {
+    let menu = document.getElementById("changeTypeMenu");
+    let menuVisibility = menu.style.visibility;
+    let size = window.innerWidth;
+    console.log(size);
+    if (menuVisibility == "hidden") {
+        if (size < 1040) {
+            menu.style.bottom = "auto";
+            menu.style.top = "50px";
+            menu.style.left = "auto";
+            menu.style.right = "15px";
+        } else {
+            menu.style.bottom = "100px";
+            menu.style.top = "auto";
+            menu.style.left = "15px";
+            menu.style.right = "auto";
+        }
+    } else {
+        if (size < 1040) {
+            menu.style.bottom = "auto";
+            menu.style.top = "60px";
+            menu.style.left = "auto";
+            menu.style.right = "15px";
+        } else {
+            menu.style.bottom = "110px";
+            menu.style.top = "auto";
+            menu.style.left = "15px";
+            menu.style.right = "auto";
+        }
+    }
+}
+// 将事件侦听器函数附加到窗口的resize事件
+window.addEventListener("resize", displayWindowSize);
+// 第一次调用该函数
+displayWindowSize();
+
+// if (document.documentElement.scrollWidth >680){
+//     menu.style.bottom="0px";
+// }
+// window.addEventListener('load', function () {
+//     console.log(window.innerWidth);
+//     window.addEventListener('resize', function () {
+//         console.log(window.innerWidth);
+//     })
+// })
+
+
+
 
 // function changefont_BiaoTi_SONG() {
 //     document.body.querySelectorAll("h1,h2,h3").forEach((e) => {

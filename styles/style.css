@@ -283,7 +283,7 @@ html {
 	height: 407px;
 	background-color: black;
 	position: fixed;
-	left: 15px;
+	/* left: 15px; */
 	/* bottom: 110px; */
 	border-radius: 20px;
 	padding-top: 6px;
@@ -382,15 +382,12 @@ html {
 } */
 #pageTypography-Button {
 	width: 34px;
-	height: 20px;
+	height: 24px;
 	/* border-radius: 20px; */
-	font-family: "SERIF", "Source Serif Pro";
-	font-weight: 600;
-	font-size: 0.75rem;
 	text-align: center;
 	position: fixed;
 	left: 18px;
-	bottom: 20px;
+	bottom: 22px;
 	line-height: 1em;
 	cursor: pointer;
 }
@@ -402,17 +399,21 @@ html {
     position: absolute;
     top: 100%;
     left: 50%;
-    transition: all 300ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
  
 #pageTypography-Button:hover:after{
    left: 0%;
    width: 100%;
 }
-#gradient {
-	display: none;
-}
 
+#pageTypography-Icon{
+	width: 40px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -10px 0 0 -20px;
+}
 #page {
 	height: 100%;
 	display: inline-block;
@@ -1018,7 +1019,7 @@ h-hws[hidden] {
 	}
 	#changeTypeMenu-Button {
 		top: 11px;
-		right: 65px;
+		right: 15px;
 		left: auto;
 		bottom: auto;
 	}
@@ -1026,8 +1027,8 @@ h-hws[hidden] {
 		transform: rotate(90deg);
 	}
 	#pageTypography-Button {
-		top: 23px;
-		right: 18px;
+		top: 19px;
+		right: 70px;
 		left: auto;
 		bottom: auto;
 	}
@@ -1146,7 +1147,7 @@ h-hws[hidden] {
 	}
 	#changeTypeMenu-Button {
 		top: 11px;
-		right: 65px;
+		right: 15px;
 		left: auto;
 		bottom: auto;
 	}
@@ -1154,8 +1155,8 @@ h-hws[hidden] {
 		transform: rotate(90deg);
 	}
 	#pageTypography-Button {
-		top: 23px;
-		right: 18px;
+		top: 19px;
+		right: 70px;
 		left: auto;
 		bottom: auto;
 	}
