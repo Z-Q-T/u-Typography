@@ -810,7 +810,7 @@ h-hws[hidden] {
 	}
 	#page {
 		width: 78rem;
-		left: 9rem;
+		left: 7rem;
 	}
 	.titleLine {
 		font-size: 3rem;
@@ -1038,10 +1038,10 @@ h-hws[hidden] {
 		/* visibility: hidden; */
 		display: block;
 		position: relative;
-		left: 9rem;
-		top: 0rem;
+		left: 0rem;
+		top: 2rem;
 		width: 9rem;
-		margin: 4rem 0;
+		margin: 4rem auto;
 		font-size: 0.5625rem;
 		z-index: 15;
 	}
@@ -1056,6 +1056,7 @@ h-hws[hidden] {
 		display: block;
 		position: static;
 		width: 30rem;
+		padding-top: 2rem;
 	}
 	.titleLine {
 		font-size: 2.25rem;
@@ -1080,6 +1081,7 @@ h-hws[hidden] {
 		/* left: 15rem; */
 		position: static;
 		margin: 0 auto;
+		margin-top: 2rem;
 	}
 	article {
 		margin: 1rem 0;
@@ -1156,11 +1158,11 @@ h-hws[hidden] {
 		display: block;
 		position: relative;
 		left: 0rem;
-		top: 0rem;
+		top: 2rem;
 		width: 9rem;
 		margin: 4rem auto;
 		font-size: 0.5625rem;
-		z-index: 15;
+		z-index: auto;
 	}
 	#index {
 		font-size: 0.75rem;
@@ -1173,6 +1175,7 @@ h-hws[hidden] {
 		display: block;
 		position: static;
 		width: 100%;
+		padding-top: 2rem;
 	}
 	.titleLine {
 		font-size: 2.25rem;
