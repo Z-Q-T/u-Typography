@@ -6,7 +6,7 @@ function changeTypeMenu_initialActive() {
     }
 }
 
-//点击按钮后改变按钮颜色
+//点击换字体按钮后改变按钮颜色
 function changeTypeMenu_switchColour(active, inactive) {
     let a = document.querySelector(active);
     a.style.cssText = "background-color: var(--colour-changeType-active) !important; color:black";
@@ -124,11 +124,8 @@ document.getElementById('changeTypeMenu-BianZhu-HEI').onclick = function changef
 }
 
 
-
+// 打开／关闭更换字体菜单
 let button = document.getElementById("changeTypeMenu-Button");
-
-
-
 
 button.onclick = function () {
     let menu = document.getElementById("changeTypeMenu");
@@ -156,7 +153,9 @@ button.onclick = function () {
         }
     }
 }
-function displayWindowSize() {
+
+// 按照窗口尺寸自动适配字体菜单的位置
+function changeMenuPosition() {
     let menu = document.getElementById("changeTypeMenu");
     let menuVisibility = menu.style.visibility;
     let size = window.innerWidth;
@@ -188,9 +187,9 @@ function displayWindowSize() {
     }
 }
 // 将事件侦听器函数附加到窗口的resize事件
-window.addEventListener("resize", displayWindowSize);
+window.addEventListener("resize", changeMenuPosition);
 // 第一次调用该函数
-displayWindowSize();
+changeMenuPosition();
 
 // if (document.documentElement.scrollWidth >680){
 //     menu.style.bottom="0px";

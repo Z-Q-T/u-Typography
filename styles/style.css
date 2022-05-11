@@ -1,13 +1,3 @@
-:root {
-	--colour-paper: rgb(248, 248, 244);
-	--colour-changeType-inactive: rgb(70, 70, 70);
-	--colour-changeType-active: rgb(190, 176, 156);
-	--colour-changeType-hover: rgb(123, 117, 106);
-	--colour-iden-1: rgb(174, 157, 133);
-	--colour-iden-2: rgb(207, 193, 172);
-	--colour-iden-3: rgb(239, 235, 229);
-	/* --font-ZhengWen-HEI: "HYQiHei 60S", "HYQiHei 55S", "HarmonyOS Sans SC", "HarmonyOS Sans SC Medium", "Source Han Sans SC","Noto Sans SC","FZYouHei_GBK 509R", sans-serif; */
-}
 
 /* 下面字体的名称要按照 “full font name” 属性来写 */
 
@@ -172,26 +162,28 @@
 	font-style: italic;
 }
 
-/* 
-@font-face {
-	font-family: "SERIF-d";
-	src: local("Source Serif Pro Semibold");
+:root {
+	--colour-paper: rgb(248, 248, 244);
+	--colour-changeType-inactive: rgb(70, 70, 70);
+	--colour-changeType-active: rgb(190, 176, 156);
+	--colour-changeType-hover: rgb(123, 117, 106);
+	--colour-iden-1: rgb(174, 157, 133);
+	--colour-iden-2: rgb(207, 193, 172);
+	--colour-iden-3: rgb(239, 235, 229);
+	--font-hei:"HEI", "Noto Sans SC", sans-serif;
+	--font-song:"SONG", "Noto Serif SC", serif;
+	--font-sans:"SANS", "Source Sans Pro", sans-serif;
+	--font-serif:"SERIF", "Source Serif Pro", serif;
+	--font-code:"CODE", "Source Code Pro", monospace;
+	/* --font-ZhengWen-HEI: "HYQiHei 60S", "HYQiHei 55S", "HarmonyOS Sans SC", "HarmonyOS Sans SC Medium", "Source Han Sans SC","Noto Sans SC","FZYouHei_GBK 509R", sans-serif; */
 }
-@font-face {
-	font-family: "SERIF-d i";
-	src: local("Source Serif Pro Semibold Italic");
-}
-@font-face {
-	font-family: "FANG-KAI";
-	src: local("LXGW WenKai");
-} */
 
 html {
 	box-sizing: border-box;
 	display: block;
 	font-size: 20px;
 	line-height: 40px;
-	font-family: "HEI", "Noto Sans SC", sans-serif;
+	font-family: var(--font-hei);
 	tab-size: 3rem;
 	text-justify: auto;
 	text-rendering: geometricPrecision;
@@ -346,13 +338,13 @@ html {
 #changeTypeMenu-BiaoTi-SONG,
 #changeTypeMenu-ZhengWen-SONG,
 #changeTypeMenu-BianZhu-SONG {
-	font-family: "SONG", "Noto Serif SC";
+	font-family: var(--font-song);
 	font-weight: 600;
 }
 #changeTypeMenu-BiaoTi-HEI,
 #changeTypeMenu-ZhengWen-HEI,
 #changeTypeMenu-BianZhu-HEI {
-	font-family: "HEI", "Noto Sans SC";
+	font-family: var(--font-hei);
 	font-weight: 400;
 }
 #changeTypeMenu-BiaoTi-SONG:hover,
@@ -453,7 +445,7 @@ html {
 	display: block;
 }
 #index {
-	font-family: "SERIF", "Source Serif Pro";
+	font-family: var(--font-serif);
 	font-weight: 600;
 	font-size: 1rem;
 	/* color: var(--colour-iden-1); */
@@ -466,10 +458,10 @@ html {
 }
 #time,
 #author {
-	font-family: "HEI", "Noto Sans SC", sans-serif;
+	font-family: var(--font-hei);
 }
 #time time {
-	font-family: "SANS", "Source Sans Pro";
+	font-family: var(--font-sans);
 	font-weight: 400;
 	font-size: 1.1em;
 }
@@ -559,7 +551,7 @@ li::marker {
 }
 #tableOfContent li {
 	margin: 1rem 0;
-	font-family: "SONG", "Noto Serif SC";
+	font-family: var(--font-song);
 	font-weight: 700;
 	font-size: 1rem;
 	line-height: 1.5rem;
@@ -584,7 +576,7 @@ article {
 .sideNote {
 	display: inline-block;
 	text-indent: 0;
-	font-family: "HEI", "Noto Sans SC";
+	font-family: var(--font-hei);
 	font-weight: 400;
 	position: absolute;
 	/* margin-left: 0; */
@@ -663,7 +655,7 @@ h-char.bd-jiya[unicode="ff0e"] > h-inner {
 }
 .titleLine {
 	display: block;
-	font-family: "SONG", "Noto Serif SC";
+	font-family: var(--font-song);
 	font-weight: 700;
 	font-size: 3rem;
 	/* vertical-align: sub; */
@@ -684,7 +676,7 @@ h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	border-bottom: 5px var(--colour-iden-2) solid;
 } */
 h2 {
-	font-family: "SONG", "Noto Serif SC";
+	font-family: var(--font-song);
 	font-weight: 700;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
@@ -692,7 +684,7 @@ h2 {
 	margin: 5rem auto 3rem auto;
 }
 h3 {
-	font-family: "SONG", "Noto Serif SC";
+	font-family: var(--font-song);
 	font-weight: 700;
 	font-size: 1.2rem;
 	line-height: 2rem;
@@ -710,16 +702,15 @@ p {
 }
 
 .song {
-	font-family: "SONG", "Noto Serif SC";
+	font-family: var(--font-song);
 }
 
-blockquote {
+/* blockquote {
 	font-family: "Alegreya";
 	font-family: "LXGW WenKai";
-	/* font-family: "LXGW WenKai Screen"; */
-}
+} */
 pre {
-	font-family: "CODE", "Source Code Pro", monospace;
+	font-family: var(--font-code);;
 	font-size: 0.8rem;
 	line-height: 1.4rem;
 	hyphens: none;
@@ -730,11 +721,11 @@ pre {
 	white-space: pre-wrap;
 }
 code {
-	font-family: "CODE", "Source Code Pro", monospace;
+	font-family: var(--font-code);;
 	font-size: 1em;
 }
 kbd {
-	font-family: "CODE", "Source Code Pro", monospace;
+	font-family: var(--font-code);;
 	font-style: italic;
 	font-size: 1em;
 }
@@ -767,14 +758,14 @@ kbd {
 }
 /* 拉丁文本 */
 .Latin-BiaoTi {
-	font-family: "SERIF", "Source Serif Pro";
+	font-family: var(--font-serif);
 	font-weight: 600;
 	hyphens: auto;
 	font-size: 1.05em;
 	line-height: 1em;
 }
 .Latin-ZhengWen {
-	font-family: "SANS", "Source Sans Pro";
+	font-family: var(--font-sans);
 	font-weight: 400;
 	hyphens: auto;
 	font-size: 1.1em;
@@ -783,7 +774,7 @@ kbd {
 	/* 西文齐行往词间插入间距 */
 }
 .Latin-BianZhu {
-	font-family: "SANS", "Source Sans Pro";
+	font-family: var(--font-sans);
 	font-weight: 400;
 	hyphens: auto;
 	font-size: 1.1em;
@@ -794,7 +785,7 @@ kbd {
 h-hws:before,
 h-hws[hidden]:before {
 	/* content: " "; */
-	font-family: "CODE", "Source Code Pro", monospace;
+	font-family: var(--font-code);;
 	font-size: 1em;
 	letter-spacing: -0.35em;
 	line-height: 0.1em;
@@ -804,7 +795,7 @@ h-char.bd-jiya.bd-end:after,
 h-char.bd-jiya.bd-open:before,
 h-cs,
 h-cs[hidden] {
-	font-family: "CODE", "Source Code Pro", monospace;
+	font-family: var(--font-code);;
 	font-size: 1em;
 	letter-spacing: -0.1em;
 	line-height: 0.1em;
