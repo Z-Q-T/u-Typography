@@ -233,6 +233,7 @@ html {
 }
 #logo {
 	width: 40px;
+	cursor: pointer;
 }
 #changeTypeMenu-Button {
 	width: 40px;
@@ -379,15 +380,34 @@ html {
 /* #changeTypeMenu:target{
 	display: block;
 } */
-#pageTypography {
-	width: 40px;
+#pageTypography-Button {
+	width: 34px;
+	height: 20px;
+	/* border-radius: 20px; */
 	font-family: "SERIF", "Source Serif Pro";
 	font-weight: 600;
 	font-size: 0.75rem;
 	text-align: center;
 	position: fixed;
-	bottom: 10px;
-	left: 15px;
+	left: 18px;
+	bottom: 20px;
+	line-height: 1em;
+	cursor: pointer;
+}
+#pageTypography-Button:after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: var(--colour-iden-2);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transition: all 300ms ease-in-out;
+}
+ 
+#pageTypography-Button:hover:after{
+   left: 0%;
+   width: 100%;
 }
 #gradient {
 	display: none;
@@ -1005,9 +1025,9 @@ h-hws[hidden] {
 	#changeTypeMenu-ButtonSVG {
 		transform: rotate(90deg);
 	}
-	#pageTypography {
-		top: 11px;
-		right: 15px;
+	#pageTypography-Button {
+		top: 23px;
+		right: 18px;
 		left: auto;
 		bottom: auto;
 	}
@@ -1133,9 +1153,9 @@ h-hws[hidden] {
 	#changeTypeMenu-ButtonSVG {
 		transform: rotate(90deg);
 	}
-	#pageTypography {
-		top: 11px;
-		right: 15px;
+	#pageTypography-Button {
+		top: 23px;
+		right: 18px;
 		left: auto;
 		bottom: auto;
 	}
