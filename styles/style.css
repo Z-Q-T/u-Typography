@@ -172,6 +172,7 @@
 	--colour-iden-2: rgb(207, 193, 172);
 	--colour-iden-3: rgb(239, 235, 229);
 	--font-hei:"HEI", "Noto Sans SC", sans-serif;
+	--font-hei-biaodian:"HEI-BiaoDian", "Noto Sans SC";
 	--font-song:"SONG", "Noto Serif SC", serif;
 	--font-sans:"SANS", "Source Sans Pro", sans-serif;
 	--font-serif:"SERIF", "Source Serif Pro", serif;
@@ -604,7 +605,7 @@ article h-char.bd-jiya.bd-open > h-inner,
 article h-char.bd-jiya.bd-close > h-inner,
 article h-char.bd-jiya.bd-cop > h-inner,
 article h-char.bd-jiya[unicode="ff0e"] > h-inner {
-	font-family: "HEI-BiaoDian", "Noto Sans SC";
+	font-family: var(--font-hei-biaodian);
 	font-weight: 400;
 	line-height: 0.1em;
 }
@@ -707,26 +708,37 @@ kbd {
 } */
 /* 间隔号· */
 .JianGeHao {
-	font-size: 0.7rem;
-	margin: 0% -0.1rem;
-	line-height: 0.5rem;
-	vertical-align: 0.1rem;
+	font-family: var(--font-hei-biaodian) !important;
+	font-weight: 400 !important;
+	font-size: 0.7em;
+	line-height: 0.1em;
+	vertical-align: 0.15em;
 }
+.JianGeHao h-inner{
+	margin: 0% -0.142857em;
+}
+
 /* 破折号⸺ */
 .PoZheHao {
+	font-family: var(--font-hei-biaodian) !important;
+	font-weight: 400 !important;
 	font-feature-settings: "fwid";
-	transform: scaleY(1.5);
-	display: inline-block;
-	text-indent: 0;
+	line-height: 0.1em;
+	text-shadow: 0 0.02em;
+	/* display: inline-block;
+	text-indent: 0; */
 }
 /* 一字线—半字线– */
 .YiZiXian,
 .BanZiXian {
-	line-height: 0.5em;
-	vertical-align: 0.1em;
+	font-family: var(--font-hei-biaodian) !important;
+	font-weight: 400 !important;
+	line-height: 0.1em;
+	vertical-align: 0.05em;
 	/* transform: translateY(1rem); */
 	/* margin: -0.5rem 0; */
 }
+
 /* 拉丁文本 */
 .Latin-BiaoTi {
 	font-family: var(--font-serif);
