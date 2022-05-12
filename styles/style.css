@@ -734,7 +734,11 @@ kbd {
 	/* display: inline-block;
 	text-indent: 0; */
 }
-/* 一字线—半字线– */
+.PoZheHao::before {
+	content: "\200B";
+	/* 零宽空格 */
+}
+/* 一字线— */
 .YiZiXian {
 	font-family: var(--font-hei-biaodian) !important;
 	font-weight: 400 !important;
@@ -744,6 +748,7 @@ kbd {
 	/* transform: translateY(1rem); */
 	/* margin: -0.5rem 0; */
 }
+/* 半字线– */
 .BanZiXian {
 	font-family: var(--font-hei-biaodian) !important;
 	font-weight: 400 !important;
@@ -751,6 +756,11 @@ kbd {
 	vertical-align: 0.08em;
 	margin: 0 -0.0179em;
 }
+.BanZiXian::before {
+	content: "\FEFF";
+	/* 零宽不断行空格 */
+}
+
 /* 分隔号／ */
 .FenGeHao {
 	font-family: var(--font-hei-biaodian) !important;
@@ -761,7 +771,7 @@ kbd {
 	text-indent: 0;
 	transform: scale(0.5, 0.9);
 	margin: 0 -0.25em;
-	text-shadow: 0 0.05em;
+	text-shadow: 0.01em 0.018em,-0.01em -0.018em;
 }
 /* 拉丁文本 */
 .Latin-BiaoTi {
