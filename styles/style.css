@@ -170,6 +170,7 @@
 	--colour-iden-1: rgb(174, 157, 133);
 	--colour-iden-2: rgb(207, 193, 172);
 	--colour-iden-3: rgb(239, 235, 229);
+	--colour-sidenote-mark:rgb(195, 67, 56);
 	--font-hei: "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
 	--font-song: "SONG", "Noto Serif SC", serif;
@@ -528,7 +529,7 @@ li::marker {
 	left: 0;
 	color: var(--colour-iden-1);
 	opacity: 0.2;
-	transition-property: all;
+	transition-property: opacity;
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
 	text-align: center;
@@ -786,7 +787,18 @@ kbd {
 	font-size: 1.1em;
 	line-height: 1em;
 }
-
+.sideNoteMark {
+	font-family: var(--font-hei-biaodian) !important;
+	font-weight: 400 !important;
+	line-height: 0.1em;
+	color: var(--colour-sidenote-mark);
+}
+.tabulation {
+	font-family: var(--font-hei-biaodian) !important;
+	font-weight: 400 !important;
+	line-height: 0.1em;
+	color: var(--colour-sidenote-mark);
+}
 /* 中西文之间插入四分空 */
 h-hws:before,
 h-hws[hidden]:before {
@@ -806,6 +818,19 @@ h-cs[hidden] {
 	letter-spacing: -0.1em;
 	line-height: 0.1em;
 }
+/* h-char.bd-jiya.bd-middle.bd-consecutive{
+	letter-spacing: -0.5em;
+}
+h-char.bd-jiya.bd-middle.bd-consecutive.end-portion{
+	letter-spacing: 0em;
+} */
+/* 这些是让一些中间标点和前后括号类连用时中间不要有空白的 */
+h-char.bd-jiya.bd-middle.bd-consecutive + h-char.bd-jiya.bd-open.bd-consecutive.end-portion, .sideNote + h-char.bd-jiya.bd-open.bd-consecutive.end-portion, .JianGeHao +h-char.bd-jiya.bd-open.bd-consecutive.end-portion,.FenGeHao +h-char.bd-jiya.bd-open.bd-consecutive.end-portion,.BanZiXian +h-char.bd-jiya.bd-open.bd-consecutive.end-portion,.YiZiXian +h-char.bd-jiya.bd-open.bd-consecutive.end-portion{
+	margin-left: -0.5em;
+}
+h-char.bd-consecutive[unicode="b7"]:not(.end-portion), h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
+	letter-spacing: 0;
+	}
 /* h-hws,
 h-hws[hidden] {
 	font-family: "CODE", "Courier Prime", monospace;
