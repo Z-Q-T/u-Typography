@@ -170,7 +170,7 @@
 	--colour-iden-1: rgb(174, 157, 133);
 	--colour-iden-2: rgb(207, 193, 172);
 	--colour-iden-3: rgb(239, 235, 229);
-	--colour-sidenote-mark:rgb(195, 67, 56);
+	--colour-sidenote-mark: rgb(195, 67, 56);
 	--font-hei: "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
 	--font-song: "SONG", "Noto Serif SC", serif;
@@ -566,6 +566,9 @@ article {
 	/* background-color: beige; */
 	line-height: 1.85rem;
 }
+.firstParagraph{
+	text-indent: 0 !important;
+}
 .sideNote {
 	display: inline-block;
 	text-indent: 0;
@@ -723,6 +726,10 @@ kbd {
 }
 .ShengLyueHao::before {
 	content: "\200B";
+	/* 零宽空格 */
+}
+h-char.bd-end.bd-jiya + .ShengLyueHao::before{
+	content: "";
 }
 /* 破折号⸺ */
 .PoZheHao {
@@ -737,6 +744,9 @@ kbd {
 .PoZheHao::before {
 	content: "\200B";
 	/* 零宽空格 */
+}
+h-char.bd-end.bd-jiya + .PoZheHao::before{
+	content: "";
 }
 /* 一字线— */
 .YiZiXian {
@@ -771,7 +781,7 @@ kbd {
 	text-indent: 0;
 	transform: scale(0.5, 0.9);
 	margin: 0 -0.25em;
-	text-shadow: 0.01em 0.018em,-0.01em -0.018em;
+	text-shadow: 0.01em 0.018em, -0.01em -0.018em;
 }
 /* 拉丁文本 */
 .Latin-BiaoTi {
@@ -802,6 +812,10 @@ kbd {
 	font-weight: 400 !important;
 	line-height: 0.1em;
 	color: var(--colour-sidenote-mark);
+}
+.sideNoteMark::before{
+	content: "\FEFF";
+	/* 零宽不断行空格 */
 }
 .tabulation {
 	font-family: var(--font-hei-biaodian) !important;
@@ -835,12 +849,22 @@ h-char.bd-jiya.bd-middle.bd-consecutive.end-portion{
 	letter-spacing: 0em;
 } */
 /* 这些是让一些中间标点和前后括号类连用时中间不要有空白的 */
-h-char.bd-jiya.bd-middle.bd-consecutive + h-char.bd-jiya.bd-open.bd-consecutive.end-portion, .sideNote + h-char.bd-jiya.bd-open.bd-consecutive.end-portion, .JianGeHao +h-char.bd-jiya.bd-open.bd-consecutive.end-portion,.FenGeHao +h-char.bd-jiya.bd-open.bd-consecutive.end-portion,.BanZiXian +h-char.bd-jiya.bd-open.bd-consecutive.end-portion,.YiZiXian +h-char.bd-jiya.bd-open.bd-consecutive.end-portion{
-	margin-left: -0.5em;
+h-char.bd-jiya.bd-middle.bd-consecutive + h-char.bd-jiya.bd-open.bd-consecutive.end-portion::before,
+.sideNote + h-char.bd-jiya.bd-open.bd-consecutive.end-portion::before,
+.JianGeHao + h-char.bd-jiya.bd-open.bd-consecutive.end-portion::before,
+.FenGeHao + h-char.bd-jiya.bd-open.bd-consecutive.end-portion::before,
+.BanZiXian + h-char.bd-jiya.bd-open.bd-consecutive.end-portion::before,
+.YiZiXian + h-char.bd-jiya.bd-open.bd-consecutive.end-portion::before {
+	/* margin-left: -0.5em; */
+	content: "";
 }
-h-char.bd-consecutive[unicode="b7"]:not(.end-portion), h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
+h-char.bd-consecutive[unicode="b7"]:not(.end-portion),
+h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	letter-spacing: 0;
-	}
+}
+/* h-char.bd-close.bd-end.bd-jiya + .PoZheHao::before {
+	letter-spacing: -0.25em;
+} */
 /* h-hws,
 h-hws[hidden] {
 	font-family: "CODE", "Courier Prime", monospace;

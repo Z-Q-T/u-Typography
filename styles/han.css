@@ -1959,9 +1959,9 @@ h-char.bd-consecutive[unicode="b7"]:not(.end-portion),
 h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
   letter-spacing: -.5em;
 }
-h-char.bd-consecutive.bd-liga:not(.end-portion) {
+/* h-char.bd-consecutive.bd-liga:not(.end-portion) {
   margin-right: -.25em;
-}
+} */
 h-char[display-as] {
   position: relative;
   display: inline-block;
