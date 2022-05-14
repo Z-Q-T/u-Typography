@@ -26,7 +26,12 @@
 article {
 	background-color: beige;
 }
-
+section{
+	background-color: dodgerblue;
+}
+h2{
+	background-color: darkolivegreen;
+}
 /* 【1】
 宽度大于1820的窗口，或经过1.25倍放大的宽度大于2275的窗口
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕

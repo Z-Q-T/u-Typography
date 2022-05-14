@@ -395,42 +395,6 @@ html {
 	color: black;
 }
 
-#pageTypography-Button {
-	width: 34px;
-	height: 24px;
-	/* border-radius: 20px; */
-	text-align: center;
-	position: fixed;
-	left: 18px;
-	bottom: 22px;
-	line-height: 1em;
-	cursor: pointer;
-}
-#pageTypography-Button:after {
-	content: "";
-	width: 0;
-	height: 3px;
-	background-color: var(--colour-iden-2);
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	transition: all 200ms ease-in-out;
-}
-
-#pageTypography-Button:hover:after {
-	left: 0%;
-	width: 100%;
-}
-#pageTypography-Button:active{
-	transform: translateY(2px);
-}
-#pageTypography-Icon {
-	width: 40px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	margin: -10px 0 0 -20px;
-}
 #page {
 	height: 100%;
 	display: inline-block;
@@ -439,63 +403,6 @@ html {
 	top: 0;
 }
 
-#mainTitleArea {
-	/* padding: 20px 0; */
-	height: 20rem;
-	width: 57rem;
-	display: inline-block;
-	position: absolute;
-	top: 0;
-	margin-left: 21rem;
-	z-index: 4;
-	/* background-color: orange; */
-}
-#metaInfo {
-	/* visibility: hidden; */
-	display: inline-block;
-	position: absolute;
-	left: -21rem;
-	top: 8.5rem;
-	width: 18rem;
-	z-index: 5;
-	text-align: center;
-	color: black;
-	line-height: 1em;
-	font-size: 0.75rem;
-}
-#index,
-#time,
-#author,
-.metaInfo-Seperator {
-	display: block;
-}
-#index {
-	font-family: var(--font-serif);
-	font-weight: 600;
-	font-size: 1rem;
-	/* color: var(--colour-iden-1); */
-}
-.metaInfo-Seperator {
-	height: 1.5px;
-	width: 40px;
-	margin: 1rem auto;
-	background-color: rgb(175, 175, 175);
-}
-#time,
-#author {
-	font-family: var(--font-hei);
-}
-.number {
-	font-family: var(--font-sans);
-	font-weight: 400;
-	font-variant: proportional-nums;
-	font-size: 1.1em;
-}
-/* #time time {
-	font-family: var(--font-sans);
-	font-weight: 400;
-	font-size: 1.1em;
-} */
 li {
 	list-style-type: none;
 	margin-bottom: 0.2em;
@@ -505,41 +412,6 @@ li::marker {
 	display: none !important;
 	/* visibility: hidden !important; */
 }
-
-/* #decoLine {
-	display: inline-block;
-	position: absolute;
-	width: 9px;
-	height: 140px;
-	background-color: black;
-	top: 8rem;
-	left: 1.4rem;
-	visibility: hidden;
-} */
-#title {
-	display: inline-block;
-	position: absolute;
-	/* left: -13rem; */
-	top: 8rem;
-	width: 57rem;
-	/* border-bottom: var(--colour-iden) solid 6px; */
-	/* padding-bottom: 0.75rem; */
-}
-/* .titleAdjust{
-	font-family: "HEI", "Noto Sans SC", sans-serif;
-} */
-
-/* 这个是在开头弄一个思源黑体的零宽空格用来定位的 */
-/* h1 div {
-	box-shadow: inset 0em -0.15em var(--colour-iden-2);
-	font-family: "HEI", "Noto Sans SC", sans-serif;
-	font-size: 3rem;
-	line-height: 4rem;
-	height: 3rem;
-	width: fit-content;
-	display: block;
-	margin-bottom: 1rem;
-} */
 
 #toc-PlaceHolder {
 	height: 300px;
@@ -604,32 +476,6 @@ article {
 	/* background-color: beige; */
 	line-height: 1.85rem;
 }
-.firstParagraph {
-	text-indent: 0 !important;
-}
-.sideNote {
-	display: inline-block;
-	text-indent: 0;
-	font-family: var(--font-hei);
-	font-weight: 400;
-	position: absolute;
-	/* margin-left: 0; */
-	clear: both;
-	font-size: 0.75rem;
-	line-height: 1.2rem;
-	color: rgb(46, 46, 46);
-	/* white-space: break-spaces; */
-}
-.tabulation {
-	white-space: break-spaces;
-	tab-size: 3rem;
-}
-/* h-char.bd-jiya.bd-open:before,
-h-char.bd-jiya.bd-end:after,
-h-cs,
-h-cs[hidden] {
-  font-family: "Hei","Noto Sans SC", sans-serif;
-} */
 
 /* 标题标点符号用思源宋体 */
 h1 h-char.bd-jiya.bd-open > h-inner,
@@ -667,28 +513,12 @@ h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-family: "SONG-BiaoDian", "Noto Serif SC";
 	font-weight: 600;
 } */
-
-.titleLine {
-	display: block;
-	font-family: var(--font-song);
-	font-weight: 700;
-	font-size: 3rem;
-	/* vertical-align: sub; */
-	line-height: 4rem;
+section{
 	position: relative;
-	top: -10px;
-	/* box-shadow: inset 0em -0.15em var(--colour-iden-2); */
-	height: 3rem;
-	width: fit-content;
-	margin-bottom: 1rem;
-	/* text-decoration-line: underline;
-	text-decoration-color: var(--colour-iden);
-	text-decoration-style: solid; */
-	/* margin-top: 8rem; */
 }
-/* h1{
-	width: fit-content;
-	border-bottom: 5px var(--colour-iden-2) solid;
+/* .sticky{
+	display: block;
+	position: sticky;
 } */
 h2 {
 	font-family: var(--font-song);
@@ -697,6 +527,9 @@ h2 {
 	line-height: 2.5rem;
 	text-align: center;
 	margin: 5rem auto 3rem auto;
+	display: block;
+	position: sticky;
+	top: 0px;
 }
 h3 {
 	font-family: var(--font-song);
@@ -706,45 +539,7 @@ h3 {
 	text-align: center;
 	margin: 4rem auto 2rem auto;
 }
-p {
-	/* font-family: var(--font-ZhengWen-HEI); */
-	text-align: justify;
-	text-indent: 3rem;
-	line-height: 2rem;
-	/* margin: 0; */
-	/* text-justify: inter-character; */
-	/* 中文齐行往字间插入间距 */
-}
 
-/* blockquote {
-	font-family: "Alegreya";
-	font-family: "LXGW WenKai";
-} */
-pre {
-	font-family: var(--font-code);
-	font-size: 0.8rem;
-	line-height: 1.4rem;
-	hyphens: none;
-	text-align: left;
-	margin: 2rem 0;
-	padding-left: 3rem;
-	/* text-indent: 3rem; */
-	white-space: pre-wrap;
-}
-code {
-	font-family: var(--font-code);
-	font-size: 1em;
-}
-kbd {
-	font-family: var(--font-code);
-	font-style: italic;
-	font-size: 1em;
-}
-/* img {
-	display: block;
-	margin: 0 auto;
-	width: 500px;
-} */
 /* 间隔号· */
 .JianGeHao {
 	font-family: var(--font-hei-biaodian) !important;
@@ -837,29 +632,6 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 	line-height: 1em;
 	/* text-justify: inter-word; */
 	/* 西文齐行往词间插入间距 */
-}
-.Latin-BianZhu {
-	font-family: var(--font-sans);
-	font-weight: 400;
-	hyphens: auto;
-	font-size: 1.1em;
-	line-height: 1em;
-}
-.sideNoteMark {
-	font-family: var(--font-hei-biaodian) !important;
-	font-weight: 400 !important;
-	line-height: 0.1em;
-	color: var(--colour-sidenote-mark);
-}
-.sideNoteMark::before {
-	content: "\FEFF";
-	/* 零宽不断行空格 */
-}
-.tabulation {
-	font-family: var(--font-hei-biaodian) !important;
-	font-weight: 400 !important;
-	line-height: 0.1em;
-	color: var(--colour-sidenote-mark);
 }
 /* 中西文之间插入四分空 */
 h-hws:before,
