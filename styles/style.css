@@ -453,11 +453,17 @@ html {
 #author {
 	font-family: var(--font-hei);
 }
-#time time {
+.number{
+	font-family: var(--font-sans);
+	font-weight: 400;
+	font-variant: proportional-nums;
+	font-size: 1.1em;
+}
+/* #time time {
 	font-family: var(--font-sans);
 	font-weight: 400;
 	font-size: 1.1em;
-}
+} */
 li {
 	list-style-type: none;
 	margin-bottom: 0.2em;
