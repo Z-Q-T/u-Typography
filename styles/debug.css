@@ -23,14 +23,32 @@
 #mainContent {
 	background-color: blueviolet;
 }
+header{
+	background-color: limegreen;
+}
 article {
 	background-color: beige;
 }
 section{
 	background-color: dodgerblue;
 }
+.placeHolder{
+	background-color: sienna;
+}
+.classificationContainer{
+	background-color: slategray;
+}
+.listContainer{
+	background-color: darksalmon;
+}
 h2{
 	background-color: darkolivegreen;
+}
+ul{
+	background-color: pink;
+}
+h3{
+	background-color: mediumaquamarine;
 }
 /* 【1】
 宽度大于1820的窗口，或经过1.25倍放大的宽度大于2275的窗口

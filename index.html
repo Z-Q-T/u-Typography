@@ -26,7 +26,7 @@
 
     <link rel="stylesheet" href="styles/style-index.css" type="text/css">
     <link rel="stylesheet" href="styles/debug.css" type="text/css">
-<base target="_blank">
+    <base target="_blank">
 
 </head>
 
@@ -34,13 +34,7 @@
 
     <div id="whole">
 
-        <div id="bar">
-            <picture>
-                <source srcset="images/字无字_横.png" media="(max-width: 1040px)">
-                <img id="logo" src="images/字无字_竖-小.png" alt="“字无字”的标志｜logo of ú–Typography">
-            </picture>
-
-
+        <div id="changeTypeFunction">
             <div id="changeTypeMenu-Button"><svg id="changeTypeMenu-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 30">
                     <g id="changeTypeMenu-ButtonSVGgraphic">
                         <circle cx="3" cy="3" r="3" />
@@ -49,7 +43,7 @@
                     </g>
                 </svg></div>
             <div id="changeTypeMenu-Hint"><span id="changeTypeMenu-Hint-Title">〖更换字体〗</span><br>该功能在一些情况下会额外下载所需的字体<br>这可能消耗更多的流量</div>
-            <div id="changeTypeMenu" style="visibility: hidden; opacity: 0; ">
+            <menu id="changeTypeMenu" style="visibility: hidden; opacity: 0; ">
                 <div class="changeTypeMenu-Section">标题
                     <a id="changeTypeMenu-BiaoTi-SONG">
                         宋
@@ -65,48 +59,61 @@
                 <div class="changeTypeMenu-Section">边注<a id="changeTypeMenu-BianZhu-SONG">宋</a>
                     <a id="changeTypeMenu-BianZhu-HEI">黑</a>
                 </div>
-            </div>
-
+            </menu>
         </div>
         <main id="page">
+            <div id="side">
+                <picture>
+                    <source srcset="images/字无字_横.png" media="(max-width: 1040px)">
+                    <img id="logo" src="images/字无字_竖-小.png" alt="“字无字”的标志｜logo of ú–Typography">
+                </picture>
+            </div>
+            <div id="mainContent">
+                <section>
 
-            <section>
-                <!-- <div class="sticky"> -->
-                    <h2>中文排字</h2>
-                <!-- </div> -->
-                <ul>
-                    <li><a href="articles/Lorem ipsum.html">他近来觉得孤冷得可怜</a></li>
-                    <li>晴天一碧，万里无云</li>
-                    <li>终古常新的皎日，不知从何处飞来的一声两声的远吠声</li>
-                    <li>依旧在她的轨道上，他眼睛离开了书</li>
-                    <li>一程一程地在那里行走</li>
-                    <li>从南方吹来的微风，同做梦似的向有犬吠声的地方看去</li>
-                </ul>
-            </section>
-            <section>
-                <!-- <div class="sticky"> -->
-                <h2>杂谈</h2>
-            <!-- </div> -->
-                <ul>
-                    <li>他近来觉得孤冷得可怜</li>
-                    <li>同醒酒的琼浆一般，带着一种香气</li>
-                    <li>一阵阵地拂上面来。但看见了一丛杂树</li>
-                    <li>在黄苍未熟的稻田中间</li>
-                    <li>在弯曲同白线似的乡间的官道上面</li>
-                    <li>一本六寸长的的诗集</li>
-                    <li>尽在那里缓缓地独步。几处人家</li>
-                    <li>在这大平原内，四面并无人影</li>
-                    <li>悠悠扬扬的传到他耳膜上来</li>
-                </ul>
-            </section>
-            <section>
-                <h2>&lt;&#8197;T&#8197;&gt;</h2>
-                <h3>这个网站的排版</h3>
-                <h2>©</h2>
-                <h3>版权声明</h3>
-                <h2>￥</h2>
-                <h3>打赏</h3>
-            </section>
+                    <div class="classificationContainer">
+                        <h2>中文排字</h2>
+                    </div>
+                    <div class="listContainer">
+                        <ul>
+                            <li><a href="articles/Lorem ipsum.html">他近来觉得孤冷得可怜</a></li>
+                            <li>晴天一碧，万里无云</li>
+                            <li>终古常新的皎日，不知从何处飞来的一声两声的远吠声</li>
+                            <li>依旧在她的轨道上，他眼睛离开了书</li>
+                            <li>一程一程地在那里行走</li>
+                            <li>从南方吹来的微风，同做梦似的向有犬吠声的地方看去</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="placeHolder"></div> -->
+                </section>
+                <section>
+                    <div class="classificationContainer">
+                        <h2>杂谈</h2>
+                    </div>
+                    <div class="listContainer">
+                        <ul>
+                            <li>他近来觉得孤冷得可怜</li>
+                            <li>同醒酒的琼浆一般，带着一种香气</li>
+                            <li>一阵阵地拂上面来。但看见了一丛杂树</li>
+                            <li>在黄苍未熟的稻田中间</li>
+                            <li>在弯曲同白线似的乡间的官道上面</li>
+                            <li>一本六寸长的的诗集</li>
+                            <li>尽在那里缓缓地独步。几处人家</li>
+                            <li>在这大平原内，四面并无人影</li>
+                            <li>悠悠扬扬的传到他耳膜上来</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="placeHolder"></div> -->
+                </section>
+                <section>
+                    <h2 class="symbol">&lt;&#8197;T&#8197;&gt;</h2>
+                    <h3>这个网站的排版</h3>
+                    <h2 class="symbol">©</h2>
+                    <h3>版权声明</h3>
+                    <h2 class="symbol">￥</h2>
+                    <h3>打赏</h3>
+                </section>
+            </div>
         </main>
     </div>
     <script src="scripts/script.js"></script>

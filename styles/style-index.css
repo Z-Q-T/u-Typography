@@ -224,6 +224,7 @@ html {
 	left: 0;
 	/* background-color: rgb(232, 226, 220); */
 }
+
 #logo {
 	width: 40px;
 	cursor: pointer;
@@ -233,7 +234,7 @@ html {
 	animation: logoHover 200ms ease-in-out;
 	/* animation-fill-mode: forwards; */
 }
-#logo:active{
+#logo:active {
 	transform: scale(95%);
 }
 /* @keyframes logoHover {
@@ -398,14 +399,88 @@ html {
 #page {
 	height: 100%;
 	display: inline-block;
-	/* background-color: yellow; */
 	position: relative;
 	top: 0;
 }
+#side {
+	width: 9rem;
+	position: sticky;
+	display: inline-block;
+	top: 0;
+	left: 0;
+	height: 30rem;
+}
+#mainContent {
+	padding: 2rem 0;
+	display: block;
+	height: auto;
+	position: relative;
+	top: -20rem;
+	/* background-color: blueviolet; */
+}
+section {
+	margin: 4rem 0;
+	position: relative;
+}
+.placeHolder {
+	display: block;
+	width: 6rem;
+	height: 2rem;
+	position: sticky;
+	top: 0;
+}
+.classificationContainer {
+	
+	position: absolute;
+	height: 100%;
+	width: 6rem;
+	top: 0rem;
+	padding-top: 2rem;
+}
+.listContainer {
+	display: inline-block;
+	width: 30rem;
+	position: relative;
+	left: 12rem;
+	top: 0.5rem;
+}
+h2 {
+	font-family: var(--font-hei);
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 1em;
+	text-align: right;
+	margin: 0;
+	display: block;
+	width: 6rem;
+	position: sticky;
+	top: 5rem;
+}
+.symbol {
+	font-family: var(--font-song);
+	font-weight: 600;
+}
+ul {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	position: relative;
+	top: 0rem;
+}
+h3 {
+	font-size: 1.5rem;
+	line-height: 1em;
+	text-align: left;
+	margin: 0 0 2rem 0;
+}
 
+ul,
+h3 {
+	font-family: var(--font-song);
+	font-weight: 600;
+}
 li {
 	list-style-type: none;
-	margin-bottom: 0.2em;
+	margin-top: 1.5rem;
 }
 li::marker {
 	content: "";
@@ -459,23 +534,7 @@ li::marker {
 	font-size: 1rem;
 	line-height: 1.5rem;
 }
-#mainContent {
-	padding: 2rem 0;
-	display: block;
-	height: auto;
-	position: relative;
-	top: 0px;
-	/* background-color: blueviolet; */
-}
 
-article {
-	display: block;
-	height: auto;
-	position: relative;
-	top: 0;
-	/* background-color: beige; */
-	line-height: 1.85rem;
-}
 
 /* 标题标点符号用思源宋体 */
 h1 h-char.bd-jiya.bd-open > h-inner,
@@ -504,40 +563,6 @@ article h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-family: "HEI-BiaoDian", "Noto Sans SC" !important;
 	font-weight: 400 !important;
 	line-height: 0.1em;
-}
-/* 正文标点符号用思源宋体 */
-/* h-char.bd-jiya.bd-open > h-inner,
-h-char.bd-jiya.bd-close > h-inner,
-h-char.bd-jiya.bd-cop > h-inner,
-h-char.bd-jiya[unicode="ff0e"] > h-inner {
-	font-family: "SONG-BiaoDian", "Noto Serif SC";
-	font-weight: 600;
-} */
-section{
-	position: relative;
-}
-/* .sticky{
-	display: block;
-	position: sticky;
-} */
-h2 {
-	font-family: var(--font-song);
-	font-weight: 700;
-	font-size: 1.5rem;
-	line-height: 2.5rem;
-	text-align: center;
-	margin: 5rem auto 3rem auto;
-	display: block;
-	position: sticky;
-	top: 0px;
-}
-h3 {
-	font-family: var(--font-song);
-	font-weight: 700;
-	font-size: 1.2rem;
-	line-height: 2rem;
-	text-align: center;
-	margin: 4rem auto 2rem auto;
 }
 
 /* 间隔号· */
@@ -689,16 +714,16 @@ h-hws[hidden] {
 宽度大于1820的窗口，或经过1.25倍放大的宽度大于2275的窗口
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
 正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
-@media screen and (min-width: 1840px) {
+@media screen and (min-width: 1400px) {
 	#whole {
-		width: 1820px;
+		width: 1380px;
 	}
 	#bar {
 		width: 3rem;
 	}
 	#page {
-		width: 78rem;
-		left: 7rem;
+		width: 57rem;
+		margin-left: 6rem;
 	}
 	.titleLine {
 		font-size: 3rem;
@@ -706,8 +731,8 @@ h-hws[hidden] {
 	}
 
 	#mainContent {
-		width: 57rem;
-		left: 21rem;
+		width: 42rem;
+		left: 15rem;
 	}
 	article {
 		margin-right: 21rem;
