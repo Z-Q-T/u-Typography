@@ -167,9 +167,8 @@
 	--colour-changeType-inactive: rgb(70, 70, 70);
 	--colour-changeType-active: rgb(190, 176, 156);
 	--colour-changeType-hover: rgb(123, 117, 106);
-	--colour-iden-1: rgb(174, 157, 133);
-	--colour-iden-2: rgb(207, 193, 172);
-	--colour-iden-3: rgb(239, 235, 229);
+	--colour-1: rgb(174, 157, 133);
+	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
 	--font-hei: "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
@@ -216,7 +215,6 @@ html {
 	top: 0;
 }
 #bar {
-	padding: 20px;
 	height: 100%;
 	display: inline-block;
 	position: fixed;
@@ -224,16 +222,33 @@ html {
 	left: 0;
 	/* background-color: rgb(232, 226, 220); */
 }
+/* #bar picture {
+	display: block;
+	position: relative;} */
+
+#backToHomePage {
+	display: block;
+	position: relative;
+	left: 19px;
+	top: 19px;
+	cursor: pointer;
+	height: 97px;
+	width: 42px;
+	cursor: pointer;
+}
 #logo {
 	width: 40px;
-	cursor: pointer;
+
+	position: relative;
+	top: 1px;
+	left: 1px;
 }
 #logo:hover {
 	/* filter: invert(10%); */
 	animation: logoHover 200ms ease-in-out;
 	/* animation-fill-mode: forwards; */
 }
-#logo:active{
+#logo:active {
 	transform: scale(95%);
 }
 /* @keyframes logoHover {
@@ -276,7 +291,7 @@ html {
 }
 #changeTypeMenu-ButtonSVG {
 	width: 4px;
-	fill: var(--colour-iden-2);
+	fill: var(--colour-button);
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -320,7 +335,7 @@ html {
 	font-size: 0.6rem;
 	text-align: center;
 	line-height: 0.75rem;
-	box-shadow: 0px 0px 10px var(--colour-iden-1);
+	box-shadow: 0px 0px 10px var(--colour-1);
 }
 /* #changeTypeMenu-Button:hover + #changeTypeMenu-Hint {
 	visibility: visible;
@@ -410,7 +425,7 @@ html {
 	content: "";
 	width: 0;
 	height: 3px;
-	background-color: var(--colour-iden-2);
+	background-color: var(--colour-button);
 	position: absolute;
 	top: 100%;
 	left: 50%;
@@ -421,7 +436,7 @@ html {
 	left: 0%;
 	width: 100%;
 }
-#pageTypography-Button:active{
+#pageTypography-Button:active {
 	transform: translateY(2px);
 }
 #pageTypography-Icon {
@@ -473,7 +488,7 @@ html {
 	font-family: var(--font-serif);
 	font-weight: 600;
 	font-size: 1rem;
-	/* color: var(--colour-iden-1); */
+	/* color: var(--colour-1); */
 }
 .metaInfo-Seperator {
 	height: 1.5px;
@@ -531,7 +546,7 @@ li::marker {
 
 /* 这个是在开头弄一个思源黑体的零宽空格用来定位的 */
 /* h1 div {
-	box-shadow: inset 0em -0.15em var(--colour-iden-2);
+	box-shadow: inset 0em -0.15em var(--colour-button);
 	font-family: "HEI", "Noto Sans SC", sans-serif;
 	font-size: 3rem;
 	line-height: 4rem;
@@ -565,7 +580,7 @@ li::marker {
 	width: 18rem;
 	top: 125px;
 	left: 0;
-	color: var(--colour-iden-1);
+	color: var(--colour-1);
 	opacity: 0.2;
 	transition-property: opacity;
 	transition-timing-function: ease-in-out;
@@ -677,7 +692,7 @@ h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	line-height: 4rem;
 	position: relative;
 	top: -10px;
-	/* box-shadow: inset 0em -0.15em var(--colour-iden-2); */
+	/* box-shadow: inset 0em -0.15em var(--colour-button); */
 	height: 3rem;
 	width: fit-content;
 	margin-bottom: 1rem;
@@ -688,7 +703,7 @@ h-char.bd-jiya[unicode="ff0e"] > h-inner {
 }
 /* h1{
 	width: fit-content;
-	border-bottom: 5px var(--colour-iden-2) solid;
+	border-bottom: 5px var(--colour-button) solid;
 } */
 h2 {
 	font-family: var(--font-song);
@@ -1106,7 +1121,12 @@ h-hws[hidden] {
 		position: fixed;
 		z-index: 10;
 		background-color: var(--colour-paper);
-		padding: 15px;
+	}
+	#backToHomePage {
+		left: 14px;
+		top: 14px;
+		height: 32px;
+		width: 100px;
 	}
 	#logo {
 		width: auto;
@@ -1234,7 +1254,12 @@ h-hws[hidden] {
 		position: fixed;
 		z-index: 10;
 		background-color: var(--colour-paper);
-		padding: 15px;
+	}
+	#backToHomePage {
+		left: 14px;
+		top: 14px;
+		height: 32px;
+		width: 100px;
 	}
 	#logo {
 		width: auto;

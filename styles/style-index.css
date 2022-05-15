@@ -167,9 +167,8 @@
 	--colour-changeType-inactive: rgb(70, 70, 70);
 	--colour-changeType-active: rgb(190, 176, 156);
 	--colour-changeType-hover: rgb(123, 117, 106);
-	--colour-iden-1: rgb(174, 157, 133);
-	--colour-iden-2: rgb(207, 193, 172);
-	--colour-iden-3: rgb(239, 235, 229);
+	--colour-1: rgb(174, 157, 133);
+	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
 	--font-hei: "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
@@ -228,6 +227,8 @@ html {
 #logo {
 	width: 40px;
 	cursor: pointer;
+	position: relative;
+	top: 10rem;
 }
 #logo:hover {
 	/* filter: invert(10%); */
@@ -237,17 +238,6 @@ html {
 #logo:active {
 	transform: scale(95%);
 }
-/* @keyframes logoHover {
-	0% {
-		transform: scale(100%);
-	}
-	70% {
-		transform: scale(109%);
-	}
-	100% {
-		transform: scale(110%);
-	}
-} */
 @keyframes logoHover {
 	0% {
 		transform: rotate(5deg);
@@ -259,6 +249,15 @@ html {
 		transform: rotate(0deg);
 	}
 }
+#briefIntroduction {
+	width: 9rem;
+	font-size: 0.75rem;
+	line-height: 2em;
+	display: block;
+	position: absolute;
+	top: 30rem;
+}
+
 #changeTypeMenu-Button {
 	width: 40px;
 	height: 40px;
@@ -415,11 +414,15 @@ html {
 	display: block;
 	height: auto;
 	position: relative;
-	top: -20rem;
+	top: -25rem;
 	/* background-color: blueviolet; */
 }
 section {
-	margin: 4rem 0;
+	margin: 8rem 0;
+	position: relative;
+}
+footer {
+	margin: 10rem 0;
 	position: relative;
 }
 .placeHolder {
@@ -430,7 +433,6 @@ section {
 	top: 0;
 }
 .classificationContainer {
-	
 	position: absolute;
 	height: 100%;
 	width: 6rem;
@@ -456,9 +458,19 @@ h2 {
 	position: sticky;
 	top: 5rem;
 }
+.subDivision {
+	margin-bottom: 4rem;
+}
 .symbol {
 	font-family: var(--font-song);
 	font-weight: 600;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	position: relative;
+	top: 0;
+	display: inline-block;
+	width: 6rem;
+	text-align: right;
 }
 ul {
 	font-size: 1.2rem;
@@ -470,7 +482,11 @@ h3 {
 	font-size: 1.5rem;
 	line-height: 1em;
 	text-align: left;
-	margin: 0 0 2rem 0;
+
+	display: inline-block;
+	width: 30rem;
+	left: 12rem;
+	position: absolute;
 }
 
 ul,
@@ -487,54 +503,6 @@ li::marker {
 	display: none !important;
 	/* visibility: hidden !important; */
 }
-
-#toc-PlaceHolder {
-	height: 300px;
-	width: 18rem;
-	display: block;
-	position: sticky;
-	top: 0;
-	left: 0;
-}
-#toc-Container {
-	/* padding: 20px; */
-	height: 100px;
-	width: 18rem;
-	display: block;
-	position: sticky;
-	top: 0;
-	left: 0;
-	/* background-color: green; */
-}
-#tableOfContent {
-	display: block;
-	position: absolute;
-	width: 18rem;
-	top: 125px;
-	left: 0;
-	color: var(--colour-iden-1);
-	opacity: 0.2;
-	transition-property: opacity;
-	transition-timing-function: ease-in-out;
-	transition-duration: 100ms;
-	text-align: center;
-	/* background-color: darkgrey; */
-}
-#tableOfContent:hover {
-	opacity: 1;
-	transition-property: all;
-	transition-timing-function: ease-in-out;
-	transition-duration: 100ms;
-	/* background-color: darkgrey; */
-}
-#tableOfContent li {
-	margin: 1rem 0;
-	font-family: var(--font-song);
-	font-weight: 700;
-	font-size: 1rem;
-	line-height: 1.5rem;
-}
-
 
 /* 标题标点符号用思源宋体 */
 h1 h-char.bd-jiya.bd-open > h-inner,
@@ -564,7 +532,9 @@ article h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-weight: 400 !important;
 	line-height: 0.1em;
 }
-
+a:visited {
+	color: black;
+}
 /* 间隔号· */
 .JianGeHao {
 	font-family: var(--font-hei-biaodian) !important;
@@ -710,182 +680,33 @@ h-hws[hidden] {
 /* ————————————响应式设计———————————— */
 /* 留20px的滚动条的空间 */
 
-/* 【1】#############################
-宽度大于1820的窗口，或经过1.25倍放大的宽度大于2275的窗口
-适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
-正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
+/* 【1】############################# */
 @media screen and (min-width: 1400px) {
 	#whole {
 		width: 1380px;
 	}
-	#bar {
-		width: 3rem;
-	}
+
 	#page {
 		width: 57rem;
 		margin-left: 6rem;
-	}
-	.titleLine {
-		font-size: 3rem;
-		line-height: 4rem;
 	}
 
 	#mainContent {
 		width: 42rem;
 		left: 15rem;
 	}
-	article {
-		margin-right: 21rem;
-	}
-	.sideNote {
-		left: 39rem;
-		width: 18rem;
-	}
 }
 
-/* 【2】#############################
-宽度1380—1820的窗口，或经过1.25倍放大的宽度1725—2275的窗口
-适用于1440宽的屏幕，或经过1.25倍放大的1920宽的屏幕
-正文每行30字，字号20。边注每行16字，字号15；宽度等同于正文12字 */
-@media screen and (min-width: 1400px) and (max-width: 1840px) {
+/* 【2】############################# */
+@media screen and (min-width: 1160px) and (max-width: 1400px) {
 	#whole {
-		width: 1380px;
-		/* background-color: black; */
-	}
-	#bar {
-		width: 3rem;
-	}
-	#page {
-		width: 60rem;
-		left: 6rem;
-	}
-	#metaInfo {
-		width: 12rem;
-		top: 8.25rem;
-		left: -15rem;
-		font-size: 0.625rem;
-	}
-	#index {
-		font-size: 0.85rem;
-	}
-	.metaInfo-Seperator {
-		width: 35px;
-		margin: 0.85rem auto;
-	}
-	#mainTitleArea {
-		margin-left: 15rem;
-		width: 45rem;
-	}
-	#title {
-		width: 45rem;
-	}
-	.titleLine {
-		font-size: 2.5rem;
-		line-height: 3.3rem;
-		margin-bottom: 0.8rem;
-		height: 2.5rem;
-	}
-	#timeAuthorRevision {
-		width: 12rem;
-		left: 33rem;
-		font-size: 0.65rem;
-		tab-size: 3em;
-	}
-	#tableOfContent {
-		width: 12rem;
-		top: 105px;
-	}
-	#mainContent {
-		width: 45rem;
-		left: 15rem;
-		padding: 1rem 0 2rem 0;
-	}
-	article {
-		margin-right: 15rem;
-	}
-	.sideNote {
-		left: 33rem;
-		width: 12rem;
+		width: 1140px;
 	}
 }
-/* 【3】#############################
-宽度1020—1380的窗口，或经过1.25倍放大的宽度1275—1725的窗口
-适用于1080宽的屏幕，或经过1.25倍放大的1440宽的屏幕
-正文每行27字，字号20。边注每行12字，字号15；宽度等同于正文9字 */
-@media screen and (min-width: 1040px) and (max-width: 1400px) {
+/* 【3】############################# */
+@media screen and (min-width: 860px) and (max-width: 1160px) {
 	#whole {
-		width: 1020px;
-		/* background-color: navy; */
-	}
-	#bar {
-		width: 3rem;
-	}
-	#page {
-		width: 39rem;
-		left: 9rem;
-	}
-	#mainTitleArea {
-		margin-left: 0rem;
-		width: 39rem;
-	}
-	#metaInfo {
-		/* visibility: hidden; */
-		display: block;
-		position: relative;
-		left: 9rem;
-		top: 0rem;
-		width: 9rem;
-		margin: 4rem 0;
-		font-size: 0.5625rem;
-	}
-	#index {
-		font-size: 0.75rem;
-	}
-	.metaInfo-Seperator {
-		width: 30px;
-		margin: 0.75rem auto;
-	}
-	/* #metaInfo {
-		font-size: 1.125rem;
-	} */
-
-	#title {
-		display: block;
-		position: static;
-		width: 39rem;
-	}
-	.titleLine {
-		font-size: 2.25rem;
-		line-height: 3rem;
-		margin-bottom: 0.75rem;
-		height: 2.25rem;
-	}
-
-	#toc-PlaceHolder {
-		display: none;
-	}
-	#toc-Container {
-		display: none;
-	}
-	#tableOfContent {
-		display: none;
-	}
-
-	#mainContent {
-		width: 39rem;
-		padding: 2rem 0 2rem 0;
-		margin-top: 25rem;
-		left: 0rem;
-	}
-	article {
-		margin-right: 12rem;
-	}
-	h3 {
-		font-size: 1.125rem;
-	}
-	.sideNote {
-		left: 30rem;
-		width: 9rem;
+		width: 840px;
 	}
 }
 /* 【4】#############################

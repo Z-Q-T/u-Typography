@@ -25,7 +25,7 @@
     <link rel="stylesheet" media="all" href="styles/han.css">
 
     <link rel="stylesheet" href="styles/style-index.css" type="text/css">
-    <link rel="stylesheet" href="styles/debug.css" type="text/css">
+    <!-- <link rel="stylesheet" href="styles/debug.css" type="text/css"> -->
     <base target="_blank">
 
 </head>
@@ -62,12 +62,13 @@
             </menu>
         </div>
         <main id="page">
-            <div id="side">
+            <header id="side">
                 <picture>
                     <source srcset="images/字无字_横.png" media="(max-width: 1040px)">
                     <img id="logo" src="images/字无字_竖-小.png" alt="“字无字”的标志｜logo of ú–Typography">
                 </picture>
-            </div>
+                <p id="briefIntroduction">苟文一的个人网站<br>分享中文排版以及更多</p>
+            </header>
             <div id="mainContent">
                 <section>
 
@@ -88,7 +89,7 @@
                 </section>
                 <section>
                     <div class="classificationContainer">
-                        <h2>杂谈</h2>
+                        <h2>杂&emsp;&emsp;谈</h2>
                     </div>
                     <div class="listContainer">
                         <ul>
@@ -105,14 +106,20 @@
                     </div>
                     <!-- <div class="placeHolder"></div> -->
                 </section>
-                <section>
-                    <h2 class="symbol">&lt;&#8197;T&#8197;&gt;</h2>
-                    <h3>这个网站的排版</h3>
-                    <h2 class="symbol">©</h2>
-                    <h3>版权声明</h3>
-                    <h2 class="symbol">￥</h2>
-                    <h3>打赏</h3>
-                </section>
+                <footer>
+                    <div class="subDivision">
+                        <div class="symbol">&lt;&#8197;T&#8197;&gt;</div>
+                        <h3>这个网站的排版</h3>
+                    </div>
+                    <div class="subDivision">
+                        <div class="symbol">©</div>
+                        <h3>版权声明</h3>
+                    </div>
+                    <div class="subDivision">
+                        <div class="symbol">¥</div>
+                        <h3>打赏</h3>
+                    </div>
+                </footer>
             </div>
         </main>
     </div>
