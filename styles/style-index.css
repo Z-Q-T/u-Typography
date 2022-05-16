@@ -214,55 +214,12 @@ html {
 	position: relative;
 	top: 0;
 }
-#bar {
-	padding: 20px;
-	height: 100%;
-	display: inline-block;
-	position: fixed;
-	top: 0;
-	left: 0;
-	/* background-color: rgb(232, 226, 220); */
-}
-
-#logo {
-	width: 40px;
-	cursor: pointer;
-	position: relative;
-	top: 10rem;
-}
-#logo:hover {
-	/* filter: invert(10%); */
-	animation: logoHover 200ms ease-in-out;
-	/* animation-fill-mode: forwards; */
-}
-#logo:active {
-	transform: scale(95%);
-}
-@keyframes logoHover {
-	0% {
-		transform: rotate(5deg);
-	}
-	50% {
-		transform: rotate(-5deg);
-	}
-	100% {
-		transform: rotate(0deg);
-	}
-}
-#briefIntroduction {
-	width: 9rem;
-	font-size: 0.75rem;
-	line-height: 2em;
-	display: block;
-	position: absolute;
-	top: 30rem;
-}
 
 #changeTypeMenu-Button {
 	width: 40px;
 	height: 40px;
 	position: fixed;
-	bottom: 60px;
+	bottom: 20px;
 	left: 15px;
 	cursor: pointer;
 	border-radius: 20px;
@@ -276,7 +233,7 @@ html {
 }
 #changeTypeMenu-ButtonSVG {
 	width: 4px;
-	fill: var(--colour-iden-2);
+	fill: var(--colour-button);
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -303,7 +260,7 @@ html {
 } */
 #changeTypeMenu {
 	width: 40px;
-	height: 407px;
+	height: 277px;
 	background-color: black;
 	position: fixed;
 	border-radius: 20px;
@@ -320,7 +277,7 @@ html {
 	font-size: 0.6rem;
 	text-align: center;
 	line-height: 0.75rem;
-	box-shadow: 0px 0px 10px var(--colour-iden-1);
+	box-shadow: 0px 0px 10px var(--colour-1);
 }
 /* #changeTypeMenu-Button:hover + #changeTypeMenu-Hint {
 	visibility: visible;
@@ -346,10 +303,8 @@ html {
 }
 #changeTypeMenu-BiaoTi-SONG,
 #changeTypeMenu-BiaoTi-HEI,
-#changeTypeMenu-ZhengWen-SONG,
-#changeTypeMenu-ZhengWen-HEI,
-#changeTypeMenu-BianZhu-SONG,
-#changeTypeMenu-BianZhu-HEI {
+#changeTypeMenu-FenLei-SONG,
+#changeTypeMenu-FenLei-HEI{
 	display: block;
 	margin: 0.5rem auto;
 	width: 25px;
@@ -367,23 +322,19 @@ html {
 	transition-duration: 100ms;
 }
 #changeTypeMenu-BiaoTi-SONG,
-#changeTypeMenu-ZhengWen-SONG,
-#changeTypeMenu-BianZhu-SONG {
+#changeTypeMenu-FenLei-SONG {
 	font-family: var(--font-song);
 	font-weight: 600;
 }
 #changeTypeMenu-BiaoTi-HEI,
-#changeTypeMenu-ZhengWen-HEI,
-#changeTypeMenu-BianZhu-HEI {
+#changeTypeMenu-FenLei-HEI {
 	font-family: var(--font-hei);
 	font-weight: 400;
 }
 #changeTypeMenu-BiaoTi-SONG:hover,
 #changeTypeMenu-BiaoTi-HEI:hover,
-#changeTypeMenu-ZhengWen-SONG:hover,
-#changeTypeMenu-ZhengWen-HEI:hover,
-#changeTypeMenu-BianZhu-SONG:hover,
-#changeTypeMenu-BianZhu-HEI:hover {
+#changeTypeMenu-FenLei-SONG:hover,
+#changeTypeMenu-FenLei-HEI:hover{
 	background-color: var(--colour-changeType-hover) !important;
 	transition-property: all;
 	transition-timing-function: ease-in-out;
@@ -407,14 +358,71 @@ html {
 	display: inline-block;
 	top: 0;
 	left: 0;
-	height: 30rem;
+	height: 2rem;
+}
+#logo {
+	width: 120px;
+	position: absolute;
+	top: 11rem;
+}
+#briefIntroduction-Button {
+	width: fit-content;
+	height: fit-content;
+	display: block;
+	position: absolute;
+	top: 29rem;
+	cursor: pointer;
+}
+
+#briefIntroduction {
+	width: 9rem;
+	font-size: 0.75rem;
+	line-height: 2em;
+	display: block;
+	position: relative;
+
+	color: var(--colour-1);
+}
+
+#briefIntroduction:hover {
+	/* filter: invert(10%); */
+	animation: briefIntroductionHover 500ms ease-in-out;
+	/* animation-fill-mode: forwards; */
+}
+/* #briefIntroduction:active {
+} */
+
+@keyframes briefIntroductionHover {
+	0% {
+		transform: translateY(0);
+	}
+	20%,
+	30% {
+		transform: translateY(-9px);
+	}
+	25% {
+		transform: translateY(-10px);
+	}
+	60% {
+		transform: translateY(0);
+	}
+	70%,
+	80% {
+		transform: translateY(-2px);
+	}
+	75% {
+		transform: translateY(-3px);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 #mainContent {
 	padding: 2rem 0;
 	display: block;
 	height: auto;
 	position: relative;
-	top: -25rem;
+	top: -3rem;
 	/* background-color: blueviolet; */
 }
 section {
@@ -446,6 +454,23 @@ footer {
 	left: 12rem;
 	top: 0.5rem;
 }
+li a {
+	display: inline-block;
+	box-shadow: inset 0 0px rgb(228, 216, 198);
+	transition: all 200ms ease-in-out;
+}
+li a:hover {
+	box-shadow: inset 0 -5px rgb(228, 216, 198);
+	transition: all 200ms ease-in-out;
+}
+/* 用于不支持鼠标悬浮的触摸屏 */
+@media (hover: none) {
+	li a {
+		box-shadow: inset 0 -5px rgb(228, 216, 198);
+		transition: all 200ms ease-in-out;
+	}
+}
+
 h2 {
 	font-family: var(--font-hei);
 	font-weight: 600;
@@ -505,16 +530,16 @@ li::marker {
 }
 
 /* 标题标点符号用思源宋体 */
-h1 h-char.bd-jiya.bd-open > h-inner,
-h1 h-char.bd-jiya.bd-close > h-inner,
-h1 h-char.bd-jiya.bd-cop > h-inner,
-h1 h-char.bd-jiya[unicode="ff0e"] > h-inner {
+ul h-char.bd-jiya.bd-open > h-inner,
+ul h-char.bd-jiya.bd-close > h-inner,
+ul h-char.bd-jiya.bd-cop > h-inner,
+ul h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-family: "SONG-BiaoDian", "Noto Serif SC" !important;
-	font-weight: 700 !important;
+	font-weight: 600 !important;
 	line-height: 0.1em;
 }
 
-/* 正文标点符号用思源黑体 */
+/* 分类标点符号用思源黑体 */
 article h-char.bd-jiya.bd-open > h-inner,
 article h-char.bd-jiya.bd-close > h-inner,
 article h-char.bd-jiya.bd-cop > h-inner,
@@ -523,15 +548,7 @@ article h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-weight: 400;
 	line-height: 0.1em;
 }
-/* 边注标点符号用思源黑体 */
-.sideNote h-char.bd-jiya.bd-open > h-inner,
-.sideNote h-char.bd-jiya.bd-close > h-inner,
-.sideNote h-char.bd-jiya.bd-cop > h-inner,
-.sideNote h-char.bd-jiya[unicode="ff0e"] > h-inner {
-	font-family: "HEI-BiaoDian", "Noto Sans SC" !important;
-	font-weight: 400 !important;
-	line-height: 0.1em;
-}
+
 a:visited {
 	color: black;
 }
