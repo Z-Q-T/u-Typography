@@ -359,8 +359,9 @@ html {
 	position: sticky;
 	display: inline-block;
 	top: 0;
-	left: 0;
+	margin-left: 6rem;
 	height: 2rem;
+	z-index: 10;
 }
 #logo {
 	width: 120px;
@@ -456,6 +457,9 @@ footer {
 	left: 12rem;
 	top: 0.5rem;
 }
+a {
+	color: black;
+}
 li a {
 	display: inline-block;
 	box-shadow: inset 0 0px rgb(228, 216, 198);
@@ -472,7 +476,9 @@ li a:hover {
 		transition: all 200ms ease-in-out;
 	}
 }
-
+a:visited {
+	color: black;
+}
 h2 {
 	font-family: var(--font-hei);
 	font-weight: 600;
@@ -551,9 +557,6 @@ article h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	line-height: 0.1em;
 }
 
-a:visited {
-	color: black;
-}
 /* 间隔号· */
 .JianGeHao {
 	font-family: var(--font-hei-biaodian) !important;
@@ -763,7 +766,8 @@ h-hws[hidden] {
 		width: 100%;
 		position: fixed;
 		height: 5.25rem;
-		z-index: 10;
+		left: 0rem;
+		margin: 0;
 		background-color: var(--colour-paper);
 	}
 	#logo {
