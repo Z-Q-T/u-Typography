@@ -98,15 +98,15 @@ button.onclick = function () {
     let menu = document.getElementById("changeTypeMenu");
     let menuVisibility = menu.style.visibility;
     let size = window.innerWidth;
-    if (size < 860) {
+    if (size < 1160) {
         if (menuVisibility == "hidden") {
             menu.style.visibility = "visible";
             menu.style.opacity = "1";
-            menu.style.top = "60px";
+            menu.style.top = "80px";
         } else {
             menu.style.visibility = "hidden";
             menu.style.opacity = "0";
-            menu.style.top = "50px";
+            menu.style.top = "70px";
         }
     } else {
         if (menuVisibility == "hidden") {
@@ -128,9 +128,9 @@ function changeMenuPosition() {
     let size = window.innerWidth;
     console.log(size);
     if (menuVisibility == "hidden") {
-        if (size < 860) {
+        if (size < 1160) {
             menu.style.bottom = "auto";
-            menu.style.top = "50px";
+            menu.style.top = "70px";
             menu.style.left = "auto";
             menu.style.right = "15px";
         } else {
@@ -140,9 +140,9 @@ function changeMenuPosition() {
             menu.style.right = "auto";
         }
     } else {
-        if (size < 860) {
+        if (size < 1160) {
             menu.style.bottom = "auto";
-            menu.style.top = "60px";
+            menu.style.top = "80px";
             menu.style.left = "auto";
             menu.style.right = "15px";
         } else {

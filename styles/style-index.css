@@ -224,6 +224,7 @@ html {
 	cursor: pointer;
 	border-radius: 20px;
 	background-color: rgb(174, 157, 133, 0);
+	z-index: 15;
 }
 #changeTypeMenu-Button:hover {
 	background-color: rgb(174, 157, 133, 0.2);
@@ -237,7 +238,7 @@ html {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	margin: -10px 0 0 -2px;
+	margin: -6px 0 0 -2px;
 }
 #changeTypeMenu-Hint {
 	font-size: 0.5rem;
@@ -278,6 +279,7 @@ html {
 	text-align: center;
 	line-height: 0.75rem;
 	box-shadow: 0px 0px 10px var(--colour-1);
+	z-index: 15;
 }
 /* #changeTypeMenu-Button:hover + #changeTypeMenu-Hint {
 	visibility: visible;
@@ -304,7 +306,7 @@ html {
 #changeTypeMenu-BiaoTi-SONG,
 #changeTypeMenu-BiaoTi-HEI,
 #changeTypeMenu-FenLei-SONG,
-#changeTypeMenu-FenLei-HEI{
+#changeTypeMenu-FenLei-HEI {
 	display: block;
 	margin: 0.5rem auto;
 	width: 25px;
@@ -334,7 +336,7 @@ html {
 #changeTypeMenu-BiaoTi-SONG:hover,
 #changeTypeMenu-BiaoTi-HEI:hover,
 #changeTypeMenu-FenLei-SONG:hover,
-#changeTypeMenu-FenLei-HEI:hover{
+#changeTypeMenu-FenLei-HEI:hover {
 	background-color: var(--colour-changeType-hover) !important;
 	transition-property: all;
 	transition-timing-function: ease-in-out;
@@ -719,268 +721,105 @@ h-hws[hidden] {
 	#whole {
 		width: 1140px;
 	}
+	#page {
+		width: 45rem;
+		margin-left: 6rem;
+	}
+	#mainContent {
+		width: 30rem;
+		left: 15rem;
+	}
+	.classificationContainer {
+		position: relative;
+	}
+	.listContainer {
+		display: block;
+		left: 0;
+		margin: 4rem 0 0 0;
+	}
+	.symbol {
+		width: 3rem;
+	}
+	h3 {
+		left: 6rem;
+		width: 24rem;
+	}
+	footer {
+		margin-top: 12rem;
+	}
 }
 /* 【3】############################# */
-@media screen and (min-width: 860px) and (max-width: 1160px) {
+@media screen and (min-width: 660px) and (max-width: 1160px) {
 	#whole {
-		width: 840px;
-	}
-}
-/* 【4】#############################
-宽度660—1020的窗口，或经过1.25倍放大的宽度825—1275的窗口
-正文每行27字，字号20。*/
-@media screen and (min-width: 680px) and (max-width: 1040px) {
-	#whole {
-		width: 660px;
-		/* background-color: cadetblue; */
-	}
-	#bar {
-		height: 60px;
-		width: 100%;
-		display: block;
-		position: fixed;
-		z-index: 10;
-		background-color: var(--colour-paper);
-		padding: 15px;
-	}
-	#logo {
-		width: auto;
-		height: 30px;
-	}
-	#changeTypeMenu-Button {
-		top: 11px;
-		right: 15px;
-		left: auto;
-		bottom: auto;
-	}
-	#changeTypeMenu-ButtonSVG {
-		transform: rotate(90deg);
-	}
-	#pageTypography-Button {
-		top: 19px;
-		right: 70px;
-		left: auto;
-		bottom: auto;
-	}
-	/* #gradient {
-		display: block;
-		position: fixed;
-		width: 100%;
-		height: 10px;
-		background: linear-gradient(
-			var(--colour-paper),
-			rgba(248, 248, 244, 0)
-		);
-	} */
-	#page {
-		width: 660px;
-		display: block;
-		left: 0rem;
+		width: 640px;
 	}
 
-	#mainTitleArea {
-		width: 27rem;
-		display: block;
-		/* margin: 0 auto; */
-		margin-left: 3rem;
-		position: static;
-	}
-	#metaInfo {
-		/* visibility: hidden; */
-		display: block;
-		position: relative;
-		left: 0rem;
-		top: 2rem;
-		width: 9rem;
-		margin: 4rem auto;
-		font-size: 0.5625rem;
-		z-index: 15;
-	}
-	#index {
-		font-size: 0.75rem;
-	}
-	.metaInfo-Seperator {
-		width: 30px;
-		margin: 0.75rem auto;
-	}
-	#title {
-		display: block;
-		position: static;
+	#page {
 		width: 30rem;
-		padding-top: 2rem;
-	}
-	.titleLine {
-		font-size: 2.25rem;
-		line-height: 3rem;
-		margin-bottom: 0.75rem;
-		height: 2.25rem;
-		display: inline;
-	}
-
-	#toc-PlaceHolder {
-		display: none;
-	}
-	#toc-Container {
-		display: none;
-	}
-	#tableOfContent {
-		display: none;
-	}
-
-	#mainContent {
-		width: 27rem;
-		/* left: 15rem; */
-		position: static;
 		margin: 0 auto;
-		margin-top: 2rem;
-	}
-	article {
-		margin: 1rem 0;
-	}
-	h1 {
-		width: 27rem;
-	}
-	/* h3 {
-		font-size: 1.125rem;
-	} */
-	.sideNote {
-		float: right;
-		clear: both;
-		position: relative;
-		left: 0rem;
-		width: 9rem;
-		margin-left: 3rem;
-		margin-top: 1rem;
-		margin-bottom: 1rem;
-	}
-}
-/* 【5】#############################
-宽度小于660的窗口，或经过1.25倍放大的宽度小于825的窗口
-正文字号20。*/
-@media screen and (max-width: 680px) {
-	#whole {
-		width: 100%;
-		/* background-color: firebrick; */
-	}
-	#bar {
-		height: 60px;
-		width: 100%;
 		display: block;
+	}
+	#side {
+		width: 100%;
 		position: fixed;
+		height: 5.25rem;
 		z-index: 10;
 		background-color: var(--colour-paper);
-		padding: 15px;
 	}
 	#logo {
+		left: 1rem;
+		top: 25px;
 		width: auto;
-		height: 30px;
+		height: 50px;
+	}
+	#briefIntroduction-Button {
+		top: 27.5px;
+		right: 3.5rem;
+	}
+	#briefIntroduction {
+		text-align: right;
+		line-height: 1.5em;
 	}
 	#changeTypeMenu-Button {
-		top: 11px;
+		top: 30px;
 		right: 15px;
-		left: auto;
 		bottom: auto;
-	}
-	#changeTypeMenu-ButtonSVG {
-		transform: rotate(90deg);
-	}
-	#pageTypography-Button {
-		top: 19px;
-		right: 70px;
 		left: auto;
-		bottom: auto;
 	}
-	#page {
-		left: 1rem;
-		width: calc(100% - 2rem);
-		display: block;
-		position: relative;
-	}
-	#mainTitleArea {
-		width: 100%;
-		height: fit-content;
-		display: block;
-		/* margin: 0 auto; */
-		margin-left: 0rem;
-		position: static;
-	}
-	#metaInfo {
-		/* visibility: hidden; */
-		display: block;
-		position: relative;
-		left: 0rem;
-		top: 2rem;
-		width: 9rem;
-		margin: 4rem auto;
-		font-size: 0.5625rem;
-		z-index: auto;
-	}
-	#index {
-		font-size: 0.75rem;
-	}
-	.metaInfo-Seperator {
-		width: 30px;
-		margin: 0.75rem auto;
-	}
-	#title {
-		display: block;
-		position: static;
-		width: 100%;
-		padding-top: 2rem;
-	}
-	.titleLine {
-		font-size: 2.25rem;
-		line-height: 3rem;
-		margin-bottom: 0.75rem;
-		height: 2.25rem;
-		display: inline;
-	}
-
-	#toc-PlaceHolder {
-		display: none;
-	}
-	#toc-Container {
-		display: none;
-	}
-	#tableOfContent {
-		display: none;
-	}
-
 	#mainContent {
-		width: 100%;
-		/* left: 15rem; */
-		position: static;
-		margin: 0 auto;
-		margin-top: 3.75rem;
+		width: 30rem;
+		left: 0rem;
+		top: 5rem;
 	}
-	article {
-		margin: 1rem 0;
-		text-align: left !important;
-	}
-	p {
-		text-align: left !important;
-	}
-	.sideNote {
-		/* float: right;
-		clear: both; */
+	.classificationContainer {
 		position: relative;
-		/* left: 0%; */
-		/* width: calc(50% - 2rem); */
-		margin: 0rem;
-		display: inline;
-		color: rgb(123, 123, 123);
-		/* margin: 0% 2rem; */
+		margin: 0 auto;
 	}
-	.sideNote::before {
-		content: "　";
+	.listContainer {
+		display: block;
+		left: 0;
+		margin: 4rem 0 0 0;
 	}
-	.sideNote::after {
-		content: "　";
+	.symbol {
+		text-align: center;
+		display: block;
+		margin: 0 auto;
 	}
-	.sideNoteMark {
-		display: none;
+	h3 {
+		left: 0;
+		width: 30rem;
+		display: block;
+		text-align: center;
+		margin: 1rem auto;
+		position: relative;
 	}
-	.tabulation {
-		display: none;
+	footer {
+		margin-top: 12rem;
+	}
+}
+/* 【4】############################# */
+@media screen and (max-width: 660px) {
+	#whole {
+		width: 100%;
 	}
 }
