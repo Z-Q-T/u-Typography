@@ -763,26 +763,41 @@ h-hws[hidden] {
 		display: block;
 	}
 	#side {
+		position: sticky;
+		height: 26rem;
+		top: -23rem;
+		z-index: 10;
 		width: 100%;
-		position: fixed;
-		height: 5.25rem;
 		left: 0rem;
 		margin: 0;
 		background-color: var(--colour-paper);
 	}
+	picture {
+		position: sticky;
+		top: -16rem;
+		width: 10rem;
+		display: block;
+		
+		margin: 0 auto;
+		z-index: 10;
+	}
 	#logo {
-		left: 1rem;
-		top: 25px;
-		width: auto;
-		height: 50px;
+		top: 6rem;
+		width: 200px;
+		height: auto;
+		margin: 0 auto;
+		display: block;
+		position: absolute;
+		background-color: var(--colour-paper);
 	}
 	#briefIntroduction-Button {
-		top: 27.5px;
-		right: 3.5rem;
+		margin: 0 auto;
+		position: relative;
+		top: 12rem;
+		margin-top: 8rem;
 	}
 	#briefIntroduction {
-		text-align: right;
-		line-height: 1.5em;
+		text-align: center;
 	}
 	#changeTypeMenu-Button {
 		top: 30px;
@@ -793,7 +808,6 @@ h-hws[hidden] {
 	#mainContent {
 		width: 30rem;
 		left: 0rem;
-		top: 5rem;
 	}
 	.classificationContainer {
 		position: relative;
