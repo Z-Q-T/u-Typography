@@ -191,6 +191,21 @@ window.addEventListener("resize", changeMenuPosition);
 // 第一次调用该函数
 changeMenuPosition();
 
+
+// 在小尺寸下让行长等于字号的整数倍
+function chineseGridLine() {
+    let YeMian = document.getElementById("whole");
+    let size = window.innerWidth;
+    let ZiShu = Math.floor(size / 20)-1;
+    if (size < 680) {
+        // let HangChang = ZiShu * 20;
+        YeMian.style.width = ZiShu + "em";
+    }else{
+        YeMian.style.cssText =" ";
+    }
+}
+window.addEventListener("resize", chineseGridLine);
+chineseGridLine();
 // if (document.documentElement.scrollWidth >680){
 //     menu.style.bottom="0px";
 // }

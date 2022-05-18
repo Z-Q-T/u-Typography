@@ -1098,9 +1098,9 @@ h-hws[hidden] {
 	article {
 		margin-right: 12rem;
 	}
-	h3 {
+	/* h3 {
 		font-size: 1.125rem;
-	}
+	} */
 	.sideNote {
 		left: 30rem;
 		width: 9rem;
@@ -1345,10 +1345,10 @@ h-hws[hidden] {
 	}
 	article {
 		margin: 1rem 0;
-		text-align: left !important;
+		/* text-align: left !important; */
 	}
 	p {
-		text-align: left !important;
+		/* text-align: left !important; */
 	}
 	.sideNote {
 		/* float: right;
