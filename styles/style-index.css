@@ -354,47 +354,70 @@ html {
 	position: relative;
 	top: 0;
 }
-#side {
-	width: 9rem;
-	position: sticky;
-	display: inline-block;
+#bar {
+	width: 6rem;
+	position: fixed;
+	display: block;
 	top: 0;
-	margin-left: 6rem;
-	height: 2rem;
+	left: 0;
+	height: 100%;
 	z-index: 10;
+	border-left: black 10px solid;
+	border-right: black 1px solid;
+	background-color: var(--colour-paper);
 }
-#logo {
-	width: 120px;
-	position: absolute;
-	top: 11rem;
+#logomark {
+	width: 40px;
+	display: block;
+	margin: 50px auto 0;
+}
+#logotype {
+	width: 36px;
+	display: block;
+	margin: 30px auto;
 }
 #briefIntroduction-Button {
 	width: fit-content;
 	height: fit-content;
 	display: block;
-	position: absolute;
-	top: 29rem;
-	cursor: pointer;
+	position: static;
+	margin-left: 12rem;
+	margin-top: 8rem;
 }
 
 #briefIntroduction {
-	width: 9rem;
-	font-size: 0.75rem;
-	line-height: 2em;
+	width: auto;
+	height: 124px;
+	font-size: 1rem;
+	line-height: 1rem;
 	display: block;
 	position: relative;
-
-	color: var(--colour-1);
+	font-family: var(--font-song);
+	font-weight: 600;
+	/* letter-spacing: 1rem; */
+	
+}
+.singleCharacter {
+	text-align: center;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	border-radius: 1px;
+	color: var(--colour-paper);
+	background-color: black;
+	margin-right: 0.8rem;
+	margin-bottom: 1.3rem;
+	transition: all 100ms ease-in-out;
 }
 
-#briefIntroduction:hover {
-	/* filter: invert(10%); */
-	animation: briefIntroductionHover 500ms ease-in-out;
-	/* animation-fill-mode: forwards; */
+.singleCharacter:hover {
+	color: black;
+	background-color: var(--colour-paper);
+	transition: all 100ms ease-in-out;
+	cursor: default;
+	/* animation: briefIntroductionHover 500ms ease-in-out; */
 }
-/* #briefIntroduction:active {
-} */
-
+/*
 @keyframes briefIntroductionHover {
 	0% {
 		transform: translateY(0);
@@ -419,13 +442,13 @@ html {
 	100% {
 		transform: translateY(0);
 	}
-}
+} */
 #mainContent {
 	padding: 2rem 0;
 	display: block;
 	height: auto;
 	position: relative;
-	top: -3rem;
+	top: 0rem;
 	/* background-color: blueviolet; */
 }
 section {
@@ -433,7 +456,7 @@ section {
 	position: relative;
 }
 footer {
-	margin: 10rem 0;
+	margin: 12rem 0;
 	position: relative;
 }
 .placeHolder {
@@ -461,18 +484,34 @@ a {
 	color: black;
 }
 li a {
-	display: inline-block;
-	box-shadow: inset 0 0px rgb(228, 216, 198);
+	display: inline;
+	/* box-shadow: inset 0 0px rgb(228, 216, 198); */
+	/* text-decoration: underline 0px solid rgba(228, 216, 198,0); */
+	background: linear-gradient(rgb(228, 216, 198), rgb(228, 216, 198))
+		no-repeat;
+	background-size: 100% 0px;
+	background-position: 0 1.1em;
 	transition: all 200ms ease-in-out;
 }
 li a:hover {
-	box-shadow: inset 0 -5px rgb(228, 216, 198);
+	/* box-shadow: inset 0 -5px rgb(228, 216, 198); */
+	/* text-decoration: underline 3px solid rgba(228, 216, 198,1); */
+	background: linear-gradient(rgb(228, 216, 198), rgb(228, 216, 198))
+		no-repeat;
+	/* background-image: rgb(228, 216, 198); */
+	background-size: 100% 5px;
+	background-position: 0 1.1em;
+
 	transition: all 200ms ease-in-out;
 }
 /* 用于不支持鼠标悬浮的触摸屏 */
 @media (hover: none) {
 	li a {
-		box-shadow: inset 0 -5px rgb(228, 216, 198);
+		/* box-shadow: inset 0 -5px rgb(228, 216, 198); */
+		background: linear-gradient(rgb(228, 216, 198), rgb(228, 216, 198))
+			no-repeat;
+		background-size: 100% 5px;
+		background-position: 0 1.1em;
 		transition: all 200ms ease-in-out;
 	}
 }
@@ -528,6 +567,7 @@ h3 {
 	font-weight: 600;
 }
 li {
+	display: block;
 	list-style-type: none;
 	margin-top: 1.5rem;
 }
@@ -703,112 +743,43 @@ h-hws[hidden] {
 /* 留20px的滚动条的空间 */
 
 /* 【1】############################# */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1220px) {
 	#whole {
-		width: 1380px;
+		width: 1200px;
 	}
 
 	#page {
-		width: 57rem;
+		width: 48rem;
 		margin-left: 6rem;
 	}
 
 	#mainContent {
 		width: 42rem;
-		left: 15rem;
+		left: 6rem;
 	}
 }
 
 /* 【2】############################# */
-@media screen and (min-width: 1160px) and (max-width: 1400px) {
+@media screen and (min-width: 980px) and (max-width: 1220px) {
 	#whole {
-		width: 1140px;
+		width: 960px;
 	}
 	#page {
-		width: 45rem;
+		width: 36rem;
 		margin-left: 6rem;
 	}
 	#mainContent {
 		width: 30rem;
-		left: 15rem;
-	}
-	.classificationContainer {
-		position: relative;
-	}
-	.listContainer {
-		display: block;
-		left: 0;
-		margin: 4rem 0 0 0;
-	}
-	.symbol {
-		width: 3rem;
-	}
-	h3 {
 		left: 6rem;
-		width: 24rem;
-	}
-	footer {
-		margin-top: 12rem;
-	}
-}
-/* 【3】############################# */
-@media screen and (min-width: 660px) and (max-width: 1160px) {
-	#whole {
-		width: 640px;
-	}
-
-	#page {
-		width: 30rem;
-		margin: 0 auto;
-		display: block;
-	}
-	#side {
-		position: sticky;
-		height: 26rem;
-		top: -22rem;
-		z-index: 10;
-		width: 100%;
-		left: 0rem;
-		margin: 0;
-		background-color: var(--colour-paper);
-	}
-	picture {
-		position: sticky;
-		top: -16rem;
-		width: 10rem;
-		display: block;
-		
-		margin: 0 auto;
-		z-index: 10;
-	}
-	#logo {
-		top: 6rem;
-		width: 200px;
-		height: auto;
-		margin: 0 auto;
-		display: block;
-		position: absolute;
-		background-color: var(--colour-paper);
 	}
 	#briefIntroduction-Button {
-		margin: 0 auto;
-		position: relative;
-		top: 12rem;
-		margin-top: 8rem;
+		margin: 8rem auto 0;
 	}
 	#briefIntroduction {
 		text-align: center;
+		margin-left: 16px;
 	}
-	#changeTypeMenu-Button {
-		top: 30px;
-		right: 15px;
-		bottom: auto;
-		left: auto;
-	}
-	#mainContent {
-		width: 30rem;
-		left: 0rem;
-	}
+
 	.classificationContainer {
 		position: relative;
 		margin: 0 auto;
@@ -831,12 +802,88 @@ h-hws[hidden] {
 		margin: 1rem auto;
 		position: relative;
 	}
-	footer {
-		margin-top: 12rem;
+}
+/* 【3】############################# */
+@media screen and (min-width: 740px) and (max-width: 980px) {
+	#whole {
+		width: 720px;
+	}
+	#logomark {
+		height: 50px;
+		width: auto;
+		margin: 0;
+		display: inline-block;
+		position: absolute;
+		left: 30px;
+		top: 28px;
+	}
+	#logotype {
+		height: 30px;
+		width: auto;
+		margin: 0 auto;
+		position: relative;
+		top: 38px;
+	}
+	#page {
+		width: 30rem;
+		margin: 0 auto;
+		display: block;
+	}
+	#bar {
+		position: fixed;
+		height: 6rem;
+		top: 0rem;
+		width: 100%;
+		left: 0rem;
+		border-left: 0px solid;
+		border-right: 0px solid;
+		border-top: black 10px solid;
+		border-bottom: black 1px solid;
+	}
+	#changeTypeMenu-Button {
+		top: 30px;
+		right: 15px;
+		bottom: auto;
+		left: auto;
+	}
+	#mainContent {
+		width: 30rem;
+		left: 0rem;
+	}
+
+	#briefIntroduction-Button {
+		margin: 12rem auto 0;
+	}
+	#briefIntroduction {
+		text-align: center;
+		margin-left: 16px;
+	}
+
+	.classificationContainer {
+		position: relative;
+		margin: 0 auto;
+	}
+	.listContainer {
+		display: block;
+		left: 0;
+		margin: 4rem 0 0 0;
+	}
+	.symbol {
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+	}
+	h3 {
+		left: 0;
+		width: 30rem;
+		display: block;
+		text-align: center;
+		margin: 1rem auto;
+		position: relative;
 	}
 }
 /* 【4】############################# */
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 720px) {
 	#whole {
 		width: 100%;
 	}

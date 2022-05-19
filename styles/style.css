@@ -170,6 +170,7 @@
 	--colour-1: rgb(174, 157, 133);
 	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
+	--colour-dark-text:rgb(46, 46, 46);
 	--font-hei: "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
 	--font-song: "SONG", "Noto Serif SC", serif;
@@ -580,8 +581,8 @@ li::marker {
 	width: 18rem;
 	top: 125px;
 	left: 0;
-	color: var(--colour-1);
-	opacity: 0.2;
+	color: var(--colour-dark-text);
+	opacity: 0.1;
 	transition-property: opacity;
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
@@ -590,17 +591,39 @@ li::marker {
 }
 #tableOfContent:hover {
 	opacity: 1;
-	transition-property: all;
+	/* color: var(--colour-1); */
+	transition-property: opacity;
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
 	/* background-color: darkgrey; */
 }
 #tableOfContent li {
-	margin: 1rem 0;
+	display: block;
+	margin: 1rem auto;
 	font-family: var(--font-song);
 	font-weight: 700;
 	font-size: 1rem;
 	line-height: 1.5rem;
+	transition-property: color;
+	transition-timing-function: ease-in-out;
+	transition-duration: 100ms;
+}
+#tableOfContent li:hover {
+	color: var(--colour-1);
+	transition-property: color;
+	transition-timing-function: ease-in-out;
+	transition-duration: 100ms;
+	cursor: pointer;
+}
+a {
+	color: inherit;
+}
+a:visited {
+	color: inherit;
+}
+.tocH3 {
+	font-size: 0.8rem !important;
+	line-height: 1.2rem !important;
 }
 #mainContent {
 	padding: 2rem 0;
@@ -632,7 +655,7 @@ article {
 	clear: both;
 	font-size: 0.75rem;
 	line-height: 1.2rem;
-	color: rgb(46, 46, 46);
+	color:var(--colour-dark-text);
 	/* white-space: break-spaces; */
 }
 .tabulation {
@@ -1281,8 +1304,8 @@ h-hws[hidden] {
 		bottom: auto;
 	}
 	#page {
-		left: 1rem;
-		width: calc(100% - 2rem);
+		left: 0.5rem;
+		width: calc(100% - 1rem);
 		display: block;
 		position: relative;
 	}
@@ -1347,9 +1370,7 @@ h-hws[hidden] {
 		margin: 1rem 0;
 		/* text-align: left !important; */
 	}
-	p {
-		/* text-align: left !important; */
-	}
+
 	.sideNote {
 		/* float: right;
 		clear: both; */
