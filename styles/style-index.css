@@ -395,6 +395,7 @@ html {
 	position: relative;
 	font-family: var(--font-song);
 	font-weight: 600;
+	text-align: center;
 	/* letter-spacing: 1rem; */
 }
 .singleCharacter {
@@ -408,15 +409,16 @@ html {
 	border: 1px solid black;
 	margin-right: 0.8rem;
 	margin-bottom: 1.3rem;
-	transition: all 100ms ease-in-out;
+	transition: all 200ms ease-in-out;
 }
-
-.singleCharacter:hover {
+#briefIntroduction:hover{
+	cursor: pointer;
+}
+#briefIntroduction:hover .singleCharacter {
 	color: black;
 	background-color: var(--colour-paper);
 	border: 1px solid black;
-	transition: all 100ms ease-in-out;
-	cursor: default;
+	transition: all 200ms ease-in-out;
 	/* animation: briefIntroductionHover 500ms ease-in-out; */
 }
 /*
@@ -785,9 +787,9 @@ h-hws[hidden] {
 /* 留20px的滚动条的空间 */
 
 /* 【1】############################# */
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 1180px) {
 	#whole {
-		width: 1140px;
+		width: 1160px;
 	}
 
 	#page {
@@ -807,7 +809,7 @@ h-hws[hidden] {
 }
 
 /* 【2】############################# */
-@media screen and (min-width: 920px) and (max-width: 1160px) {
+@media screen and (min-width: 920px) and (max-width: 1180px) {
 	#whole {
 		width: 900px;
 	}
@@ -824,7 +826,7 @@ h-hws[hidden] {
 		margin: 8rem auto 0;
 	}
 	#briefIntroduction {
-		text-align: center;
+		
 		margin-left: 16px;
 	}
 
