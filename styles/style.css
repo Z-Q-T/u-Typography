@@ -537,7 +537,7 @@ li::marker {
 	position: absolute;
 	/* left: -13rem; */
 	top: 8rem;
-	width: 57rem;
+	width: 36rem;
 	/* border-bottom: var(--colour-iden) solid 6px; */
 	/* padding-bottom: 0.75rem; */
 }
@@ -707,7 +707,8 @@ h-char.bd-jiya[unicode="ff0e"] > h-inner {
 } */
 
 .titleLine {
-	display: block;
+	/* display: block; */
+	display: inline;
 	font-family: var(--font-song);
 	font-weight: 700;
 	font-size: 3rem;
@@ -1018,7 +1019,7 @@ h-hws[hidden] {
 		width: 45rem;
 	}
 	#title {
-		width: 45rem;
+		width: 30rem;
 	}
 	.titleLine {
 		font-size: 2.5rem;
@@ -1093,7 +1094,7 @@ h-hws[hidden] {
 	#title {
 		display: block;
 		position: static;
-		width: 39rem;
+		width: 27rem;
 	}
 	.titleLine {
 		font-size: 2.25rem;
@@ -1214,7 +1215,7 @@ h-hws[hidden] {
 	#title {
 		display: block;
 		position: static;
-		width: 30rem;
+		width: 27rem;
 		padding-top: 2rem;
 	}
 	.titleLine {
@@ -1245,9 +1246,9 @@ h-hws[hidden] {
 	article {
 		margin: 1rem 0;
 	}
-	h1 {
+	/* h1 {
 		width: 27rem;
-	}
+	} */
 	/* h3 {
 		font-size: 1.125rem;
 	} */

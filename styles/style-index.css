@@ -360,10 +360,12 @@ html {
 	display: block;
 	top: 0;
 	left: 0;
-	height: 100%;
+	height: calc(100% - 20px);
+margin: 10px;
+border: black 2px solid;
 	z-index: 10;
-	border-left: black 1px solid;
-	border-right: black 1px solid;
+	/* border-left: black 1px solid;
+	border-right: black 1px solid; */
 	background-color: var(--colour-paper);
 }
 #logomark {
