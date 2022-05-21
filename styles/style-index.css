@@ -839,20 +839,25 @@ h-hws[hidden] {
 		width: 30rem;
 		left: 6rem;
 	}
-	#briefIntroduction-Button {
-	}
-	#briefIntroduction {
-	}
 	section {
 		border-top: 0px;
+	}
+	#section-Additional {
+		padding: 2rem 0 3rem;
+		margin-top: 14rem;
+		border-top: 2px black solid;
+		border-bottom: 2px black solid;
 	}
 	.sectionInner-Seperator {
 		width: 100%;
 		height: 2px;
 		left: 0;
-		top: 5rem;
+		top: 6rem;
 		border-bottom: 2px black solid;
 		background-color: transparent;
+	}
+	#sectionInner-Seperator-Additional {
+		display: none;
 	}
 	.classificationContainer {
 		position: relative;
@@ -891,8 +896,8 @@ h-hws[hidden] {
 		left: 0rem;
 		border-left: 0px solid;
 		border-right: 0px solid;
-		border-top: black 1px solid;
-		border-bottom: black 1px solid;
+		border-top: black 2px solid;
+		border-bottom: black 2px solid;
 	}
 	#logomark {
 		height: 36px;
@@ -901,14 +906,14 @@ h-hws[hidden] {
 		display: inline-block;
 		position: absolute;
 		left: 13px;
-		top: 11px;
+		top: 10px;
 	}
 	#logotype {
 		height: 30px;
 		width: auto;
 		margin: 0 auto;
 		position: relative;
-		top: 14px;
+		top: 13px;
 	}
 	#page {
 		width: 30rem;
@@ -929,9 +934,27 @@ h-hws[hidden] {
 	#briefIntroduction-Button {
 		margin: 12rem auto 0;
 	}
-	#briefIntroduction {
-	}
 
+	section {
+		border-top: 0px;
+	}
+	#section-Additional {
+		padding: 2rem 0 3rem;
+		margin-top: 14rem;
+		border-top: 2px black solid;
+		border-bottom: 2px black solid;
+	}
+	.sectionInner-Seperator {
+		width: 100%;
+		height: 2px;
+		left: 0;
+		top: 6rem;
+		border-bottom: 2px black solid;
+		background-color: transparent;
+	}
+	#sectionInner-Seperator-Additional {
+		display: none;
+	}
 	.classificationContainer {
 		position: relative;
 		margin: 0 auto;
@@ -956,8 +979,100 @@ h-hws[hidden] {
 	}
 }
 /* 【4】############################# */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 740px) {
 	#whole {
 		width: 100%;
+	}
+	
+	#bar {
+		position: fixed;
+		height: 3rem;
+		top: 0rem;
+		width: 100%;
+		left: 0rem;
+		border-left: 0px solid;
+		border-right: 0px solid;
+		border-top: black 2px solid;
+		border-bottom: black 2px solid;}
+		
+	#logomark {
+		height: 30px;
+		width: auto;
+		margin: 0;
+		display: inline-block;
+		position: absolute;
+		left: 13px;
+		top: 13px;
+	}
+	#logotype {
+		height: 25px;
+		width: auto;
+		margin: 0 auto;
+		position: relative;
+		top: 16px;
+	}
+	#page {
+		width: calc(100% - 24px);
+		margin: 0 auto;
+		display: block;
+	}
+	
+	#changeTypeMenu-Button {
+		top: 30px;
+		right: 15px;
+		bottom: auto;
+		left: auto;
+	}
+	#mainContent {
+		width: 100%;
+		left: 0rem;
+	}
+
+	#briefIntroduction-Button {
+		margin: 12rem auto 0;
+	}
+
+	section {
+		border-top: 0px;
+	}
+	#section-Additional {
+		padding: 2rem 0 3rem;
+		margin-top: 14rem;
+		border-top: 2px black solid;
+		border-bottom: 2px black solid;
+	}
+	.sectionInner-Seperator {
+		width: 100%;
+		height: 2px;
+		left: 0;
+		top: 6rem;
+		border-bottom: 2px black solid;
+		background-color: transparent;
+	}
+	#sectionInner-Seperator-Additional {
+		display: none;
+	}
+	.classificationContainer {
+		position: relative;
+		margin: 0 auto;
+	}
+	.listContainer {
+		width: 100%;
+		display: block;
+		left: 0;
+		margin: 4rem 0 0 0;
+	}
+	.symbol {
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+	}
+	h3 {
+		left: 0;
+		width: 100%;
+		display: block;
+		text-align: center;
+		margin: 1rem auto;
+		position: relative;
 	}
 }

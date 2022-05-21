@@ -157,3 +157,19 @@ function changeMenuPosition() {
 window.addEventListener("resize", changeMenuPosition);
 // 第一次调用该函数
 changeMenuPosition();
+
+// 在小尺寸下让行长等于字号的整数倍
+function chineseGridLine() {
+    let YeMian = document.getElementById("whole");
+    let size = window.innerWidth;
+    let ZiShu = Math.floor(size / 24)-1;
+	let HangChang =ZiShu*24
+    if (size < 740) {
+        // let HangChang = ZiShu * 20;
+        YeMian.style.width = HangChang + "px";
+    }else{
+        YeMian.style.cssText =" ";
+    }
+}
+window.addEventListener("resize", chineseGridLine);
+chineseGridLine();
