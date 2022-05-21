@@ -386,12 +386,12 @@ html {
 	display: block;
 	position: static;
 	margin: 0 auto;
-	margin-top: 8rem;
+	margin-top: 6rem;
 }
 
 #briefIntroduction {
 	width: auto;
-	height: 124px;
+	height: fit-content;
 	font-size: 1rem;
 	line-height: 1rem;
 	display: block;
@@ -412,7 +412,7 @@ html {
 	background-color: black;
 	border: 1px solid black;
 	margin-right: 0.8rem;
-	margin-bottom: 1.3rem;
+	margin-top: 1.3rem;
 	transition: all 200ms ease-in-out;
 }
 #briefIntroduction:hover {
@@ -936,7 +936,7 @@ h-hws[hidden] {
 	}
 
 	#briefIntroduction-Button {
-		margin: 10rem auto 0;
+		margin: 8rem auto 0;
 	}
 
 	section {
@@ -1011,11 +1011,11 @@ h-hws[hidden] {
 		top: 13px;
 	}
 	#logotype {
-		height: 20px;
+		height: 40px;
 		width: auto;
 		margin: 0 auto;
 		position: relative;
-		top: 18px;
+		top: 9px;
 	}
 	#page {
 		width: calc(100% - 24px);
@@ -1036,14 +1036,15 @@ h-hws[hidden] {
 	}
 
 	#briefIntroduction-Button {
-		margin: 10rem auto 0;
+		margin: 4rem auto 0;
 	}
 	#briefIntroduction {
-		margin-left: 10px;
+		margin-left: 8px;
 	}
 	.singleCharacter {
 		margin-right: 0.4rem;
-		margin-bottom: 0.7rem;
+		margin-top: 0.7rem;
+		/* margin-bottom: 0; */
 	}
 	section {
 		border-top: 0px;
