@@ -839,7 +839,11 @@ h-hws[hidden] {
 		width: 30rem;
 		left: 6rem;
 	}
+	#briefIntroduction-Button {
+		margin-top: 6rem;
+	}
 	section {
+		margin: 8rem 0;
 		border-top: 0px;
 	}
 	#section-Additional {
@@ -883,9 +887,9 @@ h-hws[hidden] {
 	}
 }
 /* 【3】############################# */
-@media screen and (min-width: 740px) and (max-width: 920px) {
+@media screen and (min-width: 668px) and (max-width: 920px) {
 	#whole {
-		width: 720px;
+		width: 648px;
 	}
 
 	#bar {
@@ -932,11 +936,12 @@ h-hws[hidden] {
 	}
 
 	#briefIntroduction-Button {
-		margin: 12rem auto 0;
+		margin: 10rem auto 0;
 	}
 
 	section {
 		border-top: 0px;
+		margin: 8rem 0;
 	}
 	#section-Additional {
 		padding: 2rem 0 3rem;
@@ -979,7 +984,7 @@ h-hws[hidden] {
 	}
 }
 /* 【4】############################# */
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 668px) {
 	#whole {
 		width: 100%;
 	}
@@ -1006,7 +1011,7 @@ h-hws[hidden] {
 		top: 13px;
 	}
 	#logotype {
-		height: 21px;
+		height: 20px;
 		width: auto;
 		margin: 0 auto;
 		position: relative;
@@ -1024,24 +1029,25 @@ h-hws[hidden] {
 		bottom: auto;
 		left: auto;
 	}
+	
 	#mainContent {
 		width: 100%;
 		left: 0rem;
 	}
 
 	#briefIntroduction-Button {
-		margin: 12rem auto 0;
+		margin: 10rem auto 0;
 	}
 	#briefIntroduction {
-		margin-left: 12px;
+		margin-left: 10px;
 	}
 	.singleCharacter {
-		margin-right: 0.6rem;
-		margin-bottom: 1rem;
+		margin-right: 0.5rem;
+		margin-bottom: 0.8rem;
 	}
 	section {
 		border-top: 0px;
-		margin: 8rem 0;
+		margin: 6rem 0;
 	}
 	#section-Additional {
 		padding: 2rem 0 3rem;
