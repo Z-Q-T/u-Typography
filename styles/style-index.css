@@ -19,9 +19,9 @@
 	src: local("HYQiHei-75S Bold"), local("HYQiHei-70S DemiBold"),
 		local("HarmonyOS Sans SC Bold"), local("HarmonyOS Sans SC Medium"),
 		local("MiSans Demibold"), local("MiSans Semibold"),
-		local("Source Han Sans SC Medium"), local("Noto Sans SC Medium"),
-		local("Source Han Sans CN Medium");
-	font-weight: 500;
+		local("Source Han Sans SC Bold"), local("Noto Sans SC Bold"),
+		local("Source Han Sans CN Bold");
+	font-weight: 700;
 }
 /* 正文标点黑体 */
 @font-face {
@@ -33,9 +33,9 @@
 /* 标题标点黑体 */
 @font-face {
 	font-family: "HEI-BiaoDian";
-	src: local("Source Han Sans SC Medium"), local("Noto Sans SC Medium"),
-		local("Source Han Sans CN Medium");
-	font-weight: 500;
+	src: local("Source Han Sans SC Bold"), local("Noto Sans SC Bold"),
+		local("Source Han Sans CN Bold");
+	font-weight: 700;
 }
 
 /* ==宋体== */

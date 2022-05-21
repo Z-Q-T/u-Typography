@@ -75,7 +75,7 @@ document.getElementById('changeTypeMenu-FenLei-SONG').onclick = function changef
 document.getElementById('changeTypeMenu-FenLei-HEI').onclick = function changefont_FenLei_HEI() {
     document.body.querySelectorAll("h2").forEach((e) => {
         e.style.fontFamily = "HEI" + "," + "Noto Sans SC";
-        e.style.fontWeight = "500";
+        e.style.fontWeight = "700";
     });//换中文
     // document.body.querySelectorAll(".Latin-ZhengWen").forEach((e) => {
     //     e.style.fontFamily = "SANS" + "," + "Source Sans Pro";
@@ -84,7 +84,7 @@ document.getElementById('changeTypeMenu-FenLei-HEI').onclick = function changefo
     // });//换西文
     document.body.querySelectorAll("h2 h-char.bd-jiya.bd-open > h-inner, h2 h-char.bd-jiya.bd-close > h-inner, h2 h-char.bd-jiya.bd-cop > h-inner, h2 h-char.bd-jiya[unicode='ff0e'] > h-inner").forEach((e) => {
         e.style.fontFamily = "HEI-BiaoDian" + "," + "Noto Sans SC";
-        e.style.fontWeight = "500";
+        e.style.fontWeight = "700";
     });//换标点
 
     changeTypeMenu_switchColour("#changeTypeMenu-FenLei-HEI", "#changeTypeMenu-FenLei-SONG");

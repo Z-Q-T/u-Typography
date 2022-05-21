@@ -39,7 +39,7 @@ document.getElementById('changeTypeMenu-BiaoTi-SONG').onclick = function changef
 document.getElementById('changeTypeMenu-BiaoTi-HEI').onclick = function changefont_BiaoTi_HEI() {
     document.body.querySelectorAll(".titleLine,h2,h3,#tableOfContent li").forEach((e) => {
         e.style.fontFamily = "HEI" + "," + "Noto Sans SC";
-        e.style.fontWeight = "500";
+        e.style.fontWeight = "700";
     });//换中文
     document.body.querySelectorAll(".Latin-BiaoTi").forEach((e) => {
         e.style.fontFamily = "SANS" + "," + "Source Sans Pro";
@@ -47,7 +47,7 @@ document.getElementById('changeTypeMenu-BiaoTi-HEI').onclick = function changefo
         e.style.fontSize = "1.1em";
     });//换西文
     document.body.querySelectorAll("h1 h-char.bd-jiya.bd-open > h-inner, h1 h-char.bd-jiya.bd-close > h-inner, h1 h-char.bd-jiya.bd-cop > h-inner, h1 h-char.bd-jiya[unicode='ff0e'] > h-inner").forEach((e) => {
-        e.style.cssText = "font-family: 'HEI-BiaoDian', 'Noto Sans SC' !important; font-weight: 500 !important;";
+        e.style.cssText = "font-family: 'HEI-BiaoDian', 'Noto Sans SC' !important; font-weight: 700 !important;";
     });//换标点
 
     changeTypeMenu_switchColour("#changeTypeMenu-BiaoTi-HEI", "#changeTypeMenu-BiaoTi-SONG");
