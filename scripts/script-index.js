@@ -162,8 +162,8 @@ changeMenuPosition();
 function chineseGridLine() {
     let YeMian = document.getElementById("whole");
     let size = window.innerWidth;
-    let ZiShu = Math.floor(size / 24)-1;
-	let HangChang =ZiShu*24
+    let ZiShu = Math.floor(size / 22)-1;
+	let HangChang =ZiShu*22
     if (size < 740) {
         // let HangChang = ZiShu * 20;
         YeMian.style.width = HangChang + "px";
