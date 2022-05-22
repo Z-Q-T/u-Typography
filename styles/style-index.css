@@ -366,8 +366,9 @@ html {
 	/* border: black 2px solid; */
 	z-index: 10;
 	/* border-left: black 1px solid; */
-	border-right: black 2px solid;
+	/* border-right: black 2px solid; */
 	background-color: var(--colour-paper);
+	/* background-color: black; */
 }
 #logomark {
 	width: 30px;
@@ -386,7 +387,7 @@ html {
 	display: block;
 	position: static;
 	margin: 0 auto;
-	margin-top: 6rem;
+	margin-top: 4rem;
 }
 
 #briefIntroduction {
@@ -460,17 +461,19 @@ html {
 	/* background-color: blueviolet; */
 }
 section {
-	margin: 10rem 0;
+	margin: 4rem 0;
 	position: relative;
-	border-top: 2px black solid;
+	border-bottom: 5px black solid;
+	padding-bottom: 3rem;
 }
 .sectionInner-Seperator {
 	background-color: black;
 	width: 1px;
-	height: calc(100% + 1rem);
+	height: calc(100% - 2.5rem);
 	display: inline-block;
 	position: absolute;
 	left: 9rem;
+	top: 2.5rem;
 }
 #section-Additional {
 	margin: 12rem 0;
@@ -549,6 +552,7 @@ h2 {
 	width: 6rem;
 	position: sticky;
 	top: 3rem;
+	padding-bottom: 3rem;
 }
 .subDivision {
 	margin: 3rem 0;
@@ -826,9 +830,9 @@ h-hws[hidden] {
 }
 
 /* 【2】############################# */
-@media screen and (min-width: 920px) and (max-width: 1180px) {
+@media screen and (min-width: 900px) and (max-width: 1180px) {
 	#whole {
-		width: 900px;
+		width: 880px;
 	}
 	#logomark {
 		width: 25px;
@@ -840,17 +844,17 @@ h-hws[hidden] {
 	}
 	#page {
 		width: 36rem;
-		margin-left: 3rem;
+		margin-left: 2rem;
 	}
 	#mainContent {
 		width: 30rem;
 		left: 6rem;
 	}
 	#briefIntroduction-Button {
-		margin-top: 3rem;
+		margin-top: 2rem;
 	}
 	section {
-		margin: 6rem 0;
+		margin: 2rem 0;
 		/* border-top: 0px; */
 	}
 	#section-Additional {
@@ -860,14 +864,14 @@ h-hws[hidden] {
 		border-bottom: 2px black solid;
 	}
 	.sectionInner-Seperator {
-		/* width: 100%;
-		height: 2px;
+		width: 100%;
+		height: 1px;
 		left: 0;
-		top: 6rem;
-		border-bottom: 2px black solid;
-		background-color: transparent; */
+		top: 7.5rem;
+		/*border-bottom: 2px black solid;
+		background-color: transparent;
 		width: 0px;
-		/* height: 80px;
+		height: 80px;
 		left: 100%;
 		top: -1px; */
 	}
@@ -876,7 +880,13 @@ h-hws[hidden] {
 	}
 	.classificationContainer {
 		position: relative;
+		padding-top: 4rem;
 		/* margin: 0 auto; */
+		top: 0;
+	}
+	h2 {
+		padding-bottom: 1rem;
+		text-align: left;
 	}
 	.listContainer {
 		display: block;
@@ -898,7 +908,7 @@ h-hws[hidden] {
 	}
 }
 /* 【3】############################# */
-@media screen and (min-width: 668px) and (max-width: 920px) {
+@media screen and (min-width: 668px) and (max-width: 900px) {
 	#whole {
 		width: 648px;
 	}
@@ -909,10 +919,10 @@ h-hws[hidden] {
 		top: 0rem;
 		width: 100%;
 		left: 0rem;
-		border-left: 0px solid;
+		/* border-left: 0px solid;
 		border-right: 0px solid;
 		border-top: black 2px solid;
-		border-bottom: black 2px solid;
+		border-bottom: black 2px solid; */
 	}
 	#logomark {
 		height: 36px;
@@ -924,11 +934,11 @@ h-hws[hidden] {
 		top: 10px;
 	}
 	#logotype {
-		height: 30px;
+		height: 27px;
 		width: auto;
 		margin: 0 auto;
 		position: relative;
-		top: 13px;
+		top: 14px;
 	}
 	#page {
 		width: 30rem;
@@ -945,12 +955,11 @@ h-hws[hidden] {
 		width: 30rem;
 		left: 0rem;
 	}
-
 	#briefIntroduction-Button {
 		margin-top: 5rem;
 	}
 	section {
-		margin: 6rem 0;
+		margin: 2rem 0;
 		/* border-top: 0px; */
 	}
 	#section-Additional {
@@ -960,21 +969,32 @@ h-hws[hidden] {
 		border-bottom: 2px black solid;
 	}
 	.sectionInner-Seperator {
-		width: 0px;
-	}
+		width: 100%;
+		height: 1px;
+		left: 0;
+		top: 7.5rem;
 
+	}
 	#sectionInner-Seperator-Additional {
 		display: none;
 	}
 	.classificationContainer {
 		position: relative;
-		margin: 0 auto;
+		padding-top: 4rem;
+		/* margin: 0 auto; */
+		top: 0;
 	}
+
 	.listContainer {
 		display: block;
 		left: 0;
 		margin: 2rem 0 0 0;
 	}
+	h2 {
+		padding-bottom: 1rem;
+		text-align: left;
+	}
+	
 	.symbol {
 		text-align: center;
 		display: block;
@@ -1001,10 +1021,10 @@ h-hws[hidden] {
 		top: 0rem;
 		width: 100%;
 		left: 0rem;
-		border-left: 0px solid;
+		/* border-left: 0px solid;
 		border-right: 0px solid;
 		border-top: black 1px solid;
-		border-bottom: black 1px solid;
+		border-bottom: black 1px solid; */
 	}
 
 	#logomark {
@@ -1057,31 +1077,32 @@ h-hws[hidden] {
 		width: 22px;
 		height: 22px;
 	}
+
 	section {
-		margin: 6rem 0;
-		border-top: 1px black solid;
+		margin: 2rem 0;
+		/* border-top: 0px; */
 	}
 	#section-Additional {
 		padding: 2rem 0 3rem;
-		/* margin-top: 14rem; */
-		border-top: 1px black solid;
-		border-bottom: 1px black solid;
+		margin-top: 14rem;
+		border-top: 2px black solid;
+		border-bottom: 2px black solid;
 	}
-
 	.sectionInner-Seperator {
-		width: 0px;
-	}
+		width: 100%;
+		height: 1px;
+		left: 0;
+		top: 7.3rem;
 
+	}
 	#sectionInner-Seperator-Additional {
 		display: none;
 	}
 	.classificationContainer {
 		position: relative;
-		margin: 0 auto;
-	}
-	h2 {
-		font-size: 1.35rem;
-		text-align: center;
+		padding-top: 4rem;
+		/* margin: 0 auto; */
+		top: 0;
 	}
 
 	.listContainer {
@@ -1090,6 +1111,13 @@ h-hws[hidden] {
 		left: 0;
 		margin: 2rem 0 0 0;
 	}
+	h2 {
+		padding-bottom: 1rem;
+		font-size: 1.35rem;
+		text-align: left;
+		/* text-align: center; */
+	}
+
 	ul {
 		font-size: 1.1rem;
 	}
