@@ -168,6 +168,8 @@
 	--colour-changeType-active: rgb(190, 176, 156);
 	--colour-changeType-hover: rgb(123, 117, 106);
 	--colour-1: rgb(174, 157, 133);
+	--colour-2: rgb(228, 216, 198);
+	--colour-3: rgb(242, 234, 221);
 	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
 	--font-hei: "HEI", "Noto Sans SC", sans-serif;
@@ -370,25 +372,26 @@ html {
 	/* border-right: black 2px solid; */
 	/* background-color: var(--colour-paper); */
 	background-color: white;
+	box-shadow: 0 0 5px var(--colour-1);
 }
 #logomark {
-	width: 30px;
+	width: 25px;
+	margin: 20px auto 0;
 	display: block;
-	margin: 25px auto 0;
 }
 #logotype {
-	width: 27px;
+	width: 24px;
+	margin: 16px auto;
 	display: block;
-	margin: 20px auto;
 }
-
 #briefIntroduction-Button {
 	width: fit-content;
 	height: fit-content;
 	display: block;
 	position: static;
 	margin: 0 auto;
-	margin-top: 4rem;
+	margin-top: 3rem;
+	margin-bottom: 5rem;
 }
 
 #briefIntroduction {
@@ -409,43 +412,128 @@ html {
 	display: inline-block;
 	width: 24px;
 	height: 24px;
-	border-radius: 1px;
+	border-radius: 2px;
 	/* color: var(--colour-paper);
 	background-color: black;
 	border: 1px solid black; */
 	color: black;
 	background-color: white;
 	border: 1px solid white;
-	margin-right: 0.8rem;
-	margin-top: 1.3rem;
+	margin-right: 16px;
+	margin-top: 26px;
 	transition: all 200ms ease-in-out;
 }
 #briefIntroduction:hover {
 	cursor: pointer;
 }
-#briefIntroduction:hover .singleCharacter {
+#briefIntroduction:hover #firstCharacter {
 	/* color: black; */
-	/* background-color: var(--colour-paper); */
-	border: 1px solid black;
+	background-color: var(--colour-3);
+	border: 1px solid var(--colour-3);
 	transition: all 200ms ease-in-out;
-	/* animation: briefIntroductionHover 500ms ease-in-out; */
+	animation: briefIntroductionHover 200ms ease-in-out;
 }
-/*
+#briefIntroduction:hover #firstCharacter + .singleCharacter {
+	background-color: var(--colour-3);
+	border: 1px solid var(--colour-3);
+	transition: all 200ms ease-in-out;
+	transition-delay: 50ms;
+	animation: briefIntroductionHover 200ms ease-in-out;
+	animation-delay: 50ms;
+}
+#briefIntroduction:hover #firstCharacter + .singleCharacter + .singleCharacter {
+	background-color: var(--colour-3);
+	border: 1px solid var(--colour-3);
+	transition: all 200ms ease-in-out;
+	transition-delay: 100ms;
+	animation: briefIntroductionHover 200ms ease-in-out;
+	animation-delay: 100ms;
+}
+#briefIntroduction:hover
+	#firstCharacter
+	+ .singleCharacter
+	+ .singleCharacter
+	+ .singleCharacter {
+	background-color: var(--colour-3);
+	border: 1px solid var(--colour-3);
+	transition: all 200ms ease-in-out;
+	transition-delay: 150ms;
+	animation: briefIntroductionHover 200ms ease-in-out;
+	animation-delay: 150ms;
+}
+#briefIntroduction:hover
+	#firstCharacter
+	+ .singleCharacter
+	+ .singleCharacter
+	+ .singleCharacter
+	+ .singleCharacter {
+	background-color: var(--colour-3);
+	border: 1px solid var(--colour-3);
+	transition: all 200ms ease-in-out;
+	transition-delay: 200ms;
+	animation: briefIntroductionHover 200ms ease-in-out;
+	animation-delay: 200ms;
+}
+#briefIntroduction:hover
+	#firstCharacter
+	+ .singleCharacter
+	+ .singleCharacter
+	+ .singleCharacter
+	+ .singleCharacter
+	+ .singleCharacter {
+	background-color: var(--colour-3);
+	border: 1px solid var(--colour-3);
+	transition: all 200ms ease-in-out;
+	transition-delay: 250ms;
+	animation: briefIntroductionHover 200ms ease-in-out;
+	animation-delay: 250ms;
+}
+#briefIntroduction:hover
+	#firstCharacter
+	+ .singleCharacter
+	+ .singleCharacter
+	+ .singleCharacter
+	+ .singleCharacter
+	+ .singleCharacter
+	+ .singleCharacter {
+	background-color: var(--colour-3);
+	border: 1px solid var(--colour-3);
+	transition: all 200ms ease-in-out;
+	transition-delay: 300ms;
+	animation: briefIntroductionHover 200ms ease-in-out;
+	animation-delay: 300ms;
+}
+#briefIntroduction:hover
+	#firstCharacter
+	+ .singleCharacter
+	+ .singleCharacter
+	+ .singleCharacter
+	+ .singleCharacter
+	+ .singleCharacter
+	+ .singleCharacter
+	+ .singleCharacter {
+	background-color: var(--colour-3);
+	border: 1px solid var(--colour-3);
+	transition: all 200ms ease-in-out;
+	transition-delay: 350ms;
+	animation: briefIntroductionHover 200ms ease-in-out;
+	animation-delay: 350ms;
+}
 @keyframes briefIntroductionHover {
 	0% {
 		transform: translateY(0);
 	}
-	20%,
-	30% {
+	40%,
+	55% {
 		transform: translateY(-9px);
 	}
-	25% {
+	45% {
 		transform: translateY(-10px);
 	}
-	60% {
+	100% {
 		transform: translateY(0);
 	}
-	70%,
+	/* 70%,
 	80% {
 		transform: translateY(-2px);
 	}
@@ -454,8 +542,8 @@ html {
 	}
 	100% {
 		transform: translateY(0);
-	}
-} */
+	} */
+}
 #mainContent {
 	padding: 2rem 0;
 	display: block;
@@ -513,20 +601,18 @@ a {
 
 li a {
 	display: inline;
-	/* box-shadow: inset 0 0px rgb(228, 216, 198); */
+	/* box-shadow: inset 0 0px var(--colour-2); */
 	/* text-decoration: underline 0px solid rgba(228, 216, 198,0); */
-	background: linear-gradient(rgb(228, 216, 198), rgb(228, 216, 198))
-		no-repeat;
+	background: linear-gradient(var(--colour-2), var(--colour-2)) no-repeat;
 	background-size: 100% 4px;
 	background-position: left 0 bottom 4px;
 	transition: all 100ms ease-in-out;
 }
 li a:hover {
-	/* box-shadow: inset 0 -5px rgb(228, 216, 198); */
+	/* box-shadow: inset 0 -5px var(--colour-2); */
 	/* text-decoration: underline 3px solid rgba(228, 216, 198,1); */
-	background: linear-gradient(rgb(228, 216, 198), rgb(228, 216, 198))
-		no-repeat;
-	/* background-image: rgb(228, 216, 198); */
+	background: linear-gradient(var(--colour-2), var(--colour-2)) no-repeat;
+	/* background-image: var(--colour-2); */
 	background-size: 100% 15px;
 	background-position: left 0 bottom 1px;
 	cursor: pointer;
@@ -535,9 +621,8 @@ li a:hover {
 /* 用于不支持鼠标悬浮的触摸屏 */
 @media (hover: none) {
 	li a {
-		/* box-shadow: inset 0 -5px rgb(228, 216, 198); */
-		background: linear-gradient(rgb(228, 216, 198), rgb(228, 216, 198))
-			no-repeat;
+		/* box-shadow: inset 0 -5px var(--colour-2); */
+		background: linear-gradient(var(--colour-2), var(--colour-2)) no-repeat;
 		background-size: 100% 5px;
 		background-position: left 0 bottom 4px;
 		transition: all 200ms ease-in-out;
@@ -846,14 +931,14 @@ h-hws[hidden] {
 	#whole {
 		width: 880px;
 	}
-	#logomark {
+	/* #logomark {
 		width: 25px;
 		margin: 20px auto 0;
 	}
 	#logotype {
 		width: 24px;
 		margin: 16px auto;
-	}
+	} */
 	#page {
 		width: 36rem;
 		margin-left: 2rem;
@@ -864,6 +949,14 @@ h-hws[hidden] {
 	}
 	#briefIntroduction-Button {
 		margin-top: 2rem;
+		margin-bottom: 0;
+	}
+	#briefIntroduction {
+		margin-left: 11px;
+	}
+	.singleCharacter {
+		margin-right: 11px;
+		margin-top: 18px;
 	}
 	section {
 		margin: 2rem 0;
@@ -898,7 +991,7 @@ h-hws[hidden] {
 		top: 0;
 	}
 	h2 {
-		padding-bottom: 1rem;
+		padding-bottom: 0rem;
 		text-align: left;
 	}
 	.listContainer {
@@ -944,14 +1037,14 @@ h-hws[hidden] {
 		display: inline-block;
 		position: absolute;
 		left: 13px;
-		top: 10px;
+		top: 11px;
 	}
 	#logotype {
 		height: 27px;
 		width: auto;
 		margin: 0 auto;
 		position: relative;
-		top: 14px;
+		top: 16px;
 	}
 	#page {
 		width: 30rem;
@@ -970,9 +1063,17 @@ h-hws[hidden] {
 	}
 	#briefIntroduction-Button {
 		margin-top: 5rem;
+		margin-bottom: 0;
+	}
+	#briefIntroduction {
+		margin-left: 11px;
+	}
+	.singleCharacter {
+		margin-right: 11px;
+		margin-top: 18px;
 	}
 	section {
-		margin: 2rem 0;
+		margin: 1rem 0;
 		/* border-top: 0px; */
 	}
 	#section-Additional {
@@ -1004,7 +1105,7 @@ h-hws[hidden] {
 		margin: 2rem 0 0 0;
 	}
 	h2 {
-		padding-bottom: 1rem;
+		padding-bottom: 0rem;
 		text-align: left;
 	}
 
@@ -1047,14 +1148,14 @@ h-hws[hidden] {
 		display: inline-block;
 		position: absolute;
 		left: 13px;
-		top: 13px;
+		top: 15px;
 	}
 	#logotype {
 		height: 40px;
 		width: auto;
 		margin: 0 auto;
 		position: relative;
-		top: 9px;
+		top: 10px;
 	}
 	#page {
 		width: calc(100% - 44px);
@@ -1077,22 +1178,22 @@ h-hws[hidden] {
 
 	#briefIntroduction-Button {
 		margin-top: 5rem;
+		margin-bottom: 1rem;
 	}
-
 	#briefIntroduction {
 		margin-left: 6px;
 		font-size: 0.9rem;
 	}
 	.singleCharacter {
 		margin-right: 6px;
-		margin-top: 12px;
+		margin-top: 11px;
 		/* margin-bottom: 0; */
 		width: 22px;
 		height: 22px;
 	}
 
 	section {
-		margin: 2rem 0;
+		margin: 1rem 0;
 		/* border-top: 0px; */
 	}
 	#section-Additional {
@@ -1121,7 +1222,7 @@ h-hws[hidden] {
 		width: 100%;
 		display: block;
 		left: 0;
-		margin: 2rem 0 0 0;
+		margin: 1rem 0 0 0;
 	}
 	h2 {
 		padding-bottom: 0rem;
