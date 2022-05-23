@@ -427,92 +427,113 @@ html {
 #briefIntroduction-Button:hover {
 	cursor: pointer;
 }
-#briefIntroduction-Button:hover #firstCharacter {
-	/* color: black; */
-	/* background-color: var(--colour-3);
+/* 用于支持鼠标悬浮的设备 */
+@media (hover: hover) {
+	#briefIntroduction-Button:hover #firstCharacter {
+		/* color: black; */
+		/* background-color: var(--colour-3);
 	border: 1px solid var(--colour-3); */
-	box-shadow: 0 0 5px var(--colour-shadow);
-	transition: all 200ms ease-in-out;
-	animation: briefIntroductionHover 200ms ease-in-out;
-}
-#briefIntroduction-Button:hover #firstCharacter + .singleCharacter {
-	box-shadow: 0 0 5px var(--colour-shadow);
-	transition: all 200ms ease-in-out;
-	transition-delay: 50ms;
-	animation: briefIntroductionHover 200ms ease-in-out;
-	animation-delay: 50ms;
-}
-#briefIntroduction-Button:hover #firstCharacter + .singleCharacter + .singleCharacter {
-	box-shadow: 0 0 5px var(--colour-shadow);
-	transition: all 200ms ease-in-out;
-	transition-delay: 100ms;
-	animation: briefIntroductionHover 200ms ease-in-out;
-	animation-delay: 100ms;
-}
-#briefIntroduction-Button:hover
-	#firstCharacter
-	+ .singleCharacter
-	+ .singleCharacter
-	+ .singleCharacter {
-	box-shadow: 0 0 5px var(--colour-shadow);
-	transition: all 200ms ease-in-out;
-	transition-delay: 150ms;
-	animation: briefIntroductionHover 200ms ease-in-out;
-	animation-delay: 150ms;
-}
-#briefIntroduction-Button:hover
-	#firstCharacter
-	+ .singleCharacter
-	+ .singleCharacter
-	+ .singleCharacter
-	+ .singleCharacter {
-	box-shadow: 0 0 5px var(--colour-shadow);
-	transition: all 200ms ease-in-out;
-	transition-delay: 200ms;
-	animation: briefIntroductionHover 200ms ease-in-out;
-	animation-delay: 200ms;
-}
-#briefIntroduction-Button:hover
-	#firstCharacter
-	+ .singleCharacter
-	+ .singleCharacter
-	+ .singleCharacter
-	+ .singleCharacter
-	+ .singleCharacter {
-	box-shadow: 0 0 5px var(--colour-shadow);
-	transition: all 200ms ease-in-out;
-	transition-delay: 250ms;
-	animation: briefIntroductionHover 200ms ease-in-out;
-	animation-delay: 250ms;
-}
-#briefIntroduction-Button:hover
-	#firstCharacter
-	+ .singleCharacter
-	+ .singleCharacter
-	+ .singleCharacter
-	+ .singleCharacter
-	+ .singleCharacter
-	+ .singleCharacter {
-	box-shadow: 0 0 5px var(--colour-shadow);
-	transition: all 200ms ease-in-out;
-	transition-delay: 300ms;
-	animation: briefIntroductionHover 200ms ease-in-out;
-	animation-delay: 300ms;
-}
-#briefIntroduction-Button:hover
-	#firstCharacter
-	+ .singleCharacter
-	+ .singleCharacter
-	+ .singleCharacter
-	+ .singleCharacter
-	+ .singleCharacter
-	+ .singleCharacter
-	+ .singleCharacter {
-	box-shadow: 0 0 5px var(--colour-shadow);
-	transition: all 200ms ease-in-out;
-	transition-delay: 350ms;
-	animation: briefIntroductionHover 200ms ease-in-out;
-	animation-delay: 350ms;
+		box-shadow: 0 0 5px var(--colour-shadow);
+		transition: all 200ms ease-in-out;
+		animation: briefIntroductionHover 200ms ease-in-out;
+	}
+	#briefIntroduction-Button:hover #firstCharacter + .singleCharacter {
+		box-shadow: 0 0 5px var(--colour-shadow);
+		transition: all 200ms ease-in-out;
+		transition-delay: 50ms;
+		animation: briefIntroductionHover 200ms ease-in-out;
+		animation-delay: 50ms;
+	}
+	#briefIntroduction-Button:hover
+		#firstCharacter
+		+ .singleCharacter
+		+ .singleCharacter {
+		box-shadow: 0 0 5px var(--colour-shadow);
+		transition: all 200ms ease-in-out;
+		transition-delay: 100ms;
+		animation: briefIntroductionHover 200ms ease-in-out;
+		animation-delay: 100ms;
+	}
+	#briefIntroduction-Button:hover
+		#firstCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter {
+		box-shadow: 0 0 5px var(--colour-shadow);
+		transition: all 200ms ease-in-out;
+		transition-delay: 150ms;
+		animation: briefIntroductionHover 200ms ease-in-out;
+		animation-delay: 150ms;
+	}
+	#briefIntroduction-Button:hover
+		#firstCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter {
+		box-shadow: 0 0 5px var(--colour-shadow);
+		transition: all 200ms ease-in-out;
+		transition-delay: 200ms;
+		animation: briefIntroductionHover 200ms ease-in-out;
+		animation-delay: 200ms;
+	}
+	#briefIntroduction-Button:hover
+		#firstCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter {
+		box-shadow: 0 0 5px var(--colour-shadow);
+		transition: all 200ms ease-in-out;
+		transition-delay: 250ms;
+		animation: briefIntroductionHover 200ms ease-in-out;
+		animation-delay: 250ms;
+	}
+	#briefIntroduction-Button:hover
+		#firstCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter {
+		box-shadow: 0 0 5px var(--colour-shadow);
+		transition: all 200ms ease-in-out;
+		transition-delay: 300ms;
+		animation: briefIntroductionHover 200ms ease-in-out;
+		animation-delay: 300ms;
+	}
+	#briefIntroduction-Button:hover
+		#firstCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter {
+		box-shadow: 0 0 5px var(--colour-shadow);
+		transition: all 200ms ease-in-out;
+		transition-delay: 350ms;
+		animation: briefIntroductionHover 200ms ease-in-out;
+		animation-delay: 350ms;
+	}
+	@keyframes briefIntroductionHover {
+		0% {
+			transform: translateY(0);
+		}
+		40%,
+		55% {
+			transform: translateY(-9px);
+		}
+		45% {
+			transform: translateY(-10px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
 }
 /* 用于不支持鼠标悬浮的触摸屏 */
 @media (hover: none) {
@@ -520,34 +541,10 @@ html {
 		box-shadow: 0 0 5px var(--colour-shadow);
 	}
 }
-@keyframes briefIntroductionHover {
-	0% {
-		transform: translateY(0);
-	}
-	40%,
-	55% {
-		transform: translateY(-9px);
-	}
-	45% {
-		transform: translateY(-10px);
-	}
-	100% {
-		transform: translateY(0);
-	}
-	/* 70%,
-	80% {
-		transform: translateY(-2px);
-	}
-	75% {
-		transform: translateY(-3px);
-	}
-	100% {
-		transform: translateY(0);
-	} */
-}
-#briefIntroduction-Button:active .singleCharacter{
+
+#briefIntroduction-Button:active .singleCharacter {
 	box-shadow: 0 0 0 var(--colour-shadow) !important;
-	transition: all 100ms ease-in-out !important;
+	transition: all 50ms ease-in-out !important;
 	transition-delay: 0ms !important;
 }
 #mainContent {
@@ -641,7 +638,7 @@ li a:active {
 		/* box-shadow: inset 0 -5px var(--colour-2); */
 		background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
 			no-repeat;
-		background-size: 100% 4px;
+		background-size: 100% 6px;
 		background-position: left 0 bottom 2px;
 		transition: all 200ms ease-in-out;
 	}
@@ -964,7 +961,7 @@ h-hws[hidden] {
 		left: 6rem;
 	}
 	#briefIntroduction-Button {
-		margin-top: 2rem;
+		margin-top: 3rem;
 		margin-bottom: 0;
 	}
 	#briefIntroduction {
@@ -1078,7 +1075,7 @@ h-hws[hidden] {
 		left: 0rem;
 	}
 	#briefIntroduction-Button {
-		margin-top: 5rem;
+		margin-top: 6rem;
 		margin-bottom: 0;
 	}
 	#briefIntroduction {
@@ -1193,7 +1190,7 @@ h-hws[hidden] {
 	}
 
 	#briefIntroduction-Button {
-		margin-top: 5rem;
+		margin-top: 5.5rem;
 		margin-bottom: 1rem;
 	}
 	#briefIntroduction {
