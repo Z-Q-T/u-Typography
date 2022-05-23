@@ -433,12 +433,12 @@ html {
 		/* color: black; */
 		/* background-color: var(--colour-3);
 	border: 1px solid var(--colour-3); */
-		box-shadow: 0 0 5px var(--colour-shadow);
+		box-shadow: 0 1px 6px var(--colour-shadow);
 		transition: all 200ms ease-in-out;
 		animation: briefIntroductionHover 200ms ease-in-out;
 	}
 	#briefIntroduction-Button:hover #firstCharacter + .singleCharacter {
-		box-shadow: 0 0 5px var(--colour-shadow);
+		box-shadow: 0 1px 6px var(--colour-shadow);
 		transition: all 200ms ease-in-out;
 		transition-delay: 50ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -448,7 +448,7 @@ html {
 		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: 0 0 5px var(--colour-shadow);
+		box-shadow: 0 1px 6px var(--colour-shadow);
 		transition: all 200ms ease-in-out;
 		transition-delay: 100ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -459,7 +459,7 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: 0 0 5px var(--colour-shadow);
+		box-shadow: 0 1px 6px var(--colour-shadow);
 		transition: all 200ms ease-in-out;
 		transition-delay: 150ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -471,7 +471,7 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: 0 0 5px var(--colour-shadow);
+		box-shadow: 0 1px 6px var(--colour-shadow);
 		transition: all 200ms ease-in-out;
 		transition-delay: 200ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -484,7 +484,7 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: 0 0 5px var(--colour-shadow);
+		box-shadow: 0 1px 6px var(--colour-shadow);
 		transition: all 200ms ease-in-out;
 		transition-delay: 250ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -498,7 +498,7 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: 0 0 5px var(--colour-shadow);
+		box-shadow: 0 1px 6px var(--colour-shadow);
 		transition: all 200ms ease-in-out;
 		transition-delay: 300ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -513,7 +513,7 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: 0 0 5px var(--colour-shadow);
+		box-shadow: 0 1px 6px var(--colour-shadow);
 		transition: all 200ms ease-in-out;
 		transition-delay: 350ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -538,7 +538,7 @@ html {
 /* 用于不支持鼠标悬浮的触摸屏 */
 @media (hover: none) {
 	.singleCharacter {
-		box-shadow: 0 0 5px var(--colour-shadow);
+		box-shadow: 0 1px 6px var(--colour-shadow);
 	}
 }
 
