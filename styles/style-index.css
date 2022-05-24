@@ -167,9 +167,9 @@
 	--colour-changeType-inactive: rgb(70, 70, 70);
 	--colour-changeType-active: rgb(190, 176, 156);
 	--colour-changeType-hover: rgb(123, 117, 106);
-	--colour-1: rgb(174, 157, 133);
+	--colour-1: rgb(188, 171, 147);
 	--colour-2: rgb(228, 216, 198);
-	--colour-3: rgb(242, 234, 221);
+	--colour-3: rgb(239, 231, 216);
 	--colour-button: rgb(207, 193, 172);
 	--colour-shadow: rgb(193, 181, 164);
 	--colour-sidenote-mark: rgb(195, 67, 56);
@@ -550,11 +550,11 @@ html {
 }
 
 #briefIntroduction-Button:active .singleCharacter {
-	box-shadow: 0 0 0 var(--colour-shadow) !important;
+	box-shadow: inset 0 -16px var(--colour-1) !important;
 	transition: all 50ms ease-in-out !important;
 	transition-delay: 0ms !important;
-	background-color: var(--colour-1);
-	border: 1px solid var(--colour-1);
+	/* background-color: var(--colour-1); */
+	/* border: 1px solid var(--colour-1); */
 }
 #mainContent {
 	padding: 2rem 0;
@@ -647,7 +647,7 @@ li a:active {
 		/* box-shadow: inset 0 -5px var(--colour-2); */
 		background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
 			no-repeat;
-		background-size: 100% 8px;
+		background-size: 100% 6px;
 		background-position: left 0 bottom 2px;
 		transition: all 200ms ease-in-out;
 	}
@@ -663,7 +663,7 @@ h2 {
 	display: block;
 	width: 6rem;
 	position: sticky;
-	top: 3rem;
+	top: 5rem;
 	padding-bottom: 3rem;
 }
 .subDivision {
