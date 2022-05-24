@@ -1305,10 +1305,12 @@ h-hws[hidden] {
 		bottom: auto;
 	}
 	#page {
-		left: 0.5rem;
+		left: 0rem;
 		width: calc(100% - 1rem);
+		max-width: 27rem;
 		display: block;
 		position: relative;
+		margin: 0 auto;
 	}
 	#mainTitleArea {
 		width: 100%;

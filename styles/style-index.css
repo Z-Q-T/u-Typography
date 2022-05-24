@@ -391,8 +391,11 @@ html {
 	display: block;
 	position: static;
 	margin: 0 auto;
-	margin-top: 3rem;
-	margin-bottom: 5rem;
+	margin-top: 4rem;
+	/* margin-bottom: 5rem; */
+	/* border-radius: 10px; */
+	background-color: white;
+	transition: all 200ms ease-in-out;
 }
 
 #briefIntroduction {
@@ -406,6 +409,7 @@ html {
 	font-weight: 600;
 	text-align: center;
 	margin-left: 16px;
+	padding-bottom: 26px;
 	/* letter-spacing: 1rem; */
 }
 .singleCharacter {
@@ -426,6 +430,8 @@ html {
 }
 #briefIntroduction-Button:hover {
 	cursor: pointer;
+	/* box-shadow: 0 3px 6px var(--colour-2);
+	transition: all 200ms ease-in-out; */
 }
 /* 用于支持鼠标悬浮的设备 */
 @media (hover: hover) {
@@ -433,12 +439,12 @@ html {
 		/* color: black; */
 		/* background-color: var(--colour-3);
 	border: 1px solid var(--colour-3); */
-		box-shadow: 0 1px 6px var(--colour-shadow);
+		box-shadow: inset 0 -10px var(--colour-2);
 		transition: all 200ms ease-in-out;
 		animation: briefIntroductionHover 200ms ease-in-out;
 	}
 	#briefIntroduction-Button:hover #firstCharacter + .singleCharacter {
-		box-shadow: 0 1px 6px var(--colour-shadow);
+		box-shadow: inset 0 -10px var(--colour-2);
 		transition: all 200ms ease-in-out;
 		transition-delay: 50ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -448,7 +454,7 @@ html {
 		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: 0 1px 6px var(--colour-shadow);
+		box-shadow: inset 0 -10px var(--colour-2);
 		transition: all 200ms ease-in-out;
 		transition-delay: 100ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -459,7 +465,7 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: 0 1px 6px var(--colour-shadow);
+		box-shadow: inset 0 -10px var(--colour-2);
 		transition: all 200ms ease-in-out;
 		transition-delay: 150ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -471,7 +477,7 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: 0 1px 6px var(--colour-shadow);
+		box-shadow: inset 0 -10px var(--colour-2);
 		transition: all 200ms ease-in-out;
 		transition-delay: 200ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -484,7 +490,7 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: 0 1px 6px var(--colour-shadow);
+		box-shadow: inset 0 -10px var(--colour-2);
 		transition: all 200ms ease-in-out;
 		transition-delay: 250ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -498,7 +504,7 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: 0 1px 6px var(--colour-shadow);
+		box-shadow: inset 0 -10px var(--colour-2);
 		transition: all 200ms ease-in-out;
 		transition-delay: 300ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -513,7 +519,7 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: 0 1px 6px var(--colour-shadow);
+		box-shadow: inset 0 -10px var(--colour-2);
 		transition: all 200ms ease-in-out;
 		transition-delay: 350ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -537,8 +543,9 @@ html {
 }
 /* 用于不支持鼠标悬浮的触摸屏 */
 @media (hover: none) {
-	.singleCharacter {
-		box-shadow: 0 1px 6px var(--colour-shadow);
+	.singleCharacter 
+	 {
+		box-shadow: inset 0 -4px var(--colour-2);
 	}
 }
 
@@ -963,11 +970,12 @@ h-hws[hidden] {
 		left: 6rem;
 	}
 	#briefIntroduction-Button {
-		margin-top: 3rem;
-		margin-bottom: 0;
+		margin-top: 4rem;
+		/* margin-bottom: 0; */
 	}
 	#briefIntroduction {
 		margin-left: 11px;
+		padding-bottom: 18px;
 	}
 	.singleCharacter {
 		margin-right: 11px;
@@ -1078,10 +1086,11 @@ h-hws[hidden] {
 	}
 	#briefIntroduction-Button {
 		margin-top: 6rem;
-		margin-bottom: 0;
+		/* margin-bottom: 0; */
 	}
 	#briefIntroduction {
 		margin-left: 11px;
+		padding-bottom: 18px;
 	}
 	.singleCharacter {
 		margin-right: 11px;
@@ -1192,11 +1201,12 @@ h-hws[hidden] {
 	}
 
 	#briefIntroduction-Button {
-		margin-top: 5.5rem;
-		margin-bottom: 1rem;
+		margin-top: 6rem;
+		/* margin-bottom: 1rem; */
 	}
 	#briefIntroduction {
 		margin-left: 6px;
+		padding-bottom: 11px;
 		font-size: 0.9rem;
 	}
 	.singleCharacter {
