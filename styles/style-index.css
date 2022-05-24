@@ -974,7 +974,7 @@ h-hws[hidden] {
 	}
 	#briefIntroduction-Button {
 		margin-top: 3rem;
-margin-bottom: -1rem;
+/* margin-bottom: -1rem; */
 		/* margin-bottom: 0; */
 	}
 	/* #briefIntroduction {
@@ -986,7 +986,7 @@ margin-bottom: -1rem;
 		margin-top: 18px;
 	} */
 	section {
-		margin: 1rem 0;
+		margin: 0rem 0;
 		/* border-top: 0px; */
 	}
 	#section-Additional {
@@ -1092,8 +1092,8 @@ margin-bottom: -1rem;
 		left: 0rem;
 	}
 	#briefIntroduction-Button {
-		margin-top: 3rem;
-		margin-bottom: -1rem;
+		margin-top: 6rem;
+		/* margin-bottom: -1rem; */
 	}
 	/* #briefIntroduction {
 		margin-left: 11px;
@@ -1104,7 +1104,7 @@ margin-bottom: -1rem;
 		margin-top: 18px;
 	} */
 	section {
-		margin: 1rem 0;
+		margin: 0rem 0;
 		/* border-top: 0px; */
 	}
 	#section-Additional {
@@ -1211,7 +1211,7 @@ margin-bottom: -1rem;
 	}
 
 	#briefIntroduction-Button {
-		margin-top: 3rem;
+		margin-top: 7rem;
 margin-bottom: 1rem;
 	}
 	#briefIntroduction {
