@@ -281,8 +281,8 @@ html {
 	width: 40px;
 	height: 40px;
 	position: fixed;
-	bottom: 60px;
-	left: 15px;
+	bottom: 50px;
+	left: 10px;
 	cursor: pointer;
 	border-radius: 20px;
 	background-color: rgb(174, 157, 133, 0);
@@ -420,8 +420,8 @@ html {
 	/* border-radius: 20px; */
 	text-align: center;
 	position: fixed;
-	left: 18px;
-	bottom: 22px;
+	left: 13px;
+	bottom: 17px;
 	line-height: 1em;
 	cursor: pointer;
 }
@@ -444,11 +444,11 @@ html {
 	transform: translateY(2px);
 }
 #pageTypography-Icon {
-	width: 40px;
+	width: 36px;
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	margin: -10px 0 0 -20px;
+	margin: -9px 0 0 -18px;
 }
 #page {
 	height: 100%;
@@ -1151,15 +1151,15 @@ h-hws[hidden] {
 		box-shadow: 0 0 8px var(--colour-shadow); 
 	}
 	#backToHomePage {
-		left: 14px;
-		top: 14px;
-		height: 32px;
+		left: 13px;
+		top: 13px;
+		height: 34px;
 		width: 100px;
 		margin: 0;
 	}
 	#logo {
 		width: auto;
-		height: 30px;
+		height: 32px;
 	}
 	#changeTypeMenu-Button {
 		top: 11px;
@@ -1172,7 +1172,7 @@ h-hws[hidden] {
 	}
 	#pageTypography-Button {
 		top: 19px;
-		right: 70px;
+		right: 65px;
 		left: auto;
 		bottom: auto;
 	}
@@ -1307,7 +1307,7 @@ h-hws[hidden] {
 	}
 	#pageTypography-Button {
 		top: 19px;
-		right: 70px;
+		right: 65px;
 		left: auto;
 		bottom: auto;
 	}

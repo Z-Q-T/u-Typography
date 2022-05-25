@@ -135,21 +135,21 @@ button.onclick = function () {
         if (menuVisibility == "hidden") {
             menu.style.visibility = "visible";
             menu.style.opacity = "1";
-            menu.style.top = "60px";
+            menu.style.top = "70px";
         } else {
             menu.style.visibility = "hidden";
             menu.style.opacity = "0";
-            menu.style.top = "50px";
+            menu.style.top = "60px";
         }
     } else {
         if (menuVisibility == "hidden") {
             menu.style.visibility = "visible";
             menu.style.opacity = "1";
-            menu.style.bottom = "110px";
+            menu.style.bottom = "100px";
         } else {
             menu.style.visibility = "hidden";
             menu.style.opacity = "0";
-            menu.style.bottom = "100px";
+            menu.style.bottom = "90px";
         }
     }
 }
@@ -163,25 +163,25 @@ function changeMenuPosition() {
     if (menuVisibility == "hidden") {
         if (size < 1040) {
             menu.style.bottom = "auto";
-            menu.style.top = "50px";
+            menu.style.top = "60px";
             menu.style.left = "auto";
             menu.style.right = "15px";
         } else {
-            menu.style.bottom = "100px";
+            menu.style.bottom = "90px";
             menu.style.top = "auto";
-            menu.style.left = "15px";
+            menu.style.left = "10px";
             menu.style.right = "auto";
         }
     } else {
         if (size < 1040) {
             menu.style.bottom = "auto";
-            menu.style.top = "60px";
+            menu.style.top = "70px";
             menu.style.left = "auto";
             menu.style.right = "15px";
         } else {
-            menu.style.bottom = "110px";
+            menu.style.bottom = "100px";
             menu.style.top = "auto";
-            menu.style.left = "15px";
+            menu.style.left = "10px";
             menu.style.right = "auto";
         }
     }

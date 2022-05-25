@@ -223,8 +223,8 @@ html {
 	width: 40px;
 	height: 40px;
 	position: fixed;
-	bottom: 20px;
-	left: 15px;
+	bottom: 15px;
+	left: 10px;
 	cursor: pointer;
 	border-radius: 20px;
 	background-color: rgb(174, 157, 133, 0);
@@ -242,7 +242,7 @@ html {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	margin: -6px 0 0 -2px;
+	margin: -10px 0 0 -2px;
 }
 #changeTypeMenu-Hint {
 	font-size: 0.5rem;
@@ -265,7 +265,7 @@ html {
 } */
 #changeTypeMenu {
 	width: 40px;
-	height: 277px;
+	height: 407px;
 	background-color: black;
 	position: fixed;
 	border-radius: 20px;
@@ -307,10 +307,12 @@ html {
 	background-color: rgb(114, 114, 114);
 	margin: 25px auto 0px;
 }
+#changeTypeMenu-FenLei-SONG,
+#changeTypeMenu-FenLei-HEI,
 #changeTypeMenu-BiaoTi-SONG,
 #changeTypeMenu-BiaoTi-HEI,
-#changeTypeMenu-FenLei-SONG,
-#changeTypeMenu-FenLei-HEI {
+#changeTypeMenu-FuTi-SONG,
+#changeTypeMenu-FuTi-HEI {
 	display: block;
 	margin: 0.5rem auto;
 	width: 25px;
@@ -327,20 +329,24 @@ html {
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
 }
+#changeTypeMenu-FenLei-SONG,
 #changeTypeMenu-BiaoTi-SONG,
-#changeTypeMenu-FenLei-SONG {
+#changeTypeMenu-FuTi-SONG {
 	font-family: var(--font-song);
 	font-weight: 600;
 }
+#changeTypeMenu-FenLei-HEI,
 #changeTypeMenu-BiaoTi-HEI,
-#changeTypeMenu-FenLei-HEI {
+#changeTypeMenu-FuTi-HEI {
 	font-family: var(--font-hei);
 	font-weight: 400;
 }
+#changeTypeMenu-FenLei-SONG:hover,
+#changeTypeMenu-FenLei-HEI:hover,
 #changeTypeMenu-BiaoTi-SONG:hover,
 #changeTypeMenu-BiaoTi-HEI:hover,
-#changeTypeMenu-FenLei-SONG:hover,
-#changeTypeMenu-FenLei-HEI:hover {
+#changeTypeMenu-FuTi-SONG:hover,
+#changeTypeMenu-FuTi-HEI:hover {
 	background-color: var(--colour-changeType-hover) !important;
 	transition-property: all;
 	transition-timing-function: ease-in-out;
@@ -975,7 +981,7 @@ h-hws[hidden] {
 	}
 	#briefIntroduction-Button {
 		margin-top: 3rem;
-/* margin-bottom: -1rem; */
+		/* margin-bottom: -1rem; */
 		/* margin-bottom: 0; */
 	}
 	/* #briefIntroduction {
@@ -1062,13 +1068,13 @@ h-hws[hidden] {
 		border-bottom: black 2px solid; */
 	}
 	#logomark {
-		height: 36px;
+		height: 32px;
 		width: auto;
 		margin: 0;
 		display: inline-block;
 		position: absolute;
-		left: 13px;
-		top: 11px;
+		left: 14px;
+		top: 14px;
 	}
 	#logotype {
 		height: 27px;
@@ -1083,10 +1089,13 @@ h-hws[hidden] {
 		display: block;
 	}
 	#changeTypeMenu-Button {
-		top: 30px;
+		top: 11px;
 		right: 15px;
-		bottom: auto;
 		left: auto;
+		bottom: auto;
+	}
+	#changeTypeMenu-ButtonSVG {
+		transform: rotate(90deg);
 	}
 	#mainContent {
 		width: 30rem;
@@ -1177,13 +1186,13 @@ h-hws[hidden] {
 	}
 
 	#logomark {
-		height: 30px;
+		height: 32px;
 		width: auto;
 		margin: 0;
 		display: inline-block;
 		position: absolute;
-		left: 13px;
-		top: 15px;
+		left: 14px;
+		top: 14px;
 	}
 	#logotype {
 		height: 40px;
@@ -1200,10 +1209,13 @@ h-hws[hidden] {
 	}
 
 	#changeTypeMenu-Button {
-		top: 30px;
+		top: 11px;
 		right: 15px;
-		bottom: auto;
 		left: auto;
+		bottom: auto;
+	}
+	#changeTypeMenu-ButtonSVG {
+		transform: rotate(90deg);
 	}
 
 	#mainContent {
@@ -1213,7 +1225,7 @@ h-hws[hidden] {
 
 	#briefIntroduction-Button {
 		margin-top: 7rem;
-margin-bottom: 1rem;
+		margin-bottom: 1rem;
 	}
 	#briefIntroduction {
 		margin-left: 6px;
