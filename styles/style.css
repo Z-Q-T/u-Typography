@@ -196,8 +196,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
 	box-sizing: inherit;
 }
 * {
@@ -425,7 +425,7 @@ html {
 	line-height: 1em;
 	cursor: pointer;
 }
-#pageTypography-Button:after {
+#pageTypography-Button::after {
 	content: "";
 	width: 0;
 	height: 3px;
@@ -436,7 +436,7 @@ html {
 	transition: all 200ms ease-in-out;
 }
 
-#pageTypography-Button:hover:after {
+#pageTypography-Button:hover::after {
 	left: 0%;
 	width: 100%;
 }
@@ -904,8 +904,8 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 	color: var(--colour-sidenote-mark);
 }
 /* 中西文之间插入四分空 */
-h-hws:before,
-h-hws[hidden]:before {
+h-hws::before,
+h-hws[hidden]::before {
 	/* content: " "; */
 	font-family: var(--font-code);
 	font-size: 1em;
@@ -913,8 +913,8 @@ h-hws[hidden]:before {
 	line-height: 0.1em;
 }
 /* 标点挤压间距 */
-h-char.bd-jiya.bd-end:after,
-h-char.bd-jiya.bd-open:before,
+h-char.bd-jiya.bd-end::after,
+h-char.bd-jiya.bd-open::before,
 h-cs,
 h-cs[hidden] {
 	font-family: var(--font-code);

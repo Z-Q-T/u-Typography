@@ -198,8 +198,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
 	box-sizing: inherit;
 }
 * {
@@ -401,6 +401,7 @@ html {
 	/* margin-bottom: 5rem; */
 	/* border-radius: 10px; */
 	background-color: white;
+	/* box-shadow: 0 0px var(--colour-2); */
 	transition: all 200ms ease-in-out;
 }
 
@@ -416,6 +417,8 @@ html {
 	text-align: center;
 	margin-left: 16px;
 	padding-bottom: 26px;
+	/* border-bottom: 5px solid transparent;
+	transition: all 200ms ease-in-out; */
 	/* letter-spacing: 1rem; */
 }
 .singleCharacter {
@@ -432,7 +435,7 @@ html {
 	border: 1px solid white;
 	margin-right: 16px;
 	margin-top: 26px;
-	box-shadow: inset 0 0px var(--colour-2);
+	/* box-shadow: inset 0 0px var(--colour-2); */
 	transition: all 200ms ease-in-out;
 }
 #briefIntroduction-Button:hover {
@@ -442,18 +445,19 @@ html {
 }
 /* 用于支持鼠标悬浮的设备 */
 @media (hover: hover) {
+	
 	#briefIntroduction-Button:hover #firstCharacter {
 		/* color: black; */
 		/* background-color: var(--colour-3);
 	border: 1px solid var(--colour-3); */
-		box-shadow: inset 0 -6px var(--colour-2);
-		transition: all 200ms ease-in-out;
+		/* box-shadow: inset 0 -6px var(--colour-2);
+		transition: all 200ms ease-in-out; */
 		animation: briefIntroductionHover 200ms ease-in-out;
 	}
 	#briefIntroduction-Button:hover #firstCharacter + .singleCharacter {
-		box-shadow: inset 0 -6px var(--colour-2);
+		/* box-shadow: inset 0 -6px var(--colour-2);
 		transition: all 200ms ease-in-out;
-		transition-delay: 50ms;
+		transition-delay: 50ms; */
 		animation: briefIntroductionHover 200ms ease-in-out;
 		animation-delay: 50ms;
 	}
@@ -461,9 +465,9 @@ html {
 		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: inset 0 -6px var(--colour-2);
+		/* box-shadow: inset 0 -6px var(--colour-2);
 		transition: all 200ms ease-in-out;
-		transition-delay: 100ms;
+		transition-delay: 100ms; */
 		animation: briefIntroductionHover 200ms ease-in-out;
 		animation-delay: 100ms;
 	}
@@ -472,9 +476,9 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: inset 0 -6px var(--colour-2);
+		/* box-shadow: inset 0 -6px var(--colour-2);
 		transition: all 200ms ease-in-out;
-		transition-delay: 150ms;
+		transition-delay: 150ms; */
 		animation: briefIntroductionHover 200ms ease-in-out;
 		animation-delay: 150ms;
 	}
@@ -484,9 +488,9 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: inset 0 -6px var(--colour-2);
+		/* box-shadow: inset 0 -6px var(--colour-2);
 		transition: all 200ms ease-in-out;
-		transition-delay: 200ms;
+		transition-delay: 200ms; */
 		animation: briefIntroductionHover 200ms ease-in-out;
 		animation-delay: 200ms;
 	}
@@ -497,9 +501,9 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: inset 0 -6px var(--colour-2);
+		/* box-shadow: inset 0 -6px var(--colour-2);
 		transition: all 200ms ease-in-out;
-		transition-delay: 250ms;
+		transition-delay: 250ms; */
 		animation: briefIntroductionHover 200ms ease-in-out;
 		animation-delay: 250ms;
 	}
@@ -511,9 +515,9 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: inset 0 -6px var(--colour-2);
+		/* box-shadow: inset 0 -6px var(--colour-2);
 		transition: all 200ms ease-in-out;
-		transition-delay: 300ms;
+		transition-delay: 300ms; */
 		animation: briefIntroductionHover 200ms ease-in-out;
 		animation-delay: 300ms;
 	}
@@ -526,9 +530,9 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: inset 0 -6px var(--colour-2);
+		/* box-shadow: inset 0 -6px var(--colour-2);
 		transition: all 200ms ease-in-out;
-		transition-delay: 350ms;
+		transition-delay: 350ms; */
 		animation: briefIntroductionHover 200ms ease-in-out;
 		animation-delay: 350ms;
 	}
@@ -547,21 +551,62 @@ html {
 			transform: translateY(0);
 		}
 	}
+	#briefIntroduction-Button::after {
+		content: "";
+		width: 0%;
+		height: 6px;
+		background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
+			no-repeat;
+		position: absolute;
+		display: inline-block;
+		/* top: -10px; */
+		left: 50%;
+		transition: 200ms ease-in-out;
+		transition-property: width, left;
+	}
+	#briefIntroduction-Button:hover::after {
+		width: 180px;
+		left: calc(50% - 90px);
+		transition: 200ms ease-in-out;
+		transition-property: width, left;
+		transition-delay: 50ms;
+	}
+
+
+
 }
 /* 用于不支持鼠标悬浮的触摸屏 */
 @media (hover: none) {
-	.singleCharacter {
-		box-shadow: inset 0 -3px var(--colour-2);
-	}
-}
 
-#briefIntroduction-Button:active .singleCharacter {
+	#briefIntroduction-Button::after {
+		/* box-shadow: 0 4px var(--colour-2); */
+		content: "";
+		width: 50%;
+		height: 6px;
+		background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
+			no-repeat;
+		position: relative;
+		display: inline-block;
+		top: -10px;
+		left: 25%;
+	}
+	/* #briefIntroduction-Button:active::after {
+		background: linear-gradient(135deg, var(--colour-1), var(--colour-1))
+			no-repeat;
+		height: 10px;
+	} */
+}
+#briefIntroduction-Button:active #briefIntroduction,
+#briefIntroduction-Button:active::after{
+	transform: translateY(3px);
+}
+/* #briefIntroduction-Button:active .singleCharacter {
 	box-shadow: inset 0 -6px var(--colour-1) !important;
 	transition: all 50ms ease-in-out !important;
-	transition-delay: 0ms !important;
-	/* background-color: var(--colour-1); */
-	/* border: 1px solid var(--colour-1); */
-}
+	transition-delay: 0ms !important; */
+/* background-color: var(--colour-1); */
+/* border: 1px solid var(--colour-1); 
+}*/
 #mainContent {
 	padding: 2rem 0;
 	display: block;
@@ -884,8 +929,8 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 	line-height: 1em;
 }
 /* 中西文之间插入四分空 */
-h-hws:before,
-h-hws[hidden]:before {
+h-hws::before,
+h-hws[hidden]::before {
 	/* content: " "; */
 	font-family: var(--font-code);
 	font-size: 1em;
@@ -893,8 +938,8 @@ h-hws[hidden]:before {
 	line-height: 0.1em;
 }
 /* 标点挤压间距 */
-h-char.bd-jiya.bd-end:after,
-h-char.bd-jiya.bd-open:before,
+h-char.bd-jiya.bd-end::after,
+h-char.bd-jiya.bd-open::before,
 h-cs,
 h-cs[hidden] {
 	font-family: var(--font-code);
@@ -1229,7 +1274,7 @@ h-hws[hidden] {
 	}
 	#briefIntroduction {
 		margin-left: 6px;
-		padding-bottom: 11px;
+		padding-bottom: 13px;
 		font-size: 0.9rem;
 	}
 	.singleCharacter {
