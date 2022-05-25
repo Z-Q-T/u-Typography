@@ -417,7 +417,7 @@ html {
 	display: inline-block;
 	width: 24px;
 	height: 24px;
-	border-radius: 2px;
+	/* border-radius: 2px; */
 	/* color: var(--colour-paper);
 	background-color: black;
 	border: 1px solid black; */
@@ -426,6 +426,7 @@ html {
 	border: 1px solid white;
 	margin-right: 16px;
 	margin-top: 26px;
+	box-shadow: inset 0 0px var(--colour-2);
 	transition: all 200ms ease-in-out;
 }
 #briefIntroduction-Button:hover {
@@ -439,12 +440,12 @@ html {
 		/* color: black; */
 		/* background-color: var(--colour-3);
 	border: 1px solid var(--colour-3); */
-		box-shadow: inset 0 -10px var(--colour-2);
+		box-shadow: inset 0 -6px var(--colour-2);
 		transition: all 200ms ease-in-out;
 		animation: briefIntroductionHover 200ms ease-in-out;
 	}
 	#briefIntroduction-Button:hover #firstCharacter + .singleCharacter {
-		box-shadow: inset 0 -10px var(--colour-2);
+		box-shadow: inset 0 -6px var(--colour-2);
 		transition: all 200ms ease-in-out;
 		transition-delay: 50ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -454,7 +455,7 @@ html {
 		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: inset 0 -10px var(--colour-2);
+		box-shadow: inset 0 -6px var(--colour-2);
 		transition: all 200ms ease-in-out;
 		transition-delay: 100ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -465,7 +466,7 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: inset 0 -10px var(--colour-2);
+		box-shadow: inset 0 -6px var(--colour-2);
 		transition: all 200ms ease-in-out;
 		transition-delay: 150ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -477,7 +478,7 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: inset 0 -10px var(--colour-2);
+		box-shadow: inset 0 -6px var(--colour-2);
 		transition: all 200ms ease-in-out;
 		transition-delay: 200ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -490,7 +491,7 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: inset 0 -10px var(--colour-2);
+		box-shadow: inset 0 -6px var(--colour-2);
 		transition: all 200ms ease-in-out;
 		transition-delay: 250ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -504,7 +505,7 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: inset 0 -10px var(--colour-2);
+		box-shadow: inset 0 -6px var(--colour-2);
 		transition: all 200ms ease-in-out;
 		transition-delay: 300ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -519,7 +520,7 @@ html {
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter {
-		box-shadow: inset 0 -10px var(--colour-2);
+		box-shadow: inset 0 -6px var(--colour-2);
 		transition: all 200ms ease-in-out;
 		transition-delay: 350ms;
 		animation: briefIntroductionHover 200ms ease-in-out;
@@ -549,7 +550,7 @@ html {
 }
 
 #briefIntroduction-Button:active .singleCharacter {
-	box-shadow: inset 0 -16px var(--colour-1) !important;
+	box-shadow: inset 0 -6px var(--colour-1) !important;
 	transition: all 50ms ease-in-out !important;
 	transition-delay: 0ms !important;
 	/* background-color: var(--colour-1); */
@@ -646,7 +647,7 @@ li a:active {
 		/* box-shadow: inset 0 -5px var(--colour-2); */
 		background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
 			no-repeat;
-		background-size: 100% 5px;
+		background-size: 100% 4px;
 		background-position: left 0 bottom 2px;
 		transition: all 200ms ease-in-out;
 	}
