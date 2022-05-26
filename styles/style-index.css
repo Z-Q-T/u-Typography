@@ -1094,6 +1094,12 @@ h-hws[hidden] {
 		position: relative;
 	}
 }
+@media screen and (min-width: 900px) and (max-width: 1180px) and (hover: none) {
+	#briefIntroduction-Button {
+		margin-top: 2rem;
+		margin-bottom: -1rem;
+	}
+}
 /* 【3】############################# */
 @media screen and (min-width: 668px) and (max-width: 900px) {
 	#whole {
@@ -1209,6 +1215,12 @@ h-hws[hidden] {
 		text-align: center;
 		margin: 1rem auto;
 		position: relative;
+	}
+}
+@media screen and (min-width: 668px) and (max-width: 900px) and (hover: none) {
+	#briefIntroduction-Button {
+		/* margin-top: 5rem; */
+		margin-bottom: -1rem;
 	}
 }
 /* 【4】############################# */
@@ -1343,5 +1355,11 @@ h-hws[hidden] {
 		text-align: center;
 		margin: 1rem auto;
 		position: relative;
+	}
+}
+@media screen and (max-width: 668px) and (hover: none) {
+	#briefIntroduction-Button {
+		margin-top: 6rem;
+		margin-bottom: -1rem;
 	}
 }
