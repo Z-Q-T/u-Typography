@@ -163,15 +163,17 @@
 /* —————————————————————————————— */
 
 :root {
-	--colour-paper: rgb(248, 248, 244);
+	--colour-paper: rgb(249, 248, 245);
 	--colour-changeType-inactive: rgb(70, 70, 70);
 	--colour-changeType-active: rgb(190, 176, 156);
 	--colour-changeType-hover: rgb(123, 117, 106);
-	--colour-1: rgb(174, 157, 133);
+	--colour-1: rgb(188, 171, 147);
+	--colour-2: rgb(228, 216, 198);
+	--colour-3: rgb(239, 231, 216);
 	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
 	--colour-shadow: rgb(193, 181, 164);
-	--colour-dark-text:rgb(46, 46, 46);
+	--colour-dark-text: rgb(46, 46, 46);
 	--font-hei: "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
 	--font-song: "SONG", "Noto Serif SC", serif;
@@ -234,47 +236,58 @@ html {
 	display: block;
 	position: relative;
 	/* left: 19px; */
-	top: 23px;
-	height: 97px;
-	width: 26px;
+	top: 19px;
+	height: 146px;
+	width: 34px;
 	cursor: pointer;
 	margin: 0 auto;
+}
+#backToHomePage::before {
+	content: "";
+	width: 0;
+	height: 10px;
+	background: linear-gradient(135deg, var(--colour-2), var(--colour-3))
+		no-repeat;
+	position: fixed;
+	display: inline-block;
+	top: 0;
+	left: 60px;
+	transition: 200ms ease-in-out;
+	transition-property: width, left;
+}
+
+#backToHomePage:hover::before {
+	width: 60px;
+	left: 0;
+	transition: 200ms ease-in-out;
+	transition-property: width, left;
 }
 #logo {
 	width: 24px;
 
 	position: relative;
-	top: 1px;
-	left: 1px;
+	top: 5px;
+	left: 5px;
 }
-#logo:hover {
-	/* filter: invert(10%); */
+#backToHomePage:hover #logo {
 	animation: logoHover 200ms ease-in-out;
-	/* animation-fill-mode: forwards; */
 }
-#logo:active {
+#backToHomePage:active #logo {
 	transform: scale(95%);
 }
-/* @keyframes logoHover {
-	0% {
-		transform: scale(100%);
-	}
-	70% {
-		transform: scale(109%);
-	}
-	100% {
-		transform: scale(110%);
-	}
-} */
 @keyframes logoHover {
 	0% {
-		transform: rotate(5deg);
+		transform: translateY(0);
 	}
-	50% {
-		transform: rotate(-5deg);
+	40%,
+	55% {
+		transform: translateY(-4px);
+	}
+	45% {
+		transform: translateY(-5px);
 	}
 	100% {
-		transform: rotate(0deg);
+		transform: translateY(0);
 	}
 }
 #changeTypeMenu-Button {
@@ -658,7 +671,7 @@ article {
 	clear: both;
 	font-size: 0.75rem;
 	line-height: 1.2rem;
-	color:var(--colour-dark-text);
+	color: var(--colour-dark-text);
 	/* white-space: break-spaces; */
 }
 .tabulation {
@@ -1148,14 +1161,28 @@ h-hws[hidden] {
 		position: fixed;
 		z-index: 10;
 		background-color: var(--colour-paper);
-		box-shadow: 0 0 8px var(--colour-shadow); 
+		box-shadow: 0 0 8px var(--colour-shadow);
 	}
 	#backToHomePage {
-		left: 13px;
-		top: 13px;
-		height: 34px;
-		width: 100px;
+		left: 14px;
+		top: 9px;
+		height: 42px;
+		width: 128px;
 		margin: 0;
+	}
+	#backToHomePage::before {
+		width: 8px;
+		height: 0;
+		top: 60px;
+		left: 0;
+		transition-property: height, top;
+	}
+	#backToHomePage:hover:before {
+		width: 8px;
+		height: 60px;
+		top: 0;
+		left: 0;
+		transition-property: height, top;
 	}
 	#logo {
 		width: auto;
@@ -1283,18 +1310,32 @@ h-hws[hidden] {
 		position: fixed;
 		z-index: 10;
 		background-color: var(--colour-paper);
-		box-shadow: 0 0 8px var(--colour-shadow); 
+		box-shadow: 0 0 8px var(--colour-shadow);
 	}
 	#backToHomePage {
 		left: 14px;
-		top: 14px;
-		height: 32px;
-		width: 100px;
+		top: 9px;
+		height: 42px;
+		width: 128px;
 		margin: 0;
+	}
+	#backToHomePage::before {
+		width: 8px;
+		height: 0;
+		top: 60px;
+		left: 0;
+		transition-property: height, top;
+	}
+	#backToHomePage:hover:before {
+		width: 8px;
+		height: 60px;
+		top: 0;
+		left: 0;
+		transition-property: height, top;
 	}
 	#logo {
 		width: auto;
-		height: 30px;
+		height: 32px;
 	}
 	#changeTypeMenu-Button {
 		top: 11px;
