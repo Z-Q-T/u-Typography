@@ -98,25 +98,25 @@ button.onclick = function () {
     let menu = document.getElementById("changeTypeMenu");
     let menuVisibility = menu.style.visibility;
     let size = window.innerWidth;
-    if (size < 1160) {
+    if (size < 900) {
         if (menuVisibility == "hidden") {
             menu.style.visibility = "visible";
             menu.style.opacity = "1";
-            menu.style.top = "80px";
+            menu.style.top = "70px";
         } else {
             menu.style.visibility = "hidden";
             menu.style.opacity = "0";
-            menu.style.top = "70px";
+            menu.style.top = "60px";
         }
     } else {
         if (menuVisibility == "hidden") {
             menu.style.visibility = "visible";
             menu.style.opacity = "1";
-            menu.style.bottom = "70px";
+            menu.style.bottom = "65px";
         } else {
             menu.style.visibility = "hidden";
             menu.style.opacity = "0";
-            menu.style.bottom = "60px";
+            menu.style.bottom = "55px";
         }
     }
 }
@@ -128,27 +128,27 @@ function changeMenuPosition() {
     let size = window.innerWidth;
     console.log(size);
     if (menuVisibility == "hidden") {
-        if (size < 1160) {
+        if (size < 900) {
+            menu.style.bottom = "auto";
+            menu.style.top = "60px";
+            menu.style.left = "auto";
+            menu.style.right = "15px";
+        } else {
+            menu.style.bottom = "55px";
+            menu.style.top = "auto";
+            menu.style.left = "10px";
+            menu.style.right = "auto";
+        }
+    } else {
+        if (size < 900) {
             menu.style.bottom = "auto";
             menu.style.top = "70px";
             menu.style.left = "auto";
             menu.style.right = "15px";
         } else {
-            menu.style.bottom = "60px";
+            menu.style.bottom = "65px";
             menu.style.top = "auto";
-            menu.style.left = "15px";
-            menu.style.right = "auto";
-        }
-    } else {
-        if (size < 1160) {
-            menu.style.bottom = "auto";
-            menu.style.top = "80px";
-            menu.style.left = "auto";
-            menu.style.right = "15px";
-        } else {
-            menu.style.bottom = "70px";
-            menu.style.top = "auto";
-            menu.style.left = "15px";
+            menu.style.left = "10px";
             menu.style.right = "auto";
         }
     }

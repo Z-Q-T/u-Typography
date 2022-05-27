@@ -589,6 +589,23 @@ html {
 		display: inline-block;
 		top: -10px;
 		left: 25%;
+		animation: noHoverScreenAnimation 3000ms ease-in-out;
+		animation-iteration-count: infinite;
+	}
+	@keyframes noHoverScreenAnimation {
+		0%,30% {
+			transform: scaleX(1);
+		}
+		/* 40%,
+		55% {
+			transform: translateY(-9px);
+		} */
+		85%,95% {
+			transform: scaleX(1.8);
+		}
+		100% {
+			transform: scaleX(1);
+		}
 	}
 	/* #briefIntroduction-Button:active::after {
 		background: linear-gradient(135deg, var(--colour-1), var(--colour-1))
