@@ -251,7 +251,7 @@ html {
 	position: fixed;
 	display: inline-block;
 	top: 0;
-	left: 60px;
+	left: 0px;
 	transition: 200ms ease-in-out;
 	transition-property: width, left;
 }
@@ -264,30 +264,48 @@ html {
 }
 #logo {
 	width: 24px;
-
 	position: relative;
 	top: 5px;
 	left: 5px;
-}
+	}
 #backToHomePage:hover #logo {
-	animation: logoHover 200ms ease-in-out;
+	animation: logoHover 500ms ease-in-out;
+	/* animation-fill-mode: forwards; */
+	/* transform: rotate3d(1, 1, 1, 45deg);*/
+	transform-origin: top center;
+	/* transition: 200ms ease-in-out;  */
 }
 #backToHomePage:active #logo {
 	transform: scale(95%);
+	transform-origin: center center;
 }
-@keyframes logoHover {
+/* @keyframes logoHover {
 	0% {
-		transform: translateY(0);
+		transform: translateX(0px);
 	}
-	40%,
-	55% {
-		transform: translateY(-4px);
-	}
-	45% {
-		transform: translateY(-5px);
+
+	55%,85% {
+		transform:translate(8px,8px);
 	}
 	100% {
-		transform: translateY(0);
+		transform: translateX(0px);
+	}
+} */
+@keyframes logoHover {
+	0% {
+		transform: rotate(0deg);
+	}
+	15%,20%{
+		transform: rotate(5deg);
+	}
+	45%,50%{
+		transform: rotate(-4deg);
+	}
+	70%,75%{
+		transform: rotate(2deg);
+	}
+	100% {
+		transform: rotate(0deg);
 	}
 }
 #changeTypeMenu-Button {
@@ -1173,7 +1191,7 @@ h-hws[hidden] {
 	#backToHomePage::before {
 		width: 8px;
 		height: 0;
-		top: 60px;
+		top: 0px;
 		left: 0;
 		transition-property: height, top;
 	}
@@ -1187,7 +1205,7 @@ h-hws[hidden] {
 	#logo {
 		width: auto;
 		height: 32px;
-	}
+		}
 	#changeTypeMenu-Button {
 		top: 11px;
 		right: 15px;
@@ -1236,6 +1254,7 @@ h-hws[hidden] {
 		margin: 4rem auto;
 		font-size: 0.5625rem;
 		/* z-index: 15; */
+		margin-top: 5rem;
 	}
 	#index {
 		font-size: 0.75rem;
@@ -1322,7 +1341,7 @@ h-hws[hidden] {
 	#backToHomePage::before {
 		width: 8px;
 		height: 0;
-		top: 60px;
+		top: 0px;
 		left: 0;
 		transition-property: height, top;
 	}
@@ -1377,7 +1396,8 @@ h-hws[hidden] {
 		width: 9rem;
 		margin: 4rem auto;
 		font-size: 0.5625rem;
-		z-index: auto;
+		/* z-index: auto; */
+		margin-top: 5rem;
 	}
 	#index {
 		font-size: 0.75rem;
@@ -1453,3 +1473,7 @@ h-hws[hidden] {
 		display: none;
 	}
 }
+@media (hover: none) {
+#logo{
+	animation: logoHover 500ms ease-in-out;
+}}
