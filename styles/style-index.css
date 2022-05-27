@@ -589,7 +589,7 @@ html {
 		display: inline-block;
 		top: -10px;
 		left: 25%;
-		animation: noHoverScreenAnimation 3000ms ease-in-out;
+		animation: noHoverScreenAnimation 4000ms ease-in-out;
 		animation-iteration-count: infinite;
 	}
 	@keyframes noHoverScreenAnimation {
@@ -600,7 +600,7 @@ html {
 		55% {
 			transform: translateY(-9px);
 		} */
-		85%,95% {
+		60%,70% {
 			transform: scaleX(1.8);
 		}
 		100% {
