@@ -170,8 +170,8 @@
 	--colour-1: rgb(188, 171, 147);
 	--colour-2: rgb(228, 216, 198);
 	--colour-3: rgb(239, 231, 216);
-	--colour-bar-hover:rgb(248, 244, 235);
-	--colour-changeType-button-hover:rgb(242, 237, 228);
+	--colour-bar-hover: rgb(248, 244, 235);
+	--colour-changeType-button-hover: rgb(242, 237, 228);
 	--colour-button: rgb(207, 193, 172);
 	--colour-shadow: rgb(193, 181, 164);
 	--colour-sidenote-mark: rgb(195, 67, 56);
@@ -440,8 +440,8 @@ html {
 	background-color: black;
 	border: 1px solid black; */
 	color: black;
-	background-color: var(--colour-paper);
-	border: 1px solid var(--colour-paper);
+	background-color: transparent;
+	border: 1px solid transparent;
 	margin-right: 16px;
 	margin-top: 26px;
 	/* box-shadow: inset 0 0px var(--colour-2); */
@@ -449,6 +449,7 @@ html {
 }
 #briefIntroduction-Button:hover {
 	cursor: pointer;
+
 	/* box-shadow: 0 3px 6px var(--colour-2);
 	transition: all 200ms ease-in-out; */
 }
@@ -583,26 +584,14 @@ html {
 /* 用于不支持鼠标悬浮的触摸屏 */
 @media (hover: none) {
 	#briefIntroduction-Button::after {
-		content: "";
-		width: 0%;
-		height: 6px;
-		background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
-			no-repeat;
-		position: absolute;
-		display: inline-block;
-		/* top: -10px; */
-		left: 50%;
-		transition: 200ms ease-in-out;
-		transition-property: width, left;
+		display: none;
 	}
 	#briefIntroduction-Button:hover::after {
-		width: 180px;
-		left: calc(50% - 90px);
-		transition: 200ms ease-in-out;
-		transition-property: width, left;
-		transition-delay: 50ms;
+		display: none;
 	}
-
+	#briefIntroduction-Button:hover {
+		background: rgb(247, 242, 233);
+	}
 	#mainContent:hover #firstCharacter {
 		animation: briefIntroductionJump 200ms ease-in-out;
 		animation-delay: 000ms;
@@ -617,12 +606,17 @@ html {
 		animation-delay: 100ms;
 	}
 
-	#mainContent:hover #firstCharacter + .singleCharacter + .singleCharacter + .singleCharacter {
+	#mainContent:hover
+		#firstCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter {
 		animation: briefIntroductionJump 200ms ease-in-out;
 		animation-delay: 150ms;
 	}
 
-	#mainContent:hover #firstCharacter
+	#mainContent:hover
+		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter
@@ -631,7 +625,8 @@ html {
 		animation-delay: 200ms;
 	}
 
-	#mainContent:hover #firstCharacter
+	#mainContent:hover
+		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter
@@ -641,7 +636,8 @@ html {
 		animation-delay: 250ms;
 	}
 
-	#mainContent:hover #firstCharacter
+	#mainContent:hover
+		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter
@@ -652,7 +648,8 @@ html {
 		animation-delay: 300ms;
 	}
 
-	#mainContent:hover #firstCharacter
+	#mainContent:hover
+		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter
 		+ .singleCharacter
@@ -678,7 +675,6 @@ html {
 			transform: translateY(0);
 		}
 	}
-
 
 	@keyframes noHoverScreenAnimation {
 		0%,
@@ -1466,5 +1462,6 @@ h-hws[hidden] {
 	}
 	#briefIntroduction-Button:hover::after {
 		width: 50%;
-		left: 25%;}
+		left: 25%;
+	}
 }
