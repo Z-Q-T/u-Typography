@@ -163,7 +163,7 @@
 /* —————————————————————————————— */
 
 :root {
-	--colour-paper: rgb(249, 248, 245);
+	--colour-paper: rgb(251, 250, 248);
 	--colour-changeType-inactive: rgb(70, 70, 70);
 	--colour-changeType-active: rgb(190, 176, 156);
 	--colour-changeType-hover: rgb(123, 117, 106);
@@ -176,6 +176,7 @@
 	--font-hei: "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
 	--font-song: "SONG", "Noto Serif SC", serif;
+	--font-song-biaodian: "SONG-Biaodian", "Noto Serif SC";
 	--font-sans: "SANS", "Source Sans Pro", sans-serif;
 	--font-serif: "SERIF", "Source Serif Pro", serif;
 	--font-code: "CODE", "Source Code Pro", monospace;
@@ -830,7 +831,7 @@ ul h-char.bd-jiya.bd-open > h-inner,
 ul h-char.bd-jiya.bd-close > h-inner,
 ul h-char.bd-jiya.bd-cop > h-inner,
 ul h-char.bd-jiya[unicode="ff0e"] > h-inner {
-	font-family: "SONG-BiaoDian", "Noto Serif SC" !important;
+	font-family: var(--font-song-biaodian) !important;
 	font-weight: 600 !important;
 	line-height: 0.1em;
 }
