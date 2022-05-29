@@ -584,15 +584,35 @@ html {
 		content: "";
 		width: 50%;
 		height: 6px;
-		background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
+		background: linear-gradient(135deg, var(--colour-3),var(--colour-2))
 			no-repeat;
 		position: relative;
 		display: inline-block;
+		/* transition: all 500ms ease-in-out; */
 		top: -10px;
 		left: 25%;
-		animation: noHoverScreenAnimation 4000ms ease-in-out;
+		animation: noHoverScreenAnimation 3000ms cubic-bezier(.64,0,.36,1);;
 		animation-iteration-count: infinite;
 	}
+	@keyframes colorAnimation {
+		0%,45% {
+			background: linear-gradient(135deg, var(--colour-2), var(--colour-2),var(--colour-2))
+		}
+		48% {
+			background: linear-gradient(135deg, var(--colour-3), var(--colour-2),var(--colour-2))
+		}
+
+		50% {
+			background: linear-gradient(135deg, var(--colour-2),var(--colour-3), var(--colour-2))
+		}
+		52% {
+			background: linear-gradient(135deg, var(--colour-2),var(--colour-2), var(--colour-3))
+		}
+		55%,100% {
+			background: linear-gradient(135deg, var(--colour-2), var(--colour-2),var(--colour-2))
+		}
+	  }
+
 	@keyframes noHoverScreenAnimation {
 		0%,30% {
 			transform: scaleX(1);
@@ -602,17 +622,14 @@ html {
 			transform: translateY(-9px);
 		} */
 		60%,70% {
-			transform: scaleX(1.8);
+			transform: scaleX(1.1);
 		}
 		100% {
 			transform: scaleX(1);
 		}
 	}
-	/* #briefIntroduction-Button:active::after {
-		background: linear-gradient(135deg, var(--colour-1), var(--colour-1))
-			no-repeat;
-		height: 10px;
-	} */
+
+
 }
 #briefIntroduction-Button:active #briefIntroduction,
 #briefIntroduction-Button:active::after{

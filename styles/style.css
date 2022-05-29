@@ -258,7 +258,7 @@ html {
 	content: "";
 	width: 0;
 	height: 10px;
-	background: linear-gradient(135deg, var(--colour-2), var(--colour-3))
+	background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
 		no-repeat;
 	position: fixed;
 	display: inline-block;
