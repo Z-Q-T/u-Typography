@@ -171,6 +171,7 @@
 	--colour-2: rgb(228, 216, 198);
 	--colour-3: rgb(239, 231, 216);
 	--colour-bar-hover:rgb(248, 244, 235);
+	--colour-changeType-button-hover:rgb(242, 237, 228);
 	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
 	--colour-shadow: rgb(193, 181, 164);
@@ -335,7 +336,7 @@ html {
 	background-color: rgb(174, 157, 133, 0);
 }
 #changeTypeMenu-Button:hover {
-	background-color: rgb(174, 157, 133, 0.2);
+	background-color: var(--colour-changeType-button-hover);
 	transition-property: all;
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
@@ -386,7 +387,7 @@ html {
 	font-size: 0.6rem;
 	text-align: center;
 	line-height: 0.75rem;
-	box-shadow: 0px 0px 10px var(--colour-1);
+	box-shadow: 0px 0px 10px var(--colour-shadow);
 }
 /* #changeTypeMenu-Button:hover + #changeTypeMenu-Hint {
 	visibility: visible;
@@ -1208,7 +1209,7 @@ h-hws[hidden] {
 		position: fixed;
 		z-index: 10;
 		/* background-color: var(--colour-paper); */
-		box-shadow: 0 0 10px var(--colour-1);
+		box-shadow: 0 0 10px var(--colour-shadow);
 		/* border-right: 0px solid #747474;
 		border-bottom: 1px solid #747474; */
 	}
@@ -1360,7 +1361,7 @@ h-hws[hidden] {
 		z-index: 10;
 		/* background-color: var(--colour-paper);
 		box-shadow: 0 0 8px var(--colour-shadow); */
-		box-shadow: 0 0 10px var(--colour-1);
+		box-shadow: 0 0 10px var(--colour-shadow);
 		/* border-right: 0px solid #747474;
 		border-bottom: 1px solid #747474; */
 	}
