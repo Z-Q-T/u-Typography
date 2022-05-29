@@ -592,21 +592,21 @@ html {
 	#briefIntroduction-Button:hover {
 		background: rgb(247, 242, 233);
 	}
-	header:hover #firstCharacter {
+	header:active #firstCharacter {
 		animation: briefIntroductionJump 200ms ease-in-out;
 		animation-delay: 000ms;
 	}
-	header:hover #firstCharacter + .singleCharacter {
+	header:active #firstCharacter + .singleCharacter {
 		animation: briefIntroductionJump 200ms ease-in-out;
 		animation-delay: 050ms;
 	}
 
-	header:hover #firstCharacter + .singleCharacter + .singleCharacter {
+	header:active #firstCharacter + .singleCharacter + .singleCharacter {
 		animation: briefIntroductionJump 200ms ease-in-out;
 		animation-delay: 100ms;
 	}
 
-	header:hover
+	header:active
 		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter
@@ -615,7 +615,7 @@ html {
 		animation-delay: 150ms;
 	}
 
-	header:hover
+	header:active
 		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter
@@ -625,7 +625,7 @@ html {
 		animation-delay: 200ms;
 	}
 
-	header:hover
+	header:active
 		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter
@@ -636,7 +636,7 @@ html {
 		animation-delay: 250ms;
 	}
 
-	header:hover
+	header:active
 		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter
@@ -648,7 +648,7 @@ html {
 		animation-delay: 300ms;
 	}
 
-	header:hover
+	header:active
 		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter
