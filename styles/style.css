@@ -232,10 +232,6 @@ html {
 	/* box-shadow: 0 0 10px rgb(222, 216, 207); */
 	/* border-right: 1px solid #747474; */
 }
-/* #bar picture {
-	display: block;
-	position: relative;} */
-
 #backToHomePage {
 	display: block;
 	position: relative;
@@ -246,14 +242,10 @@ html {
 	cursor: pointer;
 	margin: 0 auto;
 	background: transparent;
-	/* background-size: 0% 0px;
-	background-position: left 0 top 0; */
 	transition: all 200ms ease-in-out;
 }
 #backToHomePage:hover {
 	background: var(--colour-bar-hover);
-	/* background-size: 100% 100%;
-	background-position: left 0 top 0; */
 	transition: all 200ms ease-in-out;
 }
 #backToHomePage::before {
@@ -281,30 +273,20 @@ html {
 	position: relative;
 	top: 26px;
 	left: 18px;
-}
-#backToHomePage:hover #logo {
-	/* animation: logoHover 500ms ease-in-out; */
-	/* animation-fill-mode: forwards; */
-	/* transform: rotate3d(1, 1, 1, 45deg);*/
 	transform-origin: top center;
-	/* transition: 200ms ease-in-out;  */
 }
+#halfBar{
+	width: 100%;
+	height: 50%;
+}
+#halfBar:hover #logo{
+	animation: logoHover 500ms ease-in-out;
+}
+
 #backToHomePage:active #logo {
 	transform: scale(95%);
 	transform-origin: center center;
 }
-/* @keyframes logoHover {
-	0% {
-		transform: translateX(0px);
-	}
-
-	55%,85% {
-		transform:translate(8px,8px);
-	}
-	100% {
-		transform: translateX(0px);
-	}
-} */
 @keyframes logoHover {
 	0% {
 		transform: rotate(0deg);
@@ -1237,6 +1219,10 @@ h-hws[hidden] {
 		height: 32px;
 		top: 14px;
 	}
+	#halfBar{
+		width: 50%;
+		height: 100%;
+	}
 	#changeTypeMenu-Button {
 		top: 11px;
 		right: 15px;
@@ -1388,6 +1374,10 @@ h-hws[hidden] {
 		width: auto;
 		height: 32px;
 		top: 14px;
+	}
+	#halfBar{
+		width: 50%;
+		height: 100%;
 	}
 	#changeTypeMenu-Button {
 		top: 11px;
