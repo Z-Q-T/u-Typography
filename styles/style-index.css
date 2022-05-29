@@ -600,7 +600,7 @@ html {
 		transition-property: width, left;
 		transition-delay: 50ms;
 	}
-	
+
 	#mainContent:hover #firstCharacter {
 		animation: briefIntroductionJump 200ms ease-in-out;
 		animation-delay: 000ms;
@@ -1462,4 +1462,7 @@ h-hws[hidden] {
 		margin-top: 5rem;
 		margin-bottom: -1rem;
 	}
+	#briefIntroduction-Button:hover::after {
+		width: 50%;
+		left: 25%;}
 }
