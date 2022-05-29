@@ -170,6 +170,7 @@
 	--colour-1: rgb(188, 171, 147);
 	--colour-2: rgb(228, 216, 198);
 	--colour-3: rgb(239, 231, 216);
+	--colour-bar-hover:rgb(248, 244, 235);
 	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
 	--colour-shadow: rgb(193, 181, 164);
@@ -249,7 +250,7 @@ html {
 	transition: all 200ms ease-in-out;
 }
 #backToHomePage:hover {
-	background: rgb(248, 243, 235);
+	background: var(--colour-bar-hover);
 	/* background-size: 100% 100%;
 	background-position: left 0 top 0; */
 	transition: all 200ms ease-in-out;
