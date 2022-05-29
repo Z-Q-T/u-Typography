@@ -592,21 +592,21 @@ html {
 	#briefIntroduction-Button:hover {
 		background: rgb(247, 242, 233);
 	}
-	#mainContent:hover #firstCharacter {
+	header:hover #firstCharacter {
 		animation: briefIntroductionJump 200ms ease-in-out;
 		animation-delay: 000ms;
 	}
-	#mainContent:hover #firstCharacter + .singleCharacter {
+	header:hover #firstCharacter + .singleCharacter {
 		animation: briefIntroductionJump 200ms ease-in-out;
 		animation-delay: 050ms;
 	}
 
-	#mainContent:hover #firstCharacter + .singleCharacter + .singleCharacter {
+	header:hover #firstCharacter + .singleCharacter + .singleCharacter {
 		animation: briefIntroductionJump 200ms ease-in-out;
 		animation-delay: 100ms;
 	}
 
-	#mainContent:hover
+	header:hover
 		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter
@@ -615,7 +615,7 @@ html {
 		animation-delay: 150ms;
 	}
 
-	#mainContent:hover
+	header:hover
 		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter
@@ -625,7 +625,7 @@ html {
 		animation-delay: 200ms;
 	}
 
-	#mainContent:hover
+	header:hover
 		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter
@@ -636,7 +636,7 @@ html {
 		animation-delay: 250ms;
 	}
 
-	#mainContent:hover
+	header:hover
 		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter
@@ -648,7 +648,7 @@ html {
 		animation-delay: 300ms;
 	}
 
-	#mainContent:hover
+	header:hover
 		#firstCharacter
 		+ .singleCharacter
 		+ .singleCharacter
@@ -675,16 +675,12 @@ html {
 			transform: translateY(0);
 		}
 	}
-
+/* 
 	@keyframes noHoverScreenAnimation {
 		0%,
 		30% {
 			transform: scaleX(1);
 		}
-		/* 40%,
-		55% {
-			transform: translateY(-9px);
-		} */
 		60%,
 		70% {
 			transform: scaleX(1.1);
@@ -692,7 +688,7 @@ html {
 		100% {
 			transform: scaleX(1);
 		}
-	}
+	} */
 }
 #briefIntroduction-Button:active #briefIntroduction,
 #briefIntroduction-Button:active::after {
