@@ -379,9 +379,15 @@ html {
 	/* border-left: black 1px solid; */
 	/* border-right: black 2px solid; */
 	background-color: var(--colour-paper);
+	transition: background-color 200ms ease-in-out;
 	/* background-color: white; */
 	/* box-shadow: 0 0 8px var(--colour-shadow); */
 }
+#bar:hover {
+	background: rgb(248, 243, 235);
+	transition: all 200ms ease-in-out;
+}
+
 #logomark {
 	width: 24px;
 	margin: 24px auto 0;
@@ -446,7 +452,6 @@ html {
 }
 /* 用于支持鼠标悬浮的设备 */
 @media (hover: hover) {
-	
 	#briefIntroduction-Button:hover #firstCharacter {
 		/* color: black; */
 		/* background-color: var(--colour-3);
@@ -572,67 +577,121 @@ html {
 		transition-property: width, left;
 		transition-delay: 50ms;
 	}
-
-
-
 }
 /* 用于不支持鼠标悬浮的触摸屏 */
 @media (hover: none) {
-
 	#briefIntroduction-Button::after {
 		/* box-shadow: 0 4px var(--colour-2); */
-		content: "";
+		/* transition: all 500ms ease-in-out; */
+		/* content: "";
 		width: 50%;
 		height: 6px;
-		background: linear-gradient(135deg, var(--colour-3),var(--colour-2))
+		background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
 			no-repeat;
 		position: relative;
-		display: inline-block;
-		/* transition: all 500ms ease-in-out; */
 		top: -10px;
 		left: 25%;
-		animation: noHoverScreenAnimation 3000ms cubic-bezier(.64,0,.36,1);;
-		animation-iteration-count: infinite;
+		animation: noHoverScreenAnimation 3000ms cubic-bezier(0.64, 0, 0.36, 1);
+		animation-iteration-count: infinite; */
+		display: none;
 	}
-	@keyframes colorAnimation {
-		0%,45% {
-			background: linear-gradient(135deg, var(--colour-2), var(--colour-2),var(--colour-2))
-		}
-		48% {
-			background: linear-gradient(135deg, var(--colour-3), var(--colour-2),var(--colour-2))
-		}
+	#mainContent:hover #firstCharacter {
+		animation: briefIntroductionJump 200ms ease-in-out;
+		animation-delay: 000ms;
+	}
+	#mainContent:hover #firstCharacter + .singleCharacter {
+		animation: briefIntroductionJump 200ms ease-in-out;
+		animation-delay: 050ms;
+	}
 
-		50% {
-			background: linear-gradient(135deg, var(--colour-2),var(--colour-3), var(--colour-2))
+	#mainContent:hover #firstCharacter + .singleCharacter + .singleCharacter {
+		animation: briefIntroductionJump 200ms ease-in-out;
+		animation-delay: 100ms;
+	}
+
+	#mainContent:hover #firstCharacter + .singleCharacter + .singleCharacter + .singleCharacter {
+		animation: briefIntroductionJump 200ms ease-in-out;
+		animation-delay: 150ms;
+	}
+
+	#mainContent:hover #firstCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter {
+		animation: briefIntroductionJump 200ms ease-in-out;
+		animation-delay: 200ms;
+	}
+
+	#mainContent:hover #firstCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter {
+		animation: briefIntroductionJump 200ms ease-in-out;
+		animation-delay: 250ms;
+	}
+
+	#mainContent:hover #firstCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter {
+		animation: briefIntroductionJump 200ms ease-in-out;
+		animation-delay: 300ms;
+	}
+
+	#mainContent:hover #firstCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter
+		+ .singleCharacter {
+		animation: briefIntroductionJump 200ms ease-in-out;
+		animation-delay: 350ms;
+	}
+	@keyframes briefIntroductionJump {
+		0% {
+			transform: translateY(0);
 		}
-		52% {
-			background: linear-gradient(135deg, var(--colour-2),var(--colour-2), var(--colour-3))
+		40%,
+		55% {
+			transform: translateY(-9px);
 		}
-		55%,100% {
-			background: linear-gradient(135deg, var(--colour-2), var(--colour-2),var(--colour-2))
+		45% {
+			transform: translateY(-10px);
 		}
-	  }
+		100% {
+			transform: translateY(0);
+		}
+	}
+
 
 	@keyframes noHoverScreenAnimation {
-		0%,30% {
+		0%,
+		30% {
 			transform: scaleX(1);
 		}
 		/* 40%,
 		55% {
 			transform: translateY(-9px);
 		} */
-		60%,70% {
+		60%,
+		70% {
 			transform: scaleX(1.1);
 		}
 		100% {
 			transform: scaleX(1);
 		}
 	}
-
-
 }
 #briefIntroduction-Button:active #briefIntroduction,
-#briefIntroduction-Button:active::after{
+#briefIntroduction-Button:active::after {
 	transform: translateY(3px);
 }
 /* #briefIntroduction-Button:active .singleCharacter {
@@ -1394,7 +1453,7 @@ h-hws[hidden] {
 }
 @media screen and (max-width: 668px) and (hover: none) {
 	#briefIntroduction-Button {
-		margin-top: 6rem;
+		margin-top: 5rem;
 		margin-bottom: -1rem;
 	}
 }
