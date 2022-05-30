@@ -134,7 +134,6 @@
 	font-style: italic;
 }
 
-
 /* ==代码等宽体== */
 
 @font-face {
@@ -162,7 +161,7 @@
 	--colour-bar-hover: rgb(248, 244, 235);
 	--colour-bar-active: rgb(238, 232, 217);
 	--colour-changeType-button-hover: rgb(242, 237, 228);
-	--colour-changeType-button-active:rgb(237, 230, 215);
+	--colour-changeType-button-active: rgb(237, 230, 215);
 	--colour-button: rgb(207, 193, 172);
 	--colour-shadow: rgb(193, 181, 164);
 	--colour-sidenote-mark: rgb(195, 67, 56);
@@ -224,7 +223,7 @@ html {
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
 }
-#changeTypeMenu-Button:active{
+#changeTypeMenu-Button:active {
 	background-color: var(--colour-changeType-button-active);
 	transition-duration: 10ms;
 }
@@ -376,7 +375,7 @@ html {
 	background-color: var(--colour-paper);
 	transition: all 200ms ease-in-out;
 	padding: 0 1rem;
-border-radius: 1rem;
+	border-radius: 1rem;
 }
 
 #briefIntroduction {
@@ -610,7 +609,11 @@ border-radius: 1rem;
 	transform: translateY(3px);
 }
 #briefIntroduction-Button:active::after {
-	background: linear-gradient(135deg, var(--colour-link-active-background), var(--colour-link-active-background));
+	background: linear-gradient(
+		135deg,
+		var(--colour-link-active-background),
+		var(--colour-link-active-background)
+	);
 }
 #mainContent {
 	padding: 2rem 0;
@@ -635,9 +638,13 @@ section {
 }
 #section-Additional {
 	margin: 12rem 0;
+	padding-bottom: 0rem;
 }
-#sectionInner-Seperator-Additional {
+/* #sectionInner-Seperator-Additional {
 	height: calc(100% + 2rem);
+} */
+#sectionInner-Seperator-Additional {
+	display: none;
 }
 .placeHolder {
 	display: block;
@@ -683,7 +690,11 @@ li a:hover {
 	transition: all 100ms ease-in-out;
 }
 li a:active {
-	background: linear-gradient(var(--colour-link-active-background), var(--colour-link-active-background)) no-repeat;
+	background: linear-gradient(
+			var(--colour-link-active-background),
+			var(--colour-link-active-background)
+		)
+		no-repeat;
 	background-size: 100% 16px;
 	background-position: left 0 bottom 2px;
 	cursor: pointer;
@@ -841,7 +852,7 @@ article h-char.bd-jiya[unicode="ff0e"] > h-inner {
 }
 .ShengLyueHao::before {
 	content: "\200B";
-/* 零宽空格 */
+	/* 零宽空格 */
 }
 h-char.bd-end.bd-jiya + .ShengLyueHao::before {
 	content: "";
@@ -856,7 +867,7 @@ h-char.bd-end.bd-jiya + .ShengLyueHao::before {
 }
 .PoZheHao::before {
 	content: "\200B";
-/* 零宽空格 */
+	/* 零宽空格 */
 }
 h-char.bd-end.bd-jiya + .PoZheHao::before {
 	content: "";
@@ -911,7 +922,7 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 	/* text-justify: inter-word; */
 	/* 西文齐行往词间插入间距 */
 }
-.Latin {
+.Latin-FuTi {
 	font-family: var(--font-sans);
 	font-weight: 400;
 	hyphens: auto;
@@ -1014,9 +1025,9 @@ h-hws[hidden] {
 	}
 	#section-Additional {
 		padding: 2rem 0 3rem;
-		margin-top: 14rem;
-		border-top: 2px black solid;
-		border-bottom: 2px black solid;
+		margin: 10rem 0;
+		border-top: 1px black solid;
+		border-bottom: 1px black solid;
 	}
 	.sectionInner-Seperator {
 		width: 100%;
@@ -1024,9 +1035,9 @@ h-hws[hidden] {
 		height: 1px;
 		top: 6.75rem;
 	}
-	#sectionInner-Seperator-Additional {
+	/* #sectionInner-Seperator-Additional {
 		display: none;
-	}
+	} */
 	.classificationContainer {
 		position: relative;
 		padding-top: 4rem;
@@ -1119,9 +1130,9 @@ h-hws[hidden] {
 	}
 	#section-Additional {
 		padding: 2rem 0 3rem;
-		margin-top: 14rem;
-		border-top: 2px black solid;
-		border-bottom: 2px black solid;
+		margin: 10rem 0;
+		border-top: 1px black solid;
+		border-bottom: 1px black solid;
 	}
 	.sectionInner-Seperator {
 		width: 100%;
@@ -1129,9 +1140,9 @@ h-hws[hidden] {
 		height: 1px;
 		top: 6.75rem;
 	}
-	#sectionInner-Seperator-Additional {
+	/* #sectionInner-Seperator-Additional {
 		display: none;
-	}
+	} */
 	.classificationContainer {
 		position: relative;
 		padding-top: 4rem;
@@ -1227,7 +1238,6 @@ h-hws[hidden] {
 		margin-bottom: 1rem;
 		border-radius: 0.5rem;
 		padding: 0 0.3rem;
-
 	}
 	#briefIntroduction {
 		margin-left: 6px;
@@ -1246,9 +1256,9 @@ h-hws[hidden] {
 	}
 	#section-Additional {
 		padding: 2rem 0 3rem;
-		margin-top: 14rem;
-		border-top: 2px black solid;
-		border-bottom: 2px black solid;
+		margin: 9rem 0;
+		border-top: 1px black solid;
+		border-bottom: 1px black solid;
 	}
 	.sectionInner-Seperator {
 		width: 100%;
@@ -1256,9 +1266,9 @@ h-hws[hidden] {
 		height: 1px;
 		top: 5.75rem;
 	}
-	#sectionInner-Seperator-Additional {
+	/* #sectionInner-Seperator-Additional {
 		display: none;
-	}
+	} */
 	.classificationContainer {
 		position: relative;
 		padding-top: 3rem;
@@ -1281,16 +1291,21 @@ h-hws[hidden] {
 	ul {
 		font-size: 1.1rem;
 	}
+	.subDivision {
+		margin: 2rem 0;
+	  }
 	.subtitle {
 		padding-left: 55px;
 		font-size: 0.75rem;
 	}
 	.symbol {
+		font-size: 1.1rem;
 		text-align: center;
 		display: block;
 		margin: 0 auto;
 	}
 	h3 {
+		font-size: 1.35rem;
 		left: 0;
 		width: 100%;
 		display: block;
