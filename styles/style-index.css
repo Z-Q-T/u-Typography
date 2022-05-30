@@ -412,6 +412,8 @@ html {
 	background-color: var(--colour-paper);
 	/* box-shadow: 0 0px var(--colour-2); */
 	transition: all 200ms ease-in-out;
+	padding: 0 1rem;
+border-radius: 1rem;
 }
 
 #briefIntroduction {
@@ -1377,6 +1379,9 @@ h-hws[hidden] {
 	#briefIntroduction-Button {
 		margin-top: 7rem;
 		margin-bottom: 1rem;
+		border-radius: 0.5rem;
+		padding: 0 0.3rem;
+
 	}
 	#briefIntroduction {
 		margin-left: 6px;

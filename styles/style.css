@@ -1496,8 +1496,8 @@ h-hws[hidden] {
 		display: none;
 	}
 }
-@media (hover: none) {
+/* @media (hover: none) {
 	#logo {
 		animation: logoHover 500ms ease-in-out;
 	}
-}
+} */
