@@ -164,14 +164,17 @@
 
 :root {
 	--colour-paper: rgb(250, 249, 247);
-	--colour-changeType-inactive: rgb(70, 70, 70);
-	--colour-changeType-active: rgb(190, 176, 156);
+	--colour-changeType-unselected: rgb(70, 70, 70);
+	--colour-changeType-selected: rgb(190, 176, 156);
 	--colour-changeType-hover: rgb(123, 117, 106);
+	--colour-link-active-background: rgb(206, 189, 166);
 	--colour-1: rgb(188, 171, 147);
 	--colour-2: rgb(228, 216, 198);
 	--colour-3: rgb(239, 231, 216);
 	--colour-bar-hover:rgb(248, 244, 235);
+	--colour-bar-active: rgb(241, 234, 225);
 	--colour-changeType-button-hover:rgb(242, 237, 228);
+	--colour-changeType-button-active:rgb(237, 230, 215);
 	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
 	--colour-shadow: rgb(193, 181, 164);
@@ -248,6 +251,10 @@ html {
 	background: var(--colour-bar-hover);
 	transition: all 200ms ease-in-out;
 }
+#backToHomePage:active {
+	background: var(--colour-bar-active);
+	transition: all 0ms ease-in-out;
+}
 #backToHomePage::before {
 	content: "";
 	width: 0;
@@ -267,6 +274,13 @@ html {
 	left: 0;
 	transition: 200ms ease-in-out;
 	transition-property: width, left;
+}
+#backToHomePage:active::before {
+	width: 60px;
+	left: 0;
+	transition: 0ms ease-in-out;
+	transition-property: background, width, left;
+	background: linear-gradient(135deg, var(--colour-link-active-background), var(--colour-link-active-background))
 }
 #logo {
 	width: 24px;
@@ -322,6 +336,10 @@ html {
 	transition-property: all;
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
+}
+#changeTypeMenu-Button:active{
+	background-color: var(--colour-changeType-button-active);
+	transition-duration: 10ms;
 }
 #changeTypeMenu-ButtonSVG {
 	width: 4px;
@@ -404,7 +422,7 @@ html {
 	width: 25px;
 	height: 25px;
 	border-radius: 12.5px;
-	background-color: var(--colour-changeType-inactive);
+	background-color: var(--colour-changeType-unselected);
 	font-size: 0.75rem;
 	line-height: 1em;
 	text-align: center;
@@ -459,7 +477,7 @@ html {
 	content: "";
 	width: 0;
 	height: 3px;
-	background-color: var(--colour-button);
+	background: linear-gradient(135deg, var(--colour-3), var(--colour-2)) no-repeat;
 	position: absolute;
 	top: 100%;
 	left: 50%;
@@ -472,6 +490,9 @@ html {
 }
 #pageTypography-Button:active {
 	transform: translateY(2px);
+}
+#pageTypography-Button:active::after {
+	background: linear-gradient(135deg, var(--colour-link-active-background), var(--colour-link-active-background)) no-repeat;
 }
 #pageTypography-Icon {
 	width: 36px;

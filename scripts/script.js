@@ -2,16 +2,16 @@
 function changeTypeMenu_initialActive() {
     let initial = ['changeTypeMenu-BiaoTi-SONG', 'changeTypeMenu-ZhengWen-HEI', 'changeTypeMenu-BianZhu-HEI'];
     for (let i = 0; i < initial.length; i++) {
-        document.getElementById(initial[i]).style.cssText = "background-color: var(--colour-changeType-active) !important; color:black;";
+        document.getElementById(initial[i]).style.cssText = "background-color: var(--colour-changeType-selected) !important; color:black;";
     }
 }
 
 //点击换字体按钮后改变按钮颜色
 function changeTypeMenu_switchColour(active, inactive) {
     let a = document.querySelector(active);
-    a.style.cssText = "background-color: var(--colour-changeType-active) !important; color:black";
+    a.style.cssText = "background-color: var(--colour-changeType-selected) !important; color:black";
     let b = document.querySelector(inactive);
-    b.style.cssText = "background-color: var(--colour-changeType-inactive); color:white";
+    b.style.cssText = "background-color: var(--colour-changeType-unselected); color:white";
 
 
 }
