@@ -22,11 +22,11 @@ function changeTypeMenu_switchColour(active, inactive) {
 document.getElementById('changeTypeMenu-BiaoTi-SONG').onclick = function changefont_BiaoTi_SONG() {
     document.body.querySelectorAll(".titleLine,h2,h3,#tableOfContent li").forEach((e) => {
         e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
-        e.style.fontWeight = "700";
+        e.style.fontWeight = "600";
     });//换中文
     document.body.querySelectorAll(".Latin-BiaoTi").forEach((e) => {
         e.style.fontFamily = "'SERIF'" + "," + "Source Serif Pro";
-        e.style.fontWeight = "600";
+        e.style.fontWeight = "400";
         e.style.fontSize = "1.05em";
     });//换西文
     document.body.querySelectorAll("h1 h-char.bd-jiya.bd-open > h-inner, h1 h-char.bd-jiya.bd-close > h-inner, h1 h-char.bd-jiya.bd-cop > h-inner, h1 h-char.bd-jiya[unicode='ff0e'] > h-inner").forEach((e) => {

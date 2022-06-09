@@ -171,10 +171,10 @@
 	--colour-1: rgb(188, 171, 147);
 	--colour-2: rgb(228, 216, 198);
 	--colour-3: rgb(239, 231, 216);
-	--colour-bar-hover:rgb(248, 244, 235);
+	--colour-bar-hover: rgb(248, 244, 235);
 	--colour-bar-active: rgb(241, 234, 225);
-	--colour-changeType-button-hover:rgb(242, 237, 228);
-	--colour-changeType-button-active:rgb(237, 230, 215);
+	--colour-changeType-button-hover: rgb(242, 237, 228);
+	--colour-changeType-button-active: rgb(237, 230, 215);
 	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
 	--colour-shadow: rgb(193, 181, 164);
@@ -280,7 +280,11 @@ html {
 	left: 0;
 	transition: 0ms ease-in-out;
 	transition-property: background, width, left;
-	background: linear-gradient(135deg, var(--colour-link-active-background), var(--colour-link-active-background))
+	background: linear-gradient(
+		135deg,
+		var(--colour-link-active-background),
+		var(--colour-link-active-background)
+	);
 }
 #logo {
 	width: 24px;
@@ -289,11 +293,11 @@ html {
 	left: 18px;
 	transform-origin: top center;
 }
-#halfBar{
+#halfBar {
 	width: 100%;
 	height: 50%;
 }
-#halfBar:hover #logo{
+#halfBar:hover #logo {
 	animation: logoHover 500ms ease-in-out;
 }
 
@@ -337,7 +341,7 @@ html {
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
 }
-#changeTypeMenu-Button:active{
+#changeTypeMenu-Button:active {
 	background-color: var(--colour-changeType-button-active);
 	transition-duration: 10ms;
 }
@@ -477,7 +481,8 @@ html {
 	content: "";
 	width: 0;
 	height: 3px;
-	background: linear-gradient(135deg, var(--colour-3), var(--colour-2)) no-repeat;
+	background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
+		no-repeat;
 	position: absolute;
 	top: 100%;
 	left: 50%;
@@ -492,7 +497,12 @@ html {
 	transform: translateY(2px);
 }
 #pageTypography-Button:active::after {
-	background: linear-gradient(135deg, var(--colour-link-active-background), var(--colour-link-active-background)) no-repeat;
+	background: linear-gradient(
+			135deg,
+			var(--colour-link-active-background),
+			var(--colour-link-active-background)
+		)
+		no-repeat;
 }
 #pageTypography-Icon {
 	width: 36px;
@@ -675,7 +685,8 @@ li::marker {
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
 }
-#tableOfContent li:hover,#toc-backToMainTitle:hover {
+#tableOfContent li:hover,
+#toc-backToMainTitle:hover {
 	color: var(--colour-1);
 	transition-property: color;
 	transition-timing-function: ease-in-out;
@@ -709,6 +720,9 @@ article {
 	/* background-color: beige; */
 	line-height: 1.85rem;
 }
+h1 + p,
+h2 + p,
+h3 + p,
 .firstParagraph {
 	text-indent: 0 !important;
 }
@@ -742,7 +756,7 @@ h1 h-char.bd-jiya.bd-close > h-inner,
 h1 h-char.bd-jiya.bd-cop > h-inner,
 h1 h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-family: var(--font-song-biaodian) !important;
-	font-weight: 700 !important;
+	font-weight: 600 !important;
 	line-height: 0.1em;
 }
 
@@ -777,7 +791,7 @@ h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	/* display: block; */
 	display: inline;
 	font-family: var(--font-song);
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 3rem;
 	/* vertical-align: sub; */
 	line-height: 4rem;
@@ -930,7 +944,7 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 /* 拉丁文本 */
 .Latin-BiaoTi {
 	font-family: var(--font-serif);
-	font-weight: 600;
+	font-weight: 400;
 	hyphens: auto;
 	font-size: 1.05em;
 	line-height: 1em;
@@ -1240,7 +1254,7 @@ h-hws[hidden] {
 		height: 32px;
 		top: 14px;
 	}
-	#halfBar{
+	#halfBar {
 		width: 50%;
 		height: 100%;
 	}
@@ -1396,7 +1410,7 @@ h-hws[hidden] {
 		height: 32px;
 		top: 14px;
 	}
-	#halfBar{
+	#halfBar {
 		width: 50%;
 		height: 100%;
 	}
