@@ -1386,9 +1386,9 @@ h-hws[hidden] {
 		z-index: 10;
 		/* background-color: var(--colour-paper);
 		box-shadow: 0 0 8px var(--colour-shadow); */
-		box-shadow: 0 0 10px var(--colour-shadow);
-		/* border-right: 0px solid #747474;
-		border-bottom: 1px solid #747474; */
+		/* box-shadow: 0 0 10px var(--colour-shadow); */
+		border-right: 0px solid #747474;
+		border-bottom: 1px solid #747474;
 	}
 	#backToHomePage {
 		height: 60px;
