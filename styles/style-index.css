@@ -725,7 +725,7 @@ h2 {
 	background-color: var(--colour-paper);
 	z-index: 5;
 	margin-top: -1rem;
-	padding-top: 3rem;
+	padding-top: 3.5rem;
 	padding-bottom: 3rem;
 }
 .subDivision {
@@ -767,7 +767,7 @@ h3 {
 li {
 	display: block;
 	list-style-type: none;
-	margin-top: 1.5rem;
+	margin-top: 2rem;
 }
 li::marker {
 	content: "";
@@ -779,7 +779,8 @@ li::marker {
 	font-weight: 400;
 	padding-left: 6rem;
 	line-height: 1.5em;
-	margin-top: 0.5rem;
+	margin-top: 1rem;
+	color: rgb(128, 128, 128);
 }
 footer {
 	font-size: 0.75rem;

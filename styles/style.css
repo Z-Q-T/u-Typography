@@ -233,7 +233,7 @@ html {
 	/* background-color: rgb(253, 252, 250); */
 	background-color: var(--colour-paper);
 	/* box-shadow: 0 0 10px rgb(222, 216, 207); */
-	/* border-right: 1px solid #747474; */
+	border-right: 1px solid #747474;
 }
 #backToHomePage {
 	display: block;
@@ -287,10 +287,10 @@ html {
 	);
 }
 #logo {
-	width: 24px;
+	width: 30px;
 	position: relative;
 	top: 26px;
-	left: 18px;
+	left: 15px;
 	transform-origin: top center;
 }
 #halfBar {
@@ -558,7 +558,8 @@ html {
 .metaInfo-Seperator {
 	height: 1.5px;
 	width: 40px;
-	margin: 1rem auto;
+	margin: 0.5rem auto;
+	visibility: hidden;
 	background-color: rgb(175, 175, 175);
 }
 #time,
@@ -756,7 +757,7 @@ h1 h-char.bd-jiya.bd-close > h-inner,
 h1 h-char.bd-jiya.bd-cop > h-inner,
 h1 h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-family: var(--font-song-biaodian) !important;
-	font-weight: 600 !important;
+	font-weight: 700 !important;
 	line-height: 0.1em;
 }
 
@@ -791,7 +792,7 @@ h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	/* display: block; */
 	display: inline;
 	font-family: var(--font-song);
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 3rem;
 	/* vertical-align: sub; */
 	line-height: 4rem;
@@ -944,7 +945,7 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 /* 拉丁文本 */
 .Latin-BiaoTi {
 	font-family: var(--font-serif);
-	font-weight: 400;
+	font-weight: 600;
 	hyphens: auto;
 	font-size: 1.05em;
 	line-height: 1em;
