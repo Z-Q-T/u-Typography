@@ -178,6 +178,7 @@
 	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
 	--colour-shadow: rgb(216, 208, 197);
+	--colour-line-dark:#747474;
 	--colour-dark-text: rgb(46, 46, 46);
 	--font-hei: "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
@@ -230,10 +231,10 @@ html {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: rgba(255, 255, 255, 1);
-	/* background-color: var(--colour-paper); */
+	/* background-color: rgba(255, 255, 255, 1); */
+	background-color: var(--colour-paper);
 	/* box-shadow: 0 0 10px rgb(222, 216, 207); */
-	border-right: 1px solid #747474;
+	border-right: 1px solid var(--colour-line-dark);
 }
 #backToHomePage {
 	display: block;
@@ -247,7 +248,7 @@ html {
 	background: transparent;
 	transition: all 200ms ease-in-out;
 }
-#backToHomePage:hover {
+/* #backToHomePage:hover {
 	background: var(--colour-bar-hover);
 	transition: all 200ms ease-in-out;
 }
@@ -285,21 +286,21 @@ html {
 		var(--colour-link-active-background),
 		var(--colour-link-active-background)
 	);
-}
+} */
 #logo {
-	width: 35px;
+	width: 32px;
 	position: relative;
 	top: 26px;
-	left: 12px;
+	left: 14px;
 	transform-origin: top center;
 }
-#halfBar {
+/* #halfBar {
 	width: 100%;
 	height: 50%;
 }
 #halfBar:hover #logo {
 	animation: logoHover 500ms ease-in-out;
-}
+} */
 
 #backToHomePage:active #logo {
 	transform: scale(95%);
@@ -1230,8 +1231,8 @@ h-hws[hidden] {
 		/* box-shadow: 0 0 10px var(--colour-shadow); */
 
 		/* background-color: rgba(255, 255, 255, 0.9); */
-		border-right: 0px solid #747474;
-		border-bottom: 1px solid #747474;
+		border-right: 0px solid var(--colour-line-dark);
+		border-bottom: 1px solid var(--colour-line-dark);
 		/* backdrop-filter: blur(5px); */
 	}
 	#backToHomePage {
@@ -1257,6 +1258,7 @@ h-hws[hidden] {
 		width: auto;
 		height: 32px;
 		top: 14px;
+		left: 18px;
 	}
 	#halfBar {
 		width: 50%;
@@ -1387,8 +1389,8 @@ h-hws[hidden] {
 		/* background-color: var(--colour-paper);
 		box-shadow: 0 0 8px var(--colour-shadow); */
 		/* box-shadow: 0 0 10px var(--colour-shadow); */
-		border-right: 0px solid #747474;
-		border-bottom: 1px solid #747474;
+		border-right: 0px solid var(--colour-line-dark);
+		border-bottom: 1px solid var(--colour-line-dark);
 	}
 	#backToHomePage {
 		height: 60px;
@@ -1413,6 +1415,7 @@ h-hws[hidden] {
 		width: auto;
 		height: 32px;
 		top: 14px;
+		left: 18px;
 	}
 	#halfBar {
 		width: 50%;
