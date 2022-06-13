@@ -1454,7 +1454,7 @@ h-hws[hidden] {
 	}
 	#pageTypography-Button {
 		top: 21px;
-		right: 65px;
+		right: 55px;
 		left: auto;
 		bottom: auto;
 	}
@@ -1522,7 +1522,7 @@ h-hws[hidden] {
 		/* left: 15rem; */
 		position: static;
 		margin: 0 auto;
-		margin-top: 3.75rem;
+		margin-top: 4rem;
 	}
 	article {
 		margin: 1rem 0;
