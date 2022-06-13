@@ -178,7 +178,7 @@
 	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
 	--colour-shadow: rgb(216, 208, 197);
-	--colour-line-dark:#747474;
+	--colour-line-dark: #747474;
 	--colour-dark-text: rgb(46, 46, 46);
 	--font-hei: "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
@@ -237,26 +237,41 @@ html {
 	border-right: 1px solid var(--colour-line-dark);
 }
 #backToHomePage {
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 50px;
+	top: 5px;
+	left: 5px;
+}
+#backArrow {
+	width: 40px;
+	height: 40px;
+	left: 4px;
+	position: relative;
+	top: 5px;
+}
+#logotype {
 	display: block;
 	position: relative;
-	left: 0px;
-	top: 0px;
-	height: 185px;
+	left: auto;
+	top: 50%;
+	height: 350px;
 	width: 60px;
-	cursor: pointer;
-	margin: 0 auto;
+	/* cursor: pointer; */
+	margin-top: -175px;
 	background: transparent;
 	transition: all 200ms ease-in-out;
 }
-/* #backToHomePage:hover {
+/* #logotype:hover {
 	background: var(--colour-bar-hover);
 	transition: all 200ms ease-in-out;
 }
-#backToHomePage:active {
+#logotype:active {
 	background: var(--colour-bar-active);
 	transition: all 0ms ease-in-out;
 }
-#backToHomePage::before {
+#logotype::before {
 	content: "";
 	width: 0;
 	height: 10px;
@@ -270,13 +285,13 @@ html {
 	transition-property: width, left;
 }
 
-#backToHomePage:hover::before {
+#logotype:hover::before {
 	width: 60px;
 	left: 0;
 	transition: 200ms ease-in-out;
 	transition-property: width, left;
 }
-#backToHomePage:active::before {
+#logotype:active::before {
 	width: 60px;
 	left: 0;
 	transition: 0ms ease-in-out;
@@ -290,7 +305,7 @@ html {
 #logo {
 	width: 32px;
 	position: relative;
-	top: 26px;
+	/* top: 26px; */
 	left: 14px;
 	transform-origin: top center;
 }
@@ -302,7 +317,7 @@ html {
 	animation: logoHover 500ms ease-in-out;
 } */
 
-#backToHomePage:active #logo {
+#logotype:active #logo {
 	transform: scale(95%);
 	transform-origin: center center;
 }
@@ -477,6 +492,8 @@ html {
 	bottom: 17px;
 	line-height: 1em;
 	cursor: pointer;
+	font-family: var(--font-serif);
+	font-weight: 400;
 }
 #pageTypography-Button::after {
 	content: "";
@@ -1233,21 +1250,23 @@ h-hws[hidden] {
 		/* background-color: rgba(255, 255, 255, 0.9); */
 		border-right: 0px solid var(--colour-line-dark);
 		border-bottom: 1px solid var(--colour-line-dark);
+		/* border-top: 0.5px solid #999; */
 		/* backdrop-filter: blur(5px); */
 	}
-	#backToHomePage {
+	#logotype {
 		height: 60px;
-		width: 150px;
-		margin: 0;
+		width: fit-content;
+		top: 0;
+		margin: 0 auto;
 	}
-	#backToHomePage::before {
+	#logotype::before {
 		width: 8px;
 		height: 0;
 		top: 0px;
 		left: 0;
 		transition-property: height, top;
 	}
-	#backToHomePage:hover:before {
+	#logotype:hover:before {
 		width: 8px;
 		height: 60px;
 		top: 0;
@@ -1258,7 +1277,7 @@ h-hws[hidden] {
 		width: auto;
 		height: 32px;
 		top: 14px;
-		left: 18px;
+		left: auto;
 	}
 	#halfBar {
 		width: 50%;
@@ -1391,20 +1410,22 @@ h-hws[hidden] {
 		/* box-shadow: 0 0 10px var(--colour-shadow); */
 		border-right: 0px solid var(--colour-line-dark);
 		border-bottom: 1px solid var(--colour-line-dark);
+		/* border-top: 0.5px solid #999; */
 	}
-	#backToHomePage {
+	#logotype {
 		height: 60px;
-		width: 150px;
-		margin: 0;
+		width: fit-content;
+		margin: 0 auto;
+		top: 0;
 	}
-	#backToHomePage::before {
+	#logotype::before {
 		width: 8px;
 		height: 0;
 		top: 0px;
 		left: 0;
 		transition-property: height, top;
 	}
-	#backToHomePage:hover:before {
+	#logotype:hover:before {
 		width: 8px;
 		height: 60px;
 		top: 0;
@@ -1415,7 +1436,7 @@ h-hws[hidden] {
 		width: auto;
 		height: 32px;
 		top: 14px;
-		left: 18px;
+		left: auto;
 	}
 	#halfBar {
 		width: 50%;
