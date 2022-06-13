@@ -245,11 +245,11 @@ html {
 	left: 5px;
 }
 #backArrow {
-	width: 40px;
-	height: 40px;
-	left: 4px;
+	width: 36px;
+	height: 36px;
+	left: 6px;
 	position: relative;
-	top: 5px;
+	top: 7px;
 }
 #logotype {
 	display: block;
@@ -261,7 +261,7 @@ html {
 	/* cursor: pointer; */
 	margin-top: -175px;
 	background: transparent;
-	transition: all 200ms ease-in-out;
+	/* transition: all 200ms ease-in-out; */
 }
 /* #logotype:hover {
 	background: var(--colour-bar-hover);
@@ -494,6 +494,7 @@ html {
 	cursor: pointer;
 	font-family: var(--font-serif);
 	font-weight: 400;
+	font-size: 0.9rem;
 }
 #pageTypography-Button::after {
 	content: "";
@@ -1112,7 +1113,7 @@ h-hws[hidden] {
 	}
 	.metaInfo-Seperator {
 		width: 35px;
-		margin: 0.85rem auto;
+		margin: 0.35rem auto;
 	}
 	#mainTitleArea {
 		margin-left: 15rem;
@@ -1177,7 +1178,7 @@ h-hws[hidden] {
 		left: 9rem;
 		top: 0rem;
 		width: 9rem;
-		margin: 4rem 0;
+		margin: 6rem 0 5rem;
 		font-size: 0.5625rem;
 	}
 	#index {
@@ -1185,7 +1186,7 @@ h-hws[hidden] {
 	}
 	.metaInfo-Seperator {
 		width: 30px;
-		margin: 0.75rem auto;
+		margin: 0.25rem auto;
 	}
 	/* #metaInfo {
 		font-size: 1.125rem;
@@ -1259,7 +1260,7 @@ h-hws[hidden] {
 		top: 0;
 		margin: 0 auto;
 	}
-	#logotype::before {
+	/* #logotype::before {
 		width: 8px;
 		height: 0;
 		top: 0px;
@@ -1272,7 +1273,7 @@ h-hws[hidden] {
 		top: 0;
 		left: 0;
 		transition-property: height, top;
-	}
+	} */
 	#logo {
 		width: auto;
 		height: 32px;
@@ -1293,7 +1294,7 @@ h-hws[hidden] {
 		transform: rotate(90deg);
 	}
 	#pageTypography-Button {
-		top: 19px;
+		top: 21px;
 		right: 65px;
 		left: auto;
 		bottom: auto;
@@ -1326,9 +1327,9 @@ h-hws[hidden] {
 		display: block;
 		position: relative;
 		left: 0rem;
-		top: 2rem;
+		top: 4rem;
 		width: 9rem;
-		margin: 4rem auto;
+		margin: 7rem auto;
 		font-size: 0.5625rem;
 		/* z-index: 15; */
 		margin-top: 5rem;
@@ -1338,7 +1339,7 @@ h-hws[hidden] {
 	}
 	.metaInfo-Seperator {
 		width: 30px;
-		margin: 0.75rem auto;
+		margin: 0.25rem auto;
 	}
 	#title {
 		display: block;
@@ -1418,7 +1419,7 @@ h-hws[hidden] {
 		margin: 0 auto;
 		top: 0;
 	}
-	#logotype::before {
+	/* #logotype::before {
 		width: 8px;
 		height: 0;
 		top: 0px;
@@ -1431,11 +1432,11 @@ h-hws[hidden] {
 		top: 0;
 		left: 0;
 		transition-property: height, top;
-	}
+	} */
 	#logo {
 		width: auto;
-		height: 32px;
-		top: 14px;
+		height: 45px;
+		top: 6px;
 		left: auto;
 	}
 	#halfBar {
@@ -1452,7 +1453,7 @@ h-hws[hidden] {
 		transform: rotate(90deg);
 	}
 	#pageTypography-Button {
-		top: 19px;
+		top: 21px;
 		right: 65px;
 		left: auto;
 		bottom: auto;
@@ -1478,9 +1479,9 @@ h-hws[hidden] {
 		display: block;
 		position: relative;
 		left: 0rem;
-		top: 2rem;
+		top: 4rem;
 		width: 9rem;
-		margin: 4rem auto;
+		margin: 7rem auto;
 		font-size: 0.5625rem;
 		/* z-index: auto; */
 		margin-top: 5rem;
@@ -1490,7 +1491,7 @@ h-hws[hidden] {
 	}
 	.metaInfo-Seperator {
 		width: 30px;
-		margin: 0.75rem auto;
+		margin: 0.25rem auto;
 	}
 	#title {
 		display: block;
