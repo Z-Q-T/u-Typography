@@ -571,7 +571,7 @@ html {
 #index {
 	font-family: var(--font-serif);
 	font-weight: 600;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	/* color: var(--colour-1); */
 }
 .metaInfo-Seperator {
@@ -1109,7 +1109,7 @@ h-hws[hidden] {
 		font-size: 0.625rem;
 	}
 	#index {
-		font-size: 0.85rem;
+		font-size: 0.8rem;
 	}
 	.metaInfo-Seperator {
 		width: 35px;
@@ -1182,7 +1182,7 @@ h-hws[hidden] {
 		font-size: 0.5625rem;
 	}
 	#index {
-		font-size: 0.75rem;
+		font-size: 0.7rem;
 	}
 	.metaInfo-Seperator {
 		width: 30px;
@@ -1335,7 +1335,7 @@ h-hws[hidden] {
 		margin-top: 5rem;
 	}
 	#index {
-		font-size: 0.75rem;
+		font-size: 0.7rem;
 	}
 	.metaInfo-Seperator {
 		width: 30px;
@@ -1487,7 +1487,7 @@ h-hws[hidden] {
 		margin-top: 5rem;
 	}
 	#index {
-		font-size: 0.75rem;
+		font-size: 0.7rem;
 	}
 	.metaInfo-Seperator {
 		width: 30px;
