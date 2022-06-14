@@ -207,7 +207,7 @@ html {
 	position: relative;
 	top: 0;
 }
-#decoLine{
+#decoLine {
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -1122,7 +1122,7 @@ h-hws[hidden] {
 }
 /* 【3】############################# */
 @media screen and (max-width: 740px) {
-	#decoLine{
+	#decoLine {
 		height: 8px;
 	}
 	#whole {
@@ -1182,7 +1182,7 @@ h-hws[hidden] {
 	}
 
 	#briefIntroduction-Button {
-		margin-top: 2rem;
+		margin-top: 1rem;
 		margin-bottom: 1rem;
 		border-radius: 0.5rem;
 		padding: 0 0.1rem;
@@ -1270,16 +1270,17 @@ h-hws[hidden] {
 		border: 0px black solid;
 	}
 }
+
 @media screen and (max-width: 450px) {
-	#decoLine{
+	/* #decoLine{
 		height: 100px;
 		background-color: black;
-	}
+	} */
 	#logomark {
-		margin: 20px auto 100px;
+		margin: 120px auto 20px;
 	}
 	#logo {
-		width: 180px;
+		width: 240px;
 	}
 }
 @media screen and (max-width: 668px) and (hover: none) {
