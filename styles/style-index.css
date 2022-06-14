@@ -359,12 +359,11 @@ html {
 
 #logomark {
 	width: fit-content;
-	margin: 140px auto 60px;
+	margin: 140px auto 80px;
 	display: block;
 }
 #logo {
-	width: 360px;
-
+	width: 320px;
 	display: block;
 }
 #briefIntroduction-Button {
@@ -376,7 +375,7 @@ html {
 	margin-top: 3rem;
 	background-color: var(--colour-paper);
 	transition: all 200ms ease-in-out;
-	padding: 0 1rem;
+	padding: 0 0.8rem;
 	border-radius: 1rem;
 }
 
@@ -703,7 +702,7 @@ li a:active {
 	transition: all 10ms ease-in-out;
 }
 /* 用于不支持鼠标悬浮的触摸屏 */
-@media (hover: none) {
+/* @media (hover: none) {
 	li a {
 		background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
 			no-repeat;
@@ -711,7 +710,7 @@ li a:active {
 		background-position: left 0 bottom 2px;
 		transition: all 200ms ease-in-out;
 	}
-}
+} */
 
 h2 {
 	font-family: var(--font-hei);
@@ -790,7 +789,7 @@ footer {
 	font-size: 0.75rem;
 	line-height: 1.25rem;
 	width: 36rem;
-	margin: 0 auto;
+	margin: 0 auto 4rem;
 	border: 1px black solid;
 	padding: 2rem 3rem;
 }
@@ -922,7 +921,7 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 	text-shadow: 0.01em 0.018em, -0.01em -0.018em;
 }
 /* 拉丁文本 */
-.Latin{
+.Latin {
 	font-family: var(--font-sans);
 	font-weight: 400;
 	hyphens: auto;
@@ -1030,12 +1029,30 @@ h-hws[hidden] {
 		width: 30rem;
 		margin: 0 auto;
 	}
+	#logomark {
+		margin: 130px auto 70px;
+		}
+	#logo{
+		width: 270px;
+	}
 	#mainContent {
 		width: 30rem;
 		left: 0rem;
 	}
 	#briefIntroduction-Button {
 		margin-top: 3rem;
+		padding: 0 0.6rem;
+	}
+	#briefIntroduction {
+		font-size: 0.8rem;
+		margin-left: 14px;
+		padding-bottom: 20px;
+	}
+	.singleCharacter {
+		width: 18px;
+		height: 18px;
+		margin-right: 14px;
+		margin-top: 20px;
 	}
 	/* section {
 		margin: 0rem 0;
@@ -1092,10 +1109,10 @@ h-hws[hidden] {
 	}
 }
 @media screen and (min-width: 668px) and (max-width: 1100px) and (hover: none) {
-	#briefIntroduction-Button {
+	/* #briefIntroduction-Button {
 		margin-top: 2rem;
 		margin-bottom: -1rem;
-	}
+	} */
 }
 /* 【3】############################# */
 @media screen and (max-width: 668px) {
@@ -1111,12 +1128,12 @@ h-hws[hidden] {
 		left: 0rem;
 		box-shadow: 0 0 8px var(--colour-shadow);
 	}
-#logo{
-	width: 270px;
-}
-#logomark{
-	margin: 50px auto 20px;
-}
+	#logo {
+		width: 240px;
+	}
+	#logomark {
+		margin: 90px auto 50px;
+	}
 	/* #logomark {
 		height: 32px;
 		width: auto;
@@ -1159,18 +1176,18 @@ h-hws[hidden] {
 		margin-top: 2rem;
 		margin-bottom: 1rem;
 		border-radius: 0.5rem;
-		padding: 0 0.3rem;
+		padding: 0 0.1rem;
 	}
 	#briefIntroduction {
-		margin-left: 10px;
+		margin-left: 11px;
 		padding-bottom: 15px;
-		font-size: 0.8rem;
+		font-size: 0.75rem;
 	}
 	.singleCharacter {
-		margin-right: 10px;
+		margin-right: 11px;
 		margin-top: 15px;
-		width: 18px;
-		height: 18px;
+		width: 17px;
+		height: 17px;
 	}
 
 	/* section {
@@ -1245,12 +1262,12 @@ h-hws[hidden] {
 	}
 }
 @media screen and (max-width: 668px) and (hover: none) {
-	#briefIntroduction-Button {
+	/* #briefIntroduction-Button {
 		margin-top: 5rem;
 		margin-bottom: -1rem;
 	}
 	#briefIntroduction-Button:hover::after {
 		width: 50%;
 		left: 25%;
-	}
+	} */
 }
