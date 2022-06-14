@@ -365,12 +365,19 @@ html {
 
 #logomark {
 	width: fit-content;
-	margin: 140px auto 80px;
+	margin: 140px auto 22px;
 	display: block;
 }
 #logo {
 	width: 320px;
 	display: block;
+}
+#header-Seperator {
+	display: block;
+	width: 340px;
+	height: 2px;
+	background-color: var(--colour-line-dark);
+	margin: 0 auto;
 }
 #briefIntroduction-Button {
 	width: fit-content;
@@ -378,7 +385,7 @@ html {
 	display: block;
 	position: static;
 	margin: 0 auto;
-	margin-top: 3rem;
+	margin-top: 1rem;
 	background-color: var(--colour-paper);
 	transition: all 200ms ease-in-out;
 	padding: 0 0.8rem;
@@ -1036,17 +1043,18 @@ h-hws[hidden] {
 		margin: 0 auto;
 	}
 	#logomark {
-		margin: 130px auto 70px;
+		margin: 130px auto 20px;
 	}
 	#logo {
 		width: 270px;
 	}
-	#mainContent {
-		width: 30rem;
-		left: 0rem;
+	#header-Seperator {
+		width: 280px;
+		height: 1.5px;
 	}
+
 	#briefIntroduction-Button {
-		margin-top: 3rem;
+		margin-top: 1rem;
 		padding: 0 0.6rem;
 	}
 	#briefIntroduction {
@@ -1059,6 +1067,10 @@ h-hws[hidden] {
 		height: 18px;
 		margin-right: 14px;
 		margin-top: 20px;
+	}
+	#mainContent {
+		width: 30rem;
+		left: 0rem;
 	}
 	/* section {
 		margin: 0rem 0;
@@ -1129,6 +1141,15 @@ h-hws[hidden] {
 		width: 100%;
 	}
 
+	#changeTypeMenu-Button {
+		top: 11px;
+		right: 15px;
+		left: auto;
+		bottom: auto;
+	}
+	#changeTypeMenu-ButtonSVG {
+		transform: rotate(90deg);
+	}
 	#bar {
 		position: fixed;
 		height: 3rem;
@@ -1137,11 +1158,21 @@ h-hws[hidden] {
 		left: 0rem;
 		box-shadow: 0 0 8px var(--colour-shadow);
 	}
+	#page {
+		width: calc(100% - 44px);
+		max-width: 550px;
+		margin: 0 auto;
+		display: block;
+	}
+	#logomark {
+		margin: 90px auto 18px;
+	}
 	#logo {
 		width: 240px;
 	}
-	#logomark {
-		margin: 90px auto 50px;
+	#header-Seperator {
+		width: 250px;
+		height: 1px;
 	}
 	/* #logomark {
 		height: 32px;
@@ -1159,27 +1190,6 @@ h-hws[hidden] {
 		position: relative;
 		top: 10px;
 	} */
-	#page {
-		width: calc(100% - 44px);
-		max-width: 550px;
-		margin: 0 auto;
-		display: block;
-	}
-
-	#changeTypeMenu-Button {
-		top: 11px;
-		right: 15px;
-		left: auto;
-		bottom: auto;
-	}
-	#changeTypeMenu-ButtonSVG {
-		transform: rotate(90deg);
-	}
-
-	#mainContent {
-		width: 100%;
-		left: 0rem;
-	}
 
 	#briefIntroduction-Button {
 		margin-top: 1rem;
@@ -1213,6 +1223,10 @@ h-hws[hidden] {
 		left: 0;
 		height: 1px;
 		top: 3rem;
+	}
+	#mainContent {
+		width: 100%;
+		left: 0rem;
 	}
 	/* #sectionInner-Seperator-Additional {
 		display: none;
@@ -1277,12 +1291,14 @@ h-hws[hidden] {
 		background-color: black;
 	} */
 	#logomark {
-		margin: 120px auto 20px;
+		margin: 140px auto 20px;
 	}
 	#logo {
 		width: 240px;
 	}
 }
+
+
 @media screen and (max-width: 668px) and (hover: none) {
 	/* #briefIntroduction-Button {
 		margin-top: 5rem;
