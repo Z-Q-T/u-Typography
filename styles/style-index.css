@@ -1165,14 +1165,14 @@ h-hws[hidden] {
 		display: block;
 	}
 	#logomark {
-		margin: 90px auto 18px;
+		margin: 110px auto 18px;
 	}
 	#logo {
 		width: 240px;
 	}
 	#header-Seperator {
-		width: 250px;
-		height: 1px;
+		width: 240px;
+		height: 1.5px;
 	}
 	/* #logomark {
 		height: 32px;
@@ -1290,12 +1290,12 @@ h-hws[hidden] {
 		height: 100px;
 		background-color: black;
 	} */
-	#logomark {
+	/* #logomark {
 		margin: 140px auto 20px;
 	}
 	#logo {
 		width: 240px;
-	}
+	} */
 }
 
 
