@@ -204,22 +204,55 @@ html {
 #whole {
 	height: auto;
 	margin: 0 auto;
-	position: relative;
-	top: 0;
+	/* position: relative;
+	top: 0; */
+	border-left: 1px solid var(--colour-line-dark);
+	border-right: 1px solid var(--colour-line-dark);
+	padding-top: 12rem;
 }
 #decoLine {
-	position: absolute;
-	top: 0;
+	position: fixed;
+	top: 59px;
 	width: 100%;
-	height: 10px;
-	background-color: var(--colour-2);
+	/* height: 10px; */
+	height: 1px;
+	background-color: var(--colour-line-dark);
+	z-index: 15;
+}
+#bar {
+	width: 100%;
+	height: 3rem;
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: var(--colour-paper);
+	transition: background-color 200ms ease-in-out;
+}
+#contentMenu-Button {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	top: 11px;
+	left: 15px;
+}
+#contentMenu-ButtonSVG {
+	width: 18px;
+	fill: var(--colour-dark-text);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -7.5px 0 0 -9px;
 }
 #changeTypeMenu-Button {
 	width: 40px;
 	height: 40px;
 	position: fixed;
-	bottom: 15px;
-	left: 10px;
+	top: 11px;
+	right: 15px;
+	/* bottom: 15px;
+	left: 10px; */
 	cursor: pointer;
 	border-radius: 20px;
 	background-color: rgb(174, 157, 133, 0);
@@ -242,6 +275,7 @@ html {
 	left: 50%;
 	top: 50%;
 	margin: -10px 0 0 -2px;
+	transform: rotate(90deg);
 }
 #changeTypeMenu-Hint {
 	font-size: 0.5rem;
@@ -344,28 +378,21 @@ html {
 #page {
 	height: 100%;
 	display: block;
-	position: relative;
-	top: 0;
-}
-#bar {
-	width: 3rem;
-	position: fixed;
-	display: block;
-	top: 0;
-	left: 0;
-	height: 100%;
-	z-index: 10;
-	background-color: var(--colour-paper);
-	transition: background-color 200ms ease-in-out;
-}
-#bar:hover {
-	background: var(--colour-bar-hover);
-	transition: all 200ms ease-in-out;
+	/* position: relative;
+	top: 0; */
 }
 
+/* #bar:hover {
+	background: var(--colour-bar-hover);
+	transition: all 200ms ease-in-out;
+} */
+header {
+	margin: 0 auto;
+	width: fit-content;
+}
 #logomark {
 	width: fit-content;
-	margin: 140px auto 22px;
+	margin: 0px auto 22px;
 	display: block;
 }
 #logo {
@@ -386,7 +413,8 @@ html {
 	position: static;
 	margin: 0 auto;
 	margin-top: 1rem;
-	background-color: var(--colour-paper);
+	margin-bottom: 2rem;
+	/* background-color: var(--colour-paper); */
 	transition: all 200ms ease-in-out;
 	padding: 0 0.8rem;
 	border-radius: 1rem;
@@ -500,7 +528,7 @@ html {
 			transform: translateY(0);
 		}
 	}
-	#briefIntroduction-Button::after {
+	/* #briefIntroduction-Button::after {
 		content: "";
 		width: 0%;
 		height: 6px;
@@ -518,7 +546,7 @@ html {
 		transition: 200ms ease-in-out;
 		transition-property: width, left;
 		transition-delay: 50ms;
-	}
+	} */
 }
 /* 用于不支持鼠标悬浮的触摸屏 */
 @media (hover: none) {
@@ -622,13 +650,13 @@ html {
 #briefIntroduction-Button:active::after {
 	transform: translateY(3px);
 }
-#briefIntroduction-Button:active::after {
+/* #briefIntroduction-Button:active::after {
 	background: linear-gradient(
 		135deg,
 		var(--colour-link-active-background),
 		var(--colour-link-active-background)
 	);
-}
+} */
 #mainContent {
 	padding: 2rem 0;
 	display: block;
@@ -735,7 +763,7 @@ h2 {
 	display: block;
 	width: 6rem;
 	position: sticky;
-	top: 0rem;
+	top: 2.5rem;
 	background-color: var(--colour-paper);
 	z-index: 5;
 	margin-top: -1rem;
@@ -1017,7 +1045,7 @@ h-hws[hidden] {
 /* 留20px的滚动条的空间 */
 
 /* 【1】############################# */
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1340px) {
 	#whole {
 		width: 1080px;
 	}
@@ -1034,16 +1062,17 @@ h-hws[hidden] {
 }
 
 /* 【2】############################# */
-@media screen and (min-width: 740px) and (max-width: 1100px) {
+@media screen and (min-width: 840px) and (max-width: 1340px) {
 	#whole {
-		width: 648px;
+		width: 840px;
+		padding-top: 11rem;
 	}
 	#page {
 		width: 30rem;
 		margin: 0 auto;
 	}
 	#logomark {
-		margin: 130px auto 20px;
+		margin-bottom: 20px;
 	}
 	#logo {
 		width: 270px;
@@ -1126,19 +1155,21 @@ h-hws[hidden] {
 		border: 0px black solid;
 	}
 }
-@media screen and (min-width: 740px) and (max-width: 1100px) and (hover: none) {
-	/* #briefIntroduction-Button {
-		margin-top: 2rem;
-		margin-bottom: -1rem;
-	} */
-}
+
 /* 【3】############################# */
-@media screen and (max-width: 740px) {
-	#decoLine {
-		height: 8px;
+@media screen and (min-width: 840px) and (max-width: 1000px) {
+	#whole {
+		width: 648px;
+		border-left: 0px;
+		border-right: 0px;
 	}
+}
+@media screen and (max-width: 840px) {
 	#whole {
 		width: 100%;
+		border-left: 0px;
+		border-right: 0px;
+		padding-top: 9rem;
 	}
 
 	#changeTypeMenu-Button {
@@ -1150,14 +1181,7 @@ h-hws[hidden] {
 	#changeTypeMenu-ButtonSVG {
 		transform: rotate(90deg);
 	}
-	#bar {
-		position: fixed;
-		height: 3rem;
-		top: 0rem;
-		width: 100%;
-		left: 0rem;
-		box-shadow: 0 0 8px var(--colour-shadow);
-	}
+
 	#page {
 		width: calc(100% - 44px);
 		max-width: 550px;
@@ -1165,7 +1189,7 @@ h-hws[hidden] {
 		display: block;
 	}
 	#logomark {
-		margin: 110px auto 18px;
+		margin-bottom: 18px;
 	}
 	#logo {
 		width: 240px;
@@ -1297,7 +1321,6 @@ h-hws[hidden] {
 		width: 240px;
 	} */
 }
-
 
 @media screen and (max-width: 668px) and (hover: none) {
 	/* #briefIntroduction-Button {

@@ -33,47 +33,59 @@
 <body>
     <div id="decoLine"></div>
     <div id="whole">
-
-        <div id="changeTypeFunction">
-            <div id="changeTypeMenu-Button"><svg id="changeTypeMenu-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 30">
-                    <g id="changeTypeMenu-ButtonSVGgraphic">
-                        <circle cx="3" cy="3" r="3" />
-                        <circle cx="3" cy="15" r="3" />
-                        <circle cx="3" cy="27" r="3" />
+        <div id="bar">
+            <div id="contentMenu-Button">
+                <svg id="contentMenu-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15">
+                    <g id="contentMenu-ButtonSVGgraphic">
+                        <rect y="14" width="18" height="1" />
+                        <rect y="7" width="18" height="1" />
+                        <rect width="18" height="1" />
                     </g>
-                </svg></div>
-            <div id="changeTypeMenu-Hint"><span id="changeTypeMenu-Hint-Title">〖更换字体〗</span><br>该功能在一些情况下会额外下载所需的字体<br>这可能消耗更多的流量</div>
-            <menu id="changeTypeMenu" style="visibility: hidden; opacity: 0; ">
-                <div class="changeTypeMenu-Section">分类<a id="changeTypeMenu-FenLei-SONG">宋</a>
-                    <a id="changeTypeMenu-FenLei-HEI">黑</a>
+                </svg>
+            </div>
+            <div id="changeTypeFunction">
+                <div id="changeTypeMenu-Button">
+                    <svg id="changeTypeMenu-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 30">
+                        <g id="changeTypeMenu-ButtonSVGgraphic">
+                            <circle cx="3" cy="3" r="3" />
+                            <circle cx="3" cy="15" r="3" />
+                            <circle cx="3" cy="27" r="3" />
+                        </g>
+                    </svg>
                 </div>
-                <div class="changeTypeMenu-Seperator"></div>
-                <div class="changeTypeMenu-Section">标题
-                    <a id="changeTypeMenu-BiaoTi-SONG">
-                        宋
-                    </a>
-                    <a id="changeTypeMenu-BiaoTi-HEI">黑
-                    </a>
-                </div>
-                <div class="changeTypeMenu-Seperator"></div>
-                <div class="changeTypeMenu-Section">副题
-                    <a id="changeTypeMenu-FuTi-SONG">
-                        宋
-                    </a>
-                    <a id="changeTypeMenu-FuTi-HEI">黑
-                    </a>
-                </div>
-            </menu>
-        </div>
-        <!-- <div id="bar">
-            <img id="logomark" src="images/字无字_图形.png" alt="“字无字”的图标｜logomark of ú–typography">
+                <div id="changeTypeMenu-Hint"><span id="changeTypeMenu-Hint-Title">〖更换字体〗</span><br>该功能在一些情况下会额外下载所需的字体<br>这可能消耗更多的流量</div>
+
+                <menu id="changeTypeMenu" style="visibility: hidden; opacity: 0; ">
+                    <div class="changeTypeMenu-Section">分类<a id="changeTypeMenu-FenLei-SONG">宋</a>
+                        <a id="changeTypeMenu-FenLei-HEI">黑</a>
+                    </div>
+                    <div class="changeTypeMenu-Seperator"></div>
+                    <div class="changeTypeMenu-Section">标题
+                        <a id="changeTypeMenu-BiaoTi-SONG">
+                            宋
+                        </a>
+                        <a id="changeTypeMenu-BiaoTi-HEI">黑
+                        </a>
+                    </div>
+                    <div class="changeTypeMenu-Seperator"></div>
+                    <div class="changeTypeMenu-Section">副题
+                        <a id="changeTypeMenu-FuTi-SONG">
+                            宋
+                        </a>
+                        <a id="changeTypeMenu-FuTi-HEI">黑
+                        </a>
+                    </div>
+                </menu>
+            </div>
+
+            <!-- <img id="logomark" src="images/字无字_图形.png" alt="“字无字”的图标｜logomark of ú–typography">
             <picture>
                 <source srcset="images/字无字_字标-横竖.png" media="(max-width: 668px)">
                 <source srcset="images/字无字_字标-横.png" media="(max-width: 900px)">
                 <img id="logotype" src="images/字无字_字标-竖.png" alt="“字无字”的字标｜logotype of ú–typography">
-            </picture>
+            </picture> -->
 
-        </div> -->
+        </div>
 
         <main id="page">
             <header>
@@ -84,7 +96,8 @@
                 </picture>
                 <div id="header-Seperator"></div>
                 <a href="infomation.html" id="briefIntroduction-Button">
-                <p id="briefIntroduction"><span class="singleCharacter" id="firstCharacter">苟</span><span class="singleCharacter">文</span><span class="singleCharacter">一</span><span class="singleCharacter">的</span><span class="singleCharacter">个</span><span class="singleCharacter">人</span><span class="singleCharacter">网</span><span class="singleCharacter">站</span><br><span class="singleCharacter" id="firstCharacter">分</span><span class="singleCharacter">享</span><span class="singleCharacter">中</span><span class="singleCharacter">文</span><span class="singleCharacter">排</span><span class="singleCharacter">版</span><br><span class="singleCharacter" id="firstCharacter">以</span><span class="singleCharacter">及</span><span class="singleCharacter">更</span><span class="singleCharacter">多</span></p></a>
+                    <p id="briefIntroduction"><span class="singleCharacter" id="firstCharacter">苟</span><span class="singleCharacter">文</span><span class="singleCharacter">一</span><span class="singleCharacter">的</span><span class="singleCharacter">个</span><span class="singleCharacter">人</span><span class="singleCharacter">网</span><span class="singleCharacter">站</span><br><span class="singleCharacter" id="firstCharacter">分</span><span class="singleCharacter">享</span><span class="singleCharacter">中</span><span class="singleCharacter">文</span><span class="singleCharacter">排</span><span class="singleCharacter">版</span><br><span class="singleCharacter" id="firstCharacter">以</span><span class="singleCharacter">及</span><span class="singleCharacter">更</span><span class="singleCharacter">多</span></p>
+                </a>
             </header>
             <div id="mainContent">
 
@@ -105,9 +118,15 @@
                             <li><a>终古常新的皎日，不知从何处飞来的一声两声的远吠声</a>
                                 <p class="subtitle">在这大平原内，四面并无晴天一碧，依旧在她的轨道上，不知</p>
                             </li>
-                            <li><a>依旧在她的轨道上，他眼睛离开了书</a><p class="subtitle">在黄苍未熟的稻田中间，在弯曲同白线似的乡间的官道上面的轨道上，不知</p></li>
-                            <li><a>一程一程地在那里行走</a><p class="subtitle">琼浆一般，带着一种香气，一阵阵地拂上面来。但看见了一丛杂树一本六</p></li>
-                            <li><a>从南方吹来的微风，同做梦似的向有犬吠声的地方看去</a><p class="subtitle">依旧在她的轨道上，他眼睛离开了书一程一程地在那里行走的一声两声</p></li>
+                            <li><a>依旧在她的轨道上，他眼睛离开了书</a>
+                                <p class="subtitle">在黄苍未熟的稻田中间，在弯曲同白线似的乡间的官道上面的轨道上，不知</p>
+                            </li>
+                            <li><a>一程一程地在那里行走</a>
+                                <p class="subtitle">琼浆一般，带着一种香气，一阵阵地拂上面来。但看见了一丛杂树一本六</p>
+                            </li>
+                            <li><a>从南方吹来的微风，同做梦似的向有犬吠声的地方看去</a>
+                                <p class="subtitle">依旧在她的轨道上，他眼睛离开了书一程一程地在那里行走的一声两声</p>
+                            </li>
                         </ul>
                     </div>
                     <!-- <div class="placeHolder"></div> -->
