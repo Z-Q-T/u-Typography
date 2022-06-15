@@ -134,7 +134,7 @@ button.onclick = function () {
     let menu = document.getElementById("changeTypeMenu");
     let menuVisibility = menu.style.visibility;
     let size = window.innerWidth;
-    if (size < 900) {
+    // if (size < 900) {
         if (menuVisibility == "hidden") {
             menu.style.visibility = "visible";
             menu.style.opacity = "1";
@@ -144,51 +144,51 @@ button.onclick = function () {
             menu.style.opacity = "0";
             menu.style.top = "60px";
         }
-    } else {
-        if (menuVisibility == "hidden") {
-            menu.style.visibility = "visible";
-            menu.style.opacity = "1";
-            menu.style.bottom = "65px";
-        } else {
-            menu.style.visibility = "hidden";
-            menu.style.opacity = "0";
-            menu.style.bottom = "55px";
-        }
-    }
+    // } else {
+    //     if (menuVisibility == "hidden") {
+    //         menu.style.visibility = "visible";
+    //         menu.style.opacity = "1";
+    //         menu.style.bottom = "65px";
+    //     } else {
+    //         menu.style.visibility = "hidden";
+    //         menu.style.opacity = "0";
+    //         menu.style.bottom = "55px";
+    //     }
+    // }
 }
 
 // 按照窗口尺寸自动适配字体菜单的位置
-function changeMenuPosition() {
-    let menu = document.getElementById("changeTypeMenu");
-    let menuVisibility = menu.style.visibility;
-    let size = window.innerWidth;
-    // console.log(size);
-    if (menuVisibility == "hidden") {
-        if (size < 900) {
-            menu.style.bottom = "auto";
-            menu.style.top = "60px";
-            menu.style.left = "auto";
-            menu.style.right = "15px";
-        } else {
-            menu.style.bottom = "55px";
-            menu.style.top = "auto";
-            menu.style.left = "10px";
-            menu.style.right = "auto";
-        }
-    } else {
-        if (size < 900) {
-            menu.style.bottom = "auto";
-            menu.style.top = "70px";
-            menu.style.left = "auto";
-            menu.style.right = "15px";
-        } else {
-            menu.style.bottom = "65px";
-            menu.style.top = "auto";
-            menu.style.left = "10px";
-            menu.style.right = "auto";
-        }
-    }
-}
+// function changeMenuPosition() {
+//     let menu = document.getElementById("changeTypeMenu");
+//     let menuVisibility = menu.style.visibility;
+//     let size = window.innerWidth;
+//     // console.log(size);
+//     if (menuVisibility == "hidden") {
+//         if (size < 900) {
+//             menu.style.bottom = "auto";
+//             menu.style.top = "60px";
+//             menu.style.left = "auto";
+//             menu.style.right = "15px";
+//         } else {
+//             menu.style.bottom = "55px";
+//             menu.style.top = "auto";
+//             menu.style.left = "10px";
+//             menu.style.right = "auto";
+//         }
+//     } else {
+//         if (size < 900) {
+//             menu.style.bottom = "auto";
+//             menu.style.top = "70px";
+//             menu.style.left = "auto";
+//             menu.style.right = "15px";
+//         } else {
+//             menu.style.bottom = "65px";
+//             menu.style.top = "auto";
+//             menu.style.left = "10px";
+//             menu.style.right = "auto";
+//         }
+//     }
+// }
 // 将事件侦听器函数附加到窗口的resize事件
 window.addEventListener("resize", changeMenuPosition);
 // 第一次调用该函数
@@ -213,24 +213,32 @@ chineseGridLine();
 
 
 // 鼠标往下滚动时自动显示小logo
-window.onscroll = function () {
+window.onscroll = function additionalLogo() {
     let p = document.documentElement.scrollTop || document.body.scrollTop;
     console.log(p);
     let windowWidth = window.innerWidth;
     let mask = document.getElementById("mask");
+    
     let KuanDu1=1340;
     let KuanDu2=840;
+
     let KD1QiShi=640;
     let KD1JieShu=840;
-    let KD2QiShi=560;
+    let KD1XiangCha=KD1JieShu-KD1QiShi;
+    
+    let KD2QiShi=560;    
     let KD2JieShu=710;
+    let KD2XiangCha=KD2JieShu-KD2QiShi;
+    
     let KD3QiShi=460;
     let KD3JieShu=560;
+    let KD3XiangCha=KD3JieShu-KD3QiShi;
+    
     if (windowWidth > KuanDu1) {
         if (p >= KD1JieShu) {
             mask.style.opacity = 0;
         } else if (p >= KD1QiShi && p < KD1JieShu) {
-            mask.style.opacity = (KD1JieShu - p) / 200;
+            mask.style.opacity = (KD1JieShu - p) / KD1XiangCha;
         } else if (p < KD1QiShi) {
             mask.style.opacity = 1;
         }
@@ -238,7 +246,7 @@ window.onscroll = function () {
         if (p >= KD2JieShu) {
             mask.style.opacity = 0;
         } else if (p >= KD2QiShi && p < KD2JieShu) {
-            mask.style.opacity = (KD2JieShu - p) / 150;
+            mask.style.opacity = (KD2JieShu - p) / KD2XiangCha;
         } else if (p < KD2QiShi) {
             mask.style.opacity = 1;
         }
@@ -246,9 +254,11 @@ window.onscroll = function () {
         if (p >= KD3JieShu) {
             mask.style.opacity = 0;
         } else if (p >= KD3QiShi && p < KD3JieShu) {
-            mask.style.opacity = (KD3JieShu - p) / 100;
+            mask.style.opacity = (KD3JieShu - p) / KD3XiangCha;
         } else if (p < KD3QiShi) {
             mask.style.opacity = 1;
         }
     }
 } 
+window.addEventListener("resize", additionalLogo);
+additionalLogo();
