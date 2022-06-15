@@ -246,6 +246,29 @@ html {
 	top: 50%;
 	margin: -7.5px 0 0 -9px;
 }
+#logotype {
+	height: 60px;
+	width: fit-content;
+	top: 0px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+#logo-Additional {
+	width: auto;
+	height: 32px;
+	position: relative;
+	top: 14px;
+	left: auto;
+}
+#mask{
+	position: absolute;
+	width: 60%;
+	height: 55px;
+	top: 0;
+	left: 20%;
+	background-color: var(--colour-paper);
+}
 #changeTypeMenu-Button {
 	width: 40px;
 	height: 40px;
@@ -1172,7 +1195,6 @@ h-hws[hidden] {
 		border-right: 0px;
 		padding-top: 2rem;
 	}
-
 	#changeTypeMenu-Button {
 		top: 11px;
 		right: 15px;
@@ -1199,7 +1221,6 @@ h-hws[hidden] {
 		width: 240px;
 		height: 1.5px;
 	}
-
 
 	#briefIntroduction-Button {
 		margin-top: 1rem;
@@ -1295,20 +1316,13 @@ h-hws[hidden] {
 	}
 }
 
-@media screen and (max-width: 500px) {
-	/* #whole {
-		padding-top: 2rem;
-	} */
-	/* #decoLine{
-		height: 100px;
-		background-color: black;
-	} */
-	/* #logomark {
-		margin: 140px auto 20px;
+@media screen and (max-width: 616px) {
+	#logo-Additional {
+		width: auto;
+		height: 45px;
+		top: 6px;
+		left: auto;
 	}
-	#logo {
-		width: 240px;
-	} */
 }
 
 @media screen and (max-width: 668px) and (hover: none) {

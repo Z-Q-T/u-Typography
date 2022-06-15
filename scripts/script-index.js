@@ -1,6 +1,6 @@
 // 初始的字体选择高亮
 function changeTypeMenu_initialActive() {
-    let initial = ['changeTypeMenu-BiaoTi-SONG', 'changeTypeMenu-FenLei-HEI','changeTypeMenu-FuTi-HEI'];
+    let initial = ['changeTypeMenu-BiaoTi-SONG', 'changeTypeMenu-FenLei-HEI', 'changeTypeMenu-FuTi-HEI'];
     for (let i = 0; i < initial.length; i++) {
         document.getElementById(initial[i]).style.cssText = "background-color: var(--colour-changeType-selected) !important; color:black;";
     }
@@ -162,7 +162,7 @@ function changeMenuPosition() {
     let menu = document.getElementById("changeTypeMenu");
     let menuVisibility = menu.style.visibility;
     let size = window.innerWidth;
-    console.log(size);
+    // console.log(size);
     if (menuVisibility == "hidden") {
         if (size < 900) {
             menu.style.bottom = "auto";
@@ -198,14 +198,57 @@ changeMenuPosition();
 function chineseGridLine() {
     let YeMian = document.getElementById("whole");
     let size = window.innerWidth;
-    let ZiShu = Math.floor(size / 22)-1;
-	let HangChang =ZiShu*22
+    let ZiShu = Math.floor(size / 22) - 1;
+    let HangChang = ZiShu * 22
     if (size < 740) {
         // let HangChang = ZiShu * 20;
         YeMian.style.width = HangChang + "px";
-    }else{
-        YeMian.style.cssText =" ";
+    } else {
+        YeMian.style.cssText = " ";
     }
 }
 window.addEventListener("resize", chineseGridLine);
 chineseGridLine();
+
+
+
+// 鼠标往下滚动时自动显示小logo
+window.onscroll = function () {
+    let p = document.documentElement.scrollTop || document.body.scrollTop;
+    console.log(p);
+    let windowWidth = window.innerWidth;
+    let mask = document.getElementById("mask");
+    let KuanDu1=1340;
+    let KuanDu2=840;
+    let KD1QiShi=640;
+    let KD1JieShu=840;
+    let KD2QiShi=560;
+    let KD2JieShu=710;
+    let KD3QiShi=460;
+    let KD3JieShu=560;
+    if (windowWidth > KuanDu1) {
+        if (p >= KD1JieShu) {
+            mask.style.opacity = 0;
+        } else if (p >= KD1QiShi && p < KD1JieShu) {
+            mask.style.opacity = (KD1JieShu - p) / 200;
+        } else if (p < KD1QiShi) {
+            mask.style.opacity = 1;
+        }
+    } else if (windowWidth > KuanDu2 && windowWidth <= KuanDu1) {
+        if (p >= KD2JieShu) {
+            mask.style.opacity = 0;
+        } else if (p >= KD2QiShi && p < KD2JieShu) {
+            mask.style.opacity = (KD2JieShu - p) / 150;
+        } else if (p < KD2QiShi) {
+            mask.style.opacity = 1;
+        }
+    } else if (windowWidth <= KuanDu2) {
+        if (p >= KD3JieShu) {
+            mask.style.opacity = 0;
+        } else if (p >= KD3QiShi && p < KD3JieShu) {
+            mask.style.opacity = (KD3JieShu - p) / 100;
+        } else if (p < KD3QiShi) {
+            mask.style.opacity = 1;
+        }
+    }
+} 
