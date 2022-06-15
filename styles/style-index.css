@@ -232,20 +232,27 @@ html {
 	transition: background-color 200ms ease-in-out;
 }
 #contentMenu-Button {
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	position: fixed;
-	top: 11px;
-	left: 15px;
+	top: 5px;
+	left: 5px;
 }
-#contentMenu-ButtonSVG {
+#threeLines{
+	width: 36px;
+	height: 36px;
+	left: 7px;
+	position: relative;
+	top: 7px;
+}
+/* #contentMenu-ButtonSVG {
 	width: 18px;
 	fill: var(--colour-dark-text);
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	margin: -7.5px 0 0 -9px;
-}
+} */
 #logotype {
 	height: 60px;
 	width: fit-content;
@@ -324,7 +331,7 @@ html {
 	border-radius: 20px;
 	padding-top: 6px;
 	display: block;
-	/* left: 15px; */
+	right: 15px;
 	/* bottom: 110px; */
 	/* visibility: hidden; */
 	/* opacity: 1; */

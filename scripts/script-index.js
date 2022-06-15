@@ -189,10 +189,10 @@ button.onclick = function () {
 //         }
 //     }
 // }
-// 将事件侦听器函数附加到窗口的resize事件
-window.addEventListener("resize", changeMenuPosition);
-// 第一次调用该函数
-changeMenuPosition();
+// // 将事件侦听器函数附加到窗口的resize事件
+// window.addEventListener("resize", changeMenuPosition);
+// // 第一次调用该函数
+// changeMenuPosition();
 
 // 在小尺寸下让行长等于字号的整数倍
 function chineseGridLine() {
@@ -213,7 +213,7 @@ chineseGridLine();
 
 
 // 鼠标往下滚动时自动显示小logo
-window.onscroll = function additionalLogo() {
+function additionalLogo() {
     let p = document.documentElement.scrollTop || document.body.scrollTop;
     console.log(p);
     let windowWidth = window.innerWidth;
@@ -260,5 +260,6 @@ window.onscroll = function additionalLogo() {
         }
     }
 } 
+window.onscroll = additionalLogo;
 window.addEventListener("resize", additionalLogo);
 additionalLogo();
