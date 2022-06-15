@@ -208,7 +208,8 @@ html {
 	top: 0; */
 	border-left: 1px solid var(--colour-line-dark);
 	border-right: 1px solid var(--colour-line-dark);
-	padding-top: 12rem;
+	padding-top: 5rem;
+	margin-top: 5rem;
 }
 #decoLine {
 	position: fixed;
@@ -1065,7 +1066,7 @@ h-hws[hidden] {
 @media screen and (min-width: 840px) and (max-width: 1340px) {
 	#whole {
 		width: 840px;
-		padding-top: 11rem;
+		padding-top: 4rem;
 	}
 	#page {
 		width: 30rem;
@@ -1169,7 +1170,7 @@ h-hws[hidden] {
 		width: 100%;
 		border-left: 0px;
 		border-right: 0px;
-		padding-top: 9rem;
+		padding-top: 2rem;
 	}
 
 	#changeTypeMenu-Button {
@@ -1198,22 +1199,7 @@ h-hws[hidden] {
 		width: 240px;
 		height: 1.5px;
 	}
-	/* #logomark {
-		height: 32px;
-		width: auto;
-		margin: 0;
-		display: inline-block;
-		position: absolute;
-		left: 14px;
-		top: 14px;
-	}
-	#logotype {
-		height: 40px;
-		width: auto;
-		margin: 0 auto;
-		position: relative;
-		top: 10px;
-	} */
+
 
 	#briefIntroduction-Button {
 		margin-top: 1rem;
@@ -1309,7 +1295,10 @@ h-hws[hidden] {
 	}
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
+	/* #whole {
+		padding-top: 2rem;
+	} */
 	/* #decoLine{
 		height: 100px;
 		background-color: black;
