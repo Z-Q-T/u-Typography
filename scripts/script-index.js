@@ -222,16 +222,16 @@ function additionalLogo() {
     let KuanDu1=1340;
     let KuanDu2=840;
 
-    let KD1QiShi=640;
-    let KD1JieShu=840;
+    let KD1QiShi=440;
+    let KD1JieShu=500;
     let KD1XiangCha=KD1JieShu-KD1QiShi;
     
-    let KD2QiShi=560;    
-    let KD2JieShu=710;
+    let KD2QiShi=380;
+    let KD2JieShu=420;
     let KD2XiangCha=KD2JieShu-KD2QiShi;
     
-    let KD3QiShi=460;
-    let KD3JieShu=560;
+    let KD3QiShi=310;
+    let KD3JieShu=350;
     let KD3XiangCha=KD3JieShu-KD3QiShi;
     
     if (windowWidth > KuanDu1) {
