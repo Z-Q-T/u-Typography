@@ -135,15 +135,15 @@ button.onclick = function () {
     let menuVisibility = menu.style.visibility;
     let size = window.innerWidth;
     // if (size < 900) {
-        if (menuVisibility == "hidden") {
-            menu.style.visibility = "visible";
-            menu.style.opacity = "1";
-            menu.style.top = "70px";
-        } else {
-            menu.style.visibility = "hidden";
-            menu.style.opacity = "0";
-            menu.style.top = "60px";
-        }
+    if (menuVisibility == "hidden") {
+        menu.style.visibility = "visible";
+        menu.style.opacity = "1";
+        menu.style.top = "70px";
+    } else {
+        menu.style.visibility = "hidden";
+        menu.style.opacity = "0";
+        menu.style.top = "60px";
+    }
     // } else {
     //     if (menuVisibility == "hidden") {
     //         menu.style.visibility = "visible";
@@ -214,52 +214,77 @@ chineseGridLine();
 
 // 鼠标往下滚动时自动显示小logo
 function additionalLogo() {
-    let p = document.documentElement.scrollTop || document.body.scrollTop;
+    let p = document.documentElement.scrollTop;// || document.body.scrollTop;
     console.log(p);
     let windowWidth = window.innerWidth;
-    let mask = document.getElementById("mask");
-    
-    let KuanDu1=1340;
-    let KuanDu2=840;
+    let mask1 = document.getElementById("mask1");
+    let mask2 = document.getElementById("mask2");
 
-    let KD1QiShi=440;
-    let KD1JieShu=500;
-    let KD1XiangCha=KD1JieShu-KD1QiShi;
-    
-    let KD2QiShi=380;
-    let KD2JieShu=420;
-    let KD2XiangCha=KD2JieShu-KD2QiShi;
-    
-    let KD3QiShi=310;
-    let KD3JieShu=350;
-    let KD3XiangCha=KD3JieShu-KD3QiShi;
-    
+    let KuanDu1 = 1340;
+    let KuanDu2 = 840;
+
+    let KD1QiShi = 480;
+    let KD1JieShu = 780;
+    let KD1XiangCha = KD1JieShu - KD1QiShi;
+
+    let KD2QiShi = 410;
+    let KD2JieShu = 660;
+    let KD2XiangCha = KD2JieShu - KD2QiShi;
+
+    let KD3QiShi = 340;
+    let KD3JieShu = 540;
+    let KD3XiangCha = KD3JieShu - KD3QiShi;
+
+    // function additionalLogoHidden() {
+    //     mask1.style.opacity = 1;
+    //     mask2.style.opacity = 1;
+    // }
+    // function additionalLogoAppearing(JieShu, XiangCha) {
+    //     mask1.style.opacity = (JieShu - p) / XiangCha;
+    //     mask2.style.opacity = ((JieShu - p) / XiangCha) ** 3;
+    // }
+    // function additionalLogoVisible() {
+    //     mask1.style.opacity = 0;
+    //     mask2.style.opacity = 0;
+    // }
     if (windowWidth > KuanDu1) {
-        if (p >= KD1JieShu) {
-            mask.style.opacity = 0;
+        if (p < KD1QiShi) {
+            // additionalLogoHidden;
+            mask1.style.opacity = 1;
+            mask2.style.opacity = 1;
         } else if (p >= KD1QiShi && p < KD1JieShu) {
-            mask.style.opacity = (KD1JieShu - p) / KD1XiangCha;
-        } else if (p < KD1QiShi) {
-            mask.style.opacity = 1;
+            // additionalLogoAppearing(KD1JieShu, KD1XiangCha);
+            mask1.style.opacity = (KD1JieShu - p) / KD1XiangCha;
+            mask2.style.opacity = ((KD1JieShu - p) / KD1XiangCha) ** 3;
+        } else if (p >= KD1JieShu) {
+            // additionalLogoVisible;
+            mask1.style.opacity = 0;
+            mask2.style.opacity = 0;
         }
     } else if (windowWidth > KuanDu2 && windowWidth <= KuanDu1) {
-        if (p >= KD2JieShu) {
-            mask.style.opacity = 0;
+        if (p < KD2QiShi) {
+            mask1.style.opacity = 1;
+            mask2.style.opacity = 1;
         } else if (p >= KD2QiShi && p < KD2JieShu) {
-            mask.style.opacity = (KD2JieShu - p) / KD2XiangCha;
-        } else if (p < KD2QiShi) {
-            mask.style.opacity = 1;
+            mask1.style.opacity = (KD2JieShu - p) / KD2XiangCha;
+            mask2.style.opacity = ((KD2JieShu - p) / KD2XiangCha) ** 3;
+        } else if (p >= KD2JieShu) {
+            mask1.style.opacity = 0;
+            mask2.style.opacity = 0;
         }
     } else if (windowWidth <= KuanDu2) {
-        if (p >= KD3JieShu) {
-            mask.style.opacity = 0;
+        if (p < KD3QiShi) {
+            mask1.style.opacity = 1;
+            mask2.style.opacity = 1;
         } else if (p >= KD3QiShi && p < KD3JieShu) {
-            mask.style.opacity = (KD3JieShu - p) / KD3XiangCha;
-        } else if (p < KD3QiShi) {
-            mask.style.opacity = 1;
+            mask1.style.opacity = (KD3JieShu - p) / KD3XiangCha;
+            mask2.style.opacity = ((KD3JieShu - p) / KD3XiangCha) ** 3;
+        } else if (p >= KD3JieShu) {
+            mask1.style.opacity = 0;
+            mask2.style.opacity = 0;
         }
     }
-} 
+}
 window.onscroll = additionalLogo;
 window.addEventListener("resize", additionalLogo);
 additionalLogo();

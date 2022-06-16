@@ -151,6 +151,7 @@
 
 :root {
 	--colour-paper: rgb(251, 249, 247);
+	--colour-paper-transparent: rgba(251, 249, 247, 0);
 	--colour-changeType-unselected: rgb(70, 70, 70);
 	--colour-changeType-selected: rgb(190, 176, 156);
 	--colour-changeType-hover: rgb(123, 117, 106);
@@ -237,8 +238,9 @@ html {
 	position: fixed;
 	top: 5px;
 	left: 5px;
+	z-index: 20;
 }
-#threeLines{
+#threeLines {
 	width: 36px;
 	height: 36px;
 	left: 7px;
@@ -268,14 +270,32 @@ html {
 	top: 14px;
 	left: auto;
 }
-#mask{
+#mask1,
+#mask2 {
 	position: absolute;
-	width: 60%;
-	height: 55px;
-	top: 0;
-	left: 20%;
+	width: 380px;
+	height: 60px;
+	top: 0px;
+	left: calc(50% - 190px);
 	background-color: var(--colour-paper);
 }
+#mask2 {
+	border-left: 1px solid var(--colour-line-dark);
+	border-right: 1px solid var(--colour-line-dark);
+	border-bottom: 1px solid var(--colour-line-dark);
+	/* background: linear-gradient(
+		0deg,
+		var(--colour-paper),
+		var(--colour-paper),
+		var(--colour-paper-transparent),
+		var(--colour-paper-transparent)
+	); */
+}
+@media screen and (max-width: 616px) {
+	#mask1,#mask2 {
+	width: 180px;
+	left: calc(50% - 90px);
+}}
 #changeTypeMenu-Button {
 	width: 40px;
 	height: 40px;
