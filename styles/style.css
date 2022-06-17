@@ -236,20 +236,86 @@ html {
 	/* box-shadow: 0 0 10px rgb(222, 216, 207); */
 	border-right: 1px solid var(--colour-line-dark);
 }
+/* #decoLine {
+	position: fixed;
+	left: 59px;
+	width: 1px;
+	height: 100%;
+	background-color: var(--colour-line-dark);
+	z-index: 15;
+} */
 #backToHomePage {
 	position: absolute;
 	display: block;
-	width: 50px;
-	height: 50px;
-	top: 5px;
-	left: 5px;
+	width: 40px;
+	height: 40px;
+	top: 10px;
+	left: 10px;
+	border-radius: 20px;
+	background: radial-gradient(var(--colour-3) 0%, transparent 70%) no-repeat;
+	/* border: 1px solid transparent; */
+	transition: all 300ms ease-in-out;
+	background-position: center;
+	background-size: 0% 0%;
+}
+#backToHomePage:hover {
+	background-size: 100% 100%;
+
+	/* background-color: #f1ece5; */
+	/* border: 1px solid var(--colour-line-dark); */
+	transition: all 300ms ease-in-out;
 }
 #backArrow {
 	width: 36px;
 	height: 36px;
-	left: 6px;
+	left: 1px;
 	position: relative;
-	top: 7px;
+	top: 2px;
+	/* transition: all 300ms ease-in-out; */
+}
+#backToHomePage:hover #backArrow {
+	transform-origin: center center;
+	/* transform: scale(110%);  */
+	/* transition: all 300ms ease-in-out; */
+	animation: backArrowHover 600ms ease-in-out;
+}
+@keyframes backArrowHover {
+	0% {
+		transform: rotate(0deg);
+	}
+	15%,
+	20% {
+		transform: rotate(25deg);
+	}
+	45%,
+	50% {
+		transform: rotate(-15deg);
+	}
+	70%,
+	75% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+	/* 0% {
+		transform: translateX(0);
+	}
+	
+	50% {
+		transform: translateX(2px);
+	}
+	20%,
+	70% {
+		transform: translateX(-5px);
+	}
+	95%{
+		transform: translateX(-1px);
+
+	}
+	100% {
+		transform: translateX(0);
+	} */
 }
 #logotype {
 	display: block;
@@ -350,12 +416,12 @@ html {
 	cursor: pointer;
 	border-radius: 20px;
 	background-color: rgb(174, 157, 133, 0);
+	transition: all 200ms ease-in-out;
+
 }
 #changeTypeMenu-Button:hover {
 	background-color: var(--colour-changeType-button-hover);
-	transition-property: all;
-	transition-timing-function: ease-in-out;
-	transition-duration: 100ms;
+	transition: all 200ms ease-in-out;
 }
 #changeTypeMenu-Button:active {
 	background-color: var(--colour-changeType-button-active);
@@ -368,8 +434,15 @@ html {
 	left: 50%;
 	top: 50%;
 	margin: -10px 0 0 -2px;
+	fill: black;
+	transition: fill 200ms ease-in-out;
 }
-#changeTypeMenu-Hint {
+#changeTypeMenu-Button:hover #changeTypeMenu-ButtonSVG{
+	transition: fill 200ms ease-in-out;
+	fill: var(--colour-1);
+
+}
+/* #changeTypeMenu-Hint {
 	font-size: 0.5rem;
 	line-height: 0.6rem;
 	display: block;
@@ -383,7 +456,7 @@ html {
 	transition-property: all;
 	transition-timing-function: ease-in-out;
 	transition-duration: 300ms;
-}
+} */
 /* #changeTypeMenu-Hint-Title{
 	font-size: 0.6rem;
 	line-height: 0.6rem;
@@ -483,20 +556,31 @@ html {
 }
 
 #pageTypography-Button {
-	width: 34px;
-	height: 24px;
+	width: 30px;
+	height: 40px;
+	left: 15px;
+	bottom: 10px;
+	padding: 11px 0;
 	/* border-radius: 20px; */
 	text-align: center;
 	position: fixed;
-	left: 13px;
-	bottom: 17px;
 	line-height: 1em;
 	cursor: pointer;
 	font-family: var(--font-serif);
 	font-weight: 400;
 	font-size: 0.9rem;
+	color: black;
+	transition: color 200ms ease-in-out;
 }
-#pageTypography-Button::after {
+#pageTypography-Button:hover {
+	color: var(--colour-1);
+	transition: color 200ms ease-in-out;
+}
+#pageTypography-Button:active {
+	color: var(--colour-2);
+}
+
+/* #pageTypography-Button::after {
 	content: "";
 	width: 0;
 	height: 3px;
@@ -522,7 +606,7 @@ html {
 			var(--colour-link-active-background)
 		)
 		no-repeat;
-}
+} */
 #pageTypography-Icon {
 	width: 36px;
 	position: absolute;
@@ -606,16 +690,6 @@ li::marker {
 	/* visibility: hidden !important; */
 }
 
-/* #decoLine {
-	display: inline-block;
-	position: absolute;
-	width: 9px;
-	height: 140px;
-	background-color: black;
-	top: 8rem;
-	left: 1.4rem;
-	visibility: hidden;
-} */
 #title {
 	display: inline-block;
 	position: absolute;
@@ -1285,7 +1359,7 @@ h-hws[hidden] {
 		height: 100%;
 	}
 	#changeTypeMenu-Button {
-		top: 11px;
+		top: 10px;
 		right: 15px;
 		left: auto;
 		bottom: auto;
@@ -1294,8 +1368,8 @@ h-hws[hidden] {
 		transform: rotate(90deg);
 	}
 	#pageTypography-Button {
-		top: 21px;
-		right: 65px;
+		top: 10px;
+		right: 58px;
 		left: auto;
 		bottom: auto;
 	}
@@ -1444,7 +1518,7 @@ h-hws[hidden] {
 		height: 100%;
 	}
 	#changeTypeMenu-Button {
-		top: 11px;
+		top: 10px;
 		right: 15px;
 		left: auto;
 		bottom: auto;
@@ -1453,8 +1527,8 @@ h-hws[hidden] {
 		transform: rotate(90deg);
 	}
 	#pageTypography-Button {
-		top: 21px;
-		right: 55px;
+		top: 10px;
+		right: 60px;
 		left: auto;
 		bottom: auto;
 	}

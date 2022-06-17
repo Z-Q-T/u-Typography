@@ -497,6 +497,7 @@ header {
 }
 #briefIntroduction-Button:hover {
 	cursor: pointer;
+
 }
 /* 用于支持鼠标悬浮的设备 */
 @media (hover: hover) {
