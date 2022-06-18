@@ -258,26 +258,37 @@ html {
 	background-position: center;
 	background-size: 0% 0%;
 }
-#backToHomePage:hover {
+/* #backToHomePage:hover {
 	background-size: 100% 100%;
 
-	/* background-color: #f1ece5; */
-	/* border: 1px solid var(--colour-line-dark); */
 	transition: all 300ms ease-in-out;
+} */
+#backArrow,#home {
+	width: 40px;
+	height: 40px;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	transition: all 100ms ease-in-out;
+	transform-origin: center center;
+	transform: rotate(0deg);
+	opacity: 1;
 }
-#backArrow {
-	width: 36px;
-	height: 36px;
-	left: 1px;
-	position: relative;
-	top: 2px;
-	/* transition: all 300ms ease-in-out; */
+#home {
+	/* transform: rotate(-90deg); */
+	opacity: 0;
 }
 #backToHomePage:hover #backArrow {
-	transform-origin: center center;
-	/* transform: scale(110%);  */
-	/* transition: all 300ms ease-in-out; */
-	animation: backArrowHover 600ms ease-in-out;
+	transform: rotate(90deg);
+	opacity: 0;
+	/* transition: all 100ms ease-in-out; */
+	/* animation: backArrowHover 600ms ease-in-out; */
+}
+#backToHomePage:hover #home {
+	/* transform: rotate(0deg); */
+	opacity: 1;
+	transition: all 150ms ease-in-out;
+	/* transition-delay: 50ms; */
 }
 @keyframes backArrowHover {
 	0% {
@@ -417,7 +428,6 @@ html {
 	border-radius: 20px;
 	background-color: rgb(174, 157, 133, 0);
 	transition: all 200ms ease-in-out;
-
 }
 #changeTypeMenu-Button:hover {
 	background-color: var(--colour-3);
@@ -438,10 +448,9 @@ html {
 	/* transform: rotate(90deg); */
 	transition: fill 200ms ease-in-out;
 }
-#changeTypeMenu-Button:hover #changeTypeMenu-ButtonSVG{
+#changeTypeMenu-Button:hover #changeTypeMenu-ButtonSVG {
 	transition: fill 200ms ease-in-out;
 	/* fill: var(--colour-1); */
-
 }
 /* #changeTypeMenu-Hint {
 	font-size: 0.5rem;
