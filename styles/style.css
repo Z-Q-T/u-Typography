@@ -411,7 +411,7 @@ html {
 	width: 40px;
 	height: 40px;
 	position: fixed;
-	bottom: 50px;
+	bottom: 10px;
 	left: 10px;
 	cursor: pointer;
 	border-radius: 20px;
@@ -420,7 +420,7 @@ html {
 
 }
 #changeTypeMenu-Button:hover {
-	background-color: var(--colour-changeType-button-hover);
+	background-color: var(--colour-3);
 	transition: all 200ms ease-in-out;
 }
 #changeTypeMenu-Button:active {
@@ -428,18 +428,19 @@ html {
 	transition-duration: 10ms;
 }
 #changeTypeMenu-ButtonSVG {
-	width: 4px;
+	height: 4px;
 	fill: var(--colour-button);
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	margin: -10px 0 0 -2px;
+	margin: -2px 0 0 -8px;
 	fill: black;
+	/* transform: rotate(90deg); */
 	transition: fill 200ms ease-in-out;
 }
 #changeTypeMenu-Button:hover #changeTypeMenu-ButtonSVG{
 	transition: fill 200ms ease-in-out;
-	fill: var(--colour-1);
+	/* fill: var(--colour-1); */
 
 }
 /* #changeTypeMenu-Hint {
@@ -559,7 +560,7 @@ html {
 	width: 30px;
 	height: 40px;
 	left: 15px;
-	bottom: 10px;
+	bottom: 50px;
 	padding: 11px 0;
 	/* border-radius: 20px; */
 	text-align: center;
@@ -1364,9 +1365,9 @@ h-hws[hidden] {
 		left: auto;
 		bottom: auto;
 	}
-	#changeTypeMenu-ButtonSVG {
-		transform: rotate(90deg);
-	}
+	/* #changeTypeMenu-ButtonSVG {
+		transform: rotate(180deg);
+	} */
 	#pageTypography-Button {
 		top: 10px;
 		right: 58px;
@@ -1523,9 +1524,9 @@ h-hws[hidden] {
 		left: auto;
 		bottom: auto;
 	}
-	#changeTypeMenu-ButtonSVG {
-		transform: rotate(90deg);
-	}
+	/* #changeTypeMenu-ButtonSVG {
+		transform: rotate(180deg);
+	} */
 	#pageTypography-Button {
 		top: 10px;
 		right: 60px;
