@@ -251,37 +251,28 @@ html {
 	transform-origin: center center;
 	/* transition: all 200ms ease-in-out; */
 }
-#threeLines-1 {
+/* #threeLines-1 {
 	transform: translateY(-7px) scaleX(100%);
-	/* top: -2px; */
 }
 #threeLines-3 {
 	transform: translateY(7px) scaleX(100%);
-	/* top: 12px; */
-}
-#contentMenu-Button:hover #threeLines-1 {
+} */
+#contentMenu-Button:hover #threeLines-1,#contentMenu-Button:hover #threeLines-2 ,#contentMenu-Button:hover #threeLines-3 {
 	/* transform: translateY(-7px) scaleX(60%); */
-	animation: threeLinesHover-1 200ms ease-in-out;
+	animation: threeLinesHover 200ms ease-in-out;
 }
 #contentMenu-Button:hover #threeLines-2 {
 	/* transform: scaleX(60%); */
-	animation: threeLinesHover-2 200ms ease-in-out;
+	/* animation: threeLinesHover-2 200ms ease-in-out; */
 	animation-delay: 100ms;
 }
 #contentMenu-Button:hover #threeLines-3 {
 	/* transform: translateY(7px) scaleX(60%); */
-	animation: threeLinesHover-3 200ms ease-in-out;
+	/* animation: threeLinesHover-3 200ms ease-in-out; */
 	animation-delay: 200ms;
 }
-@keyframes threeLinesHover-1{
-	0%,100%{
-		transform:translateY(-7px) scaleX(100%);
-	}
-	50%{
-		transform:translateY(-7px) scaleX(60%);
-	}
-}
-@keyframes threeLinesHover-2{
+
+@keyframes threeLinesHover{
 	0%,100%{
 		transform: scaleX(100%);
 	}
@@ -289,14 +280,7 @@ html {
 		transform: scaleX(60%);
 	}
 }
-@keyframes threeLinesHover-3{
-	0%,100%{
-		transform:translateY(7px) scaleX(100%);
-	}
-	50%{
-		transform:translateY(7px) scaleX(60%);
-	}
-}
+
 /* #contentMenu-ButtonSVG {
 	width: 18px;
 	fill: var(--colour-dark-text);

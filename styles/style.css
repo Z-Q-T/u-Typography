@@ -276,27 +276,27 @@ html {
 #backArrow {
 	transform: translateX(0px);
 	opacity: 1;
-	transition: all 200ms ease-out;
+	transition: all 300ms ease-out;
 	transition-delay: 100ms;
 }
 #home {
 	/* transform: rotate(-90deg); */
-	transform: translateX(5px);
+	transform: translateX(3px);
 	opacity: 0;
 	transition: all 200ms ease-in;
 }
 #backToHomePage:hover #backArrow {
 	/* transform: rotate(90deg); */
-	transform: translateX(-5px);
+	transform: translateX(-10px);
 	opacity: 0;
-	transition: all 200ms ease-in;
+	transition: transform 200ms ease-in, opacity 150ms ease-in;
 	/* animation: backArrowHover 600ms ease-in-out; */
 }
 #backToHomePage:hover #home {
 	/* transform: rotate(0deg); */
 	transform: translateX(0px);
 	opacity: 1;
-	transition: all 200ms ease-out;
+	transition: all 300ms ease-out;
 	transition-delay: 100ms;
 }
 @keyframes backArrowHover {
