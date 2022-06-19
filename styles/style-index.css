@@ -233,11 +233,11 @@ html {
 	transition: background-color 200ms ease-in-out;
 }
 #contentMenu-Button {
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 	position: fixed;
-	top: 5px;
-	left: 5px;
+	top: 0px;
+	left: 0px;
 	z-index: 20;
 }
 #threeLines-1,
@@ -245,9 +245,9 @@ html {
 #threeLines-3 {
 	width: 40px;
 	height: 40px;
-	left: 5px;
+	left: 10px;
 	position: absolute;
-	top: 5px;
+	top: 10px;
 	transform-origin: center center;
 	/* transition: all 200ms ease-in-out; */
 }
@@ -257,7 +257,9 @@ html {
 #threeLines-3 {
 	transform: translateY(7px) scaleX(100%);
 } */
-#contentMenu-Button:hover #threeLines-1,#contentMenu-Button:hover #threeLines-2 ,#contentMenu-Button:hover #threeLines-3 {
+#contentMenu-Button:hover #threeLines-1,
+#contentMenu-Button:hover #threeLines-2,
+#contentMenu-Button:hover #threeLines-3 {
 	/* transform: translateY(-7px) scaleX(60%); */
 	animation: threeLinesHover 200ms ease-in-out;
 }
@@ -272,15 +274,60 @@ html {
 	animation-delay: 200ms;
 }
 
-@keyframes threeLinesHover{
-	0%,100%{
+@keyframes threeLinesHover {
+	0%,
+	100% {
 		transform: scaleX(100%);
 	}
-	50%{
+	50% {
 		transform: scaleX(60%);
 	}
 }
+#contentMenu {
+	width: 10rem;
+	height: 20rem;
+	background-color: var(--colour-paper);
+	/* background-color: black; */
+	position: absolute;
+	/* margin: 5px; */
+	top: 0px;
+	left: 0px;
+	/* border-radius: 5px; */
+	border-right: 1px solid var(--colour-line-dark);
+	border-bottom: 1px solid var(--colour-line-dark);
+	opacity: 0;
+	/* display: none; */
+	visibility: hidden;
+	transition: all 200ms ease-in-out;
+	z-index: 5;
+	font-size: 0.75rem;
+	font-family: var(--font-hei);
+	font-weight: 400;
+	transition-delay: 50ms;
+}
+#contentMenu-Button:hover + #contentMenu {
+	opacity: 1;
+	visibility: visible;
+	/* display: block; */
+	top: 60px;
+	transition: all 200ms ease-in-out;
+	transition-delay: 100ms;
 
+}
+#contentMenu:hover{
+	opacity: 1;
+	visibility: visible;
+	/* display: block; */
+	top: 60px;
+	/* transition: all 200ms ease-in-out; */
+}
+#contentMenu-Mask{
+	position: absolute;
+	width: 10rem;
+	height: 60px;
+	background-color: var(--colour-paper);
+	z-index: 6;
+}
 /* #contentMenu-ButtonSVG {
 	width: 18px;
 	fill: var(--colour-dark-text);
@@ -296,6 +343,7 @@ html {
 	display: block;
 	position: relative;
 	margin: 0 auto;
+	z-index: 10;
 }
 #logo-Additional {
 	width: auto;
@@ -312,6 +360,8 @@ html {
 	top: 0px;
 	left: calc(50% - 190px);
 	background-color: var(--colour-paper);
+	z-index: 11;
+
 }
 #mask2 {
 	border-left: 1px solid var(--colour-line-dark);
@@ -1265,9 +1315,6 @@ h-hws[hidden] {
 		right: 15px;
 		left: auto;
 		bottom: auto;
-	}
-	#changeTypeMenu-ButtonSVG {
-		transform: rotate(90deg);
 	}
 
 	#page {

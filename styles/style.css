@@ -247,16 +247,16 @@ html {
 #backToHomePage {
 	position: absolute;
 	display: block;
-	width: 50px;
-	height: 50px;
-	top: 5px;
-	left: 5px;
+	width: 60px;
+	height: 60px;
+	top: 0px;
+	left: 0px;
 	/* border-radius: 20px; */
-	background: radial-gradient(var(--colour-3) 0%, transparent 70%) no-repeat;
+	/* background: radial-gradient(var(--colour-3) 0%, transparent 70%) no-repeat; */
 	/* border: 1px solid transparent; */
-	transition: all 300ms ease-in-out;
-	background-position: center;
-	background-size: 0% 0%;
+	/* transition: all 300ms ease-in-out; */
+	/* background-position: center; */
+	/* background-size: 0% 0%; */
 }
 /* #backToHomePage:hover {
 	background-size: 100% 100%;
@@ -267,39 +267,50 @@ html {
 #home {
 	width: 40px;
 	height: 40px;
-	left: 5px;
+	left: 10px;
 	position: absolute;
-	top: 5px;
+	top: 10px;
 	transform-origin: center center;
 	/* transform: rotate(0deg); */
 }
-#backArrow {
-	transform: translateX(0px);
-	opacity: 1;
-	transition: all 300ms ease-out;
-	transition-delay: 100ms;
+
+@media (hover: hover) {
+	#backArrow {
+		transform: translateX(0px);
+		opacity: 1;
+		transition: all 300ms ease-out;
+		transition-delay: 100ms;
+	}
+	#home {
+		/* transform: rotate(-90deg); */
+		transform: translateX(-2px);
+		opacity: 0;
+		transition: all 200ms ease-in;
+	}
+	#backToHomePage:hover #backArrow {
+		/* transform: rotate(90deg); */
+		transform: translateX(5px);
+		opacity: 0;
+		transition: transform 200ms ease-in, opacity 200ms ease-in;
+		/* animation: backArrowHover 600ms ease-in-out; */
+	}
+	#backToHomePage:hover #home {
+		/* transform: rotate(0deg); */
+		transform: translateX(0px);
+		opacity: 1;
+		transition: all 300ms ease-out;
+		transition-delay: 100ms;
+	}
 }
-#home {
-	/* transform: rotate(-90deg); */
-	transform: translateX(3px);
-	opacity: 0;
-	transition: all 200ms ease-in;
+@media (hover: none) {
+	#backArrow {
+		display: none;
+	}
+	/* #home {
+		opacity: 1;
+	} */
 }
-#backToHomePage:hover #backArrow {
-	/* transform: rotate(90deg); */
-	transform: translateX(-10px);
-	opacity: 0;
-	transition: transform 200ms ease-in, opacity 150ms ease-in;
-	/* animation: backArrowHover 600ms ease-in-out; */
-}
-#backToHomePage:hover #home {
-	/* transform: rotate(0deg); */
-	transform: translateX(0px);
-	opacity: 1;
-	transition: all 300ms ease-out;
-	transition-delay: 100ms;
-}
-@keyframes backArrowHover {
+/* @keyframes backArrowHover {
 	0% {
 		transform: rotate(0deg);
 	}
@@ -318,25 +329,7 @@ html {
 	100% {
 		transform: rotate(0deg);
 	}
-	/* 0% {
-		transform: translateX(0);
-	}
-	
-	50% {
-		transform: translateX(2px);
-	}
-	20%,
-	70% {
-		transform: translateX(-5px);
-	}
-	95%{
-		transform: translateX(-1px);
-
-	}
-	100% {
-		transform: translateX(0);
-	} */
-}
+} */
 #logotype {
 	display: block;
 	position: relative;
