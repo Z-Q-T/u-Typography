@@ -395,11 +395,11 @@ html {
 #halfBar:hover #logo {
 	animation: logoHover 500ms ease-in-out;
 } */
-
+/* 
 #logotype:active #logo {
 	transform: scale(95%);
 	transform-origin: center center;
-}
+} */
 @keyframes logoHover {
 	0% {
 		transform: rotate(0deg);
@@ -1127,6 +1127,11 @@ h-char.bd-consecutive[unicode="b7"]:not(.end-portion),
 h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	letter-spacing: 0;
 }
+
+/* h-char.bd-jiya.bd-cop + .sideNoteMark{
+margin-left: -0.5rem;
+} */
+
 /* h-char.bd-close.bd-end.bd-jiya + .PoZheHao::before {
 	letter-spacing: -0.25em;
 } */
