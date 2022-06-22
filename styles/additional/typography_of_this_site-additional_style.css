@@ -1,0 +1,175 @@
+:root {
+	--colour-grid-normal: rgb(226, 226, 226);
+	--colour-grid-Tri: rgb(180, 192, 219);
+	--colour-grid-Centre: rgb(238, 183, 194);
+	--colour-grid-important: rgb(53, 147, 248);
+	--colour-grid-Core: rgb(27, 73, 243);
+}
+
+#gridMask {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -0.5px;
+	height: 100%;
+	width: 79rem;
+	overflow: hidden;
+	letter-spacing: -1em;
+	
+}
+.gridLine,
+.gridLine-Tri,
+.gridLine-Centre,
+.gridLine-Important,
+.gridLine-Core,
+#gridLine-Centre-Layout_3_4_5 {
+	height: 100%;
+	width: 1px;
+	display: inline-block;
+	margin-left: 19px;
+}
+#gridLine-First-Layout_1 {
+	margin: 0;
+}
+.gridLine {
+	background-color: var(--colour-grid-normal);
+}
+.gridLine-Tri {
+	background-color: var(--colour-grid-Tri);
+}
+.gridLine-Centre {
+	background-color: var(--colour-grid-Centre);
+}
+.gridLine-Important {
+	background-color: var(--colour-grid-important);
+}
+.gridLine-Core {
+	background-color: var(--colour-grid-Core);
+}
+#gridLine-Centre-Layout_3_4_5 {
+	position: absolute;
+	top: 0;
+	margin: 0;
+	left: 13.5rem;
+	background-color: var(--colour-grid-Centre);
+	display: none;
+}
+
+/* 【1】#############################
+宽度大于1820的窗口，或经过1.25倍放大的宽度大于2275的窗口
+适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
+正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
+@media screen and (min-width: 1840px) {
+	
+}
+
+/* 【2】#############################
+宽度1380—1820的窗口，或经过1.25倍放大的宽度1725—2275的窗口
+适用于1440宽的屏幕，或经过1.25倍放大的1920宽的屏幕
+正文每行30字，字号20。边注每行16字，字号15；宽度等同于正文12字 */
+@media screen and (min-width: 1400px) and (max-width: 1840px) {
+	#gridMask {
+		width: 61rem;
+	}
+	
+	.layout_2_hidden {
+		display: none;
+	}
+	
+}
+/* 【3】#############################
+宽度1020—1380的窗口，或经过1.25倍放大的宽度1275—1725的窗口
+适用于1080宽的屏幕，或经过1.25倍放大的1440宽的屏幕
+正文每行27字，字号20。边注每行12字，字号15；宽度等同于正文9字 */
+@media screen and (min-width: 1040px) and (max-width: 1400px) {
+	#gridMask {
+		width: 40rem;
+	}
+	#gridLine-First-Layout_3 {
+		margin: 0;
+	}
+	.gridLine-Centre {
+		background-color: var(--colour-grid-normal);
+	}
+	.layout_2_hidden {
+		display: none;
+	}
+	.layout_3_hidden {
+		display: none;
+	}
+	.layout_3_Centre {
+		background-color: var(--colour-grid-Centre);
+	}
+	#gridLine-Centre-Layout_3_4_5 {
+		display: inline-block;
+	}
+}
+/* 【4】#############################
+宽度660—1020的窗口，或经过1.25倍放大的宽度825—1275的窗口
+正文每行27字，字号20。*/
+@media screen and (min-width: 680px) and (max-width: 1040px) {
+	#gridMask {
+		width: 28rem;
+	}
+	#gridLine-First-Layout_3 {
+		margin: 0;
+	}
+	.gridLine-Centre {
+		background-color: var(--colour-grid-normal);
+	}
+	.layout_2_hidden {
+		display: none;
+	}
+	.layout_3_hidden {
+		display: none;
+	}
+	/* .layout_3_Centre {
+		background-color: var(--colour-grid-Centre);
+	} */
+	.layout_4_hidden {
+		display: none;
+	}
+	.layout_4_Important {
+		background-color: var(--colour-grid-important);
+	}
+	#gridLine-Centre-Layout_3_4_5 {
+		display: inline-block;
+	}
+}
+/* 【5】#############################
+宽度小于660的窗口，或经过1.25倍放大的宽度小于825的窗口
+正文字号20。*/
+@media screen and (max-width: 680px) {
+	#gridMask {
+		max-width: 28rem;
+	}
+	#gridLine-First-Layout_3 {
+		margin: 0;
+	}
+	.layout_2_hidden {
+		display: none;
+	}
+	.layout_3_hidden {
+		display: none;
+	}
+	/* .layout_3_Centre {
+		background-color: var(--colour-grid-Centre);
+	} */
+	.gridLine-Centre {
+		background-color: var(--colour-grid-normal);
+	}
+	.layout_4_hidden {
+		display: none;
+	}
+	#gridLine-Centre-Layout_3_4_5 {
+		display: inline-block;
+	}
+	/* .layout_4_Important {
+		background-color: var(--colour-grid-important);
+	} */
+}
+@media screen and (max-width: 600px) {
+	#gridLine-Centre-Layout_3_4_5 {
+		left: calc(50% - 0.25rem);
+	}
+}

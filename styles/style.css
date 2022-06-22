@@ -1401,16 +1401,16 @@ h-hws[hidden] {
 		);
 	} */
 	#page {
-		width: 660px;
+		width: 27rem;
 		display: block;
-		left: 0rem;
+		left: 3rem;
 	}
 
 	#mainTitleArea {
 		width: 27rem;
 		display: block;
 		/* margin: 0 auto; */
-		margin-left: 3rem;
+		margin-left: 0rem;
 		position: static;
 	}
 	#metaInfo {
