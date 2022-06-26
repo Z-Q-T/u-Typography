@@ -711,6 +711,17 @@ li::marker {
 	/* border-bottom: var(--colour-iden) solid 6px; */
 	/* padding-bottom: 0.75rem; */
 }
+#caption {
+	display: inline-block;
+	position: absolute;
+	top: 8rem;
+	left: 39rem;
+	width: 18rem;
+	font-size: 0.9rem;
+	line-height: 1.5rem;
+	font-family: var(--font-hei);
+	font-weight: 400;
+}
 /* .titleAdjust{
 	font-family: "HEI", "Noto Sans SC", sans-serif;
 } */
@@ -826,6 +837,7 @@ article {
 	/* background-color: beige; */
 	line-height: 1.85rem;
 }
+p:first-child,
 h1 + p,
 h2 + p,
 h3 + p,
@@ -839,12 +851,14 @@ h3 + p,
 	font-weight: 400;
 	position: absolute;
 	/* margin-left: 0; */
+	margin-top: 7.5px;
 	clear: both;
 	font-size: 0.75rem;
 	line-height: 1.2rem;
 	color: var(--colour-dark-text);
 	/* white-space: break-spaces; */
 }
+
 .tabulation {
 	white-space: break-spaces;
 	tab-size: 3rem;
@@ -857,33 +871,48 @@ h-cs[hidden] {
 } */
 
 /* 标题标点符号用思源宋体 */
-h1 h-char.bd-jiya.bd-open > h-inner,
+h1 h-char.biaodian > h-inner,
+h2 h-char.biaodian > h-inner,
+h3 h-char.biaodian > h-inner {
+	font-family: var(--font-song-biaodian) !important;
+	font-weight: 700 !important;
+	line-height: 0.1em;
+} /* h1 h-char.bd-jiya.bd-open > h-inner,
 h1 h-char.bd-jiya.bd-close > h-inner,
 h1 h-char.bd-jiya.bd-cop > h-inner,
 h1 h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-family: var(--font-song-biaodian) !important;
 	font-weight: 700 !important;
 	line-height: 0.1em;
-}
+} */
 
 /* 正文标点符号用思源黑体 */
-article h-char.bd-jiya.bd-open > h-inner,
+article h-char.biaodian > h-inner {
+	font-family: var(--font-hei-biaodian);
+	font-weight: 400;
+	line-height: 0.1em;
+}
+/* article h-char.bd-jiya.bd-open > h-inner,
 article h-char.bd-jiya.bd-close > h-inner,
 article h-char.bd-jiya.bd-cop > h-inner,
 article h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-family: var(--font-hei-biaodian);
 	font-weight: 400;
 	line-height: 0.1em;
-}
+} */
 /* 边注标点符号用思源黑体 */
-.sideNote h-char.bd-jiya.bd-open > h-inner,
+.sideNote h-char.biaodian > h-inner, #caption h-char.biaodian > h-inner {
+	font-family: var(--font-hei-biaodian) !important;
+	font-weight: 400 !important;
+	line-height: 0.1em;
+}/* .sideNote h-char.bd-jiya.bd-open > h-inner,
 .sideNote h-char.bd-jiya.bd-close > h-inner,
 .sideNote h-char.bd-jiya.bd-cop > h-inner,
 .sideNote h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-family: var(--font-hei-biaodian) !important;
 	font-weight: 400 !important;
 	line-height: 0.1em;
-}
+} */
 /* 正文标点符号用思源宋体 */
 /* h-char.bd-jiya.bd-open > h-inner,
 h-char.bd-jiya.bd-close > h-inner,
