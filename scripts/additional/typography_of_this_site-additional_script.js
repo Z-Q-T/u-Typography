@@ -33,6 +33,7 @@ gridLineDisplay();
 
 let ShuangQi_DuanLuo = document.getElementById("ZuoYouShuangQi-O");
 let resizeFrame = document.getElementById("resize-2");
+let page=document.getElementById("page");
 function ZuoYouShuangQi() {
     let size = resizeFrame.style.width;
     size=size.substring(0, size.length-2);
@@ -43,4 +44,7 @@ function ZuoYouShuangQi() {
 resizeFrame.addEventListener("mouseover", ZuoYouShuangQi);
 resizeFrame.addEventListener("mousemove", ZuoYouShuangQi);
 resizeFrame.addEventListener("mousedown", ZuoYouShuangQi);
+page.addEventListener("mousemove", ZuoYouShuangQi);
+page.addEventListener("touchstart", ZuoYouShuangQi);
+page.addEventListener("touchmove", ZuoYouShuangQi);
 ZuoYouShuangQi();

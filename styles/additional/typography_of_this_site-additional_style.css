@@ -56,23 +56,28 @@
 #resize-1,#resize-2,#resize-3 {
 	resize: horizontal;
 	max-width: 36rem;
-	min-width: 10rem;
-	max-height: 15rem;
+	min-width: 12rem;
+	max-height: 40rem;
 	padding: 0 1rem;
 	overflow: hidden;
 	margin: 0 auto;
 }
 #ZuoYouShuangQi-X,
 #ZuoYouShuangQi-O,#ZuoQi {
+	margin: 1rem auto;
 	font-size: 1rem;
 	line-height: 1.5rem;
 	text-indent: 0;
 	/* text-align: justify; */
-	color: rgb(123, 138, 150);
+	color: rgb(175, 175, 175);
 	max-width: 34rem;
+}
+#ZuoYouShuangQi-O{
+	color: var(--colour-1);
 }
 #ZuoQi{
 	text-align: left;
+	color: rgb(175, 175, 175);
 }
 /* 【1】#############################
 宽度大于1820的窗口，或经过1.25倍放大的宽度大于2275的窗口
