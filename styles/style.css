@@ -186,7 +186,7 @@
 	--font-song-biaodian: "SONG-Biaodian", "Noto Serif SC";
 	--font-sans: "SANS", "Source Sans Pro", sans-serif;
 	--font-serif: "SERIF", "Source Serif Pro", serif;
-	--font-code: "CODE", "Source Code Pro", monospace;
+	--font-code: "CODE", "Source Code Pro", "HEI", "Noto Sans SC", monospace;
 }
 
 html {
@@ -901,11 +901,12 @@ article h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	line-height: 0.1em;
 } */
 /* 边注标点符号用思源黑体 */
-.sideNote h-char.biaodian > h-inner, #caption h-char.biaodian > h-inner {
+.sideNote h-char.biaodian > h-inner,
+#caption h-char.biaodian > h-inner {
 	font-family: var(--font-hei-biaodian) !important;
 	font-weight: 400 !important;
 	line-height: 0.1em;
-}/* .sideNote h-char.bd-jiya.bd-open > h-inner,
+} /* .sideNote h-char.bd-jiya.bd-open > h-inner,
 .sideNote h-char.bd-jiya.bd-close > h-inner,
 .sideNote h-char.bd-jiya.bd-cop > h-inner,
 .sideNote h-char.bd-jiya[unicode="ff0e"] > h-inner {
@@ -981,8 +982,10 @@ pre {
 	line-height: 1.4rem;
 	hyphens: none;
 	text-align: left;
-	margin: 2rem 0;
-	padding-left: 3rem;
+	margin: 1rem 0;
+	padding: 1rem 3rem;
+	background-color: var(--colour-paper);
+	/* box-shadow: 0 0 10px var(--colour-shadow); */
 	/* text-indent: 3rem; */
 	white-space: pre-wrap;
 }

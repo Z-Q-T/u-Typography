@@ -260,12 +260,11 @@
                     <p>但在小尺寸的情况下，让段落宽度尽量接近窗口的宽度，也即随着窗口宽度的增减而实时动态变化才是比较好的选择</p>
                     <p>用JavaScript调行长</p>
                     <pre><code class='language-javascript' lang='javascript'>function chineseGrid() {
-                      let DuanLuo = document.getElementById(&quot;paragraph&quot;);//需要调整宽度的段落
-                      let pageSize = window.innerWidth;//调用页面大小
-                      let ZiShu = Math.floor(pageSize / 20);//20是正文字号。算出在当前的页面大小下，能在一行中容纳的最大字数
-                      DuanLuo.style.width = ZiShu + &quot;em&quot;;//将段落宽度设置为该字数所对应的大小
-                    }
-                    </code></pre>
+    let DuanLuo = document.getElementById(&quot;paragraph&quot;); //需要调整宽度的段落
+    let pageSize = window.innerWidth; //调用页面大小
+    let ZiShu = Math.floor(pageSize / 20); //20是正文字号。算出在当前的页面大小下，能在一行中容纳的最大字数
+    DuanLuo.style.width = ZiShu + &quot;em&quot;; //将段落宽度设置为该字数所对应的大小
+}</code></pre>
                     <div id="resize-2"><p id="ZuoYouShuangQi-X">像这样的奇书，不应该一口气就把它念完，要留着细细儿地咀嚼才好。一下子就念完了之后，我的热望也就不得不消灭，那时候我就没有好望，没有梦想了，怎么使得呢？</p>
                     <p id="ZuoYouShuangQi-O">像这样的奇书，不应该一口气就把它念完，要留着细细儿地咀嚼才好。一下子就念完了之后，我的热望也就不得不消灭，那时候我就没有好望，没有梦想了，怎么使得呢？</p>
                     <p id="ZuoQi">像这样的奇书，不应该一口气就把它念完，要留着细细儿地咀嚼才好。一下子就念完了之后，我的热望也就不得不消灭，那时候我就没有好望，没有梦想了，怎么使得呢？</p></div>
