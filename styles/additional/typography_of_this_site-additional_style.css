@@ -15,7 +15,6 @@
 	width: 79rem;
 	overflow: hidden;
 	letter-spacing: -1em;
-	
 }
 .gridLine,
 .gridLine-Tri,
@@ -54,13 +53,32 @@
 	background-color: var(--colour-grid-Centre);
 	display: none;
 }
-
+#resize-1,#resize-2,#resize-3 {
+	resize: horizontal;
+	max-width: 36rem;
+	min-width: 10rem;
+	max-height: 15rem;
+	padding: 0 1rem;
+	overflow: hidden;
+	margin: 0 auto;
+}
+#ZuoYouShuangQi-X,
+#ZuoYouShuangQi-O,#ZuoQi {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	text-indent: 0;
+	/* text-align: justify; */
+	color: rgb(123, 138, 150);
+	max-width: 34rem;
+}
+#ZuoQi{
+	text-align: left;
+}
 /* 【1】#############################
 宽度大于1820的窗口，或经过1.25倍放大的宽度大于2275的窗口
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
 正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
 @media screen and (min-width: 1840px) {
-	
 }
 
 /* 【2】#############################
@@ -71,11 +89,10 @@
 	#gridMask {
 		width: 61rem;
 	}
-	
+
 	.layout_2_hidden {
 		display: none;
 	}
-	
 }
 /* 【3】#############################
 宽度1020—1380的窗口，或经过1.25倍放大的宽度1275—1725的窗口
