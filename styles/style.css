@@ -715,8 +715,8 @@ li::marker {
 	display: inline-block;
 	position: absolute;
 	top: 8rem;
-	left: 39rem;
-	width: 18rem;
+	left: 42rem;
+	width: 15rem;
 	font-size: 0.75rem;
 	line-height: 1.2rem;
 	font-family: var(--font-hei);
@@ -1263,8 +1263,8 @@ h-hws[hidden] {
 		tab-size: 3em;
 	}
 	#caption {
-		left: 33rem;
-		width: 12rem;
+		left: 36rem;
+		width: 9rem;
 	}
 	#tableOfContent {
 		width: 12rem;
@@ -1497,7 +1497,9 @@ h-hws[hidden] {
 	}
 	#caption {
 		display: block;
-		position: static;
+		position: relative;
+		left: 0;
+		top: 0;
 		margin-top: 3rem;
 		margin-left: 3rem;
 		width: 21rem;
@@ -1657,7 +1659,9 @@ h-hws[hidden] {
 	}
 	#caption {
 		display: block;
-		position: static;
+		position: relative;
+		left: 0;
+		top: 0;
 		margin: 0 auto;
 		margin-top: 3rem;
 		/* margin-left: 3rem; */
