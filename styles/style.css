@@ -978,8 +978,8 @@ p {
 } */
 pre {
 	font-family: var(--font-code);
-	font-size: 0.8rem;
-	line-height: 1.4rem;
+	font-size: 0.625rem;
+	line-height: 1rem;
 	hyphens: none;
 	text-align: left;
 	margin: 1rem 0;
@@ -988,6 +988,7 @@ pre {
 	/* box-shadow: 0 0 10px var(--colour-shadow); */
 	/* text-indent: 3rem; */
 	white-space: pre-wrap;
+	tab-size: 3rem;
 }
 code {
 	font-family: var(--font-code);
