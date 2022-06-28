@@ -717,10 +717,11 @@ li::marker {
 	top: 8rem;
 	left: 39rem;
 	width: 18rem;
-	font-size: 0.9rem;
-	line-height: 1.5rem;
+	font-size: 0.75rem;
+	line-height: 1.2rem;
 	font-family: var(--font-hei);
 	font-weight: 400;
+	text-align: left;
 }
 /* .titleAdjust{
 	font-family: "HEI", "Noto Sans SC", sans-serif;
@@ -1196,7 +1197,10 @@ h-hws[hidden] {
 		font-size: 3rem;
 		line-height: 4rem;
 	}
-
+	#caption {
+		font-size: 0.9rem;
+		line-height: 1.5rem;
+	}
 	#mainContent {
 		width: 57rem;
 		left: 21rem;
@@ -1257,6 +1261,10 @@ h-hws[hidden] {
 		left: 33rem;
 		font-size: 0.65rem;
 		tab-size: 3em;
+	}
+	#caption {
+		left: 33rem;
+		width: 12rem;
 	}
 	#tableOfContent {
 		width: 12rem;
@@ -1320,6 +1328,7 @@ h-hws[hidden] {
 		display: block;
 		position: static;
 		width: 27rem;
+		text-align: center;
 	}
 	.titleLine {
 		font-size: 2.25rem;
@@ -1327,7 +1336,14 @@ h-hws[hidden] {
 		margin-bottom: 0.75rem;
 		height: 2.25rem;
 	}
-
+	#caption {
+		display: block;
+		position: static;
+		margin-left: 3rem;
+		margin-top: 3rem;
+		width: 21rem;
+		text-align: center;
+	}
 	#toc-PlaceHolder {
 		display: none;
 	}
@@ -1341,7 +1357,7 @@ h-hws[hidden] {
 	#mainContent {
 		width: 39rem;
 		padding: 2rem 0 2rem 0;
-		margin-top: 25rem;
+		margin-top: 28rem;
 		left: 0rem;
 	}
 	article {
@@ -1470,6 +1486,7 @@ h-hws[hidden] {
 		position: static;
 		width: 27rem;
 		padding-top: 2rem;
+		text-align: center;
 	}
 	.titleLine {
 		font-size: 2.25rem;
@@ -1478,7 +1495,14 @@ h-hws[hidden] {
 		height: 2.25rem;
 		display: inline;
 	}
-
+	#caption {
+		display: block;
+		position: static;
+		margin-top: 3rem;
+		margin-left: 3rem;
+		width: 21rem;
+		text-align: center;
+	}
 	#toc-PlaceHolder {
 		display: none;
 	}
@@ -1494,7 +1518,7 @@ h-hws[hidden] {
 		/* left: 15rem; */
 		position: static;
 		margin: 0 auto;
-		margin-top: 2rem;
+		margin-top: 5rem;
 	}
 	article {
 		margin: 1rem 0;
@@ -1622,6 +1646,7 @@ h-hws[hidden] {
 		position: static;
 		width: 100%;
 		padding-top: 2rem;
+		text-align: center;
 	}
 	.titleLine {
 		font-size: 2rem;
@@ -1630,7 +1655,15 @@ h-hws[hidden] {
 		height: 2rem;
 		display: inline;
 	}
-
+	#caption {
+		display: block;
+		position: static;
+		margin: 0 auto;
+		margin-top: 3rem;
+		/* margin-left: 3rem; */
+		width: calc(100% - 6rem);
+		text-align: center;
+	}
 	#toc-PlaceHolder {
 		display: none;
 	}
@@ -1646,7 +1679,7 @@ h-hws[hidden] {
 		/* left: 15rem; */
 		position: static;
 		margin: 0 auto;
-		margin-top: 4rem;
+		margin-top: 2rem;
 	}
 	article {
 		margin: 1rem 0;
