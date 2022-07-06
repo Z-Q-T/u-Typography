@@ -70,7 +70,7 @@
 	line-height: 1.5rem;
 	text-indent: 0;
 	/* text-align: justify; */
-	color: rgb(175, 175, 175);
+	color: rgb(66, 66, 66);
 	max-width: 34rem;
 }
 #ZuoYouShuangQi-O{
@@ -78,7 +78,7 @@
 }
 #ZuoQi{
 	text-align: left;
-	color: rgb(175, 175, 175);
+	color: rgb(66, 66, 66);
 }
 /* 【1】#############################
 宽度大于1820的窗口，或经过1.25倍放大的宽度大于2275的窗口

@@ -1081,6 +1081,11 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 	margin: 0 -0.25em;
 	text-shadow: 0.01em 0.018em, -0.01em -0.018em;
 }
+/* 着重号 */
+em {
+	text-emphasis: filled dot;
+}
+
 /* 拉丁文本 */
 .Latin-BiaoTi {
 	font-family: var(--font-serif);
