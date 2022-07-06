@@ -1083,7 +1083,7 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 }
 /* 着重号 */
 em {
-	text-emphasis: filled dot;
+	text-emphasis: filled dot !important;
 }
 
 /* 拉丁文本 */
