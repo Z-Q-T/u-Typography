@@ -160,6 +160,14 @@
 	font-style: italic;
 }
 
+
+/* ==特殊字体== */
+
+@font-face {
+	font-family: "TeShuBiaoDian";
+	src: url("../fonts/BiaoDianFuHao.ttf") format("woff2");
+}
+
 /* —————————————————————————————— */
 
 :root {
@@ -180,9 +188,9 @@
 	--colour-shadow: rgb(216, 208, 197);
 	--colour-line-dark: #747474;
 	--colour-dark-text: rgb(46, 46, 46);
-	--font-hei: "HEI", "Noto Sans SC", sans-serif;
+	--font-hei: "TeShuBiaoDian","HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
-	--font-song: "SONG", "Noto Serif SC", serif;
+	--font-song: "TeShuBiaoDian","SONG", "Noto Serif SC", serif;
 	--font-song-biaodian: "SONG-Biaodian", "Noto Serif SC";
 	--font-sans: "SANS", "Source Sans Pro", sans-serif;
 	--font-serif: "SERIF", "Source Serif Pro", serif;
@@ -983,13 +991,14 @@ pre {
 	line-height: 1rem;
 	hyphens: none;
 	text-align: left;
-	margin: 1rem 0;
-	padding: 1rem 3rem;
+	margin: 2rem 3rem;
+	padding: 0rem 0rem 1rem;
 	background-color: var(--colour-paper);
 	/* box-shadow: 0 0 10px var(--colour-shadow); */
 	/* text-indent: 3rem; */
-	white-space: pre-wrap;
 	tab-size: 3rem;
+	/* white-space: pre-wrap; */
+	overflow-x: scroll;
 }
 code {
 	font-family: var(--font-code);
@@ -1083,7 +1092,8 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 }
 /* 着重号 */
 em {
-	text-emphasis: filled dot !important;
+	text-emphasis-style: '\E000' !important;
+	/* text-emphasis: filled circle !important; */
 }
 
 /* 拉丁文本 */
