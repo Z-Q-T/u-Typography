@@ -53,18 +53,21 @@
 	background-color: var(--colour-grid-Centre);
 	display: none;
 }
-#resize-1,#resize-2,#resize-3 {
+#resize-1,
+#resize-2,
+#resize-3 {
 	resize: horizontal;
 	max-width: 36rem;
 	min-width: 12rem;
 	max-height: 40rem;
-	padding: 0 1rem;
 	overflow: hidden;
-	margin: 0 auto;
+	padding: 1rem 2rem;
+	margin: 2rem auto;
 	background-color: white;
 }
 #ZuoYouShuangQi-X,
-#ZuoYouShuangQi-O,#ZuoQi {
+#ZuoYouShuangQi-O,
+#ZuoQi {
 	margin: 1rem auto;
 	font-size: 1rem;
 	line-height: 1.5rem;
@@ -73,10 +76,10 @@
 	color: rgb(66, 66, 66);
 	max-width: 34rem;
 }
-#ZuoYouShuangQi-O{
+#ZuoYouShuangQi-O {
 	color: var(--colour-1);
 }
-#ZuoQi{
+#ZuoQi {
 	text-align: left;
 	color: rgb(66, 66, 66);
 }

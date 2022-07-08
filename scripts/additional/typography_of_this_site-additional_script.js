@@ -36,8 +36,8 @@ let resizeFrame = document.getElementById("resize-2");
 let page=document.getElementById("page");
 function ZuoYouShuangQi() {
     let size = resizeFrame.style.width;
-    size=size.substring(0, size.length-2);
-    let ZiShu = Math.floor(size / 20) - 2;
+    size=size.substring(0, size.length-2);//去掉size后面的“px”
+    let ZiShu = Math.floor(size / 20) - 4;
     console.log(size, ZiShu)
     ShuangQi_DuanLuo.style.width = ZiShu + "em";
 }
