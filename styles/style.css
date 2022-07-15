@@ -160,7 +160,6 @@
 	font-style: italic;
 }
 
-
 /* ==特殊字体== */
 
 @font-face {
@@ -188,9 +187,9 @@
 	--colour-shadow: rgb(216, 208, 197);
 	--colour-line-dark: #747474;
 	--colour-dark-text: rgb(46, 46, 46);
-	--font-hei: "TeShuBiaoDian","HEI", "Noto Sans SC", sans-serif;
+	--font-hei: "TeShuBiaoDian", "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
-	--font-song: "TeShuBiaoDian","SONG", "Noto Serif SC", serif;
+	--font-song: "TeShuBiaoDian", "SONG", "Noto Serif SC", serif;
 	--font-song-biaodian: "SONG-Biaodian", "Noto Serif SC";
 	--font-sans: "SANS", "Source Sans Pro", sans-serif;
 	--font-serif: "SERIF", "Source Serif Pro", serif;
@@ -1083,7 +1082,7 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 	font-family: var(--font-hei-biaodian) !important;
 	font-weight: 400 !important;
 	line-height: 0.1em;
-	transform: scale(0.5, 1);
+	/* transform: scale(0.5, 1); */
 	display: inline-block;
 	text-indent: 0;
 	transform: scale(0.5, 0.9);
@@ -1092,7 +1091,7 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 }
 /* 着重号 */
 em {
-	text-emphasis-style: '\E000' !important;
+	text-emphasis-style: "\E000" !important;
 	/* text-emphasis: filled circle !important; */
 }
 
@@ -1716,19 +1715,34 @@ h-hws[hidden] {
 		color: rgb(123, 123, 123);
 		/* margin: 0% 2rem; */
 	}
-	.sideNote::before {
-		/* content: "　"; */
+	/* .sideNote::before {
 		content: " ";
 		font-family: var(--font-code);
-		font-size: 0.83em;
+		font-size: 1em;
 		line-height: 0.1em;
-	}
+	} */
+	.sideNote::before,
 	.sideNote::after {
 		content: " ";
 		font-family: var(--font-code);
-		font-size: 0.83em;
+		font-size: 1.11em;
+		line-height: 0.1em;
+		/* display: inline-block; */
+		/* white-space: pre; */
+		/* transform: scale(0.5, 0.9); */
+	}
+	/* .sideNote::before {
+		content: "｜";
+		font-family: var(--font-hei-biaodian);
+		font-size: 1em;
 		line-height: 0.1em;
 	}
+	.sideNote::after {
+		content: "｜";
+		font-family: var(--font-hei-biaodian);
+		font-size: 1em;
+		line-height: 0.1em;
+	} */
 	.sideNoteMark {
 		display: none;
 	}
