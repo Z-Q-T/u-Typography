@@ -1096,7 +1096,11 @@ em {
 }
 
 /* 拉丁文本 */
-.Latin-BiaoTi {
+.Latin{
+	hyphens: auto;
+	line-height: 1em;
+}
+/* .Latin-BiaoTi {
 	font-family: var(--font-serif);
 	font-weight: 600;
 	hyphens: auto;
@@ -1109,8 +1113,7 @@ em {
 	hyphens: auto;
 	font-size: 1.1em;
 	line-height: 1em;
-	/* text-justify: inter-word; */
-	/* 西文齐行往词间插入间距 */
+	
 }
 .Latin-BianZhu {
 	font-family: var(--font-sans);
@@ -1118,7 +1121,10 @@ em {
 	hyphens: auto;
 	font-size: 1.1em;
 	line-height: 1em;
-}
+} */
+/* text-justify: inter-word; */
+	/* 西文齐行往词间插入间距 */
+
 .sideNoteMark {
 	font-family: var(--font-hei-biaodian) !important;
 	font-weight: 400 !important;

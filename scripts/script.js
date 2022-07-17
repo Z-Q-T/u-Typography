@@ -4,6 +4,22 @@ function changeTypeMenu_initialActive() {
     for (let i = 0; i < initial.length; i++) {
         document.getElementById(initial[i]).style.cssText = "background-color: var(--colour-changeType-selected) !important; color:black;";
     }
+    //下面是设定初始的西文字体
+    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, #tableOfContent li > .Latin").forEach((e) => {
+        e.style.fontFamily = "var(--font-serif)";
+        e.style.fontWeight = "600";
+        e.style.fontSize = "1.05em";
+    });
+    document.body.querySelectorAll("p > .Latin").forEach((e) => {
+        e.style.fontFamily = "var(--font-sans)";
+        e.style.fontWeight = "400";
+        e.style.fontSize = "1.1em";
+    });
+    document.body.querySelectorAll(".sideNote > .Latin").forEach((e) => {
+        e.style.fontFamily = "var(--font-sans)";
+        e.style.fontWeight = "400";
+        e.style.fontSize = "1.1em";
+    });
 }
 
 //点击换字体按钮后改变按钮颜色
@@ -20,11 +36,11 @@ function changeTypeMenu_switchColour(active, inactive) {
 
 // 标题换宋体
 document.getElementById('changeTypeMenu-BiaoTi-SONG').onclick = function changefont_BiaoTi_SONG() {
-    document.body.querySelectorAll(".titleLine,h2,h3,#tableOfContent li").forEach((e) => {
+    document.body.querySelectorAll("h1,h2,h3,#tableOfContent li").forEach((e) => {
         e.style.fontFamily = "var(--font-song)";
         e.style.fontWeight = "700";
     });//换中文
-    document.body.querySelectorAll(".Latin-BiaoTi").forEach((e) => {
+    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, #tableOfContent li > .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-serif)";
         e.style.fontWeight = "600";
         e.style.fontSize = "1.05em";
@@ -42,7 +58,7 @@ document.getElementById('changeTypeMenu-BiaoTi-HEI').onclick = function changefo
         e.style.fontFamily = "var(--font-hei)";
         e.style.fontWeight = "700";
     });//换中文
-    document.body.querySelectorAll(".Latin-BiaoTi").forEach((e) => {
+    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, #tableOfContent li > .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-sans)";
         e.style.fontWeight = "600";
         e.style.fontSize = "1.1em";
@@ -61,7 +77,7 @@ document.getElementById('changeTypeMenu-ZhengWen-SONG').onclick = function chang
         e.style.fontFamily = "var(--font-song)";
         e.style.fontWeight = "600";
     });//换中文
-    document.body.querySelectorAll(".Latin-ZhengWen").forEach((e) => {
+    document.body.querySelectorAll("p > .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-serif)";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.05em";
@@ -79,7 +95,7 @@ document.getElementById('changeTypeMenu-ZhengWen-HEI').onclick = function change
         e.style.fontFamily = "var(--font-hei)";
         e.style.fontWeight = "400";
     });//换中文
-    document.body.querySelectorAll(".Latin-ZhengWen").forEach((e) => {
+    document.body.querySelectorAll("p > .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-sans)";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.1em";
@@ -97,7 +113,7 @@ document.getElementById('changeTypeMenu-BianZhu-SONG').onclick = function change
         e.style.fontFamily = "var(--font-song)";
         e.style.fontWeight = "600";
     });//换中文
-    document.body.querySelectorAll(".Latin-BianZhu").forEach((e) => {
+    document.body.querySelectorAll(".sideNote > .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-serif)";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.05em";
@@ -114,7 +130,7 @@ document.getElementById('changeTypeMenu-BianZhu-HEI').onclick = function changef
         e.style.fontFamily = "var(--font-hei)";
         e.style.fontWeight = "400";
     });//换中文
-    document.body.querySelectorAll(".Latin-BianZhu").forEach((e) => {
+    document.body.querySelectorAll(".sideNote > .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-sans)";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.1em";
@@ -198,12 +214,12 @@ changeMenuPosition();
 function chineseGridLine() {
     let YeMian = document.getElementById("whole");
     let size = window.innerWidth;
-    let ZiShu = Math.floor(size / 20)-1;
+    let ZiShu = Math.floor(size / 20) - 1;
     if (size < 680) {
         // let HangChang = ZiShu * 20;
         YeMian.style.width = ZiShu + "em";
-    }else{
-        YeMian.style.cssText =" ";
+    } else {
+        YeMian.style.cssText = " ";
     }
 }
 window.addEventListener("resize", chineseGridLine);

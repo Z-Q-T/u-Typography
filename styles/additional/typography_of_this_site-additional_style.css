@@ -14,7 +14,7 @@
 	height: 100%;
 	width: 79rem;
 	overflow: hidden;
-	letter-spacing: -1em;
+	letter-spacing: calc(-1em / 3);
 }
 .gridLine,
 .gridLine-Tri,
