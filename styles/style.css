@@ -168,7 +168,18 @@
 }
 
 /* —————————————————————————————— */
-
+@counter-style orderedList {
+    system: numeric;
+	symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
+	/* pad: 2 "0"; */
+    /* negative: <negative symbol> */
+    /* prefix: <prefix> */
+    suffix: ".  ";
+    /* range: <range> */
+	speak-as: numbers;
+    fallback: decimal;
+}
+/* —————————————————————————————— */
 :root {
 	--colour-paper: rgb(250, 249, 247);
 	--colour-changeType-unselected: rgb(70, 70, 70);
@@ -699,11 +710,11 @@ html {
 	font-weight: 400;
 	font-size: 1.1em;
 } */
-li {
+#time li {
 	list-style-type: none;
 	margin-bottom: 0.2em;
 }
-li::marker {
+#time li::marker {
 	content: "";
 	display: none !important;
 	/* visibility: hidden !important; */
@@ -849,7 +860,7 @@ p:first-child,
 h1 + p,
 h2 + p,
 h3 + p,
-.firstParagraph {
+.noIndentParagraph {
 	text-indent: 0 !important;
 }
 .sideNote {
@@ -979,7 +990,54 @@ p {
 	/* text-justify: inter-character; */
 	/* 中文齐行往字间插入间距 */
 }
+/* ol li {
+	list-style-type: decimal;
+	margin-bottom: 0;
+	margin-left: 3em;
+	text-indent: 0;
+} */
+ol {
+	list-style: orderedList;
 
+	/* counter-reset: listCount; */
+}
+/* ol li::marker {
+	content: "．";
+	font-family: var(--font-hei-biaodian);
+	list-style-position: outside;
+	line-height: 0.1em;
+} */
+ol li {
+	margin-left: 3rem;
+}
+/* ol li::before {
+	counter-increment: listCount;
+	content: counter(listCount) "　";
+	position: absolute;
+	right: 33rem;
+	font-family: "SANS", "Source Sans Pro", var(--font-hei);
+	text-align: right;
+	line-height: 1.75rem;
+	margin-top: -0.1em;
+	font-size: 1.1em;
+} */
+/* ol li::before {
+	counter-increment: listCount;
+	content: counter(listCount);
+	position: absolute;
+	right: 34rem;
+	font-family: var(--font-sans);
+	text-align: right;
+	line-height: 2rem;
+	font-size: 1.1rem;
+	margin-top: -0.1rem;
+	display: none;
+} */
+ol li::marker {
+	font-family: var(--font-sans);
+	list-style-position: outside;
+	font-size: 1.1em;
+}
 /* blockquote {
 	font-family: "Alegreya";
 	font-family: "LXGW WenKai";
@@ -1096,7 +1154,7 @@ em {
 }
 
 /* 拉丁文本 */
-.Latin{
+.Latin {
 	hyphens: auto;
 	line-height: 1em;
 }
@@ -1123,7 +1181,7 @@ em {
 	line-height: 1em;
 } */
 /* text-justify: inter-word; */
-	/* 西文齐行往词间插入间距 */
+/* 西文齐行往词间插入间距 */
 
 .sideNoteMark {
 	font-family: var(--font-hei-biaodian) !important;
