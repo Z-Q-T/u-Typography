@@ -169,15 +169,15 @@
 
 /* —————————————————————————————— */
 @counter-style orderedList {
-    system: numeric;
+	system: numeric;
 	symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
 	/* pad: 2 "0"; */
-    /* negative: <negative symbol> */
-    /* prefix: <prefix> */
-    suffix: ".  ";
-    /* range: <range> */
+	/* negative: <negative symbol> */
+	/* prefix: <prefix> */
+	suffix: ".  ";
+	/* range: <range> */
 	speak-as: numbers;
-    fallback: decimal;
+	fallback: decimal;
 }
 /* —————————————————————————————— */
 :root {
@@ -821,14 +821,20 @@ html {
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
 }
-#tableOfContent li:hover,
-#toc-backToMainTitle:hover {
+#tableOfContent li a:hover,
+#toc-backToMainTitle a:hover {
 	color: var(--colour-1);
 	transition-property: color;
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
 	cursor: pointer;
 }
+#tableOfContent li a{
+	line-height: 2em;
+	height: fit-content;
+	display: block;
+}
+
 a {
 	color: inherit;
 }
@@ -838,7 +844,10 @@ a:visited {
 .tocH3 {
 	font-size: 0.8rem !important;
 	line-height: 1.2rem !important;
+	margin: 1.1rem auto 1.2rem !important;
 }
+
+
 #mainContent {
 	padding: 2rem 0;
 	display: block;
@@ -1048,18 +1057,27 @@ pre {
 	line-height: 1rem;
 	hyphens: none;
 	text-align: left;
-	margin: 2rem 3rem;
-	padding: 0rem 0rem 1rem;
+	margin: 1rem 2rem;
+	padding: 1rem;
 	background-color: var(--colour-paper);
+	/* border-left: 0.1rem solid var(--colour-4); */
 	/* box-shadow: 0 0 10px var(--colour-shadow); */
 	/* text-indent: 3rem; */
 	tab-size: 3rem;
 	/* white-space: pre-wrap; */
-	overflow-x: scroll;
+	overflow-x: auto;
+}
+pre code {
+	background-color: transparent;
+	margin: auto;
+	padding: auto;
 }
 code {
 	font-family: var(--font-code);
 	font-size: 1em;
+	background-color: rgb(231, 232, 247);
+	margin: 0 0.25em;
+	padding: 0 0.25em;
 }
 kbd {
 	font-family: var(--font-code);
@@ -1183,6 +1201,7 @@ em {
 /* text-justify: inter-word; */
 /* 西文齐行往词间插入间距 */
 
+/* 边注 */
 .sideNoteMark {
 	font-family: var(--font-hei-biaodian) !important;
 	font-weight: 400 !important;
@@ -1198,6 +1217,18 @@ em {
 	font-weight: 400 !important;
 	line-height: 0.1em;
 	color: var(--colour-sidenote-mark);
+}
+
+/* 脚注编号 */
+.md-footnote {
+	color: var(--colour-1);
+	font-family: var(--font-sans) !important;
+	font-weight: 600 !important;
+	font-size: 0.9em;
+	font-style: italic;
+}
+.bd-end + .md-footnote{
+	margin-left: -0.5em;
 }
 /* 中西文之间插入四分空 */
 h-hws::before,
