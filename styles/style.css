@@ -195,6 +195,8 @@
 	--colour-changeType-button-active: rgb(237, 230, 215);
 	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
+	--colour-footnote-mark:rgb(177, 132, 69);
+	--colour-code:rgb(222, 233, 243);
 	--colour-shadow: rgb(216, 208, 197);
 	--colour-line-dark: #747474;
 	--colour-dark-text: rgb(46, 46, 46);
@@ -219,6 +221,7 @@ html {
 	background-color: var(--colour-paper);
 	/* -webkit-text-size-adjust: none; */
 	font-synthesis: none;
+	scroll-behavior: smooth;
 	/* vertical-align: bottom; */
 }
 
@@ -779,10 +782,10 @@ html {
 	display: block;
 	position: absolute;
 	width: 18rem;
-	top: 125px;
+	top: 128px;
 	left: 0;
-	color: var(--colour-dark-text);
-	opacity: 0.1;
+	color: var(--colour-1);
+	opacity: 0.2;
 	transition-property: opacity;
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
@@ -791,7 +794,7 @@ html {
 }
 #tableOfContent:hover {
 	opacity: 1;
-	/* color: var(--colour-1); */
+	color: var(--colour-dark-text);
 	transition-property: opacity;
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
@@ -805,14 +808,14 @@ html {
 	line-height: 1rem !important;
 	display: block;
 	position: absolute;
-	top: -20px;
+	top: -30px;
 	margin: 0 auto;
 	width: 80px;
 	left: calc(50% - 40px);
 }
 #tableOfContent li {
 	display: block;
-	margin: 1rem auto;
+	margin: 0.6rem auto;
 	font-family: var(--font-song);
 	font-weight: 700;
 	font-size: 1rem;
@@ -844,7 +847,7 @@ a:visited {
 .tocH3 {
 	font-size: 0.8rem !important;
 	line-height: 1.2rem !important;
-	margin: 1.1rem auto 1.2rem !important;
+	margin: 0.7rem auto 0.8rem !important;
 }
 
 
@@ -1071,13 +1074,15 @@ pre code {
 	background-color: transparent;
 	margin: auto;
 	padding: auto;
+	line-height: inherit;
 }
 code {
 	font-family: var(--font-code);
 	font-size: 1em;
-	background-color: rgb(231, 232, 247);
+	background-color: var(--colour-code);
 	margin: 0 0.25em;
 	padding: 0 0.25em;
+	line-height: 0.1rem;
 }
 kbd {
 	font-family: var(--font-code);
@@ -1221,9 +1226,9 @@ em {
 
 /* 脚注编号 */
 .md-footnote {
-	color: var(--colour-1);
-	font-family: var(--font-sans) !important;
-	font-weight: 600 !important;
+font-family: var(--font-serif) !important;
+	color: var(--colour-footnote-mark);
+	/* font-weight: 600 !important; */
 	font-size: 0.9em;
 	font-style: italic;
 }
