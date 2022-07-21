@@ -175,6 +175,7 @@
 	/* negative: <negative symbol> */
 	/* prefix: <prefix> */
 	suffix: ".  ";
+	/* suffix: " "; */
 	/* range: <range> */
 	speak-as: numbers;
 	fallback: decimal;
@@ -196,7 +197,7 @@
 	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
 	--colour-footnote-mark: rgb(177, 132, 69);
-	--colour-code: rgb(247, 230, 230);
+	--colour-code: rgb(245, 233, 231);
 	--colour-shadow: rgb(216, 208, 197);
 	--colour-line-dark: #747474;
 	--colour-dark-text: rgb(46, 46, 46);
@@ -1046,6 +1047,7 @@ ol li::marker {
 	font-family: var(--font-sans);
 	list-style-position: outside;
 	font-size: 1.1em;
+	font-weight: 400;
 }
 /* blockquote {
 	font-family: "Alegreya";
