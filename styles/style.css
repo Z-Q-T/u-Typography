@@ -195,8 +195,8 @@
 	--colour-changeType-button-active: rgb(237, 230, 215);
 	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
-	--colour-footnote-mark:rgb(177, 132, 69);
-	--colour-code:rgb(222, 233, 243);
+	--colour-footnote-mark: rgb(177, 132, 69);
+	--colour-code: rgb(247, 230, 230);
 	--colour-shadow: rgb(216, 208, 197);
 	--colour-line-dark: #747474;
 	--colour-dark-text: rgb(46, 46, 46);
@@ -815,24 +815,24 @@ html {
 }
 #tableOfContent li {
 	display: block;
-	margin: 0.6rem auto;
+	margin: 0.75rem auto 0.2rem;
 	font-family: var(--font-song);
 	font-weight: 700;
 	font-size: 1rem;
 	line-height: 1.5rem;
 	transition-property: color;
 	transition-timing-function: ease-in-out;
-	transition-duration: 100ms;
+	transition-duration: 200ms;
 }
 #tableOfContent li a:hover,
 #toc-backToMainTitle a:hover {
 	color: var(--colour-1);
 	transition-property: color;
 	transition-timing-function: ease-in-out;
-	transition-duration: 100ms;
+	transition-duration: 200ms;
 	cursor: pointer;
 }
-#tableOfContent li a{
+#tableOfContent li a {
 	line-height: 2em;
 	height: fit-content;
 	display: block;
@@ -847,9 +847,9 @@ a:visited {
 .tocH3 {
 	font-size: 0.8rem !important;
 	line-height: 1.2rem !important;
-	margin: 0.7rem auto 0.8rem !important;
+	margin: 0rem auto !important;
+	padding-bottom: 0.3rem;
 }
-
 
 #mainContent {
 	padding: 2rem 0;
@@ -954,24 +954,21 @@ h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-weight: 600;
 } */
 
-.titleLine {
-	/* display: block; */
-	display: inline;
+h1 {
+	display: inline-block;
 	font-family: var(--font-song);
 	font-weight: 700;
 	font-size: 3rem;
-	/* vertical-align: sub; */
 	line-height: 4rem;
-	position: relative;
-	top: -10px;
-	/* box-shadow: inset 0em -0.15em var(--colour-button); */
+	/* position: relative; */
+	/* top: -10px; */
 	height: 3rem;
 	width: fit-content;
+	height: fit-content;
 	margin-bottom: 1rem;
-	/* text-decoration-line: underline;
-	text-decoration-color: var(--colour-iden);
-	text-decoration-style: solid; */
-	/* margin-top: 8rem; */
+}
+.optionalTitleBreak {
+	display: none;
 }
 /* h1{
 	width: fit-content;
@@ -1226,13 +1223,13 @@ em {
 
 /* 脚注编号 */
 .md-footnote {
-font-family: var(--font-serif) !important;
+	font-family: var(--font-serif) !important;
 	color: var(--colour-footnote-mark);
 	/* font-weight: 600 !important; */
 	font-size: 0.9em;
 	font-style: italic;
 }
-.bd-end + .md-footnote{
+.bd-end + .md-footnote {
 	margin-left: -0.5em;
 }
 /* 中西文之间插入四分空 */
@@ -1307,7 +1304,7 @@ h-hws[hidden] {
 		width: 78rem;
 		left: 7rem;
 	}
-	.titleLine {
+	h1 {
 		font-size: 3rem;
 		line-height: 4rem;
 	}
@@ -1364,7 +1361,7 @@ h-hws[hidden] {
 	#title {
 		width: 30rem;
 	}
-	.titleLine {
+	h1 {
 		font-size: 2.5rem;
 		line-height: 3.3rem;
 		margin-bottom: 0.8rem;
@@ -1444,11 +1441,15 @@ h-hws[hidden] {
 		width: 27rem;
 		text-align: center;
 	}
-	.titleLine {
+	h1 {
+		margin: 0 auto;
 		font-size: 2.25rem;
 		line-height: 3rem;
 		margin-bottom: 0.75rem;
 		height: 2.25rem;
+	}
+	#layout3-Title-Break {
+		display: initial;
 	}
 	#caption {
 		display: block;
@@ -1602,7 +1603,7 @@ h-hws[hidden] {
 		padding-top: 2rem;
 		text-align: center;
 	}
-	.titleLine {
+	h1 {
 		font-size: 2.25rem;
 		line-height: 3rem;
 		margin-bottom: 0.75rem;
@@ -1764,7 +1765,7 @@ h-hws[hidden] {
 		padding-top: 2rem;
 		text-align: center;
 	}
-	.titleLine {
+	h1 {
 		font-size: 2rem;
 		line-height: 3rem;
 		margin-bottom: 0.75rem;
