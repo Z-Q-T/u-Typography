@@ -265,7 +265,6 @@ html {
 	height: 60px;
 	top: 0px;
 	left: 0px;
-
 }
 
 #backArrow,
@@ -311,7 +310,6 @@ html {
 	#backArrow {
 		display: none;
 	}
-
 }
 
 #logotype {
@@ -619,7 +617,6 @@ html {
 	text-align: left;
 }
 
-
 #toc-PlaceHolder {
 	height: 300px;
 	width: 18rem;
@@ -744,7 +741,7 @@ h3 + p,
 	color: var(--colour-dark-text);
 	/* white-space: break-spaces; */
 }
-.sideNote::before{
+.sideNote::before {
 	content: "\FEFF";
 	/* 零宽不断行空格 */
 }
@@ -753,7 +750,6 @@ h3 + p,
 	white-space: break-spaces;
 	tab-size: 3rem;
 }
-
 
 /* 标题标点符号用思源宋体 */
 h1 h-char.biaodian > h-inner,
@@ -809,7 +805,8 @@ h2 {
 	font-size: 1.5rem;
 	line-height: 2.5rem;
 	text-align: center;
-	margin: 5rem auto 3rem auto;
+	margin: 2rem auto 3rem auto;
+	padding: 4rem 0 0;
 }
 h3 {
 	font-family: var(--font-song);
@@ -817,7 +814,11 @@ h3 {
 	font-size: 1.2rem;
 	line-height: 2rem;
 	text-align: center;
-	margin: 4rem auto 2rem auto;
+	margin: 1rem auto 2rem auto;
+	padding: 3rem 0 0;
+}
+h2 + h3 {
+	margin-top: -3rem !important;
 }
 p {
 	/* font-family: var(--font-ZhengWen-HEI); */
@@ -902,7 +903,6 @@ article a:active {
 	color: var(--colour-2);
 	border-bottom: 2px solid var(--colour-3);
 	transition: all 100ms ease-in-out;
-	
 }
 .externalLink::after {
 	content: "⤴";
@@ -1024,23 +1024,23 @@ em {
 }
 
 /* 脚注编号 */
-.md-footnote{
+.md-footnote {
 	font-family: var(--font-serif) !important;
 	/* font-weight: 600 !important; */
 	font-size: 0.9em;
 	font-style: italic;
 }
-.md-footnote a{
+.md-footnote a {
 	color: var(--colour-footnote-mark);
 	font-size: inherit;
 	border: 0;
 }
-.md-footnote a:hover{
+.md-footnote a:hover {
 	color: var(--colour-1);
 	font-size: inherit;
 	border: 0;
 }
-.md-footnote a:active{
+.md-footnote a:active {
 	color: var(--colour-2);
 	font-size: inherit;
 	border: 0;
@@ -1088,7 +1088,6 @@ h-char.bd-consecutive[unicode="b7"]:not(.end-portion),
 h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	letter-spacing: 0;
 }
-
 
 /* ————————————响应式设计———————————— */
 /* 留20px的滚动条的空间 */
@@ -1560,7 +1559,6 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		font-family: var(--font-code);
 		font-size: 1.11em;
 		line-height: 0.1em;
-
 	}
 
 	.sideNoteMark {
