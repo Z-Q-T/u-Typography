@@ -904,7 +904,16 @@ article a:active {
 	transition: all 100ms ease-in-out;
 	
 }
-img {
+.externalLink::after {
+	content: "⤴";
+	font-family: var(--font-hei);
+	font-weight: 400;
+	font-size: 0.66em;
+	line-height: 0.01em;
+	vertical-align: 0.5em;
+	color: #00000060;
+}
+article img {
 	display: block;
 	margin: 1rem auto;
 	width: 100%;
