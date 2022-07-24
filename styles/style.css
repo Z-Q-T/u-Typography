@@ -654,18 +654,24 @@ html {
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
 }
-#toc-backToMainTitle {
+#toc-backToMainTitle,
+#toc-skipToFootnote {
 	transform: scaleX(2.5);
 	font-family: var(--font-song-biaodian) !important;
 	font-weight: 600 !important;
-	font-size: 0.6rem !important;
+	font-size: 0.5rem !important;
 	line-height: 1rem !important;
 	display: block;
 	position: absolute;
-	top: -30px;
+	top: -40px;
 	margin: 0 auto;
 	width: 80px;
 	left: calc(50% - 40px);
+}
+#toc-skipToFootnote {
+	position: relative;
+	top: 30px;
+left: auto;
 }
 #tableOfContent li {
 	display: block;
@@ -679,7 +685,8 @@ html {
 	transition-duration: 200ms;
 }
 #tableOfContent li a:hover,
-#toc-backToMainTitle a:hover {
+#toc-backToMainTitle a:hover,
+#toc-skipToFootnote a:hover {
 	color: var(--colour-1);
 	transition-property: color;
 	transition-timing-function: ease-in-out;
@@ -953,7 +960,7 @@ hr {
 	background-color: #747474;
 	margin: 10rem auto 4rem;
 }
-.footnoteEntry{
+.footnoteEntry {
 	margin: 0.75rem auto;
 }
 #footnotesArea p {
