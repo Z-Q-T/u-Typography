@@ -724,6 +724,9 @@ p:first-child,
 h1 + p,
 h2 + p,
 h3 + p,
+h4 + p,
+h5 + p,
+h6 + p,
 .noIndentParagraph {
 	text-indent: 0 !important;
 }
@@ -883,7 +886,7 @@ article a {
 	/* height: fit-content; */
 	text-decoration: none;
 	color: black;
-	padding: 4px 0;
+	padding: 0.2em 0;
 	border-bottom: 2px solid var(--colour-1);
 	/* background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
 		no-repeat;
@@ -918,6 +921,64 @@ article img {
 	margin: 1rem auto;
 	width: 100%;
 }
+/* 脚注编号 */
+.md-footnote,
+.footnoteNumber {
+	font-family: var(--font-serif) !important;
+	font-size: 0.9em;
+	font-style: italic;
+	padding-top: 4rem;
+}
+.md-footnote a {
+	color: var(--colour-footnote-mark);
+	font-size: inherit;
+	border: 0;
+}
+.md-footnote a:hover {
+	color: var(--colour-1);
+	font-size: inherit;
+	border: 0;
+}
+.md-footnote a:active {
+	color: var(--colour-2);
+	font-size: inherit;
+	border: 0;
+}
+.bd-end + .md-footnote {
+	margin-left: -0.5em;
+}
+
+hr {
+	height: 1px;
+	background-color: #747474;
+	margin: 10rem auto 4rem;
+}
+.footnoteEntry{
+	margin: 0.75rem auto;
+}
+#footnotesArea p {
+	font-size: 0.75rem;
+	line-height: 1.5rem;
+	margin-left: 3rem;
+	/* text-indent: 0rem !important; */
+}
+.footnoteNumber {
+	position: absolute;
+	left: 0rem;
+	font-size: 0.9rem !important;
+	line-height: 1.2rem;
+	font-weight: 600 !important;
+	transform: translateY(-4rem);
+}
+
+.reversefootnote {
+	font-family: var(--font-hei-biaodian);
+	line-height: 0.1em;
+	padding: 0;
+	border: 0;
+	color: var(--colour-footnote-mark) !important;
+}
+
 /* 间隔号· */
 .JianGeHao {
 	font-family: var(--font-hei-biaodian) !important;
@@ -1023,31 +1084,6 @@ em {
 	color: var(--colour-sidenote-mark);
 }
 
-/* 脚注编号 */
-.md-footnote {
-	font-family: var(--font-serif) !important;
-	/* font-weight: 600 !important; */
-	font-size: 0.9em;
-	font-style: italic;
-}
-.md-footnote a {
-	color: var(--colour-footnote-mark);
-	font-size: inherit;
-	border: 0;
-}
-.md-footnote a:hover {
-	color: var(--colour-1);
-	font-size: inherit;
-	border: 0;
-}
-.md-footnote a:active {
-	color: var(--colour-2);
-	font-size: inherit;
-	border: 0;
-}
-.bd-end + .md-footnote {
-	margin-left: -0.5em;
-}
 /* 中西文之间插入四分空 */
 h-hws::before,
 h-hws[hidden]::before {
