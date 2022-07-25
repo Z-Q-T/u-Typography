@@ -53,6 +53,7 @@
 	background-color: var(--colour-grid-Centre);
 	display: none;
 }
+#resize,
 #resize-1,
 #resize-2,
 #resize-3 {
@@ -77,7 +78,7 @@
 	max-width: 32rem;
 }
 #ZuoYouShuangQi-O {
-	color: var(--colour-1);
+	color: rgb(170, 78, 78)
 }
 #ZuoQi {
 	text-align: left;

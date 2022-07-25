@@ -32,7 +32,7 @@ window.addEventListener("resize", gridLineDisplay);
 gridLineDisplay();
 
 let ShuangQi_DuanLuo = document.getElementById("ZuoYouShuangQi-O");
-let resizeFrame = document.getElementById("resize-2");
+let resizeFrame = document.getElementById("resize");
 let page=document.getElementById("page");
 function ZuoYouShuangQi() {
     let size = resizeFrame.style.width;

@@ -10,7 +10,7 @@ function changeTypeMenu_initialActive() {
         e.style.fontWeight = "600";
         e.style.fontSize = "1.05em";
     });
-    document.body.querySelectorAll("p > .Latin").forEach((e) => {
+    document.body.querySelectorAll("p > .Latin, p > a .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-sans)";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.1em";
@@ -54,7 +54,7 @@ document.getElementById('changeTypeMenu-BiaoTi-SONG').onclick = function changef
 }
 // 标题换黑体
 document.getElementById('changeTypeMenu-BiaoTi-HEI').onclick = function changefont_BiaoTi_HEI() {
-    document.body.querySelectorAll(".titleLine,h2,h3,#tableOfContent li").forEach((e) => {
+    document.body.querySelectorAll("h1,h2,h3,#tableOfContent li").forEach((e) => {
         e.style.fontFamily = "var(--font-hei)";
         e.style.fontWeight = "700";
     });//换中文
@@ -77,7 +77,7 @@ document.getElementById('changeTypeMenu-ZhengWen-SONG').onclick = function chang
         e.style.fontFamily = "var(--font-song)";
         e.style.fontWeight = "600";
     });//换中文
-    document.body.querySelectorAll("p > .Latin").forEach((e) => {
+    document.body.querySelectorAll("p > .Latin, p > a .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-serif)";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.05em";
@@ -95,7 +95,7 @@ document.getElementById('changeTypeMenu-ZhengWen-HEI').onclick = function change
         e.style.fontFamily = "var(--font-hei)";
         e.style.fontWeight = "400";
     });//换中文
-    document.body.querySelectorAll("p > .Latin").forEach((e) => {
+    document.body.querySelectorAll("p > .Latin, p > a .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-sans)";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.1em";
@@ -163,11 +163,11 @@ button.onclick = function () {
         if (menuVisibility == "hidden") {
             menu.style.visibility = "visible";
             menu.style.opacity = "1";
-            menu.style.bottom = "100px";
+            menu.style.left = "70px";
         } else {
             menu.style.visibility = "hidden";
             menu.style.opacity = "0";
-            menu.style.bottom = "90px";
+            menu.style.left = "60px";
         }
     }
 }
@@ -185,9 +185,9 @@ function changeMenuPosition() {
             menu.style.left = "auto";
             menu.style.right = "15px";
         } else {
-            menu.style.bottom = "90px";
+            menu.style.bottom = "10px";
             menu.style.top = "auto";
-            menu.style.left = "10px";
+            menu.style.left = "60px";
             menu.style.right = "auto";
         }
     } else {
@@ -197,9 +197,9 @@ function changeMenuPosition() {
             menu.style.left = "auto";
             menu.style.right = "15px";
         } else {
-            menu.style.bottom = "100px";
+            menu.style.bottom = "10px";
             menu.style.top = "auto";
-            menu.style.left = "10px";
+            menu.style.left = "70px";
             menu.style.right = "auto";
         }
     }

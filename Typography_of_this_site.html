@@ -59,21 +59,33 @@
             <!-- <div id="changeTypeMenu-Hint"><span id="changeTypeMenu-Hint-Title">〖更换字体〗</span><br>该功能在一些情况下会额外下载所需的字体<br>这可能消耗更多的流量</div> -->
 
             <menu id="changeTypeMenu" style="visibility: hidden; opacity: 0; ">
-                <div class="changeTypeMenu-Section">标题
-                    <a id="changeTypeMenu-BiaoTi-SONG">
-                        宋
-                    </a>
-                    <a id="changeTypeMenu-BiaoTi-HEI">黑
-                    </a>
+                <!-- <div id="changeTypeMenu-Margin"> -->
+                <div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">标题</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-BiaoTi-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-BiaoTi-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">正文</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-ZhengWen-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-ZhengWen-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">边注</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-BianZhu-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-BianZhu-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="changeTypeMenu-Seperator"></div>
-                <div class="changeTypeMenu-Section">正文<a id="changeTypeMenu-ZhengWen-SONG">宋</a>
-                    <a id="changeTypeMenu-ZhengWen-HEI">黑</a>
-                </div>
-                <div class="changeTypeMenu-Seperator"></div>
-                <div class="changeTypeMenu-Section">边注<a id="changeTypeMenu-BianZhu-SONG">宋</a>
-                    <a id="changeTypeMenu-BianZhu-HEI">黑</a>
-                </div>
+                <!-- </div> -->
             </menu>
             <!-- <img id="changeTypeMenu" src="images/三点-竖.svg" alt="更换字体｜change typeface"> -->
             <div id="pageTypography-Button">||||
@@ -249,14 +261,14 @@
                     <h3 id='计算机环境下中文排版的大麻烦'>计算机环境下中文排版的大麻烦</h3>
                     <p>在计算机上排中文有时会遇到一些麻烦。假设段落宽度和字号大小都是固定的，那处理起来便非常容易；但是，假如段落的宽度会随着窗口宽度的变化而改变（这是这个网站的“微”型布局采用的方式），或者在窗口宽度不变的情况下可以自行设定字号大小（这是手机、电纸书等小尺寸设备上常见的排版功能），就可能会遇到一些问题。</p>
                     <p>下面的交互式图示中有三个段落，第一个段落采用当今的计算机软件上常见的排版方式，并且段落左右双齐；第二个段落是理想的中文排版方式，并且段落左右双齐；第三个段落不做特别处理，并且只采用左对齐。慢慢拖动右下方的手柄，改变该区域的宽度，仔细观察在宽度改变时，三个段落的字间距会有怎样的变化。（一些使用触摸屏的设备上可能无法正常使用该交互功能，可直接看下方的图示）</p>
-                    <div id="resize-2">
+                    <div id="resize">
                         <p id="ZuoYouShuangQi-X">像这样的奇书，不应该一口气就把它念完，要留着细细儿地咀嚼才好。一下子就念完了之后，我的热望也就不得不消灭，那时候我就没有好望，没有梦想了，怎么使得呢？</p>
                         <p id="ZuoYouShuangQi-O">像这样的奇书，不应该一口气就把它念完，要留着细细儿地咀嚼才好。一下子就念完了之后，我的热望也就不得不消灭，那时候我就没有好望，没有梦想了，怎么使得呢？</p>
                         <p id="ZuoQi">像这样的奇书，不应该一口气就把它念完，要留着细细儿地咀嚼才好。一下子就念完了之后，我的热望也就不得不消灭，那时候我就没有好望，没有梦想了，怎么使得呢？</p>
                     </div>
                     <p>你可能会发现，随着白色区域宽度的变化，第一个段落的宽度一直在实时改变，第二、三个段落则要每隔一段距离段落宽度才会突然改变。但是，第一个段落的宽度在实时变化时，它除了最后一行之外的每一行的字间距也在不断发生变化，这导致了该段落内部的最后一行和其他行之间的字间距不均匀，在段落宽度较小时这一现象尤为明显。第二、三个段落的字间距则始终保持稳定。</p>
                     <p>〔图〕</p>
-                    <p>为了正文阅读的排版，字间距是相当重要的。随意改变字间距是致命的，西方字体排印界有句谚语：“拉开小写字母字间距的人会╳羊。”<sup class='md-footnote' id='ref-footnote-1'><a href='#dfref-footnote-1'>1</a></sup>中文没有这样的说法，但仍不应过分拉大或缩小字间距，而一个段落内部或段落之间的字间距不一致更是大罪过<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@&#9;</span>有些情况下，比如为了标点避头尾，中西混排等，字间距可以稍稍不一致，但这里显然并非这种情况。</span>，这让版面灰度变得参差，阅读节奏变得混乱，无论是看起来还是读起来都不舒服。〔图〕</p>
+                    <p>为了正文阅读的排版，字间距是相当重要的。随意改变字间距是致命的，西方字体排印界有句谚语：“拉开小写字母字间距的人会╳羊。”<sup class='footnoteMark' id='ref-footnote-1'><a href='#dfref-footnote-1'>1</a></sup>中文没有这样的说法，但仍不应过分拉大或缩小字间距，而一个段落内部或段落之间的字间距不一致更是大罪过<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@&#9;</span>有些情况下，比如为了标点避头尾，中西混排等，字间距可以稍稍不一致，但这里显然并非这种情况。</span>，这让版面灰度变得参差，阅读节奏变得混乱，无论是看起来还是读起来都不舒服。〔图〕</p>
                     <p>上面的图示中的第一个段落正是犯了这个毛病；第二个段落的排版是恰当的；第三个段落的排版也正常，只是中文的正文排版通常都是左右双齐，单纯左对齐的情况较为少见。</p>
                     <p>之所以会出现第一个段落的问题，是因为在排版时段落的宽度没有始终等于单个字的宽度的整数倍，也就是没有处理好上面提到的汉字自身的网格特性。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@&#9;</span>一般来说，出现这样的问题可能是在设定版式时，让段落的宽度等于页面宽度的某个固定的比例，或者是从页面上减去固定的边距后，在剩下的区域内填充段落。这些做法在当前的计算机软件上实现起来是较为容易的，然而这是个陷阱。</span>计算机软件的排版功能大多为西文排版而设计，一些看起来理所当然的操作，虽然对于西文是合适的，但若直接套用在中文身上，可能就会出问题。</p>
                     <p>遗憾的是，在网页上用原生的<span class="Latin">HTML</span>和<span class="Latin">CSS</span>无法实现第二个段落的效果，在大部分平面设计软件中要实现这样的效果也稍有麻烦，<em>这是计算机时代中文排版的一大挑战</em>。在这个网站上，为了实现这样的效果，用到了一些<span class="Latin">JavaScript</span>，核心代码如下：</p>
@@ -283,7 +295,7 @@ window.addEventListener(&quot;resize&quot;, chineseGrid);
                     <h3 id='间距'>间距</h3>
                     <p>传统的书面中文不使用标点符号。现今中文里使用的大多数标点符号都是近代从外国引进的。这些舶来品如何与汉字搭配就成了大问题。历史上，汉语文本里的标点符号的排版方法多有演变，如今较为常见的做法是将每个标点放在一个和汉字字框等大的方格中，与汉字一同顺序排列，并且标点与标点之间以及标点与汉字之间的空白可以灵活调整，以获得较好的排版效果。</p>
                     <p>但是，这一做法在计算机时代再次受到了挑战。诞生于西方的电脑未曾考虑过汉字，曾经我们花费了巨大的精力来让计算机能够储存、处理、显示汉字，在这一方面我们成功了；但若论及在计算机上实现高质量的中文排字，目前尚未完全实现。严谨、精确的计算机强制让每个标点都落在一个完美的正方形字框中，容不得一点变通，即便是前后两个标点间出现了巨大的空白，也视若无睹，因为这并不违反计算机的“规矩”。然而，假如我们看一看铅活字时代的中文排版，会发现能灵活调整的空白才是标点排版的常态，这才是中文版面的本来面目。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@&#9;</span>这么说可能会有较大争议。从近代以来，中文版面的构成方式一直在不断发生变化，究竟何种状态能被称为“常规”恐怕难以判定。直到今天，在我国的香港、澳门、台湾地区，中文版面的构成仍与内地<span class="FenGeHao">／</span>大陆稍有差异（并不是简繁体的问题）。</span>铅活字时代能做到的事，计算机时代反而做不到了。<em>达成良好的标点间距是计算机时代中文排版的又一大挑战</em>。</p>
-                    <p>为了解决这一问题，这里用到了由陈奕钧（陳奕鈞）开发的“汉字标准格式”（<a class="externalLink" target="_blank" href='https://hanzi.pro/manual/'>漢字標準格式</a>）网页框架<sup class='md-footnote' id='ref-footnote-2'><a href='#dfref-footnote-2'>2</a></sup>，并进行了少量个性化的修改。该框架包含诸多功能，这里主要使用的是其中的标点间距调整（也称“标点挤压”）和中西文间距调整两个模块。借此，基本实现了在网页媒介上达成较好的标点和字符间距。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@&#9;</span>但仍未达到理想状态，比如一些可以通过进一步压缩标点间距，以便在行末多容纳一个字，来实现标点避头尾，达到段落左右对齐的情况，由于无法实现“进一步压缩标点间距”这一操作，导致只能将行末字符换至下一行来实现标点避头尾，本行的字间距则被迫拉开。这里不再详述。</span></p>
+                    <p>为了解决这一问题，这里用到了由陈奕钧（陳奕鈞）开发的“汉字标准格式”（<a class="externalLink" target="_blank" href='https://hanzi.pro/manual/'>漢字標準格式</a>）网页框架<sup class='footnoteMark' id='ref-footnote-2'><a href='#dfref-footnote-2'>2</a></sup>，并进行了少量个性化的修改。该框架包含诸多功能，这里主要使用的是其中的标点间距调整（也称“标点挤压”）和中西文间距调整两个模块。借此，基本实现了在网页媒介上达成较好的标点和字符间距。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@&#9;</span>但仍未达到理想状态，比如一些可以通过进一步压缩标点间距，以便在行末多容纳一个字，来实现标点避头尾，达到段落左右对齐的情况，由于无法实现“进一步压缩标点间距”这一操作，导致只能将行末字符换至下一行来实现标点避头尾，本行的字间距则被迫拉开。这里不再详述。</span></p>
                     <p>具体地，这里对标点间距的处理参照国家标准《标点符号用法》（<span class="Latin">GB/T 15834</span><span class="YiZiXian">—</span><span class="Latin">2011</span>），也就是：</p>
                     <ol start=''>
                         <li>
@@ -340,7 +352,7 @@ window.addEventListener(&quot;resize&quot;, chineseGrid);
                             <p>这么做是为了形式上的一致性。既然是夹杂在中文文本中的零碎的外文词语，那完全可以（也应该）按中文的排版方式来处理。比如中文里出现连续并列的英文词汇时，它们之间是使用顿号而不是按英文习惯使用逗号；中文里引用法文词句时，通常也是使用弯引号，而不是按法文习惯用角引号。给西文作品名加上书名号，既不会让信息传达出现偏差，也不会造成文本过于不美观（中文书名号直接来源于西文角引号，它与西文必然能和谐搭配，如果不美观那是字体设计的问题）。假如要求外文作品名按照该文字的排版习惯来处理的话，那日文书名是否也应该按照日文习惯使用『』来表示？阿拉伯文书名是否也应该按照阿拉伯文的习惯来表示？（我其实不知道阿拉伯文是如何表示书名的。）仅仅让英文书名按照源语言的排版习惯来处理，似乎是人为制造了双重标准。</p>
                         </li>
                         <li>
-                            <p>由于这个网站的每篇文章既有边注，又有尾注。在尾注使用数字编号的情况下，为了防止混淆，边注就不再使用数字，并且也没有使用西文传统上的“*””“†”“‡” “§”“¶”“‖”<sup class='md-footnote' id='ref-footnote-3'><a href='#dfref-footnote-3'>3</a></sup>，而是采用“＋”“✽”“＃”“※”“⊙”，五个用完后则使用“＋＋”“✽✽”“＃＃”<span class="ShengLyueHao">……</span>，以此类推。这么做没有什么特别的理由，只是为了增加一些个性。（在“微”型布局下，边注会转换为行内注，此时不再使用编号。）</p>
+                            <p>由于这个网站的每篇文章既有边注，又有尾注。在尾注使用数字编号的情况下，为了防止混淆，边注就不再使用数字，并且也没有使用西文传统上的“*””“†”“‡” “§”“¶”“‖”<sup class='footnoteMark' id='ref-footnote-3'><a href='#dfref-footnote-3'>3</a></sup>，而是采用“＋”“✽”“＃”“※”“⊙”，五个用完后则使用“＋＋”“✽✽”“＃＃”<span class="ShengLyueHao">……</span>，以此类推。这么做没有什么特别的理由，只是为了增加一些个性。（在“微”型布局下，边注会转换为行内注，此时不再使用编号。）</p>
                         </li>
                     </ol>
                     <hr>
@@ -348,12 +360,12 @@ window.addEventListener(&quot;resize&quot;, chineseGrid);
                         <h2 id='注释'>注　释</h2>
                         <div class="footnoteEntry">
                             <h6 id='dfref-footnote-1' class='footnoteNumber'>1</h6>
-                            <p><span class="Latin">1936</span>年，美国字体设计师弗雷德里克<span class="JianGeHao">·</span>高迪（<span class="Latin">Frederic Goudy</span>）在纽约获颁某一字体设计奖项。接过奖状后，他看了看说：“拉开哥特字母字间距的人会╳羊。（<span class="Latin">Men who would letterspace blackletter would sh*g sheep.</span>）”（欧美的奖状传统上使用哥特字母书写。）由于在现代的文字排印中很少使用哥特体字母，同时也由于“╳”字过于不雅，因而在流传的过程中，这句话变成了“拉开小写字母字间距的人会偷羊。（<span class="Latin">Anyone who would letterspace lower case would steal sheep.</span>）”详见<span class="Latin">Erik Spiekermann</span>著《<span class="Latin">Stop Stealing Sheep &amp; Find Out How Type Works</span>》（第三版，<span class="Latin">Adobe</span>出版社，<span class="Latin">2014</span>年，第<span class="Latin">7</span>页），以及网页“<a href='https://web.archive.org/web/20130809015004/http://www.typophile.com/node/13406'><span class="Latin">Famous Quotes from Type Designers</span></a>”（搜索“<span class="Latin">sheep</span>”）。</p>
-                            <p>欧洲中世纪的书写者为了塑造出独立、清晰的词像（<span class="Latin">word image</span>）而把字母写得非常紧凑：字母的笔画较粗、内白较小，字母间的空白较小。于是组成单词的各个字母看起来形成了紧密的整体，哥特体的词像因而得到强化。详见<span class="Latin">Gerrit Noordzij</span>著《<span class="Latin">The Stroke—Theory of Writing</span>》（<span class="Latin">Peter Enneson</span>译，<span class="Latin">Hyphen</span>出版社，<span class="Latin">2005</span>年，第<span class="Latin">5</span>章“<span class="Latin">The invention of the word</span>”和第<span class="Latin">6</span>章“<span class="Latin">The consolidation of the word</span>”）。倘若将哥特体的字母间距增大，则字母的内白和字母间的空白的节奏韵律会被破坏，词像消失，这在字体排印爱好者看来是大罪过。这就是高迪说出那句话的原因。而现今流行的人文主义小写字母虽然不像哥特体那样紧密浓烈，但对于清晰的词像的追求是一脉相承的。拉开小写字母的字间距，一样会导致词像被削弱。<a href='#ref-footnote-1' title='返回正文' class='reversefootnote'>⇧</a></p>
+                            <p><span class="Latin">1936</span>年，美国字体设计师弗雷德里克<span class="JianGeHao">·</span>高迪（<span class="Latin">Frederic Goudy</span>）在纽约获颁某一字体设计奖项。接过奖状后，他看了看说：“拉开哥特字母字间距的人会╳羊。（<span class="Latin">Men who would letterspace blackletter would sh*g sheep.</span>）”（欧美的奖状传统上使用哥特体书写。）由于在现代的文字排印中很少使用哥特体字母，同时也由于“╳”字过于不雅，因而在流传的过程中，这句话变成了“拉开小写字母字间距的人会偷羊。（<span class="Latin">Anyone who would letterspace lower case would steal sheep.</span>）”详见<span class="Latin">Erik Spiekermann</span>著《<span class="Latin">Stop Stealing Sheep &amp; Find Out How Type Works</span>》（第三版，<span class="Latin">Adobe</span>出版社，<span class="Latin">2014</span>年，第<span class="Latin">7</span>页），以及网页“<a class="externalLink" target="_blank" href='https://web.archive.org/web/20130809015004/http://www.typophile.com/node/13406'><span class="Latin">Famous Quotes from Type Designers</span></a>”（搜索“<span class="Latin">sheep</span>”）。</p>
+                            <p>欧洲中世纪的书写者为了塑造出独立、清晰的词像（<span class="Latin">word image</span>）而把字母写得非常紧凑：字母的笔画较粗、内白较小，字母间的空白较小。于是组成单词的各个字母看起来形成了紧密的整体，哥特体的词像因而得到强化。详见<span class="Latin">Gerrit Noordzij</span>著《<span class="Latin">The Stroke—Theory of Writing</span>》（<span class="Latin">Peter Enneson</span>译，<span class="Latin">Hyphen</span>出版社，<span class="Latin">2005</span>年，第<span class="Latin">5</span>章“<span class="Latin">The invention of the word</span>”和第<span class="Latin">6</span>章“<span class="Latin">The consolidation of the word</span>”）。倘若将哥特体的字母间距增大，则字母的内白和字母间的空白的节奏韵律会被破坏，词像消失，这在字体排印爱好者看来是大罪过。这就是高迪说出那句话的原因。而现今流行的基于人文主义小写体的字母虽然不像哥特体那样紧密浓烈，但对于清晰的词像的追求是一脉相承的。拉开小写字母的字间距，一样会导致词像被削弱。<a href='#ref-footnote-1' title='返回正文' class='reversefootnote'>⇧</a></p>
                         </div>
                         <div class="footnoteEntry">
                             <h6 id='dfref-footnote-2' class='footnoteNumber'>2</h6>
-                            <p>关于“汉字标准格式”网页框架，可参考下面这两篇文章的介绍：“<a href='https://www.thetype.com/2015/05/9230/trackback/'>用印刷品的态度来做<span class="Latin">Web</span>排版</a>”“<a href='https://zepplu.github.io/articles/hanzi-typography-jekyll/'>印刷品般的漢字排版框架<span class="Latin">inside Jekyll</span></a>”。类似的改善网页环境下的中文排版的增强功能还有“<a href='https://github.com/sivan/heti'>赫蹏</a>”。另外还有用于实现网页环境下中文标点间距调整的“<a href='https://blog.hiugiak.com/articles/implement-punctuation-compression-on-chinese-pages/'><span class="Latin">CJ Typographer</span></a>”，用于实现网页环境下中西文之间自动加间距的“<a href='https://github.com/ZeppLu/text-autospace.js'><span class="Latin">text-autospace.js</span></a>”等。<a name='dfref-footnote-2' href='#ref-footnote-2' title='返回正文' class='reversefootnote'>⇧</a></p>
+                            <p>关于“汉字标准格式”网页框架，可参考下面这两篇文章的介绍：“<a class="externalLink" target="_blank" href='https://www.thetype.com/2015/05/9230/trackback/'>用印刷品的态度来做<span class="Latin">Web</span>排版</a>”“<a class="externalLink" target="_blank" href='https://zepplu.github.io/articles/hanzi-typography-jekyll/'>印刷品般的漢字排版框架<span class="Latin">inside Jekyll</span></a>”。类似的改善网页环境下的中文排版的增强功能还有“<a class="externalLink" target="_blank" href='https://github.com/sivan/heti'>赫蹏</a>”。另外还有用于实现网页环境下中文标点间距调整的“<a class="externalLink" target="_blank" href='https://blog.hiugiak.com/articles/implement-punctuation-compression-on-chinese-pages/'><span class="Latin">CJ Typographer</span></a>”，用于实现网页环境下中西文之间自动加间距的“<a class="externalLink" target="_blank" href='https://github.com/ZeppLu/text-autospace.js'><span class="Latin">text-autospace.js</span></a>”等。<a name='dfref-footnote-2' href='#ref-footnote-2' title='返回正文' class='reversefootnote'>⇧</a></p>
                         </div>
                         <div class="footnoteEntry">
                             <h6 id='dfref-footnote-3' class='footnoteNumber'>3</h6>
