@@ -356,7 +356,7 @@ html {
 	width: 40px;
 	height: 40px;
 	position: fixed;
-	bottom: 10px;
+	bottom: 15px;
 	left: 10px;
 	cursor: pointer;
 	border-radius: 20px;
@@ -393,7 +393,6 @@ html {
 	background-color: black;
 	position: fixed;
 	border-radius: 20px;
-	/* padding-left: 6px; */
 	display: block;
 	/* left: 15px; */
 	/* bottom: 110px; */
@@ -405,7 +404,7 @@ html {
 	transition-duration: 100ms;
 	/* font-size: 0.6rem; */
 	text-align: center;
-	/* line-height: 0.75rem; */
+	line-height: 0;
 	box-shadow: 0px 0px 10px var(--colour-shadow);
 }
 /* #changeTypeMenu-Margin{
@@ -503,17 +502,59 @@ html {
 	line-height: 15px;
 	font-size: 15px;
 }
+@media screen and (max-width: 1040px) {
+	#changeTypeMenu {
+		height: 405px;
+		width: 40px;
+		padding-top: 15px;
+	}
+	.changeTypeMenu-Section {
+		display: block;
+		/* position: relative; */
+		top: 0px;
+		height: 110px;
+		width: 40px;
+	}
+	.changeTypeMenu-Seperator {
+		display: block;
+		height: 1px;
+		width: 20px;
+		margin: 10px auto;
+	}
+	.changeTypeMenu-Caption {
+		display: block;
+		/* position: relative; */
+		top: 15px;
+		/* height: 12px; */
+	}
+	.changeTypeMenu-Options {
+		display: block;
+		/* position: relative; */
+		top: 20px;
+		height: 60px;
+		width: 40px;
+		line-height: 0px;
+	}
+	#changeTypeMenu-BiaoTi-SONG,
+	#changeTypeMenu-BiaoTi-HEI,
+	#changeTypeMenu-ZhengWen-SONG,
+	#changeTypeMenu-ZhengWen-HEI,
+	#changeTypeMenu-BianZhu-SONG,
+	#changeTypeMenu-BianZhu-HEI {
+		display: block;
+		/* position: relative; */
+		/* height: 25px; */
+		/* width: 25px; */
+		margin: 5px auto;
+	}
+}
 
-/* .changeTypeMenu-Section a {
-	text-decoration: none;
-	color: black;
-} */
 
 #pageTypography-Button {
 	width: 30px;
 	height: 40px;
 	left: 15px;
-	bottom: 50px;
+	bottom: 60px;
 	padding: 11px 0;
 	/* border-radius: 20px; */
 	text-align: center;

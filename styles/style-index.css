@@ -147,11 +147,17 @@
 	font-style: italic;
 }
 
+/* ==特殊字体== */
+
+@font-face {
+	font-family: "TeShuBiaoDian";
+	src: url("../fonts/BiaoDianFuHao.ttf") format("woff2");
+}
+
 /* —————————————————————————————— */
 
 :root {
-	--colour-paper: rgb(251, 249, 247);
-	--colour-paper-transparent: rgba(251, 249, 247, 0);
+	--colour-paper: rgb(250, 249, 247);
 	--colour-changeType-unselected: rgb(70, 70, 70);
 	--colour-changeType-selected: rgb(190, 176, 156);
 	--colour-changeType-hover: rgb(123, 117, 106);
@@ -160,21 +166,23 @@
 	--colour-2: rgb(228, 216, 198);
 	--colour-3: rgb(239, 231, 216);
 	--colour-4: rgb(243, 237, 224);
-	--colour-bar-active: rgb(238, 232, 217);
+	--colour-bar-active: rgb(241, 234, 225);
 	--colour-changeType-button-hover: rgb(242, 237, 228);
 	--colour-changeType-button-active: rgb(237, 230, 215);
 	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
+	--colour-footnote-mark: rgb(177, 132, 69);
+	--colour-code: rgb(245, 233, 231);
 	--colour-shadow: rgb(216, 208, 197);
 	--colour-line-dark: #747474;
 	--colour-dark-text: rgb(46, 46, 46);
-	--font-hei: "HEI", "Noto Sans SC", sans-serif;
+	--font-hei: "TeShuBiaoDian", "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
-	--font-song: "SONG", "Noto Serif SC", serif;
+	--font-song: "TeShuBiaoDian", "SONG", "Noto Serif SC", serif;
 	--font-song-biaodian: "SONG-Biaodian", "Noto Serif SC";
 	--font-sans: "SANS", "Source Sans Pro", sans-serif;
 	--font-serif: "SERIF", "Source Serif Pro", serif;
-	--font-code: "CODE", "Source Code Pro", monospace;
+	--font-code: "CODE", "Source Code Pro", "HEI", "Noto Sans SC", monospace;
 }
 
 html {
@@ -312,16 +320,15 @@ html {
 	top: 60px;
 	transition: all 200ms ease-in-out;
 	transition-delay: 100ms;
-
 }
-#contentMenu:hover{
+#contentMenu:hover {
 	opacity: 1;
 	visibility: visible;
 	/* display: block; */
 	top: 60px;
 	/* transition: all 200ms ease-in-out; */
 }
-#contentMenu-Mask{
+#contentMenu-Mask {
 	position: absolute;
 	width: 10rem;
 	height: 60px;
@@ -361,7 +368,6 @@ html {
 	left: calc(50% - 190px);
 	background-color: var(--colour-paper);
 	z-index: 11;
-
 }
 #mask2 {
 	border-left: 1px solid var(--colour-line-dark);
@@ -432,12 +438,12 @@ html {
 	transition-duration: 300ms;
 } */
 #changeTypeMenu {
+	height: 405px;
 	width: 40px;
-	height: 407px;
+	padding-top: 15px;
 	background-color: black;
 	position: fixed;
 	border-radius: 20px;
-	padding-top: 6px;
 	display: block;
 	right: 15px;
 	/* bottom: 110px; */
@@ -447,22 +453,42 @@ html {
 	transition-property: all;
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
-	font-size: 0.6rem;
+	/* font-size: 0.6rem; */
 	text-align: center;
-	line-height: 0.75rem;
+	line-height: 0;
 	box-shadow: 0px 0px 10px var(--colour-shadow);
-	z-index: 15;
 }
 .changeTypeMenu-Section {
-	margin: 1rem auto;
-	line-height: 1.5em;
+	display: block;
+	position: relative;
+	top: 0px;
+	height: 110px;
+	width: 40px;
+	/* line-height: 1em; */
 	color: rgb(208, 208, 208);
 }
 .changeTypeMenu-Seperator {
-	width: 20px;
+	display: block;
 	height: 1px;
+	width: 20px;
 	background-color: rgb(114, 114, 114);
-	margin: 25px auto 0px;
+	margin: 10px auto;
+}
+.changeTypeMenu-Caption {
+	display: block;
+	position: relative;
+	top: 15px;
+	height: 12px;
+	font-size: 0.6rem;
+	line-height: 12px;
+}
+.changeTypeMenu-Options {
+	display: block;
+	position: relative;
+	top: 20px;
+	height: 60px;
+	width: 40px;
+	line-height: 0px;
 }
 #changeTypeMenu-FenLei-SONG,
 #changeTypeMenu-FenLei-HEI,
@@ -471,15 +497,15 @@ html {
 #changeTypeMenu-FuTi-SONG,
 #changeTypeMenu-FuTi-HEI {
 	display: block;
-	margin: 0.5rem auto;
-	width: 25px;
+	position: relative;
 	height: 25px;
+	width: 25px;
+	margin: 5px auto;
 	border-radius: 12.5px;
 	background-color: var(--colour-changeType-unselected);
 	font-size: 0.75rem;
-	line-height: 1em;
+	line-height: 25px;
 	text-align: center;
-	padding: 4px;
 	color: white;
 	cursor: pointer;
 	transition-property: all;
@@ -509,9 +535,16 @@ html {
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
 }
-.changeTypeMenu-Section a {
-	text-decoration: none;
-	color: black;
+.changeTypeMenu-TypeName {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -5px 0 0 -7.5px;
+	height: 15px;
+	width: 15px;
+	line-height: 15px;
+	font-size: 15px;
 }
 
 #page {

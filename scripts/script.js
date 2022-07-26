@@ -185,7 +185,7 @@ function changeMenuPosition() {
             menu.style.left = "auto";
             menu.style.right = "15px";
         } else {
-            menu.style.bottom = "10px";
+            menu.style.bottom = "15px";
             menu.style.top = "auto";
             menu.style.left = "60px";
             menu.style.right = "auto";
@@ -197,7 +197,7 @@ function changeMenuPosition() {
             menu.style.left = "auto";
             menu.style.right = "15px";
         } else {
-            menu.style.bottom = "10px";
+            menu.style.bottom = "15px";
             menu.style.top = "auto";
             menu.style.left = "70px";
             menu.style.right = "auto";
