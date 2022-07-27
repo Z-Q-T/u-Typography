@@ -201,9 +201,9 @@
 	--colour-shadow: rgb(216, 208, 197);
 	--colour-line-dark: #747474;
 	--colour-dark-text: rgb(46, 46, 46);
-	--font-hei: "TeShuBiaoDian", "HEI", "Noto Sans SC", sans-serif;
+	--font-hei: "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
-	--font-song: "TeShuBiaoDian", "SONG", "Noto Serif SC", serif;
+	--font-song: "SONG", "Noto Serif SC", serif;
 	--font-song-biaodian: "SONG-Biaodian", "Noto Serif SC";
 	--font-sans: "SANS", "Source Sans Pro", sans-serif;
 	--font-serif: "SERIF", "Source Serif Pro", serif;
@@ -548,7 +548,6 @@ html {
 		margin: 5px auto;
 	}
 }
-
 
 #pageTypography-Button {
 	width: 30px;
@@ -973,25 +972,28 @@ article a {
 	/* height: fit-content; */
 	text-decoration: none;
 	color: black;
-	padding: 0.2em 0;
-	border-bottom: 2px solid var(--colour-1);
-	/* background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
-		no-repeat;
+	/* padding: 0.2em 0; */
+	border-bottom: 0.15em solid rgb(226, 210, 188);
+	background: linear-gradient(135deg, var(--colour-3), var(--colour-2)) no-repeat;
+	/* background: linear-gradient(135deg, transparent, transparent) no-repeat; */
+	padding-top: 0.1em;
 	background-size: 100% 0%;
-	background-position: left 0 bottom 0; */
+	background-position: left 0 bottom 0;
 	transition: all 100ms ease-in-out;
 }
 article a:hover {
-	color: var(--colour-1);
-	border-bottom: 2px solid var(--colour-2);
-	/* background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
-		no-repeat;
-	background-size: 100% 100%; */
+	/* color: var(--colour-1); */
+	/* border-bottom: 2px solid var(--colour-2); */
+	background: linear-gradient(135deg, var(--colour-3), var(--colour-2)) no-repeat;
+	background-size: 100% 100%;
+	background-position: left 0 bottom 0;
 	transition: all 100ms ease-in-out;
 }
 article a:active {
-	color: var(--colour-2);
-	border-bottom: 2px solid var(--colour-3);
+	color: var(--colour-1);
+	/* border-bottom: 2px solid var(--colour-3); */
+	background-size: 100% 100%;
+	background-position: left 0 bottom 0;
 	transition: all 100ms ease-in-out;
 }
 .externalLink::after {
@@ -1144,7 +1146,9 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 }
 /* 着重号 */
 em {
+	font-family: "TeShuBiaoDian", var(--font-hei);
 	text-emphasis-style: "\E000" !important;
+	line-height: 0;
 	/* text-emphasis: filled circle !important; */
 }
 
