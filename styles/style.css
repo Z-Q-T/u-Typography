@@ -471,13 +471,17 @@ html {
 #changeTypeMenu-BiaoTi-SONG,
 #changeTypeMenu-ZhengWen-SONG,
 #changeTypeMenu-BianZhu-SONG {
-	font-family: var(--font-song);
+	/* font-family: var(--font-song); */
+	font-family: "Source Han Serif SC", "Source Han Serif CN", "Noto Serif SC",
+		serif;
 	font-weight: 600;
 }
 #changeTypeMenu-BiaoTi-HEI,
 #changeTypeMenu-ZhengWen-HEI,
 #changeTypeMenu-BianZhu-HEI {
-	font-family: var(--font-hei);
+	/* font-family: var(--font-hei); */
+	font-family: "Source Han Sans SC", "Source Han Sans CN", "Noto Sans SC",
+		sans-serif;
 	font-weight: 400;
 }
 #changeTypeMenu-BiaoTi-SONG:hover,
@@ -496,7 +500,7 @@ html {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin: -5px 0 0 -7.5px;
+	margin: -8px 0 0 -7.5px;
 	height: 15px;
 	width: 15px;
 	line-height: 15px;
@@ -974,7 +978,8 @@ article a {
 	color: black;
 	/* padding: 0.2em 0; */
 	border-bottom: 0.15em solid rgb(226, 210, 188);
-	background: linear-gradient(135deg, var(--colour-3), var(--colour-2)) no-repeat;
+	background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
+		no-repeat;
 	/* background: linear-gradient(135deg, transparent, transparent) no-repeat; */
 	padding-top: 0.1em;
 	background-size: 100% 0%;
@@ -984,7 +989,8 @@ article a {
 article a:hover {
 	/* color: var(--colour-1); */
 	/* border-bottom: 2px solid var(--colour-2); */
-	background: linear-gradient(135deg, var(--colour-3), var(--colour-2)) no-repeat;
+	background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
+		no-repeat;
 	background-size: 100% 100%;
 	background-position: left 0 bottom 0;
 	transition: all 100ms ease-in-out;

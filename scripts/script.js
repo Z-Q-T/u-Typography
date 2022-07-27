@@ -75,6 +75,9 @@ document.getElementById('changeTypeMenu-ZhengWen-SONG').onclick = function chang
     document.body.querySelectorAll("p").forEach((e) => {
         // e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
         e.style.fontFamily = "var(--font-song)";
+        e.style.fontWeight = "600";})
+    document.body.querySelectorAll("p > em").forEach((e) => {
+        e.style.fontFamily = "'TeShuBiaoDian', var(--font-song)";
         e.style.fontWeight = "600";
     });//换中文
     document.body.querySelectorAll("p > .Latin, p > a .Latin").forEach((e) => {
@@ -93,6 +96,10 @@ document.getElementById('changeTypeMenu-ZhengWen-SONG').onclick = function chang
 document.getElementById('changeTypeMenu-ZhengWen-HEI').onclick = function changefont_ZhengWen_HEI() {
     document.body.querySelectorAll("p").forEach((e) => {
         e.style.fontFamily = "var(--font-hei)";
+        e.style.fontWeight = "400";
+    });
+    document.body.querySelectorAll("p > em").forEach((e) => {
+        e.style.fontFamily = "'TeShuBiaoDian', var(--font-hei)";
         e.style.fontWeight = "400";
     });//换中文
     document.body.querySelectorAll("p > .Latin, p > a .Latin").forEach((e) => {

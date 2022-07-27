@@ -176,9 +176,9 @@
 	--colour-shadow: rgb(216, 208, 197);
 	--colour-line-dark: #747474;
 	--colour-dark-text: rgb(46, 46, 46);
-	--font-hei: "TeShuBiaoDian", "HEI", "Noto Sans SC", sans-serif;
+	--font-hei: "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
-	--font-song: "TeShuBiaoDian", "SONG", "Noto Serif SC", serif;
+	--font-song: "SONG", "Noto Serif SC", serif;
 	--font-song-biaodian: "SONG-Biaodian", "Noto Serif SC";
 	--font-sans: "SANS", "Source Sans Pro", sans-serif;
 	--font-serif: "SERIF", "Source Serif Pro", serif;
@@ -515,13 +515,17 @@ html {
 #changeTypeMenu-FenLei-SONG,
 #changeTypeMenu-BiaoTi-SONG,
 #changeTypeMenu-FuTi-SONG {
-	font-family: var(--font-song);
+	/* font-family: var(--font-song); */
+	font-family: "Source Han Serif SC", "Source Han Serif CN", "Noto Serif SC",
+		serif;
 	font-weight: 600;
 }
 #changeTypeMenu-FenLei-HEI,
 #changeTypeMenu-BiaoTi-HEI,
 #changeTypeMenu-FuTi-HEI {
-	font-family: var(--font-hei);
+	/* font-family: var(--font-hei); */
+	font-family: "Source Han Sans SC", "Source Han Sans CN", "Noto Sans SC",
+		sans-serif;
 	font-weight: 400;
 }
 #changeTypeMenu-FenLei-SONG:hover,
@@ -540,7 +544,7 @@ html {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin: -5px 0 0 -7.5px;
+	margin: -8px 0 0 -7.5px;
 	height: 15px;
 	width: 15px;
 	line-height: 15px;
