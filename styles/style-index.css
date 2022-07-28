@@ -544,7 +544,7 @@ html {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin: -8px 0 0 -7.5px;
+	margin: -8.5px 0 0 -7.5px;
 	height: 15px;
 	width: 15px;
 	line-height: 15px;
@@ -930,8 +930,8 @@ li a:active {
 } */
 
 h2 {
-	font-family: var(--font-hei);
-	font-weight: 600;
+	font-family: var(--font-song);
+	font-weight: 700;
 	font-size: 1.5rem;
 	line-height: 1em;
 	text-align: right;
@@ -943,7 +943,7 @@ h2 {
 	background-color: var(--colour-paper);
 	z-index: 5;
 	margin-top: -1rem;
-	padding-top: 3.5rem;
+	padding-top: 4.5rem;
 	padding-bottom: 3rem;
 }
 .subDivision {
@@ -985,7 +985,7 @@ h3 {
 li {
 	display: block;
 	list-style-type: none;
-	margin-top: 2rem;
+	margin-top: 3rem;
 }
 li::marker {
 	content: "";
@@ -1290,7 +1290,7 @@ h-hws[hidden] {
 		width: 100%;
 		left: 0;
 		height: 1px;
-		top: 4.3rem;
+		top: 5.2rem;
 	}
 	/* #sectionInner-Seperator-Additional {
 		display: none;
@@ -1303,13 +1303,13 @@ h-hws[hidden] {
 	h2 {
 		padding-bottom: 0rem;
 		text-align: left;
-		padding-right: 1rem;
-		width: 7rem;
+		padding-right: 3rem;
+		width: 9rem;
 	}
 	.listContainer {
 		display: block;
 		left: 0;
-		margin: 2rem 0 0 0;
+		margin: 4rem 0 0 0;
 	}
 	.symbol {
 		text-align: center;
@@ -1389,9 +1389,9 @@ h-hws[hidden] {
 		height: 17px;
 	}
 
-	/* section {
-		margin: 0;
-	} */
+	section {
+		margin-bottom: 8rem;
+	}
 	#section-Additional {
 		padding: 2rem 0 3rem;
 		margin: 9rem 0;
@@ -1402,7 +1402,7 @@ h-hws[hidden] {
 		width: 100%;
 		left: 0;
 		height: 1px;
-		top: 3rem;
+		top: -2rem;
 	}
 	#mainContent {
 		width: 100%;
@@ -1413,6 +1413,7 @@ h-hws[hidden] {
 	} */
 	.classificationContainer {
 		position: relative;
+		margin: 0 auto;
 		/* padding-top: 3rem; */
 		top: 0;
 	}
@@ -1424,9 +1425,9 @@ h-hws[hidden] {
 		margin: 3rem 0 0 0;
 	}
 	h2 {
-		padding-top: 1rem;
+		padding-top: 2rem;
 		padding-bottom: 0rem;
-		padding-right: 1rem;
+		padding-right: 0rem;
 		font-size: 1.35rem;
 		text-align: left;
 		width: 6.4rem;
@@ -1438,7 +1439,7 @@ h-hws[hidden] {
 		margin: 2rem 0;
 	}
 	.subtitle {
-		padding-left: 55px;
+		padding-left: 3.3rem;
 		font-size: 0.75rem;
 	}
 	.symbol {

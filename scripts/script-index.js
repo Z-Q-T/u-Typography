@@ -1,6 +1,6 @@
 // 初始的字体选择高亮
 function changeTypeMenu_initialActive() {
-    let initial = ['changeTypeMenu-BiaoTi-SONG', 'changeTypeMenu-FenLei-HEI', 'changeTypeMenu-FuTi-HEI'];
+    let initial = ['changeTypeMenu-BiaoTi-SONG', 'changeTypeMenu-FenLei-SONG', 'changeTypeMenu-FuTi-HEI'];
     for (let i = 0; i < initial.length; i++) {
         document.getElementById(initial[i]).style.cssText = "background-color: var(--colour-changeType-selected) !important; color:black;";
     }
