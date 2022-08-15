@@ -388,6 +388,18 @@ html {
 		left: calc(50% - 90px);
 	}
 }
+#colourBlock {
+	width: 40%;
+	max-width: 150px;
+	height: 10px;
+	margin: 0.5rem auto 0;
+	/* display: block; */
+	position: relative;
+	/* top: 50%; */
+	/* transform: translate(-50%, -50%); */
+	background-color: var(--colour-3);
+}
+
 #changeTypeMenu-Button {
 	width: 40px;
 	height: 40px;
@@ -589,7 +601,7 @@ header {
 	position: static;
 	margin: 0 auto;
 	margin-top: 1rem;
-	margin-bottom: 2rem;
+	/* margin-bottom: 0rem; */
 	/* background-color: var(--colour-paper); */
 	transition: all 200ms ease-in-out;
 	padding: 0 0.8rem;
@@ -891,32 +903,34 @@ a {
 a:visited {
 	color: black;
 }
-li a {
+li a,
+h3 a {
 	display: inline;
+	/* border-bottom: 0.15em solid transparent; */
 	background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
 		no-repeat;
-	background-size: 0% 0px;
-	background-position: left 0 bottom 2px;
+	background-size: 100% 0%;
+	background-position: left 0 bottom 0;
 	transition: all 100ms ease-in-out;
 }
-li a:hover {
+li a:hover,
+h3 a:hover {
+	cursor: pointer;
+	/* border-bottom: 0.15em solid rgb(226, 210, 188); */
 	background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
 		no-repeat;
-	background-size: 100% 16px;
-	background-position: left 0 bottom 2px;
-	cursor: pointer;
+	background-size: 100% 20%;
+	background-position: left 0 bottom 0;
 	transition: all 100ms ease-in-out;
 }
-li a:active {
-	background: linear-gradient(
-			var(--colour-link-active-background),
-			var(--colour-link-active-background)
-		)
-		no-repeat;
-	background-size: 100% 16px;
-	background-position: left 0 bottom 2px;
-	cursor: pointer;
-	transition: all 10ms ease-in-out;
+li a:active,
+h3 a:active {
+	color: var(--colour-1);
+	background-size: 100% 20%;
+	background-position: left 0 bottom 0;
+	transition: all 100ms ease-in-out;
+	/* cursor: pointer; */
+	/* transition: all 10ms ease-in-out; */
 }
 /* 用于不支持鼠标悬浮的触摸屏 */
 /* @media (hover: none) {
@@ -1373,7 +1387,7 @@ h-hws[hidden] {
 
 	#briefIntroduction-Button {
 		margin-top: 1rem;
-		margin-bottom: 1rem;
+		/* margin-bottom: 0rem; */
 		border-radius: 0.5rem;
 		padding: 0 0.1rem;
 	}
