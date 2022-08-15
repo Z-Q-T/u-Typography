@@ -590,9 +590,12 @@ header {
 #header-Seperator {
 	display: block;
 	width: 340px;
-	height: 2px;
-	background-color: var(--colour-line-dark);
+	/* height: 2px;
+	background-color: var(--colour-line-dark); */
 	margin: 0 auto;
+	height: 5px;
+	background: radial-gradient(var(--colour-2), transparent);
+	border-radius: 3px;
 }
 #briefIntroduction-Button {
 	width: fit-content;
@@ -907,6 +910,8 @@ li a,
 h3 a {
 	display: inline;
 	/* border-bottom: 0.15em solid transparent; */
+	padding: 0.1em 0;
+
 	background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
 		no-repeat;
 	background-size: 100% 0%;
@@ -919,14 +924,14 @@ h3 a:hover {
 	/* border-bottom: 0.15em solid rgb(226, 210, 188); */
 	background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
 		no-repeat;
-	background-size: 100% 20%;
+	background-size: 100% 10%;
 	background-position: left 0 bottom 0;
 	transition: all 100ms ease-in-out;
 }
 li a:active,
 h3 a:active {
 	color: var(--colour-1);
-	background-size: 100% 20%;
+	background-size: 100% 10%;
 	background-position: left 0 bottom 0;
 	transition: all 100ms ease-in-out;
 	/* cursor: pointer; */
@@ -1269,7 +1274,7 @@ h-hws[hidden] {
 	}
 	#header-Seperator {
 		width: 280px;
-		height: 1.5px;
+		height: 4px;
 	}
 
 	#briefIntroduction-Button {
@@ -1382,7 +1387,7 @@ h-hws[hidden] {
 	}
 	#header-Seperator {
 		width: 240px;
-		height: 1.5px;
+		height: 3px;
 	}
 
 	#briefIntroduction-Button {

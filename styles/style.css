@@ -977,12 +977,12 @@ article a {
 	text-decoration: none;
 	color: black;
 	/* padding: 0.2em 0; */
-	border-bottom: 0.15em solid rgb(226, 210, 188);
-	background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
+	/* border-bottom: 0.15em solid rgb(226, 210, 188); */
+	background: linear-gradient(135deg, var(--colour-2), var(--colour-2))
 		no-repeat;
 	/* background: linear-gradient(135deg, transparent, transparent) no-repeat; */
-	padding-top: 0.1em;
-	background-size: 100% 0%;
+	padding: 0.1em 0;
+	background-size: 100% 10%;
 	background-position: left 0 bottom 0;
 	transition: all 100ms ease-in-out;
 }
@@ -1028,16 +1028,19 @@ article img {
 	color: var(--colour-footnote-mark);
 	font-size: inherit;
 	border: 0;
+	background: transparent;
 }
 .footnoteMark a:hover {
 	color: var(--colour-1);
 	font-size: inherit;
 	border: 0;
+	background: transparent;
 }
 .footnoteMark a:active {
 	color: var(--colour-2);
 	font-size: inherit;
 	border: 0;
+	background: transparent;
 }
 .bd-end + .footnoteMark {
 	margin-left: -0.5em;
@@ -1072,8 +1075,17 @@ hr {
 	padding: 0;
 	border: 0;
 	color: var(--colour-footnote-mark) !important;
+	background: transparent;
+}
+.reversefootnote:hover {
+	color: var(--colour-1) !important;
+	background: transparent;
 }
 
+.reversefootnote:active {
+	color: var(--colour-2) !important;
+	background: transparent;
+}
 /* 间隔号· */
 .JianGeHao {
 	font-family: var(--font-hei-biaodian) !important;
