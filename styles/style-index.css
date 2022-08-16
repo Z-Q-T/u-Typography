@@ -363,7 +363,7 @@ html {
 #mask2 {
 	position: absolute;
 	width: 380px;
-	height: 60px;
+	height: 59px;
 	top: 0px;
 	left: calc(50% - 190px);
 	background-color: var(--colour-paper);
@@ -372,7 +372,7 @@ html {
 #mask2 {
 	border-left: 1px solid var(--colour-line-dark);
 	border-right: 1px solid var(--colour-line-dark);
-	border-bottom: 1px solid var(--colour-line-dark);
+	/* border-bottom: 1px solid var(--colour-line-dark); */
 	/* background: linear-gradient(
 		0deg,
 		var(--colour-paper),
@@ -593,8 +593,8 @@ header {
 	/* height: 2px;
 	background-color: var(--colour-line-dark); */
 	margin: 0 auto;
-	height: 5px;
-	background: radial-gradient(var(--colour-2), transparent);
+	height: 2px;
+	background: radial-gradient(black, transparent);
 	border-radius: 3px;
 }
 #briefIntroduction-Button {
@@ -1274,7 +1274,7 @@ h-hws[hidden] {
 	}
 	#header-Seperator {
 		width: 280px;
-		height: 4px;
+		height: 1.5px;
 	}
 
 	#briefIntroduction-Button {
@@ -1387,7 +1387,7 @@ h-hws[hidden] {
 	}
 	#header-Seperator {
 		width: 240px;
-		height: 3px;
+		height: 1.5px;
 	}
 
 	#briefIntroduction-Button {
