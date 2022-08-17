@@ -199,7 +199,8 @@
 	--colour-footnote-mark: rgb(177, 132, 69);
 	--colour-code: rgb(245, 233, 231);
 	--colour-shadow: rgb(216, 208, 197);
-	--colour-line-dark: #747474;
+	--colour-line-dark-grey: #444444;
+	--colour-line-light-grey: #bbb;
 	--colour-dark-text: rgb(46, 46, 46);
 	--font-hei: "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
@@ -255,7 +256,7 @@ html {
 	/* background-color: rgba(255, 255, 255, 1); */
 	background-color: var(--colour-paper);
 	/* box-shadow: 0 0 10px rgb(222, 216, 207); */
-	border-right: 1px solid var(--colour-line-dark);
+	border-right: 1px solid var(--colour-line-dark-grey);
 	z-index: 15;
 }
 
@@ -1442,8 +1443,8 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		position: fixed;
 		z-index: 10;
 
-		border-right: 0px solid var(--colour-line-dark);
-		border-bottom: 1px solid var(--colour-line-dark);
+		border-right: 0px solid var(--colour-line-dark-grey);
+		border-bottom: 1px solid var(--colour-line-dark-grey);
 		/* backdrop-filter: blur(5px); */
 	}
 	#logotype {
@@ -1580,8 +1581,8 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		display: block;
 		position: fixed;
 		z-index: 10;
-		border-right: 0px solid var(--colour-line-dark);
-		border-bottom: 1px solid var(--colour-line-dark);
+		border-right: 0px solid var(--colour-line-dark-grey);
+		border-bottom: 1px solid var(--colour-line-dark-grey);
 	}
 	#logotype {
 		height: 60px;
