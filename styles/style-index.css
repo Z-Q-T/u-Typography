@@ -216,8 +216,8 @@ html {
 	margin: 0 auto;
 	/* position: relative;
 	top: 0; */
-	border-left: 1px solid var(--colour-line-dark-grey);
-	border-right: 1px solid var(--colour-line-dark-grey);
+	/* border-left: 1px solid var(--colour-line-dark-grey);
+	border-right: 1px solid var(--colour-line-dark-grey); */
 	padding-top: 5rem;
 	margin-top: 5rem;
 }
@@ -594,7 +594,7 @@ header {
 	/* height: 2px;
 	background-color: var(--colour-line-dark-grey); */
 	margin: 0 auto;
-	height: 2px;
+	height: 1px;
 	background: radial-gradient(closest-side, black, transparent);
 	border-radius: 3px;
 }
@@ -962,10 +962,39 @@ h2 {
 	top: 2.5rem;
 	background-color: var(--colour-paper);
 	z-index: 5;
-	margin-top: -1rem;
-	padding-top: 4.5rem;
+	margin-top: -0.5rem;
+	padding-top: 4rem;
 	padding-bottom: 3rem;
 }
+.headingDecoration {
+	/* h2::after { */
+	/* content: "○○○○"; */
+	display: block;
+	position: absolute;
+	width: max-content;
+	left: 0.5rem;
+	color: var(--colour-sidenote-mark);
+	font-size: 1rem;
+	font-family: var(--font-song-biaodian) !important;
+	letter-spacing: 2em;
+	transform: scale(0.5, 0.5);
+	transform-origin: center left;
+	transition: opacity 200ms ease-in-out;
+}
+@media (hover: hover) {
+	.headingDecoration {
+		opacity: 0;
+	}
+	section:hover .headingDecoration {
+		opacity: 1;
+	}
+}
+@media (hover: none) {
+	.headingDecoration {
+		opacity: 1;
+	}
+}
+
 .subDivision {
 	margin: 3rem 0;
 }
@@ -1326,6 +1355,7 @@ h-hws[hidden] {
 		padding-right: 3rem;
 		width: 9rem;
 	}
+
 	.listContainer {
 		display: block;
 		left: 0;
