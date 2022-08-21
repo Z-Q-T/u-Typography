@@ -3,17 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="author" content="Zhang Qingtian">
-    <meta name="description" content="Nothing on this site">
-    <!-- 指定包含关于页面内容的关键字的页面内容的描述是很有用的，因为它可能或让你的页面在搜索引擎的相关的搜索出现得更多 （这些行为术语上被称为 Search Engine Optimization, or SEO.） -->
+    <meta name="author" content="张擎天（Zhang Qingtian）">
+    <meta name="description" content="“字无字”网站的介绍">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <title>信息</title>
-    <link rel="shortcut icon" href="滑稽图标.png" type="image/x-icon">
+    <title>介绍｜字无字 ú–Typography</title>
+    <link rel="shortcut icon" href="images/字无字_网页图标.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900"> -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet"><!-- 思源黑体 -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"> <!-- Source Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet"> <!-- 思源宋体 -->
@@ -21,20 +19,10 @@
     <!-- Source Serif -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     <!-- Source Code -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&display=swap" rel="stylesheet"> -->
-    <!-- Courier Prime -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet"> -->
-    <!-- 马善政书法字体 -->
-    <!-- 这个是不是可以用@import的方式来加载？ -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css" /> -->
-    <!-- 霞鹜文楷 -->
-    <!-- 屏幕显示版的效果似乎不如原版 -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap" rel="stylesheet"> -->
-    <!-- Alegreya -->
 
-    <link rel="stylesheet" media="all" href="../styles/han.css">
+    <link rel="stylesheet" media="all" href="styles/han.css">
 
-    <link rel="stylesheet" href="../styles/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
     <!-- <link rel="stylesheet" href="styles/debug.css" type="text/css"> -->
     <base target="_self">
 
@@ -45,46 +33,65 @@
     <div id="whole">
 
         <div id="bar">
-            <a href="../index.html" id="backToHomePage">
-            <picture>
-                <source srcset="../images/字无字_横.png" media="(max-width: 1040px)">
-                <img id="logo" src="../images/字无字_竖-小.png" alt="“字无字”的标志｜logo of ú–typography">
-            </picture></a>
+            <div id="decoLine"></div>
+
+            <a href="index.html" id="backToHomePage">
+                <img id="backArrow" src="images/字无字_返回首页箭头-图标.png" alt="返回首页｜back to home page">
+                <img id="home" src="images/字无字_返回首页房子-图标.png" alt="返回首页｜back to home page">
+            </a>
+            <picture id="logotype">
+                <source srcset="images/字无字_横竖.png" media="(max-width: 680px)">
+                <source srcset="images/字无字_横.png" media="(max-width: 1040px)">
+                <img id="logo" src="images/字无字_竖.png" alt="“字无字”的标志｜logo of ú–typography">
+            </picture>
 
 
-            <div id="changeTypeMenu-Button"><svg id="changeTypeMenu-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 30">
+            <div id="changeTypeMenu-Button"><svg id="changeTypeMenu-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 4">
                     <g id="changeTypeMenu-ButtonSVGgraphic">
-                        <circle cx="3" cy="3" r="3" />
-                        <circle cx="3" cy="15" r="3" />
-                        <circle cx="3" cy="27" r="3" />
+                        <circle cx="2" cy="2" r="1.5" />
+                        <circle cx="9" cy="2" r="1.5" />
+                        <circle cx="16" cy="2" r="1.5" />
                     </g>
                 </svg></div>
-            <div id="changeTypeMenu-Hint"><span id="changeTypeMenu-Hint-Title">〖更换字体〗</span><br>该功能在一些情况下会额外下载所需的字体<br>这可能消耗更多的流量</div>
+            <!-- <div id="changeTypeMenu-Hint"><span id="changeTypeMenu-Hint-Title">〖更换字体〗</span><br>该功能在一些情况下会额外下载所需的字体<br>这可能消耗更多的流量</div> -->
+
             <menu id="changeTypeMenu" style="visibility: hidden; opacity: 0; ">
-                <div class="changeTypeMenu-Section">标题
-                    <a id="changeTypeMenu-BiaoTi-SONG">
-                        宋
-                    </a>
-                    <a id="changeTypeMenu-BiaoTi-HEI">黑
-                    </a>
-                </div>
-                <div class="changeTypeMenu-Seperator"></div>
-                <div class="changeTypeMenu-Section">正文<a id="changeTypeMenu-ZhengWen-SONG">宋</a>
-                    <a id="changeTypeMenu-ZhengWen-HEI">黑</a>
-                </div>
-                <div class="changeTypeMenu-Seperator"></div>
-                <div class="changeTypeMenu-Section">边注<a id="changeTypeMenu-BianZhu-SONG">宋</a>
-                    <a id="changeTypeMenu-BianZhu-HEI">黑</a>
+                <div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">标题</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-BiaoTi-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-BiaoTi-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">正文</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-ZhengWen-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-ZhengWen-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">补充</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-BianZhu-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-BianZhu-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
                 </div>
             </menu>
-            <!-- <img id="changeTypeMenu" src="images/三点-竖.svg" alt="更换字体｜change typeface"> -->
-            <div id="pageTypography-Button"><img id="pageTypography-Icon" src="../images/字无字_排版图标.png" alt="本网站的排版说明｜Typography of this website"></div>
+            <div id="pageTypography-Button"><a href="Typography_of_this_site.html" target="_blank">¶</a>
+                <!-- <img id="pageTypography-Icon" src="images/字无字_排版图标.png" alt="本网站的排版说明｜Typography of this website"> -->
+            </div>
             <!-- <div id="gradient"></div> -->
         </div>
+
         <main id="page">
             <header id="mainTitleArea">
                 <div id="metaInfo">
-                    <div id="index"><i>№</i>&#8197;001</div>
+                    <div id="index">«&#8201;i&#8201;»</div>
                     <div class="metaInfo-Seperator"></div>
                     <div id="time">
                         <ul>
@@ -98,27 +105,26 @@
                 </div>
                 <!-- <div id="decoLine"></div> -->
                 <div id="title">
-                    <h1>
-                        <span class="titleLine">中文的<span class="Latin-BiaoTi">Lorem ipsum</span>（乱序假文）</span>
-                        <span class="titleLine">应该是<wbr>怎样的？</span>
-                        <!-- 这一块和对应CSS代码有很大的优化空间 -->
-                        <!-- 中文的<span class="Latin-BiaoTi">Lorem ipsum</span>（乱序假文）应该是<wbr>怎样的？ -->
-                    </h1>
+                    <h1>中文的<span class="Latin">Lorem ipsum</span>（乱序假文）应该是<wbr>怎样的？</h1>
                 </div>
-                <!-- <div id="timeAuthorRevision">
+                <div id="caption">道生一，一生二，二生三，三生万物。</div>
 
-                </div> -->
             </header>
             <div id="toc-PlaceHolder"></div>
             <div id="toc-Container">
                 <nav id="tableOfContent">
-                    <ul><li><a href="#二级标题1" target="_self">晚夏的微风</a></li>
-                        <li class="tocH3"><a href="#三级标题1" target="_self">终古常新的苍空皎日</a></li>
-                        <li>紫色的梦境气息吹来，窸窣的一响</li>
-                        <li>道旁的一枝<span class="Latin-BiaoTi">small</span>小草</li>
-                        <li>竟把他的梦境打破了</li>
-                        <li>他回转头来一看</li>
-                        <li>那枝小草还是颠摇不已</li>
+                    <ul>
+                        <div id="toc-backToMainTitle"><a href="#">∧</a></div>
+                        <li><a href="#基础结构">基础结构</a></li>
+                        <li><a href="#排版风格（house-style）">排版风格（<span class="Latin">house style</span>）</a></li>
+                        <li><a href="#字体选择">字体选择</a></li>
+                        <li><a href="#中文网格的运用">中文网格的运用</a></li>
+                        <li class="tocH3"><a href="#小尺寸布局的妥协">小尺寸布局的妥协</a></li>
+                        <li class="tocH3"><a href="#或许不应该叫做网格……">或许不应该叫做网格……</a></li>
+                        <li class="tocH3"><a href="#计算机环境下中文排版的大麻烦">计算机环境下中文排版的大麻烦</a></li>
+                        <li><a href="#再谈缩进">再谈缩进</a></li>
+                        <li><a href="#标点符号的排版处理">标点符号的排版处理</a></li>
+                        <div id="toc-skipToFootnote"><a href="#footnotesArea">∨</a></div>
                     </ul>
                 </nav>
             </div>
@@ -188,8 +194,8 @@
 《一级书名号和〈二级书名号〉》
 （一级括号和〔二级括号〕）
 ［特殊括号］ -->
-    <script src="../scripts/script.js"></script>
-    <script src="../scripts/han.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/han.js"></script>
     <script>
         changeTypeMenu_initialActive()
         Han(document.querySelector('.entry'))
