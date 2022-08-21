@@ -691,9 +691,10 @@ html {
 #caption {
 	display: inline-block;
 	position: absolute;
-	top: 8rem;
-	left: 42rem;
-	width: 15rem;
+	top: 8.5rem;
+	left: 39rem;
+	width: 18rem;
+	text-indent: 3rem;
 	font-size: 0.75rem;
 	line-height: 1.2rem;
 	font-family: var(--font-hei);
@@ -1322,8 +1323,8 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		tab-size: 3em;
 	}
 	#caption {
-		left: 36rem;
-		width: 9rem;
+		left: 33rem;
+		width: 12rem;
 	}
 	#tableOfContent {
 		width: 12rem;
@@ -1401,6 +1402,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		margin-top: 3rem;
 		width: 21rem;
 		text-align: center;
+		text-indent: 0;
 	}
 	#toc-PlaceHolder {
 		display: none;
@@ -1530,6 +1532,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		margin-left: 3rem;
 		width: 21rem;
 		text-align: center;
+		text-indent: 0;
 	}
 	#toc-PlaceHolder {
 		display: none;
@@ -1670,6 +1673,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		/* margin-left: 3rem; */
 		width: calc(100% - 6rem);
 		text-align: center;
+		text-indent: 0;
 	}
 	#toc-PlaceHolder {
 		display: none;
