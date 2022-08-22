@@ -4,6 +4,22 @@ function changeTypeMenu_initialActive() {
     for (let i = 0; i < initial.length; i++) {
         document.getElementById(initial[i]).style.cssText = "background-color: var(--colour-changeType-selected) !important; color:black;";
     }
+    //下面是设定初始的西文字体
+    // document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, #tableOfContent li > .Latin").forEach((e) => {
+    //     e.style.fontFamily = "var(--font-serif)";
+    //     e.style.fontWeight = "600";
+    //     e.style.fontSize = "1.05em";
+    // });
+    document.body.querySelectorAll("section .listContainer .Latin").forEach((e) => {
+        e.style.fontFamily = "var(--font-serif)";
+        e.style.fontWeight = "400";
+        e.style.fontSize = "1.05em";
+    });
+    document.body.querySelectorAll(".subtitle .Latin").forEach((e) => {
+        e.style.fontFamily = "var(--font-sans)";
+        e.style.fontWeight = "400";
+        e.style.fontSize = "1.1em";
+    });
 }
 
 //点击换字体按钮后改变按钮颜色
@@ -61,7 +77,7 @@ document.getElementById('changeTypeMenu-BiaoTi-SONG').onclick = function changef
         e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
         e.style.fontWeight = "600";
     });//换中文
-    document.body.querySelectorAll(".Latin-BiaoTi").forEach((e) => {
+    document.body.querySelectorAll("section .listContainer .Latin").forEach((e) => {
         e.style.fontFamily = "'SERIF'" + "," + "Source Serif Pro";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.05em";
@@ -78,7 +94,7 @@ document.getElementById('changeTypeMenu-BiaoTi-HEI').onclick = function changefo
         e.style.fontFamily = "HEI" + "," + "Noto Sans SC";
         e.style.fontWeight = "400";
     });//换中文
-    document.body.querySelectorAll(".Latin-BiaoTi").forEach((e) => {
+    document.body.querySelectorAll("section .listContainer .Latin").forEach((e) => {
         e.style.fontFamily = "SANS" + "," + "Source Sans Pro";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.1em";
@@ -96,7 +112,7 @@ document.getElementById('changeTypeMenu-FuTi-SONG').onclick = function changefon
         e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
         e.style.fontWeight = "600";
     });//换中文
-    document.body.querySelectorAll(".Latin-FuTi").forEach((e) => {
+    document.body.querySelectorAll(".subtitle .Latin").forEach((e) => {
         e.style.fontFamily = "'SERIF'" + "," + "Source Serif Pro";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.05em";
@@ -113,7 +129,7 @@ document.getElementById('changeTypeMenu-FuTi-HEI').onclick = function changefont
         e.style.fontFamily = "HEI" + "," + "Noto Sans SC";
         e.style.fontWeight = "400";
     });//换中文
-    document.body.querySelectorAll(".Latin-FuTi").forEach((e) => {
+    document.body.querySelectorAll(".subtitle .Latin").forEach((e) => {
         e.style.fontFamily = "SANS" + "," + "Source Sans Pro";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.1em";

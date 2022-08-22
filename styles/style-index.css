@@ -979,21 +979,21 @@ h2 {
 	letter-spacing: 2em;
 	transform: scale(0.5, 0.5);
 	transform-origin: center left;
-	transition: opacity 200ms ease-in-out;
+	transition: opacity 300ms ease-in-out;
 }
-@media (hover: hover) {
+/* @media (hover: hover) { */
 	.headingDecoration {
 		opacity: 0;
 	}
 	section:hover .headingDecoration {
 		opacity: 1;
 	}
-}
-@media (hover: none) {
+/* } */
+/* @media (hover: none) {
 	.headingDecoration {
 		opacity: 1;
 	}
-}
+} */
 
 .subDivision {
 	margin: 3rem 0;
