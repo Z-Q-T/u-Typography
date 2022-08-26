@@ -13,7 +13,6 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900"> -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet"><!-- 思源黑体 -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"> <!-- Source Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet"> <!-- 思源宋体 -->
@@ -21,6 +20,7 @@
     <!-- Source Serif -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     <!-- Source Code -->
+
     <!-- <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&display=swap" rel="stylesheet"> -->
     <!-- Courier Prime -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet"> -->
@@ -36,7 +36,7 @@
 
     <link rel="stylesheet" href="../styles/style.css" type="text/css">
     <!-- <link rel="stylesheet" href="styles/debug.css" type="text/css"> -->
-    <base target="_blank">
+    <base target="_self">
 
 </head>
 
@@ -61,36 +61,45 @@
             <!-- </div> -->
 
             <div id="changeTypeMenu-Button"><svg id="changeTypeMenu-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 4">
-                <g id="changeTypeMenu-ButtonSVGgraphic">
-                    <circle cx="2" cy="2" r="1.5" />
-                    <circle cx="9" cy="2" r="1.5" />
-                    <circle cx="16" cy="2" r="1.5" />
+                    <g id="changeTypeMenu-ButtonSVGgraphic">
+                        <circle cx="2" cy="2" r="1.5" />
+                        <circle cx="9" cy="2" r="1.5" />
+                        <circle cx="16" cy="2" r="1.5" />
                     </g>
                 </svg></div>
             <!-- <div id="changeTypeMenu-Hint"><span id="changeTypeMenu-Hint-Title">〖更换字体〗</span><br>该功能在一些情况下会额外下载所需的字体<br>这可能消耗更多的流量</div> -->
 
+
             <menu id="changeTypeMenu" style="visibility: hidden; opacity: 0; ">
-                <div class="changeTypeMenu-Section">标题
-                    <a id="changeTypeMenu-BiaoTi-SONG">
-                        宋
-                    </a>
-                    <a id="changeTypeMenu-BiaoTi-HEI">黑
-                    </a>
-                </div>
-                <div class="changeTypeMenu-Seperator"></div>
-                <div class="changeTypeMenu-Section">正文<a id="changeTypeMenu-ZhengWen-SONG">宋</a>
-                    <a id="changeTypeMenu-ZhengWen-HEI">黑</a>
-                </div>
-                <div class="changeTypeMenu-Seperator"></div>
-                <div class="changeTypeMenu-Section">边注<a id="changeTypeMenu-BianZhu-SONG">宋</a>
-                    <a id="changeTypeMenu-BianZhu-HEI">黑</a>
+                <div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">标题</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-BiaoTi-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-BiaoTi-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">正文</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-ZhengWen-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-ZhengWen-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">补充</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-BianZhu-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-BianZhu-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
                 </div>
             </menu>
-            <!-- <img id="changeTypeMenu" src="images/三点-竖.svg" alt="更换字体｜change typeface"> -->
-            <div id="pageTypography-Button">¶
-                <!-- <img id="pageTypography-Icon" src="../images/字无字_排版图标.png" alt="本网站的排版说明｜Typography of this website"> -->
+            <div id="pageTypography-Button"><a href="Typography_of_this_site.html" target="_blank">¶</a>
+                <!-- <img id="pageTypography-Icon" src="images/字无字_排版图标.png" alt="本网站的排版说明｜Typography of this website"> -->
             </div>
-            <!-- <div id="gradient"></div> -->
         </div>
         <main id="page">
             <header id="mainTitleArea">
@@ -109,16 +118,10 @@
                 </div>
                 <!-- <div id="decoLine"></div> -->
                 <div id="title">
-                    <h1>
-                        <span class="titleLine">中文的<span class="Latin-BiaoTi">Lorem ipsum</span>（乱序假文）</span>
-                        <span class="titleLine">应该是<wbr>怎样的？</span>
-                        <!-- 这一块和对应CSS代码有很大的优化空间 -->
-                        <!-- 中文的<span class="Latin-BiaoTi">Lorem ipsum</span>（乱序假文）应该是<wbr>怎样的？ -->
-                    </h1>
+                    <h1>中文的<span class="Latin">Lorem ipsum</span>（乱序假文）应该是<wbr>怎样的？</h1>
                 </div>
-                <!-- <div id="timeAuthorRevision">
-
-                </div> -->
+                <div id="caption">放副标题的位置</div>
+    
             </header>
             <div id="toc-PlaceHolder"></div>
             <div id="toc-Container">
@@ -183,7 +186,7 @@
 &#9;line-height: 1.4rem;
 &#9;/* white-space: break-spaces; */
 }</pre>
-<p>“使用‘引号’”，『如何（使用「引号」）』！</p>
+                    <p>“使用‘引号’”，『如何（使用「引号」）』！</p>
                     <p>汉字，，汉字</p>
                     <p>汉字，、汉字</p>
                     <p>汉字，；汉字</p>

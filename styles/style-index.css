@@ -979,7 +979,7 @@ h2 {
 	letter-spacing: 2em;
 	transform: scale(0.5, 0.5);
 	transform-origin: center left;
-	transition: opacity 300ms ease-in-out;
+	transition: opacity 500ms ease-in-out;
 }
 /* @media (hover: hover) { */
 	.headingDecoration {

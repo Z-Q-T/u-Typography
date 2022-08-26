@@ -633,7 +633,7 @@ html {
 	display: inline-block;
 	position: absolute;
 	left: -21rem;
-	top: 8.5rem;
+	top: 9rem;
 	width: 18rem;
 	z-index: 5;
 	text-align: center;
@@ -1292,7 +1292,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	}
 	#metaInfo {
 		width: 12rem;
-		top: 8.25rem;
+		top: 8.75rem;
 		left: -15rem;
 		font-size: 0.625rem;
 	}
