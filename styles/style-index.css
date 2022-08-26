@@ -1002,7 +1002,7 @@ h2 {
 	font-family: var(--font-song);
 	font-weight: 600;
 	font-size: 1.2rem;
-	line-height: 1.2rem;
+	line-height: 1em;
 	position: relative;
 	top: 0;
 	display: inline-block;
@@ -1016,10 +1016,9 @@ ul {
 	top: 0rem;
 }
 h3 {
-	font-size: 1.5rem;
-	line-height: 1em;
+	font-size: 1.35rem;
+	line-height: 1.5rem;
 	text-align: left;
-
 	display: inline-block;
 	width: 30rem;
 	left: 12rem;
@@ -1528,13 +1527,13 @@ h-hws[hidden] {
 		font-size: 0.75rem;
 	}
 	.symbol {
-		font-size: 1.1rem;
+		font-size: 1rem;
 		text-align: center;
 		display: block;
 		margin: 0 auto;
 	}
 	h3 {
-		font-size: 1.35rem;
+		font-size: 1.2rem;
 		left: 0;
 		width: 100%;
 		display: block;
