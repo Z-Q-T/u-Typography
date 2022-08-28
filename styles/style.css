@@ -180,6 +180,15 @@
 	speak-as: numbers;
 	fallback: decimal;
 }
+/* @counter-style unorderedList {
+	system: cyclic;
+	symbols: "◯";
+
+	suffix: "　";
+
+	speak-as: bullets;
+	fallback: circle;
+} */
 /* —————————————————————————————— */
 :root {
 	--colour-paper: rgb(250, 249, 247);
@@ -674,6 +683,9 @@ html {
 	list-style-type: none;
 	margin-bottom: 0.2em;
 }
+#time ul li {
+	margin-left: 0;
+}
 #time li::marker {
 	content: "";
 	display: none !important;
@@ -798,7 +810,8 @@ a:visited {
 }
 
 #mainContent {
-	padding: 2rem 0;
+	padding-top: 2rem;
+	padding-bottom: 6rem;
 	display: block;
 	height: auto;
 	position: relative;
@@ -819,6 +832,7 @@ h3 + p,
 h4 + p,
 h5 + p,
 h6 + p,
+.footnoteNumber + p,
 .noIndentParagraph {
 	text-indent: 0 !important;
 }
@@ -937,6 +951,19 @@ ol li::marker {
 	font-size: 1.1em;
 	font-weight: 400;
 }
+ul {
+	/* list-style: unorderedList; */
+	list-style: circle;
+}
+ul li {
+	margin-left: 3rem;
+}
+ul li::marker {
+	font-family: var(--font-hei);
+	list-style-position: outside;
+	font-size: 1em;
+	font-weight: 400;
+}
 
 pre {
 	font-family: var(--font-code);
@@ -1053,8 +1080,14 @@ hr {
 	background-color: #747474;
 	margin: 10rem auto 4rem;
 }
+small,
+small p {
+	/* font-size: inherit !important; */
+	font-size: 0.75rem;
+	line-height: 1.5rem;
+}
 .footnoteEntry {
-	margin: 0.75rem auto;
+	margin: 0rem auto;
 }
 #footnotesArea p {
 	font-size: 0.75rem;
@@ -1333,7 +1366,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	#mainContent {
 		width: 45rem;
 		left: 15rem;
-		padding: 1rem 0 2rem 0;
+		padding-top: 1rem;
 	}
 	article {
 		margin-right: 15rem;
@@ -1416,7 +1449,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 
 	#mainContent {
 		width: 39rem;
-		padding: 2rem 0 2rem 0;
+		/* padding: 2rem 0 2rem 0; */
 		margin-top: 28rem;
 		left: 0rem;
 	}
