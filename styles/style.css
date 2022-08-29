@@ -1098,7 +1098,7 @@ small p {
 .footnoteNumber {
 	position: absolute;
 	left: 0rem;
-	font-size: 0.9rem !important;
+	font-size: 0.8rem !important;
 	line-height: 1.5rem;
 	font-weight: 600 !important;
 	transform: translateY(-4rem);
