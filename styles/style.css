@@ -180,15 +180,15 @@
 	speak-as: numbers;
 	fallback: decimal;
 }
-/* @counter-style unorderedList {
+@counter-style unorderedList {
 	system: cyclic;
-	symbols: "◯";
+	symbols: "•";
 
-	suffix: "　";
+	suffix: "  ";
 
 	speak-as: bullets;
-	fallback: circle;
-} */
+	fallback: disc;
+}
 /* —————————————————————————————— */
 :root {
 	--colour-paper: rgb(250, 249, 247);
@@ -940,7 +940,7 @@ p {
 }
 
 ol {
-	list-style: orderedList;
+	list-style-type: orderedList;
 }
 ol li {
 	margin-left: 3rem;
@@ -952,16 +952,16 @@ ol li::marker {
 	font-weight: 400;
 }
 ul {
-	/* list-style: unorderedList; */
-	list-style: circle;
+	list-style-type: unorderedList;
+	/* list-style-type: disc; */
 }
 ul li {
 	margin-left: 3rem;
 }
 ul li::marker {
-	font-family: var(--font-hei);
+	font-family: var(--font-sans);
 	list-style-position: outside;
-	font-size: 1em;
+	font-size: 1.25em;
 	font-weight: 400;
 }
 
