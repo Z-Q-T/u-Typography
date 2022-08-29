@@ -703,7 +703,7 @@ html {
 #caption {
 	display: inline-block;
 	position: absolute;
-	top: 8.5rem;
+	top: 8.75rem;
 	left: 39rem;
 	width: 18rem;
 	text-indent: 3rem;
@@ -711,7 +711,7 @@ html {
 	line-height: 1.2rem;
 	font-family: var(--font-hei);
 	font-weight: 400;
-	text-align: left;
+	text-align: justify;
 }
 
 #toc-PlaceHolder {
@@ -1291,10 +1291,10 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		font-size: 3rem;
 		line-height: 4rem;
 	}
-	#caption {
+	/* #caption {
 		font-size: 0.9rem;
 		line-height: 1.5rem;
-	}
+	} */
 	#mainContent {
 		width: 57rem;
 		left: 21rem;
