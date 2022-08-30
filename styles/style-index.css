@@ -1482,7 +1482,10 @@ h-hws[hidden] {
 		width: 17px;
 		height: 17px;
 	}
-
+	#mainContent {
+		width: 100%;
+		left: 0rem;
+	}
 	section {
 		margin-top: 5rem;
 		margin-bottom: 5rem;
@@ -1498,12 +1501,12 @@ h-hws[hidden] {
 		left: 0;
 		height: 1px;
 		top: -2rem;
-		/* background-color: #bbb; */
+		display: none;
 	}
-	#mainContent {
-		width: 100%;
-		left: 0rem;
+	section:first-child .sectionInner-Seperator {
+		display: inline-block;
 	}
+	
 
 	.classificationContainer {
 		position: relative;
@@ -1529,6 +1532,7 @@ h-hws[hidden] {
 	.headingDecoration {
 		left: 0.45rem;
 		transform: scale(0.45, 0.45);
+		opacity: 1 !important;
 	}
 	ul {
 		font-size: 1.1rem;
