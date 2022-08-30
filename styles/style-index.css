@@ -1392,6 +1392,7 @@ h-hws[hidden] {
 	}
 	.headingDecoration {
 		transform-origin: center center;
+		opacity: 1 !important;
 	}
 	.listContainer {
 		display: block;
