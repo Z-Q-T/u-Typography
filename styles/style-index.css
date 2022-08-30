@@ -1008,7 +1008,7 @@ section:hover .headingDecoration {
 	display: inline-block;
 	width: 6rem;
 	text-align: right;
-	transform: scale(0.75,0.75);
+	transform: scale(0.75, 0.75);
 	transform-origin: right center;
 }
 ul {
@@ -1372,34 +1372,40 @@ h-hws[hidden] {
 		width: 100%;
 		left: 0;
 		height: 1px;
-		top: 4.25rem;
+		top: 4.75rem;
 	}
 	/* #sectionInner-Seperator-Additional {
 		display: none;
 	} */
 	.classificationContainer {
 		position: relative;
-		/* padding-top: 4rem; */
+		margin: 0 auto;
+		width: 12rem;
 		top: 0;
 	}
 	h2 {
-		padding-bottom: 0rem;
 		text-align: left;
+		padding-left: 3rem;
 		padding-right: 3rem;
-		width: 9rem;
+		padding-bottom: 0rem;
+		width: 12rem;
 	}
-
+	.headingDecoration {
+		transform-origin: center center;
+	}
 	.listContainer {
 		display: block;
 		left: 0;
 		margin: 4rem 0 0 0;
 	}
+	.subDivision {
+		margin: 2.5rem 0;
+	}
 	.symbol {
 		text-align: center;
 		display: block;
 		margin: 0 auto;
-	transform-origin: center center;
-
+		transform-origin: center center;
 	}
 	h3 {
 		left: 0;
@@ -1513,7 +1519,7 @@ h-hws[hidden] {
 		margin: 3rem 0 0 0;
 	}
 	h2 {
-		padding-top: 2rem;
+		padding-top: 3rem;
 		padding-bottom: 0rem;
 		padding-right: 0rem;
 		font-size: 1.35rem;
@@ -1539,8 +1545,8 @@ h-hws[hidden] {
 		text-align: center;
 		display: block;
 		margin: 0 auto;
-	transform-origin: center center;
-}
+		transform-origin: center center;
+	}
 	h3 {
 		font-size: 1.2rem;
 		left: 0;
