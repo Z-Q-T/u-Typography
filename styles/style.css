@@ -1220,6 +1220,10 @@ em {
 	line-height: 0.1em;
 	color: var(--colour-sidenote-mark);
 }
+.sideNoteMark::before {
+	content: "\FEFF";
+	/* 零宽不断行空格 */
+}
 
 .tabulation {
 	font-family: var(--font-hei-biaodian) !important;
