@@ -1008,7 +1008,7 @@ section:hover .headingDecoration {
 	display: inline-block;
 	width: 6rem;
 	text-align: right;
-	transform: scale(75%);
+	transform: scale(0.75,0.75);
 	transform-origin: right center;
 }
 ul {
