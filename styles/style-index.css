@@ -1364,7 +1364,7 @@ h-hws[hidden] {
 	}
 	#section-Additional {
 		padding: 2rem 0 3rem;
-		margin: 10rem 0;
+		margin: 8rem 0;
 		border-top: 1px black solid;
 		border-bottom: 1px black solid;
 	}
@@ -1488,12 +1488,15 @@ h-hws[hidden] {
 		left: 0rem;
 	}
 	section {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+	section:first-child{
 		margin-top: 5rem;
-		margin-bottom: 5rem;
 	}
 	#section-Additional {
 		padding: 2rem 0 3rem;
-		margin: 9rem 0;
+		margin: 5rem 0;
 		border-top: 1px black solid;
 		border-bottom: 1px black solid;
 	}
