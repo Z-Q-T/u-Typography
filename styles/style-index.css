@@ -1064,6 +1064,7 @@ footer {
 	border-top: 1px black solid;
 	padding: 0rem 0rem;
 	padding-top: 2rem;
+	text-align: justify;
 }
 small {
 	font-size: inherit !important;
@@ -1107,15 +1108,20 @@ footer a:active {
 	vertical-align: 0.5em;
 	color: #00000060;
 }
-#creativecommonsIcon {
+#creativecommonsIcon,
+#MulanPSL {
 	margin-top: 1rem;
 	text-align: center;
 }
-footer img {
+#creativecommonsIcon img {
 	height: 22px !important;
-	margin-right: 5px;
+	margin-right: 2px;
+	margin-left: 2px;
 	vertical-align: text-bottom;
 	mix-blend-mode: multiply;
+}
+#MulanPSL img {
+	height: 18px;
 }
 /* 其他标题标点符号用思源黑体 */
 h-char.bd-jiya.bd-open > h-inner,
@@ -1431,6 +1437,9 @@ h-hws[hidden] {
 		border-left: 0px;
 		border-right: 0px;
 	}
+	footer {
+		text-align: left;
+	}
 }
 @media screen and (max-width: 840px) {
 	#whole {
@@ -1491,7 +1500,7 @@ h-hws[hidden] {
 		margin-top: 2rem;
 		margin-bottom: 2rem;
 	}
-	section:first-child{
+	section:first-child {
 		margin-top: 5rem;
 	}
 	#section-Additional {
@@ -1510,7 +1519,6 @@ h-hws[hidden] {
 	section:first-child .sectionInner-Seperator {
 		display: inline-block;
 	}
-	
 
 	.classificationContainer {
 		position: relative;
@@ -1570,6 +1578,7 @@ h-hws[hidden] {
 		/* margin: 0; */
 		width: auto;
 		border: 0px black solid;
+		text-align: left;
 	}
 }
 
@@ -1580,15 +1589,4 @@ h-hws[hidden] {
 		top: 6px;
 		left: auto;
 	}
-}
-
-@media screen and (max-width: 668px) and (hover: none) {
-	/* #briefIntroduction-Button {
-		margin-top: 5rem;
-		margin-bottom: -1rem;
-	}
-	#briefIntroduction-Button:hover::after {
-		width: 50%;
-		left: 25%;
-	} */
 }
