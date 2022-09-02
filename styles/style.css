@@ -807,6 +807,7 @@ a:visited {
 	line-height: 1.2rem !important;
 	margin: 0rem auto !important;
 	padding-bottom: 0.3rem;
+	margin-top: -0.3rem !important;
 }
 
 #mainContent {
@@ -914,7 +915,7 @@ h2 {
 	font-size: 1.5rem;
 	line-height: 2.5rem;
 	text-align: center;
-	margin: 2rem auto 3rem auto;
+	margin: 3rem auto 3rem auto;
 	padding: 4rem 0 0;
 }
 h3 {
