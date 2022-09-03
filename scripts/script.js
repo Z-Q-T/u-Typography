@@ -22,7 +22,7 @@ function changeTypeMenu_initialActive() {
         e.style.fontWeight = "600";
         e.style.fontSize = "1.05em";
     });
-    document.body.querySelectorAll("p > .Latin, p > a .Latin").forEach((e) => {
+    document.body.querySelectorAll("p > .Latin, p > a .Latin, p > small .Latin, p > a > small .Latin, p > small > a .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-sans)";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.1em";

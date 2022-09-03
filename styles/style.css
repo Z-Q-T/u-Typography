@@ -809,7 +809,9 @@ a:visited {
 	padding-bottom: 0.3rem;
 	margin-top: -0.3rem !important;
 }
-
+.tocH2 + .tocH3{
+	margin-top: 0 !important;
+}
 #mainContent {
 	padding-top: 2rem;
 	padding-bottom: 6rem;
@@ -924,7 +926,7 @@ h3 {
 	font-size: 1.2rem;
 	line-height: 2rem;
 	text-align: center;
-	margin: 1rem auto 2rem auto;
+	margin: 0rem auto 2rem auto;
 	padding: 3rem 0 0;
 }
 h2 + h3 {
