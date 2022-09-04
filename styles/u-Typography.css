@@ -718,7 +718,7 @@ html {
 	top: 8.75rem;
 	left: 39rem;
 	width: 18rem;
-	text-indent: 3rem;
+	/* text-indent: 3rem; */
 	font-size: 0.75rem;
 	line-height: 1.2rem;
 	font-family: var(--font-hei);
@@ -1246,7 +1246,9 @@ em {
 	line-height: 0.1em;
 	color: var(--colour-sidenote-mark);
 }
-
+#caption .tabulation{
+	font-family: inherit !important;
+}
 /* 中西文之间插入四分空 */
 h-hws::before,
 h-hws[hidden]::before {

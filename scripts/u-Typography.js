@@ -101,7 +101,10 @@ document.getElementById('changeTypeMenu-ZhengWen-SONG').onclick = function chang
         e.style.fontFamily = "var(--font-song-biaodian)";
         e.style.fontWeight = "600";
     });//换标点
-
+    document.body.querySelectorAll(".sideNoteMark h-inner").forEach((e) => {
+        e.style.fontFamily = "var(--font-hei-biaodian)";
+        e.style.fontWeight = "400";
+    });//边注编号不换字体
     changeTypeMenu_switchColour("#changeTypeMenu-ZhengWen-SONG", "#changeTypeMenu-ZhengWen-HEI");
 }
 //正文换黑体
@@ -140,7 +143,10 @@ document.getElementById('changeTypeMenu-BianZhu-SONG').onclick = function change
     document.body.querySelectorAll(".sideNote h-char.biaodian > h-inner").forEach((e) => {
         e.style.cssText = "font-family: var(--font-song-biaodian) !important; font-weight: 600 !important;"
     });//换标点
-
+    document.body.querySelectorAll(".tabulation h-inner").forEach((e) => {
+        e.style.fontFamily = "var(--font-hei-biaodian)";
+        e.style.fontWeight = "400";
+    });//边注编号不换字体
     changeTypeMenu_switchColour("#changeTypeMenu-BianZhu-SONG", "#changeTypeMenu-BianZhu-HEI");
 }
 //边注换黑体
