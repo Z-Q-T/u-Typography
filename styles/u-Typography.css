@@ -1228,6 +1228,10 @@ em {
 /* text-justify: inter-word; */
 /* 西文齐行往词间插入间距 */
 
+/* 西文斜体 */
+i{
+	font-style: italic;
+}
 /* 边注 */
 .sideNoteMark {
 	font-family: var(--font-hei-biaodian) !important;
