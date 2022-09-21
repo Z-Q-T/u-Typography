@@ -8,8 +8,6 @@ EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
 MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
 See the Mulan PSL v2 for more details. */
 
-
-
 /* 下面字体的名称要按照 “full font name” 属性来写 */
 
 /* 【中文】 */
@@ -821,7 +819,7 @@ a:visited {
 	padding-bottom: 0.3rem;
 	margin-top: -0.3rem !important;
 }
-.tocH2 + .tocH3{
+.tocH2 + .tocH3 {
 	margin-top: 0 !important;
 }
 #mainContent {
@@ -863,6 +861,7 @@ h6 + p,
 	font-size: 0.75rem;
 	line-height: 1.2rem;
 	color: var(--colour-dark-text);
+	text-indent: 3rem;
 	/* white-space: break-spaces; */
 }
 .sideNote::before {
@@ -873,6 +872,10 @@ h6 + p,
 .tabulation {
 	white-space: break-spaces;
 	tab-size: 3rem;
+	position: absolute;
+	left: 0rem;
+	text-indent: 0;
+	top: 0.45rem;
 }
 
 /* 标题标点符号用思源宋体 */
@@ -1229,7 +1232,7 @@ em {
 /* 西文齐行往词间插入间距 */
 
 /* 西文斜体 */
-i{
+i {
 	font-style: italic;
 }
 /* 边注 */
@@ -1250,7 +1253,7 @@ i{
 	line-height: 0.1em;
 	color: var(--colour-sidenote-mark);
 }
-#caption .tabulation{
+#caption .tabulation {
 	font-family: inherit !important;
 }
 /* 中西文之间插入四分空 */
