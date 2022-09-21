@@ -101,6 +101,9 @@ See the Mulan PSL v2 for more details. */
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
 正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
 @media screen and (min-width: 1840px) {
+	#＋＋{
+		margin-top: 3.5rem;
+	}
 }
 
 /* 【2】#############################
@@ -173,6 +176,9 @@ See the Mulan PSL v2 for more details. */
 	}
 	#gridLine-Centre-Layout_3_4_5 {
 		display: inline-block;
+	}
+	#＋＋{
+		margin-top: -1rem;
 	}
 }
 /* 【5】#############################
