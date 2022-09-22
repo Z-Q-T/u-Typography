@@ -849,6 +849,17 @@ h6 + p,
 .noIndentParagraph {
 	text-indent: 0 !important;
 }
+/* 边注 */
+.sideNoteMark {
+	font-family: var(--font-hei-biaodian) !important;
+	font-weight: 400 !important;
+	line-height: 0.1em;
+	color: var(--colour-sidenote-mark);
+}
+.sideNoteMark::before {
+	content: "\FEFF";
+	/* 零宽不断行空格 */
+}
 .sideNote {
 	display: inline-block;
 	text-indent: 0;
@@ -868,16 +879,24 @@ h6 + p,
 	content: "\FEFF";
 	/* 零宽不断行空格 */
 }
-
 .tabulation {
 	white-space: break-spaces;
 	tab-size: 3rem;
 	position: absolute;
 	left: 0rem;
 	text-indent: 0;
-	top: 0.45rem;
+	/* top: 0.45rem; */
+	font-family: var(--font-hei-biaodian) !important;
+	font-weight: 400 !important;
+	/* line-height: 0.1em; */
+	top: 0.125rem;
+	line-height: 1em;
+	height: 0.75rem;
+	color: var(--colour-sidenote-mark);
 }
-
+#caption .tabulation {
+	font-family: inherit !important;
+}
 /* 标题标点符号用思源宋体 */
 h1 h-char.biaodian > h-inner,
 h2 h-char.biaodian > h-inner,
@@ -988,6 +1007,7 @@ pre {
 	font-size: 0.625rem;
 	line-height: 1rem;
 	hyphens: none;
+	-webkit-hyphens: none;
 	text-align: left;
 	margin: 1rem 2rem;
 	padding: 1rem;
@@ -1117,9 +1137,13 @@ small p {
 	position: absolute;
 	left: 0rem;
 	font-size: 0.8rem !important;
-	line-height: 1.5rem;
+	/* line-height: 1.5rem; */
 	font-weight: 600 !important;
-	transform: translateY(-4rem);
+	/* transform: translateY(-4rem); */
+	line-height: 0.8rem;
+	transform: translateY(-3.6rem);
+	height: 4.8rem;
+	display: block;
 }
 
 .reversefootnote {
@@ -1226,36 +1250,21 @@ em {
 /* 拉丁文本 */
 .Latin {
 	hyphens: auto;
+	-webkit-hyphens: auto;
 	line-height: 1em;
 }
 /* text-justify: inter-word; */
 /* 西文齐行往词间插入间距 */
+.noAutoHyphen {
+	hyphens: manual !important;
+	-webkit-hyphens: manual !important;
+}
 
 /* 西文斜体 */
 i {
 	font-style: italic;
 }
-/* 边注 */
-.sideNoteMark {
-	font-family: var(--font-hei-biaodian) !important;
-	font-weight: 400 !important;
-	line-height: 0.1em;
-	color: var(--colour-sidenote-mark);
-}
-.sideNoteMark::before {
-	content: "\FEFF";
-	/* 零宽不断行空格 */
-}
 
-.tabulation {
-	font-family: var(--font-hei-biaodian) !important;
-	font-weight: 400 !important;
-	line-height: 0.1em;
-	color: var(--colour-sidenote-mark);
-}
-#caption .tabulation {
-	font-family: inherit !important;
-}
 /* 中西文之间插入四分空 */
 h-hws::before,
 h-hws[hidden]::before {
