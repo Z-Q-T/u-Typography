@@ -847,6 +847,8 @@ h3 + p,
 h4 + p,
 h5 + p,
 h6 + p,
+ol + p,
+ul + p,
 .footnoteNumber + p,
 .noIndentParagraph {
 	text-indent: 0 !important;
@@ -1269,6 +1271,14 @@ i {
 	font-style: italic;
 }
 
+/* 引用标签不需要自动加引号 */
+q::after {
+	content: "";
+}
+q::before {
+	content: "";
+}
+
 /* 中西文之间插入四分空 */
 h-hws::before,
 h-hws[hidden]::before {
@@ -1614,7 +1624,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		text-align: center;
 		/* text-indent: 0; */
 	}
-	#caption .tabulation{
+	#caption .tabulation {
 		left: auto;
 		margin-left: -3rem;
 	}
