@@ -899,6 +899,7 @@ ul + p,
 }
 #caption .tabulation {
 	font-family: inherit !important;
+	text-align: left;
 }
 /* 标题标点符号用思源宋体 */
 h1 h-char.biaodian > h-inner,

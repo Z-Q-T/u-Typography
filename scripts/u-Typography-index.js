@@ -245,7 +245,7 @@ function additionalLogo() {
     let p = document.documentElement.scrollTop;// || document.body.scrollTop;
     console.log(p);
     let windowWidth = window.innerWidth;
-    let mask1 = document.getElementById("mask1");
+    // let mask1 = document.getElementById("mask1");
     let mask2 = document.getElementById("mask2");
 
     let KuanDu1 = 1340;
@@ -278,41 +278,41 @@ function additionalLogo() {
     if (windowWidth > KuanDu1) {
         if (p < KD1QiShi) {
             // additionalLogoHidden;
-            mask1.style.opacity = 1;
+            // mask1.style.opacity = 1;
             mask2.style.opacity = 1;
         } else if (p >= KD1QiShi && p < KD1JieShu) {
             // additionalLogoAppearing(KD1JieShu, KD1XiangCha);
-            mask1.style.opacity = (KD1JieShu - p) / KD1XiangCha;
+            // mask1.style.opacity = (KD1JieShu - p) / KD1XiangCha;
             mask2.style.opacity = ((KD1JieShu - p) / KD1XiangCha) ** 3;
         } else if (p >= KD1JieShu) {
             // additionalLogoVisible;
-            mask1.style.opacity = 0;
+            // mask1.style.opacity = 0;
             mask2.style.opacity = 0;
         }
     } else if (windowWidth > KuanDu2 && windowWidth <= KuanDu1) {
         if (p < KD2QiShi) {
-            mask1.style.opacity = 1;
+            // mask1.style.opacity = 1;
             mask2.style.opacity = 1;
         } else if (p >= KD2QiShi && p < KD2JieShu) {
-            mask1.style.opacity = (KD2JieShu - p) / KD2XiangCha;
+            // mask1.style.opacity = (KD2JieShu - p) / KD2XiangCha;
             mask2.style.opacity = ((KD2JieShu - p) / KD2XiangCha) ** 3;
         } else if (p >= KD2JieShu) {
-            mask1.style.opacity = 0;
+            // mask1.style.opacity = 0;
             mask2.style.opacity = 0;
         }
     } else if (windowWidth <= KuanDu2) {
         if (p < KD3QiShi) {
-            mask1.style.opacity = 1;
+            // mask1.style.opacity = 1;
             mask2.style.opacity = 1;
         } else if (p >= KD3QiShi && p < KD3JieShu) {
-            mask1.style.opacity = (KD3JieShu - p) / KD3XiangCha;
+            // mask1.style.opacity = (KD3JieShu - p) / KD3XiangCha;
             mask2.style.opacity = ((KD3JieShu - p) / KD3XiangCha) ** 3;
         } else if (p >= KD3JieShu) {
-            mask1.style.opacity = 0;
+            // mask1.style.opacity = 0;
             mask2.style.opacity = 0;
         }
     }
 }
-window.onscroll = additionalLogo;
-window.addEventListener("resize", additionalLogo);
-additionalLogo();
+// window.onscroll = additionalLogo;
+// window.addEventListener("resize", additionalLogo);
+// additionalLogo();

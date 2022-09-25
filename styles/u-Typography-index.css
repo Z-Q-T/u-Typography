@@ -8,8 +8,6 @@ EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
 MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
 See the Mulan PSL v2 for more details. */
 
-
-
 /* 下面字体的名称要按照 “full font name” 属性来写 */
 
 /* 【中文】 */
@@ -379,7 +377,7 @@ html {
 	height: 59px;
 	top: 0px;
 	left: calc(50% - 190px);
-	background-color: var(--colour-paper);
+	/* background-color: var(--colour-paper); */
 	z-index: 11;
 }
 #mask2 {
@@ -594,14 +592,14 @@ header {
 #logomark {
 	width: fit-content;
 	margin: 0px auto 22px;
-	display: block;
+	display: none;
 }
 #logo {
 	width: 320px;
 	display: block;
 }
 #header-Seperator {
-	display: block;
+	display: none;
 	width: 380px;
 	/* height: 2px;
 	background-color: var(--colour-line-dark-grey); */
@@ -1458,7 +1456,7 @@ h-hws[hidden] {
 		width: 100%;
 		border-left: 0px;
 		border-right: 0px;
-		padding-top: 2rem;
+		padding-top: 1rem;
 	}
 	#changeTypeMenu-Button {
 		top: 11px;
@@ -1484,7 +1482,7 @@ h-hws[hidden] {
 		/* height: 1.5px; */
 		position: absolute;
 		left: calc(50% - 150px);
-		top: 346px;
+		top: 326px;
 	}
 
 	#briefIntroduction-Button {
@@ -1509,15 +1507,15 @@ h-hws[hidden] {
 		left: 0rem;
 	}
 	section {
-		margin-top: 2rem;
+		margin-top: 4rem;
 		margin-bottom: 2rem;
 	}
 	section:first-child {
-		margin-top: 5rem;
+		margin-top: 4rem;
 	}
 	#section-Additional {
 		padding: 2rem 0 3rem;
-		margin: 5rem 0;
+		margin: 3rem 0;
 		border-top: 1px black solid;
 		border-bottom: 1px black solid;
 	}
@@ -1525,17 +1523,18 @@ h-hws[hidden] {
 		width: 100%;
 		left: 0;
 		height: 1px;
-		top: -2rem;
-		display: none;
+		top: -1rem;
+		/* display: none; */
 	}
-	section:first-child .sectionInner-Seperator {
+	/* section:first-child .sectionInner-Seperator {
 		display: inline-block;
-	}
+	} */
 
 	.classificationContainer {
 		position: relative;
 		margin: 0 auto;
 		/* padding-top: 3rem; */
+		width: 5.4rem;
 		top: 0;
 	}
 
@@ -1551,7 +1550,7 @@ h-hws[hidden] {
 		padding-right: 0rem;
 		font-size: 1.35rem;
 		text-align: left;
-		width: 6.4rem;
+		width: 5.4rem;
 	}
 	.headingDecoration {
 		left: 0.45rem;
@@ -1564,9 +1563,13 @@ h-hws[hidden] {
 	.subDivision {
 		margin: 2rem 0;
 	}
+	li {
+		margin-top: 2.5rem;
+	}
 	.subtitle {
 		padding-left: 3.3rem;
 		font-size: 0.75rem;
+		margin-top: 0.8rem;
 	}
 	.symbol {
 		font-size: 1.2rem;
