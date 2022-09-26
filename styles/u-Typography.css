@@ -1481,19 +1481,22 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		display: initial;
 	}
 	#caption {
-		display: block;
+		/* display: block;
 		position: static;
 		margin-left: 3rem;
 		margin-top: 3rem;
 		width: 21rem;
-		text-align: center;
+		text-align: center; */
 		/* text-indent: 0; */
+		width: 9rem;
+top: 14.5rem;
+left: 30rem;
 	}
 	#caption .tabulation {
 		top: auto;
 		left: auto;
 		margin-left: -3rem;
-		margin-top: 0.15rem;
+		margin-top: 0.2rem;
 	}
 	#toc-PlaceHolder {
 		display: none;
@@ -1508,7 +1511,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	#mainContent {
 		width: 39rem;
 		/* padding: 2rem 0 2rem 0; */
-		margin-top: 28rem;
+		margin-top: 24rem;
 		left: 0rem;
 	}
 	article {
@@ -1619,14 +1622,16 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		position: relative;
 		left: 0;
 		top: 0;
-		margin-top: 3rem;
-		margin-left: 3rem;
-		width: 21rem;
-		text-align: center;
-		/* text-indent: 0; */
+		text-align: left;
+		text-indent: 0;
+		padding-left: 3rem;
+		width: fit-content;
+		max-width: 21rem;
+		margin: 3rem auto 0;
 	}
 	#caption .tabulation {
 		left: auto;
+		top: 0.2rem;
 		margin-left: -3rem;
 	}
 	#toc-PlaceHolder {

@@ -1338,7 +1338,7 @@ h-hws[hidden] {
 @media screen and (min-width: 840px) and (max-width: 1340px) {
 	#whole {
 		width: 840px;
-		padding-top: 4rem;
+		padding-top: 3rem;
 	}
 	#page {
 		width: 30rem;
@@ -1456,7 +1456,7 @@ h-hws[hidden] {
 		width: 100%;
 		border-left: 0px;
 		border-right: 0px;
-		padding-top: 1rem;
+		padding-top: 0.5rem;
 	}
 	#changeTypeMenu-Button {
 		top: 11px;
@@ -1505,6 +1505,7 @@ h-hws[hidden] {
 	#mainContent {
 		width: 100%;
 		left: 0rem;
+		padding-top: 1.5rem;
 	}
 	section {
 		margin-top: 4rem;
