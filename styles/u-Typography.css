@@ -898,7 +898,7 @@ ul + p,
 	color: var(--colour-sidenote-mark);
 }
 #caption .tabulation {
-	font-family: inherit !important;
+	/* font-family: inherit !important; */
 	text-align: left;
 }
 /* 标题标点符号用思源宋体 */
@@ -1489,15 +1489,15 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		text-align: center; */
 		/* text-indent: 0; */
 		width: 9rem;
-top: 14.5rem;
-left: 30rem;
+		top: 14.5rem;
+		left: 30rem;
 	}
-	#caption .tabulation {
+	/* #caption .tabulation {
 		top: auto;
 		left: auto;
 		margin-left: -3rem;
 		margin-top: 0.2rem;
-	}
+	} */
 	#toc-PlaceHolder {
 		display: none;
 	}
@@ -1631,7 +1631,7 @@ left: 30rem;
 	}
 	#caption .tabulation {
 		left: auto;
-		top: 0.2rem;
+		/* top: 0.2rem; */
 		margin-left: -3rem;
 	}
 	#toc-PlaceHolder {
