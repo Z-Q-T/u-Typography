@@ -299,10 +299,10 @@ window.addEventListener(&quot;resize&quot;, chineseGrid);
                     <p>具体地，这里对标点间距的处理参照国家标准<cite>《标点符号用法》</cite>（<span class="Latin" lang="en">GB/T 15834</span><span class="YiZiXian">—</span><span class="Latin" lang="en">2011</span>），也就是：</p>
                     <ol start=''>
                         <li>
-                            <p>破折号、省略号占两个字的宽度；</p>
+                            <p>破折号（<span class="PoZheHao">——</span>）、省略号（<span class="ShengLyueHao">……</span>）占两个字的宽度；</p>
                         </li>
                         <li>
-                            <p>半字连接号、间隔号、分隔号占半个字的宽度；</p>
+                            <p>半字连接号（<span class="BanZiXian">–</span>）、间隔号（<span class="JianGeHao">·</span>）、分隔号（<span class="FenGeHao">／</span>）占半个字的宽度；</p>
                         </li>
                         <li>
                             <p>其他标点在单独使用时占一个字的宽度，在多个标点连用时灵活调整标点间的间距。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@&#9;</span>很多人以为国标中对标点的宽度的描述是每个标点占一个字的宽度（也就是“全宽式”），其实并不是。即便排除破折号、省略号这两个长标点，以及半字连接号这个从定义上就是半个字宽的符号，国标仍将间隔号和分隔号这两个标点定义为半个字宽，这其实非常符合排版的美观性的要求，也利于流畅阅读。</span></p>
@@ -313,20 +313,20 @@ window.addEventListener(&quot;resize&quot;, chineseGrid);
                     <p>标点的避头尾参照<cite>《标点符号用法》</cite>和日常使用习惯。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@&#9;</span>在<span class="Latin noAutoHyphen" lang="en">Chrome</span>、<span class="Latin noAutoHyphen" lang="en">Edge</span>等浏览器上有时一些标点避头尾会出问题，而在<span class="Latin noAutoHyphen" lang="en">Firefox</span>浏览器上没有问题。该问题暂时超出我的技术能力范围，恕无法解决。</span>对于<cite>《标点符号用法》</cite>中没有明确说明，且日常使用习惯上有争议的内容，这里处理如下：</p>
                     <ol>
                         <li>
-                            <p>破折号、省略号在<cite>《标点符号用法》</cite>中未说明需要避头或避尾<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@&#9;</span>原文为“<span class="ShengLyueHao">……</span>不能中间断开分处上行之末和下行之首。”目前计算机中的中文破折号和省略号各自是由两个字符组合而成，在较弱的排版软件中这两个字符可能会前一个出现在上一行，后一个出现在下一行。这句话是针对此而说的。有人将其理解为“破折号、省略号不能处于上行之末或下行之首”，这是完全误解了这句话的意思。</span>，在日常使用习惯上通常会避头，有时会避尾，这里选择既不避头也不避尾。</p>
+                            <p>破折号（<span class="PoZheHao">——</span>）、省略号（<span class="ShengLyueHao">……</span>）在<cite>《标点符号用法》</cite>中未说明需要避头或避尾<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@&#9;</span>原文为“<span class="ShengLyueHao">……</span>不能中间断开分处上行之末和下行之首。”目前计算机中的中文破折号和省略号各自是由两个字符组合而成，在较弱的排版软件中这两个字符可能会前一个出现在上一行，后一个出现在下一行。这句话是针对此而说的。有人将其理解为“破折号、省略号不能处于上行之末或下行之首”，这是完全误解了这句话的意思。</span>，在日常使用习惯上通常会避头，有时会避尾，这里选择既不避头也不避尾。</p>
                             <p>这是因为破折号和省略号会占用两个字的宽度，假如它们既要避头又要避尾的话，也就意味着连带它们前后的字符，会出现一个至少四个字宽的不可断字组。这样一个长字组如果要求它必须整体位于上一行之尾或下一行之首的话，可能导致一行文字的字间距被过分地拉大（这样做的危害在前面已经介绍过了）。解决这一问题的方法出奇地简单：让破折号、省略号能出现在行首或行末就可以了（虽然从语义上考虑，破折号应该需要避头而不需要避尾，但在仅避头的情况下，仍然会有长达三个字的不可断字组，这对我来说还是太大了，所以我允许破折号出现在行首）。至于有人说“破折号、省略号这种细长条的符号直接出现在段落边缘不美观”，对此我不予否认，但我认为文字间距被过分地拉大更加“不美观”。同时，一个细长条的符号在段落边缘吊着孤零零的一个字，我也不认为这“美观”。另外，考虑到汉字“一一（yīyī）”也可能出现在段落边缘，或许我们不必对段落边缘的细长条造型太过敏感。</p>
                             <p>〔图〕</p>
                         </li>
                         <li>
-                            <p>一字连接号、半字连接号、波浪连接号按<cite>《标点符号用法》</cite>需要避头而不需要避尾，在日常使用习惯上通常会避头，有时会避尾，这里选择需要避头而不需要避尾。</p>
+                            <p>一字连接号（<span class="YiZiXian">—</span>）、半字连接号（<span class="BanZiXian">–</span>）、波浪连接号（～）按<cite>《标点符号用法》</cite>需要避头而不需要避尾，在日常使用习惯上通常会避头，有时会避尾，这里选择需要避头而不需要避尾。</p>
                             <p>这应该很少有争议，因为这些符号无论从造型上还是从功能上都类似于西文中的<span class="Latin noAutoHyphen" lang="en">hyphen</span>和<span class="Latin noAutoHyphen" lang="en">dash</span>，<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@&#9;</span>我没有做过调研，但我猜测这些符号就是从西文中的<span class="Latin noAutoHyphen" lang="en">hyphen</span>和<span class="Latin noAutoHyphen" lang="en">dash</span>演变来的。</span>而<span class="Latin noAutoHyphen" lang="en">hyphen</span>和<span class="Latin noAutoHyphen" lang="en">dash</span>的排版方法就是需要避头而不需要避尾，这样做非常合理，也恰好与国家标准相符。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@&#9;</span>需要注意的是，目前在计算机中，中文一字连接号通常使用<span class="Latin" lang="en">1</span>个<span class="Latin noAutoHyphen" lang="en">Em Dash</span>（—，<code>U+2014</code>）来表示，中文破折号通常使用<span class="Latin" lang="en">2</span>个<span class="Latin noAutoHyphen" lang="en">Em Dash</span>（<span class="PoZheHao">——</span>，<code>U+2014</code><span class="Latin" lang="en"> ×&nbsp;2</span>）来表示（另外，还有<span class="Latin noAutoHyphen" lang="en">Two-Em Dash</span>〔⸺，<code>U+2E3A</code>〕这个字符，或许更适合用来表示中文破折号，但大多数字体和输入法都不支持这一字符）。由于一字连接号和破折号使用的是同样的字符，因而对其中一个标点设置的避头尾属性也很有可能被同时运用在另一个上。</span></p>
                         </li>
                         <li>
-                            <p>间隔号按<cite>《标点符号用法》</cite>需要避头而不需要避尾，在日常使用习惯上一般既避头又避尾，这里选择需要避头而不需要避尾。</p>
-                            <p>对此我无法给出很明确的理由。间隔号最常见的用途是用于分隔非汉语人名（但同样使用汉字的日朝韩越人名则不用间隔号），也就相当于外文姓名之间的“空格”。另外还常用于分隔古籍的篇、章、卷名，这一功能曾经是靠波浪式书名号中间的空白来完成的。总之，间隔号起到的似乎是类似于空格的作用，在几乎不使用空格的现代中文排版中，需要有一个符号来充当空格的作用。对于这样一个几乎是中文特有的标点，实在难从其他文字的排版中找到参考案例。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@&#9;</span>现代中文里的标点不仅造型和作用和西文极其相似，连排版方法〔位置、间距、避头尾等〕也与西文里的标点非常类似。有理由相信中文标点在所有这些方面都有所借鉴。因而在遇到陌生的标点时，尝试从西文里去寻找参考是很合理的做法。另外，西文里其实有间隔号〔<span class="Latin" lang="en">middle dot</span>〕。在古代可能用它来分割单词，毕竟那时候词和词之间还不加空格，这似乎与现代中文里当作空格用的间隔号很类似。但在空格成为西文的常态后，我能找到的间隔号在现代西文的用法只有在字典里用来分割音节。</span>我只能出于和破折号一样的理由<span class="PoZheHao">——</span>让不可断字组尽量短，避免一行文字的字间距被过分地拉大<span class="PoZheHao">——</span>允许间隔号不避尾。</p>
+                            <p>间隔号（<span class="JianGeHao">·</span>）按<cite>《标点符号用法》</cite>需要避头而不需要避尾，在日常使用习惯上一般既避头又避尾，这里选择需要避头而不需要避尾。</p>
+                            <p>对此我无法给出很明确的理由。间隔号最常见的用途是用于分隔非汉语人名（但同样使用汉字的日朝韩越人名则不用间隔号），也就相当于外文姓名之间的“空格”。另外还常用于分隔古籍的篇、章、卷名，这一功能曾经是靠波浪式书名号中间的空白来完成的。总之，间隔号起到的似乎是类似于空格的作用，在几乎不使用空格的现代中文排版中，需要有一个符号来起到空格的效果。对于这样一个几乎是中文特有的标点，实在难从其他文字的排版中找到参考案例。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@&#9;</span>现代中文里的标点不仅造型和作用和西文极其相似，连排版方法〔位置、间距、避头尾等〕也与西文里的标点非常类似。有理由相信中文标点在所有这些方面都有所借鉴。因而在遇到陌生的标点时，尝试从西文里去寻找参考是很合理的做法。另外，西文里其实有间隔号〔<span class="Latin" lang="en">middle dot</span>〕。在古代可能用它来分割单词，毕竟那时候词和词之间还不加空格，这似乎与现代中文里当作空格用的间隔号很类似。但在空格成为西文的常态后，我能找到的间隔号在现代西文的用法只有在字典里用来分割音节。</span>我只能出于和破折号一样的理由<span class="PoZheHao">——</span>让不可断字组尽量短，避免一行文字的字间距被过分地拉大<span class="PoZheHao">——</span>允许间隔号不避尾。</p>
                         </li>
                         <li>
-                            <p>分隔号按<cite>《标点符号用法》</cite>既需要避头又需要避尾，在日常使用习惯上通常既避头又避尾，这里既不避头也不避尾。</p>
+                            <p>分隔号（<span class="FenGeHao">／</span>）按<cite>《标点符号用法》</cite>既需要避头又需要避尾，在日常使用习惯上通常既避头又避尾，这里既不避头也不避尾。</p>
                             <p><cite>《标点符号用法》</cite>中定义的分隔号的用法多样，但总体来说这个符号使用频率很低。个人认为既然分隔号就是为了“分隔”，那它前后的内容被分隔到两行上去自然没什么问题。唯一的问题是可以在分隔号前还是分隔号后换行，或两者皆可。参照连接号、间隔号的逻辑，个人认为分隔号应该需要避头而不需要避尾。而这里选择既不避头也不避尾，纯粹是在网页技术上遇到了一些困难，只得妥协。</p>
                         </li>
                     </ol>
