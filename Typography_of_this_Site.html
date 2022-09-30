@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-Hans-CN">
 
 <head>
     <meta charset="utf-8">
@@ -295,7 +295,7 @@ window.addEventListener(&quot;resize&quot;, chineseGrid);
                     <h3 id='间距'>间距</h3>
                     <p>传统的书面中文不使用标点符号。现今中文里使用的大多数标点符号都是近代从外国引进的。这些舶来品如何与汉字搭配就成了大问题。历史上，汉语文本里的标点符号的排版方法多有演变，如今较为常见的做法是将每个标点放在一个和汉字字框等大的方格中，与汉字一同顺序排列，并且标点与标点之间以及标点与汉字之间的空白可以灵活调整，以获得较好的排版效果。</p>
                     <p>但是，这一做法在计算机时代再次受到了挑战。诞生于西方的电脑未曾考虑过汉字，曾经我们花费了巨大的精力来让计算机能够储存、处理、显示汉字，在这一方面我们成功了；但若论及在计算机上实现高质量的中文排字，目前尚未完全实现。严谨、精确的计算机强制让每个标点都落在一个完美的正方形字框中，容不得一点变通，即便是前后两个标点间出现了巨大的空白，也视若无睹，因为这并不违反计算机的“规矩”。然而，假如我们看一看铅活字时代的中文排版，会发现能灵活调整的空白才是标点排版的常态，这才是中文版面的本来面目。<sup class="sideNoteMark">＋&#65279;＋&#65279;＋</sup><span class="sideNote"><span class="tabulation">＋&#65279;＋&#65279;＋&#9;</span>这么说可能会有较大争议。从近代以来，中文版面的构成方式一直在不断发生变化，究竟何种状态能被称为“常规”恐怕难以判定。直到今天，在我国的香港、澳门、台湾地区，中文版面的构成仍与内地<span class="FenGeHao">／</span>大陆稍有差异（并不是简繁体的问题）。</span>铅活字时代能做到的事，计算机时代反而做不到了。<em>达成良好的标点间距是计算机时代中文排版的又一大挑战</em>。</p>
-                    <p>为了解决这一问题，这里用到了由陈奕钧（陳奕鈞）开发的<cite>“汉字标准格式”</cite>（<a class="externalLink" target="_blank" href='https://hanzi.pro/manual/'>漢字標準格式</a>）网页框架<sup class='footnoteMark' id='footnote-mark-2'><a href='#footnote-number-2'>2</a></sup>，并进行了少量个性化的修改。该框架包含诸多功能，这里主要使用的是其中的标点间距调整（也称“标点挤压”）和中西文间距调整两个模块。借此，基本实现了在网页媒介上达成较好的标点和字符间距。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@&#9;</span>但仍未达到理想状态，比如一些可以通过进一步压缩标点间距，以便在行末多容纳一个字，来实现标点避头尾，达到段落左右对齐的情况，由于无法实现“进一步压缩标点间距”这一操作，导致只能将行末字符换至下一行来实现标点避头尾，本行的字间距则被迫拉开。这里不再详述。</span></p>
+                    <p>为了解决这一问题，这里用到了由陈奕钧（陳奕鈞）开发的<cite>“汉字标准格式”</cite>（<a class="externalLink" target="_blank" href='https://hanzi.pro/manual/' lang="zh-hant-TW">漢字標準格式</a>）网页框架<sup class='footnoteMark' id='footnote-mark-2'><a href='#footnote-number-2'>2</a></sup>，并进行了少量个性化的修改。该框架包含诸多功能，这里主要使用的是其中的标点间距调整（也称“标点挤压”）和中西文间距调整两个模块。借此，基本实现了在网页媒介上达成较好的标点和字符间距。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@&#9;</span>但仍未达到理想状态，比如一些可以通过进一步压缩标点间距，以便在行末多容纳一个字，来实现标点避头尾，达到段落左右对齐的情况，由于无法实现“进一步压缩标点间距”这一操作，导致只能将行末字符换至下一行来实现标点避头尾，本行的字间距则被迫拉开。这里不再详述。</span></p>
                     <p>具体地，这里对标点间距的处理参照国家标准<cite>《标点符号用法》</cite>（<span class="Latin" lang="en">GB/T 15834</span><span class="YiZiXian">—</span><span class="Latin" lang="en">2011</span>），也就是：</p>
                     <ol start=''>
                         <li>
