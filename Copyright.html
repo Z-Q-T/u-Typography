@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="张擎天（Zhang Qingtian）">
-    <meta name="description" content="“字无字 ú–Typography”网站内容的版权声明">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--开头通用模板到此结束-->
 
+    <meta name="description" content="“字无字 ú–Typography”网站内容的版权声明">
     <title>版权声明 ｜ 字无字 ú–Typography</title>
-    <link rel="shortcut icon" href="images/字无字_网页图标.png" type="image/x-icon">
 
+    <!-- 字体服务的通用模板由此开始 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet"><!-- 思源黑体 -->
@@ -19,12 +20,15 @@
     <!-- Source Serif -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     <!-- Source Code -->
+    <!-- 字体服务的通用模板到此结束 -->
 
+    <!--图标、样式、链接打开方式的一级页面模板由此开始-->
+    <link rel="shortcut icon" href="images/字无字_网页图标.png" type="image/x-icon">
     <link rel="stylesheet" media="all" href="styles/han.css">
-
     <link rel="stylesheet" href="styles/u-Typography.css" type="text/css">
     <!-- <link rel="stylesheet" href="styles/debug.css" type="text/css"> -->
     <base target="_self">
+    <!--图标、样式、链接打开方式的一级页面模板到此结束-->
 
 </head>
 
@@ -32,9 +36,9 @@
 
     <div id="whole">
 
+        <!--导航栏的一级页面模板由此开始-->
         <div id="bar">
             <div id="decoLine"></div>
-
             <a href="index.html" id="backToHomePage">
                 <img id="backArrow" src="images/字无字_返回首页箭头-图标.png" alt="返回首页｜back to home page">
                 <img id="home" src="images/字无字_返回首页房子-图标.png" alt="返回首页｜back to home page">
@@ -44,8 +48,6 @@
                 <source srcset="images/字无字_横.png" media="(max-width: 1040px)">
                 <img id="logo" src="images/字无字_竖.png" alt="“字无字”的标志｜logo of ú–typography">
             </picture>
-
-
             <div id="changeTypeMenu-Button"><svg id="changeTypeMenu-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 4">
                     <g id="changeTypeMenu-ButtonSVGgraphic">
                         <circle cx="2" cy="2" r="1.5" />
@@ -54,7 +56,6 @@
                     </g>
                 </svg></div>
             <!-- <div id="changeTypeMenu-Hint"><span id="changeTypeMenu-Hint-Title">〖更换字体〗</span><br>该功能在一些情况下会额外下载所需的字体<br>这可能消耗更多的流量</div> -->
-
             <menu id="changeTypeMenu" style="visibility: hidden; opacity: 0; ">
                 <div class="changeTypeMenu-Section">
                     <div class="changeTypeMenu-Caption">标题</div>&ensp;<div class="changeTypeMenu-Options">
@@ -82,10 +83,10 @@
                     </div>
                 </div>
             </menu>
-            <div id="pageTypography-Button"><a href="Typography_of_this_Site.html" target="_blank">¶</a>
-                <!-- <img id="pageTypography-Icon" src="images/字无字_排版图标.png" alt="本网站的排版说明｜Typography of this website"> -->
+            <div><a id="pageTypography-Button" href="Typography_of_this_Site.html" target="_blank">¶</a>
             </div>
         </div>
+        <!--导航栏的一级页面模板到此结束-->
 
         <main id="page">
             <header id="mainTitleArea">
@@ -204,19 +205,16 @@
         </main>
     </div>
 
-    <!-- “一级引号和「二级引号」”（这是为了规避西文里的省文撇的换行问题）
-《一级书名号和〈二级书名号〉》
-（一级括号和〔二级括号〕）
-［特殊括号］ -->
-    <script src="scripts/u-Typography.js"></script>
-    <script src="scripts/han.js"></script>
-    <script>
-        changeTypeMenu_initialActive()
-        Han(document.querySelector('.entry'))
-            .renderJiya()
-            .renderHWS()
+<!-- 脚本的一级页面模板由此开始 -->
+<script src="scripts/u-Typography.js"></script>
+<script src="scripts/han.js"></script>
+<script>
+    changeTypeMenu_initialActive()
+    Han(document.querySelector('.entry'))
+    .renderJiya()
+    .renderHWS()
     </script>
-
+<!-- 脚本的一级页面模板到此结束 -->
 
 </body>
 

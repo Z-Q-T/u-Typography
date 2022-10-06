@@ -839,6 +839,7 @@ article {
 	position: relative;
 	top: 0;
 	line-height: 1.85rem;
+	margin-bottom: 6rem;
 }
 p:first-child,
 h1 + p,
@@ -1170,6 +1171,33 @@ small p {
 	color: var(--colour-2) !important;
 	background: transparent;
 }
+footer{
+	border-top: 1px solid var(--colour-line-dark-grey);
+}
+footer a {
+	text-decoration: none;
+	color: black;
+	background: linear-gradient(135deg, var(--colour-2), var(--colour-2))
+		no-repeat;
+	padding: 0.1em 0;
+	background-size: 100% 10%;
+	background-position: left 0 bottom 0;
+	transition: all 100ms ease-in-out;
+}
+footer a:hover {
+	background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
+		no-repeat;
+	background-size: 100% 100%;
+	background-position: left 0 bottom 0;
+	transition: all 100ms ease-in-out;
+}
+footer a:active {
+	color: var(--colour-1);
+	background-size: 100% 100%;
+	background-position: left 0 bottom 0;
+	transition: all 100ms ease-in-out;
+}
+
 /* 间隔号· */
 .JianGeHao {
 	font-family: var(--font-hei-biaodian) !important;
