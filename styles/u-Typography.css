@@ -839,7 +839,7 @@ article {
 	position: relative;
 	top: 0;
 	line-height: 1.85rem;
-	margin-bottom: 6rem;
+	/* margin-bottom: 6rem; */
 }
 p:first-child,
 h1 + p,
@@ -1126,11 +1126,10 @@ hr {
 	background-color: #747474;
 	margin: 10rem auto 4rem;
 }
-small,
-small p {
+small {
 	/* font-size: inherit !important; */
 	font-size: 0.75rem;
-	line-height: 1.5rem;
+	/* line-height: 1.5rem; */
 }
 .footnoteEntry {
 	margin: 0rem auto;
@@ -1171,8 +1170,29 @@ small p {
 	color: var(--colour-2) !important;
 	background: transparent;
 }
-footer{
-	border-top: 1px solid var(--colour-line-dark-grey);
+footer {
+	font-family: var(--font-hei);
+	font-weight: 400;
+	font-size: 0.75rem;
+	width: 36rem;
+	margin-top:6rem;
+	margin-bottom: 0rem;
+	padding-top: 3rem;
+	border-top: 1px solid black;
+	display: block;
+}
+footer small{
+	display: block;
+	line-height: 1.25rem;
+	text-indent: 0 !important;
+	text-align: center;
+}
+/* footer small:first-child{
+	margin-bottom: 0.5rem;
+} */
+.footerLineSpacing{
+	font-size: 0.5rem;
+	line-height: 0.5rem;
 }
 footer a {
 	text-decoration: none;
@@ -1197,7 +1217,22 @@ footer a:active {
 	background-position: left 0 bottom 0;
 	transition: all 100ms ease-in-out;
 }
-
+#footerWebsiteName a{
+	background-size: 100% 0%;
+}
+#footerWebsiteName a:hover{
+	background-size: 100% 100%;
+}
+footer small .Latin{
+	font-family: var(--font-sans);
+    font-weight: 400;
+	font-size: 2em;
+}
+#footerWebsiteName .Latin{
+	font-family: var(--font-sans);
+    font-weight: 600;
+	font-size: 1.1em;
+}
 /* 间隔号· */
 .JianGeHao {
 	font-family: var(--font-hei-biaodian) !important;
@@ -1455,6 +1490,9 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		left: 33rem;
 		width: 12rem;
 	}
+	footer {
+		width: 30rem;
+	}
 }
 /* 【3】#############################
 宽度1020—1380的窗口，或经过1.25倍放大的宽度1275—1725的窗口
@@ -1551,6 +1589,9 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	.sideNote {
 		left: 30rem;
 		width: 9rem;
+	}
+	footer {
+		width: 27rem;
 	}
 }
 /* 【4】#############################
@@ -1698,6 +1739,9 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		margin-top: 1rem;
 		margin-bottom: 1rem;
 	}
+	footer {
+		width: 27rem;
+	}
 }
 /* 【5】#############################
 宽度小于660的窗口，或经过1.25倍放大的宽度小于825的窗口
@@ -1844,5 +1888,8 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	}
 	.tabulation {
 		display: none;
+	}
+	footer {
+		width: 100%;
 	}
 }
