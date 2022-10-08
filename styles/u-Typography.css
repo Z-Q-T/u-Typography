@@ -684,7 +684,7 @@ html {
 	opacity: 0;
 	transition: all 200ms ease-in-out;
 }
-#index:hover #indexExplanation{
+#index:hover #indexExplanation {
 	display: block;
 	visibility: visible;
 	opacity: 1;
@@ -750,7 +750,7 @@ html {
 	top: 0;
 	left: 0;
 }
-#toc-Switcher{
+#toc-Switcher {
 	display: none;
 }
 #toc-Container {
@@ -766,7 +766,7 @@ html {
 	display: block;
 	position: absolute;
 	width: 18rem;
-	top: 128px;
+	top: 88px;
 	left: 0;
 	color: var(--colour-1);
 	opacity: 0.2;
@@ -790,16 +790,21 @@ html {
 	font-size: 0.5rem !important;
 	line-height: 1rem !important;
 	display: block;
-	position: absolute;
-	top: -40px;
+	position: relative;
+	top: 0px;
 	margin: 0 auto;
-	width: 80px;
-	left: calc(50% - 40px);
+	width: 4rem;
+	height: 1rem;
+	left: auto;
+	/* left: calc(50% - 40px); */
+}
+#toc-backToMainTitle {
+	margin-bottom: 2rem;
 }
 #toc-skipToFootnote {
-	position: relative;
-	top: 30px;
-	left: auto;
+	/* position: relative; */
+	margin-top: 2.25rem;
+	/* left: auto; */
 }
 #tableOfContent li {
 	display: block;
@@ -1497,7 +1502,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	}
 	#tableOfContent {
 		width: 12rem;
-		top: 105px;
+		top: 65px;
 	}
 	#mainContent {
 		width: 45rem;
@@ -1588,7 +1593,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	#toc-PlaceHolder {
 		display: none;
 	}
-	#toc-Switcher{
+	#toc-Switcher {
 		display: block;
 		position: fixed;
 		left: 3rem;
@@ -1617,25 +1622,26 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		opacity: 1;
 		left: 3rem;
 		/* transition: opacity,left 200ms ease-in-out; */
-
 	}
-	#toc-Container:hover{
+	#toc-Container:hover {
 		/* visibility: visible; */
 		opacity: 1;
 		left: 3rem;
 		/* transition: opacity,left 200ms ease-in-out; */
-
 	}
 
 	#tableOfContent {
 		display: block;
-		/* position: relative; */
-		top: 4.5rem;
-		left: 1.5rem;
+		position: static;
+		/* top: 2.5rem; */
+		/* left: 1.5rem; */
 		width: 12rem;
 		opacity: 1;
 		color: var(--colour-dark-grey-1);
 		overflow-y: auto;
+		height: calc(100% - 5rem);
+		margin-top: 2.5rem;
+		margin-left: 1.5rem;
 	}
 
 	#mainContent {
