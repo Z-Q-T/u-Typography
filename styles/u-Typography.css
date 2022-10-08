@@ -202,15 +202,15 @@ See the Mulan PSL v2 for more details. */
 /* —————————————————————————————— */
 :root {
 	--colour-paper: rgb(250, 249, 247);
-	--colour-changeType-unselected: rgb(70, 70, 70);
-	--colour-changeType-selected: rgb(190, 176, 156);
-	--colour-changeType-hover: rgb(123, 117, 106);
 	--colour-link-active-background: rgb(206, 189, 166);
 	--colour-1: rgb(188, 171, 147);
 	--colour-2: rgb(228, 216, 198);
 	--colour-3: rgb(239, 231, 216);
 	--colour-4: rgb(243, 237, 224);
 	--colour-bar-active: rgb(241, 234, 225);
+	--colour-changeType-unselected: rgb(70, 70, 70);
+	--colour-changeType-selected: rgb(190, 176, 156);
+	--colour-changeType-hover: rgb(123, 117, 106);
 	--colour-changeType-button-hover: rgb(242, 237, 228);
 	--colour-changeType-button-active: rgb(237, 230, 215);
 	--colour-button: rgb(207, 193, 172);
@@ -218,9 +218,9 @@ See the Mulan PSL v2 for more details. */
 	--colour-footnote-mark: rgb(177, 132, 69);
 	--colour-code: rgb(245, 233, 231);
 	--colour-shadow: rgb(216, 208, 197);
-	--colour-line-dark-grey: #444444;
-	--colour-line-light-grey: #bbb;
-	--colour-dark-text: rgb(46, 46, 46);
+	--colour-dark-grey-1: rgb(46, 46, 46);
+	--colour-dark-grey-2: #444444;
+	--colour-light-grey-1: #bbb;
 	--font-hei: "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
 	--font-song: "SONG", "Noto Serif SC", serif;
@@ -275,7 +275,7 @@ html {
 	/* background-color: rgba(255, 255, 255, 1); */
 	background-color: var(--colour-paper);
 	/* box-shadow: 0 0 10px rgb(222, 216, 207); */
-	border-right: 1px solid var(--colour-line-dark-grey);
+	border-right: 1px solid var(--colour-dark-grey-2);
 	z-index: 15;
 }
 
@@ -671,6 +671,24 @@ html {
 	font-weight: 600;
 	font-size: 0.9rem;
 }
+#indexExplanation {
+	display: block;
+	position: absolute;
+	font-family: var(--font-hei);
+	font-weight: 400;
+	font-size: 0.5rem;
+	color: var(--colour-light-grey-1);
+	width: 10rem;
+	left: calc(50% - 5rem);
+	visibility: hidden;
+	opacity: 0;
+	transition: all 200ms ease-in-out;
+}
+#index:hover #indexExplanation{
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
 .metaInfo-Seperator {
 	height: 1.5px;
 	width: 40px;
@@ -732,6 +750,9 @@ html {
 	top: 0;
 	left: 0;
 }
+#toc-Switcher{
+	display: none;
+}
 #toc-Container {
 	/* padding: 20px; */
 	height: 100px;
@@ -756,7 +777,7 @@ html {
 }
 #tableOfContent:hover {
 	opacity: 1;
-	color: var(--colour-dark-text);
+	color: var(--colour-dark-grey-1);
 	transition-property: opacity;
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
@@ -876,7 +897,7 @@ ul + p,
 	clear: both;
 	font-size: 0.75rem;
 	line-height: 1.2rem;
-	color: var(--colour-dark-text);
+	color: var(--colour-dark-grey-1);
 	text-indent: 3rem;
 	/* white-space: break-spaces; */
 }
@@ -1175,13 +1196,13 @@ footer {
 	font-weight: 400;
 	font-size: 0.75rem;
 	width: 36rem;
-	margin-top:4rem;
+	margin-top: 4rem;
 	margin-bottom: 0rem;
 	padding-top: 4rem;
 	border-top: 1px solid black;
 	display: block;
 }
-footer small{
+footer small {
 	display: block;
 	line-height: 1.25rem;
 	text-indent: 0 !important;
@@ -1190,7 +1211,7 @@ footer small{
 /* footer small:first-child{
 	margin-bottom: 0.5rem;
 } */
-.footerLineSpacing{
+.footerLineSpacing {
 	font-size: 0.5rem;
 	line-height: 0.5rem;
 }
@@ -1217,20 +1238,20 @@ footer a:active {
 	background-position: left 0 bottom 0;
 	transition: all 100ms ease-in-out;
 }
-#footerWebsiteName a{
+#footerWebsiteName a {
 	background-size: 100% 0%;
 }
-#footerWebsiteName a:hover{
+#footerWebsiteName a:hover {
 	background-size: 100% 100%;
 }
-footer small .Latin{
+footer small .Latin {
 	font-family: var(--font-sans);
-    font-weight: 400;
+	font-weight: 400;
 	font-size: 2em;
 }
-#footerWebsiteName .Latin{
+#footerWebsiteName .Latin {
 	font-family: var(--font-sans);
-    font-weight: 600;
+	font-weight: 600;
 	font-size: 1.1em;
 }
 /* 间隔号· */
@@ -1567,11 +1588,54 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	#toc-PlaceHolder {
 		display: none;
 	}
-	#toc-Container {
-		display: none;
+	#toc-Switcher{
+		display: block;
+		position: fixed;
+		left: 3rem;
+		top: calc(50% - 0.5rem);
+		width: 1rem;
+		height: 1rem;
+		background-color: black;
+		z-index: 15;
 	}
+	#toc-Container {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: -12rem;
+		z-index: 10;
+		width: 15rem;
+		height: 100%;
+		background-color: var(--colour-paper);
+		border-right: 1px solid var(--colour-dark-grey-2);
+		/* visibility: hidden; */
+		opacity: 0.1;
+		transition: all 200ms ease-in-out;
+	}
+	#toc-Switcher:hover + #toc-Container {
+		/* visibility: visible; */
+		opacity: 1;
+		left: 3rem;
+		/* transition: opacity,left 200ms ease-in-out; */
+
+	}
+	#toc-Container:hover{
+		/* visibility: visible; */
+		opacity: 1;
+		left: 3rem;
+		/* transition: opacity,left 200ms ease-in-out; */
+
+	}
+
 	#tableOfContent {
-		display: none;
+		display: block;
+		/* position: relative; */
+		top: 4.5rem;
+		left: 1.5rem;
+		width: 12rem;
+		opacity: 1;
+		color: var(--colour-dark-grey-1);
+		overflow-y: auto;
 	}
 
 	#mainContent {
@@ -1608,8 +1672,8 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		position: fixed;
 		z-index: 10;
 
-		border-right: 0px solid var(--colour-line-dark-grey);
-		border-bottom: 1px solid var(--colour-line-dark-grey);
+		border-right: 0px solid var(--colour-dark-grey-2);
+		border-bottom: 1px solid var(--colour-dark-grey-2);
 		/* backdrop-filter: blur(5px); */
 	}
 	#logotype {
@@ -1756,8 +1820,8 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		display: block;
 		position: fixed;
 		z-index: 10;
-		border-right: 0px solid var(--colour-line-dark-grey);
-		border-bottom: 1px solid var(--colour-line-dark-grey);
+		border-right: 0px solid var(--colour-dark-grey-2);
+		border-bottom: 1px solid var(--colour-dark-grey-2);
 	}
 	#logotype {
 		height: 60px;

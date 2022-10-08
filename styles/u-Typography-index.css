@@ -168,15 +168,15 @@ See the Mulan PSL v2 for more details. */
 
 :root {
 	--colour-paper: rgb(250, 249, 247);
-	--colour-changeType-unselected: rgb(70, 70, 70);
-	--colour-changeType-selected: rgb(190, 176, 156);
-	--colour-changeType-hover: rgb(123, 117, 106);
 	--colour-link-active-background: rgb(206, 189, 166);
 	--colour-1: rgb(188, 171, 147);
 	--colour-2: rgb(228, 216, 198);
 	--colour-3: rgb(239, 231, 216);
 	--colour-4: rgb(243, 237, 224);
 	--colour-bar-active: rgb(241, 234, 225);
+	--colour-changeType-unselected: rgb(70, 70, 70);
+	--colour-changeType-selected: rgb(190, 176, 156);
+	--colour-changeType-hover: rgb(123, 117, 106);
 	--colour-changeType-button-hover: rgb(242, 237, 228);
 	--colour-changeType-button-active: rgb(237, 230, 215);
 	--colour-button: rgb(207, 193, 172);
@@ -184,9 +184,9 @@ See the Mulan PSL v2 for more details. */
 	--colour-footnote-mark: rgb(177, 132, 69);
 	--colour-code: rgb(245, 233, 231);
 	--colour-shadow: rgb(216, 208, 197);
-	--colour-line-dark-grey: #444444;
-	--colour-line-light-grey: #bbb;
-	--colour-dark-text: rgb(46, 46, 46);
+	--colour-dark-grey-1: rgb(46, 46, 46);
+	--colour-dark-grey-2: #444444;
+	--colour-light-grey-1: #bbb;
 	--font-hei: "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
 	--font-song: "SONG", "Noto Serif SC", serif;
@@ -226,8 +226,8 @@ html {
 	margin: 0 auto;
 	/* position: relative;
 	top: 0; */
-	/* border-left: 1px solid var(--colour-line-dark-grey);
-	border-right: 1px solid var(--colour-line-dark-grey); */
+	/* border-left: 1px solid var(--colour-dark-grey-2);
+	border-right: 1px solid var(--colour-dark-grey-2); */
 	padding-top: 5rem;
 	margin-top: 5rem;
 }
@@ -237,7 +237,7 @@ html {
 	width: 100%;
 	/* height: 10px; */
 	height: 1px;
-	background-color: var(--colour-line-dark-grey);
+	background-color: var(--colour-dark-grey-2);
 	z-index: 15;
 }
 #bar {
@@ -312,8 +312,8 @@ html {
 	top: 0px;
 	left: 0px;
 	/* border-radius: 5px; */
-	border-right: 1px solid var(--colour-line-dark-grey);
-	border-bottom: 1px solid var(--colour-line-dark-grey);
+	border-right: 1px solid var(--colour-dark-grey-2);
+	border-bottom: 1px solid var(--colour-dark-grey-2);
 	opacity: 0;
 	/* display: none; */
 	visibility: hidden;
@@ -348,7 +348,7 @@ html {
 }
 /* #contentMenu-ButtonSVG {
 	width: 18px;
-	fill: var(--colour-dark-text);
+	fill: var(--colour-dark-grey-1);
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -381,9 +381,9 @@ html {
 	z-index: 11;
 }
 #mask2 {
-	border-left: 1px solid var(--colour-line-dark-grey);
-	border-right: 1px solid var(--colour-line-dark-grey);
-	/* border-bottom: 1px solid var(--colour-line-dark-grey); */
+	border-left: 1px solid var(--colour-dark-grey-2);
+	border-right: 1px solid var(--colour-dark-grey-2);
+	/* border-bottom: 1px solid var(--colour-dark-grey-2); */
 	/* background: linear-gradient(
 		0deg,
 		var(--colour-paper),
@@ -602,7 +602,7 @@ header {
 	display: none;
 	width: 380px;
 	/* height: 2px;
-	background-color: var(--colour-line-dark-grey); */
+	background-color: var(--colour-dark-grey-2); */
 	margin: 0 auto;
 	height: 1px;
 	background: radial-gradient(closest-side, black, transparent);
@@ -872,7 +872,7 @@ section {
 	padding-bottom: 3rem;
 }
 .sectionInner-Seperator {
-	background-color: var(--colour-line-light-grey);
+	background-color: var(--colour-light-grey-1);
 	width: 1px;
 	height: calc(100% - 5rem);
 	display: inline-block;
@@ -1058,7 +1058,7 @@ li::marker {
 	padding-left: 6rem;
 	line-height: 1.5em;
 	margin-top: 1rem;
-	color: var(--colour-dark-text);
+	color: var(--colour-dark-grey-1);
 }
 footer {
 	font-family: var(--font-hei);
