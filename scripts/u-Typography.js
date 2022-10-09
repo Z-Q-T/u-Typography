@@ -17,7 +17,7 @@ function changeTypeMenu_initialActive() {
         document.getElementById(initial[i]).style.cssText = "background-color: var(--colour-changeType-selected) !important; color:black;";
     }
     //下面是设定初始的西文字体
-    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, #tableOfContent li > .Latin").forEach((e) => {
+    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, #tableOfContent li .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-serif)";
         e.style.fontWeight = "600";
         e.style.fontSize = "1.05em";
@@ -52,7 +52,7 @@ document.getElementById('changeTypeMenu-BiaoTi-SONG').onclick = function changef
         e.style.fontFamily = "var(--font-song)";
         e.style.fontWeight = "700";
     });//换中文
-    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, #tableOfContent li > .Latin").forEach((e) => {
+    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, #tableOfContent li .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-serif)";
         e.style.fontWeight = "600";
         e.style.fontSize = "1.05em";
@@ -70,7 +70,7 @@ document.getElementById('changeTypeMenu-BiaoTi-HEI').onclick = function changefo
         e.style.fontFamily = "var(--font-hei)";
         e.style.fontWeight = "700";
     });//换中文
-    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, #tableOfContent li > .Latin").forEach((e) => {
+    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, #tableOfContent li .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-sans)";
         e.style.fontWeight = "600";
         e.style.fontSize = "1.1em";
