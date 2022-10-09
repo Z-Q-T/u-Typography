@@ -752,7 +752,18 @@ html {
 }
 #toc-Switcher {
 	display: none;
+	border-radius: 0.5rem;
+	background-color: var(--colour-paper);
 }
+#tocSwitcher-ButtonSVG{
+	width: 8px;
+	height: 8px;
+	display: block;
+	position: relative;
+	margin: 6px auto;
+	fill: var(--colour-button);
+}
+
 #toc-Container {
 	/* padding: 20px; */
 	height: 100px;
@@ -1600,7 +1611,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		top: calc(50% - 0.5rem);
 		width: 1rem;
 		height: 1rem;
-		background-color: black;
+		/* background-color: grey; */
 		z-index: 15;
 	}
 	#toc-Container {
@@ -1617,13 +1628,13 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		opacity: 0.1;
 		transition: all 200ms ease-in-out;
 	}
-	#toc-Switcher:hover + #toc-Container {
+	#toc-Switcher:hover + #toc-Container, #toc-Switcher:active + #toc-Container {
 		/* visibility: visible; */
 		opacity: 1;
 		left: 3rem;
 		/* transition: opacity,left 200ms ease-in-out; */
 	}
-	#toc-Container:hover {
+	#toc-Container:hover, #toc-Container:active {
 		/* visibility: visible; */
 		opacity: 1;
 		left: 3rem;
@@ -1784,7 +1795,8 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		left: calc(50% - 0.5rem);
 		width: 1rem;
 		height: 1rem;
-		background-color: black;
+		/* background-color: grey; */
+		/* background-color: black; */
 		z-index: 15;
 	}
 	#toc-Container {
@@ -1800,11 +1812,11 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		opacity: 0.1;
 		transition: all 200ms ease-in-out;
 	}
-	#toc-Switcher:hover + #toc-Container {
+	#toc-Switcher:hover + #toc-Container, #toc-Switcher:active + #toc-Container {
 		opacity: 1;
 		top: 3rem;
 	}
-	#toc-Container:hover {
+	#toc-Container:hover, #toc-Container:active {
 		opacity: 1;
 		top: 3rem;
 	}
@@ -1973,7 +1985,8 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		left: calc(50% - 0.5rem);
 		width: 1rem;
 		height: 1rem;
-		background-color: black;
+		/* background-color: grey; */
+		/* background-color: black; */
 		z-index: 15;
 	}
 	#toc-Container {
@@ -1989,11 +2002,11 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		opacity: 0.1;
 		transition: all 200ms ease-in-out;
 	}
-	#toc-Switcher:hover + #toc-Container {
+	#toc-Switcher:hover + #toc-Container, #toc-Switcher:active + #toc-Container {
 		opacity: 1;
 		top: 3rem;
 	}
-	#toc-Container:hover {
+	#toc-Container:hover, #toc-Container:active {
 		opacity: 1;
 		top: 3rem;
 	}
