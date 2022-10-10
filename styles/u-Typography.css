@@ -206,7 +206,8 @@ See the Mulan PSL v2 for more details. */
 	--colour-1: rgb(188, 171, 147);
 	--colour-2: rgb(228, 216, 198);
 	--colour-3: rgb(239, 231, 216);
-	--colour-4: rgb(243, 237, 224);
+	--colour-button-hover: rgba(243, 230, 200, 0.5);
+	--colour-button-hover-transparent: rgba(243, 230, 200, 0);
 	--colour-bar-active: rgb(241, 234, 225);
 	--colour-changeType-unselected: rgb(70, 70, 70);
 	--colour-changeType-selected: rgb(190, 176, 156);
@@ -384,7 +385,7 @@ html {
 	transition: all 200ms ease-in-out;
 }
 #changeTypeMenu-Button:hover {
-	background-color: var(--colour-4);
+	background-color: var(--colour-button-hover);
 	transition: all 200ms ease-in-out;
 }
 #changeTypeMenu-Button:active {
@@ -752,10 +753,15 @@ html {
 }
 #toc-Switcher {
 	display: none;
-	border-radius: 0.5rem;
-	background-color: var(--colour-paper);
+	border-radius: 0.25rem;
+	background-color: var(--colour-button-hover-transparent);
+	transition: background-color 200ms ease-in-out;
 }
-#tocSwitcher-ButtonSVG{
+#toc-Switcher:hover {
+	background-color: var(--colour-button-hover);
+	cursor: pointer;
+}
+#tocSwitcher-ButtonSVG {
 	width: 8px;
 	height: 8px;
 	display: block;
@@ -1057,7 +1063,7 @@ pre {
 	margin: 1rem 2rem;
 	padding: 1rem;
 	background-color: var(--colour-paper);
-	/* border-left: 0.1rem solid var(--colour-4); */
+	/* border-left: 0.1rem solid var(--colour-button-hover); */
 	/* box-shadow: 0 0 10px var(--colour-shadow); */
 	/* text-indent: 3rem; */
 	tab-size: 3rem;
@@ -1607,13 +1613,14 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	#toc-Switcher {
 		display: block;
 		position: fixed;
-		left: 3rem;
-		top: calc(50% - 0.5rem);
-		width: 1rem;
-		height: 1rem;
-		/* background-color: grey; */
+		left: 3.25rem;
+		top: 0.25rem;
+		width: 0.5rem;
+		height: calc(100% - 0.5rem);
+		/* background-color: var(--colour-button-hover); */
 		z-index: 15;
 	}
+
 	#toc-Container {
 		display: block;
 		position: fixed;
@@ -1628,17 +1635,15 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		opacity: 0.1;
 		transition: all 200ms ease-in-out;
 	}
-	#toc-Switcher:hover + #toc-Container, #toc-Switcher:active + #toc-Container {
-		/* visibility: visible; */
+	#toc-Switcher:hover + #toc-Container,
+	#toc-Switcher:active + #toc-Container {
 		opacity: 1;
 		left: 3rem;
-		/* transition: opacity,left 200ms ease-in-out; */
 	}
-	#toc-Container:hover, #toc-Container:active {
-		/* visibility: visible; */
+	#toc-Container:hover,
+	#toc-Container:active {
 		opacity: 1;
 		left: 3rem;
-		/* transition: opacity,left 200ms ease-in-out; */
 	}
 
 	#tableOfContent {
@@ -1791,14 +1796,15 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	#toc-Switcher {
 		display: block;
 		position: fixed;
-		top: 3rem;
-		left: calc(50% - 0.5rem);
-		width: 1rem;
-		height: 1rem;
+		top: 3.25rem;
+		left: 0.25rem;
+		width: calc(100% - 0.5rem);
+		height: 0.5rem;
 		/* background-color: grey; */
 		/* background-color: black; */
 		z-index: 15;
 	}
+
 	#toc-Container {
 		display: block;
 		position: fixed;
@@ -1812,11 +1818,13 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		opacity: 0.1;
 		transition: all 200ms ease-in-out;
 	}
-	#toc-Switcher:hover + #toc-Container, #toc-Switcher:active + #toc-Container {
+	#toc-Switcher:hover + #toc-Container,
+	#toc-Switcher:active + #toc-Container {
 		opacity: 1;
 		top: 3rem;
 	}
-	#toc-Container:hover, #toc-Container:active {
+	#toc-Container:hover,
+	#toc-Container:active {
 		opacity: 1;
 		top: 3rem;
 	}
@@ -1981,14 +1989,13 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	#toc-Switcher {
 		display: block;
 		position: fixed;
-		top: 3rem;
-		left: calc(50% - 0.5rem);
-		width: 1rem;
-		height: 1rem;
-		/* background-color: grey; */
-		/* background-color: black; */
+		top: 3.25rem;
+		left: 0.25rem;
+		width: calc(100% - 0.5rem);
+		height: 0.5rem;
 		z-index: 15;
 	}
+
 	#toc-Container {
 		display: block;
 		position: fixed;
@@ -2002,11 +2009,13 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		opacity: 0.1;
 		transition: all 200ms ease-in-out;
 	}
-	#toc-Switcher:hover + #toc-Container, #toc-Switcher:active + #toc-Container {
+	#toc-Switcher:hover + #toc-Container,
+	#toc-Switcher:active + #toc-Container {
 		opacity: 1;
 		top: 3rem;
 	}
-	#toc-Container:hover, #toc-Container:active {
+	#toc-Container:hover,
+	#toc-Container:active {
 		opacity: 1;
 		top: 3rem;
 	}
