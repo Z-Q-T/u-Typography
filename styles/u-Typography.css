@@ -208,7 +208,10 @@ See the Mulan PSL v2 for more details. */
 	--colour-3: rgb(239, 231, 216);
 	--colour-button-hover: rgba(243, 230, 200, 0.5);
 	--colour-button-hover-transparent: rgba(243, 230, 200, 0);
-	--colour-bar-active: rgb(241, 234, 225);
+	--colour-button-active:rgba(220, 207, 179, 0.5);
+	--colour-switcher-hover: rgba(243, 230, 200, 0.3);
+	--colour-switcher-active: rgba(220, 207, 179, 0.5);
+	/* --colour-bar-active: rgb(241, 234, 225); */
 	--colour-changeType-unselected: rgb(70, 70, 70);
 	--colour-changeType-selected: rgb(190, 176, 156);
 	--colour-changeType-hover: rgb(123, 117, 106);
@@ -389,12 +392,12 @@ html {
 	transition: all 200ms ease-in-out;
 }
 #changeTypeMenu-Button:active {
-	background-color: var(--colour-changeType-button-active);
+	background-color: var(--colour-button-active);
 	transition-duration: 10ms;
 }
 #changeTypeMenu-ButtonSVG {
 	height: 4px;
-	fill: var(--colour-button);
+	/* fill: var(--colour-button); */
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -758,18 +761,24 @@ html {
 	transition: background-color 200ms ease-in-out;
 }
 #toc-Switcher:hover {
-	background-color: var(--colour-button-hover);
+	background-color: var(--colour-switcher-hover);
 	cursor: pointer;
+}
+#toc-Switcher:active {
+	background-color: var(--colour-switcher-active);
 }
 #tocSwitcher-ButtonSVG {
 	width: 8px;
-	height: 8px;
+	height: 4px;
 	display: block;
 	position: relative;
 	margin: 6px auto;
-	fill: var(--colour-button);
+	fill: var(--colour-dark-grey-1);
+	transition: fill 200ms ease-in-out;
 }
-
+#toc-Switcher:hover #tocSwitcher-ButtonSVG {
+	fill: var(--colour-1);
+}
 #toc-Container {
 	/* padding: 20px; */
 	height: 100px;
@@ -1613,20 +1622,26 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	#toc-Switcher {
 		display: block;
 		position: fixed;
-		left: 3.25rem;
-		top: 0.25rem;
-		width: 0.5rem;
-		height: calc(100% - 0.5rem);
+		left: 3rem;
+		top: 0rem;
+		width: 1rem;
+		height: 100%;
 		/* background-color: var(--colour-button-hover); */
-		z-index: 15;
+		z-index: 9;
 	}
-
+	#tocSwitcher-ButtonSVG {
+		/* position: relative; */
+		transform: rotateZ(-90deg);
+		transform-origin: center center;
+		top: calc(50% - 4px);
+		/* margin: 6px auto; */
+	}
 	#toc-Container {
 		display: block;
 		position: fixed;
 		top: 0;
 		left: -12rem;
-		z-index: 10;
+		z-index: 8;
 		width: 15rem;
 		height: 100%;
 		background-color: var(--colour-paper);
@@ -1796,13 +1811,13 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	#toc-Switcher {
 		display: block;
 		position: fixed;
-		top: 3.25rem;
-		left: 0.25rem;
-		width: calc(100% - 0.5rem);
-		height: 0.5rem;
+		top: 3rem;
+		left: 0rem;
+		width: 100%;
+		height: 1rem;
 		/* background-color: grey; */
 		/* background-color: black; */
-		z-index: 15;
+		z-index: 9;
 	}
 
 	#toc-Container {
@@ -1810,7 +1825,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		position: fixed;
 		top: -90%;
 		left: 0;
-		z-index: 9;
+		z-index: 8;
 		width: 100%;
 		height: calc(90% - 3rem);
 		background-color: var(--colour-paper);
@@ -1818,7 +1833,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		opacity: 0.1;
 		transition: all 200ms ease-in-out;
 	}
-	#toc-Switcher:hover + #toc-Container,
+	/* #toc-Switcher:hover + #toc-Container,
 	#toc-Switcher:active + #toc-Container {
 		opacity: 1;
 		top: 3rem;
@@ -1827,7 +1842,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	#toc-Container:active {
 		opacity: 1;
 		top: 3rem;
-	}
+	} */
 
 	#tableOfContent {
 		display: block;
@@ -1989,11 +2004,11 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	#toc-Switcher {
 		display: block;
 		position: fixed;
-		top: 3.25rem;
-		left: 0.25rem;
-		width: calc(100% - 0.5rem);
-		height: 0.5rem;
-		z-index: 15;
+		top: 3rem;
+		left: 0rem;
+		width: 100%;
+		height: 1rem;
+		z-index: 9;
 	}
 
 	#toc-Container {
@@ -2001,7 +2016,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		position: fixed;
 		top: -90%;
 		left: 0;
-		z-index: 9;
+		z-index: 8;
 		width: 100%;
 		height: calc(90% - 3rem);
 		background-color: var(--colour-paper);
@@ -2009,7 +2024,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		opacity: 0.1;
 		transition: all 200ms ease-in-out;
 	}
-	#toc-Switcher:hover + #toc-Container,
+	/* #toc-Switcher:hover + #toc-Container,
 	#toc-Switcher:active + #toc-Container {
 		opacity: 1;
 		top: 3rem;
@@ -2018,7 +2033,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	#toc-Container:active {
 		opacity: 1;
 		top: 3rem;
-	}
+	} */
 
 	#tableOfContent {
 		display: block;

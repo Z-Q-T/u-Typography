@@ -172,8 +172,9 @@ See the Mulan PSL v2 for more details. */
 	--colour-1: rgb(188, 171, 147);
 	--colour-2: rgb(228, 216, 198);
 	--colour-3: rgb(239, 231, 216);
-	--colour-4: rgb(243, 237, 224);
-	--colour-bar-active: rgb(241, 234, 225);
+	--colour-button-hover: rgba(243, 230, 200, 0.5);
+	--colour-button-hover-transparent: rgba(243, 230, 200, 0);
+	/* --colour-bar-active: rgb(241, 234, 225); */
 	--colour-changeType-unselected: rgb(70, 70, 70);
 	--colour-changeType-selected: rgb(190, 176, 156);
 	--colour-changeType-hover: rgb(123, 117, 106);
@@ -423,7 +424,7 @@ html {
 	transition: all 200ms ease-in-out;
 }
 #changeTypeMenu-Button:hover {
-	background-color: var(--colour-4);
+	background-color: var(--colour-button-hover);
 	transition: all 200ms ease-in-out;
 }
 #changeTypeMenu-Button:active {
