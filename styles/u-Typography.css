@@ -1650,7 +1650,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		opacity: 0.1;
 		transition: all 200ms ease-in-out;
 	}
-	#toc-Switcher:hover + #toc-Container,
+	/* #toc-Switcher:hover + #toc-Container,
 	#toc-Switcher:active + #toc-Container {
 		opacity: 1;
 		left: 3rem;
@@ -1659,7 +1659,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	#toc-Container:active {
 		opacity: 1;
 		left: 3rem;
-	}
+	} */
 
 	#tableOfContent {
 		display: block;

@@ -87,7 +87,8 @@ document.getElementById('changeTypeMenu-ZhengWen-SONG').onclick = function chang
     document.body.querySelectorAll("p").forEach((e) => {
         // e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
         e.style.fontFamily = "var(--font-song)";
-        e.style.fontWeight = "600";})
+        e.style.fontWeight = "600";
+    })
     document.body.querySelectorAll("p > em").forEach((e) => {
         e.style.fontFamily = "'TeShuBiaoDian', var(--font-song)";
         e.style.fontWeight = "600";
@@ -169,7 +170,6 @@ document.getElementById('changeTypeMenu-BianZhu-HEI').onclick = function changef
 
 // 打开／关闭更换字体菜单
 let button = document.getElementById("changeTypeMenu-Button");
-
 button.onclick = function () {
     let menu = document.getElementById("changeTypeMenu");
     let menuVisibility = menu.style.visibility;
@@ -233,6 +233,110 @@ function changeMenuPosition() {
 window.addEventListener("resize", changeMenuPosition);
 // 第一次调用该函数
 changeMenuPosition();
+
+
+// 打开／关闭文章目录
+let switcher = document.getElementById("toc-Switcher");
+let switcherOnOff = "off";
+switcher.onclick = function () {
+    let toc = document.getElementById("toc-Container");
+    let size = window.innerWidth;
+    // let tocOpacity = toc.style.opacity;
+    if (switcherOnOff == "off") {
+        if (size > 1400) {
+            // toc.style.visibility = "visible";
+            toc.style.opacity = "1";
+            toc.style.top = "0";
+            toc.style.left = "0";
+            toc.style.width = "18rem";
+            toc.style.height = "100px";
+        } else if (size < 1400 && size > 1040) {
+            // toc.style.visibility = "visible";
+            toc.style.opacity = "1";
+            toc.style.top = "0";
+            toc.style.left = "3rem";
+            toc.style.width = "15rem";
+            toc.style.height = "100%";
+        } else {
+            // toc.style.visibility = "visible";
+            toc.style.opacity = "1";
+            toc.style.top = "3rem";
+            toc.style.left = "0";
+            toc.style.width = "100%";
+            toc.style.height = "calc(90% - 3rem)";
+        }
+        switcherOnOff = "on";
+    } else if (switcherOnOff == "on") {
+        if (size > 1400) {
+            toc.style.opacity = "1";
+            toc.style.top = "0";
+            toc.style.left = "0";
+            toc.style.width = "18rem";
+            toc.style.height = "100px";
+        } else if (size < 1400 && size > 1040) {
+            toc.style.opacity = "0.1";
+            toc.style.top = "0";
+            toc.style.left = "-12rem";
+            toc.style.width = "15rem";
+            toc.style.height = "100%";
+        } else {
+            toc.style.opacity = "0.1";
+            toc.style.top = "-90%";
+            toc.style.left = "0";
+            toc.style.width = "100%";
+            toc.style.height = "calc(90% - 3rem)";
+        }
+        switcherOnOff = "off";
+    }
+    console.log(switcherOnOff);
+}
+
+// 按照窗口尺寸自动适配文章目录的位置
+function changeTocPosition() {
+    let toc = document.getElementById("toc-Container");
+    let size = window.innerWidth;
+    // console.log(size);
+    if (size > 1400) {
+        toc.style.opacity = "1";
+        toc.style.top = "0";
+        toc.style.left = "0";
+        toc.style.width = "18rem";
+        toc.style.height = "100px";
+    } else if (size < 1400 && size > 1040) {
+        if (switcherOnOff == "on"){
+            toc.style.opacity = "1";
+            toc.style.top = "0";
+            toc.style.left = "3rem";
+            toc.style.width = "15rem";
+            toc.style.height = "100%";
+        } else if (switcherOnOff == "off"){
+            toc.style.opacity = "0.1";
+            toc.style.top = "0";
+            toc.style.left = "-12rem";
+            toc.style.width = "15rem";
+            toc.style.height = "100%";
+        }
+    }else if (size < 1040) {
+        if (switcherOnOff == "on"){
+            toc.style.opacity = "1";
+            toc.style.top = "3rem";
+            toc.style.left = "0";
+            toc.style.width = "100%";
+            toc.style.height = "calc(90% - 3rem)";
+        } else if (switcherOnOff == "off"){
+            toc.style.opacity = "0.1";
+            toc.style.top = "-90%";
+            toc.style.left = "0";
+            toc.style.width = "100%";
+            toc.style.height = "calc(90% - 3rem)";
+        }
+    }
+}
+// 将事件侦听器函数附加到窗口的resize事件
+window.addEventListener("resize", changeTocPosition);
+// 第一次调用该函数
+changeTocPosition();
+
 
 
 // 在小尺寸下让行长等于字号的整数倍
