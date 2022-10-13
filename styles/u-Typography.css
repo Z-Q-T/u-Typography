@@ -1020,8 +1020,8 @@ h3 {
 	font-size: 1.2rem;
 	line-height: 2rem;
 	text-align: center;
-	margin: 0rem auto 2rem auto;
-	padding: 3rem 0 0;
+	margin: -1rem auto 2rem auto;
+	padding: 4rem 0 0;
 }
 h2 + h3 {
 	margin-top: -3rem !important;
