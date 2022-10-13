@@ -1830,7 +1830,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		left: 0;
 		z-index: 8;
 		width: 100%;
-		height: calc(90% - 3rem);
+		height: calc(80% - 3rem);
 		background-color: var(--colour-paper);
 		border-bottom: 1px solid var(--colour-dark-grey-2);
 		opacity: 0.1;
@@ -2021,7 +2021,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		left: 0;
 		z-index: 8;
 		width: 100%;
-		height: calc(90% - 3rem);
+		height: calc(80% - 3rem);
 		background-color: var(--colour-paper);
 		border-bottom: 1px solid var(--colour-dark-grey-2);
 		opacity: 0.1;

@@ -266,7 +266,7 @@ switcher.onclick = function () {
             toc.style.top = "3rem";
             toc.style.left = "0";
             toc.style.width = "100%";
-            toc.style.height = "calc(90% - 3rem)";
+            toc.style.height = "calc(80% - 3rem)";
             arrow.style.transform = "rotateZ(180deg)"
         }
         switcherOnOff = "on";
@@ -289,7 +289,7 @@ switcher.onclick = function () {
             toc.style.top = "-90%";
             toc.style.left = "0";
             toc.style.width = "100%";
-            toc.style.height = "calc(90% - 3rem)";
+            toc.style.height = "calc(80% - 3rem)";
             arrow.style.transform = "rotateZ(0deg)"
         }
         switcherOnOff = "off";
@@ -331,7 +331,7 @@ function changeTocPosition() {
             toc.style.top = "3rem";
             toc.style.left = "0";
             toc.style.width = "100%";
-            toc.style.height = "calc(90% - 3rem)";
+            toc.style.height = "calc(80% - 3rem)";
             arrow.style.transform = "rotateZ(180deg)"
         } else if (switcherOnOff == "off") {
             toc.style.opacity = "0.1";
@@ -339,7 +339,7 @@ function changeTocPosition() {
             toc.style.left = "0";
             toc.style.width = "100%";
             arrow.style.transform = "rotateZ(0deg)"
-            toc.style.height = "calc(90% - 3rem)";
+            toc.style.height = "calc(80% - 3rem)";
         }
     }
 }
@@ -347,6 +347,36 @@ function changeTocPosition() {
 window.addEventListener("resize", changeTocPosition);
 // 第一次调用该函数
 changeTocPosition();
+
+window.onclick = function (event) {
+    if (event.target.matches('.tocH2 a')||event.target.matches('.tocH3 a')||event.target.matches('.tocH2 a span')||event.target.matches('.tocH3 a span')) {
+        let toc = document.getElementById("toc-Container");
+        let size = window.innerWidth;
+        let arrow = document.getElementById("tocSwitcher-ButtonSVG");
+        if (size > 1400) {
+            toc.style.opacity = "1";
+            toc.style.top = "0";
+            toc.style.left = "0";
+            toc.style.width = "18rem";
+            toc.style.height = "100px";
+        } else if (size < 1400 && size > 1040) {
+            toc.style.opacity = "0.1";
+            toc.style.top = "0";
+            toc.style.left = "-12rem";
+            toc.style.width = "15rem";
+            toc.style.height = "100%";
+            arrow.style.transform = "rotateZ(-90deg)"
+        } else {
+            toc.style.opacity = "0.1";
+            toc.style.top = "-90%";
+            toc.style.left = "0";
+            toc.style.width = "100%";
+            toc.style.height = "calc(80% - 3rem)";
+            arrow.style.transform = "rotateZ(0deg)"
+        }
+        switcherOnOff = "off";
+    }
+}
 
 
 
