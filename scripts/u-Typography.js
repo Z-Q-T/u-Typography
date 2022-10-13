@@ -167,14 +167,13 @@ document.getElementById('changeTypeMenu-BianZhu-HEI').onclick = function changef
     changeTypeMenu_switchColour("#changeTypeMenu-BianZhu-HEI", "#changeTypeMenu-BianZhu-SONG");
 }
 
-
 // 打开／关闭更换字体菜单
 let button = document.getElementById("changeTypeMenu-Button");
 button.onclick = function () {
     let menu = document.getElementById("changeTypeMenu");
     let menuVisibility = menu.style.visibility;
-    let size = window.innerWidth;
-    if (size < 1040) {
+    let windowWidth = window.innerWidth;
+    if (windowWidth < 1040) {
         if (menuVisibility == "hidden") {
             menu.style.visibility = "visible";
             menu.style.opacity = "1";
@@ -201,10 +200,10 @@ button.onclick = function () {
 function changeMenuPosition() {
     let menu = document.getElementById("changeTypeMenu");
     let menuVisibility = menu.style.visibility;
-    let size = window.innerWidth;
-    console.log(size);
+    let windowWidth = window.innerWidth;
+    console.log(windowWidth);
     if (menuVisibility == "hidden") {
-        if (size < 1040) {
+        if (windowWidth < 1040) {
             menu.style.bottom = "auto";
             menu.style.top = "60px";
             menu.style.left = "auto";
@@ -216,7 +215,7 @@ function changeMenuPosition() {
             menu.style.right = "auto";
         }
     } else {
-        if (size < 1040) {
+        if (windowWidth < 1040) {
             menu.style.bottom = "auto";
             menu.style.top = "70px";
             menu.style.left = "auto";
@@ -236,22 +235,25 @@ changeMenuPosition();
 
 
 // 打开／关闭文章目录
+let toc = document.getElementById("toc-Container");
 let switcher = document.getElementById("toc-Switcher");
 let switcherOnOff = "off";
+let arrow = document.getElementById("tocSwitcher-ButtonSVG");
+
 switcher.onclick = function () {
-    let toc = document.getElementById("toc-Container");
-    let size = window.innerWidth;
-    let arrow = document.getElementById("tocSwitcher-ButtonSVG");
+    // let toc = document.getElementById("toc-Container");
+    let windowWidth = window.innerWidth;
+    // let arrow = document.getElementById("tocSwitcher-ButtonSVG");
     // let tocOpacity = toc.style.opacity;
     if (switcherOnOff == "off") {
-        if (size > 1400) {
+        if (windowWidth > 1400) {
             // toc.style.visibility = "visible";
             toc.style.opacity = "1";
             toc.style.top = "0";
             toc.style.left = "0";
             toc.style.width = "18rem";
             toc.style.height = "100px";
-        } else if (size < 1400 && size > 1040) {
+        } else if (windowWidth < 1400 && windowWidth > 1040) {
             // toc.style.visibility = "visible";
             toc.style.opacity = "1";
             toc.style.top = "0";
@@ -271,13 +273,13 @@ switcher.onclick = function () {
         }
         switcherOnOff = "on";
     } else if (switcherOnOff == "on") {
-        if (size > 1400) {
+        if (windowWidth > 1400) {
             toc.style.opacity = "1";
             toc.style.top = "0";
             toc.style.left = "0";
             toc.style.width = "18rem";
             toc.style.height = "100px";
-        } else if (size < 1400 && size > 1040) {
+        } else if (windowWidth < 1400 && windowWidth > 1040) {
             toc.style.opacity = "0.1";
             toc.style.top = "0";
             toc.style.left = "-12rem";
@@ -299,17 +301,16 @@ switcher.onclick = function () {
 
 // 按照窗口尺寸自动适配文章目录的位置
 function changeTocPosition() {
-    let toc = document.getElementById("toc-Container");
-    let size = window.innerWidth;
-    let arrow = document.getElementById("tocSwitcher-ButtonSVG");
+    // let toc = document.getElementById("toc-Container");
+    let windowWidth = window.innerWidth;
     // console.log(size);
-    if (size > 1400) {
+    if (windowWidth > 1400) {
         toc.style.opacity = "1";
         toc.style.top = "0";
         toc.style.left = "0";
         toc.style.width = "18rem";
         toc.style.height = "100px";
-    } else if (size < 1400 && size > 1040) {
+    } else if (windowWidth < 1400 && windowWidth > 1040) {
         if (switcherOnOff == "on") {
             toc.style.opacity = "1";
             toc.style.top = "0";
@@ -325,7 +326,7 @@ function changeTocPosition() {
             toc.style.height = "100%";
             arrow.style.transform = "rotateZ(-90deg)"
         }
-    } else if (size < 1040) {
+    } else if (windowWidth < 1040) {
         if (switcherOnOff == "on") {
             toc.style.opacity = "1";
             toc.style.top = "3rem";
@@ -347,19 +348,18 @@ function changeTocPosition() {
 window.addEventListener("resize", changeTocPosition);
 // 第一次调用该函数
 changeTocPosition();
-
+// 点击目录项后自动关闭目录
 window.onclick = function (event) {
     if (event.target.matches('.tocH2 a')||event.target.matches('.tocH3 a')||event.target.matches('.tocH2 a span')||event.target.matches('.tocH3 a span')) {
-        let toc = document.getElementById("toc-Container");
-        let size = window.innerWidth;
-        let arrow = document.getElementById("tocSwitcher-ButtonSVG");
-        if (size > 1400) {
+        let windowWidth = window.innerWidth;
+        // let arrow = document.getElementById("tocSwitcher-ButtonSVG");
+        if (windowWidth > 1400) {
             toc.style.opacity = "1";
             toc.style.top = "0";
             toc.style.left = "0";
             toc.style.width = "18rem";
             toc.style.height = "100px";
-        } else if (size < 1400 && size > 1040) {
+        } else if (windowWidth < 1400 && windowWidth > 1040) {
             toc.style.opacity = "0.1";
             toc.style.top = "0";
             toc.style.left = "-12rem";
@@ -383,9 +383,9 @@ window.onclick = function (event) {
 // 在小尺寸下让行长等于字号的整数倍
 function chineseGridLine() {
     let YeMian = document.getElementById("whole");
-    let size = window.innerWidth;
-    let ZiShu = Math.floor(size / 20) - 1;
-    if (size < 680) {
+    let windowWidth = window.innerWidth;
+    let ZiShu = Math.floor(windowWidth / 20) - 1;
+    if (windowWidth < 680) {
         // let HangChang = ZiShu * 20;
         YeMian.style.width = ZiShu + "em";
     } else {
