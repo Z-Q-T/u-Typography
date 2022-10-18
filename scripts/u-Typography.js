@@ -351,7 +351,7 @@ changeTocPosition();
 // 点击目录项后自动关闭目录
 window.onclick = function (e) {
     console.log(e);
-    if (e.target.matches('.tocH2 a')||e.target.matches('.tocH3 a')||e.target.matches('.tocH2 a span')||e.target.matches('.tocH3 a span')||e.target.matches('.tocH2 .biaodian')||e.target.matches('.tocH3 .biaodian')||e.target.matches('.tocH2 h-inner')||e.target.matches('.tocH3 h-inner')) {
+    if (e.target.matches('.tocH2 a')||e.target.matches('.tocH3 a')||e.target.matches('.tocH2 a span')||e.target.matches('.tocH3 a span')||e.target.matches('.tocH2 .biaodian')||e.target.matches('.tocH3 .biaodian')||e.target.matches('.tocH2 h-inner')||e.target.matches('.tocH3 h-inner')||e.target.matches('#toc-backToMainTitle a')||e.target.matches('#toc-skipToFootnote a')) {
         let windowWidth = window.innerWidth;
         // let arrow = document.getElementById("tocSwitcher-ButtonSVG");
         if (windowWidth > 1400) {
