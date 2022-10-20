@@ -671,11 +671,10 @@ html {
 	display: block;
 }
 #index {
-	font-family: var(--font-serif);
-	font-weight: 600;
-	font-size: 0.9rem;
+	font-family: var(--font-song);
+	font-weight: 700;
 }
-#indexExplanation {
+/* #indexExplanation {
 	display: block;
 	position: absolute;
 	font-family: var(--font-hei);
@@ -692,7 +691,7 @@ html {
 	display: block;
 	visibility: visible;
 	opacity: 1;
-}
+} */
 .metaInfo-Seperator {
 	height: 1.5px;
 	width: 40px;
@@ -902,7 +901,7 @@ h2 + p,
 h3 + p,
 h4 + p,
 h5 + p,
-h6 + p,
+
 ol + p,
 ul + p,
 .footnoteNumber + p,
@@ -1028,6 +1027,14 @@ h2 + h3 {
 }
 h2:first-child {
 	margin-top: -4rem !important;
+}
+h6 {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-family: var(--font-hei);
+	font-weight: 400;
+	margin: 1rem 0;
+	tab-size: 3rem;
 }
 p {
 	/* font-family: var(--font-ZhengWen-HEI); */
@@ -1499,9 +1506,9 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		left: -15rem;
 		font-size: 0.625rem;
 	}
-	#index {
+	/* #index {
 		font-size: 0.8rem;
-	}
+	} */
 	.metaInfo-Seperator {
 		width: 35px;
 		margin: 0.35rem auto;
@@ -1577,9 +1584,9 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		margin: 6rem 0 5rem;
 		font-size: 0.5625rem;
 	}
-	#index {
+	/* #index {
 		font-size: 0.7rem;
-	}
+	} */
 	.metaInfo-Seperator {
 		width: 30px;
 		margin: 0.25rem auto;
@@ -1769,9 +1776,9 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		font-size: 0.5625rem;
 		margin-top: 5rem;
 	}
-	#index {
+	/* #index {
 		font-size: 0.7rem;
-	}
+	} */
 	.metaInfo-Seperator {
 		width: 30px;
 		margin: 0.25rem auto;
@@ -1961,9 +1968,9 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		font-size: 0.5625rem;
 		margin-top: 5rem;
 	}
-	#index {
+	/* #index {
 		font-size: 0.7rem;
-	}
+	} */
 	.metaInfo-Seperator {
 		width: 30px;
 		margin: 0.25rem auto;
