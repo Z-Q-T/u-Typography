@@ -22,7 +22,7 @@ function changeTypeMenu_initialActive() {
         e.style.fontWeight = "600";
         e.style.fontSize = "1.05em";
     });
-    document.body.querySelectorAll("p > .Latin, p > a .Latin, p > cite > .Latin, p > cite > a > .Latin, p > q > .Latin, p > small .Latin, p > a > small .Latin, p > small > a .Latin").forEach((e) => {
+    document.body.querySelectorAll("p > .Latin, p > a .Latin, p > cite > .Latin, p > cite > a > .Latin, p > q > .Latin, p > small .Latin, p > a > small .Latin, p > small > a .Latin, p > .orderedListIndex .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-sans)";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.1em";
@@ -89,11 +89,11 @@ document.getElementById('changeTypeMenu-ZhengWen-SONG').onclick = function chang
         e.style.fontFamily = "var(--font-song)";
         e.style.fontWeight = "600";
     })
-    document.body.querySelectorAll("p > em").forEach((e) => {
+    document.body.querySelectorAll("p > strong").forEach((e) => {
         e.style.fontFamily = "'TeShuBiaoDian', var(--font-song)";
         e.style.fontWeight = "600";
     });//换中文
-    document.body.querySelectorAll("p > .Latin, p > a .Latin, p > cite > .Latin, p > cite > a > .Latin, p > q > .Latin").forEach((e) => {
+    document.body.querySelectorAll("p > .Latin, p > a .Latin, p > cite > .Latin, p > cite > a > .Latin, p > q > .Latin, p > .orderedListIndex .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-serif)";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.05em";
@@ -101,7 +101,12 @@ document.getElementById('changeTypeMenu-ZhengWen-SONG').onclick = function chang
     document.body.querySelectorAll("article h-char.biaodian > h-inner").forEach((e) => {
         e.style.fontFamily = "var(--font-song-biaodian)";
         e.style.fontWeight = "600";
-    });//换标点
+    });
+    document.body.querySelectorAll("article .JianGeHao h-char.biaodian > h-inner").forEach((e) => {
+        e.style.fontFamily = "var(--font-hei-biaodian)";
+        e.style.fontWeight = "400";
+    });
+    //换标点
     document.body.querySelectorAll(".sideNoteMark h-inner").forEach((e) => {
         e.style.fontFamily = "var(--font-hei-biaodian)";
         e.style.fontWeight = "400";
@@ -114,11 +119,11 @@ document.getElementById('changeTypeMenu-ZhengWen-HEI').onclick = function change
         e.style.fontFamily = "var(--font-hei)";
         e.style.fontWeight = "400";
     });
-    document.body.querySelectorAll("p > em").forEach((e) => {
+    document.body.querySelectorAll("p > strong").forEach((e) => {
         e.style.fontFamily = "'TeShuBiaoDian', var(--font-hei)";
         e.style.fontWeight = "400";
     });//换中文
-    document.body.querySelectorAll("p > .Latin, p > a .Latin, p > cite > .Latin, p > cite > a > .Latin, p > q > .Latin").forEach((e) => {
+    document.body.querySelectorAll("p > .Latin, p > a .Latin, p > cite > .Latin, p > cite > a > .Latin, p > q > .Latin, p > .orderedListIndex .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-sans)";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.1em";

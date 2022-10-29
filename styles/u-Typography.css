@@ -184,7 +184,8 @@ See the Mulan PSL v2 for more details. */
 	/* pad: 2 "0"; */
 	/* negative: <negative symbol> */
 	/* prefix: <prefix> */
-	suffix: ".  ";
+	suffix: ".";
+	/* suffix: ".  "; */
 	/* suffix: " "; */
 	/* range: <range> */
 	speak-as: numbers;
@@ -1044,19 +1045,26 @@ p {
 	/* text-justify: inter-character; */
 	/* 中文齐行往字间插入间距 */
 }
-
+/* 有序列表 */
 ol {
-	list-style-type: orderedList;
+	/* list-style-type: orderedList; */
+	list-style-type: none;
+	list-style-position: outside;
 }
 ol li {
 	margin-left: 3rem;
 }
 ol li::marker {
 	font-family: var(--font-sans);
-	list-style-position: outside;
+	/* list-style-position: outside; */
 	font-size: 1.1em;
 	font-weight: 400;
+	line-height: 2rem;
 }
+.orderedListIndex{
+	white-space: break-spaces;
+}
+/* 无序列表 */
 ul {
 	list-style-type: unorderedList;
 	/* list-style-type: disc; */
@@ -1070,6 +1078,13 @@ ul li::marker {
 	font-size: 1.25em;
 	font-weight: 400;
 }
+/* ol p:first-child {
+	text-indent: 3rem !important;
+}
+
+li p:first-child {
+	margin-top: -2rem;
+} */
 
 pre {
 	font-family: var(--font-code);
