@@ -1726,31 +1726,31 @@ void function (global, factory) {
 
     var Locale = {}
 
-    function writeOnCanvas(text, font) {
-        var canvas = $.create('canvas')
-        var context
+    // function writeOnCanvas(text, font) {
+    //     var canvas = $.create('canvas')
+    //     var context
 
-        canvas.width = '50'
-        canvas.height = '20'
-        canvas.style.display = 'none'
+    //     canvas.width = '50'
+    //     canvas.height = '20'
+    //     canvas.style.display = 'none'
 
-        body.appendChild(canvas)
+    //     body.appendChild(canvas)
 
-        context = canvas.getContext('2d')
-        context.textBaseline = 'top'
-        context.font = '15px ' + font + ', sans-serif'
-        context.fillStyle = 'black'
-        context.strokeStyle = 'black'
-        context.fillText(text, 0, 0)
+    //     context = canvas.getContext('2d')
+    //     context.textBaseline = 'top'
+    //     context.font = '15px ' + font + ', sans-serif'
+    //     context.fillStyle = 'black'
+    //     context.strokeStyle = 'black'
+    //     context.fillText(text, 0, 0)
 
-        return {
-            node: canvas,
-            context: context,
-            remove: function () {
-                $.remove(canvas, body)
-            }
-        }
-    }
+    //     return {
+    //         node: canvas,
+    //         context: context,
+    //         remove: function () {
+    //             $.remove(canvas, body)
+    //         }
+    //     }
+    // }
 
     // function compareCanvases(treat, control) {
     //     var ret
@@ -1799,7 +1799,7 @@ void function (global, factory) {
     //     return !compareCanvases(treat, control)
     // }
 
-    Locale.writeOnCanvas = writeOnCanvas
+    // Locale.writeOnCanvas = writeOnCanvas
     // Locale.compareCanvases = compareCanvases
     // Locale.detectFont = detectFont
 
@@ -2827,8 +2827,8 @@ void function (global, factory) {
         }
     })
 
-    var QUERY_RU_W_ANNO = 'h-ru[annotation]'
-    var SELECTOR_TO_IGNORE = 'textarea, code, kbd, samp, pre'
+    // var QUERY_RU_W_ANNO = 'h-ru[annotation]'
+    // var SELECTOR_TO_IGNORE = 'textarea, code, kbd, samp, pre'
 
     // function createCompareFactory(font, treat, control) {
     //     return function () {
