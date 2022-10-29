@@ -774,7 +774,7 @@ html {
 	margin: 6px auto;
 	fill: var(--colour-dark-grey-1);
 	transition-property: fill, transform;
-	transition-duration: 200ms,100ms;
+	transition-duration: 200ms, 100ms;
 	transition-timing-function: ease-in-out;
 	/* transition:  200ms ease-in-out; */
 }
@@ -901,7 +901,6 @@ h2 + p,
 h3 + p,
 h4 + p,
 h5 + p,
-
 ol + p,
 ul + p,
 .footnoteNumber + p,
@@ -1371,14 +1370,25 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 	margin: 0 -0.25em;
 	text-shadow: 0.01em 0.018em, -0.01em -0.018em;
 }
-/* 着重号 */
+/* 突出某个字词；下划线；个别字词 */
 em {
-	font-family: "TeShuBiaoDian", var(--font-hei);
-	text-emphasis-style: "\E000" !important;
+	font-family: inherit;
+	font-weight: inherit;
 	line-height: 0;
-	/* text-emphasis: filled circle !important; */
+	text-decoration: wavy underline 1px;
+	text-underline-offset: 0.25em;
+	text-emphasis: none !important;
 }
-
+/* 语义上的重要性；着重号，字词句 */
+strong {
+	font-family: "TeShuBiaoDian", var(--font-hei);
+	font-weight: inherit;
+	line-height: 0;
+	text-emphasis-style: "\E000" !important;
+	text-emphasis-position: under;
+	/* text-emphasis: filled circle !important; */
+	text-decoration: none;
+}
 /* 拉丁文本 */
 .Latin {
 	hyphens: auto;
