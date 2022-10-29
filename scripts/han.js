@@ -1752,56 +1752,56 @@ void function (global, factory) {
         }
     }
 
-    function compareCanvases(treat, control) {
-        var ret
-        var a = treat.context
-        var b = control.context
+    // function compareCanvases(treat, control) {
+    //     var ret
+    //     var a = treat.context
+    //     var b = control.context
 
-        try {
-            for (var j = 1; j <= 20; j++) {
-                for (var i = 1; i <= 50; i++) {
-                    if (
-                        typeof ret === 'undefined' &&
-                        a.getImageData(i, j, 1, 1).data[3] !== b.getImageData(i, j, 1, 1).data[3]
-                    ) {
-                        ret = false
-                        break
-                    } else if (typeof ret === 'boolean') {
-                        break
-                    }
+    //     try {
+    //         for (var j = 1; j <= 20; j++) {
+    //             for (var i = 1; i <= 50; i++) {
+    //                 if (
+    //                     typeof ret === 'undefined' &&
+    //                     a.getImageData(i, j, 1, 1).data[3] !== b.getImageData(i, j, 1, 1).data[3]
+    //                 ) {
+    //                     ret = false
+    //                     break
+    //                 } else if (typeof ret === 'boolean') {
+    //                     break
+    //                 }
 
-                    if (i === 50 && j === 20 && typeof ret === 'undefined') {
-                        ret = true
-                    }
-                }
-            }
+    //                 if (i === 50 && j === 20 && typeof ret === 'undefined') {
+    //                     ret = true
+    //                 }
+    //             }
+    //         }
 
-            // Remove and clean from memory
-            treat.remove()
-            control.remove()
-            treat = null
-            control = null
+    //         // Remove and clean from memory
+    //         treat.remove()
+    //         control.remove()
+    //         treat = null
+    //         control = null
 
-            return ret
-        } catch (e) { }
-        return false
-    }
+    //         return ret
+    //     } catch (e) { }
+    //     return false
+    // }
 
-    function detectFont(treat, control, text) {
-        var treat = treat
-        var control = control || 'sans-serif'
-        var text = text || '辭Q'
-        var ret
+    // function detectFont(treat, control, text) {
+    //     var treat = treat
+    //     var control = control || 'sans-serif'
+    //     var text = text || '辭Q'
+    //     var ret
 
-        control = writeOnCanvas(text, control)
-        treat = writeOnCanvas(text, treat)
+    //     control = writeOnCanvas(text, control)
+    //     treat = writeOnCanvas(text, treat)
 
-        return !compareCanvases(treat, control)
-    }
+    //     return !compareCanvases(treat, control)
+    // }
 
     Locale.writeOnCanvas = writeOnCanvas
-    Locale.compareCanvases = compareCanvases
-    Locale.detectFont = detectFont
+    // Locale.compareCanvases = compareCanvases
+    // Locale.detectFont = detectFont
 
     Locale.support = (function () {
 
@@ -1946,13 +1946,13 @@ void function (global, factory) {
 
                 injectElementWithStyle(
                     '@font-face{font-family:test-for-unicode-range;src:local(Arial),local("Droid Sans")}@font-face{font-family:test-for-unicode-range;src:local("Times New Roman"),local(Times),local("Droid Serif");unicode-range:U+270C}',
-                    function () {
-                        ret = !Locale.detectFont(
-                            'test-for-unicode-range', // treatment group
-                            'Arial, "Droid Sans"',    // control group
-                            'Q'                       // ASCII characters only
-                        )
-                    }
+                    // function () {
+                    //     ret = !Locale.detectFont(
+                    //         'test-for-unicode-range', // treatment group
+                    //         'Arial, "Droid Sans"',    // control group
+                    //         'Q'                       // ASCII characters only
+                    //     )
+                    // }
                 )
                 return ret
             })(),
@@ -2349,7 +2349,7 @@ void function (global, factory) {
     Han.normalize = Locale
     Han.localize = Locale
     Han.support = Locale.support
-    Han.detectFont = Locale.detectFont
+    // Han.detectFont = Locale.detectFont
 
     Han.fn.initCond = function () {
         this.condition.classList.add('han-js-rendered')
@@ -2371,21 +2371,21 @@ void function (global, factory) {
         }
     })
 
-    $.extend(Han.support, {
-        // Assume that all devices support Heiti for we
-        // use `sans-serif` to do the comparison.
-        heiti: true,
-        // 'heiti-gb': true,
+    // $.extend(Han.support, {
+    //     // Assume that all devices support Heiti for we
+    //     // use `sans-serif` to do the comparison.
+    //     heiti: true,
+    //     // 'heiti-gb': true,
 
-        songti: Han.detectFont('"Han Songti"'),
-        'songti-gb': Han.detectFont('"Han Songti GB"'),
+    //     songti: Han.detectFont('"Han Songti"'),
+    //     'songti-gb': Han.detectFont('"Han Songti GB"'),
 
-        kaiti: Han.detectFont('"Han Kaiti"'),
-        // 'kaiti-gb': Han.detectFont( '"Han Kaiti GB"' ),
+    //     kaiti: Han.detectFont('"Han Kaiti"'),
+    //     // 'kaiti-gb': Han.detectFont( '"Han Kaiti GB"' ),
 
-        fangsong: Han.detectFont('"Han Fangsong"')
-        // 'fangsong-gb': Han.detectFont( '"Han Fangsong GB"' )
-    })
+    //     fangsong: Han.detectFont('"Han Fangsong"')
+    //     // 'fangsong-gb': Han.detectFont( '"Han Fangsong GB"' )
+    // })
 
     // Han.correctBiaodian = function (context) {
     //     var context = context || document
@@ -2830,25 +2830,25 @@ void function (global, factory) {
     var QUERY_RU_W_ANNO = 'h-ru[annotation]'
     var SELECTOR_TO_IGNORE = 'textarea, code, kbd, samp, pre'
 
-    function createCompareFactory(font, treat, control) {
-        return function () {
-            var a = Han.localize.writeOnCanvas(treat, font)
-            var b = Han.localize.writeOnCanvas(control, font)
-            return Han.localize.compareCanvases(a, b)
-        }
-    }
+    // function createCompareFactory(font, treat, control) {
+    //     return function () {
+    //         var a = Han.localize.writeOnCanvas(treat, font)
+    //         var b = Han.localize.writeOnCanvas(control, font)
+    //         return Han.localize.compareCanvases(a, b)
+    //     }
+    // }
 
-    function isVowelCombLigaNormal() {
-        return createCompareFactory('"Romanization Sans"', '\u0061\u030D', '\uDB80\uDC61')
-    }
+    // function isVowelCombLigaNormal() {
+    //     return createCompareFactory('"Romanization Sans"', '\u0061\u030D', '\uDB80\uDC61')
+    // }
 
-    function isVowelICombLigaNormal() {
-        return createCompareFactory('"Romanization Sans"', '\u0069\u030D', '\uDB80\uDC69')
-    }
+    // function isVowelICombLigaNormal() {
+    //     return createCompareFactory('"Romanization Sans"', '\u0069\u030D', '\uDB80\uDC69')
+    // }
 
-    function isZhuyinCombLigaNormal() {
-        return createCompareFactory('"Zhuyin Kaiti"', '\u31B4\u0307', '\uDB8C\uDDB4')
-    }
+    // function isZhuyinCombLigaNormal() {
+    //     return createCompareFactory('"Zhuyin Kaiti"', '\u31B4\u0307', '\uDB8C\uDDB4')
+    // }
 
     function createSubstFactory(regexToSubst) {
         return function (context) {
@@ -2877,33 +2877,33 @@ void function (global, factory) {
 
     var charCombLiga = $.create('h-char', 'comb-liga')
 
-    $.extend(Han, {
-        isVowelCombLigaNormal: isVowelCombLigaNormal(),
-        isVowelICombLigaNormal: isVowelICombLigaNormal(),
-        isZhuyinCombLigaNormal: isZhuyinCombLigaNormal(),
+    // $.extend(Han, {
+    //     isVowelCombLigaNormal: isVowelCombLigaNormal(),
+    //     isVowelICombLigaNormal: isVowelICombLigaNormal(),
+    //     isZhuyinCombLigaNormal: isZhuyinCombLigaNormal(),
 
-        isCombLigaNormal: isVowelICombLigaNormal()(),  // ### Deprecated
+    //     isCombLigaNormal: isVowelICombLigaNormal()(),  // ### Deprecated
 
-        substVowelCombLiga: createSubstFactory(Han.TYPESET['display-as']['comb-liga-vowel']),
-        substZhuyinCombLiga: createSubstFactory(Han.TYPESET['display-as']['comb-liga-zhuyin']),
-        substCombLigaWithPUA: createSubstFactory(Han.TYPESET['display-as']['comb-liga-pua']),
+    //     substVowelCombLiga: createSubstFactory(Han.TYPESET['display-as']['comb-liga-vowel']),
+    //     substZhuyinCombLiga: createSubstFactory(Han.TYPESET['display-as']['comb-liga-zhuyin']),
+    //     substCombLigaWithPUA: createSubstFactory(Han.TYPESET['display-as']['comb-liga-pua']),
 
-        substInaccurateChar: function (context) {
-            var context = context || document
-            var finder = Han.find(context)
+    //     substInaccurateChar: function (context) {
+    //         var context = context || document
+    //         var finder = Han.find(context)
 
-            finder.avoid(SELECTOR_TO_IGNORE)
+    //         finder.avoid(SELECTOR_TO_IGNORE)
 
-            Han.TYPESET['inaccurate-char']
-                .forEach(function (pattern) {
-                    finder
-                        .replace(
-                            new RegExp(pattern[0], 'ig'),
-                            pattern[1]
-                        )
-                })
-        }
-    })
+    //         Han.TYPESET['inaccurate-char']
+    //             .forEach(function (pattern) {
+    //                 finder
+    //                     .replace(
+    //                         new RegExp(pattern[0], 'ig'),
+    //                         pattern[1]
+    //                     )
+    //             })
+    //     }
+    // })
 
     $.extend(Han.fn, {
         'comb-liga-vowel': null,
