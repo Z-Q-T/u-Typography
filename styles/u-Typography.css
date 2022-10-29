@@ -1391,6 +1391,9 @@ em {
 	font-weight: inherit;
 	line-height: 0;
 	text-decoration: wavy underline 1px;
+	text-decoration-style: wavy;
+	text-decoration-line: underline;
+	text-decoration-thickness: 1px;
 	text-underline-offset: 0.25em;
 	text-emphasis: none !important;
 }
