@@ -1063,6 +1063,9 @@ ol li::marker {
 }
 .orderedListIndex{
 	white-space: break-spaces;
+	position: absolute;
+left: 0rem;
+text-align: left;
 }
 /* 无序列表 */
 ul {
