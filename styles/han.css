@@ -218,8 +218,8 @@ a {
   text-decoration: inherit;
 }
 /* 下面是设置着重号 */
-em:lang(zh),
-em:lang(ja) {
+strong:lang(zh),
+strong:lang(ja) {
   /* -moz-text-emphasis: filled circle; */
   /* -webkit-text-emphasis: filled circle; */
   text-emphasis: "▪";
@@ -232,7 +232,7 @@ em:lang(ja) {
   /* border-bottom-width: -webkit-calc(0px); */
   /* padding-bottom: -webkit-calc(0px); */
 }
-em:lang(ja) {
+strong:lang(ja) {
   -moz-text-emphasis: filled sesame;
   -webkit-text-emphasis: filled sesame;
   text-emphasis: filled sesame;
@@ -347,26 +347,26 @@ ruby.mps > rt:empty {
 .han-js-rendered del + del {
   margin-left: auto;
 }
-.textemphasis em:lang(zh) h-jinze,
-.textemphasis em:lang(ja) h-jinze {
+.textemphasis strong:lang(zh) h-jinze,
+.textemphasis strong:lang(ja) h-jinze {
   display: inline;
 }
-.han-js-rendered em:lang(zh),
-.han-js-rendered em:lang(ja) {
+.han-js-rendered strong:lang(zh),
+.han-js-rendered strong:lang(ja) {
   padding-bottom: auto;
   border-bottom-width: 0;
 }
-.no-textemphasis em:lang(zh),
-.no-textemphasis em:lang(ja) {
+.no-textemphasis strong:lang(zh),
+.no-textemphasis strong:lang(ja) {
   line-height: 2;
 }
-.no-textemphasis em:lang(zh) h-char,
-.no-textemphasis em:lang(ja) h-char {
+.no-textemphasis strong:lang(zh) h-char,
+.no-textemphasis strong:lang(ja) h-char {
   position: relative;
   font-style: inherit;
 }
-.no-textemphasis em:lang(zh) h-char:after,
-.no-textemphasis em:lang(ja) h-char:after {
+.no-textemphasis strong:lang(zh) h-char:after,
+.no-textemphasis strong:lang(ja) h-char:after {
   -moz-text-emphasis: none;
   -webkit-text-emphasis: none;
   text-emphasis: none;
@@ -392,25 +392,25 @@ ruby.mps > rt:empty {
   text-indent: 0;
   font-family: Georgia, "Times New Roman", Arial, !important;
 }
-em:lang(zh) h-char.punct,
-em:lang(ja) h-char.punct,
-em:lang(zh) h-char.biaodian,
-em:lang(ja) h-char.biaodian {
+strong:lang(zh) h-char.punct,
+strong:lang(ja) h-char.punct,
+strong:lang(zh) h-char.biaodian,
+strong:lang(ja) h-char.biaodian {
   -moz-text-emphasis: none;
   -webkit-text-emphasis: none;
   text-emphasis: none;
 }
-.no-textemphasis em:lang(zh) h-char.punct:after,
-.no-textemphasis em:lang(ja) h-char.punct:after,
-.no-textemphasis em:lang(zh) h-char.biaodian:after,
-.no-textemphasis em:lang(ja) h-char.biaodian:after {
+.no-textemphasis strong:lang(zh) h-char.punct:after,
+.no-textemphasis strong:lang(ja) h-char.punct:after,
+.no-textemphasis strong:lang(zh) h-char.biaodian:after,
+.no-textemphasis strong:lang(ja) h-char.biaodian:after {
   content: none !important;
 }
-.no-textemphasis em:lang(zh) h-char:after {
+.no-textemphasis strong:lang(zh) h-char:after {
   margin-top: 1em;
   content: "\25cf";
 }
-.no-textemphasis em:lang(ja) h-char:after {
+.no-textemphasis strong:lang(ja) h-char:after {
   margin-top: -.7em;
   content: "\fe45";
 }

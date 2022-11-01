@@ -244,108 +244,110 @@ let toc = document.getElementById("toc-Container");
 let switcher = document.getElementById("toc-Switcher");
 let switcherOnOff = "off";
 let arrow = document.getElementById("tocSwitcher-ButtonSVG");
+if (switcher && arrow) {
+    switcher.onclick = function () {
+        // let toc = document.getElementById("toc-Container");
+        let windowWidth = window.innerWidth;
+        // let arrow = document.getElementById("tocSwitcher-ButtonSVG");
+        // let tocOpacity = toc.style.opacity;
+        if (switcherOnOff == "off") {
+            if (windowWidth > 1400) {
+                // toc.style.visibility = "visible";
+                toc.style.opacity = "1";
+                toc.style.top = "0";
+                toc.style.left = "0";
+                toc.style.width = "18rem";
+                toc.style.height = "100px";
+            } else if (windowWidth < 1400 && windowWidth > 1040) {
+                // toc.style.visibility = "visible";
+                toc.style.opacity = "1";
+                toc.style.top = "0";
+                toc.style.left = "3rem";
+                toc.style.width = "15rem";
+                toc.style.height = "100%";
+                arrow.style.transform = "rotateZ(-270deg)"
 
-switcher.onclick = function () {
-    // let toc = document.getElementById("toc-Container");
-    let windowWidth = window.innerWidth;
-    // let arrow = document.getElementById("tocSwitcher-ButtonSVG");
-    // let tocOpacity = toc.style.opacity;
-    if (switcherOnOff == "off") {
-        if (windowWidth > 1400) {
-            // toc.style.visibility = "visible";
-            toc.style.opacity = "1";
-            toc.style.top = "0";
-            toc.style.left = "0";
-            toc.style.width = "18rem";
-            toc.style.height = "100px";
-        } else if (windowWidth < 1400 && windowWidth > 1040) {
-            // toc.style.visibility = "visible";
-            toc.style.opacity = "1";
-            toc.style.top = "0";
-            toc.style.left = "3rem";
-            toc.style.width = "15rem";
-            toc.style.height = "100%";
-            arrow.style.transform = "rotateZ(-270deg)"
-
-        } else {
-            // toc.style.visibility = "visible";
-            toc.style.opacity = "1";
-            toc.style.top = "3rem";
-            toc.style.left = "0";
-            toc.style.width = "100%";
-            toc.style.height = "calc(80% - 3rem)";
-            arrow.style.transform = "rotateZ(180deg)"
+            } else {
+                // toc.style.visibility = "visible";
+                toc.style.opacity = "1";
+                toc.style.top = "3rem";
+                toc.style.left = "0";
+                toc.style.width = "100%";
+                toc.style.height = "calc(80% - 3rem)";
+                arrow.style.transform = "rotateZ(180deg)"
+            }
+            switcherOnOff = "on";
+        } else if (switcherOnOff == "on") {
+            if (windowWidth > 1400) {
+                toc.style.opacity = "1";
+                toc.style.top = "0";
+                toc.style.left = "0";
+                toc.style.width = "18rem";
+                toc.style.height = "100px";
+            } else if (windowWidth < 1400 && windowWidth > 1040) {
+                toc.style.opacity = "0.1";
+                toc.style.top = "0";
+                toc.style.left = "-12rem";
+                toc.style.width = "15rem";
+                toc.style.height = "100%";
+                arrow.style.transform = "rotateZ(-90deg)"
+            } else {
+                toc.style.opacity = "0.1";
+                toc.style.top = "-90%";
+                toc.style.left = "0";
+                toc.style.width = "100%";
+                toc.style.height = "calc(80% - 3rem)";
+                arrow.style.transform = "rotateZ(0deg)"
+            }
+            switcherOnOff = "off";
         }
-        switcherOnOff = "on";
-    } else if (switcherOnOff == "on") {
-        if (windowWidth > 1400) {
-            toc.style.opacity = "1";
-            toc.style.top = "0";
-            toc.style.left = "0";
-            toc.style.width = "18rem";
-            toc.style.height = "100px";
-        } else if (windowWidth < 1400 && windowWidth > 1040) {
-            toc.style.opacity = "0.1";
-            toc.style.top = "0";
-            toc.style.left = "-12rem";
-            toc.style.width = "15rem";
-            toc.style.height = "100%";
-            arrow.style.transform = "rotateZ(-90deg)"
-        } else {
-            toc.style.opacity = "0.1";
-            toc.style.top = "-90%";
-            toc.style.left = "0";
-            toc.style.width = "100%";
-            toc.style.height = "calc(80% - 3rem)";
-            arrow.style.transform = "rotateZ(0deg)"
-        }
-        switcherOnOff = "off";
+        console.log(switcherOnOff);
     }
-    console.log(switcherOnOff);
 }
-
 // 按照窗口尺寸自动适配文章目录的位置
 function changeTocPosition() {
     // let toc = document.getElementById("toc-Container");
     let windowWidth = window.innerWidth;
     // console.log(size);
-    if (windowWidth > 1400) {
-        toc.style.opacity = "1";
-        toc.style.top = "0";
-        toc.style.left = "0";
-        toc.style.width = "18rem";
-        toc.style.height = "100px";
-    } else if (windowWidth < 1400 && windowWidth > 1040) {
-        if (switcherOnOff == "on") {
+    if (arrow) {
+        if (windowWidth > 1400) {
             toc.style.opacity = "1";
             toc.style.top = "0";
-            toc.style.left = "3rem";
-            toc.style.width = "15rem";
-            toc.style.height = "100%";
-            arrow.style.transform = "rotateZ(-270deg)"
-        } else if (switcherOnOff == "off") {
-            toc.style.opacity = "0.1";
-            toc.style.top = "0";
-            toc.style.left = "-12rem";
-            toc.style.width = "15rem";
-            toc.style.height = "100%";
-            arrow.style.transform = "rotateZ(-90deg)"
-        }
-    } else if (windowWidth < 1040) {
-        if (switcherOnOff == "on") {
-            toc.style.opacity = "1";
-            toc.style.top = "3rem";
             toc.style.left = "0";
-            toc.style.width = "100%";
-            toc.style.height = "calc(80% - 3rem)";
-            arrow.style.transform = "rotateZ(180deg)"
-        } else if (switcherOnOff == "off") {
-            toc.style.opacity = "0.1";
-            toc.style.top = "-90%";
-            toc.style.left = "0";
-            toc.style.width = "100%";
-            arrow.style.transform = "rotateZ(0deg)"
-            toc.style.height = "calc(80% - 3rem)";
+            toc.style.width = "18rem";
+            toc.style.height = "100px";
+        } else if (windowWidth < 1400 && windowWidth > 1040) {
+            if (switcherOnOff == "on") {
+                toc.style.opacity = "1";
+                toc.style.top = "0";
+                toc.style.left = "3rem";
+                toc.style.width = "15rem";
+                toc.style.height = "100%";
+                arrow.style.transform = "rotateZ(-270deg)"
+            } else if (switcherOnOff == "off") {
+                toc.style.opacity = "0.1";
+                toc.style.top = "0";
+                toc.style.left = "-12rem";
+                toc.style.width = "15rem";
+                toc.style.height = "100%";
+                arrow.style.transform = "rotateZ(-90deg)"
+            }
+        } else if (windowWidth < 1040) {
+            if (switcherOnOff == "on") {
+                toc.style.opacity = "1";
+                toc.style.top = "3rem";
+                toc.style.left = "0";
+                toc.style.width = "100%";
+                toc.style.height = "calc(80% - 3rem)";
+                arrow.style.transform = "rotateZ(180deg)"
+            } else if (switcherOnOff == "off") {
+                toc.style.opacity = "0.1";
+                toc.style.top = "-90%";
+                toc.style.left = "0";
+                toc.style.width = "100%";
+                arrow.style.transform = "rotateZ(0deg)"
+                toc.style.height = "calc(80% - 3rem)";
+            }
         }
     }
 }
@@ -356,31 +358,33 @@ changeTocPosition();
 // 点击目录项后自动关闭目录
 window.onclick = function (e) {
     console.log(e);
-    if (e.target.matches('.tocH2 a')||e.target.matches('.tocH3 a')||e.target.matches('.tocH2 a span')||e.target.matches('.tocH3 a span')||e.target.matches('.tocH2 .biaodian')||e.target.matches('.tocH3 .biaodian')||e.target.matches('.tocH2 h-inner')||e.target.matches('.tocH3 h-inner')||e.target.matches('#toc-backToMainTitle a')||e.target.matches('#toc-skipToFootnote a')) {
+    if (e.target.matches('.tocH2 a') || e.target.matches('.tocH3 a') || e.target.matches('.tocH2 a span') || e.target.matches('.tocH3 a span') || e.target.matches('.tocH2 .biaodian') || e.target.matches('.tocH3 .biaodian') || e.target.matches('.tocH2 h-inner') || e.target.matches('.tocH3 h-inner') || e.target.matches('#toc-backToMainTitle a') || e.target.matches('#toc-skipToFootnote a')) {
         let windowWidth = window.innerWidth;
         // let arrow = document.getElementById("tocSwitcher-ButtonSVG");
-        if (windowWidth > 1400) {
-            toc.style.opacity = "1";
-            toc.style.top = "0";
-            toc.style.left = "0";
-            toc.style.width = "18rem";
-            toc.style.height = "100px";
-        } else if (windowWidth < 1400 && windowWidth > 1040) {
-            toc.style.opacity = "0.1";
-            toc.style.top = "0";
-            toc.style.left = "-12rem";
-            toc.style.width = "15rem";
-            toc.style.height = "100%";
-            arrow.style.transform = "rotateZ(-90deg)"
-        } else {
-            toc.style.opacity = "0.1";
-            toc.style.top = "-90%";
-            toc.style.left = "0";
-            toc.style.width = "100%";
-            toc.style.height = "calc(80% - 3rem)";
-            arrow.style.transform = "rotateZ(0deg)"
+        if (arrow) {
+            if (windowWidth > 1400) {
+                toc.style.opacity = "1";
+                toc.style.top = "0";
+                toc.style.left = "0";
+                toc.style.width = "18rem";
+                toc.style.height = "100px";
+            } else if (windowWidth < 1400 && windowWidth > 1040) {
+                toc.style.opacity = "0.1";
+                toc.style.top = "0";
+                toc.style.left = "-12rem";
+                toc.style.width = "15rem";
+                toc.style.height = "100%";
+                arrow.style.transform = "rotateZ(-90deg)"
+            } else {
+                toc.style.opacity = "0.1";
+                toc.style.top = "-90%";
+                toc.style.left = "0";
+                toc.style.width = "100%";
+                toc.style.height = "calc(80% - 3rem)";
+                arrow.style.transform = "rotateZ(0deg)"
+            }
+            switcherOnOff = "off";
         }
-        switcherOnOff = "off";
     }
 }
 
