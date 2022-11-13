@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="张擎天（Zhang Qingtian）">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--开头通用模板到此结束-->
+
+    <meta name="description" content="什么是排版设计？">
+    <title>什么是排版设计？ ｜ 字无字 ú–Typography</title>
+
+    <!-- 字体服务的通用模板由此开始 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet"><!-- 思源黑体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"> <!-- Source Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet"> <!-- 思源宋体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Source Serif -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <!-- Source Code -->
+    <!-- 字体服务的通用模板到此结束 -->
+
+    <!--图标、样式、链接打开方式的二级页面模板由此开始-->
+    <link rel="shortcut icon" href="../images/字无字_网页图标.png" type="image/x-icon">
+    <link rel="stylesheet" media="all" href="../styles/han.css">
+    <link rel="stylesheet" href="../styles/u-Typography.css" type="text/css">
+    <!-- <link rel="stylesheet" href="../styles/debug.css" type="text/css"> -->
+    <base target="_self">
+    <!--图标、样式、链接打开方式的二级页面模板到此结束-->
+
+</head>
+
+<body>
+
+    <div id="whole">
+        <!--导航栏的二级页面模板由此开始-->
+        <div id="bar">
+            <div id="decoLine"></div>
+            <a href="../index.html" id="backToHomePage">
+                <img id="backArrow" src="../images/字无字_返回首页箭头-图标.png" alt="返回首页｜back to home page">
+                <img id="home" src="../images/字无字_返回首页房子-图标.png" alt="返回首页｜back to home page">
+            </a>
+            <picture id="logotype">
+                <source srcset="../images/字无字_横竖.png" media="(max-width: 680px)">
+                <source srcset="../images/字无字_横.png" media="(max-width: 1040px)">
+                <img id="logo" src="../images/字无字_竖.png" alt="“字无字”的标志｜logo of ú–typography">
+            </picture>
+            <div id="changeTypeMenu-Button"><svg id="changeTypeMenu-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 4">
+                    <g id="changeTypeMenu-ButtonSVGgraphic">
+                        <circle cx="2" cy="2" r="1.5" />
+                        <circle cx="9" cy="2" r="1.5" />
+                        <circle cx="16" cy="2" r="1.5" />
+                    </g>
+                </svg></div>
+            <!-- <div id="changeTypeMenu-Hint"><span id="changeTypeMenu-Hint-Title">〖更换字体〗</span><br>该功能在一些情况下会额外下载所需的字体<br>这可能消耗更多的流量</div> -->
+            <menu id="changeTypeMenu" style="visibility: hidden; opacity: 0; ">
+                <div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">标题</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-BiaoTi-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-BiaoTi-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">正文</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-ZhengWen-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-ZhengWen-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">补充</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-BianZhu-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-BianZhu-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>
+            </menu>
+            <div><a id="pageTypography-Button" href="../Typography_of_this_Site.html" target="_blank">¶</a>
+            </div>
+        </div>
+        <!--导航栏的二级页面模板到此结束-->
+
+        <main id="page">
+            <header id="mainTitleArea">
+                <div id="metaInfo">
+                    <div id="index">〚&#8197;加&#8197;·&#8197;一&#8197;〛
+                        <!-- <div id="indexExplanation">编号不代表逻辑顺序</div> -->
+                    </div>
+                    <div class="metaInfo-Seperator"></div>
+                    <div id="time">
+                        <ul>
+                            <li><time pubdate datetime="2022-09-20"><span class="number">2022</span>年<span class="number">11</span>月<span class="number">13</span>日</time>&emsp;发布</li>
+                        </ul>
+                    </div>
+                    <div class="metaInfo-Seperator"></div>
+                    <div id="author">张擎天</div>
+                </div>
+                <!-- <div id="decoLine"></div> -->
+                <div id="title">
+                    <h1>什么是排版设计？</h1>
+                </div>
+                <!-- <div id="caption">放副标题的位置</div> -->
+            </header>
+            <div id="toc-PlaceHolder"></div>
+            <!-- 切换目录的按钮模板由此开始 -->
+            <div id="toc-Switcher">
+                <svg id="tocSwitcher-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 4">
+                    <g id="tocSwitcher-ButtonSVGgraphic">
+                        <path d="M4,4a2.38,2.38,0,0,1-1.67-.69L0,.38.56,0,3,2.64a1.46,1.46,0,0,0,2,0L7.44,0,8,.38,5.67,3.31A2.38,2.38,0,0,1,4,4Z" />
+                    </g>
+                </svg>
+            </div>
+            <!-- 切换目录的按钮模板到此结束 -->
+            <div id="toc-Container">
+                <nav id="tableOfContent">
+                    <ul>
+                        <div id="toc-backToMainTitle"><a href="#">∧</a></div>
+                        <li class="tocH2"><a href="#“typography”的翻译" target="_self">一、“<span class="Latin" lang="en">typography</span>”的翻译</a></li>
+                        <li class="tocH3"><a href="#现状综述" target="_self"><span class="Latin">1. </span>现状综述</a></li>
+                        <li class="tocH3"><a href="#词义分析" target="_self"><span class="Latin">2. </span>词义分析</a></li>
+                        <li class="tocH3"><a href="#提议使用排版设计来翻译狭义上的“typography”" target="_self"><span class="Latin">3. </span>提议使用“排版设计”来翻译狭义上的“<span class="Latin" lang="en">typography</span>”</a></li>
+                        <li class="tocH2"><a href="#“typography”的衍生词的翻译" target="_self">二、“<span class="Latin" lang="en">typography</span>”的衍生词的翻译</a></li>
+                        <li class="tocH3"><a href="#“typographer”的翻译" target="_self"><span class="Latin">1. </span>“<span class="Latin" lang="en">typographer</span>”的翻译</a></li>
+                        <li class="tocH3"><a href="#“microtypography/macrotypography”的翻译" target="_self"><span class="Latin">2. </span>“<span class="Latin" lang="en">microtypography / macrotypography</span>”的翻译</a></li>
+                        <li class="tocH2"><a href="#总结" target="_self">三、总结</a></li>
+                        <div id="toc-skipToFootnote"><a href="#footnotesArea">∨</a></div>
+                    </ul>
+                </nav>
+            </div>
+            <div id="mainContent">
+                <article>
+                    <p>排版设计，简单来说，就是关于如何选择、排布活字，以便让一段给定的文本能被更舒适地阅读的设计<sup class='footnoteMark' id='footnote-mark-1'><a href='#footnote-number-1'>1</a></sup>。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>本文所称的“排版设计”指的是“<span class="Latin" lang="en">typography</span>”一词在偏向狭义上的含义。关于“<span class="Latin" lang="en">typography</span>”一词的内涵与翻译问题，请参见“”。</span>这里所说的“活字（<span class="Latin" lang="en">movable type</span>）”，指的是一个个互相独立，可以任意摆放的文字，既包括历史上的泥活字、木活字、铜活字、铅活字<span class="ShengLyueHao">……</span>，也包括后来的照相排版所使用的负片字体，更包括现今计算机软件里使用的电脑字体。</p>
+                    <p>中国人最早发明活字印刷，这是毫无疑问的。但由于种种原因，直到近代以前，活字印刷在中国并未大范围流行。<sup class='footnoteMark' id='footnote-mark-2'><a href='#footnote-number-2'>2</a></sup>一直以来，中国的书籍印刷都是以雕版为主流，对活字排版的技术思考相对粗浅，审美意识较为薄弱。而从近代开始在中国有重要地位的铅活字印刷则主要由西方传入，它因循了古登堡的技术路线，与中国传统的活字印刷距离较远。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>现今的计算机字体与排版也可视作是古登堡技术的延续和发展。</span>由此，在古登堡铅活字印刷技术体系下的排字之学<span class="PoZheHao">——</span>排版设计（<span class="Latin" lang="en">typography</span>）<span class="PoZheHao">——</span>一方面在中国缺少历史根基（本土未曾出现过成熟度相近的事物），另一方面在中国遭遇水土不服（面临如何将基于西方字母的技术与相应的审美中国化的问题）。因而，“排版设计”这一概念对很多人来说都感到较为陌生，或者是有误读。这种对排版设计的概念认知不清晰、不到位影响到了如今的中文文字在印刷或屏幕等媒介上呈现时的视觉质量。下面我将从文字造型的生成方式讲起，简要说明排版设计的含义以及它和其他常见概念的区别。</p>
+                    <p>&nbsp;</p>
+                    <h2 id='文字造型的三种生成方式'>文字造型的三种生成方式</h2>
+                    <p>文字的造型的生成方式可以被分为三大类：书法、绘字、活字印刷。<sup class='footnoteMark' id='footnote-mark-3'><a href='#footnote-number-3'>3</a></sup></p>
+                    <p>书法（<span class="Latin" lang="en">calligraphy</span>）<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>关于中国的书法和西方的<span class="Latin" lang="en">calligraphy</span>是否属于同一种事物存在争议。本文未涉及此二者之间的差异，因而将它们囊括在同一个名称下。</span>，无论其艺术造诣高低，指的是一气呵成地写完若干文字。虽然并非绝对地不能涂改，但至少是不可以在局部反复描画的。这一点是每一位书法学习者在习练之初就会被老师告知的。普通人日常写的字也属于这一类，假如你认为缺乏美感的字不能被称为书法的话，那至少可以把这个分类叫做“书写（<span class="Latin" lang="en">writing</span>）”。</p>
+                    <p>绘字（<span class="Latin" lang="en">lettering</span>）则不同，它允许对轮廓造型反复修描，并且这样得到的结果往往更为细腻别致。美术字、手绘标语、字标（<span class="Latin" lang="en">logotype</span>）等等都属于这个大类，相比于书法，绘字受到工具和技法的限制较少，造型变化更为丰富，同样具有审美价值。</p>
+                    <p>书法和绘字虽然都能创作出优美的文字，但生产效率太低。随着社会和技术的发展，人们对于快速复制大量文字有了需求，并最终产生了字体设计（<span class="Latin" lang="en">typeface design</span>）和排版设计（<span class="Latin" lang="en">typography</span>），这两者合起来就构成了“活字印刷（<span class="Latin" lang="en">printing with movable type</span>）”的主体。它和绘字的共同点在于，无论是字体设计还是排版设计的流程，都可以（而且最好要）反复修改。其不同点在于：对于书法和绘字来说，只需要创作在该作品中出现的文字，且只要保证这些文字在当前的组合关系下是和谐美观的即可；而对于活字印刷来说，在字体设计时，必须创作所有的文字（因为你无法预知将来在排版时会用到哪些字），而且要尽量确保这些字在任意的组合方式下都要和谐美观（因为你也无法预知将来在排版时文字会以何种顺序出现）。<sup class='footnoteMark' id='footnote-mark-4'><a href='#footnote-number-4'>4</a></sup></p>
+                    <figure>
+                        <figcaption>文字造型的三种生成方式的特征汇总</figcaption>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>书法</th>
+                                    <th>绘字</th>
+                                    <th>活字印刷</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>内在流程</td>
+                                    <td>一步</td>
+                                    <td>一步</td>
+                                    <td>两步（字体设计和排版设计）</td>
+                                </tr>
+                                <tr>
+                                    <th>成型方式</td>
+                                    <td>一次成型</td>
+                                    <td>反复修改</td>
+                                    <td>反复修改</td>
+                                </tr>
+                                <tr>
+                                    <th>需创作的文字量</td>
+                                    <td>部分文字</td>
+                                    <td>部分文字</td>
+                                    <td>所有文字</td>
+                                </tr>
+                                <tr>
+                                    <th>需考虑的文字搭配</td>
+                                    <td>特定组合</td>
+                                    <td>特定组合</td>
+                                    <td>所有组合</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </figure>
+                    <p>值得一提的是，常常被拿来和活字印刷并举的雕版印刷在这个分类体系下没有单独的位置（包括篆刻同样如此），它或多或少地属于书法或绘字。<sup class='footnoteMark' id='footnote-mark-5'><a href='#footnote-number-5'>5</a></sup>这也意味着，如果从文字造型的生成方式的角度来看，雕版印刷和书法或绘字的关系更近，它和活字印刷有本质区别。</p>
+                    <h2 id='排版设计与字体设计的关系'>排版设计与字体设计的关系</h2>
+                    <p>由上可见，字体设计和排版设计关系紧密，但它们也有着明显的区别。<sup class='footnoteMark' id='footnote-mark-6'><a href='#footnote-number-6'>6</a></sup>对此，<span class="Latin" lang="en">Jan Middendorp</span>有过很好的解释：</p>
+                    <blockquote>
+                        <p>字体设计指的是设计印刷用的字体。在许多法语或西班牙语的出版物中，排版设计和字体设计经常混用；但是在英语、德语、以及其他许多语言中，排版设计的意思只是<em>用</em>字体来做设计，而不是<em>做</em>字体。一位排版设计师可以设计书籍、手册、文具、展览文字、时间表以及其他许多东西，但设计字体的人应被称为字体设计师。<sup class='footnoteMark' id='footnote-mark-7'><a href='#footnote-number-7'>7</a></sup></p>
+                    </blockquote>
+                    <p>从这段话中我们可以很容易地理解两者之间的差异。对于活字印刷来说，字体设计是第一步，排版设计是第二步。<span class="Latin" lang="en">Gerrit Noordzij</span>曾说：</p>
+                    <blockquote>
+                        <p>排版设计是用预制的文字书写。<sup class='footnoteMark' id='footnote-mark-8'><a href='#footnote-number-8'>8</a></sup></p>
+                    </blockquote>
+                    <p>“预制的文字”即“字体”。“预制”一词表明了字体设计在时间顺序上先于排版设计。字体是排版的基础。而排版设计则是用字体进行再创造的过程。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span><span class="Latin" lang="en">Noordzij</span>将排版设计称为书写只是比喻，它和之前“文字造型的三种生成方式”中的“书法（书写）”有本质区别。</span></p>
+                    <p>未经排版的字体只是一堆铅块（或者电脑里的一个文件），它不是最终的成品。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>很多字体设计师或字体设计公司用来展示字体效果的样张（<span class="Latin" lang="en">specimen</span>）其实已经是经过排版的了，已经包含了排版设计的成分。</span>这样说似乎不太尊重字体设计师的劳动，但若换一种说法应该更容易被接受：字体就像是食材，排版就像是烹饪。能培育出高档的食材当然值得褒奖，但恐怕不能直接把它端上餐桌。倘若厨师的手艺不高，那或许会糟蹋了上好的食材，食客们多半也难以满意。而排版也依赖于字体。假如食材本身的质量不过关，那恐怕厨艺再高的厨师也无力回天。</p>
+                    <p>应该说，字体设计师和排版设计师各自只做一半的工作，两者可能素未谋面，但互相保持信任，共同完成文字作品的视觉呈现。他们都需要对对方的工作和需求有所了解，但本质上互不干涉，各自专注于自己的职责。在这里，字体设计和排版设计体现出了工业的分工合作的特点。</p>
+                    <p>&nbsp;</p>
+                    <h2 id='排版设计与版式设计的关系'>排版设计与版式设计的关系</h2>
+                    <p>对排版设计的一个常见的误读是将其理解为版式设计（<span class="Latin" lang="en">layout design</span>）。这两者确实关注的都是对页面元素如何排布的问题，但也有重要的区别。<span class="Latin" lang="en">Gerrit Noordzij</span>在一次访谈中的一番话或许能有所启发：</p>
+                    <blockquote>
+                        <p>我记得有一次和<span class="Latin" lang="en">Wim Crouwel</span>的对话。我对他说你不是一个排版设计师，他说为什么不是？我说，因为你给到排版员的排版说明太笼统，你给出的修改意见也太笼统，你只在拿到校样，把它们剪下，开始排布它们时才开始动脑筋。你的设计开始于我称之为“版式”的地方。但设计不应该从那里开始，而应该从对文本的关注<span class="PoZheHao">——</span>也就是易读性<span class="PoZheHao">——</span>开始。你把它们放在一定距离之外，然后说版面灰度均匀，然后你就满足了。我想我之所以能轻易看出这一点是因为我或多或少在另一个极端上。我的设计开始于单词的造型。我认为单词间的距离的大小差异是非常需要关注的。当我能减小这种差异时我才会觉得舒服。我倾向于说单词间距是有语义的。所有的单词间距都有完全相同的含义，那为什么不让它们保持相等呢？就像你会让每个逗号都保持相同那样。这些东西对<span class="Latin" lang="en">Wim Crouwel</span>来说不是很重要。他不喜欢大写字母，为什么呢？因为大写字母干扰到了他的版面的灰度，我明白这一点。但我会说，从阅读文本的角度来看，大写字母很重要，因而要考虑如何掌控它们。这就是我说的排版设计。<sup class='footnoteMark' id='footnote-mark-9'><a href='#footnote-number-9'>9</a></sup></p>
+                    </blockquote>
+                    <p>正如这段话所说，排版设计必须要深入到文本造型的细节层面，而版式设计可以只停留在宏观的大效果上。排版设计应当以阅读（<span class="Latin" lang="en">read</span>）的体验为准绳，而版式设计可以只考虑观看（<span class="Latin" lang="en">look</span>）的效果。<sup class='footnoteMark' id='footnote-mark-10'><a href='#footnote-number-10'>10</a></sup></p>
+                    <p>只考虑了版式设计而忽略了排版设计的作品可能会有相当不错的视觉表现力，但无法保证深入阅读文本时的舒适度，这对于画册、影集等以图像为主的作品来说问题不大，但对于占大多数的、以文字为主的书籍、杂志、网页等来说，这将严重影响到读者的阅读体验。</p>
+                    <p>Gerrit Noordzij在上面那段话中提到的单词间距是否均匀是西文排版的重点之一，这关系到文本读起来是否流畅、舒适。而对于中文来说，没有词间空格或者大写字母这回事，但值得注意的排版细节只多不少。其实任何一种文字都有需要细细考究的排版元素，这不仅会影响到阅读这种文字的舒适度，而且也是这种文字背后所蕴藏的文化的一部分。</p>
+                    <p>顺带一提，排版设计可以被分为微观排版设计（<span class="Latin" lang="en">microtypography</span>）和宏观排版设计（<span class="Latin" lang="en">macrotypography</span>）。版式设计大致接近于宏观排版设计。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>可参见“「<span class="Latin" lang="en">typography</span>」及其衍生词的翻译问题”中的“「<span class="Latin" lang="en">microtypography / macrotypography</span>」的翻译”一节。</span>另外，排版设计通常以文字为主，甚至是纯文字的。版式设计可以以文字为主，也经常图文并重。</p>
+                    <p>&nbsp;</p>
+                    <h2 id='排版设计与写作的关系'>排版设计与写作的关系</h2>
+                    <p>自从人类有文字开始，写作就一直伴随着我们。它们可能是儒士高僧的宏篇巨著，也可能是商贾小吏的简单随笔。在漫长的历史中，写作的内容一直在变，写作的外观也一直在变。假如我们仔细观察一下现今能发现的最古老的书卷（无论是中国还是外国的），会发现它们不分词，不分句，不分段，不分章节，只是把文字填满载体。这样的外观只能逐字逐句慢慢读。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>这种情况当然也有物质上或经济上的原因。</span>在古代，人们读书的机会不多，能读到的书也不多，这样做没什么问题。但随着时代的发展，人需要读的内容更多，也需要读得更快，于是文字版面上开始出现不同的格式或样式。这么做是为了区分不同的信息层级，帮助作者更好地传达，帮助读者更好地接收。这种格式或样式的变化可以提供导向。</p>
+                    <p>直到活字印刷出现，彻底解放了文本赋形的生产力。正是由于活字的“活”的特性，写作和排版可以分为两个步骤先后或交叉进行。（要不然假如是书写的话，写下一个字的同时它在排版上也就定型了，写作和排版是由同一人同时完成的。）文本的创作被正式分工给作者和设计者合力完成。作者的职责和自古以来的很接近；而设计者的职责就是为文本铺路造桥，安装指示牌，将文本以尽可能赏心悦目的方式展示出来，并视觉化地呈现它的内在结构，以便让读者迅速找到自己想读的内容，同时帮助读者尽量顺畅、愉悦地理解文本的含义。<sup class='footnoteMark' id='footnote-mark-11'><a href='#footnote-number-11'>11</a></sup>排版设计因而诞生。</p>
+                    <p>如同其他各种各样的分工合作一样，作者和设计者可能互不相识，但排版设计让他们相遇。作者创造文本的内容，设计者创造文本的造型。<sup class='footnoteMark' id='footnote-mark-12'><a href='#footnote-number-12'>12</a></sup>内容必须具有造型才能传达，造型决定了读者获取内容信息时有多方便或多舒适。与此同时，造型本身也包含信息，它能传达出不直接存在于内容中的气质、感受、情绪、风格。虽说排版设计一般应该充当辅助角色，忠实地传达作者的所思所言，但排版设计者有时也可以自我表达。排版设计在某种程度上也是在重新诠释文本。<sup class='footnoteMark' id='footnote-mark-13'><a href='#footnote-number-13'>13</a></sup></p>
+                    <p>写作创造内容，而排版创造形式<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>形式可能有两种含义，一种是指文学上的“体裁”，另一种则是指设计上的“外观”或“造型”。这里指的是后者。</span>。形式与内容相辅相成，“文质彬彬，然后君子。”</p>
+
+                    <hr>
+                    <section id='footnotesArea'>
+                        <h2 id='注释'>注　释</h2>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-1' class='footnoteNumber'>1</div>
+                            <p>“给定的文字”这个概念很值得注意，因为假如文字尚未确定的话，那为了让它更易阅读，首先应该考虑的是调整遣词造句等“文学”层面的内容。这通常不是美术设计者的任务。当然，设计人员有时也完全可以参与到文本内容的推敲中来。另外，排版设计有时也可以跳脱出实用的范畴，不过这不是这里要讨论的内容。<a href='#footnote-mark-1' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-2' class='footnoteNumber'>2</div>
+                            <p>关于活字印刷在古代未能取代雕版印刷的原因，可参见<cite>《中国印刷史新论》</cite>，艾俊川著，中华书局，<span class="Latin" lang="en">2022</span>年，第<span class="Latin" lang="en">76</span>—86页，“铅字在<span class="Latin" lang="en">1873</span>”一文。<a href='#footnote-mark-2' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-3' class='footnoteNumber'>3</div>
+                            <p>这种分类方法在<cite>《<span class="Latin" lang="en">Counterpunch: Making Type in the Sixteenth Century, Designing Typefaces Now</span>》</cite>（<span class="Latin" lang="en">Fred Smeijers</span>著，<span class="Latin" lang="en">Hyphen Press</span>，<span class="Latin" lang="en">1996</span>年）的第<span class="Latin" lang="en">3</span>章“<span class="Latin" lang="en">The three ways of making letters</span>”（第<span class="Latin" lang="en">19</span>—23页）中也能找到。这里的表述在细节上与之稍有不同。也可参看该书中文版<cite>《字腔字冲：<span class="Latin" lang="en">16</span>世纪铸字到现代字体设计》</cite>，弗雷德<span class="JianGeHao">·</span>斯迈尔斯著，税洋珊、刘钊、滕晓铂译，北京大学出版社，<span class="Latin" lang="en">2021</span>年，第<span class="Latin" lang="en">37</span>—41页。<a href='#footnote-mark-3' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-4' class='footnoteNumber'>4</div>
+                            <p>西文的书法或绘字确实有可能在单个作品中写到了所有字母，但这并非是书法或绘字这项技艺的内在要求。另外，虽然理论上字体设计要预先制作所有文字，但由于汉字数量实在庞大，且其中不少字的使用频度都极低，因而实际上中文的字体不需要做完所有的文字一般也够用了。另外，对于字体设计需要考虑到所有可能的文字组合方式这一点，其实对西文来说有些特定的字母组合是几乎不可能出现的，比如英文里的<span class="Latin" lang="en">jx</span>、<span class="Latin" lang="en">vq</span>、<span class="Latin" lang="en">kf</span>等，在字体设计时就可以不用考虑这些字母组合在一起的效果；对中文来说，一一遍历所有文字组合的工作量过于巨大，一般只要确保高频字和常用词的组合效果良好即可。<a href='#footnote-mark-4' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-5' class='footnoteNumber'>5</div>
+                            <p>可能有反驳意见称，篆刻或雕版往往也是先经书法（书写）而后绘字（雕刻），因而呈现出“两步—反复修改—部分文字—特定组合”的特点，应该在这个体系下占有单独的分类。但是，篆刻（或雕版）的书写和雕刻是针对<em>同一个事物</em>的先后步骤，即对于同一个<span class="FenGeHao">／</span>行<span class="FenGeHao">／</span>段文字的不同工具、不同方式的造型处理，作品的外观在前后两个步骤没有发生根本性的变化，只是完成度不同。而活字印刷的两个流程分别针对的是<em>不同的事物</em>：在字体设计流程，针对的是单字的造型设计，虽然也必须要考虑后期排版的效果，但在此时不会涉及诸如行距、栏宽、边距等具体的排版方式；而在排版设计流程，针对的是文字如何排列成段，以及其在页面上如何呈现的设计，虽然也必须考虑字体的造型合适与否，但如果不合适，通常是直接换一个字体，而不会去修改字体的造型；作品的外观在此过程中大有变化。因而，活字印刷中的字体设计和排版设计各自既有足够的独立性（所以能被认为是<em>两个</em>流程），又有紧密的关联性（所以能被认为组成了一个统一的事物）。而篆刻或雕版中的书法和绘字关联性尚且不论，但独立性明显不足，因而只能认为有<em>一个</em>流程。我倾向于认为篆刻和雕版是体现了书法特征的绘字。（就好比字体设计流程也可以先从书法稿开始，但不能说它们结合起来就有了第五个分类了。它只是具有书法特征的活字印刷。）<a href='#footnote-mark-5' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-6' class='footnoteNumber'>6</div>
+                            <p>这里需要对字体设计和排版设计的范畴再次做出说明。有些时候，字体设计这个词不仅包含了传统意义上的字体设计，还包含了字形设计和字标设计。字形设计指设计单个或少量的文字，不一定要求文字的辨识度，常用于海报等场合；字标设计指设计单个或少量的文字，要求有一定的辨识度，常用于商标等场合；传统意义上的字体设计指设计大量甚至全部的文字，要求文字好读好认，常用于图书、杂志、导视牌等场合。按照本文对文字的三种分类，字形<span class="FenGeHao">／</span>字标设计都属于绘字（有时也带有书法的成分）。因而这里所说的“字体设计”不包含字形<span class="FenGeHao">／</span>字标设计。同样，这里所说的排版设计（狭义的<span class="Latin" lang="en">typography</span>）也不包含这两个领域。但是，广义上的<span class="Latin" lang="en">typography</span>（通常译为“文字设计”）确实包括字形<span class="FenGeHao">／</span>字标设计。<a href='#footnote-mark-6' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-7' class='footnoteNumber'>7</div>
+                            <p><cite>《<span class="Latin" lang="en">Shaping Text</span>》</cite>，<span class="Latin" lang="en">Jan Middendorp</span>著，<span class="Latin" lang="en">BIS Publishers</span>，<span class="Latin" lang="en">2012</span>年，第<span class="Latin" lang="en">16</span>页。<span class="Latin" lang="en"> </span>原文为：“<span class="Latin" lang="en">Type design is designing printing types or fonts. In many French- and Spanish-language publications typography and type design are happily confused; yet in English, German and many other languages typography only means designing with type, not the design of type. A typographer may design books, brochures, stationery, texts in exhibitions or time tables, among many other things. But a person who designs fonts is a type designer.</span>”这里同时提到了“<span class="Latin" lang="en">type</span>”和“<span class="Latin" lang="en">font</span>”两个词，两个词含义稍有区别，不过在现代语境下，这两个词经常混用，这里将它们一并翻译为“字体”，不做区分。<a href='#footnote-mark-7' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-8' class='footnoteNumber'>8</div>
+                            <p><cite>《<span class="Latin" lang="en">Letterletter</span>》</cite>，<span class="Latin" lang="en">Gerrit Noordzij</span>著，<span class="Latin" lang="en">Hartley &amp; Marks Publishers</span>，<span class="Latin" lang="en">2000</span>年，第<span class="Latin" lang="en">30</span>页，原文为：“<span class="Latin" lang="en">Typography is writing with prefabricated letters</span>”。也可参见同书第<span class="Latin" lang="en">3</span>、<span class="Latin" lang="en">69</span>、<span class="Latin" lang="en">96</span>、<span class="Latin" lang="en">157</span>页。类似的语句<span class="FenGeHao">／</span>观点也可在同一位作者的另一本著作上找到，见<cite>《<span class="Latin" lang="en">The Stroke</span>—Theory of Writing》</cite>，<span class="Latin" lang="en">Gerrit Noordzij</span>著，<span class="Latin" lang="en">Peter Enneson</span>译，<span class="Latin" lang="en">Hyphen Press</span>，<span class="Latin" lang="en">2005</span>年，第<span class="Latin" lang="en">16</span>、<span class="Latin" lang="en">49</span>页。另外在<cite>《<span class="Latin" lang="en">Counterpunch: Making Type in the Sixteenth Century, Designing Typefaces Now</span>》</cite>（<span class="Latin" lang="en">Fred Smeijers</span>著，<span class="Latin" lang="en">Hyphen Press</span>，<span class="Latin" lang="en">1996</span>年）的第<span class="Latin" lang="en">4</span>章“<span class="Latin" lang="en">Type: a game of black and white</span>”（第<span class="Latin" lang="en">24</span>页）中也提到了排版设计与预制（<span class="Latin" lang="en">prefabrication</span>）的关系。<a href='#footnote-mark-8' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-9' class='footnoteNumber'>9</div>
+                            <p>载“<span class="Latin" lang="en">Robin Kinross interviews Gerrit Noordzij, 2001</span>”（<a href='https://typemedia.org/noordzij/interview.html' target='_blank' class='url'>https://typemedia.org/noordzij/interview.html</a>）。原文为：“<span class="Latin" lang="en">I remember a discussion with Wim Crouwel. I said to Wim Crouwel that he is not a typographer. He said, why not? I said, because your instructions for the compositor are without much engagement, your corrections are without much engagement, you only wake up when you get your galley proofs, cut them up and start arranging them. Your design starts with what I would call layout. The beginning of design is not there: that is the care for the text, for legibility. You put them at a distance, and say that there is an even field of grey, and then you are satisfied. I think I could see this so easily because I am more or less at the other extreme. I start with the shape of the word. I find the variations that the word-spaces can have is very important. When I can reduce these variations, I feel better. I’m almost inclined to say that a word-space is a semantic thing. All these word-spaces have exactly the same meaning, so why not make them the same, just as you make all commas the same. These things are not very important for Wim Crouwel. He does not like capitals. Why not? Because they disturb his grey column. I understand that. But I would say that from the point of view of accessing the text, capital letters are important, so how do we get them under control. That’s what I would call typography.</span>”文中提到了“<span class="Latin" lang="en">legibility</span>”一词，按照不同的习惯，该词有时表达的是另一些人用“<span class="Latin" lang="en">readability</span>”来表达的含义。同时，这两个词的中文翻译也存在很大争议，一些观点正好相反，进一步增加了混淆。结合上下文，这里<span class="Latin" lang="en">Noordzij</span>想表达的是“阅读起来是否轻松舒适”，也就是通常用“<span class="Latin" lang="en">readability</span>”来表达的概念。这里将其翻译成“易读性”。</p>
+                            <p>另外，<span class="Latin" lang="en">Eric Gill</span>也对为了达成段落左右对齐而牺牲词间距的均一性这种做法提出过批评，详见<cite>《<span class="Latin" lang="en">An Essay on Typography</span>》</cite>，<span class="Latin" lang="en">Eric Gill</span>著，<span class="Latin" lang="en">Lund Humphnes Publishers</span>，<span class="Latin" lang="en">1993</span>年（原版<span class="Latin" lang="en">1936</span>年），第<span class="Latin" lang="en">6</span>章“<span class="Latin" lang="en">The Procrustean Bed</span>”（第<span class="Latin" lang="en">88</span>—94页）。<a href='#footnote-mark-9' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-10' class='footnoteNumber'>10</div>
+                            <p>对于“阅读”和“观看”之间的差异的批评观点，可参见<cite>《<span class="Latin" lang="en">An Essay on Typography</span>》</cite>，<span class="Latin" lang="en">Eric Gill</span>著，<span class="Latin" lang="en">Lund Humphnes Publishers</span>，<span class="Latin" lang="en">1993</span>年（原版<span class="Latin" lang="en">1936</span>年），第<span class="Latin" lang="en">6</span>章“<span class="Latin" lang="en">The Procrustean Bed</span>”（第<span class="Latin" lang="en">88</span>—94页）。<a href='#footnote-mark-10' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-11' class='footnoteNumber'>11</div>
+                            <p>可参见<cite>《<span class="Latin" lang="en">Typography: A Very Short Introduction</span>》</cite>，<span class="Latin" lang="en">Paul Luna</span>著，牛津大学出版社，<span class="Latin" lang="en">2018</span>年，第<span class="Latin" lang="en">3</span>章第<span class="Latin" lang="en">2</span>节“<span class="Latin" lang="en">Hierarchy</span>”（第<span class="Latin" lang="en">49</span>—53页）。<a href='#footnote-mark-11' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-12' class='footnoteNumber'>12</div>
+                            <p>可参见<cite>《<span class="Latin" lang="en">Letterletter</span>》</cite>，<span class="Latin" lang="en">Gerrit Noordzij</span>著，<span class="Latin" lang="en">Hartley &amp; Marks Publishers</span>，<span class="Latin" lang="en">2000</span>年，“<span class="Latin" lang="en">The Tales of the Typographer</span>”（第<span class="Latin" lang="en">112</span>页）。<a href='#footnote-mark-12' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-13' class='footnoteNumber'>13</div>
+                            <p>可参见<cite>《<span class="Latin" lang="en">Typography: A Very Short Introduction</span>》</cite>，<span class="Latin" lang="en">Paul Luna</span>著，牛津大学出版社，<span class="Latin" lang="en">2018</span>年，第<span class="Latin" lang="en">6</span>章第<span class="Latin" lang="en">6</span>节“<span class="Latin" lang="en">Typography and wider culture</span>”（第<span class="Latin" lang="en">101</span>—102页）。<a href='#footnote-mark-13' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                    </section>
+                </article>
+                <!-- 页尾的二级页面模板由此开始 -->
+                <footer>
+                    <small>&#8197;如果您喜欢这篇文章，欢迎您给我￥<a href="../Donate.html" target="_blank" style="font-weight: 700;">打赏</a>！</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small>©&#8197;<a href="../Copyright.html" target="_blank">版权声明</a>&emsp;＠&#8197;<a href="../Contact_and_Feedback.html" target="_blank">联系与反馈</a>&emsp;♡&#8197;<a href="../Acknowledgements.html" target="_blank">致谢</a></small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing"><span class="Latin">↓</span></small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small style="font-weight: 700;" id="footerWebsiteName"><a href="../Introduction.html" target="_blank">字无字<span class="Latin">ú–Typography</span></a></small>
+                    <small>张擎天的个人网站</small>
+                    <small>分享排版设计</small>
+                    <small>以及更多</small>
+                    <small><span class="ShengLyueHao">……</span></small>
+                </footer>
+                <!-- 页尾的二级页面模板到此结束 -->
+            </div>
+
+        </main>
+    </div>
+
+    <!-- 脚本的二级页面模板由此开始 -->
+    <script src="../scripts/u-Typography.js"></script>
+    <script src="../scripts/han.js"></script>
+    <script>
+        changeTypeMenu_initialActive()
+        Han(document.querySelector('.entry'))
+            .renderJiya()
+            .renderHWS()
+    </script>
+    <!-- 脚本的二级页面模板到此结束 -->
+
+</body>
+
+</html>

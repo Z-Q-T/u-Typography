@@ -1061,11 +1061,11 @@ ol li::marker {
 	font-weight: 400;
 	line-height: 2rem;
 }
-.orderedListIndex{
+.orderedListIndex {
 	white-space: break-spaces;
 	position: absolute;
-left: 0rem;
-text-align: left;
+	left: 0rem;
+	text-align: left;
 }
 /* 无序列表 */
 ul {
@@ -1089,6 +1089,44 @@ li p:first-child {
 	margin-top: -2rem;
 } */
 
+figure {
+	overflow-x: auto;
+	margin: 1rem auto;
+}
+figcaption {
+	text-align: center;
+	text-indent: 0;
+	font-size: 0.75rem;
+	position: absolute;
+	margin: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: -1rem;
+	width: max-content;
+	font-family: var(--font-song);
+	font-weight: 700;
+}
+table {
+	background-color: white;
+	min-width: 100%;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	text-indent: 0;
+	text-align: center;
+	width: max-content;
+	margin: 1rem auto;
+	border: solid 1px #cdcdcd;
+}
+td,
+th {
+	margin: 0;
+	padding: 0.5rem 1rem;
+	font-size: 0.9rem;
+	line-height: 1.5rem;
+}
+/* th{
+	font-weight: 600;
+} */
 pre {
 	font-family: var(--font-code);
 	font-size: 0.625rem;
@@ -1453,7 +1491,10 @@ h-cs[hidden] {
 	font-family: var(--font-code);
 	font-size: 1em;
 	letter-spacing: -0.1em;
-	line-height: 0.1em;
+	line-height: 0em !important;
+}
+.biaodian > h-inner{
+	line-height: 0 !important;
 }
 /* h-char.bd-jiya.bd-middle.bd-consecutive{
 	letter-spacing: -0.5em;
