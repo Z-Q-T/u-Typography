@@ -1091,7 +1091,7 @@ li p:first-child {
 
 figure {
 	overflow-x: auto;
-	margin: 1rem auto;
+	margin: 1.5rem auto;
 }
 figcaption {
 	text-align: center;
@@ -1117,16 +1117,22 @@ table {
 	margin: 1rem auto;
 	border: solid 1px #cdcdcd;
 }
+thead{
+	transform: translateY(-0.5rem);
+}
+thead th{
+	border-bottom:1px solid #cdcdcd;
+}
 td,
 th {
 	margin: 0;
 	padding: 0.5rem 1rem;
-	font-size: 0.9rem;
-	line-height: 1.5rem;
+	font-size: 0.85rem;
+line-height: 1.2rem;
 }
-/* th{
-	font-weight: 600;
-} */
+th {
+	font-weight: 700;
+}
 pre {
 	font-family: var(--font-code);
 	font-size: 0.625rem;
@@ -1493,7 +1499,7 @@ h-cs[hidden] {
 	letter-spacing: -0.1em;
 	line-height: 0em !important;
 }
-.biaodian > h-inner{
+.biaodian > h-inner {
 	line-height: 0 !important;
 }
 /* h-char.bd-jiya.bd-middle.bd-consecutive{

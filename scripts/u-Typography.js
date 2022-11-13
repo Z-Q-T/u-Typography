@@ -88,7 +88,7 @@ document.getElementById('changeTypeMenu-BiaoTi-HEI').onclick = function changefo
 }
 // 正文换宋体
 document.getElementById('changeTypeMenu-ZhengWen-SONG').onclick = function changefont_ZhengWen_SONG() {
-    document.body.querySelectorAll("p").forEach((e) => {
+    document.body.querySelectorAll("p,table").forEach((e) => {
         // e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
         e.style.fontFamily = "var(--font-song)";
         e.style.fontWeight = "600";
@@ -96,8 +96,13 @@ document.getElementById('changeTypeMenu-ZhengWen-SONG').onclick = function chang
     document.body.querySelectorAll("p > strong").forEach((e) => {
         e.style.fontFamily = "'TeShuBiaoDian', var(--font-song)";
         e.style.fontWeight = "600";
-    });//换中文
-    document.body.querySelectorAll("p > .Latin, p > a .Latin, p > cite > .Latin, p > cite > a > .Latin, p > q > .Latin, p > .orderedListIndex .Latin").forEach((e) => {
+    });
+    document.body.querySelectorAll("th").forEach((e) => {
+        // e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
+        e.style.fontFamily = "var(--font-song)";
+        e.style.fontWeight = "700";
+    })//换中文
+    document.body.querySelectorAll("p > .Latin, p > a .Latin, p > cite > .Latin, p > cite > a > .Latin, p > q > .Latin, p > .orderedListIndex .Latin, table .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-serif)";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.05em";
@@ -119,15 +124,20 @@ document.getElementById('changeTypeMenu-ZhengWen-SONG').onclick = function chang
 }
 //正文换黑体
 document.getElementById('changeTypeMenu-ZhengWen-HEI').onclick = function changefont_ZhengWen_HEI() {
-    document.body.querySelectorAll("p").forEach((e) => {
+    document.body.querySelectorAll("p, table").forEach((e) => {
         e.style.fontFamily = "var(--font-hei)";
         e.style.fontWeight = "400";
     });
     document.body.querySelectorAll("p > strong").forEach((e) => {
         e.style.fontFamily = "'TeShuBiaoDian', var(--font-hei)";
         e.style.fontWeight = "400";
-    });//换中文
-    document.body.querySelectorAll("p > .Latin, p > a .Latin, p > cite > .Latin, p > cite > a > .Latin, p > q > .Latin, p > .orderedListIndex .Latin").forEach((e) => {
+    });
+    document.body.querySelectorAll("th").forEach((e) => {
+        // e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
+        e.style.fontFamily = "var(--font-hei)";
+        e.style.fontWeight = "600";
+    })//换中文
+    document.body.querySelectorAll("p > .Latin, p > a .Latin, p > cite > .Latin, p > cite > a > .Latin, p > q > .Latin, p > .orderedListIndex .Latin, table .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-sans)";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.1em";
