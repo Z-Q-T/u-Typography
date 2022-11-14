@@ -904,6 +904,7 @@ h4 + p,
 h5 + p,
 ol + p,
 ul + p,
+blockquote + p,
 .footnoteNumber + p,
 .noIndentParagraph {
 	text-indent: 0 !important;
@@ -1116,22 +1117,30 @@ table {
 	width: max-content;
 	margin: 1rem auto;
 	border: solid 1px #cdcdcd;
+	border-spacing: 0;
 }
-thead{
+/* thead{
 	transform: translateY(-0.5rem);
-}
-thead th{
-	border-bottom:1px solid #cdcdcd;
+} */
+thead th {
+	border-bottom: 1px solid #cdcdcd;
 }
 td,
 th {
 	margin: 0;
 	padding: 0.5rem 1rem;
 	font-size: 0.85rem;
-line-height: 1.2rem;
+	line-height: 1.2rem;
 }
 th {
 	font-weight: 700;
+}
+blockquote {
+	margin-left: 3rem;
+}
+.blockquoteMark{
+	position: absolute;
+	left: 2.5rem;
 }
 pre {
 	font-family: var(--font-code);
@@ -1221,6 +1230,10 @@ article img {
 	font-size: 0.9em;
 	font-style: italic;
 	padding-top: 4rem;
+}
+.footnoteMark::before {
+	content: "\FEFF";
+	/* 零宽不断行空格 */
 }
 .footnoteMark a {
 	color: var(--colour-footnote-mark);
@@ -1437,10 +1450,10 @@ em {
 	font-family: inherit;
 	font-weight: inherit;
 	line-height: 0;
-	text-decoration: wavy underline 1px;
+	text-decoration: wavy underline 0.05em;
 	text-decoration-style: wavy;
 	text-decoration-line: underline;
-	text-decoration-thickness: 1px;
+	text-decoration-thickness: 0.05em;
 	text-underline-offset: 0.25em;
 	text-emphasis: none !important;
 }
