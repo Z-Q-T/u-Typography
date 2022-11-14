@@ -1136,7 +1136,7 @@ th {
 	font-weight: 700;
 }
 blockquote {
-	margin-left: 3rem;
+	margin-left: 3rem !important;
 }
 .blockquoteMark{
 	position: absolute;
