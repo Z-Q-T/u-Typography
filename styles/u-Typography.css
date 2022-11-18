@@ -1276,6 +1276,10 @@ small {
 	margin-left: 3rem;
 	/* text-indent: 0rem !important; */
 }
+#footnotesArea .footnoteExtra{
+	margin-top: 2rem;
+	margin-left: 0;
+}
 .footnoteNumber {
 	position: absolute;
 	left: 0rem;
