@@ -221,7 +221,7 @@ See the Mulan PSL v2 for more details. */
 	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
 	--colour-footnote-mark: rgb(177, 132, 69);
-	--colour-code: rgb(245, 233, 231);
+	--colour-code: rgb(230, 227, 226);
 	--colour-shadow: rgb(216, 208, 197);
 	--colour-dark-grey-1: rgb(46, 46, 46);
 	--colour-dark-grey-2: #444444;
@@ -1048,6 +1048,7 @@ p {
 }
 /* 有序列表 */
 ol {
+	margin: 1rem 0;
 	/* list-style-type: orderedList; */
 	list-style-type: none;
 	list-style-position: outside;
@@ -1070,6 +1071,8 @@ ol li::marker {
 }
 /* 无序列表 */
 ul {
+	margin: 1rem 0;
+
 	list-style-type: unorderedList;
 	/* list-style-type: disc; */
 }
@@ -1136,6 +1139,7 @@ th {
 	font-weight: 700;
 }
 blockquote {
+	margin: 1rem 0;
 	margin-left: 3rem !important;
 }
 .blockquoteMark{

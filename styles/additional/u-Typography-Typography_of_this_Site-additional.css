@@ -70,7 +70,7 @@ See the Mulan PSL v2 for more details. */
 #resize-2,
 #resize-3 {
 	resize: horizontal;
-	max-width: 36rem;
+	max-width: 100%;
 	min-width: 12rem;
 	max-height: 40rem;
 	overflow: hidden;
@@ -87,7 +87,8 @@ See the Mulan PSL v2 for more details. */
 	text-indent: 0;
 	/* text-align: justify; */
 	color: rgb(66, 66, 66);
-	max-width: 32rem;
+	max-width: 100%;
+	min-width: 8rem;
 }
 #ZuoYouShuangQi-O {
 	color: rgb(170, 78, 78)
