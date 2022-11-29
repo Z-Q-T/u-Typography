@@ -17,16 +17,16 @@ See the Mulan PSL v2 for more details. */
 /* 正文黑体 */
 @font-face {
 	font-family: "HEI";
-	src: local("HYQiHei-55S Book"), local("HYQiHei-60S Regular"),
+	src: local("HYQiHei 55S"), local("HYQiHei-55S Book"), local("HYQiHei 60S"), local("HYQiHei-60S Regular"),
 		local("HarmonyOS Sans SC"), local("MiSans Regular"),
 		local("Source Han Sans SC"), local("Noto Sans SC"),
-		local("Source Han Sans CN");
+		local("Source Han Sans CN");/*汉仪旗黑分别是新版和旧版的写法*/
 	font-weight: 400;
 }
 /* 标题黑体 */
 @font-face {
 	font-family: "HEI";
-	src: local("HYQiHei-75S Bold"), local("HYQiHei-70S DemiBold"),
+	src:local("HYQiHei 75S"), local("HYQiHei-75S Bold"),local("HYQiHei 70S"), local("HYQiHei-70S DemiBold"),
 		local("HarmonyOS Sans SC Bold"), local("HarmonyOS Sans SC Medium"),
 		local("MiSans Demibold"), local("MiSans Semibold"),
 		local("Source Han Sans SC Bold"), local("Noto Sans SC Bold"),
@@ -143,6 +143,7 @@ See the Mulan PSL v2 for more details. */
 	font-weight: 600;
 	font-style: italic;
 }
+
 
 /* ==代码等宽体== */
 
@@ -1063,6 +1064,8 @@ li::marker {
 	line-height: 1.5em;
 	margin-top: 1rem;
 	color: var(--colour-dark-grey-1);
+	text-align: justify;
+	hyphens: auto;
 }
 footer {
 	font-family: var(--font-hei);
@@ -1146,7 +1149,17 @@ h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-weight: 400;
 	line-height: 0.1em;
 }
-/* 标题标点符号用思源宋体 */
+
+/* 分类标点符号用思源宋体 */
+article h-char.bd-jiya.bd-open > h-inner,
+article h-char.bd-jiya.bd-close > h-inner,
+article h-char.bd-jiya.bd-cop > h-inner,
+article h-char.bd-jiya[unicode="ff0e"] > h-inner {
+	font-family: var(--font-song-biaodian);
+	font-weight: 400;
+	line-height: 0.1em;
+}
+/* 文章标题标点符号用思源宋体 */
 ul h-char.bd-jiya.bd-open > h-inner,
 ul h-char.bd-jiya.bd-close > h-inner,
 ul h-char.bd-jiya.bd-cop > h-inner,
@@ -1155,14 +1168,13 @@ ul h-char.bd-jiya[unicode="ff0e"] > h-inner {
 	font-weight: 600 !important;
 	line-height: 0.1em;
 }
-
-/* 分类标点符号用思源黑体 */
-article h-char.bd-jiya.bd-open > h-inner,
-article h-char.bd-jiya.bd-close > h-inner,
-article h-char.bd-jiya.bd-cop > h-inner,
-article h-char.bd-jiya[unicode="ff0e"] > h-inner {
-	font-family: var(--font-hei-biaodian);
-	font-weight: 400;
+/* 文章简介标点符号用思源黑体 */
+.subtitle h-char.bd-jiya.bd-open > h-inner,
+.subtitle h-char.bd-jiya.bd-close > h-inner,
+.subtitle h-char.bd-jiya.bd-cop > h-inner,
+.subtitle h-char.bd-jiya[unicode="ff0e"] > h-inner {
+	font-family: var(--font-hei-biaodian) !important;
+	font-weight: 400 !important;
 	line-height: 0.1em;
 }
 
