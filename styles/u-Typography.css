@@ -671,6 +671,9 @@ html {
 .metaInfo-Seperator {
 	display: block;
 }
+#time ul{
+	margin: 0 auto;
+}
 #index {
 	font-family: var(--font-song);
 	font-weight: 700;
@@ -1716,7 +1719,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		text-align: center; */
 		/* text-indent: 0; */
 		width: 9rem;
-		top: 14.5rem;
+		top: 14.25rem;
 		left: 30rem;
 	}
 	/* #caption .tabulation {
