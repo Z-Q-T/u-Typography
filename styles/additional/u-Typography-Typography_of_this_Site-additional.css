@@ -14,8 +14,8 @@ See the Mulan PSL v2 for more details. */
 	--colour-grid-normal: rgb(226, 226, 226);
 	--colour-grid-Tri: rgb(180, 192, 219);
 	--colour-grid-Centre: rgb(238, 183, 194);
-	--colour-grid-important: rgb(53, 147, 248);
-	--colour-grid-Core: rgb(27, 73, 243);
+	--colour-grid-important: rgb(39, 171, 252);
+	--colour-grid-Core: rgb(14, 82, 255);
 }
 
 #gridMask {
