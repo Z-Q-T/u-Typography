@@ -82,7 +82,7 @@ See the Mulan PSL v2 for more details. */
 #ZuoYouShuangQi-X,
 #ZuoYouShuangQi-O,
 #ZuoQi {
-	margin: 1rem ;
+	margin: 1rem;
 	font-size: 1rem;
 	line-height: 1.5rem;
 	text-indent: 0;
@@ -90,8 +90,8 @@ See the Mulan PSL v2 for more details. */
 	color: rgb(66, 66, 66);
 	max-width: 100%;
 	min-width: 8rem;
-	border-left: 1px solid grey;
-	border-right: 1px solid grey;
+	border-left: 1px solid rgb(177, 177, 177);
+	border-right: 1px solid rgb(177, 177, 177);
 
 	box-sizing: content-box;
 }
@@ -105,7 +105,7 @@ See the Mulan PSL v2 for more details. */
 .resizeSubhead {
 	display: block;
 	font-size: 0.75rem;
-	color: rgb(152, 152, 152);
+	color: rgb(177, 177, 177);
 	text-align: left;
 }
 #paragraphWidth {
@@ -117,8 +117,35 @@ input[type="range"] {
 	width: 200px;
 	height: 5px;
 	outline: none;
-	background: var(--colour-button);
+	background: var(--colour-3);
 }
+input[type="range"]::-moz-range-thumb {
+	appearance: none;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background: white;
+	border-radius: 50%;
+	border: 2px solid var(--colour-3);
+	box-shadow: 0px 0px 5px var(--colour-button);
+	box-sizing: border-box;
+}
+ input[type="range"]::-webkit-slider-thumb {
+	appearance: none;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background: white;
+	border-radius: 50%;
+	border: 2px solid var(--colour-3);
+	box-shadow: 0px 0px 5px var(--colour-button);
+	box-sizing: border-box;
+}
+/* input[type="range"]::-webkit-slider-runnable-track {
+	border-radius: 30px;
+	background: #128;
+	height: 15px;
+} */
 /* 【1】#############################
 宽度大于1820的窗口，或经过1.25倍放大的宽度大于2275的窗口
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕

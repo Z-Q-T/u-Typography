@@ -1158,7 +1158,7 @@ pre {
 	text-align: left;
 	margin: 1rem 2rem;
 	padding: 1rem;
-	background-color: var(--colour-paper);
+	/* background-color: var(--colour-paper); */
 	/* border-left: 0.1rem solid var(--colour-button-hover); */
 	/* box-shadow: 0 0 10px var(--colour-shadow); */
 	/* text-indent: 3rem; */

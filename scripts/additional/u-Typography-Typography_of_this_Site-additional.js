@@ -42,6 +42,8 @@ function gridLineDisplay() {
 window.addEventListener("resize", gridLineDisplay);
 gridLineDisplay();
 
+
+// 下面是调整段落宽度的
 let ShuangQi_DuanLuo = document.getElementById("ZuoYouShuangQi-O");
 let resizeFrame = document.getElementById("resize");
 // let page = document.getElementById("page");
@@ -60,9 +62,6 @@ let resizeFrame = document.getElementById("resize");
 // page.addEventListener("touchstart", ZuoYouShuangQi);
 // page.addEventListener("touchmove", ZuoYouShuangQi);
 // ZuoYouShuangQi();
-
-
-
 let slider = document.getElementById("paragraphWidth");
 let changeFrameWidth = function () {
     let percentage = slider.value / 10;
@@ -78,3 +77,4 @@ let changeFrameWidth = function () {
 };
 
 slider.addEventListener("input", changeFrameWidth);
+window.addEventListener("resize", changeFrameWidth);
