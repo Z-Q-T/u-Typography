@@ -67,20 +67,22 @@ See the Mulan PSL v2 for more details. */
 #resize-1,
 #resize-2,
 #resize-3 {
-	resize: horizontal;
+	/* resize: horizontal; */
 	max-width: 100%;
-	min-width: 12rem;
-	max-height: 40rem;
+	min-width: 16rem;
+	max-height: 50rem;
 	overflow: hidden;
 	padding: 1rem calc(2rem - 2px);
-	margin: 2rem auto;
+	/* margin: 2rem auto; */
+	margin-top: 1rem;
+	margin-bottom: 2rem;
 	background-color: white;
 	border-radius: 0.5rem;
 }
 #ZuoYouShuangQi-X,
 #ZuoYouShuangQi-O,
 #ZuoQi {
-	margin: 1rem auto;
+	margin: 1rem ;
 	font-size: 1rem;
 	line-height: 1.5rem;
 	text-indent: 0;
@@ -104,6 +106,7 @@ See the Mulan PSL v2 for more details. */
 	display: block;
 	font-size: 0.75rem;
 	color: rgb(152, 152, 152);
+	text-align: left;
 }
 #paragraphWidth {
 	width: 100%;

@@ -44,18 +44,37 @@ gridLineDisplay();
 
 let ShuangQi_DuanLuo = document.getElementById("ZuoYouShuangQi-O");
 let resizeFrame = document.getElementById("resize");
-let page=document.getElementById("page");
-function ZuoYouShuangQi() {
-    let size = resizeFrame.style.width;
-    size=size.substring(0, size.length-2);//去掉size后面的“px”
-    let ZiShu = Math.floor(size / 20) - 4;
+// let page = document.getElementById("page");
+// function ZuoYouShuangQi() {
+//     let size = resizeFrame.offsetWidth;
+//     console.log(size);
+//     // size = size.substring(0, size.length - 2);//去掉size后面的“px”
+//     let ZiShu = Math.floor(size / 20) - 4;
+//     console.log(size, ZiShu)
+//     ShuangQi_DuanLuo.style.width = ZiShu + "em";
+// }
+// resizeFrame.addEventListener("mouseover", ZuoYouShuangQi);
+// resizeFrame.addEventListener("mousemove", ZuoYouShuangQi);
+// resizeFrame.addEventListener("mousedown", ZuoYouShuangQi);
+// page.addEventListener("mousemove", ZuoYouShuangQi);
+// page.addEventListener("touchstart", ZuoYouShuangQi);
+// page.addEventListener("touchmove", ZuoYouShuangQi);
+// ZuoYouShuangQi();
+
+
+
+let slider = document.getElementById("paragraphWidth");
+let changeFrameWidth = function () {
+    let percentage = slider.value / 10;
+    console.log(percentage);
+    resizeFrame.style.width = percentage + "%";
+
+    let size = resizeFrame.offsetWidth;
+    console.log(size);
+    // size = size.substring(0, size.length - 2);//去掉size后面的“px”
+    let ZiShu = Math.floor(size / 20) - 6;
     console.log(size, ZiShu)
     ShuangQi_DuanLuo.style.width = ZiShu + "em";
-}
-resizeFrame.addEventListener("mouseover", ZuoYouShuangQi);
-resizeFrame.addEventListener("mousemove", ZuoYouShuangQi);
-resizeFrame.addEventListener("mousedown", ZuoYouShuangQi);
-page.addEventListener("mousemove", ZuoYouShuangQi);
-page.addEventListener("touchstart", ZuoYouShuangQi);
-page.addEventListener("touchmove", ZuoYouShuangQi);
-ZuoYouShuangQi();
+};
+
+slider.addEventListener("input", changeFrameWidth);
