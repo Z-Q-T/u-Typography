@@ -8,8 +8,6 @@ EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
 MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
 See the Mulan PSL v2 for more details. */
 
-
-
 :root {
 	--colour-grid-normal: rgb(226, 226, 226);
 	--colour-grid-Tri: rgb(180, 192, 219);
@@ -74,9 +72,10 @@ See the Mulan PSL v2 for more details. */
 	min-width: 12rem;
 	max-height: 40rem;
 	overflow: hidden;
-	padding: 1rem 2rem;
+	padding: 1rem calc(2rem - 2px);
 	margin: 2rem auto;
 	background-color: white;
+	border-radius: 0.5rem;
 }
 #ZuoYouShuangQi-X,
 #ZuoYouShuangQi-O,
@@ -89,20 +88,40 @@ See the Mulan PSL v2 for more details. */
 	color: rgb(66, 66, 66);
 	max-width: 100%;
 	min-width: 8rem;
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+
+	box-sizing: content-box;
 }
-#ZuoYouShuangQi-O {
+/* #ZuoYouShuangQi-O {
 	color: rgb(170, 78, 78)
-}
+} */
 #ZuoQi {
 	text-align: left;
 	color: rgb(66, 66, 66);
+}
+.resizeSubhead {
+	display: block;
+	font-size: 0.75rem;
+	color: rgb(152, 152, 152);
+}
+#paragraphWidth {
+	width: 100%;
+}
+input[type="range"] {
+	appearance: none;
+	overflow: visible;
+	width: 200px;
+	height: 5px;
+	outline: none;
+	background: var(--colour-button);
 }
 /* 【1】#############################
 宽度大于1820的窗口，或经过1.25倍放大的宽度大于2275的窗口
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
 正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
 @media screen and (min-width: 1840px) {
-	#＋＋{
+	#＋＋ {
 		margin-top: 3.5rem;
 	}
 }
@@ -178,7 +197,7 @@ See the Mulan PSL v2 for more details. */
 	#gridLine-Centre-Layout_3_4_5 {
 		display: inline-block;
 	}
-	#＋＋{
+	#＋＋ {
 		margin-top: -1rem;
 	}
 }
