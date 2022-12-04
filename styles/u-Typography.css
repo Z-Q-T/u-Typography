@@ -226,6 +226,7 @@ See the Mulan PSL v2 for more details. */
 	--colour-dark-grey-1: rgb(46, 46, 46);
 	--colour-dark-grey-2: #444444;
 	--colour-light-grey-1: #bbb;
+	--colour-figure-border:#cdcdcd;
 	--font-hei: "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
 	--font-song: "SONG", "Noto Serif SC", serif;
@@ -1122,14 +1123,14 @@ table {
 	text-align: center;
 	width: max-content;
 	margin: 1rem auto;
-	border: solid 1px #cdcdcd;
+	border: solid 1px var(--colour-figure-border);
 	border-spacing: 0;
 }
 /* thead{
 	transform: translateY(-0.5rem);
 } */
 thead th {
-	border-bottom: 1px solid #cdcdcd;
+	border-bottom: 1px solid var(--colour-figure-border);
 }
 td,
 th {

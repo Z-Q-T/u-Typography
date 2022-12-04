@@ -63,10 +63,7 @@ See the Mulan PSL v2 for more details. */
 	background-color: var(--colour-grid-Centre);
 	display: none;
 }
-#resize,
-#resize-1,
-#resize-2,
-#resize-3 {
+#resize {
 	/* resize: horizontal; */
 	max-width: 100%;
 	min-width: 14rem;
@@ -90,8 +87,8 @@ See the Mulan PSL v2 for more details. */
 	color: rgb(66, 66, 66);
 	max-width: 100%;
 	min-width: 8rem;
-	border-left: 1px solid rgb(177, 177, 177);
-	border-right: 1px solid rgb(177, 177, 177);
+	border-left: 1px solid rgb(190, 190, 190);
+	border-right: 1px solid rgb(190, 190, 190);
 
 	box-sizing: content-box;
 }
