@@ -1001,7 +1001,8 @@ h1 {
 	/* position: relative; */
 	/* top: -10px; */
 	height: 3rem;
-	width: fit-content;
+	/* width: fit-content; */
+	width: 100%;
 	height: fit-content;
 	margin-bottom: 1rem;
 }

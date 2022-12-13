@@ -272,7 +272,7 @@ if (switcher && arrow) {
                 toc.style.left = "0";
                 toc.style.width = "18rem";
                 toc.style.height = "100px";
-            } else if (windowWidth < 1400 && windowWidth > 1040) {
+            } else if (windowWidth <= 1400 && windowWidth > 1040) {
                 // toc.style.visibility = "visible";
                 toc.style.opacity = "1";
                 toc.style.top = "0";
@@ -298,7 +298,7 @@ if (switcher && arrow) {
                 toc.style.left = "0";
                 toc.style.width = "18rem";
                 toc.style.height = "100px";
-            } else if (windowWidth < 1400 && windowWidth > 1040) {
+            } else if (windowWidth <= 1400 && windowWidth > 1040) {
                 toc.style.opacity = "0.1";
                 toc.style.top = "0";
                 toc.style.left = "-12rem";
@@ -330,7 +330,7 @@ function changeTocPosition() {
             toc.style.left = "0";
             toc.style.width = "18rem";
             toc.style.height = "100px";
-        } else if (windowWidth < 1400 && windowWidth > 1040) {
+        } else if (windowWidth <= 1400 && windowWidth > 1040) {
             if (switcherOnOff == "on") {
                 toc.style.opacity = "1";
                 toc.style.top = "0";
@@ -346,7 +346,7 @@ function changeTocPosition() {
                 toc.style.height = "100%";
                 arrow.style.transform = "rotateZ(-90deg)"
             }
-        } else if (windowWidth < 1040) {
+        } else if (windowWidth <= 1040) {
             if (switcherOnOff == "on") {
                 toc.style.opacity = "1";
                 toc.style.top = "3rem";
