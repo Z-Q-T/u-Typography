@@ -1102,18 +1102,20 @@ figure {
 	overflow-x: auto;
 	margin: 1.5rem auto;
 }
-figcaption {
+.TuTi {
 	text-align: center;
 	text-indent: 0;
 	font-size: 0.75rem;
-	position: absolute;
+	line-height: 1rem;
+	position: relative;
 	margin: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	margin-top: -1rem;
-	width: max-content;
-	font-family: var(--font-song);
-	font-weight: 700;
+	/* left: 50%; */
+	/* transform: translateX(-50%); */
+	margin-top: 1.5rem;
+margin-bottom: -1rem;
+	width: 100%;
+	/* font-family: var(--font-song); */
+	/* font-weight: 700; */
 }
 table {
 	background-color: white;
@@ -1123,7 +1125,7 @@ table {
 	text-indent: 0;
 	text-align: center;
 	width: max-content;
-	margin: 1rem auto;
+	margin: 0.5rem auto;
 	border: solid 1px var(--colour-figure-border);
 	border-spacing: 0;
 }
