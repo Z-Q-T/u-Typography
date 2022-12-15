@@ -1095,6 +1095,7 @@ li p:first-child {
 figure {
 	overflow-x: auto;
 	margin: 1.5rem auto;
+	width: 100%;
 }
 .TuTi,
 .TuZhu {
@@ -2212,6 +2213,9 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	}
 	.tabulation {
 		display: none;
+	}
+	.TuZhu {
+		color: var(--colour-middle-grey-1);
 	}
 	footer {
 		width: 100%;

@@ -27,7 +27,7 @@ function changeTypeMenu_initialActive() {
         e.style.fontWeight = "400";
         e.style.fontSize = "1.1em";
     });
-    document.body.querySelectorAll(".sideNote > .Latin, .TuTi .Latin").forEach((e) => {
+    document.body.querySelectorAll(".sideNote > .Latin, .TuTi .Latin, .TuZhu .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-sans)";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.1em";
@@ -151,16 +151,16 @@ document.getElementById('changeTypeMenu-ZhengWen-HEI').onclick = function change
 }
 //边注换宋体
 document.getElementById('changeTypeMenu-BianZhu-SONG').onclick = function changefont_BianZhu_SONG() {
-    document.body.querySelectorAll(".sideNote, .TuTi").forEach((e) => {
+    document.body.querySelectorAll(".sideNote, .TuTi, .TuZhu").forEach((e) => {
         e.style.fontFamily = "var(--font-song)";
         e.style.fontWeight = "600";
     });//换中文
-    document.body.querySelectorAll(".sideNote > .Latin, .TuTi .Latin").forEach((e) => {
+    document.body.querySelectorAll(".sideNote > .Latin, .TuTi .Latin, .TuZhu .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-serif)";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.05em";
     });//换西文
-    document.body.querySelectorAll(".sideNote h-char.biaodian > h-inner, .TuTi h-char.biaodian > h-inner").forEach((e) => {
+    document.body.querySelectorAll(".sideNote h-char.biaodian > h-inner, .TuTi h-char.biaodian > h-inner, .TuZhu h-char.biaodian > h-inner").forEach((e) => {
         e.style.cssText = "font-family: var(--font-song-biaodian) !important; font-weight: 600 !important;"
     });//换标点
     document.body.querySelectorAll(".tabulation h-inner").forEach((e) => {
@@ -171,16 +171,16 @@ document.getElementById('changeTypeMenu-BianZhu-SONG').onclick = function change
 }
 //边注换黑体
 document.getElementById('changeTypeMenu-BianZhu-HEI').onclick = function changefont_BianZhu_HEI() {
-    document.body.querySelectorAll(".sideNote, .TuTi").forEach((e) => {
+    document.body.querySelectorAll(".sideNote, .TuTi, .TuZhu").forEach((e) => {
         e.style.fontFamily = "var(--font-hei)";
         e.style.fontWeight = "400";
     });//换中文
-    document.body.querySelectorAll(".sideNote > .Latin, .TuTi .Latin").forEach((e) => {
+    document.body.querySelectorAll(".sideNote > .Latin, .TuTi .Latin, .TuZhu .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-sans)";
         e.style.fontWeight = "400";
         e.style.fontSize = "1.1em";
     });//换西文
-    document.body.querySelectorAll(".sideNote h-char.biaodian > h-inner, .TuTi h-char.biaodian > h-inner").forEach((e) => {
+    document.body.querySelectorAll(".sideNote h-char.biaodian > h-inner, .TuTi h-char.biaodian > h-inner, .TuZhu h-char.biaodian > h-inner").forEach((e) => {
         e.style.cssText = "font-family: var(--font-hei-biaodian) !important; font-weight: 400 !important;"
     });//换标点
     changeTypeMenu_switchColour("#changeTypeMenu-BianZhu-HEI", "#changeTypeMenu-BianZhu-SONG");
