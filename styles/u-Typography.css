@@ -17,20 +17,13 @@ See the Mulan PSL v2 for more details. */
 /* 正文黑体 */
 @font-face {
 	font-family: "HEI";
-	src: local("HYQiHei 55S"), local("HYQiHei-55S Book"), local("HYQiHei 60S"), local("HYQiHei-60S Regular"),
-		local("HarmonyOS Sans SC"), local("MiSans Regular"),
-		local("Source Han Sans SC"), local("Noto Sans SC"),
-		local("Source Han Sans CN");/*汉仪旗黑分别是新版和旧版的写法*/
+	src: local("HYQiHei 55S"), local("HYQiHei-55S Book"), local("HYQiHei 60S"), local("HYQiHei-60S Regular"), local("HarmonyOS Sans SC"), local("MiSans Regular"), local("Source Han Sans SC"), local("Noto Sans SC"), local("Source Han Sans CN"); /*汉仪旗黑分别是新版和旧版的写法*/
 	font-weight: 400;
 }
 /* 标题黑体 */
 @font-face {
 	font-family: "HEI";
-	src:local("HYQiHei 75S"), local("HYQiHei-75S Bold"),local("HYQiHei 70S"), local("HYQiHei-70S DemiBold"),
-		local("HarmonyOS Sans SC Bold"), local("HarmonyOS Sans SC Medium"),
-		local("MiSans Demibold"), local("MiSans Semibold"),
-		local("Source Han Sans SC Bold"), local("Noto Sans SC Bold"),
-		local("Source Han Sans CN Bold");
+	src: local("HYQiHei 75S"), local("HYQiHei-75S Bold"),local("HYQiHei 70S"), local("HYQiHei-70S DemiBold"), local("HarmonyOS Sans SC Bold"), local("HarmonyOS Sans SC Medium"), local("MiSans Demibold"), local("MiSans Semibold"), local("Source Han Sans SC Bold"), local("Noto Sans SC Bold"), local("Source Han Sans CN Bold");
 	font-weight: 700;
 }
 /* 正文标点黑体 */
@@ -225,8 +218,9 @@ See the Mulan PSL v2 for more details. */
 	--colour-shadow: rgb(216, 208, 197);
 	--colour-dark-grey-1: rgb(46, 46, 46);
 	--colour-dark-grey-2: #444444;
+	--colour-middle-grey-1: rgb(123, 123, 123);
 	--colour-light-grey-1: #bbb;
-	--colour-figure-border:#cdcdcd;
+	--colour-figure-border: #cdcdcd;
 	--font-hei: "HEI", "Noto Sans SC", sans-serif;
 	--font-hei-biaodian: "HEI-BiaoDian", "Noto Sans SC";
 	--font-song: "SONG", "Noto Serif SC", serif;
@@ -672,7 +666,7 @@ html {
 .metaInfo-Seperator {
 	display: block;
 }
-#time ul{
+#time ul {
 	margin: 0 auto;
 }
 #index {
@@ -1102,20 +1096,29 @@ figure {
 	overflow-x: auto;
 	margin: 1.5rem auto;
 }
-.TuTi {
+.TuTi,
+.TuZhu {
 	text-align: center;
 	text-indent: 0;
 	font-size: 0.75rem;
 	line-height: 1rem;
 	position: relative;
 	margin: 0;
+	width: 100%;
 	/* left: 50%; */
 	/* transform: translateX(-50%); */
+}
+.TuTi {
 	margin-top: 1.5rem;
-margin-bottom: -1rem;
-	width: 100%;
-	/* font-family: var(--font-song); */
-	/* font-weight: 700; */
+	margin-bottom: -1rem;
+	color: black;
+}
+/* font-family: var(--font-song); */
+/* font-weight: 700; */
+.TuZhu {
+	margin-top: -1rem;
+	margin-bottom: 1.5rem;
+	color: var(--colour-dark-grey-1);
 }
 table {
 	background-color: white;
@@ -1149,7 +1152,7 @@ blockquote {
 	margin: 1rem 0;
 	margin-left: 3rem !important;
 }
-.blockquoteMark{
+.blockquoteMark {
 	position: absolute;
 	left: 2.5rem;
 }
@@ -1231,7 +1234,7 @@ article a:active {
 }
 article img {
 	display: block;
-	margin: 1rem auto;
+	/* margin: 1rem auto; */
 	width: 100%;
 }
 /* 脚注编号 */
@@ -1287,7 +1290,7 @@ small {
 	margin-left: 3rem;
 	/* text-indent: 0rem !important; */
 }
-#footnotesArea .footnoteExtra{
+#footnotesArea .footnoteExtra {
 	margin-top: 2rem;
 	margin-left: 0;
 }
@@ -1888,9 +1891,9 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		left: 0rem;
 		top: 4rem;
 		width: 9rem;
-		margin: 7rem auto;
+		margin: 6rem auto;
 		font-size: 0.5625rem;
-		margin-top: 5rem;
+		margin-top: 4rem;
 	}
 	/* #index {
 		font-size: 0.7rem;
@@ -1923,7 +1926,8 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		padding-left: 3rem;
 		width: fit-content;
 		max-width: 21rem;
-		margin: 3rem auto 0;
+		margin: 4rem auto 0;
+		color: var(--colour-dark-grey-1);
 	}
 	#caption .tabulation {
 		left: auto;
@@ -2080,9 +2084,9 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		left: 0rem;
 		top: 4rem;
 		width: 9rem;
-		margin: 7rem auto;
+		margin: 5rem auto;
 		font-size: 0.5625rem;
-		margin-top: 5rem;
+		margin-top: 3rem;
 	}
 	/* #index {
 		font-size: 0.7rem;
@@ -2116,6 +2120,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		width: calc(100% - 6rem);
 		text-align: center;
 		text-indent: 0;
+		color: var(--colour-middle-grey-1);
 	}
 	#toc-PlaceHolder {
 		display: none;
@@ -2191,7 +2196,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		position: relative;
 		margin: 0rem;
 		display: inline;
-		color: rgb(123, 123, 123);
+		color: var(--colour-middle-grey-1);
 	}
 
 	.sideNote::before,
