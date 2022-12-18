@@ -123,6 +123,7 @@ input[type="range"]:hover {
 	transition: background-color 200ms ease-in-out;
 	cursor: pointer;
 }
+
 input[type="range"]::-moz-range-thumb {
 	appearance: none;
 	position: relative;
@@ -131,9 +132,14 @@ input[type="range"]::-moz-range-thumb {
 	background-color: white;
 	border-radius: 50%;
 	border: 2px solid var(--colour-3);
-	box-shadow: 0px 0px 3px var(--colour-1);
+	box-shadow: 0px 0px 2px var(--colour-1);
 	box-sizing: border-box;
 	/* transition: background-color 200ms ease-in-out; */
+}
+input[type="range"]::-moz-range-thumb:hover{
+	box-shadow: 0px 0px 4px var(--colour-1);
+	transition: box-shadow 200ms ease-in-out;
+
 }
 /* input[type="range"]::-moz-range-thumb:hover {
 	background: rgb(253, 250, 242);
