@@ -428,6 +428,38 @@ chineseGridLine();
 //     })
 // })
 
+window.onclick = function (e) {
+    let fullScreen = false;
+    let el;
+    console.log(e);
+    if (e.target.matches('figure img')) {
+        let a = document.querySelector("article");
+        a.insertAdjacentHTML('beforeend', '<div id="fullScreenImageContainer"><img id="originalSizeImage" src=""></div>');
+        el = document.querySelector('#fullScreenImageContainer');
+        el.style.transition = "opacity 200ms ease-in-out";
+        let opacity=function(){
+            el.style.opacity = "0.8";
+        }
+        // el.style.opacity = "1";
+        setTimeout(opacity, 1);
+
+    } else if (e.target.matches('#fullScreenImageContainer')) {
+        el = document.querySelector('#fullScreenImageContainer');
+        el.remove();
+    }
+}
+    // document.body.querySelectorAll("figure img").forEach((e) => {
+    //     e.onclick = function resizingImage() {
+
+    //         fullScreen = true;
+    //         console.log(el);
+    //     }
+
+    // });
+
+    // el.onclick = function resumeImage() {
+    //     fullScreen = false;
+    // }
 
 
 

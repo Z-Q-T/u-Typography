@@ -1098,6 +1098,21 @@ figure {
 	width: 100%;
 	border-radius: 0.5rem;
 }
+figure img{
+	cursor: zoom-in;
+}
+#fullScreenImageContainer{
+	background-color: var(--colour-paper);
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	transition: opacity 200ms ease-in-out;
+	opacity: 0;
+	cursor: zoom-out;
+}
 .TuTi,
 .TuZhu {
 	text-align: center;
