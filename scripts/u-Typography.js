@@ -417,7 +417,7 @@ function chineseGridLine() {
         YeMian.style.cssText = " ";
     }
 }
-window.addEventListener("resize", chineseGridLine);
+window.visualViewport.addEventListener("resize", chineseGridLine);
 chineseGridLine();
 // if (document.documentElement.scrollWidth >680){
 //     menu.style.bottom="0px";
