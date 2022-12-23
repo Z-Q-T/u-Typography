@@ -454,8 +454,14 @@ window.onclick = function (e) {
     } else if (e.target.matches('#fullScreenImageContainer') || e.target.matches('#originalSizeImage')) {
         container = document.querySelector('#fullScreenImageContainer');
         image = document.getElementById("originalSizeImage");
-        image.remove();
-        container.remove();
+        container.style.opacity = "0";
+        image.style.opacity = "0";
+        image.style.transform = "translate(-50%, -50%) scale(60%, 60%)";
+        let removeImage = function () {
+            image.remove();
+            container.remove();
+        }
+        setTimeout(removeImage, 200);
     }
 }
     // document.body.querySelectorAll("figure img").forEach((e) => {

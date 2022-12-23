@@ -1118,7 +1118,7 @@ figure img {
 	width: 100%;
 	transition: opacity 200ms ease-in-out;
 	opacity: 0;
-	cursor: zoom-out;
+	/* cursor: zoom-out; */
 	z-index: 20;
 }
 #originalSizeImage {
@@ -1132,8 +1132,8 @@ figure img {
 	/* margin: 4rem; */
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%) scale(60%,60%);
-	transition: opacity,transform 200ms ease-in-out;
+	transform: translate(-50%, -50%) scale(50%,50%);
+	transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
 	opacity: 0;
 	cursor: zoom-out;
 	z-index: 21;
