@@ -17,13 +17,20 @@ See the Mulan PSL v2 for more details. */
 /* 正文黑体 */
 @font-face {
 	font-family: "HEI";
-	src: local("HYQiHei 55S"), local("HYQiHei-55S Book"), local("HYQiHei 60S"), local("HYQiHei-60S Regular"), local("HarmonyOS Sans SC"), local("MiSans Regular"), local("Source Han Sans SC"), local("Noto Sans SC"), local("Source Han Sans CN"); /*汉仪旗黑分别是新版和旧版的写法*/
+	src: local("HYQiHei 55S"), local("HYQiHei-55S Book"), local("HYQiHei 60S"),
+		local("HYQiHei-60S Regular"), local("HarmonyOS Sans SC"),
+		local("MiSans Regular"), local("Source Han Sans SC"),
+		local("Noto Sans SC"), local("Source Han Sans CN"); /*汉仪旗黑分别是新版和旧版的写法*/
 	font-weight: 400;
 }
 /* 标题黑体 */
 @font-face {
 	font-family: "HEI";
-	src: local("HYQiHei 75S"), local("HYQiHei-75S Bold"),local("HYQiHei 70S"), local("HYQiHei-70S DemiBold"), local("HarmonyOS Sans SC Bold"), local("HarmonyOS Sans SC Medium"), local("MiSans Demibold"), local("MiSans Semibold"), local("Source Han Sans SC Bold"), local("Noto Sans SC Bold"), local("Source Han Sans CN Bold");
+	src: local("HYQiHei 75S"), local("HYQiHei-75S Bold"), local("HYQiHei 70S"),
+		local("HYQiHei-70S DemiBold"), local("HarmonyOS Sans SC Bold"),
+		local("HarmonyOS Sans SC Medium"), local("MiSans Demibold"),
+		local("MiSans Semibold"), local("Source Han Sans SC Bold"),
+		local("Noto Sans SC Bold"), local("Source Han Sans CN Bold");
 	font-weight: 700;
 }
 /* 正文标点黑体 */
@@ -1098,10 +1105,10 @@ figure {
 	width: 100%;
 	border-radius: 0.5rem;
 }
-figure img{
+figure img {
 	cursor: zoom-in;
 }
-#fullScreenImageContainer{
+#fullScreenImageContainer {
 	background-color: var(--colour-paper);
 	display: block;
 	position: fixed;
@@ -1112,6 +1119,24 @@ figure img{
 	transition: opacity 200ms ease-in-out;
 	opacity: 0;
 	cursor: zoom-out;
+	z-index: 20;
+}
+#originalSizeImage {
+	display: block;
+	position: fixed;
+	/* opacity: 1 !important; */
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	/* margin: 4rem; */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(60%,60%);
+	transition: opacity,transform 200ms ease-in-out;
+	opacity: 0;
+	cursor: zoom-out;
+	z-index: 21;
 }
 .TuTi,
 .TuZhu {
