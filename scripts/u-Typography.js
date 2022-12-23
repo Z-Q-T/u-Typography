@@ -407,9 +407,10 @@ window.onclick = function (e) {
 // 在小尺寸下让行长等于字号的整数倍
 function chineseGridLine() {
     let YeMian = document.getElementById("whole");
-    let windowWidth = window.innerWidth;
-    let ZiShu = Math.floor(windowWidth / 20) - 1;
-    if (windowWidth < 680) {
+    let bodyWidth = document.body.offsetWidth;
+    // let windowWidth = window.innerWidth;
+    let ZiShu = Math.floor(bodyWidth / 20) - 1;
+    if (bodyWidth < 680) {
         // let HangChang = ZiShu * 20;
         YeMian.style.width = ZiShu + "em";
     } else {
