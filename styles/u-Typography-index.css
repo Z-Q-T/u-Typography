@@ -1077,7 +1077,7 @@ footer {
 	border: 1px black solid;
 	padding: 2rem 3rem; */
 	width: 30rem;
-	margin: 0 auto 3rem;
+	margin: 0 auto;
 	/* border-top: 1px black solid; */
 	padding: 0rem 0rem;
 	/* padding-top: 2rem; */
@@ -1399,7 +1399,7 @@ h-hws[hidden] {
 	#section-Additional {
 		padding: 2rem 0 0;
 		margin: 6rem 0;
-		border-top: 1px black solid;
+		border-top: 1px var(--colour-light-grey-1) solid;
 		/* border-bottom: 1px black solid; */
 	}
 	.sectionInner-Seperator {
@@ -1539,7 +1539,7 @@ h-hws[hidden] {
 	#section-Additional {
 		padding: 2rem 0 1rem;
 		margin: 3rem 0;
-		border-top: 1px black solid;
+		border-top: 1px var(--colour-light-grey-1) solid;
 		/* border-bottom: 1px black solid; */
 	}
 	.sectionInner-Seperator {
