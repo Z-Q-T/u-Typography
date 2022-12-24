@@ -225,17 +225,18 @@ button.onclick = function () {
 // 在小尺寸下让行长等于字号的整数倍
 function chineseGridLine() {
     let YeMian = document.getElementById("whole");
-    let size = window.innerWidth;
-    let ZiShu = Math.floor(size / 22) - 1;
+    let bodyWidth = document.body.offsetWidth;
+    // let size = window.innerWidth;
+    let ZiShu = Math.floor(bodyWidth / 22) - 1;
     let HangChang = ZiShu * 22
-    if (size < 740) {
+    if (bodyWidth < 740) {
         // let HangChang = ZiShu * 20;
         YeMian.style.width = HangChang + "px";
     } else {
         YeMian.style.cssText = " ";
     }
 }
-window.addEventListener("resize", chineseGridLine);
+window.visualViewport.addEventListener("resize", chineseGridLine);
 chineseGridLine();
 
 

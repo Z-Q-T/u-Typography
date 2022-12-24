@@ -286,14 +286,14 @@
                     <pre><code class='language-javascript' lang='javascript'>function chineseGrid() { //调整段落宽度的函数
 	let DuanLuo = document.getElementById(&quot;paragraph&quot;); 
 	//选出需要调整宽度的段落
-	let pageSize = window.innerWidth; 
-	//获得页面的大小
-	let ZiShu = Math.floor(pageSize / 20); 
+	let pageWidth = document.body.offsetWidth; 
+	//获得页面的宽度大小
+	let ZiShu = Math.floor(pageWidth / 20); 
 	//20是正文字号。算出在当前的页面大小下，能在一行中容纳的最大字数
 	DuanLuo.style.width = ZiShu + &quot;em&quot;; 
 	//将段落宽度设置为该字数所对应的大小
 }
-window.addEventListener(&quot;resize&quot;, chineseGrid); 
+window.visualViewport.addEventListener(&quot;resize&quot;, chineseGrid); 
 //每次窗口大小发生改变时，都执行该函数
 </code></pre>
                     <p>这无疑让网站的代码实现变得复杂，因而现今几乎没有网站这样做，只有我这种对排版的精致程度有极端癖好的人才会专门着手解决这个问题。不过考虑到并非所有网站都旨在提供“有品质的长篇文章阅读体验”，忽视这一问题也不能说有多大影响。只是假如你希望能为读者提供高质量的中文排版的话，那无论是在电子媒介还是印刷媒介上，都不应该放任这一问题。</p>
