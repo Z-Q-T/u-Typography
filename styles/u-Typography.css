@@ -1435,7 +1435,7 @@ footer small .Latin {
 	font-family: var(--font-hei-biaodian) !important;
 	font-weight: 400 !important;
 	font-size: 0.7em;
-	line-height: 0.1em;
+	line-height: 0em;
 	vertical-align: 0.15em;
 }
 .JianGeHao h-inner {
@@ -1445,7 +1445,7 @@ footer small .Latin {
 .ShengLyueHao {
 	font-family: var(--font-hei-biaodian) !important;
 	font-weight: 400 !important;
-	line-height: 0.1em;
+	line-height: 0em;
 }
 .ShengLyueHao::before {
 	content: "\200B";
@@ -1459,7 +1459,7 @@ h-char.bd-end.bd-jiya + .ShengLyueHao::before {
 	font-family: var(--font-hei-biaodian) !important;
 	font-weight: 400 !important;
 	font-feature-settings: "fwid";
-	line-height: 0.1em;
+	line-height: 0em;
 	text-shadow: 0 0.02em;
 	/* display: inline-block;
 	text-indent: 0; */
@@ -1476,7 +1476,7 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 	font-family: var(--font-hei-biaodian) !important;
 	font-weight: 400 !important;
 	font-feature-settings: "fwid";
-	line-height: 0.1em;
+	line-height: 0em;
 	text-shadow: 0 0.02em;
 	/* transform: translateY(1rem); */
 	/* margin: -0.5rem 0; */
@@ -1485,7 +1485,7 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 .BanZiXian {
 	font-family: var(--font-hei-biaodian) !important;
 	font-weight: 400 !important;
-	line-height: 0.1em;
+	line-height: 0em;
 	vertical-align: 0.08em;
 	margin: 0 -0.0179em;
 }
@@ -1498,7 +1498,7 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 .FenGeHao {
 	font-family: var(--font-hei-biaodian) !important;
 	font-weight: 400 !important;
-	line-height: 0.1em;
+	line-height: 0em;
 	/* transform: scale(0.5, 1); */
 	display: inline-block;
 	text-indent: 0;
