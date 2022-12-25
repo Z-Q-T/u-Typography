@@ -1137,6 +1137,7 @@ figure img {
 	opacity: 0;
 	cursor: zoom-out;
 	z-index: 21;
+	box-shadow: 0 5px 20px var(--colour-light-grey-1);
 }
 .TuTi,
 .TuZhu {

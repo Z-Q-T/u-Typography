@@ -370,7 +370,9 @@ window.addEventListener("resize", changeTocPosition);
 // 第一次调用该函数
 changeTocPosition();
 // 点击目录项后自动关闭目录
-window.onclick = function (e) {
+window.addEventListener("click", closeMenuAfterClick, false);
+function closeMenuAfterClick(e){
+// window.onclick = function (e) {
     console.log(e);
     if (e.target.matches('.tocH2 a') || e.target.matches('.tocH3 a') || e.target.matches('.tocH2 a span') || e.target.matches('.tocH3 a span') || e.target.matches('.tocH2 .biaodian') || e.target.matches('.tocH3 .biaodian') || e.target.matches('.tocH2 h-inner') || e.target.matches('.tocH3 h-inner') || e.target.matches('#toc-backToMainTitle a') || e.target.matches('#toc-skipToFootnote a')) {
         let windowWidth = window.innerWidth;
@@ -429,8 +431,10 @@ chineseGridLine();
 //     })
 // })
 
-window.onclick = function (e) {
-    let fullScreen = false;
+window.addEventListener("click", resizeImage, false);
+function resizeImage(e){
+// window.onclick = function (e) {
+    // let fullScreen = false;
     let container;
     let image;
     console.log(e);
