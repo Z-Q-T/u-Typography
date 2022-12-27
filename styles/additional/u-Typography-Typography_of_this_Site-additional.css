@@ -165,13 +165,18 @@ input[type="range"]::-webkit-slider-thumb {
 	background: #128;
 	height: 15px;
 } */
+
+
 /* 【1】#############################
 宽度大于1820的窗口，或经过1.25倍放大的宽度大于2275的窗口
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
 正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
 @media screen and (min-width: 1840px) {
 	#＋＋ {
-		margin-top: 3.5rem;
+		margin-top: 3.75rem;
+	}
+	#✽＃※{
+		margin-top: 1rem;
 	}
 }
 
@@ -186,6 +191,9 @@ input[type="range"]::-webkit-slider-thumb {
 
 	.layout_2_hidden {
 		display: none;
+	}
+	#＋＋ {
+		margin-top: 5.25rem;
 	}
 }
 /* 【3】#############################
@@ -213,6 +221,15 @@ input[type="range"]::-webkit-slider-thumb {
 	}
 	#gridLine-Centre-Layout_3_4_5 {
 		display: inline-block;
+	}
+	#＋＋ {
+		margin-top: 9rem;
+	}
+	#⊙⊙⊙{
+		margin-top: 0.75rem;
+	}
+	#✽＃※{
+		margin-top: 1.25rem;
 	}
 }
 /* 【4】#############################
