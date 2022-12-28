@@ -1607,7 +1607,13 @@ h-char.bd-consecutive[unicode="b7"]:not(.end-portion),
 h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	letter-spacing: 0;
 }
-
+.layout-1-break,
+.layout-2-break,
+.layout-3-break,
+.layout-4-break,
+.layout-5-break{
+	display: none;
+}
 /* ————————————响应式设计———————————— */
 /* 留20px的滚动条的空间 */
 
@@ -1644,6 +1650,9 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	.sideNote {
 		left: 39rem;
 		width: 18rem;
+	}
+	.layout-1-break{
+		display: block;
 	}
 }
 
@@ -1716,6 +1725,9 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	}
 	footer {
 		width: 30rem;
+	}
+	.layout-2-break{
+		display: block;
 	}
 }
 /* 【3】#############################
@@ -1865,6 +1877,9 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	}
 	footer {
 		width: 27rem;
+	}
+	.layout-3-break{
+		display: block;
 	}
 }
 /* 【4】#############################
@@ -2058,6 +2073,9 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	}
 	footer {
 		width: 27rem;
+	}
+	.layout-4-break{
+		display: block;
 	}
 }
 /* 【5】#############################
@@ -2261,5 +2279,8 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	}
 	footer {
 		width: 100%;
+	}
+	.layout-5-break{
+		display: block;
 	}
 }
