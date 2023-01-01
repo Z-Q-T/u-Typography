@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="张擎天（Zhang Qingtian）">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--开头通用模板到此结束-->
+
+    <meta name="description" content="中文省纸，那省油墨吗？">
+    <title>中文省纸，那省油墨吗？ ｜ 字无字 ú–Typography</title>
+
+    <!-- 字体服务的通用模板由此开始 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet"><!-- 思源黑体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"> <!-- Source Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet"> <!-- 思源宋体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Source Serif -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <!-- Source Code -->
+    <!-- 字体服务的通用模板到此结束 -->
+
+    <!--图标、样式、链接打开方式的二级页面模板由此开始-->
+    <link rel="shortcut icon" href="../images/字无字_网页图标.png" type="image/x-icon">
+    <link rel="stylesheet" media="all" href="../styles/han.css">
+    <link rel="stylesheet" href="../styles/u-Typography.css" type="text/css">
+    <!-- <link rel="stylesheet" href="../styles/additional/u-Typography-A1-additional.css" type="text/css"> -->
+    <!-- <link rel="stylesheet" href="../styles/debug.css" type="text/css"> -->
+    <base target="_self">
+    <!--图标、样式、链接打开方式的二级页面模板到此结束-->
+
+</head>
+
+<body>
+
+    <div id="whole">
+        <!--导航栏的二级页面模板由此开始-->
+        <div id="bar">
+            <div id="decoLine"></div>
+            <a href="../index.html" id="backToHomePage">
+                <img id="backArrow" src="../images/字无字_返回首页箭头-图标.png" alt="返回首页｜back to home page">
+                <img id="home" src="../images/字无字_返回首页房子-图标.png" alt="返回首页｜back to home page">
+            </a>
+            <picture id="logotype">
+                <source srcset="../images/字无字_横竖.png" media="(max-width: 680px)">
+                <source srcset="../images/字无字_横.png" media="(max-width: 1040px)">
+                <img id="logo" src="../images/字无字_竖.png" alt="“字无字”的标志｜logo of ú–typography">
+            </picture>
+            <div id="changeTypeMenu-Button"><svg id="changeTypeMenu-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 4">
+                    <g id="changeTypeMenu-ButtonSVGgraphic">
+                        <circle cx="2" cy="2" r="1.5" />
+                        <circle cx="9" cy="2" r="1.5" />
+                        <circle cx="16" cy="2" r="1.5" />
+                    </g>
+                </svg></div>
+            <!-- <div id="changeTypeMenu-Hint"><span id="changeTypeMenu-Hint-Title">〖更换字体〗</span><br>该功能在一些情况下会额外下载所需的字体<br>这可能消耗更多的流量</div> -->
+            <menu id="changeTypeMenu" style="visibility: hidden; opacity: 0; ">
+                <div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">标题</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-BiaoTi-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-BiaoTi-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">正文</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-ZhengWen-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-ZhengWen-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">补充</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-BianZhu-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-BianZhu-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>
+            </menu>
+            <div><a id="pageTypography-Button" href="../Typography_of_this_Site.html" target="_blank">¶</a>
+            </div>
+        </div>
+        <!--导航栏的二级页面模板到此结束-->
+
+        <main id="page">
+            <header id="mainTitleArea">
+                <div id="metaInfo">
+                    <div id="index">〚&#8197;排版设计&#8197;·&#8197;贰&#8197;〛
+                        <!-- <div id="indexExplanation">编号不代表逻辑顺序</div> -->
+                    </div>
+                    <div class="metaInfo-Seperator"></div>
+                    <div id="time">
+                        <ul>
+                            <li><time pubdate datetime="2023-1-1"><span class="number">2023</span>年<span class="number">1</span>月<span class="number">1</span>日</time>&emsp;发布</li>
+                        </ul>
+                    </div>
+                    <div class="metaInfo-Seperator"></div>
+                    <div id="author">张擎天</div>
+                </div>
+                <!-- <div id="decoLine"></div> -->
+                <div id="title">
+                    <h1>中文省纸，那省油墨吗？</h1>
+                </div>
+                <!-- <div id="caption"><span class="tabulation">○&#9;</span>“我认为精心排印的文字和雕塑或绘画一样美观。”<sup class='footnoteMark' id='footnote-mark-0'><a href='#footnote-number-0'>*</a></sup>&emsp;<span class="PoZheHao">——</span>&#65279;埃里克<span class="JianGeHao">·</span>吉尔</div> -->
+            </header>
+            <div id="toc-PlaceHolder"></div>
+            <!-- 切换目录的按钮模板由此开始 -->
+            <div id="toc-Switcher">
+                <svg id="tocSwitcher-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 4">
+                    <g id="tocSwitcher-ButtonSVGgraphic">
+                        <path d="M4,4a2.38,2.38,0,0,1-1.67-.69L0,.38.56,0,3,2.64a1.46,1.46,0,0,0,2,0L7.44,0,8,.38,5.67,3.31A2.38,2.38,0,0,1,4,4Z" />
+                    </g>
+                </svg>
+            </div>
+            <!-- 切换目录的按钮模板到此结束 -->
+            <div id="toc-Container">
+                <nav id="tableOfContent">
+                    <ul>
+                        <div id="toc-backToMainTitle"><a href="#">∧</a></div>
+                        <li class="tocH2"><a href="#两个故事引出的想法" target="_self">一、两个故事引出的想法</a></li>
+                        <li class="tocH3"><a href="#故事一：省油墨的字体" target="_self"><span class="Latin">1. </span>故事一：省油墨的字体</a></li>
+                        <li class="tocH3"><a href="#故事二：省纸的文字" target="_self"><span class="Latin">2. </span>故事二：省纸的文字</a></li>
+                        <li class="tocH2"><a href="#验证想法" target="_self">二、验证想法</a></li>
+                        <li class="tocH3"><a href="#实验选用的字体与排版方式" target="_self"><span class="Latin">1. </span>实验选用的字体与排版方式</a></li>
+                        <li class="tocH3"><a href="#计算“黑色”部分面积" target="_self"><span class="Latin">2. </span>计算“黑色”部分面积</a></li>
+                        <li class="tocH2"><a href="#结论" target="_self">三、结论</a></li>
+                        <li class="tocH2"><a href="#补说" target="_self">四、补说</a></li>
+                        <div id="toc-skipToFootnote"><a href="#footnotesArea">∨</a></div>
+                    </ul>
+                </nav>
+            </div>
+            <div id="mainContent">
+                <article>
+                    <h2 id='两个故事引出的想法'>两个故事引出的想法</h2>
+                    <h3 id='故事一：省油墨的字体'>故事一：省油墨的字体</h3>
+                    <p><span class="Latin" lang="en">2014</span>年，美国的两位中学生在学校的科学课上发现，使用<span class="Latin" lang="en">Garamond</span>字体来打印文件可以节省<span class="Latin" lang="en">24%</span>的墨水。假如联邦政府这么做，那每年能节省<span class="Latin" lang="en">1.36</span>亿美元。<sup class='footnoteMark' id='footnote-mark-1'><a href='#footnote-number-1'>1</a></sup></p>
+                    <p>然而这两位美国中学生的说法不完全正确。<sup class='footnoteMark' id='footnote-mark-2'><a href='#footnote-number-2'>2</a></sup>Garamond比起其他常见的字体，它的小写高度较低，笔画较细，这些特点让它确实省油墨。但也正因此导致了<span class="Latin" lang="en">Garamond</span>看起来要比同字号的其他字体更小。考虑到政府纸质文件的读者里有相当比例的老年人和视力障碍者，使用一个“更小”的字体会让文件不易阅读，因而将政府文件的字体改成<span class="Latin" lang="en">Garamond</span>并不合适。而如果加大<span class="Latin" lang="en">Garamond</span>字体的字号，那它就不再省油墨了。</p>
+                    <h3 id='故事二：省纸的文字'>故事二：省纸的文字</h3>
+                    <p>网上流传着一种说法：中文是最有效率的语言（文字），所有版本的《<cite>联合国宪章</cite>》里，中文版是最薄的。也就是说中文最省纸。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>关于“中文版《<cite>联合国宪章</cite>》最薄”，查询联合国官方网站，其所售卖的《<cite>联合国宪章</cite>》纸质书只有英文版。在其他平台搜索，也未能发现采用统一设计的不同文字版本的《<cite>联合国宪章</cite>》。</span></p>
+                    <p>关于“中文是最有效率的文字”，据称已被学术界有关信息熵的研究证实。简单来说，用不同的文字表达相同的概念，中文所需的字符数最少。</p>
+                    <p>但是，使用的字符少不一定代表文本长度短。这是因为不同文字的排版条件各不相同。比如，中文排版所需的行间距通常要大于西文的行间距，这意味着在相同的空间内，中文能排下的行数更少（你也可以让中文行间距变小，但这会让文本不宜阅读，就像上面那位美国中学生遇到的问题一样）。再比如，西里尔字母总体上比拉丁字母更宽，于是由西里尔字母组成的单词很可能比拉丁字母组成的单词更长，即便实际上它使用的字母数更少。</p>
+                    <p>我们在这里遇到的问题和那位美国中学生一样：文字排版中会相互影响的因素实在太多，要做到控制变量较为困难。事实上，通过巧妙地调整字距、行距、页边距、字号等，可以让任何一种文字比另一种文字更省纸。不过，根据我们的日常经验，在排版方式符合舒适阅读的条件下，中文相比于英文等外文来说，确实文本更短，更节省纸张。“中文最省纸”这一说法虽然暂时缺少严谨的论证，但似乎问题不大。</p>
+                    <p>那么，<em>中文是否省油墨呢？</em></p>
+                    <h2 id='验证想法'>验证想法</h2>
+                    <p>假如中文的效率高是因为中文的二维书写特点（即笔画密度高）决定的，那完全有理由猜测：中文虽然省纸，但更耗油墨。幸运的是，相比于是否省纸，是否省油墨非常容易验证。因为只要文本确定了，那么无论如何调整字距、行距、页边距等等，都不会影响到油墨用量（当然，前提是字体和字号也是确定的）。</p>
+                    <p>理论上，只要计算出每张纸上“黑色”部分的面积，把它们相加，就是总的油墨用量。至于“白色”部分有多少，以及黑白的比例关系如何，完全无关紧要。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>实际的油墨用量受到诸多因素影响：比如，手写时笔画交叉的部分会被重复着墨，而不同的打印机<span class="FenGeHao">／</span>印刷机的原理又各不相同，无法一概而论。这里只计算理论值。</span></p>
+                    <p>按照这个思路，我们可以用同一份文件的不同文字版本来测试一下中文是否省油墨。《<cite>联合国宪章</cite>》<sup class='footnoteMark' id='footnote-mark-3'><a href='#footnote-number-3'>3</a></sup>（包括中、英、法、俄、西班牙、阿拉伯文版本）是一个不错的选择，它的翻译的一致性和准确性有较高保障，符合控制变量的要求。</p>
+                    <h3 id='实验选用的字体与排版方式'>实验选用的字体与排版方式</h3>
+                    <p>我们为中文和西文分别选择<span class="Latin" lang="en">5</span>个字体来做测试，这里只测试打印文件较为常用的字体<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>其实我不知道大家打印文件一般用什么字体，我猜的。</span>。它们分别是：中易宋体、华文宋体、中易仿宋、华文楷体、方正中等线；<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>“中易宋体”即<span class="Latin" lang="en">Windows</span>操作系统自带的“宋体”，由中易公司开发，因而通常称为中易宋体。“华文宋体”为微软<span class="Latin" lang="en">Office</span>系列软件附带的字体，另外<span class="Latin" lang="en">Mac</span>操作系统自带的“宋体”实质上也是华文宋体，只是换了个名字；两个操作系统上相同名称的字体实质上由两家不同的公司开发，拥有不同的造型，有时会引起困惑。“中易仿宋”即<span class="Latin" lang="en">Windows</span>操作系统自带的“仿宋”，由中易公司开发。其前身是“仿宋_GB2312”。“方正中等线”即微软<span class="Latin" lang="en">Office</span>系列软件附带的“等线”字体。</span><span class="Latin" lang="en">Times New Roman</span>、<span class="Latin" lang="en">Garamond</span><sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>由<span class="Latin" lang="en">Monotype</span>公司设计。不过似乎<span class="Latin" lang="en">Adobe Garamond</span>更为经典</span>、<span class="Latin" lang="en">Centaur</span>、<span class="Latin" lang="en">Palatino</span>、<span class="Latin" lang="en">Calibri</span>。其中，<span class="Latin" lang="en">Centaur</span>字体没有西里尔字母，<span class="Latin" lang="en">Garamond</span>、<span class="Latin" lang="en">Centaur</span>、<span class="Latin" lang="en">Palatino</span>三个字体没有阿拉伯字母，相对应的测试直接跳过。</p>
+                    <p>由于只是为了测试油墨消耗量，因而这里采用相当极端的排版方法：</p>
+                    <ol start=''>
+                        <li>
+                            <p><span class="orderedListIndex"><span class="Latin">1</span>）&#9;</span>在<span class="Latin" lang="en">A4</span>纸上零边距排版，用五号（<span class="Latin" lang="en">10.5</span>点）字，零字距，零行距。</p>
+                        </li>
+                        <li>
+                            <p><span class="orderedListIndex"><span class="Latin">2</span>）&#9;</span>西文行末不断词（<span class="Latin" lang="en">hyphenation</span>）。因为不同的排版策略会有不同的断词效果，可能影响到连字符（<span class="Latin" lang="en">hyphen</span>）的多寡，尽管小小的连字符对整体油墨消耗量的影响微乎其微。</p>
+                        </li>
+                        <li>
+                            <p><span class="orderedListIndex"><span class="Latin">3</span>）&#9;</span>删去所有换行和缩进。</p>
+                        </li>
+                        <li>
+                            <p><span class="orderedListIndex"><span class="Latin">4</span>）&#9;</span>删去“第某条（<span class="Latin" lang="en">Article X</span>）”这种在联合国宪章中高频出现（共<span class="Latin" lang="en">111</span>次），但在大多数的写作情形下极少出现的词语，以免污染词频。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>不过，联合国宪章本身就是关于相当特定的主题的文本，其词频与一般文本的词频必然不同。例如，联合国宪章中“国（<span class="Latin" lang="en">-nation-</span>）”一字高频出现</span></p>
+                        </li>
+                        <li>
+                            <p><span class="orderedListIndex"><span class="Latin">5</span>）&#9;</span>删去阿拉伯数字编号、汉字数字编号、天干地支编号。同样是为了防止污染词频。</p>
+                        </li>
+
+                    </ol>
+                    <p>最终，我们得到了待测试的排版文本。</p>
+                    <p>【图】</p>
+                    <p>&nbsp;</p>
+                    <h3 id='计算“黑色”部分面积'>计算“黑色”部分面积</h3>
+                    <p>利用图像处理软件中的相关功能，可以轻易地计算出每页纸的灰度值<sup class='footnoteMark' id='footnote-mark-4'><a href='#footnote-number-4'>4</a></sup>。简单换算之后就可以得到代表每张纸上黑色部分面积的数值。将这些数值相加，就得到了每种文字在使用相应的字体时的油墨消耗量。</p>
+                    <p>【图】</p>
+                    <h2 id='结论'>结论</h2>
+                    <p><strong>中文确实省油墨。</strong></p>
+                    <p>而且，在一些情况下，相比于西文来说，中文甚至能省一半的油墨。但是，从仅有的统计数据来看，阿拉伯文在一些情况下似乎比中文更省油墨。不过考虑到这里的阿拉伯文只使用了两种字体，因而关于阿拉伯文的油墨消耗量的问题仍待研究。</p>
+                    <p>同时，即便中文采用繁体<sup class='footnoteMark' id='footnote-mark-5'><a href='#footnote-number-5'>5</a></sup>，按照相同的方法，计算得出的油墨消耗量也没有增加太多。</p>
+                    <p>【图】</p>
+                    <p>总结：中文相比于世界上大多数主流的文字来说，确实既省纸又省油墨。但现有证据不足以表明中文是全世界所有语言文字中最省纸或最省油墨的。</p>
+                    <h2 id='补说'>补说</h2>
+                    <p>上述实验只能说是提供了一个基础思路，实际上仍然存在诸多问题。比如：</p>
+                    <ol>
+                        <li>
+                            <p><span class="orderedListIndex"><span class="Latin">1</span>）&#9;</span>联合国宪章的中文版文本制定于<span class="Latin" lang="en">1945</span>年，它仍带有一定的文言色彩。现今通行的白话中文的油墨消耗量还有待研究。</p>
+                        </li>
+                        <li>
+                            <p><span class="orderedListIndex"><span class="Latin">2</span>）&#9;</span>现今很多中文电脑字体都偏细，这是一个中文数字化早期时代的历史遗留问题。这种过于纤细的造型其实并不利于长篇文字的舒适阅读。本次实验中用到的一些字体也有这个问题，这可能会影响“中文是否省油墨”这一问题的结果。</p>
+                        </li>
+                    </ol>
+
+                    <hr>
+                    <section id='footnotesArea'>
+                        <h2 id='注释'>注　释</h2>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-1' class='footnoteNumber'>1</div>
+                            <p>详见《<cite><a href='https://emerginginvestigators.org/articles/the-effect-of-font-type-on-a-school-s-ink-cost' class='externalLink'><span class="Latin" lang="en">The Effect of Font Type on a School’s Ink Cost</span></a>（字体对学校油墨花费的影响）</cite>》和《<cite><a href='https://emerginginvestigators.org/articles/a-simple-printing-solution-to-aid-deficit-reduction' class='externalLink'><span class="Latin" lang="en">A Simple Printing Solution to Aid Deficit Reduction</span></a>（帮助减少赤字的简单印刷解决方案）</cite>》。或见媒体报道《<cite><a href='https://edition.cnn.com/2014/03/27/living/student-money-saving-typeface-garamond-schools/index.html' class='externalLink'><span class="Latin" lang="en">Teen to government: Change your typeface, save millions</span></a>（少年告诉政府：换字体，节省上百万元）</cite>》。<a href='#footnote-mark-1' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-2' class='footnoteNumber'>2</div>
+                            <p>对于换字体可以节省政府成本的批评意见，详见《<cite><a href='http://www.thomasphinney.com/2014/03/saving-400m-font/' class='externalLink'><span class="Latin" lang="en">Save $400M printing cost from font change? Not so fast…</span></a>［换字体就能节省<span class="Latin" lang="en">4</span>亿美元的打印开销？恐怕并非如此］</cite>》。主要观点为：<span class="Latin" lang="en">Garamond</span>省油墨只是因为它“更小”，但这对阅读不利；原论文中对政府的打印成本的计算方法有误。其他媒体对此也有报道《<cite><a href='https://www.fastcompany.com/3028436/why-garamond-wont-save-the-government-467-million-a-year' class='externalLink'><span class="Latin" lang="en">Why Garamond Won’t Save The Government $467 Million A Year</span></a>［为什么<span class="Latin" lang="en">Garamond</span>字体不能为政府每年节省<span class="Latin" lang="en">4.67</span>亿美元］</cite>》《<cite><a href='https://www.washingtonpost.com/politics/can-a-typeface-save-the-government-234-million/2014/04/01/12a40fd0-b9b6-11e3-9a05-c739f29ccb08_story.html' class='externalLink'><span class="Latin" lang="en">Can a typeface save the government $234 million?</span></a>［一个字体能帮助政府节省<span class="Latin" lang="en">2.34</span>亿美元吗？］</cite>》。<a href='#footnote-mark-2' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-3' class='footnoteNumber'>3</div>
+                            <p><a href='https://www.un.org/zh/about-us/un-charter/full-text' target='_blank' class='externalLink'>联合国宪章（全文）</a><a href='#footnote-mark-3' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-4' class='footnoteNumber'>4</div>
+                            <p>例如，在<span class="Latin" lang="en">Photoshop</span>中，可以使用“图像—分析—记录测量”功能。<a href='#footnote-mark-4' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-5' class='footnoteNumber'>5</div>
+                            <p>简繁转换使用软件自动完成，可能存在差错，但对整体影响极小。繁体字型采用中国大陆标准，但无论中国香港标准、中国台湾标准或者日韩标准的测试结果都不会有太大差异。<a href='#footnote-mark-5' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                    </section>
+                </article>
+                <!-- 页尾的二级页面模板由此开始 -->
+                <footer>
+                    <small>&#8197;如果您喜欢这篇文章，欢迎您给我￥<a href="../Donate.html" target="_blank" style="font-weight: 700;">打赏</a>！</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small>©&#8197;<a href="../Copyright.html" target="_blank">版权声明</a>&emsp;＠&#8197;<a href="../Contact_and_Feedback.html" target="_blank">联系与反馈</a>&emsp;♡&#8197;<a href="../Acknowledgements.html" target="_blank">致谢</a></small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing"><span class="Latin">↓</span></small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small style="font-weight: 700;" id="footerWebsiteName"><a href="../Introduction.html" target="_blank">字无字<span class="Latin">ú–Typography</span></a></small>
+                    <small>张擎天的个人网站</small>
+                    <small>分享排版设计</small>
+                    <small>以及更多</small>
+                    <small><span class="ShengLyueHao">……</span></small>
+                </footer>
+                <!-- 页尾的二级页面模板到此结束 -->
+            </div>
+
+        </main>
+    </div>
+
+    <!-- 脚本的二级页面模板由此开始 -->
+    <script src="../scripts/u-Typography.js"></script>
+    <script src="../scripts/han.js"></script>
+    <script>
+        changeTypeMenu_initialActive()
+        Han(document.querySelector('.entry'))
+            .renderJiya()
+            .renderHWS()
+    </script>
+    <!-- 脚本的二级页面模板到此结束 -->
+
+</body>
+
+</html>

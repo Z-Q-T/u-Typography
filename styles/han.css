@@ -393,8 +393,10 @@ ruby.mps > rt:empty {
   font-family: Georgia, "Times New Roman", Arial, !important;
 }
 strong:lang(zh) h-char.punct,
+em:lang(zh) h-char.punct,
 strong:lang(ja) h-char.punct,
 strong:lang(zh) h-char.biaodian,
+em:lang(zh) h-char.biaodian,
 strong:lang(ja) h-char.biaodian {
   -moz-text-emphasis: none;
   -webkit-text-emphasis: none;

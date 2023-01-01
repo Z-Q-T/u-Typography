@@ -800,7 +800,7 @@ html {
 	display: block;
 	position: absolute;
 	width: 18rem;
-	top: 88px;
+	top: 68px;
 	left: 0;
 	color: var(--colour-1);
 	opacity: 0.2;
@@ -1942,6 +1942,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		display: block;
 		margin-left: 0rem;
 		position: static;
+		height: fit-content;
 	}
 	#metaInfo {
 		display: block;
