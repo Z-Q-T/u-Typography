@@ -141,12 +141,12 @@ void function (global, factory) {
          * Western punctuation (西文標點符號)
          */
         punct: {
-            base: '[\u2026,.;:!?\u203D_]',
+            base: '[\u2026,.;:!?\u203D_%]',
             sing: '[\u2010-\u2014\u2026]',
             middle: '[\\\/~\\-&\u2010-\u2014_]',
             open: '[\'"‘“\\(\\[\u00A1\u00BF\u2E18\u00AB\u2039\u201A\u201C\u201E]',
             close: '[\'"”’\\)\\]\u00BB\u203A\u201B\u201D\u201F]',
-            end: '[\'"”’\\)\\]\u00BB\u203A\u201B\u201D\u201F\u203C\u203D\u2047-\u2049,.;:!?]',
+            end: '[\'"”’\\)\\]\u00BB\u203A\u201B\u201D\u201F\u203C\u203D\u2047-\u2049,.;:!?%]',
         },
 
         /**
