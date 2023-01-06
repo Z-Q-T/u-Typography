@@ -17,7 +17,7 @@ function changeTypeMenu_initialActive() {
         document.getElementById(initial[i]).style.cssText = "background-color: var(--colour-changeType-selected) !important; color:black;";
     }
     //下面是设定初始的西文字体
-    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, #tableOfContent li .Latin").forEach((e) => {
+    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, h6 .Latin, #tableOfContent li .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-serif)";
         e.style.fontWeight = "600";
         e.style.fontSize = "1.05em";
@@ -52,17 +52,17 @@ function changeTypeMenu_switchColour(active, inactive) {
 
 // 标题换宋体
 document.getElementById('changeTypeMenu-BiaoTi-SONG').onclick = function changefont_BiaoTi_SONG() {
-    document.body.querySelectorAll("h1,h2,h3,#tableOfContent li").forEach((e) => {
+    document.body.querySelectorAll("h1,h2,h3,h6,#tableOfContent li").forEach((e) => {
         e.style.fontFamily = "var(--font-song)";
         e.style.fontWeight = "700";
     });//换中文
-    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, #tableOfContent li .Latin").forEach((e) => {
+    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, h6 .Latin,#tableOfContent li .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-serif)";
         e.style.fontWeight = "600";
         e.style.fontSize = "1.05em";
     });//换西文
     // document.body.querySelectorAll("h1 h-char.bd-jiya.bd-open > h-inner, h1 h-char.bd-jiya.bd-close > h-inner, h1 h-char.bd-jiya.bd-cop > h-inner, h1 h-char.bd-jiya[unicode='ff0e'] > h-inner").forEach((e) => {
-    document.body.querySelectorAll("h1 h-char.biaodian > h-inner, h2 h-char.biaodian > h-inner, h3 h-char.biaodian > h-inner, #tableOfContent li h-char.biaodian > h-inner").forEach((e) => {
+    document.body.querySelectorAll("h1 h-char.biaodian > h-inner, h2 h-char.biaodian > h-inner, h3 h-char.biaodian > h-inner, h6 h-char.biaodian > h-inner, #tableOfContent li h-char.biaodian > h-inner").forEach((e) => {
         e.style.cssText = "font-family: var(--font-song-biaodian) !important; font-weight: 700 !important;";
     });//换标点
 
@@ -70,16 +70,16 @@ document.getElementById('changeTypeMenu-BiaoTi-SONG').onclick = function changef
 }
 // 标题换黑体
 document.getElementById('changeTypeMenu-BiaoTi-HEI').onclick = function changefont_BiaoTi_HEI() {
-    document.body.querySelectorAll("h1,h2,h3,#tableOfContent li").forEach((e) => {
+    document.body.querySelectorAll("h1,h2,h3,h6,#tableOfContent li").forEach((e) => {
         e.style.fontFamily = "var(--font-hei)";
         e.style.fontWeight = "700";
     });//换中文
-    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, #tableOfContent li .Latin").forEach((e) => {
+    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, h6 .Latin, #tableOfContent li .Latin").forEach((e) => {
         e.style.fontFamily = "var(--font-sans)";
         e.style.fontWeight = "600";
         e.style.fontSize = "1.1em";
     });//换西文
-    document.body.querySelectorAll("h1 h-char.biaodian > h-inner, h2 h-char.biaodian > h-inner, h3 h-char.biaodian > h-inner, #tableOfContent li h-char.biaodian > h-inner").forEach((e) => {
+    document.body.querySelectorAll("h1 h-char.biaodian > h-inner, h2 h-char.biaodian > h-inner, h3 h-char.biaodian > h-inner, h6 h-char.biaodian > h-inner, #tableOfContent li h-char.biaodian > h-inner").forEach((e) => {
         e.style.cssText = "font-family: var(--font-hei-biaodian) !important; font-weight: 700 !important;";
     });//换标点
 

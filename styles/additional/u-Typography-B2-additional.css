@@ -1,0 +1,48 @@
+/* Copyright (c) [2022] [Zhang Qingtian (张擎天) | u-Typography.site]
+[u-Typography-*-additional.css] is licensed under Mulan PSL v2.
+You can use this software according to the terms and conditions of the Mulan PSL v2.
+You may obtain a copy of Mulan PSL v2 at:
+       http://license.coscl.org.cn/MulanPSL2
+THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
+EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
+MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+See the Mulan PSL v2 for more details. */
+
+p {
+	font-size: 0.75rem;
+	line-height: 1.5rem;
+	margin-left: 3rem;
+}
+
+/* 【1】#############################
+宽度大于1820的窗口，或经过1.25倍放大的宽度大于2275的窗口
+适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
+正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
+@media screen and (min-width: 1840px) {
+}
+
+/* 【2】#############################
+宽度1380—1820的窗口，或经过1.25倍放大的宽度1725—2275的窗口
+适用于1440宽的屏幕，或经过1.25倍放大的1920宽的屏幕
+正文每行30字，字号20。边注每行16字，字号15；宽度等同于正文12字 */
+@media screen and (min-width: 1400px) and (max-width: 1840px) {
+}
+/* 【3】#############################
+宽度1020—1380的窗口，或经过1.25倍放大的宽度1275—1725的窗口
+适用于1080宽的屏幕，或经过1.25倍放大的1440宽的屏幕
+正文每行27字，字号20。边注每行12字，字号15；宽度等同于正文9字 */
+@media screen and (min-width: 1040px) and (max-width: 1400px) {
+}
+/* 【4】#############################
+宽度660—1020的窗口，或经过1.25倍放大的宽度825—1275的窗口
+正文每行27字，字号20。*/
+@media screen and (min-width: 680px) and (max-width: 1040px) {
+}
+/* 【5】#############################
+宽度小于660的窗口，或经过1.25倍放大的宽度小于825的窗口
+正文字号20。*/
+@media screen and (max-width: 680px) {
+	p {
+		text-align: left !important;
+	}
+}
