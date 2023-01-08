@@ -1434,7 +1434,7 @@ h-hws[hidden] {
 		margin: 4rem 0 0 0;
 	}
 	.subDivision {
-		margin: 2rem 0;
+		margin: 1.75rem 0;
 	}
 	.symbol {
 		text-align: center;
@@ -1447,7 +1447,7 @@ h-hws[hidden] {
 		width: 30rem;
 		display: block;
 		text-align: center;
-		margin: 0.75rem auto;
+		margin: 0.5rem auto;
 		position: relative;
 	}
 	footer {
@@ -1585,7 +1585,7 @@ h-hws[hidden] {
 		font-size: 1.1rem;
 	}
 	.subDivision {
-		margin: 1.5rem 0;
+		margin: 1.25rem 0;
 	}
 	li {
 		margin-top: 1.5rem;
@@ -1608,7 +1608,7 @@ h-hws[hidden] {
 		width: 100%;
 		display: block;
 		text-align: center;
-		margin: 0.5rem auto;
+		margin: 0.25rem auto;
 		position: relative;
 	}
 
@@ -1625,7 +1625,7 @@ h-hws[hidden] {
 	#logo-Additional {
 		width: auto;
 		height: 45px;
-		top: 6px;
+		top: 8px;
 		left: auto;
 	}
 }
