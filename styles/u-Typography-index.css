@@ -1070,8 +1070,8 @@ li::marker {
 footer {
 	font-family: var(--font-hei);
 	font-weight: 400;
-	font-size: 0.75rem;
-	line-height: 1.25rem;
+	font-size: 0.6rem;
+	line-height: 1rem;
 	/* width: 36rem;
 	margin: 0 auto 4rem;
 	border: 1px black solid;
@@ -1081,7 +1081,7 @@ footer {
 	/* border-top: 1px black solid; */
 	padding: 0rem 0rem;
 	/* padding-top: 2rem; */
-	text-align: justify;
+	text-align: left;
 }
 small {
 	font-size: inherit !important;
@@ -1127,18 +1127,18 @@ footer a:active {
 }
 #creativecommonsIcon,
 #MulanPSL {
-	margin-top: 1rem;
+	margin-top: 0.5rem;
 	text-align: center;
 }
 #creativecommonsIcon img {
-	height: 22px !important;
+	height: 20px !important;
 	margin-right: 2px;
 	margin-left: 2px;
 	vertical-align: text-bottom;
 	mix-blend-mode: multiply;
 }
 #MulanPSL img {
-	height: 18px;
+	height: 16px;
 }
 /* 其他标题标点符号用思源黑体 */
 h-char.bd-jiya.bd-open > h-inner,
