@@ -1019,8 +1019,8 @@ h2 {
 	font-size: 1.5rem;
 	line-height: 2.5rem;
 	text-align: center;
-	margin: 3rem auto 3rem auto;
-	padding: 4rem 0 0;
+	margin: 7rem auto 3rem auto;
+	scroll-margin-top: 4rem;
 }
 h3 {
 	font-family: var(--font-song);
@@ -1028,14 +1028,14 @@ h3 {
 	font-size: 1.2rem;
 	line-height: 2rem;
 	text-align: center;
-	margin: -1rem auto 2rem auto;
-	padding: 4rem 0 0;
+	margin: 3rem auto 2rem auto;
+	scroll-margin-top: 4rem;
 }
 h2 + h3 {
-	margin-top: -3rem !important;
+	margin-top: 3rem !important;
 }
 h2:first-child {
-	margin-top: -4rem !important;
+	margin-top: 0rem !important;
 }
 h6 {
 	font-size: 1rem;
@@ -1043,15 +1043,15 @@ h6 {
 	font-family: var(--font-song);
 	font-weight: 700;
 	tab-size: 3rem;
-	margin: -3rem auto 1rem auto;
-	padding: 4rem 0 0;
+	margin: 1rem auto 1rem auto;
+	scroll-margin-top: 4rem;
 }
 h3 + h6 {
-	margin-top: -4rem !important;
+	margin-top: 0.5rem !important;
 }
-h2 + h6 {
+/* h2 + h6 {
 	margin-top: -3rem !important;
-}
+} */
 p {
 	/* font-family: var(--font-ZhengWen-HEI); */
 	text-align: justify;
@@ -1295,7 +1295,7 @@ article img {
 	font-family: var(--font-serif) !important;
 	font-size: 0.9em;
 	font-style: italic;
-	padding-top: 4rem;
+	scroll-margin-top: 4rem;
 }
 .footnoteMark::before {
 	content: "\FEFF";
@@ -1350,12 +1350,12 @@ small {
 	position: absolute;
 	left: 0rem;
 	font-size: 0.8rem !important;
-	/* line-height: 1.5rem; */
+	line-height: 1.5rem;
 	font-weight: 600 !important;
 	/* transform: translateY(-4rem); */
-	line-height: 0.8rem;
-	transform: translateY(-3.6rem);
-	height: 4.8rem;
+	/* line-height: 0.8rem; */
+	/* transform: translateY(-3.6rem); */
+	/* height: 4.8rem; */
 	display: block;
 }
 
@@ -1725,7 +1725,6 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		left: 15rem;
 		padding-top: 1rem;
 		padding-bottom: 5rem;
-
 	}
 	article {
 		margin-right: 15rem;
@@ -1876,7 +1875,6 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		margin-top: 24rem;
 		left: 0rem;
 		padding-bottom: 4rem;
-
 	}
 	article {
 		margin-right: 12rem;
@@ -2066,7 +2064,6 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		margin: 0 auto;
 		margin-top: 5rem;
 		padding-bottom: 4rem;
-
 	}
 	article {
 		margin: 1rem 0;

@@ -93,7 +93,7 @@ document.getElementById('changeTypeMenu-ZhengWen-SONG').onclick = function chang
         e.style.fontFamily = "var(--font-song)";
         e.style.fontWeight = "600";
     })
-    document.body.querySelectorAll("p > strong").forEach((e) => {
+    document.body.querySelectorAll("p > strong, p > em").forEach((e) => {
         e.style.fontFamily = "'TeShuBiaoDian', var(--font-song)";
         e.style.fontWeight = "600";
     });
@@ -128,7 +128,7 @@ document.getElementById('changeTypeMenu-ZhengWen-HEI').onclick = function change
         e.style.fontFamily = "var(--font-hei)";
         e.style.fontWeight = "400";
     });
-    document.body.querySelectorAll("p > strong").forEach((e) => {
+    document.body.querySelectorAll("p > strong, p > em").forEach((e) => {
         e.style.fontFamily = "'TeShuBiaoDian', var(--font-hei)";
         e.style.fontWeight = "400";
     });
