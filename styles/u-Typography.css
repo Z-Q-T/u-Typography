@@ -202,7 +202,7 @@ See the Mulan PSL v2 for more details. */
 }
 /* —————————————————————————————— */
 :root {
-	--colour-paper: rgb(250, 249, 247);
+	--colour-paper: rgb(245, 244, 242);
 	--colour-link-active-background: rgb(206, 189, 166);
 	--colour-1: rgb(188, 171, 147);
 	--colour-2: rgb(228, 216, 198);

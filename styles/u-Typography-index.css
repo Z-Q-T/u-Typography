@@ -1021,7 +1021,7 @@ section:hover .headingDecoration {
 	position: relative;
 	top: 0;
 	display: inline-block;
-	width: 6rem;
+	width: 7rem;
 	text-align: right;
 	transform: scale(0.75, 0.75);
 	transform-origin: right center;
@@ -1033,7 +1033,7 @@ ul {
 	top: 0rem;
 }
 h3 {
-	font-size: 1.35rem;
+	font-size: 1rem;
 	line-height: 1.5rem;
 	text-align: left;
 	display: inline-block;
@@ -1397,7 +1397,7 @@ h-hws[hidden] {
 		margin-bottom: 1rem;
 	}
 	#section-Additional {
-		padding: 2rem 0 0;
+		padding: 3rem 0 0;
 		margin: 6rem 0;
 		border-top: 1px var(--colour-light-grey-1) solid;
 		/* border-bottom: 1px black solid; */
@@ -1537,7 +1537,7 @@ h-hws[hidden] {
 		display: block;
 	}
 	#section-Additional {
-		padding: 2rem 0 1rem;
+		padding: 2rem 0 0rem;
 		margin: 3rem 0;
 		border-top: 1px var(--colour-light-grey-1) solid;
 		/* border-bottom: 1px black solid; */
@@ -1594,6 +1594,7 @@ h-hws[hidden] {
 		padding-left: 3.3rem;
 		font-size: 0.75rem;
 		margin-top: 0.5rem;
+		text-align: left;
 	}
 	.symbol {
 		font-size: 1.2rem;
@@ -1603,7 +1604,7 @@ h-hws[hidden] {
 		transform-origin: center center;
 	}
 	h3 {
-		font-size: 1.2rem;
+		font-size: 0.9rem;
 		left: 0;
 		width: 100%;
 		display: block;
