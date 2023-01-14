@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="张擎天（Zhang Qingtian）">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--开头通用模板到此结束-->
+
+    <meta name="description" content="中文字体标点横向位置设计差异所导致的排版问题分析，以及可能的解决方案">
+    <title>中文字体标点横向位置设计差异所导致的排版问题分析，以及可能的解决方案 ｜ 字无字 ú–Typography</title>
+
+    <!-- 字体服务的通用模板由此开始 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet"><!-- 思源黑体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"> <!-- Source Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet"> <!-- 思源宋体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Source Serif -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <!-- Source Code -->
+    <!-- 字体服务的通用模板到此结束 -->
+
+    <!--图标、样式、链接打开方式的二级页面模板由此开始-->
+    <link rel="shortcut icon" href="../images/字无字_网页图标.png" type="image/x-icon">
+    <link rel="stylesheet" media="all" href="../styles/han.css">
+    <link rel="stylesheet" href="../styles/u-Typography.css" type="text/css">
+    <link rel="stylesheet" href="../styles/additional/u-Typography-A1-additional.css" type="text/css">
+    <!-- <link rel="stylesheet" href="../styles/debug.css" type="text/css"> -->
+    <base target="_self">
+    <!--图标、样式、链接打开方式的二级页面模板到此结束-->
+
+</head>
+
+<body>
+
+    <div id="whole">
+        <!--导航栏的二级页面模板由此开始-->
+        <div id="bar">
+            <div id="decoLine"></div>
+            <a href="../index.html" id="backToHomePage">
+                <img id="backArrow" src="../images/字无字_返回首页箭头-图标.png" alt="返回首页｜back to home page">
+                <img id="home" src="../images/字无字_返回首页房子-图标.png" alt="返回首页｜back to home page">
+            </a>
+            <picture id="logotype">
+                <source srcset="../images/字无字_横竖.png" media="(max-width: 680px)">
+                <source srcset="../images/字无字_横.png" media="(max-width: 1040px)">
+                <img id="logo" src="../images/字无字_竖.png" alt="“字无字”的标志｜logo of ú–typography">
+            </picture>
+            <div id="changeTypeMenu-Button"><svg id="changeTypeMenu-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 4">
+                    <g id="changeTypeMenu-ButtonSVGgraphic">
+                        <circle cx="2" cy="2" r="1.5" />
+                        <circle cx="9" cy="2" r="1.5" />
+                        <circle cx="16" cy="2" r="1.5" />
+                    </g>
+                </svg></div>
+            <!-- <div id="changeTypeMenu-Hint">该功能在一些情况下会额外下载所需的字体<br>这可能消耗更多的流量</div> -->
+            <menu id="changeTypeMenu" style="visibility: hidden; opacity: 0; ">
+                <div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">标题</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-BiaoTi-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-BiaoTi-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">正文</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-ZhengWen-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-ZhengWen-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">补充</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-BianZhu-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-BianZhu-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>
+            </menu>
+            <div><a id="pageTypography-Button" href="../Typography_of_this_Site.html" target="_blank">¶</a>
+            </div>
+        </div>
+        <!--导航栏的二级页面模板到此结束-->
+
+        <main id="page">
+            <header id="mainTitleArea">
+                <div id="metaInfo">
+                    <div id="index">〚&#8197;排版设计&#8197;·&#8197;叁&#8197;〛
+                    </div>
+                    <div class="metaInfo-Seperator"></div>
+                    <div id="time">
+                        <ul>
+                            <li><time pubdate datetime="2023-1-15"><span class="number">2023</span>年<span class="number">1</span>月<span class="number">15</span>日</time>&emsp;发布</li>
+                        </ul>
+                    </div>
+                    <div class="metaInfo-Seperator"></div>
+                    <div id="author">张擎天</div>
+                </div>
+                <!-- <div id="decoLine"></div> -->
+                <div id="title">
+                    <h1>中文标点横向位置设计差异与<br class="layout-1-break layout-2-break layout-3-break layout-4-break">相应的排版问题分析</h1>
+                </div>
+                <!-- <div id="caption"><span class="tabulation">○&#9;</span>“我认为精心排印的文字和雕塑或绘画一样美观。”<sup class='footnoteMark' id='footnote-mark-0'><a href='#footnote-number-0'>*</a></sup>&emsp;<span class="PoZheHao">——</span>&#65279;埃里克<span class="JianGeHao">·</span>吉尔</div> -->
+            </header>
+            <div id="toc-PlaceHolder"></div>
+            <!-- 切换目录的按钮模板由此开始 -->
+            <div id="toc-Switcher">
+                <svg id="tocSwitcher-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 4">
+                    <g id="tocSwitcher-ButtonSVGgraphic">
+                        <path d="M4,4a2.38,2.38,0,0,1-1.67-.69L0,.38.56,0,3,2.64a1.46,1.46,0,0,0,2,0L7.44,0,8,.38,5.67,3.31A2.38,2.38,0,0,1,4,4Z" />
+                    </g>
+                </svg>
+            </div>
+            <!-- 切换目录的按钮模板到此结束 -->
+            <div id="toc-Container">
+                <nav id="tableOfContent">
+                    <ul>
+                        <div id="toc-backToMainTitle"><a href="#">∧</a></div>
+                        <li class="tocH2"><a href="#文字造型的三种生成方式" target="_self">一、文字造型的三种生成方式</a></li>
+                        <li class="tocH2"><a href="#排版设计与字体设计的关系" target="_self">二、排版设计与字体设计的关系</a></li>
+                        <li class="tocH2"><a href="#排版设计与版式设计的关系" target="_self">三、排版设计与版式设计的关系</a></li>
+                        <li class="tocH2"><a href="#排版设计与写作的关系" target="_self">四、排版设计与写作的关系</a></li>
+                        <div id="toc-skipToFootnote"><a href="#footnotesArea">∨</a></div>
+                    </ul>
+                </nav>
+            </div>
+            <div id="mainContent">
+                <article>
+                    <h2 id='标点横向位置设计差异所导致的问题'>标点横向位置设计差异所导致的问题</h2>
+                    <p>不同的中文字体有不同的标点设计风格。除去造型上的不同外，它们在位置上也各有差异：有的紧紧贴靠在字框的边缘，有的则更靠近居中的位置，还有的介于两者之间。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>按照《<cite>标点符号用法</cite>》（<span class="Latin" lang="en">GB/T 15834</span><span class="YiZiXian">—</span><span class="Latin" lang="en">2011</span>）第<span class="Latin" lang="en">5.1</span>条，逗号、句号等标点应位于字框的左下；括号、书名号等标点未明确规定位置（参见<a href="#footnote-number-1">注释<span class="Latin" lang="en">1</span></a>），一般习惯上前括号等放置在字框靠右的位置，后括号等放置在字框靠左的位置。日文中标点的位置与之类似。我国的港澳台地区的标点则习惯放在水平垂直都居中的位置。</span></p>
+                    <p>【图】</p>
+                    <p>图注：尤其是方正字体的括号和书名号，明显更靠近中间的位置。</p>
+                    <p>这本身只是风格上的差异，在一般的排版情况下也不会有什么问题。然而，当标点连续出现，或者为了段落左右对齐等原因而要压缩标点字符间距时，这些多样化的设计就可能会导致问题。</p>
+                    <p>现今的计算机软件在排版处理时，几乎都是把标点按照位于一侧二分之一的区域内来处理的。也就是说，这些标点字符实际上只有一侧二分之一个字的宽度的安全区域，剩余二分之一个字的宽度的区域在特定的排版条件下可能会被压缩。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>还有一种排版处理方法是先默认标点都占半个字宽的位置，再根据需要加入不同宽度的空白。思路不同，效果相同，可能出现的问题也基本相同。</span>这导致了一些位置设计得更靠近中间的标点会出现不理想的排版效果。<sup class='footnoteMark' id='footnote-mark-1'><a href='#footnote-number-1'>1</a></sup></p>
+                    <p>【图】</p>
+                    <p>图注：括号和书名号与外侧字符的间距比内侧字符的间距还要小。。两个标点重叠这种明显的错误通常能在校对的过程中被发现并改正，而其他的问题则隐蔽得多，往往被忽视，或者发现了但不知是何种原因造成的。</p>
+                    <p>在我们的日常生活中所能见到的书籍、杂志、展板等等各类事物上，这种不理想的排版效果比比皆是，一些场景甚至能用怪异来形容。</p>
+                    <p>【图】</p>
+                    <p>【图】</p>
+                    <p>【图】</p>
+                    <p>标点的间距虽然看似是小问题，但这些问题频繁地、大批量地出现，确确实实降低了中文文字版面的视觉质量。</p>
+                    <p>&nbsp;</p>
+                    <p>应该说，从设计的角度看，与文字稍稍有些距离的标点在视觉上比紧紧贴住文字的标点更典雅美观。然而，我们的软件在排版时沿用了铅活字时代“一半空间保留，一半空间调整”的思路，这就埋下了隐患。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>《<cite>标点符号用法</cite>》中第<span class="Latin" lang="en">5.1.11</span>条说明了为了排版美观等需要可适当压缩标点所占的空间，但没说具体方法。实践中一般沿用一直以来的习惯。</span></p>
+                    <p>【图】</p>
+                    <p>铅活字时代有实体活字的物理上的限制，如果一个全身的标点太宽，那就要换成二分的标点（也就是“一半空间保留”），有时还可以再加上适当大小的铅空（也就是“一半空间调整”），这些调整标点所占空间的操作都要一个个手工处理，而且标点必然会整个位于铅字的实体字框内，所以不会出现诸如“括号离外侧文字的距离比内侧文字还要近”之类的问题，更不可能出现字符重叠这种违背物理规律的现象。</p>
+                    <p>而到了电脑时代，物理上的限制没有了，设计变得更加自由、灵活、高效，但可能出现的问题也增多了。面对需要调整标点间距的场合，虽然人眼能看到标点的位置，但排版软件不知道标点在哪，它只知道字框的位置，于是仍然按照固定的算法，先保留一半的空间（但标点字符不一定完整出现在了保留的这一半空间内），再调整另一半空间的大小。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>这些字符既不一定完整位于一侧二分之一的区域内，也不一定完整位于中间二分之一（即左右各去掉四分之一）的区域内，因而不是改用“居中式标点”的排版算法就能解决这一问题的。</span>各种问题因而产生。那些本身看起来更好的设计，在“一半空间保留，一半空间调整”的方法下反而更容易出问题。要避免这个问题只能采用最保险的设计方法：将所有标点都控制在字框一侧一半的区域内，而且为了确保压缩二分之一的空间后与前后字符的间距不出问题，还需要让标点的视觉重心不超过字框一侧四分之一的位置。</p>
+                    <p><strong>应该让字体设计严格遵循现有的排版算法，还是应该为字体设计的多样性而去开发新的排版算法？</strong>这个问题值得思考。</p>
+                    <h2 id='可能的解决方案'>可能的解决方案</h2>
+                    <p>在上述问题得到真正完美的解决之前，我们可以通过下列方法来尽量规避这一问题。</p>
+                    <h3 id='使用方正字体自带的opentype特性'>使用方正字体自带的<span class="Latin" lang="en">OpenType</span>特性</h3>
+                    <p>方正的一些字体可以使用自带的“<span class="Latin" lang="en">Adobe punctuation</span>”这一<span class="Latin" lang="en">OpenType</span>特性<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>并不是所有方正字体都包含这一特性。</span>，启用后标点就会缩回到一侧二分之一的位置，不再会出现上述问题。</p>
+                    <p>具体操作方法：对于<span class="Latin" lang="en">InDesign</span>，在“字符”面板右上角菜单，选择“<span class="Latin" lang="en">OpenType</span>—风格组合—<span class="Latin" lang="en">Adobe punctuation</span>”；对于<span class="Latin" lang="en">Illustrator</span>，在“<span class="Latin" lang="en">OpenType</span>”面板，选择“风格组合—<span class="Latin" lang="en">Adobe punctuation</span>”；对于<span class="Latin" lang="en">Word</span>，在“字体”窗口，选择“高级”选项卡，在“<span class="Latin" lang="en">OpenType</span>功能”下的“样式集”下拉菜单中，选择“<span class="Latin" lang="en">1</span>”。其他软件在此不述。</p>
+                    <p>【图】</p>
+                    <p>个人推测方正字体的默认标点位置是为了适配方正自家的排版软件而设计的，这个“<span class="Latin" lang="en">Adobe punctuation</span>”特性顾名思义就是为了适配<span class="Latin" lang="en">Adobe</span>的软件的排版功能而提供的选项。<span class="Latin" lang="en">Adobe</span>的软件对标点的排版处理方式就是前文中反复介绍的那种（一些<span class="Latin" lang="en">Adobe</span>的软件允许你自定义标点排版方式），但其实不止是<span class="Latin" lang="en">Adobe</span>的软件采用这种排版算法，包括<span class="Latin" lang="en">Microsoft Word</span>在内的很多其他软件采用的也都是这种排版算法（不过一些软件不支持自定义标点排版方式）。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>包括这个网站采用的标点处理算法也是这样，可参见“这个网站的排版”。</span></p>
+                    <h3 id='更换字体尤其是标点部分的字体'>更换字体，尤其是标点部分的字体</h3>
+                    <p>这个解决方案简单、粗暴，但有效。你可以整体换成没有上述问题的字体，也可以用<span class="Latin" lang="en">InDesign</span>里的复合字体功能（或者其他软件里的类似功能）只替换标点部分的字体。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>替换时请注意字体的版权问题，理论上即便只使用一个字体的标点部分的字符，性质也等同于使用这个字体。</span></p>
+                    <h3 id='专门仔细调整标点间距'>专门仔细调整标点间距</h3>
+                    <p>利用<span class="Latin" lang="en">InDesign</span>中的标点挤压集（新版称“中文排版集”）功能或者其他软件里的类似功能，针对你选用的字体专门精心调整标点间距。<sup class='footnoteMark' id='footnote-mark-2'><a href='#footnote-number-2'>2</a></sup></p>
+                    <p>具体操作方法为：在“段落”面板中的“标点挤压集”下拉菜单中选择相应的设定。</p>
+                    <p>这个方法的普适性较好，但工作量较大。对于排版质量有较高要求的作品可以尝试。不过，考虑到软件的排版算法通常把括号、书名号、引号等归为一类，使用相同的算法处理，但同一个字体里的这些符号的位置不见得相同，因而这个方法不一定能解决所有问题，有时或许要配合下面的正则表达式方法才能较好地处理每一个标点的间距。</p>
+                    <h3 id='使用正则表达式批量设定样式'>使用正则表达式批量设定样式</h3>
+                    <p>利用<span class="Latin" lang="en">InDesign</span>中的正则表达式（软件中称“<span class="Latin" lang="en">GREP</span>样式”）或者其他软件里的类似功能，更加精确地选中特定的字符，并分别设定具体样式。</p>
+                    <p>例如，在<span class="Latin" lang="en">InDesign</span>中，对单个字符调整字符间距的效果是改变这个字符和它后面的字符的间距。于是，我们可以选中所有的“前括号”和“后括号前面的一个字符”，并减小它们的字符间距，同时选中所有的“后括号”和“前括号前面的一个字符”并增加它们的字符间距，可以在一定程度上解决上述问题。（当字符处于行首或行尾时，该方法效果不佳。）</p>
+                    <p>具体方法为：在“段落”面板右上角菜单中，选择“<span class="Latin" lang="en">GREP</span>样式”，进入相应的窗口进行设定。附：选中所有“前括号”（这里把书名号也当作括号，后同）的正则表达式是<code>[（《<cite>]</code>，选中所有“后括号前面的一个字符”的正则表达式是<code>\S(?=[）</cite>》])</code>；选中所有“后括号”的正则表达式是<code>[）</cite>》]</code>，选中所有“前括号前面的一个字符”的正则表达式是<code>\S(?=[（《<cite>])</code>。</p>
+                    <p>【图】</p>
+                    <h3 id='推动制定相关标准确立中文字体与排版软件的设计规范'>推动制定相关标准，确立中文字体与排版软件的设计规范</h3>
+                    <p>最有效也是最难的方法是建立相关的规范标准，让各字体设计公司和排版软件公司的产品能完全互相兼容。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>现有的《<cite>标点符号用法</cite>》中关于标点的位置以及调整标点间距的方法的说明太笼统，远不足以为具体的字体设计实践和计算机软件开发提供参考。</span>这样可以确保在默认状态下，任意字体在任意排版软件里的效果都至少是“正常”的，省得一次次地检查选用的字体以及相应的排版是否有问题。而对于想要做出一些多样化的效果的情况来说，也依然可以通过相应的字体特性或排版功能来为设计增加更多的个性和创意。</p>
+                    <h2 id='总结'>总结</h2>
+                    <p>以上所讨论的内容是当今中文排版实践中容易遇到的诸多问题之一。这个问题长期以来都被忽视，一直没有很好地解决。看似微不足道的标点间距，其背后隐藏的是字体设计与排版设计互相缺少配合与照应的问题，是计算机软件工具之间缺乏统一标准进而影响工作效率与质量的问题，是设计的多样性与通用性、高效性的矛盾的问题。这些深层次的原因是不应该被忽视的。</p>
+
+
+                    <hr>
+                    <section id='footnotesArea'>
+                        <h2 id='注释'>注　释</h2>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-1' class='footnoteNumber'>1</div>
+                            <p>在<span class="Latin" lang="en">The Type</span>网站的文章《<cite><a href='https://www.thetype.com/2018/03/14447/'>挤挤总是会有的吗</a></cite>》中已经指出了这一现象，但这篇文章存在以下问题：</p>
+                            <p><span class="Latin" lang="en">1.</span>文中误将《<cite>标点符号用法</cite>》中的条目理解为引号、括号、书名号应当采用“偏靠式设计”，但其实并无此种要求。《<cite>标点符号用法</cite>》第<span class="Latin" lang="en">5.1.3</span>条原文为“引号、括号、书名号中的两部分标在相应项目的两端，各占一个字的位置。其中前一半不出现在一行之末，后一半不出现在一行之首。”其中“标在相应项目的两端”指的是相对于文字的位置，并不是说这些标点在其自身的字框中应处于何种位置。对比其他几条就能发现，《<cite>标点符号用法</cite>》对标点的位置的说明的行文格式分为四部分：第一部分说明标点相对于文字的位置，比如句号、问号等“置于相应文字之后”，破折号等“标在相应项目之间”，引号、括号、书名号“标在相应项目的两端”；第二部分说明标点占几个字的位置，比如句号、问号等“占一个字位置”，破折号等“占两个字位置”，引号、括号、书名号“各占一个字位置”；第三部分说明标点应当位于其自身的字框的何处，比如句号、问号等“居左下”，破折号“上下居中”，引号、括号、书名号在这部分<em>没有说明</em>；第四部分说明标点的避头尾规则，比如句号、问号等“不出现在一行之首”，破折号在这部分没有说明（参见《<cite><a href="../Typography_of_this_Site.html#避头尾" target="_blank">这个网站的排版〔六<span class="BanZiXian">–</span>2.避头尾<span class="BanZiXian">–</span>1〕</a></cite>》），引号、括号、书名号“前一半不出现在一行之末，后一半不出现在一行之首”。可见《<cite>标点符号用法</cite>》并未要求引号、括号、书名号应当位于字框的左右两边还是中间。因而，虽然方正的字体的括号、书名号等标点位于字框靠近中间的位置有些特立独行，但并不违反《<cite>标点符号用法</cite>》，不能认为是错误。当然，不同的字体、排版软件之间功能的不统一、不兼容确实是亟待解决的大问题。</p>
+                            <p><span class="Latin" lang="en">2.</span>文中主要强调了方正的字体的标点位置靠近中间，因而与<span class="Latin" lang="en">Adobe</span>等排版软件不兼容，但其实不止有方正的字体将标点设计得靠近居中的位置，其他厂商也有类似做法的字体，并且同一厂商的不同字体之间的标点位置也可能不一样，有的紧紧贴边，有的位于中间，有的介于两者之间，这里不一一列举。假如以《<cite>标点符号用法</cite>》为准绳的话，对这些不同的做法确实无法指摘。<a href='#footnote-mark-1' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-2' class='footnoteNumber'>2</div>
+                            <p>参考<span class="Latin" lang="en">The Type</span>网站的文章《<cite><a href='https://www.thetype.com/2018/04/14734/'>针对<span class="Latin" lang="en">Adobe InDesign</span>标点挤压中文默认设置的反馈</a></cite>》会对此很有帮助。<a href='#footnote-mark-2' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                    </section>
+                </article>
+                <!-- 页尾的二级页面模板由此开始 -->
+                <footer>
+                    <small>&#8197;如果您喜欢这篇文章，欢迎您给我￥<a href="../Donate.html" target="_blank" style="font-weight: 700;">打赏</a>！</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small>©&#8197;<a href="../Copyright.html" target="_blank">版权声明</a>&emsp;＠&#8197;<a href="../Contact_and_Feedback.html" target="_blank">联系与反馈</a>&emsp;♡&#8197;<a href="../Acknowledgements.html" target="_blank">致谢</a></small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing"><span class="Latin">↓</span></small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small style="font-weight: 700;" id="footerWebsiteName"><a href="../Introduction.html" target="_blank">字无字<span class="Latin">ú–Typography</span></a></small>
+                    <small>张擎天的个人网站</small>
+                    <small>分享排版设计</small>
+                    <small>以及更多</small>
+                    <small><span class="ShengLyueHao">……</span></small>
+                </footer>
+                <!-- 页尾的二级页面模板到此结束 -->
+            </div>
+
+        </main>
+    </div>
+
+    <!-- 脚本的二级页面模板由此开始 -->
+    <script src="../scripts/u-Typography.js"></script>
+    <script src="../scripts/han.js"></script>
+    <script>
+        changeTypeMenu_initialActive()
+        Han(document.querySelector('.entry'))
+            .renderJiya()
+            .renderHWS()
+    </script>
+    <!-- 脚本的二级页面模板到此结束 -->
+
+</body>
+
+</html>

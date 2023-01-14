@@ -734,6 +734,7 @@ html {
 	position: absolute;
 	top: 8rem;
 	width: 36rem;
+	text-align: center;
 	/* border-bottom: var(--colour-iden) solid 6px; */
 	/* padding-bottom: 0.75rem; */
 }
@@ -995,19 +996,19 @@ article h-char.biaodian > h-inner {
 }
 
 h1 {
-	display: inline-block;
+	display: inline;
 	font-family: var(--font-song);
 	font-weight: 700;
-	font-size: 3rem;
-	line-height: 4rem;
+	/* font-size: 3rem;
+	line-height: 4rem; */
 	/* position: relative; */
 	/* top: -10px; */
-	height: 3rem;
+	/* height: 3rem; */
 	/* width: fit-content; */
 	width: 100%;
-	height: fit-content;
-	margin-bottom: 1rem;
-	text-align: center;
+	/* height: fit-content; */
+	/* margin-bottom: 1rem; */
+	/* text-align: center; */
 }
 .optionalTitleBreak {
 	display: none;
@@ -1642,8 +1643,8 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		left: 7rem;
 	}
 	h1 {
-		font-size: 3rem;
-		line-height: 4rem;
+		font-size: 2.4rem;
+		line-height: 3.2rem;
 	}
 	/* #caption {
 		font-size: 0.9rem;
@@ -1701,8 +1702,8 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		width: 30rem;
 	}
 	h1 {
-		font-size: 2.5rem;
-		line-height: 3.3rem;
+		font-size: 2rem;
+		line-height: 2.8rem;
 		margin-bottom: 0.8rem;
 		height: 2.5rem;
 	}
@@ -1784,8 +1785,8 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	}
 	h1 {
 		margin: 0 auto;
-		font-size: 2.25rem;
-		line-height: 3rem;
+		font-size: 1.8rem;
+		line-height: 2.4rem;
 		margin-bottom: 0.75rem;
 		height: 2.25rem;
 	}
@@ -1980,8 +1981,8 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		text-align: center;
 	}
 	h1 {
-		font-size: 2.25rem;
-		line-height: 3rem;
+		font-size: 1.8rem;
+		line-height: 2.4rem;
 		margin-bottom: 0.75rem;
 		height: 2.25rem;
 		display: inline;
@@ -2062,7 +2063,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		/* left: 15rem; */
 		position: static;
 		margin: 0 auto;
-		margin-top: 5rem;
+		margin-top: 4rem;
 		padding-bottom: 4rem;
 	}
 	article {
@@ -2175,11 +2176,12 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		width: 100%;
 		padding-top: 2rem;
 		text-align: center;
+		margin-bottom: 4rem;
 	}
 	h1 {
-		font-size: 2rem;
-		line-height: 3rem;
-		margin-bottom: 0.75rem;
+		font-size: 1.8rem;
+		line-height: 2.2rem;
+		/* margin-bottom: 0.75rem; */
 		height: 2rem;
 		display: inline;
 	}
