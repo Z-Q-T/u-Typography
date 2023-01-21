@@ -187,8 +187,8 @@ document.getElementById('changeTypeMenu-BianZhu-HEI').onclick = function changef
 }
 
 // 打开／关闭更换字体菜单
-let button = document.getElementById("changeTypeMenu-Button");
-button.onclick = function () {
+let typeButton = document.getElementById("changeTypeMenu-Button");
+typeButton.onclick = function () {
     let menu = document.getElementById("changeTypeMenu");
     let menuVisibility = menu.style.visibility;
     let windowWidth = window.innerWidth;

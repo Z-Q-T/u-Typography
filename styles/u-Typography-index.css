@@ -17,20 +17,20 @@ See the Mulan PSL v2 for more details. */
 /* 正文黑体 */
 @font-face {
 	font-family: "HEI";
-	src: local("HYQiHei 55S"), local("HYQiHei-55S Book"), local("HYQiHei 60S"), local("HYQiHei-60S Regular"),
-		local("HarmonyOS Sans SC"), local("MiSans Regular"),
-		local("Source Han Sans SC"), local("Noto Sans SC"),
-		local("Source Han Sans CN");/*汉仪旗黑分别是新版和旧版的写法*/
+	src: local("HYQiHei 55S"), local("HYQiHei-55S Book"), local("HYQiHei 60S"),
+		local("HYQiHei-60S Regular"), local("HarmonyOS Sans SC"),
+		local("MiSans Regular"), local("Source Han Sans SC"),
+		local("Noto Sans SC"), local("Source Han Sans CN"); /*汉仪旗黑分别是新版和旧版的写法*/
 	font-weight: 400;
 }
 /* 标题黑体 */
 @font-face {
 	font-family: "HEI";
-	src:local("HYQiHei 75S"), local("HYQiHei-75S Bold"),local("HYQiHei 70S"), local("HYQiHei-70S DemiBold"),
-		local("HarmonyOS Sans SC Bold"), local("HarmonyOS Sans SC Medium"),
-		local("MiSans Demibold"), local("MiSans Semibold"),
-		local("Source Han Sans SC Bold"), local("Noto Sans SC Bold"),
-		local("Source Han Sans CN Bold");
+	src: local("HYQiHei 75S"), local("HYQiHei-75S Bold"), local("HYQiHei 70S"),
+		local("HYQiHei-70S DemiBold"), local("HarmonyOS Sans SC Bold"),
+		local("HarmonyOS Sans SC Medium"), local("MiSans Demibold"),
+		local("MiSans Semibold"), local("Source Han Sans SC Bold"),
+		local("Noto Sans SC Bold"), local("Source Han Sans CN Bold");
 	font-weight: 700;
 }
 /* 正文标点黑体 */
@@ -144,7 +144,6 @@ See the Mulan PSL v2 for more details. */
 	font-style: italic;
 }
 
-
 /* ==代码等宽体== */
 
 @font-face {
@@ -214,6 +213,7 @@ html {
 	text-rendering: geometricPrecision;
 	background-color: var(--colour-paper);
 	font-synthesis: none;
+	scroll-behavior: smooth;
 }
 
 *,
@@ -299,7 +299,6 @@ html {
 	/* animation: threeLinesHover-3 200ms ease-in-out; */
 	animation-delay: 200ms;
 }
-
 @keyframes threeLinesHover {
 	0%,
 	100% {
@@ -309,43 +308,53 @@ html {
 		transform: scaleX(60%);
 	}
 }
+#contentMenu-Button:hover {
+	cursor: pointer;
+}
 #contentMenu {
-	width: 10rem;
-	height: 20rem;
+	width: fit-content;
+	height: fit-content;
 	background-color: var(--colour-paper);
-	/* background-color: black; */
 	position: absolute;
-	/* margin: 5px; */
 	top: 0px;
 	left: 0px;
-	/* border-radius: 5px; */
-	border-right: 1px solid var(--colour-dark-grey-2);
-	border-bottom: 1px solid var(--colour-dark-grey-2);
+	/* border-right: 1px solid var(--colour-dark-grey-2);
+	border-bottom: 1px solid var(--colour-dark-grey-2); */
 	opacity: 0;
-	/* display: none; */
-	visibility: hidden;
+	/* visibility: hidden; */
+	/*这些用HTML和JavaScript来控制*/
 	transition: all 200ms ease-in-out;
 	z-index: 5;
-	font-size: 0.75rem;
-	font-family: var(--font-hei);
-	font-weight: 400;
-	transition-delay: 50ms;
+	padding: 1rem;
+	box-shadow: 0 0 10px var(--colour-paper);
 }
-#contentMenu-Button:hover + #contentMenu {
+.contentMenuList {
+	font-size: 0.75rem;
+	font-family: var(--font-song);
+	font-weight: 600;
+	margin: 0.5rem 0 1rem;
+	line-height: 0.75rem;
+	/* background: var(--colour-paper); */
+}
+.contentMenuList a:hover,
+#toc-backToMainTitle a:hover,
+#toc-skipToFootnote a:hover {
+	color: var(--colour-1);
+	transition-property: color;
+	transition-timing-function: ease-in-out;
+	transition-duration: 200ms;
+	cursor: pointer;
+	background: transparent;
+	background-size: 0%;
+}
+/* #contentMenu-Button:hover + #contentMenu {
 	opacity: 1;
 	visibility: visible;
-	/* display: block; */
 	top: 60px;
 	transition: all 200ms ease-in-out;
 	transition-delay: 100ms;
-}
-#contentMenu:hover {
-	opacity: 1;
-	visibility: visible;
-	/* display: block; */
-	top: 60px;
-	/* transition: all 200ms ease-in-out; */
-}
+}*/
+
 #contentMenu-Mask {
 	position: absolute;
 	width: 10rem;
@@ -877,6 +886,7 @@ section {
 	margin: 3rem 0 4rem 0;
 	position: relative;
 	padding-bottom: 3rem;
+	scroll-margin-top: 3rem;
 }
 .sectionInner-Seperator {
 	background-color: var(--colour-light-grey-1);
@@ -1535,7 +1545,7 @@ h-hws[hidden] {
 	section:first-child {
 		margin-top: 5rem;
 	}
-	#mainContent > section:first-child > .sectionInner-Seperator{
+	#mainContent > section:first-child > .sectionInner-Seperator {
 		display: block;
 	}
 	#section-Additional {

@@ -48,7 +48,7 @@ function changeTypeMenu_switchColour(active, inactive) {
 
 // 分类换宋体
 document.getElementById('changeTypeMenu-FenLei-SONG').onclick = function changefont_FenLei_SONG() {
-    document.body.querySelectorAll("h2").forEach((e) => {
+    document.body.querySelectorAll("h2, .contentMenuList").forEach((e) => {
         e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
         e.style.fontWeight = "700";
     });//换中文
@@ -57,7 +57,7 @@ document.getElementById('changeTypeMenu-FenLei-SONG').onclick = function changef
     //     e.style.fontWeight = "400";
     //     e.style.fontSize = "1.05em";
     // });//换西文
-    document.body.querySelectorAll("h2 h-char.biaodian > h-inner").forEach((e) => {
+    document.body.querySelectorAll("h2 h-char.biaodian > h-inner, .contentMenuList h-char.biaodian > h-inner").forEach((e) => {
         e.style.fontFamily = "SONG-BiaoDian" + "," + "Noto Serif SC";
         e.style.fontWeight = "700";
     });//换标点
@@ -66,7 +66,7 @@ document.getElementById('changeTypeMenu-FenLei-SONG').onclick = function changef
 }
 //分类换黑体
 document.getElementById('changeTypeMenu-FenLei-HEI').onclick = function changefont_FenLei_HEI() {
-    document.body.querySelectorAll("h2").forEach((e) => {
+    document.body.querySelectorAll("h2, .contentMenuList").forEach((e) => {
         e.style.fontFamily = "HEI" + "," + "Noto Sans SC";
         e.style.fontWeight = "700";
     });//换中文
@@ -75,7 +75,7 @@ document.getElementById('changeTypeMenu-FenLei-HEI').onclick = function changefo
     //     e.style.fontWeight = "400";
     //     e.style.fontSize = "1.1em";
     // });//换西文
-    document.body.querySelectorAll("h2 h-char.biaodian > h-inner").forEach((e) => {
+    document.body.querySelectorAll("h2 h-char.biaodian > h-inner, .contentMenuList h-char.biaodian > h-inner").forEach((e) => {
         e.style.fontFamily = "HEI-BiaoDian" + "," + "Noto Sans SC";
         e.style.fontWeight = "700";
     });//换标点
@@ -156,12 +156,11 @@ document.getElementById('changeTypeMenu-FuTi-HEI').onclick = function changefont
 
 
 // 打开／关闭更换字体菜单
-let button = document.getElementById("changeTypeMenu-Button");
-
-button.onclick = function () {
+let typeButton = document.getElementById("changeTypeMenu-Button");
+typeButton.onclick = function () {
     let menu = document.getElementById("changeTypeMenu");
     let menuVisibility = menu.style.visibility;
-    let size = window.innerWidth;
+    // let size = window.innerWidth;
     // if (size < 900) {
     if (menuVisibility == "hidden") {
         menu.style.visibility = "visible";
@@ -184,7 +183,22 @@ button.onclick = function () {
     //     }
     // }
 }
-
+// 打开／关闭分类目录菜单
+let menuButton = document.getElementById("contentMenu-Button");
+menuButton.onclick = function () {
+    let menu = document.getElementById("contentMenu");
+    let menuVisibility = menu.style.visibility;
+    // console.log(menu);
+    if (menuVisibility == "hidden") {
+        menu.style.visibility = "visible";
+        menu.style.opacity = "1";
+        menu.style.top = "60px";
+    } else {
+        menu.style.visibility = "hidden";
+        menu.style.opacity = "0";
+        menu.style.top = "0px";
+    }
+}
 // 按照窗口尺寸自动适配字体菜单的位置
 // function changeMenuPosition() {
 //     let menu = document.getElementById("changeTypeMenu");
