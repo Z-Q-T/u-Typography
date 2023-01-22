@@ -862,6 +862,15 @@ html {
 	transition-duration: 200ms;
 	cursor: pointer;
 }
+#tableOfContent li a:active,
+#toc-backToMainTitle a:active,
+#toc-skipToFootnote a:active {
+	color: var(--colour-2);
+	transition-property: color;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0ms;
+	cursor: pointer;
+}
 #tableOfContent li a {
 	/* line-height: 2em; */
 	height: fit-content;
@@ -1336,6 +1345,9 @@ small {
 }
 .footnoteEntry {
 	margin: 0rem auto;
+}
+#footnotesArea {
+	scroll-margin-top: 4rem;
 }
 #footnotesArea p {
 	font-size: 0.75rem;

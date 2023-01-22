@@ -431,6 +431,7 @@ chineseGridLine();
 //     })
 // })
 
+// 点击放大的图片让它复原
 window.addEventListener("click", resizeImage, false);
 function resizeImage(e){
 // window.onclick = function (e) {

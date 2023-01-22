@@ -199,42 +199,29 @@ menuButton.onclick = function () {
         menu.style.top = "0px";
     }
 }
-// 按照窗口尺寸自动适配字体菜单的位置
-// function changeMenuPosition() {
-//     let menu = document.getElementById("changeTypeMenu");
-//     let menuVisibility = menu.style.visibility;
-//     let size = window.innerWidth;
-//     // console.log(size);
-//     if (menuVisibility == "hidden") {
-//         if (size < 900) {
-//             menu.style.bottom = "auto";
-//             menu.style.top = "60px";
-//             menu.style.left = "auto";
-//             menu.style.right = "15px";
-//         } else {
-//             menu.style.bottom = "55px";
-//             menu.style.top = "auto";
-//             menu.style.left = "10px";
-//             menu.style.right = "auto";
-//         }
-//     } else {
-//         if (size < 900) {
-//             menu.style.bottom = "auto";
-//             menu.style.top = "70px";
-//             menu.style.left = "auto";
-//             menu.style.right = "15px";
-//         } else {
-//             menu.style.bottom = "65px";
-//             menu.style.top = "auto";
-//             menu.style.left = "10px";
-//             menu.style.right = "auto";
-//         }
-//     }
-// }
-// // 将事件侦听器函数附加到窗口的resize事件
-// window.addEventListener("resize", changeMenuPosition);
-// // 第一次调用该函数
-// changeMenuPosition();
+
+
+// 点击分类目录菜单项后自动关闭目录
+window.addEventListener("click", closeMenuAfterClick, false);
+function closeMenuAfterClick(e){
+// window.onclick = function (e) {
+    console.log(e);
+    if (e.target.matches('#contentMenu a') || e.target.matches('#contentMenu span')) {
+        // 下面是直接用上面的代码的
+        let menu = document.getElementById("contentMenu");
+        let menuVisibility = menu.style.visibility;
+        if (menuVisibility == "hidden") {
+            menu.style.visibility = "visible";
+            menu.style.opacity = "1";
+            menu.style.top = "60px";
+        } else {
+            menu.style.visibility = "hidden";
+            menu.style.opacity = "0";
+            menu.style.top = "0px";
+        }
+    }
+}
+
 
 // 在小尺寸下让行长等于字号的整数倍
 function chineseGridLine() {

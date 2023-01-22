@@ -314,7 +314,6 @@ html {
 #contentMenu {
 	width: fit-content;
 	height: fit-content;
-	background-color: var(--colour-paper);
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -325,27 +324,63 @@ html {
 	/*这些用HTML和JavaScript来控制*/
 	transition: all 200ms ease-in-out;
 	z-index: 5;
-	padding: 1rem;
-	box-shadow: 0 0 10px var(--colour-paper);
+	padding: 0.5rem;
 }
 .contentMenuList {
 	font-size: 0.75rem;
 	font-family: var(--font-song);
 	font-weight: 600;
-	margin: 0.5rem 0 1rem;
 	line-height: 0.75rem;
+	margin: 0.5rem 0;
+	/* border: 1px solid var(--colour-dark-grey-2); */
+	padding: 0.25rem 0.5rem;
+	border-radius: 1rem;
+	background-color: var(--colour-paper);
+	/* box-shadow: 0 0 10px var(--colour-paper); */
+	width: 4rem;
+text-align: center;
+	box-shadow: 0 0 10px var(--colour-shadow);
+	display: block;
 	/* background: var(--colour-paper); */
 }
-.contentMenuList a:hover,
-#toc-backToMainTitle a:hover,
-#toc-skipToFootnote a:hover {
+
+.contentMenuList:hover{
 	color: var(--colour-1);
 	transition-property: color;
 	transition-timing-function: ease-in-out;
 	transition-duration: 200ms;
 	cursor: pointer;
-	background: transparent;
-	background-size: 0%;
+	/* background-color: var(--colour-button-hover); */
+	/* background: transparent; */
+	/* background-size: 0%; */
+}
+.contentMenuList:active {
+	color: var(--colour-2);
+	transition-property: color;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0ms;
+	cursor: pointer;
+	/* background-color: var(--colour-button-hover); */
+	/* background: transparent; */
+	/* background-size: 0%; */
+}
+#contentMenu-backToTop,
+#contentMenu-skipToAdditional {
+	transform: scaleX(2.5);
+	font-family: var(--font-song-biaodian) !important;
+	font-weight: 600 !important;
+	font-size: 0.3rem !important;
+	line-height: 0.5rem !important;
+margin: 0 auto;
+width: fit-content;
+	display: block;
+	/* position: relative;
+	top: 0px;
+	margin: 0 auto;
+	width: 4rem;
+	height: 1rem;
+	left: auto; */
+	/* left: calc(50% - 40px); */
 }
 /* #contentMenu-Button:hover + #contentMenu {
 	opacity: 1;
