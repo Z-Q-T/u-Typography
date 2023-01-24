@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="张擎天（Zhang Qingtian）">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--开头通用模板到此结束-->
+
+    <meta name="description" content="《亲爱的邦尼，亲爱的沃洛佳》的排版设计">
+    <title>《亲爱的邦尼，亲爱的沃洛佳》的排版设计 ｜ 字无字 ú–Typography</title>
+
+    <!-- 字体服务的通用模板由此开始 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet"><!-- 思源黑体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"> <!-- Source Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet"> <!-- 思源宋体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Source Serif -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <!-- Source Code -->
+    <!-- 字体服务的通用模板到此结束 -->
+
+    <!--图标、样式、链接打开方式的二级页面模板由此开始-->
+    <link rel="shortcut icon" href="../images/字无字_网页图标.png" type="image/x-icon">
+    <link rel="stylesheet" media="all" href="../styles/han.css">
+    <link rel="stylesheet" href="../styles/u-Typography.css" type="text/css">
+    <link rel="stylesheet" href="../styles/additional/u-Typography-A1-additional.css" type="text/css">
+    <!-- <link rel="stylesheet" href="../styles/debug.css" type="text/css"> -->
+    <base target="_self">
+    <!--图标、样式、链接打开方式的二级页面模板到此结束-->
+
+</head>
+
+<body>
+
+    <div id="whole">
+        <!--导航栏的二级页面模板由此开始-->
+        <div id="bar">
+            <div id="decoLine"></div>
+            <a href="../index.html" id="backToHomePage">
+                <img id="backArrow" src="../images/字无字_返回首页箭头-图标.png" alt="返回首页｜back to home page">
+                <img id="home" src="../images/字无字_返回首页房子-图标.png" alt="返回首页｜back to home page">
+            </a>
+            <picture id="logotype">
+                <source srcset="../images/字无字_横竖.png" media="(max-width: 680px)">
+                <source srcset="../images/字无字_横.png" media="(max-width: 1040px)">
+                <img id="logo" src="../images/字无字_竖.png" alt="“字无字”的标志｜logo of ú–typography">
+            </picture>
+            <div id="changeTypeMenu-Button"><svg id="changeTypeMenu-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 4">
+                    <g id="changeTypeMenu-ButtonSVGgraphic">
+                        <circle cx="2" cy="2" r="1.5" />
+                        <circle cx="9" cy="2" r="1.5" />
+                        <circle cx="16" cy="2" r="1.5" />
+                    </g>
+                </svg></div>
+            <!-- <div id="changeTypeMenu-Hint">该功能在一些情况下会额外下载所需的字体<br>这可能消耗更多的流量</div> -->
+            <menu id="changeTypeMenu" style="visibility: hidden; opacity: 0; ">
+                <div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">标题</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-BiaoTi-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-BiaoTi-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">正文</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-ZhengWen-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-ZhengWen-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">补充</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-BianZhu-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-BianZhu-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>
+            </menu>
+            <div><a id="pageTypography-Button" href="../Typography_of_this_Site.html" target="_blank">¶</a>
+            </div>
+        </div>
+        <!--导航栏的二级页面模板到此结束-->
+
+        <main id="page">
+            <header id="mainTitleArea">
+                <div id="metaInfo">
+                    <div id="index">〚&#8197;实践案例&#8197;·&#8197;壹&#8197;〛
+                    </div>
+                    <div class="metaInfo-Seperator"></div>
+                    <div id="time">
+                        <ul>
+                            <li><time pubdate datetime="2023-01-25"><span class="number">2023</span>年<span class="number">1</span>月<span class="number">25</span>日</time>&emsp;发布</li>
+                        </ul>
+                    </div>
+                    <div class="metaInfo-Seperator"></div>
+                    <div id="author">张擎天</div>
+                </div>
+                <!-- <div id="decoLine"></div> -->
+                <div id="title">
+                    <h1>《亲爱的邦尼，亲爱的沃洛佳》的排版设计</h1>
+                </div>
+                <!-- <div id="caption"><span class="tabulation">○&#9;</span>“我认为精心排印的文字和雕塑或绘画一样美观。”<sup class='footnoteMark' id='footnote-mark-0'><a href='#footnote-number-0'>*</a></sup>&emsp;<span class="PoZheHao">——</span>&#65279;埃里克<span class="JianGeHao">·</span>吉尔</div> -->
+            </header>
+            <div id="toc-PlaceHolder"></div>
+            <!-- 切换目录的按钮模板由此开始 -->
+            <div id="toc-Switcher">
+                <svg id="tocSwitcher-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 4">
+                    <g id="tocSwitcher-ButtonSVGgraphic">
+                        <path d="M4,4a2.38,2.38,0,0,1-1.67-.69L0,.38.56,0,3,2.64a1.46,1.46,0,0,0,2,0L7.44,0,8,.38,5.67,3.31A2.38,2.38,0,0,1,4,4Z" />
+                    </g>
+                </svg>
+            </div>
+            <!-- 切换目录的按钮模板到此结束 -->
+            <div id="toc-Container">
+                <nav id="tableOfContent">
+                    <ul>
+                        <div id="toc-backToMainTitle"><a href="#">∧</a></div>
+                        <li class="tocH2"><a href="#宏观排版设计" target="_self">一、宏观排版设计</a></li>
+                        <li class="tocH2"><a href="#微观排版设计" target="_self">二、微观排版设计</a></li>
+                        <li class="tocH2"><a href="#尾声" target="_self">三、尾声</a></li>
+                        <!-- <div id="toc-skipToFootnote"><a href="#footnotesArea">∨</a></div> -->
+                    </ul>
+                </nav>
+            </div>
+            <div id="mainContent">
+                <article>
+                    <p>《<cite>亲爱的邦尼，亲爱的沃洛佳：纳博科夫<span class="YiZiXian">—</span>威尔逊通信集，<span class="Latin" lang="en">1940</span><span class="YiZiXian">—</span><span class="Latin" lang="en">1971</span></cite>》（<span class="Latin" lang="en"><i>Dear Bunny, Dear Volodya: The Nabokov–Wilson Letters, 1940–1971</i></span>）由上海译文出版社在<span class="Latin" lang="en">2022</span>年<span class="Latin" lang="en">12</span>月出版。</p>
+                    <figure><img src="../images/Z1/《亲爱的邦尼，亲爱的沃洛佳》立体封.jpg"></figure>
+                    <div class="TuZhu">《<cite>亲爱的邦尼，亲爱的沃洛佳：纳博科夫<span class="YiZiXian">—</span>威尔逊通信集，<span class="Latin" lang="en">1940</span><span class="YiZiXian">—</span><span class="Latin" lang="en">1971</span></cite>》封面效果图。&emsp;©&ensp;上海译文出版社</div>
+                    <p>在本书的中文版的设计中，我参考英文原版的做法，尽量保留书信原有格式，同时又针对文本结构的特点，融入个人的独创性想法，完成了包括封面在内的整本书的设计。</p>
+                    <p>下面和大家分享一下本书正文的排版设计思路。</p>
+                    <h2 id='宏观排版设计'>一、宏观排版设计</h2>
+                    <p>在最初的方案中，我尝试了四栏的布局：正文占满四栏，注释占右侧三栏，信件的祝福语向右对齐到第三、四栏的边界。</p>
+                    <div class="TuTi">初版方案效果示意</div>
+                    <figure>
+                        <img src="../images/Z1/图示_最初方案1.jpg">
+                        <img src="../images/Z1/图示_最初方案2.jpg">
+                        <img src="../images/Z1/图示_最初方案3.jpg">
+                        <img src="../images/Z1/图示_最初方案4.jpg">
+                    </figure>
+                    <div class="TuZhu">图片仅用于展示排版设计，其中的文字内容与最终成书不同。所有内容请以最终成书为准。</div>
+                    <div class="TuTi">初版方案网格结构示意</div>
+                    <figure>
+                        <img src="../images/Z1/图示_最初方案1-辅助线.jpg">
+                        <img src="../images/Z1/图示_最初方案3-辅助线.jpg">
+                    </figure>
+                    <div class="TuZhu">红线为四栏分隔线，深蓝线为段首缩进线，绿线为四个注释字与三个正文字的对齐线，浅灰线为正文的横向文字网格，横向浅蓝色区域为正文的纵向文字网格。（图片仅用于展示排版设计，其中的文字内容与最终成书不同。所有内容请以最终成书为准。）</div>
+                    <p>其中，正文字号为<span class="Latin" lang="en">10</span>点，一行<span class="Latin" lang="en">28</span>个字（每栏<span class="Latin" lang="en">7</span>个字），注释字号为<span class="Latin" lang="en">7.5</span>点，一行恰好也是<span class="Latin" lang="en">28</span>个字。（正文和注释的字号比例为<span class="Latin" lang="en">4:3</span>，二者所占栏数之比也是<span class="Latin" lang="en">4:3</span>。）注释段首缩进<span class="Latin" lang="en">4</span>个字，宽度正好等于<span class="Latin" lang="en">3</span>个正文字。注释内的引文继续缩进<span class="Latin" lang="en">4</span>个字。</p>
+                    <p>在与编辑讨论之后，得到反馈意见，称希望能减少页面的空白，以便节省版面。于是我做出相应的调整，反复修改几轮后确定了最终设计。</p>
+                    <p>在最终方案中，正文一行增加到<span class="Latin" lang="en">29</span>个字，相当于在原有的四栏布局上向外扩展<span class="Latin" lang="en">1</span>个字。同时，注释一行增加到<span class="Latin" lang="en">32</span>个字，相当于在原有的三栏上向外扩展<span class="Latin" lang="en">4</span>个字（相当于正文<span class="Latin" lang="en">3</span>个字），注释的段首缩进改为常规的<span class="Latin" lang="en">2</span>个字。版心和边距也做了调整。原书页码与版心之间空<span class="Latin" lang="en">1</span>个字。</p>
+                    <div class="TuTi">最终方案效果示意</div>
+                    <figure>
+                        <img src="../images/Z1/图示_最终方案1.jpg">
+                        <img src="../images/Z1/图示_最终方案2.jpg">
+                        <img src="../images/Z1/图示_最终方案3.jpg">
+                        <img src="../images/Z1/图示_最终方案4.jpg">
+                    </figure>
+                    <div class="TuZhu">图片仅用于展示排版设计，其中的文字内容与最终成书不同。所有内容请以最终成书为准。</div>
+                    <div class="TuTi">最终方案网格结构示意</div>
+                    <figure>
+                        <img src="../images/Z1/图示_最终方案1-辅助线.jpg">
+                        <img src="../images/Z1/图示_最终方案3-辅助线.jpg">
+                    </figure>
+                    <div class="TuZhu">红线为四栏分隔线，深蓝线为段首缩进线，绿线为四个注释字与三个正文字的对齐线，浅灰线为正文的横向文字网格，横向浅蓝色区域为正文的纵向文字网格。（图片仅用于展示排版设计，其中的文字内容与最终成书不同。所有内容请以最终成书为准。）</div>
+                    <p>扉页、篇章页等也遵循上述网格系统。</p>
+                    <figure>
+                        <img src="../images/Z1/图示_最终方案扉页篇章页.jpg">
+                    </figure>
+                    <h2 id='微观排版设计'>二、微观排版设计</h2>
+                    <p>书籍的主要字体选用了思源宋体，该款字体字面饱满，中宫放松，大小字号都清晰易读。与之搭配的西文字体选择了<span class="Latin" lang="en">Source Serif Pro</span>。事实上，思源宋体自带的西文部分就是基于<span class="Latin" lang="en">Source Serif Pro</span>修改的，它加大了字形，调整了字重和粗细对比，减弱了部分斜线的角度，使其在与中文混排时能更和谐，但在单独排版西文时它的效果不如原生的<span class="Latin" lang="en">Source Serif Pro</span>。因为本书中有大量大段的拉丁字母、西里尔字母、希腊字母的文本，所以我选择将西文部分换为原生的<span class="Latin" lang="en">Source Serif Pro</span>字体。</p>
+                    <p>书籍的第二字体选用了方正刻本仿宋，它的字形与灰度和思源宋体的搭配较好。并且，这个字体不像常见的仿宋体那样字面偏瘦长，这有助于在不额外调整字距的情况下保持良好的字距，有利于流畅阅读。（例如第<span class="Latin" lang="en">82</span>封）</p>
+                    <p>&nbsp;</p>
+                    <p>文本的标点间距设置得较为宽松，在一些通常采用密排的场合，仍然会稍稍增加字符间距。</p>
+                    <p>文本的标点避头尾采用较为宽松的策略，这样可以避免一行内的字距被过分地拉开。</p>
+                    <p>&nbsp;</p>
+                    <p>正文中的注释上标经过专门调整，使其与后方文字的距离稍稍大于与前方文字（即被注释内容）的距离。</p>
+                    <p>非注释的上标经过专门调整，使其与注释上标相比，大小稍大，高低偏低，避免与注释上标混淆。</p>
+                    <p>&nbsp;</p>
+
+                    <h2 id='尾声'>三、尾声</h2>
+                    <p>虽然已经尽力关注每一个细节，但纵观最终成书，在排版上仍然难免存在一些失误。有些是我在设计时没考虑周到，有些是排版员在操作时的疏忽。好的设计不是靠一个人就能做到的，与书籍生产相关的每一个环节，比如字体设计、软件开发、排版设计、排版操作、编辑、校对、印刷、装订等等，都会影响到最终设计成品的质量。优秀的设计造物需要我们所有人共同的努力。</p>
+
+                    <!-- <hr> -->
+                    <!-- <section id='footnotesArea'>
+                        <h2 id='注释'>注　释</h2>
+                        
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-2' class='footnoteNumber'>2</div>
+                            <p>。<a href='#footnote-mark-2' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                    </section> -->
+                </article>
+                <!-- 页尾的二级页面模板由此开始 -->
+                <footer>
+                    <small>&#8197;如果您喜欢这篇文章，欢迎您给我￥<a href="../Donate.html" target="_blank" style="font-weight: 700;">打赏</a>！</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small>©&#8197;<a href="../Copyright.html" target="_blank">版权声明</a>&emsp;＠&#8197;<a href="../Contact_and_Feedback.html" target="_blank">联系与反馈</a>&emsp;♡&#8197;<a href="../Acknowledgements.html" target="_blank">致谢</a></small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing"><span class="Latin">↓</span></small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small style="font-weight: 700;" id="footerWebsiteName"><a href="../Introduction.html" target="_blank">字无字<span class="Latin">ú–Typography</span></a></small>
+                    <small>张擎天的个人网站</small>
+                    <small>分享排版设计</small>
+                    <small>以及更多</small>
+                    <small><span class="ShengLyueHao">……</span></small>
+                </footer>
+                <!-- 页尾的二级页面模板到此结束 -->
+            </div>
+
+        </main>
+    </div>
+
+    <!-- 脚本的二级页面模板由此开始 -->
+    <script src="../scripts/u-Typography.js"></script>
+    <script src="../scripts/han.js"></script>
+    <script>
+        changeTypeMenu_initialActive()
+        Han(document.querySelector('.entry'))
+            .renderJiya()
+            .renderHWS()
+    </script>
+    <!-- 脚本的二级页面模板到此结束 -->
+
+</body>
+
+</html>

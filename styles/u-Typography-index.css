@@ -315,8 +315,8 @@ html {
 	width: fit-content;
 	height: fit-content;
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 60px;
+	left: 10px;
 	/* border-right: 1px solid var(--colour-dark-grey-2);
 	border-bottom: 1px solid var(--colour-dark-grey-2); */
 	opacity: 0;
@@ -324,7 +324,11 @@ html {
 	/*这些用HTML和JavaScript来控制*/
 	transition: all 200ms ease-in-out;
 	z-index: 5;
-	padding: 0.5rem;
+	padding: 0px;
+	background-color: var(--colour-paper);
+border-radius: 4px;
+	border: 1px solid var(--colour-dark-grey-2);
+	box-shadow: 0 0 10px var(--colour-shadow);
 }
 .contentMenuList {
 	font-size: 0.75rem;
@@ -338,13 +342,13 @@ html {
 	background-color: var(--colour-paper);
 	/* box-shadow: 0 0 10px var(--colour-paper); */
 	width: 4rem;
-text-align: center;
-	box-shadow: 0 0 10px var(--colour-shadow);
+	text-align: center;
+	/* box-shadow: 0 0 10px var(--colour-shadow); */
 	display: block;
 	/* background: var(--colour-paper); */
 }
 
-.contentMenuList:hover{
+.contentMenuList:hover {
 	color: var(--colour-1);
 	transition-property: color;
 	transition-timing-function: ease-in-out;
@@ -358,7 +362,7 @@ text-align: center;
 	color: var(--colour-2);
 	transition-property: color;
 	transition-timing-function: ease-in-out;
-	transition-duration: 0ms;
+	transition-duration: 10ms;
 	cursor: pointer;
 	/* background-color: var(--colour-button-hover); */
 	/* background: transparent; */
@@ -371,8 +375,8 @@ text-align: center;
 	font-weight: 600 !important;
 	font-size: 0.3rem !important;
 	line-height: 0.5rem !important;
-margin: 0 auto;
-width: fit-content;
+	margin: 0 auto;
+	width: fit-content;
 	display: block;
 	/* position: relative;
 	top: 0px;

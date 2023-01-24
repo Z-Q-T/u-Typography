@@ -1160,17 +1160,17 @@ figure img {
 }
 .TuTi,
 .TuZhu {
-	text-align: center;
 	text-indent: 0;
-	font-size: 0.75rem;
-	line-height: 1rem;
-	position: relative;
+	line-height: 1.2rem;
+	/* position: relative; */
 	margin: 0;
-	width: 100%;
+	/* width: 100%; */
 	/* left: 50%; */
 	/* transform: translateX(-50%); */
 }
 .TuTi {
+	text-align: center;
+	font-size: 0.8rem;
 	margin-top: 1.5rem;
 	margin-bottom: -1rem;
 	color: black;
@@ -1178,8 +1178,12 @@ figure img {
 /* font-family: var(--font-song); */
 /* font-weight: 700; */
 .TuZhu {
+	text-align: justify;
+	font-size: 0.75rem;
 	margin-top: -1rem;
 	margin-bottom: 1.5rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
 	color: var(--colour-dark-grey-1);
 }
 table {
