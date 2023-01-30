@@ -1262,7 +1262,7 @@ article a {
 	/* display: inline; */
 	/* height: fit-content; */
 	text-decoration: none;
-	color: black;
+	color: inherit;
 	/* padding: 0.2em 0; */
 	/* border-bottom: 0.15em solid rgb(226, 210, 188); */
 	background: linear-gradient(135deg, var(--colour-2), var(--colour-2))

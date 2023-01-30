@@ -38,7 +38,9 @@ See the Mulan PSL v2 for more details. */
 宽度660—1020的窗口，或经过1.25倍放大的宽度825—1275的窗口
 正文每行27字，字号20。*/
 @media screen and (min-width: 680px) and (max-width: 1040px) {
-	
+	#⊙{
+		margin-top: -0.75rem;
+	}
 }
 /* 【5】#############################
 宽度小于660的窗口，或经过1.25倍放大的宽度小于825的窗口
