@@ -13,10 +13,10 @@ See the Mulan PSL v2 for more details. */
 适用于1920宽的屏幕，或经过1.25倍放大的2560宽的屏幕
 正文每行36字，字号20。边注每行24字，字号15；宽度等同于正文18字 */
 @media screen and (min-width: 1840px) {
-	#※{
+	#※ {
 		margin-top: 0.75rem;
 	}
-	#⊙{
+	#⊙ {
 		margin-top: 12.75rem;
 	}
 }
@@ -26,11 +26,11 @@ See the Mulan PSL v2 for more details. */
 适用于1440宽的屏幕，或经过1.25倍放大的1920宽的屏幕
 正文每行30字，字号20。边注每行16字，字号15；宽度等同于正文12字 */
 @media screen and (min-width: 1400px) and (max-width: 1840px) {
-	#※{
+	#※ {
 		margin-top: 0.75rem;
 	}
-	#⊙{
-		margin-top: 18.75rem;
+	#⊙ {
+		margin-top: 17.5rem;
 	}
 }
 /* 【3】#############################
@@ -38,10 +38,10 @@ See the Mulan PSL v2 for more details. */
 适用于1080宽的屏幕，或经过1.25倍放大的1440宽的屏幕
 正文每行27字，字号20。边注每行12字，字号15；宽度等同于正文9字 */
 @media screen and (min-width: 1040px) and (max-width: 1400px) {
-	#※{
+	#※ {
 		margin-top: 2rem;
 	}
-	#⊙{
+	#⊙ {
 		margin-top: 22.75rem;
 	}
 }
@@ -49,11 +49,14 @@ See the Mulan PSL v2 for more details. */
 宽度660—1020的窗口，或经过1.25倍放大的宽度825—1275的窗口
 正文每行27字，字号20。*/
 @media screen and (min-width: 680px) and (max-width: 1040px) {
-	
+	#※ {
+		margin-top: 0.25rem;
+	}
+	#⊙ {margin-top: -1rem;
+	}
 }
 /* 【5】#############################
 宽度小于660的窗口，或经过1.25倍放大的宽度小于825的窗口
 正文字号20。*/
 @media screen and (max-width: 680px) {
-	
 }
