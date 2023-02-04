@@ -663,7 +663,7 @@ html {
 	width: 18rem;
 	z-index: 5;
 	text-align: center;
-	color: black;
+	color: var(--colour-dark-grey-1);
 	line-height: 1em;
 	font-size: 0.75rem;
 }
@@ -718,7 +718,7 @@ html {
 
 #time li {
 	list-style-type: none;
-	margin-bottom: 0.2em;
+	margin-bottom: 0.5em;
 }
 #time ul li {
 	margin-left: 0;
@@ -2175,9 +2175,9 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		left: 0rem;
 		top: 4rem;
 		width: 9rem;
-		margin: 5rem auto;
+		margin: 2rem auto 5rem;
 		font-size: 0.5625rem;
-		margin-top: 3rem;
+		/* margin-top: 3rem; */
 	}
 	/* #index {
 		font-size: 0.7rem;
@@ -2192,7 +2192,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		width: 100%;
 		padding-top: 2rem;
 		text-align: center;
-		margin-bottom: 4rem;
+		margin-bottom: 3rem;
 	}
 	h1 {
 		font-size: 1.8rem;
@@ -2278,7 +2278,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		/* left: 15rem; */
 		position: static;
 		margin: 0 auto;
-		margin-top: 2rem;
+		margin-top: 1rem;
 		padding-bottom: 4rem;
 	}
 	article {
