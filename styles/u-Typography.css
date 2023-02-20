@@ -2308,6 +2308,9 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 		display: none;
 	}
 	.TuZhu {
+		text-align: left;
+		margin-left: 0rem;
+		margin-right: 0rem;
 		color: var(--colour-middle-grey-1);
 	}
 	footer {

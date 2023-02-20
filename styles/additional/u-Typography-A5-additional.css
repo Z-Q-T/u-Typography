@@ -35,7 +35,8 @@ See the Mulan PSL v2 for more details. */
 正文每行27字，字号20。*/
 @media screen and (min-width: 680px) and (max-width: 1040px) {
 	#＋,
-	#✽{
+	#⊙,
+	#＃＃{
 		width: 18rem;
 	}
 }

@@ -1000,6 +1000,9 @@ a:visited {
 		background-position: left 0 bottom 0;
 		transition: all 100ms ease-in-out;
 	}
+	#section-Additional h3 a{
+		background-size: 100% 0%;
+	}
 }
 li a:hover,
 h3 a:hover {
