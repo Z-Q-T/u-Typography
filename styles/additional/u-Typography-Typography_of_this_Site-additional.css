@@ -40,6 +40,10 @@ See the Mulan PSL v2 for more details. */
 #gridLine-First-Layout_1 {
 	margin: 0;
 }
+/* #gridLine-Last-Layout_5{
+	display: none;
+} */
+
 .gridLine {
 	background-color: var(--colour-grid-normal);
 }
@@ -276,6 +280,12 @@ input[type="range"]::-webkit-slider-thumb {
 	}
 	#gridLine-First-Layout_3 {
 		margin: 0;
+	}
+	/* #gridLine-Last-Layout_5{
+		display: inline-block;
+	} */
+	#gridMask{
+		border-right: 1px solid var(--colour-grid-Core);
 	}
 	.layout_2_hidden {
 		display: none;

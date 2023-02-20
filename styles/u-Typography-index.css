@@ -326,7 +326,7 @@ html {
 	z-index: 5;
 	padding: 0px;
 	background-color: var(--colour-paper);
-border-radius: 4px;
+	border-radius: 4px;
 	border: 1px solid var(--colour-dark-grey-2);
 	box-shadow: 0 0 5px var(--colour-shadow);
 }
@@ -973,17 +973,33 @@ a {
 a:visited {
 	color: black;
 }
-li a,
-h3 a {
-	display: inline;
-	/* border-bottom: 0.15em solid transparent; */
-	padding: 0.1em 0;
+@media (hover: hover) {
+	li a,
+	h3 a {
+		display: inline;
+		/* border-bottom: 0.15em solid transparent; */
+		padding: 0.1em 0;
 
-	background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
-		no-repeat;
-	background-size: 100% 0%;
-	background-position: left 0 bottom 0;
-	transition: all 100ms ease-in-out;
+		background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
+			no-repeat;
+		background-size: 100% 0%;
+		background-position: left 0 bottom 0;
+		transition: all 100ms ease-in-out;
+	}
+}
+@media (hover: none) {
+	li a,
+	h3 a {
+		display: inline;
+		/* border-bottom: 0.15em solid transparent; */
+		padding: 0.1em 0;
+
+		background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
+			no-repeat;
+		background-size: 100% 10%;
+		background-position: left 0 bottom 0;
+		transition: all 100ms ease-in-out;
+	}
 }
 li a:hover,
 h3 a:hover {
@@ -1055,11 +1071,11 @@ section:hover .headingDecoration {
 	opacity: 1;
 }
 /* } */
-@media (hover: none) {
+/* @media (hover: none) {
 	.headingDecoration {
 		opacity: 1;
 	}
-}
+} */
 
 .subDivision {
 	margin: 3rem 0;
@@ -1627,11 +1643,11 @@ h-hws[hidden] {
 		text-align: left;
 		width: 5.4rem;
 	}
-	.headingDecoration {
+	/* .headingDecoration {
 		left: 0.45rem;
 		transform: scale(0.45, 0.45);
 		opacity: 1 !important;
-	}
+	} */
 	ul {
 		font-size: 1.1rem;
 	}

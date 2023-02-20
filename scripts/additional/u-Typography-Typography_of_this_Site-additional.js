@@ -29,11 +29,16 @@ function gridLineDisplay() {
     // let YeMian = document.getElementById("whole");
     let WangGeZheZhao = document.getElementById("gridMask");
     let size = window.innerWidth;
-    let ZiShu = Math.floor(size / 20) - 1 - 0.5;
+    let ZiShu = Math.floor(size / 20) - 2;
     if (size < 680) {
-        // let HangChang = ZiShu * 20;
-        // YeMian.style.width = ZiShu + "em";
-        WangGeZheZhao.style.width = ZiShu + "em";
+        if (ZiShu <= 27) {
+            // let HangChang = ZiShu * 20;
+            // YeMian.style.width = ZiShu + "em";
+            WangGeZheZhao.style.width = ZiShu + "em";
+        }
+        else {
+            WangGeZheZhao.style.width = "27em";
+        }
     } else {
         // YeMian.style.cssText = " ";
         WangGeZheZhao.style.cssText = " ";
