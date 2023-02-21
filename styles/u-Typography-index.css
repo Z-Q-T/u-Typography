@@ -996,8 +996,8 @@ a:visited {
 
 		background: linear-gradient(135deg, var(--colour-3), var(--colour-2))
 			no-repeat;
-		background-size: 100% 10%;
-		background-position: left 0 bottom 0;
+		background-size: 100% 8%;
+		background-position: left 0 bottom 2%;
 		transition: all 100ms ease-in-out;
 	}
 	#section-Additional h3 a{
