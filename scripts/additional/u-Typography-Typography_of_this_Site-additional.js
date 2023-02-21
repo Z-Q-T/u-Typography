@@ -48,25 +48,9 @@ window.addEventListener("resize", gridLineDisplay);
 gridLineDisplay();
 
 
-// 下面是调整段落宽度的
+// 下面是调整交互式段落宽度的
 let ShuangQi_DuanLuo = document.getElementById("ZuoYouShuangQi-O");
 let resizeFrame = document.getElementById("resize");
-// let page = document.getElementById("page");
-// function ZuoYouShuangQi() {
-//     let size = resizeFrame.offsetWidth;
-//     console.log(size);
-//     // size = size.substring(0, size.length - 2);//去掉size后面的“px”
-//     let ZiShu = Math.floor(size / 20) - 4;
-//     console.log(size, ZiShu)
-//     ShuangQi_DuanLuo.style.width = ZiShu + "em";
-// }
-// resizeFrame.addEventListener("mouseover", ZuoYouShuangQi);
-// resizeFrame.addEventListener("mousemove", ZuoYouShuangQi);
-// resizeFrame.addEventListener("mousedown", ZuoYouShuangQi);
-// page.addEventListener("mousemove", ZuoYouShuangQi);
-// page.addEventListener("touchstart", ZuoYouShuangQi);
-// page.addEventListener("touchmove", ZuoYouShuangQi);
-// ZuoYouShuangQi();
 let slider = document.getElementById("paragraphWidth");
 let changeFrameWidth = function () {
     let percentage = slider.value / 10;
@@ -76,7 +60,13 @@ let changeFrameWidth = function () {
     let size = resizeFrame.offsetWidth;
     console.log(size);
     // size = size.substring(0, size.length - 2);//去掉size后面的“px”
-    let ZiShu = Math.floor(size / 20) - 6;
+    let emSize;
+    if (window.innerWidth > 680) {
+        emSize = 20;
+    } else {
+        emSize = 15;
+    }
+    let ZiShu = Math.floor(size / emSize) - 120 / emSize;
     console.log(size, ZiShu)
     ShuangQi_DuanLuo.style.width = ZiShu + "em";
 };

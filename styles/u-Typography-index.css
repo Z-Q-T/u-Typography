@@ -327,7 +327,7 @@ html {
 	padding: 0px;
 	background-color: var(--colour-paper);
 	border-radius: 4px;
-	border: 1px solid var(--colour-dark-grey-2);
+	border: 1px solid var(--colour-middle-grey-1);
 	box-shadow: 0 0 5px var(--colour-shadow);
 }
 .contentMenuList {
@@ -1098,7 +1098,7 @@ section:hover .headingDecoration {
 }
 ul {
 	font-size: 1.2rem;
-	line-height: 1.5rem;
+	line-height: 1.6rem;
 	position: relative;
 	top: 0rem;
 }
@@ -1131,7 +1131,7 @@ li::marker {
 	font-family: var(--font-hei);
 	font-weight: 400;
 	padding-left: 6rem;
-	line-height: 1.5em;
+	line-height: 1.6em;
 	margin-top: 1rem;
 	color: var(--colour-dark-grey-1);
 	text-align: justify;
@@ -1646,11 +1646,11 @@ h-hws[hidden] {
 		text-align: left;
 		width: 5.4rem;
 	}
-	/* .headingDecoration {
+	.headingDecoration {
 		left: 0.45rem;
-		transform: scale(0.45, 0.45);
-		opacity: 1 !important;
-	} */
+		font-size: 0.9rem;
+		/* letter-spacing: 2em; */
+	}
 	ul {
 		font-size: 1.1rem;
 	}
@@ -1699,4 +1699,9 @@ h-hws[hidden] {
 		top: 8px;
 		left: auto;
 	}
+}
+@media screen and (max-width: 440px) {
+
+	.subtitle {
+		padding-left: 1.1rem;}
 }
