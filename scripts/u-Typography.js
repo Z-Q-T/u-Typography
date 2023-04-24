@@ -438,7 +438,7 @@ function tocHeight() {
     let windowHeight = window.innerHeight;
     console.log(windowHeight);
     if (windowWidth >= 1380) {
-        MuLu.style.height = windowHeight - 100 + "px";
+        MuLu.style.height = windowHeight + "px";
     } else {
         MuLu.style.cssText = "";
     }
