@@ -170,6 +170,7 @@ See the Mulan PSL v2 for more details. */
 	--colour-paper: rgb(245, 244, 242);
 	--colour-link-active-background: rgb(206, 189, 166);
 	--colour-1: rgb(188, 171, 147);
+	--colour-1-5: rgb(207, 193, 172);
 	--colour-2: rgb(228, 216, 198);
 	--colour-3: rgb(239, 231, 216);
 	--colour-button-hover: rgba(243, 230, 200, 0.5);
@@ -183,7 +184,6 @@ See the Mulan PSL v2 for more details. */
 	--colour-changeType-hover: rgb(123, 117, 106);
 	--colour-changeType-button-hover: rgb(242, 237, 228);
 	--colour-changeType-button-active: rgb(237, 230, 215);
-	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
 	--colour-footnote-mark: rgb(177, 132, 69);
 	--colour-code: rgb(230, 227, 226);
@@ -487,7 +487,7 @@ html {
 }
 #changeTypeMenu-ButtonSVG {
 	height: 4px;
-	fill: var(--colour-button);
+	/* fill: var(--colour-1-5); */
 	position: absolute;
 	left: 50%;
 	top: 50%;

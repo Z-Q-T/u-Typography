@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="张擎天（Zhang Qingtian）">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--开头通用模板到此结束-->
+
+    <meta name="description" content="Pinyinia——轻松打出声调符号的汉语拼音字体">
+    <title>Pinyinia——轻松打出声调符号的汉语拼音字体 ｜ 字无字 ú–Typography</title>
+
+    <!-- 字体服务的通用模板由此开始 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet"><!-- 思源黑体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"> <!-- Source Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet"> <!-- 思源宋体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Source Serif -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <!-- Source Code -->
+    <!-- 字体服务的通用模板到此结束 -->
+
+    <!--图标、样式、链接打开方式的二级页面模板由此开始-->
+    <link rel="shortcut icon" href="../images/字无字_网页图标.png" type="image/x-icon">
+    <link rel="stylesheet" media="all" href="../styles/han.css">
+    <link rel="stylesheet" href="../styles/u-Typography.css" type="text/css">
+    <link rel="stylesheet" href="../styles/additional/u-Typography-A5-additional.css" type="text/css">
+    <!-- <link rel="stylesheet" href="../styles/debug.css" type="text/css"> -->
+    <base target="_self">
+    <!--图标、样式、链接打开方式的二级页面模板到此结束-->
+
+</head>
+
+<body>
+
+    <div id="whole">
+        <!--导航栏的二级页面模板由此开始-->
+        <div id="bar">
+            <div id="decoLine"></div>
+            <a href="../index.html" id="backToHomePage">
+                <img id="backArrow" src="../images/字无字_返回首页箭头-图标.png" alt="返回首页｜back to home page">
+                <img id="home" src="../images/字无字_返回首页房子-图标.png" alt="返回首页｜back to home page">
+            </a>
+            <picture id="logotype">
+                <source srcset="../images/字无字_横竖.png" media="(max-width: 680px)">
+                <source srcset="../images/字无字_横.png" media="(max-width: 1040px)">
+                <img id="logo" src="../images/字无字_竖.png" alt="“字无字”的标志｜logo of ú–typography">
+            </picture>
+            <div id="changeTypeMenu-Button"><svg id="changeTypeMenu-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 4">
+                    <g id="changeTypeMenu-ButtonSVGgraphic">
+                        <circle cx="2" cy="2" r="1.5" />
+                        <circle cx="9" cy="2" r="1.5" />
+                        <circle cx="16" cy="2" r="1.5" />
+                    </g>
+                </svg></div>
+            <!-- <div id="changeTypeMenu-Hint">该功能在一些情况下会额外下载所需的字体<br>这可能消耗更多的流量</div> -->
+            <menu id="changeTypeMenu" style="visibility: hidden; opacity: 0; ">
+                <div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">标题</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-BiaoTi-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-BiaoTi-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">正文</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-ZhengWen-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-ZhengWen-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+                    <div class="changeTypeMenu-Caption">补充</div>&ensp;<div class="changeTypeMenu-Options">
+                        <div id="changeTypeMenu-BianZhu-SONG">
+                            <div class="changeTypeMenu-TypeName">宋</div>
+                        </div>&ensp;<div id="changeTypeMenu-BianZhu-HEI">
+                            <div class="changeTypeMenu-TypeName">黑</div>
+                        </div>
+                    </div>
+                </div>
+            </menu>
+            <div><a id="pageTypography-Button" href="../Typography_of_this_Site.html" target="_blank">¶</a>
+            </div>
+        </div>
+        <!--导航栏的二级页面模板到此结束-->
+
+        <main id="page">
+            <header id="mainTitleArea">
+                <div id="metaInfo">
+                    <div id="index">〚&#8197;字体设计&#8197;·&#8197;壹&#8197;〛
+                    </div>
+                    <div class="metaInfo-Seperator"></div>
+                    <div id="time">
+                        <ul>
+                            <li><time pubdate datetime="2023-04-25"><span class="number">2023</span>年<span class="number">4</span>月<span class="number">25</span>日</time>&emsp;发布</li>
+                        </ul>
+                    </div>
+                    <div class="metaInfo-Seperator"></div>
+                    <div id="author">张擎天</div>
+                </div>
+                <!-- <div id="decoLine"></div> -->
+                <div id="title">
+                    <h1><span class="Latin">Pinyinia</span><span class="PoZheHao">——</span>轻松打出声调符号的汉语拼音字体</h1>
+                </div>
+                <!-- <div id="caption"><span class="tabulation">○&#9;</span>“我认为精心排印的文字和雕塑或绘画一样美观。”<sup class='footnoteMark' id='footnote-mark-0'><a href='#footnote-number-0'>*</a></sup>&emsp;<span class="PoZheHao">——</span>&#65279;埃里克<span class="JianGeHao">·</span>吉尔</div> -->
+            </header>
+            <div id="toc-PlaceHolder"></div>
+            <!-- 切换目录的按钮模板由此开始 -->
+            <div id="toc-Switcher">
+                <svg id="tocSwitcher-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 4">
+                    <g id="tocSwitcher-ButtonSVGgraphic">
+                        <path d="M4,4a2.38,2.38,0,0,1-1.67-.69L0,.38.56,0,3,2.64a1.46,1.46,0,0,0,2,0L7.44,0,8,.38,5.67,3.31A2.38,2.38,0,0,1,4,4Z" />
+                    </g>
+                </svg>
+            </div>
+            <!-- 切换目录的按钮模板到此结束 -->
+            <div id="toc-Container">
+                <nav id="tableOfContent">
+                    <ul>
+                        <div id="toc-backToMainTitle"><a href="#">∧</a></div>
+                        <li class="tocH2"><a href="#常见的输入带声调符号的字母的方法及其缺点" target="_self">一、常见的输入带声调符号的字母的方法及其缺点</a></li>
+                        <li class="tocH2"><a href="#Pinyinia的输入带调字母的巧妙方法及其适用场景" target="_self">二、<span class="Latin">Pinyinia</span>的输入带调字母的巧妙方法及其适用场景</a></li>
+                        <li class="tocH2"><a href="#Pinyinia的设计特点" target="_self">三、<span class="Latin">Pinyinia</span>的设计特点</a></li>
+                        <li class="tocH3"><a href="#整体设计风格" target="_self"><span class="Latin">1.</span>整体设计风格</a></li>
+                        <li class="tocH3"><a href="#字母的风格变体" target="_self"><span class="Latin">2.</span>字母的风格变体</a></li>
+                        <li class="tocH3"><a href="#Pinyinia对于标点符号的处理" target="_self"><span class="Latin">3. </span><span class="Latin">Pinyinia</span>对于标点符号的处理</a></li>
+                        <li class="tocH2"><a href="#汉语拼音字体和西文字体有何不同？" target="_self">四、汉语拼音字体和西文字体有何不同？</a></li>
+                        <li class="tocH3"><a href="#声调符号的易辨认性" target="_self"><span class="Latin">1.</span>声调符号的易辨认性</a></li>
+                        <li class="tocH3"><a href="#汉语拼音第二声声调符号写法" target="_self"><span class="Latin">2.</span>汉语拼音第二声声调符号写法</a></li>
+                        <li class="tocH3"><a href="#罕见的带声调符号的字母" target="_self"><span class="Latin">3.</span>罕见的带声调符号的字母</a></li>
+                        <li class="tocH3"><a href="#特定字母组合的效果" target="_self"><span class="Latin">4.</span>特定字母组合的效果</a></li>
+                        <li class="tocH3"><a href="#整体版面肌理的变化带来的其他设计上的差异" target="_self"><span class="Latin">5.</span>整体版面肌理的变化带来的其他设计上的差异</a></li>
+                        <li class="tocH2"><a href="#下载" target="_self">下&emsp;载</a></li>
+                        <li class="tocH2"><a href="#版权声明" target="_self">版权声明</a></li>
+                        <li class="tocH2"><a href="#附录" target="_self">附&emsp;录</a></li>
+                        <li class="tocH3"><a href="#合字自动转换列表" target="_self">合字自动转换列表</a></li>
+                        <li class="tocH3"><a href="#转换器" target="_self">转换器</a></li>
+                        <div id="toc-skipToFootnote"><a href="#footnotesArea">∨</a></div>
+                    </ul>
+                </nav>
+            </div>
+            <div id="mainContent">
+                <article>
+                    <figure>
+                        <img alt="图像" src="../images/T1/图示_头图1.jpg">
+                        <img alt="图像" src="../images/T1/图示_头图2.jpg">
+                    </figure>
+                    <p class="noIndentParagraph">汉语拼音的排版是一个非常小众，但是遇到时又常常令人抓耳挠腮的需求。这其中，最令人头疼的莫过于输入字母上的那一个个声调符号（也包括字母ü）。而<span class="Latin">Pinyinia</span>这款字体则巧妙利用了现代字体技术<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>具体地，使用的是“标准合字”（<span class="Latin" lang="en">Standard Ligatures</span>，<code>liga</code>）<span class="Latin" lang="en">OpenType</span>特性。</span>，无需借助任何输入法、插件，直接使用常规键盘就能打出所有带有声调符号的字母。（适用场景有限，详见后文。）</p>
+                    <h2 id='常见的输入带声调符号的字母的方法及其缺点'>一、常见的输入带声调符号的字母的方法及其缺点</h2>
+                    <figure>
+                        <img alt="图像" src="../images/T1/图示_如何输入带调字母？.jpg">
+                    </figure>
+                    <p class="noIndentParagraph">一般而言，要输入带有声调符号的字母大致有以下几种方法：</p>
+                    <ol start="">
+                        <li>
+                            <p><span class="orderedListIndex"><span class="Latin">1</span>）&#9;</span>直接输入带声调符号的字母；</p>
+                        </li>
+                        <li id="输入方法第2条" style="scroll-margin-top: 4rem;">
+                            <p><span class="orderedListIndex"><span class="Latin">2</span>）&#9;</span>输入基础字母＋组合用变音符号（<span class="Latin" lang="en">Combining Diacritical Marks</span>）<sup class='footnoteMark' id='footnote-mark-1'><a href='#footnote-number-1'>1</a></sup>；</p>
+                        </li>
+                        <li>
+                            <p><span class="orderedListIndex"><span class="Latin">3</span>）&#9;</span>在输入法的字符选择面板里选择相应的带声调符号的字母；</p>
+                        </li>
+                        <li>
+                            <p><span class="orderedListIndex"><span class="Latin">4</span>）&#9;</span>利用拼音转换器自动将汉字转换为拼音。</p>
+                        </li>
+
+                    </ol>
+                    <p>前两种方法都需要特定键盘的支持，且不能保证覆盖汉语拼音中可能用到的所有带声调符号的字母。</p>
+                    <p>第三种方法需要支持此功能的输入法，且输入效率低。</p>
+                    <p>第四种方法对大段文本的效果好。但不能保证对于多音字、生僻字等的转换结果正确，难免会遇到自动转换不正确而需要手动调整的情况。而且对于一些没有对应汉字的生造的拼音（如<span class="Latin">duāng</span>、<span class="Latin">biù</span>等），该方法不适用。</p>
+                    <h2 id='Pinyinia的输入带调字母的巧妙方法及其适用场景'>二、<span class="Latin">Pinyinia</span>的输入带调字母的巧妙方法及其适用场景</h2>
+                    <p>上述的方法对于<span class="Latin">Pinyinia</span>这款字体来说依然是有效的。不过，<span class="Latin">Pinyinia</span>还提供了另一种巧妙的方法来帮助打出带声调符号的字母，那就是先按字母键，再按<kbd>`</kbd>键，再按数字键，即可自动组合出一个带声调符号的字母。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>在标准美式键盘上（中国大陆地区使用的键盘大多为美式键盘），<kbd>`</kbd>键的位置是在<kbd>Tab</kbd>键的上方，<kbd>1</kbd>键的左侧，<kbd>Esc</kbd>键的下方。</span></p>
+                    <p>例如，输入<kbd>a</kbd><span class="Latin" lang="en">+</span><kbd>`</kbd><span class="Latin" lang="en">+</span><kbd>1</kbd>可以得到“<span class="Latin" lang="en">ā</span>”，输入<kbd>u</kbd><span class="Latin" lang="en">+</span><kbd>`</kbd><span class="Latin" lang="en">+</span><kbd>5</kbd><span class="Latin" lang="en">+</span><kbd>`</kbd><span class="Latin" lang="en">+</span><kbd>3</kbd>可以得到“<span class="Latin" lang="en">ǚ</span>”。完整的自动组合列表请见下图：</p>
+                    <figure>
+                        <img alt="图像" src="../images/T1/图示_合字转换表1.jpg">
+                        <img alt="图像" src="../images/T1/图示_合字转换表2.jpg">
+                    </figure>
+                    <div class="TuZhu">基本规律是：第一、二、三、四声分别对应数字1、2、3、4，字母ü上方的两点对应于数字5，字母ê、ẑ、ĉ、ŝ上方的小帽子对应于数字6。（若图像无法显示，可参见<a href="#合字自动转换列表">附录中的文字版列表</a>）</div>
+                    <figure>
+                        <img alt="图像" src="../images/T1/图示_`键的位置.jpg">
+                    </figure>
+                    <p>需要注意的是，该功能利用了“标准合字”（<span class="Latin" lang="en">Standard Ligatures</span>，<code>liga</code>）<span class="Latin" lang="en">OpenType</span>特性，只有在支持该功能的软件内才是有效的。<sup class='footnoteMark' id='footnote-mark-2'><a href='#footnote-number-2'>2</a></sup></p>
+                    <p>利用这种方法，使用<span class="Latin">Pinyinia</span>这款字体可以在不借助任何输入法或其他工具的前提下，很轻易地输入汉语拼音中所有可能用到的带调字母，甚至包括<span class="Latin" lang="en">ê</span>、<span class="Latin" lang="en">ẑ</span>、<span class="Latin" lang="en">ŋ</span>等罕见符号。</p>
+                    <p>&nbsp;</p>
+                    <p style="text-indent: 0; text-align:center; line-height: 0;">◎</p>
+                    <p>&nbsp;</p>
+                    <p class="noIndentParagraph">当然，这种方法也有一定的适用场景限制，它<em>适合</em>用于以下列形式作为最终输出媒介的作品：</p>
+                    <ul>
+                        <li>
+                            <p>书籍、杂志、招贴海报、小册子等实体印刷品；</p>
+                        </li>
+                        <li>
+                            <p>视频、图片等数字媒体文件；</p>
+                        </li>
+                        <li>
+                            <p>文字已转换为矢量轮廓的<span class="Latin" lang="en">PDF</span>文档。</p>
+                        </li>
+
+                    </ul>
+                    <p>它<em>不适合</em>用于：</p>
+                    <ul>
+                        <li>
+                            <p>网页；</p>
+                        </li>
+                        <li>
+                            <p>可能会跨设备传播的电子文档，例如<span class="Latin" lang="en">Word</span>、<span class="Latin" lang="en">Powerpoint</span>等；</p>
+                        </li>
+                        <li>
+                            <p>保留了可搜索文本的<span class="Latin" lang="en">PDF</span>文档。</p>
+                        </li>
+
+                    </ul>
+                    <p>这是因为在其他的设备上不一定安装有<span class="Latin">Pinyinia</span>这款字体。如果没有安装这款字体，那利用合字来显示声调的方法就会失效，文本会显示为一团乱码。而且，该方法仅仅是在显示层面将特定的字符组合转换为了带有声调符号的字母，在底层它们依然是字母＋“<span class="Latin">`</span>”＋数字的组合，因而可能会导致在使用搜索功能时难以搜索到想要的字符。</p>
+                    <p>如果要在上述条件下使用，可以借助<a href="#转换器">附录中的转换器</a>，把字母＋“<span class="Latin">`</span>”＋数字的组合形式替换成带声调符号的字母。</p>
+                    <h2 id='Pinyinia的设计特点'>三、<span class="Latin">Pinyinia</span>的设计特点</h2>
+                    <h3 id='整体设计风格'><span class="Latin">1.</span>整体设计风格</h3>
+                    <p><span class="Latin">Pinyinia</span>这款字体按照西文字体的分类来说，应该属于无衬线体。相比于常见的无衬线体来说，它整体的字重偏细，灰度较低，这是因为考虑到它可能与中文宋体字搭配排版的情况，较细的笔画与宋体字搭配不会显得突兀<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>不过，和宋体字搭配得最好的还是衬线体，未来或许会做一款衬线体拼音字体？</span>，同时它也能适应与黑体字搭配排版，或者单独排版的情况。</p>
+                    <figure>
+                        <img alt="图像" src="../images/T1/图示_搭配宋体黑体.jpg">
+                    </figure>
+                    <p>并且，考虑到汉语拼音很有可能是以小字的形式出现，因而这款字体的默认字距偏大，字形较为饱满，以便在小字号下有较好的易读性。</p>
+                    <h3 id='字母的风格变体'><span class="Latin">2.</span>字母的风格变体</h3>
+                    <p>为了适应不同的排版需求和风格，<span class="Latin">Pinyinia</span>为一些字符提供了替换字形。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>使用的是“风格组合”（<span class="Latin" lang="en">Stylistic Set</span>，<code>ss01</code><span class="BanZiXian">–</span><code>ss06</code>）<span class="Latin" lang="en">OpenType</span>特性。</span>具体有：</p>
+                    <figure>
+                        <img alt="单／双层a、单／双层g、有／无尾巴小写L、直线／弧线Q、有／无底线1、开口／闭合4" src="../images/T1/图示_ss00.jpg">
+                    </figure>
+                    <p>其中，单层<span class="Latin" lang="en">a</span>可以用于儿童读物，与手写体较为接近，方便识读摹写；双层<span class="Latin" lang="en">a</span>适用于其他大多数场合，因为双层<span class="Latin" lang="en">a</span>的易辨认性和易读性都更好。<sup class='footnoteMark' id='footnote-mark-3'><a href='#footnote-number-3'>3</a></sup>尾巴<span class="Latin" lang="en">l</span>可用于需要和大写<span class="Latin" lang="en">i</span>做出明确区分的场合。</p>
+                    <p>所有替换字形都可以根据个人喜好灵活调整。<sup class='footnoteMark' id='footnote-mark-4'><a href='#footnote-number-4'>4</a></sup>这些替换字形都和原字形拥有相同的宽度比例，改变字形不会导致版面布局发生变化。</p>
+                    <p>考虑到一些软件不支持“风格组合”特性，而单<span class="FenGeHao">／</span>双层<span class="Latin" lang="en">a</span>又是一个相当关键的特征，故<span class="Latin">Pinyinia</span>字体提供两个版本以供选择（详见“<a href="#下载">下载</a>”）。其中，<span class="Latin">Pinyinia</span>默认为双层<span class="Latin" lang="en">a</span>，<span class="Latin" lang="en">Pinyinia_a</span>默认为单层<span class="Latin" lang="en">a</span>，两者都有单<span class="FenGeHao">／</span>双层<span class="Latin" lang="en">a</span>的替换字形，且除此以外的所有字符和特性都是相同的。</p>
+                    <h3 id='Pinyinia对于标点符号的处理'><span class="Latin">3. </span><span class="Latin">Pinyinia</span>对于标点符号的处理</h3>
+                    <p>根据《<cite>汉语拼音正词法基本规则</cite>》（<span class="Latin" lang="en">GB/T 16159</span><span class="YiZiXian">—</span><span class="Latin" lang="en">2012</span>）第<span class="Latin" lang="en">6.7</span>条，汉语拼音文本中的标点除句号改用“<span class="Latin" lang="en">.</span>”等规则外，其他标点仍然适用中文标点。故<span class="Latin">Pinyinia</span>这款字体仍然包含书名号（《&#8197;》）、六角括号（〔&#8197;〕）等中文标点字符。不过，为了适应与拉丁字母搭配排版，这些标点字符的默认宽度不再是一个汉字宽，而是适当收窄（因而标点前或后需要加空格）。对于逗号（，）、冒号（：）等中西文共有的标点，则一律使用西文标点，不提供中文全宽字符。<span class="Latin" lang="en"> </span></p>
+                    <p>除此以外，对于破折号、连接号一类的标点则提供大写变体，和大写字母排版时效果更佳。（在支持“上下文变体”〔<span class="Latin" lang="en">Contextual Alternates</span>，<code>calt</code>〕<span class="Latin" lang="en">OpenType</span>特性的软件中，当遇到前后都是大写字母或数字的情况时，会自动将这些标点替换为大写变体。<sup class='footnoteMark' id='footnote-mark-5'><a href='#footnote-number-5'>5</a></sup>）一些字符利用“字形组合<span class="FenGeHao">／</span>分解”（<span class="Latin" lang="en">Glyph Composition/Decomposition</span>，<code>ccmp</code>）<span class="Latin" lang="en">OpenType</span>特性，在特定标点相连时自动替换为更合理的造型。<sup class='footnoteMark' id='footnote-mark-6'><a href='#footnote-number-6'>6</a></sup></p>
+                    <figure>
+                        <img alt="图像" src="../images/T1/图示_大写变体.jpg">
+                    </figure>
+                    <figure>
+                        <img alt="图像" src="../images/T1/图示_字形组合.jpg">
+                    </figure>
+                    <h2 id='汉语拼音字体和西文字体有何不同？'>四、汉语拼音字体和西文字体有何不同？</h2>
+                    <p>总体而言，汉语拼音字体和西文字体基本可以通用，但在需要特别考究的场合，有以下细节需要注意：</p>
+                    <h3 id='声调符号的易辨认性'><span class="Latin">1.</span>声调符号的易辨认性</h3>
+                    <p>西方文字也有不少采用了变音符号，但总体而言，这些文字中出现变音符号的频率较低。偶尔，变音符号被省略或者模糊不清也不一定会对识读造成很大的影响。而汉语拼音则不同，它几乎每个音节都要有声调符号（只有轻声除外），出现频率很高。并且，声调是汉语的重要特征，每个元音字母都会有四种可能的声调，如果声调被省略或者模糊不清，就会对识读或者理解含义产生很大影响。因而，汉语拼音字体的声调符号应该设计得突出醒目，易于辨认。</p>
+                    <figure>
+                        <img alt="图像" src="../images/T1/图示_声调易辨识.jpg">
+                    </figure>
+                    <div class="TuZhu">从图示中我们可以看到常见的西文字体的变音符号有些设计得较为含蓄。比如，第二声符号和第四声符号的长度较短，倾斜不明显，在小字号下容易混淆。</div>
+                    <h3 id='汉语拼音第二声声调符号写法'><span class="Latin">2.</span>汉语拼音第二声声调符号写法</h3>
+                    <p>不同的语言里这个符号的作用不尽相同。在西方文字里，这个符号的写法在习惯上是“撇”，也就是从右上至左下。而在汉语拼音里，这个符号的写法是“提”，也就是从左下至右上。如此一来，西文字体通常会把这个符号设计成右上粗、左下细。这种设计应用在汉语拼音中虽然不会造成认读上的问题。不过，专门为汉语拼音设计的字体最好还是按照汉语拼音的习惯，设计成左下粗、右上细的样式。<span class="Latin">Pinyinia</span>这款字体就采用了这种设计。（当然，由于整体设计风格的影响，这里的粗细变化很细微。）</p>
+                    <figure>
+                        <img alt="图像" src="../images/T1/图示_第二声.jpg">
+                    </figure>
+                    <h3 id='罕见的带声调符号的字母'><span class="Latin">3.</span>罕见的带声调符号的字母</h3>
+                    <p>汉语拼音中的一些带调字母在西方文字中是极其罕见，甚至完全没有的。很多西文字体可能会缺失这些字符，比如带第三声符号的字母<span class="Latin">ǎǒǐǔ</span>，而带声调符号的字母<span class="Latin">ǖǘǚǜ</span>更是重灾区。汉语拼音字体毫无疑问应当包含上述所有字符。</p>
+                    <figure>
+                        <img alt="图像" src="../images/T1/图示_西文字体缺字.jpg">
+                    </figure>
+                    <p>除此以外，汉语拼音中还有一些罕见符号，它们甚至都没有被编入<span class="Latin" lang="en">Unicode</span>，比如<span class="Latin" lang="en">m̀</span>、<span class="Latin" lang="en">n̄</span>、<span class="Latin" lang="en">ê̌</span>等，这些符号只能以组合的方式输入<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>详见<a href="#输入方法第2条">“常见的输入带声调符号的字母的方法及其缺点”列表第<span class="Latin">2</span>条</a>。</span>，并依赖于字体和排版引擎给出正确的渲染。这些符号虽然实际上很少用（我只在字典和规范标准文件里见过），但一个专为汉语拼音设计的字体也应当包含这些字符。<span class="Latin">Pinyinia</span>这款字体通过合字的方法<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>详见“<a href="#Pinyinia的输入带调字母的巧妙方法及其适用场景">Pinyinia的输入带调字母的巧妙方法及其适用场景</a>”。</span>，完整支持了汉语拼音中的所有罕见字符，且具有良好的软件兼容性。</p>
+                    <figure>
+                        <img alt="图像" src="../images/T1/图示_Pinyinia生僻字符.jpg">
+                    </figure>
+                    <h3 id='特定字母组合的效果'><span class="Latin">4.</span>特定字母组合的效果</h3>
+                    <p>拉丁字母的造型在历史上不断演变。在长期的书写中，相邻的字母与字母的造型互相影响，字母组合的效果持续优化，最终形成了如今的基本造型。<sup class='footnoteMark' id='footnote-mark-7'><a href='#footnote-number-7'>7</a></sup>因此，一些常见的字母组合的视觉效果就较为美观（比如<span class="Latin" lang="en">tecron</span>、<span class="Latin" lang="en">wasehull</span>、<span class="Latin" lang="en">kapider</span>），而一些罕见的字母组合的效果可能就不太理想（比如<span class="Latin" lang="en">akjigf</span>、<span class="Latin" lang="en">uzqyct</span>、<span class="Latin" lang="en">vowwgix</span>）。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>这六个词都是我生造的。</span>汉语拼音的字母组合方式与西方文字必然有所差异，一些特定的字母组合效果有可能不够美观。遗憾的是，如今已经不可能再对拉丁字母的基本造型做出大的调整了。不过，仍然有一些值得关注的细节。比如，汉语拼音中很常见的字母组合<span class="Latin" lang="en">gj</span><sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>汉语拼音的一个音节中不可能出现<span class="Latin" lang="en">gj</span>字母组合，但很有可能出现前一个音节以<span class="Latin" lang="en">g</span>结尾，后一个音节以<span class="Latin" lang="en">j</span>开头的情况。这样的词语不胜枚举。</span>，在西方文字中就很罕见。于是，一些西文字体的字母<span class="Latin" lang="en">gj</span>组合在一起时，笔画可能会互相打架。这当然不是什么大问题，一般也不会影响识读，但若要做得考究些，还是应该尽量避免这样的情况。专门为汉语拼音设计的字体必须要考虑到这种高频字母组合的效果。</p>
+                    <figure>
+                        <img alt="图像" src="../images/T1/图示_gj.jpg">
+                    </figure>
+                    <p>同样地，对于一些会出现笔画打架，但在汉语拼音中不会出现的字母组合，就可以放任不管。比如<span class="Latin" lang="en">fǐ</span>的笔画就会有冲突，但是在汉语拼音中，字母<span class="Latin" lang="en">f</span>后面不可能出现字母<span class="Latin" lang="en">i</span>，所以无需考虑这个问题。</p>
+                    <figure>
+                        <img alt="图像" src="../images/T1/图示_fi.jpg">
+                    </figure>
+                    <h3 id='整体版面肌理的变化带来的其他设计上的差异'><span class="Latin">5.</span>整体版面肌理的变化带来的其他设计上的差异</h3>
+                    <p>西文排版中，小写字母的使用频率远远高于大写字母，因而西文字体的标点符号一般是按照小写字母的位置而设计的。比如括号一类的标点，通常和小写字母的中线对齐（或接近）。<sup class="sideNoteMark">@</sup><span class="sideNote"><span class="tabulation">@</span>这也导致了全大写字母排版时，括号一类的标点位置可能会偏低。一些字体提供了标点的大写变体，如果没有提供也可以手动将大写字母旁边的标点提高一些，以获得更好的排版效果。</span>而在汉语拼音中，几乎每个音节都有声调符号，再加上前文所述的声调符号应当足够醒目，于是在视觉上，这些密集的声调符号就会拉高小写字母的重心，此时如果再把标点按照小写字母的中线来设计，就会显得位置偏低。因此，<span class="Latin">Pinyinia</span>这款字体把括号类标点的默认位置设计得偏高，这样在排版汉语拼音时，视觉上会更加整齐。巧合的是，如此一来，括号类标点的位置也恰好适合全大写字母的排版。</p>
+                    <figure>
+                        <img alt="图像" src="../images/T1/图示_标点高度.jpg">
+                    </figure>
+                    <h2 id='下载'>下&emsp;载</h2>
+                    <div class="buttonGroup">
+                        <div class="downloadButton"><a href="../typefaces/Pinyinia.otf"><span class="downloadIcon">⬇</span><span class="Latin">Pinyinia.otf</span></a></div>
+                        <div class="downloadButton"><a href="../typefaces/Pinyinia.ttf"><span class="downloadIcon">⬇</span><span class="Latin">Pinyinia.ttf</span></a></div>
+                    </div>
+                    <div class="buttonGroup">
+                        <div class="downloadButton"><a href="../typefaces/Pinyinia_a.otf"><span class="downloadIcon">⬇</span><span class="Latin">Pinyinia_a.otf</span></a></div>
+                        <div class="downloadButton"><a href="../typefaces/Pinyinia_a.ttf"><span class="downloadIcon">⬇</span><span class="Latin">Pinyinia_a.ttf</span></a></div>
+                    </div>
+                    <p>&nbsp;</p>
+                    <p class="noIndentParagraph"><span class="Latin">Pinyinia</span>和<span class="Latin">Pinyinia_a</span>的区别是字母<span class="Latin">a</span>的造型为双层<span class="FenGeHao">／</span>单层（详见“<a href="#字母的风格变体">字母的风格变体</a>”）。<span class="Latin">otf</span>格式和<span class="Latin">ttf</span>格式的差异较多，但对使用者来说感知较为明显的是：<span class="Latin">otf</span>格式文件较小，<span class="Latin">ttf</span>格式的软件兼容性较好，可根据具体情况选用。</p>
+                    <h2 id="版权声明">版权声明</h2>
+                    <p><span class="Latin">Pinyinia</span>字体由张擎天设计。任何人都可以将本字体免费用于任何用途（包括商用）。允许嵌入，允许修改，但不得二次分发修改后的字体文件（即修改后的字体只能作为其他作品的一部分发布，如插画、标志等）。</p>
+                    <h2 id="附录">附&emsp;录</h2>
+                    <h3 id='合字自动转换列表'>合字自动转换列表</h3>
+                    <p>若前文说明合字转换方式的图像无法加载，可参见此表：</p>
+                    <figure style="background-color: white; padding: 1rem 3rem;">
+                        <p>&nbsp;</p>
+                        <p><samp>ā</samp><span class="Latin">=</span><kbd>a</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                        <p><samp>á</samp><span class="Latin">=</span><kbd>a</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                        <p><samp>ǎ</samp><span class="Latin">=</span><kbd>a</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                        <p><samp>à</samp><span class="Latin">=</span><kbd>a</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+                        <p>&nbsp;</p>
+
+                        <p><samp>ō</samp><span class="Latin">=</span><kbd>o</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                        <p><samp>ó</samp><span class="Latin">=</span><kbd>o</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                        <p><samp>ǒ</samp><span class="Latin">=</span><kbd>o</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                        <p><samp>ò</samp><span class="Latin">=</span><kbd>o</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+                        <p>&nbsp;</p>
+
+                        <p><samp>ē</samp><span class="Latin">=</span><kbd>e</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                        <p><samp>é</samp><span class="Latin">=</span><kbd>e</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                        <p><samp>ě</samp><span class="Latin">=</span><kbd>e</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                        <p><samp>è</samp><span class="Latin">=</span><kbd>e</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+                        <p>&nbsp;</p>
+
+                        <p><samp>ī</samp><span class="Latin">=</span><kbd>i</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                        <p><samp>í</samp><span class="Latin">=</span><kbd>i</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                        <p><samp>ǐ</samp><span class="Latin">=</span><kbd>i</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                        <p><samp>ì</samp><span class="Latin">=</span><kbd>i</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+                        <p>&nbsp;</p>
+
+                        <p><samp>ū</samp><span class="Latin">=</span><kbd>u</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                        <p><samp>ú</samp><span class="Latin">=</span><kbd>u</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                        <p><samp>ǔ</samp><span class="Latin">=</span><kbd>u</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                        <p><samp>ù</samp><span class="Latin">=</span><kbd>u</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+                        <p>&nbsp;</p>
+
+                        <p><samp>ü</samp><span class="Latin">=</span><kbd>u</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>5</kbd>&emsp;<span class="Latin">=</span><kbd>v</kbd><span class="Latin">+</span><kbd>`</kbd></kbd><span class="Latin">+</span><kbd>`</kbd></p>
+                        <p><samp>ǖ</samp><span class="Latin">=</span><kbd>u</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>5</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd>&emsp;<span class="Latin">=</span><kbd>ü</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd>&emsp;<span class="Latin">=</span><kbd>v</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                        <p><samp>ǘ</samp><span class="Latin">=</span><kbd>u</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>5</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd>&emsp;<span class="Latin">=</span><kbd>ü</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd>&emsp;<span class="Latin">=</span><kbd>v</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                        <p><samp>ǚ</samp><span class="Latin">=</span><kbd>u</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>5</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd>&emsp;<span class="Latin">=</span><kbd>ü</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd>&emsp;<span class="Latin">=</span><kbd>v</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                        <p><samp>ǜ</samp><span class="Latin">=</span><kbd>u</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>5</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd>&emsp;<span class="Latin">=</span><kbd>ü</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd>&emsp;<span class="Latin">=</span><kbd>v</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+                        <p>&nbsp;</p>
+
+                        <p><samp>ê</samp><span class="Latin">=</span><kbd>e</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>6</kbd></p>
+                        <p><samp>ê̄</samp><span class="Latin">=</span><kbd>e</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>6</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd>&emsp;<span class="Latin">=</span><kbd>ê</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                        <p><samp>ế</samp><span class="Latin">=</span><kbd>e</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>6</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd>&emsp;<span class="Latin">=</span><kbd>ê</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                        <p><samp>ê̌</samp><span class="Latin">=</span><kbd>e</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>6</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd>&emsp;<span class="Latin">=</span><kbd>ê</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                        <p><samp>ề</samp><span class="Latin">=</span><kbd>e</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>6</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd>&emsp;<span class="Latin">=</span><kbd>ê</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+                        <p>&nbsp;</p>
+
+                        <p><samp>m̄</samp><span class="Latin">=</span><kbd>m</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                        <p><samp>ḿ</samp><span class="Latin">=</span><kbd>m</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                        <p><samp>m̌</samp><span class="Latin">=</span><kbd>m</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                        <p><samp>m̀</samp><span class="Latin">=</span><kbd>m</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+                        <p>&nbsp;</p>
+
+                        <p><samp>n̄</samp><span class="Latin">=</span><kbd>n</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                        <p><samp>ń</samp><span class="Latin">=</span><kbd>n</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                        <p><samp>ň</samp><span class="Latin">=</span><kbd>n</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                        <p><samp>ǹ</samp><span class="Latin">=</span><kbd>n</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+                        <p>&nbsp;</p>
+
+                        <p><samp>ẑ</samp><span class="Latin">=</span><kbd>z</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>6</kbd></p>
+                        <p><samp>ĉ</samp><span class="Latin">=</span><kbd>c</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>6</kbd></p>
+                        <p><samp>ŝ</samp><span class="Latin">=</span><kbd>s</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>6</kbd></p>
+                        <p>&nbsp;</p>
+
+                        <p><samp>ŋ</samp><span class="Latin">=</span><kbd>n</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>g</kbd></p>
+                        <p><samp>ŋ̄</samp><span class="Latin">=</span><kbd>n</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>g</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd>&emsp;<span class="Latin">=</span><kbd>ŋ</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                        <p><samp>ŋ́</samp><span class="Latin">=</span><kbd>n</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>g</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd>&emsp;<span class="Latin">=</span><kbd>ŋ</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                        <p><samp>ŋ̌</samp><span class="Latin">=</span><kbd>n</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>g</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd>&emsp;<span class="Latin">=</span><kbd>ŋ</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                        <p><samp>ŋ̀</samp><span class="Latin">=</span><kbd>n</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>g</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd>&emsp;<span class="Latin">=</span><kbd>ŋ</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+                        <p>&nbsp;</p>
+                    </figure>
+                    <p>大写字母的转换同理。</p>
+
+
+                    <!-- <p><samp>Amacron</samp><span class="Latin">=</span><kbd>A</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                    <p><samp>Aacute</samp><span class="Latin">=</span><kbd>A</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                    <p><samp>Acaron</samp><span class="Latin">=</span><kbd>A</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                    <p><samp>Agrave</samp><span class="Latin">=</span><kbd>A</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+
+                    <p><samp>Omacron</samp><span class="Latin">=</span><kbd>O</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                    <p><samp>Oacute</samp><span class="Latin">=</span><kbd>O</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                    <p><samp>Ocaron</samp><span class="Latin">=</span><kbd>O</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                    <p><samp>Ograve</samp><span class="Latin">=</span><kbd>O</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+
+                    <p><samp>Emacron</samp><span class="Latin">=</span><kbd>E</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                    <p><samp>Eacute</samp><span class="Latin">=</span><kbd>E</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                    <p><samp>Ecaron</samp><span class="Latin">=</span><kbd>E</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                    <p><samp>Egrave</samp><span class="Latin">=</span><kbd>E</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+
+                    <p><samp>Imacron</samp><span class="Latin">=</span><kbd>I</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                    <p><samp>Iacute</samp><span class="Latin">=</span><kbd>I</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                    <p><samp>Icaron</samp><span class="Latin">=</span><kbd>I</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                    <p><samp>Igrave</samp><span class="Latin">=</span><kbd>I</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+
+                    <p><samp>Umacron</samp><span class="Latin">=</span><kbd>U</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                    <p><samp>Uacute</samp><span class="Latin">=</span><kbd>U</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                    <p><samp>Ucaron</samp><span class="Latin">=</span><kbd>U</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                    <p><samp>Ugrave</samp><span class="Latin">=</span><kbd>U</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+
+                    <p><samp>Udieresismacron</samp><span class="Latin">=</span><kbd>Udieresis</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                    <p><samp>Udieresisacute</samp><span class="Latin">=</span><kbd>Udieresis</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                    <p><samp>Udieresiscaron</samp><span class="Latin">=</span><kbd>Udieresis</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                    <p><samp>Udieresisgrave</samp><span class="Latin">=</span><kbd>Udieresis</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+
+                    <p><samp>Udieresis</samp><span class="Latin">=</span><kbd>V</kbd><span class="Latin">+</span><kbd>`</kbd></kbd><span class="Latin">+</span><kbd>`</kbd> </p>
+                    <p><samp>Udieresismacron</samp><span class="Latin">=</span><kbd>V</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                    <p><samp>Udieresisacute</samp><span class="Latin">=</span><kbd>V</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                    <p><samp>Udieresiscaron</samp><span class="Latin">=</span><kbd>V</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                    <p><samp>Udieresisgrave</samp><span class="Latin">=</span><kbd>V</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+
+                    <p><samp>Udieresis</samp><span class="Latin">=</span><kbd>U</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>5</kbd></p>
+                    <p><samp>Udieresismacron</samp><span class="Latin">=</span><kbd>U</kbd><span class="Latin">+</span><kbd>`</kbd> five</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                    <p><samp>Udieresisacute</samp><span class="Latin">=</span><kbd>U</kbd><span class="Latin">+</span><kbd>`</kbd> five</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                    <p><samp>Udieresiscaron</samp><span class="Latin">=</span><kbd>U</kbd><span class="Latin">+</span><kbd>`</kbd> five</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                    <p><samp>Udieresisgrave</samp><span class="Latin">=</span><kbd>U</kbd><span class="Latin">+</span><kbd>`</kbd> five</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+
+                    <p><samp>Ecircumflexmacron</samp><span class="Latin">=</span><kbd>Ecircumflex</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                    <p><samp>Ecircumflexacute</samp><span class="Latin">=</span><kbd>Ecircumflex</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                    <p><samp>Ecircumflexcaron</samp><span class="Latin">=</span><kbd>Ecircumflex</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                    <p><samp>Ecircumflexgrave</samp><span class="Latin">=</span><kbd>Ecircumflex</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+
+                    <p><samp>Ecircumflex</samp><span class="Latin">=</span><kbd>E</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>6</kbd></p>
+                    <p><samp>Ecircumflexmacron</samp><span class="Latin">=</span><kbd>E</kbd><span class="Latin">+</span><kbd>`</kbd> six</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                    <p><samp>Ecircumflexacute</samp><span class="Latin">=</span><kbd>E</kbd><span class="Latin">+</span><kbd>`</kbd> six</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                    <p><samp>Ecircumflexcaron</samp><span class="Latin">=</span><kbd>E</kbd><span class="Latin">+</span><kbd>`</kbd> six</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                    <p><samp>Ecircumflexgrave</samp><span class="Latin">=</span><kbd>E</kbd><span class="Latin">+</span><kbd>`</kbd> six</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+
+                    <p><samp>Mmacron</samp><span class="Latin">=</span><kbd>M</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                    <p><samp>Macute</samp><span class="Latin">=</span><kbd>M</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                    <p><samp>Mcaron</samp><span class="Latin">=</span><kbd>M</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                    <p><samp>Mgrave</samp><span class="Latin">=</span><kbd>M</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+
+                    <p><samp>Nmacron</samp><span class="Latin">=</span><kbd>N</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                    <p><samp>Nacute</samp><span class="Latin">=</span><kbd>N</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                    <p><samp>Ncaron</samp><span class="Latin">=</span><kbd>N</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                    <p><samp>Ngrave</samp><span class="Latin">=</span><kbd>N</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+
+                    <p><samp>Zcircumflex</samp><span class="Latin">=</span><kbd>Z</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>6</kbd></p>
+                    <p><samp>Ccircumflex</samp><span class="Latin">=</span><kbd>C</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>6</kbd></p>
+                    <p><samp>Scircumflex</samp><span class="Latin">=</span><kbd>S</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>6</kbd></p>
+
+                    <p><samp>Engmacron</samp><span class="Latin">=</span><kbd>Eng</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                    <p><samp>Engacute</samp><span class="Latin">=</span><kbd>Eng</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                    <p><samp>Engcaron</samp><span class="Latin">=</span><kbd>Eng</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                    <p><samp>Enggrave</samp><span class="Latin">=</span><kbd>Eng</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+
+                    <p><samp>Eng</samp><span class="Latin">=</span><kbd>N</kbd><span class="Latin">+</span><kbd>`</kbd> g </p>
+                    <p><samp>Engmacron</samp><span class="Latin">=</span><kbd>N</kbd><span class="Latin">+</span><kbd>`</kbd> g</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                    <p><samp>Engacute</samp><span class="Latin">=</span><kbd>N</kbd><span class="Latin">+</span><kbd>`</kbd> g</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                    <p><samp>Engcaron</samp><span class="Latin">=</span><kbd>N</kbd><span class="Latin">+</span><kbd>`</kbd> g</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                    <p><samp>Enggrave</samp><span class="Latin">=</span><kbd>N</kbd><span class="Latin">+</span><kbd>`</kbd> g</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p>
+
+                    <p><samp>Eng</samp><span class="Latin">=</span><kbd>N</kbd><span class="Latin">+</span><kbd>`</kbd> G </p>
+                    <p><samp>Engmacron</samp><span class="Latin">=</span><kbd>N</kbd><span class="Latin">+</span><kbd>`</kbd> G</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>1</kbd></p>
+                    <p><samp>Engacute</samp><span class="Latin">=</span><kbd>N</kbd><span class="Latin">+</span><kbd>`</kbd> G</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>2</kbd></p>
+                    <p><samp>Engcaron</samp><span class="Latin">=</span><kbd>N</kbd><span class="Latin">+</span><kbd>`</kbd> G</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>3</kbd></p>
+                    <p><samp>Enggrave</samp><span class="Latin">=</span><kbd>N</kbd><span class="Latin">+</span><kbd>`</kbd> G</kbd><span class="Latin">+</span><kbd>`</kbd><span class="Latin">+</span><kbd>4</kbd></p> -->
+
+                    <h3 id='转换器'>转换器</h3>
+                    <p><span class="Latin">Pinyinia</span>这款字体提供了合字的方法来显示出声调符号。不过，如果要将这些用合字的方法显示出的带调字母复制到其他设备、软件，或者更换字体，就可能导致合字失效，文本变成乱码。因此，可以使用如下的转换器把“乱码”（其实是有规律的字母＋“<span class="Latin">`</span>”＋数字的形式）转换为相应的带调字母。</p>
+                    <textarea id="txt" style="font-family: var(--font-sans);">
+Jia`1ng lua`4nma`3 ti`4hua`4n we`2i zhe`4ngcha`2ng de da`4i she`1ngdia`4o de zi`4mu`3.</textarea>
+                    <!-- <br /> -->
+                    <!-- <input type="text" id="replaceContent" value='a`1|ā,a`2|á,a`3|ǎ,a`4|à,o`1|ō,o`2|ó,o`3|ǒ,o`4|ò,e`1|ē,e`2|é,e`3|ě,e`4|è,i`1|ī,i`2|í,i`3|ǐ,i`4|ì,u`1|ū,u`2|ú,u`3|ǔ,u`4|ù,ü`1|ǖ,ü`2|ǘ,ü`3|ǚ,ü`4|ǜ,v``|ü,v`1|ǖ,v`2|ǘ,v`3|ǚ,v`4|ǜ,u`5|ü,u`5`1|ǖ,u`5`2|ǘ,u`5`3|ǚ,u`5`4|ǜ,ê`1|ê̄,ê`2|ế,ê`3|ê̌,ê`4|ề,e`6|ê,e`6`1|ê̄,e`6`2|ế,e`6`3|ê̌,e`6`4|ề,m`1|m̄,m`2|ḿ,m`3|m̌,m`4|m̀,n`1|n̄,n`2|ń,n`3|ň,n`4|ǹ,z`6|ẑ,c`6|ĉ,s`6|ŝ,ŋ`1|ŋ̄,ŋ`2|ŋ́,ŋ`3|ŋ̌,ŋ`4|ŋ̀,n`g|ŋ,n`g`1|ŋ̄,n`g`2|ŋ́,n`g`3|ŋ̌,n`g`4|ŋ̀,A`1|Ā,A`2|Á,A`3|Ǎ,A`4|À,O`1|Ō,O`2|Ó,O`3|Ǒ,O`4|Ò,E`1|Ē,E`2|É,E`3|Ě,E`4|È,I`1|Ī,I`2|Í,I`3|Ǐ,I`4|Ì,U`1|Ū,U`2|Ú,U`3|Ǔ,U`4|Ù,Ü`1|Ǖ,Ü`2|Ǘ,Ü`3|Ǚ,Ü`4|Ǜ,V``|Ü,V`1|Ǖ,V`2|Ǘ,V`3|Ǚ,V`4|Ǜ,U`5|Ü,U`5`1|Ǖ,U`5`2|Ǘ,U`5`3|Ǚ,U`5`4|Ǜ,Ê`1|Ê̄,Ê`2|Ế,Ê`3|Ê̌,Ê`4|Ề,E`6|Ê,E`6`1|Ê̄,E`6`2|Ế,E`6`3|Ê̌,E`6`4|Ề,M`1|M̄,M`2|Ḿ,M`3|M̌,M`4|M̀,N`1|N̄,N`2|Ń,N`3|Ň,N`4|Ǹ,Z`6|Ẑ,C`6|Ĉ,S`6|Ŝ,Ŋ`1|Ŋ̄,Ŋ`2|Ŋ́,Ŋ`3|Ŋ̌,Ŋ`4|Ŋ̀,N`G|Ŋ,N`G`1|Ŋ̄,N`G`2|Ŋ́,N`G`3|Ŋ̌,N`G`4|Ŋ̀,' style="width:99%;"><br /> -->
+                    <!--TODO： class="tabulation">后面的&amp;#9;可能不需要了，因为样式结构改了，似乎不需要制表符了 【已修改】-->
+                    <div style="text-align: center;"><button type="button" onclick="javascript:doReplace();">替换</button></div>
+
+                    <script language="javascript">
+                        function doReplace() {
+                            let replaceTXT = document.getElementById('txt').value;
+
+                            // var modifiedTXT = originalTXT.replace(/sup class='md-footnote'><a href='#dfref-footnote-\d+' name='ref-footnote-\d+'>(\d+)<\/a><\/sup>/g, "sup class='footnoteMark' id='footnote-mark-$1'><a href='#footnote-number-$1'>$1</a></sup>");//换文章中的注释标号
+                            // modifiedTXT = modifiedTXT.replace(/<span class='md-fn-count'>(\d+)<\/span> /g, "<div id='footnote-number-$1' class='footnoteNumber'>$1</div><p>");//换注释区域的编号
+                            // modifiedTXT = modifiedTXT.replace(/\s<a name='dfref-footnote-(\d+)' href='#ref-footnote-\d+' title='回到文档' class='reversefootnote'>↩<\/a>/g, "<a href='#footnote-mark-$1' title='返回正文' class='reversefootnote'>⇧</a></p>");//换注释区域回到正文按钮
+                            // modifiedTXT = modifiedTXT.replace(/(?<=[\u4e00-\u9fa5\u201c-\u201d\u3000-\u303F\uFF00-\uFFEF—])([a-zA-Z0-9 ,.;:!\?\/&\u2018-\u2019-]+)/g, '<span class="Latin" lang="en">$1<\/span>');
+                            // document.getElementById('txt').value = modifiedTXT;
+                            let transformContent = 'a`1|ā,a`2|á,a`3|ǎ,a`4|à,o`1|ō,o`2|ó,o`3|ǒ,o`4|ò,e`1|ē,e`2|é,e`3|ě,e`4|è,i`1|ī,i`2|í,i`3|ǐ,i`4|ì,u`1|ū,u`2|ú,u`3|ǔ,u`4|ù,ü`1|ǖ,ü`2|ǘ,ü`3|ǚ,ü`4|ǜ,v``|ü,v`1|ǖ,v`2|ǘ,v`3|ǚ,v`4|ǜ,u`5|ü,u`5`1|ǖ,u`5`2|ǘ,u`5`3|ǚ,u`5`4|ǜ,ê`1|ê̄,ê`2|ế,ê`3|ê̌,ê`4|ề,e`6|ê,e`6`1|ê̄,e`6`2|ế,e`6`3|ê̌,e`6`4|ề,m`1|m̄,m`2|ḿ,m`3|m̌,m`4|m̀,n`1|n̄,n`2|ń,n`3|ň,n`4|ǹ,z`6|ẑ,c`6|ĉ,s`6|ŝ,ŋ`1|ŋ̄,ŋ`2|ŋ́,ŋ`3|ŋ̌,ŋ`4|ŋ̀,n`g|ŋ,n`g`1|ŋ̄,n`g`2|ŋ́,n`g`3|ŋ̌,n`g`4|ŋ̀,A`1|Ā,A`2|Á,A`3|Ǎ,A`4|À,O`1|Ō,O`2|Ó,O`3|Ǒ,O`4|Ò,E`1|Ē,E`2|É,E`3|Ě,E`4|È,I`1|Ī,I`2|Í,I`3|Ǐ,I`4|Ì,U`1|Ū,U`2|Ú,U`3|Ǔ,U`4|Ù,Ü`1|Ǖ,Ü`2|Ǘ,Ü`3|Ǚ,Ü`4|Ǜ,V``|Ü,V`1|Ǖ,V`2|Ǘ,V`3|Ǚ,V`4|Ǜ,U`5|Ü,U`5`1|Ǖ,U`5`2|Ǘ,U`5`3|Ǚ,U`5`4|Ǜ,Ê`1|Ê̄,Ê`2|Ế,Ê`3|Ê̌,Ê`4|Ề,E`6|Ê,E`6`1|Ê̄,E`6`2|Ế,E`6`3|Ê̌,E`6`4|Ề,M`1|M̄,M`2|Ḿ,M`3|M̌,M`4|M̀,N`1|N̄,N`2|Ń,N`3|Ň,N`4|Ǹ,Z`6|Ẑ,C`6|Ĉ,S`6|Ŝ,Ŋ`1|Ŋ̄,Ŋ`2|Ŋ́,Ŋ`3|Ŋ̌,Ŋ`4|Ŋ̀,N`G|Ŋ,N`G`1|Ŋ̄,N`G`2|Ŋ́,N`G`3|Ŋ̌,N`G`4|Ŋ̀,';
+                            let g = transformContent.split(',');
+                            // var g = document.getElementById('replaceContent').value.split(',');
+                            let k, r;
+                            for (let i = 0; i < g.length; i++) {
+                                k = g[i].split('|');
+                                try {
+                                    r = eval('/' + k[0] + '/g');
+                                    replaceTXT = replaceTXT.replace(r, k[1]);
+                                } catch (e) { console.error(e) }
+                            }
+                            document.getElementById('txt').value = replaceTXT;
+                        }
+                    </script>
+                    <hr>
+                    <section id='footnotesArea'>
+                        <h2 id='注释'>注　释</h2>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-1' class='footnoteNumber'>1</div>
+                            <p>组合用变音符号（<span class="Latin" lang="en">Combining Diacritical Marks</span>），指<span class="Latin" lang="en">Unicode</span>编号<code>0300</code><span class="BanZiXian">–</span><code>036F</code>的字符。这些字符用于和其他字母组合成带变音符号的字母。对于汉语拼音来说，第一、二、三、四声可分别使用<span class="Latin" lang="en">Combining Macron</span>（<code>0304</code>，<span class="Latin" lang="en"> ̄ </span>）、<span class="Latin" lang="en">Combining Acute Accent</span>（<code>0301</code>，<span class="Latin" lang="en"> ́ </span>）、<span class="Latin" lang="en">Combining Caron</span>（<code>030C</code>，<span class="Latin" lang="en"> ̌ </span>）、<span class="Latin" lang="en">Combining Grave Accent</span>（<code>0300</code>，<span class="Latin" lang="en"> ̀ </span>）。<a href='#footnote-mark-1' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-2' class='footnoteNumber'>2</div>
+                            <p>在各个软件中启用“标准合字”（<span class="Latin" lang="en">Standard Ligatures</span>，<code>liga</code>）<span class="Latin" lang="en">OpenType</span>特性的方法为：</p>
+                            <p>在<span class="Latin" lang="en">Adobe InDesign</span>中，在“字符”面板，点击右上角菜单按钮，选择“连笔字”；</p>
+                            <p>在<span class="Latin" lang="en">Adobe Illustrator</span>中，在“<span class="Latin" lang="en">OpenType</span>”面板，选择“标准连字”；</p>
+                            <p>在<span class="Latin" lang="en">Adobe Photoshop</span>中，在“字符”面板，选择“标准连字”；</p>
+                            <p>在<span class="Latin" lang="en">Adobe After Effects</span>中，在“字符”面板，点击右上角菜单按钮，选择“连字”；</p>
+                            <p>在<span class="Latin" lang="en">Adobe Premiere Pro</span>中，该功能默认打开，无手动调整选项；</p>
+                            <p>在<span class="Latin" lang="en">Microsoft Word</span>中，展开“字体”窗口，在“高级”选项卡，“连字”一栏，选择“仅标准”；</p>
+                            <p>在<span class="Latin" lang="en">Microsoft Powerpoint</span>中，该功能的支持不佳，时好时坏；</p>
+                            <p>在<span class="Latin" lang="en">Pages</span>文稿中，选择“格式”菜单，选择“字体”<span class="YiZiXian">—</span>“连字”，选择“使用默认值”或“全部使用”（注意“格式”<span class="YiZiXian">—</span>“字体”<span class="YiZiXian">—</span>“字符间距”一项应当选择“都不使用”，否则会影响到该功能）；</p>
+                            <p>在<span class="Latin" lang="en">Keynote</span>讲演中，选择“格式”菜单，选择“字体”<span class="YiZiXian">—</span>“连字”，选择“使用默认值”或“全部使用”（注意“格式”<span class="YiZiXian">—</span>“字体”<span class="YiZiXian">—</span>“字符间距”一项应当选择“都不使用”，否则会影响到该功能）；<a href='#footnote-mark-2' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-3' class='footnoteNumber'>3</div>
+                            <p>双层<span class="Latin" lang="en">a</span>的易读性和易辨认性比单层<span class="Latin" lang="en">a</span>更好，这是因为它的造型和其他字母（尤其是<span class="Latin" lang="en">o</span>）的区别更大，不易混淆。并且，有理论认为我们在识读拉丁字母组成的文本时，主要是依靠识读小写字母的上半部分的。这是因为小写字母互相之间在上半部分的差异比下半部分更大。双层<span class="Latin" lang="en">a</span>相比于单层<span class="Latin" lang="en">a</span>，其上半部分相比于其他字母的差异确实更大。详见：《<cite><span class="Latin" lang="en">Detail in typography</span></cite>》，<span class="Latin" lang="en">Jost Hochuli</span>著，<span class="Latin" lang="en">Charles Whitehouse</span>译英，<span class="Latin" lang="en">Hyphen Press</span>，<span class="Latin" lang="en">2008</span>年，第<span class="Latin" lang="en">14</span><span class="YiZiXian">—</span><span class="Latin" lang="en">17</span>页（图<span class="Latin" lang="en">11</span>、<span class="Latin" lang="en">12</span>、<span class="Latin" lang="en">13</span>）；《<cite><span class="Latin" lang="en">Typography: A Very Short Introduction</span></cite>》，<span class="Latin" lang="en">Paul Luna</span>著，牛津大学出版社，<span class="Latin" lang="en">2018</span>年，第<span class="Latin" lang="en">114</span>页。<a href='#footnote-mark-3' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-4' class='footnoteNumber'>4</div>
+                            <p>在各个软件中启用“风格组合”（<span class="Latin" lang="en">Stylistic Set</span>，<code>ss01</code><span class="BanZiXian">–</span><code>ss06</code>）<span class="Latin" lang="en">OpenType</span>特性的方法为：</p>
+                            <p>在<span class="Latin" lang="en">Adobe InDesign</span>中，在“字符”面板，点击右上角菜单按钮，选择“<span class="Latin" lang="en">OpenType</span>”<span class="YiZiXian">—</span>“风格组合”，选择相应的条目；</p>
+                            <p>在<span class="Latin" lang="en">Adobe Illustrator</span>中，在“<span class="Latin" lang="en">OpenType</span>”面板，选择“风格组合”，选择相应的条目；</p>
+                            <p>在<span class="Latin" lang="en">Adobe Photoshop</span>中，不具备此功能，但可以打开“字形”面板手动选择想要的替换字形；</p>
+                            <p>在<span class="Latin" lang="en">Microsoft Word</span>中，展开“字体”窗口，在“高级”选项卡，“样式集”一栏，选择相应的选项（在<span class="Latin" lang="en">Word</span>中无法同时启用多个样式集）；</p>
+                            <p>在<span class="Latin" lang="en">Adobe After Effects</span>、<span class="Latin" lang="en">Adobe Premiere Pro</span>、<span class="Latin" lang="en">Microsoft Powerpoint</span>、<span class="Latin" lang="en">Pages</span>文稿、<span class="Latin" lang="en">Keynote</span>讲演中，不具备此功能。<a href='#footnote-mark-4' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-5' class='footnoteNumber'>5</div>
+                            <p>在各个软件中启用“上下文变体”（<span class="Latin" lang="en">Contextual Alternates</span>，<code>calt</code>）<span class="Latin" lang="en">OpenType</span>特性的方法为：</p>
+                            <p>在<span class="Latin" lang="en">Adobe InDesign</span>中，在“字符”面板，点击右上角菜单按钮，选择“<span class="Latin" lang="en">OpenType</span>”<span class="YiZiXian">—</span>“上下文替代字”；</p>
+                            <p>在<span class="Latin" lang="en">Adobe Illustrator</span>中，在“<span class="Latin" lang="en">OpenType</span>”面板，选择“上下文替代字”；</p>
+                            <p>在<span class="Latin" lang="en">Adobe Photoshop</span>中，在“字符”面板，选择“上下文替代字”；</p>
+                            <p>在<span class="Latin" lang="en">Microsoft Word</span>中，展开“字体”窗口，在“高级”选项卡，勾选“使用上下文替换”（注意<span class="Latin" lang="en">Word</span>可能会自动把一些字符替换为中文字体）；</p>
+                            <p>在<span class="Latin" lang="en">Pages</span>文稿中，该功能默认打开，无手动调整选项；</p>
+                            <p>在<span class="Latin" lang="en">Keynote</span>讲演中，该功能默认打开，无手动调整选项；</p>
+                            <p>在<span class="Latin" lang="en">Adobe After Effects</span>、<span class="Latin" lang="en">Adobe Premiere Pro</span>、<span class="Latin" lang="en">Microsoft Powerpoint</span>中，不具备此功能。<a href='#footnote-mark-5' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-6' class='footnoteNumber'>6</div>
+                            <p>理论上，“字形组合<span class="FenGeHao">／</span>分解”（<span class="Latin" lang="en">Glyph Composition/Decomposition</span>，<code>ccmp</code>）<span class="Latin" lang="en">OpenType</span>特性应当默认启用且不提供手动调整选项，除非软件不支持此功能。已知常用软件中<span class="Latin" lang="en">Microsoft Powerpoint</span>不支持<code>ccmp</code>特性（这也导致了在这个软件中用<span class="Latin" lang="en">Pinyinia</span>字体会导致破折号断开，一个解决方法是直接输入“二字线”〔<span class="Latin" lang="en">Two-Em Dash</span>〕“⸺”）。<a href='#footnote-mark-6' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <div id='footnote-number-7' class='footnoteNumber'>7</div>
+                            <p>关于“字母的造型与字母的频度和字母组合的频度有关”的观点，详见：《<cite><span class="Latin" lang="en">Counterpunch: Making Type in the Sixteenth Century, Designing Typefaces Now</span></cite>》，<span class="Latin" lang="en">Fred Smeijers</span>著，<span class="Latin" lang="en">Hyphen Press</span>，<span class="Latin" lang="en">1996</span>年，第<span class="Latin" lang="en">165</span><span class="YiZiXian">—</span><span class="Latin" lang="en">168</span>页。<a href='#footnote-mark-7' title='返回正文' class='reversefootnote'>⇧</a></p>
+                        </div>
+                        <div class='footnoteEntry'>
+                            <p class="footnoteExtra">关于汉语拼音各字母及符号的用法，详见《<cite>汉语拼音方案</cite>》（<span class="Latin" lang="en">1958</span>年<span class="Latin" lang="en">2</span>月<span class="Latin" lang="en">11</span>日第一届全国人民代表大会第五次会议通过）。</p>
+                        </div>
+                    </section>
+                </article>
+                <!-- 页尾的二级页面模板由此开始 -->
+                <footer>
+                    <small>&#8197;如果您喜欢这篇文章，欢迎您给我￥<a href="../Donate.html" target="_blank" style="font-weight: 700;">打赏</a>！</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small>©&#8197;<a href="../Copyright.html" target="_blank">版权声明</a>&emsp;＠&#8197;<a href="../Contact_and_Feedback.html" target="_blank">联系与反馈</a>&emsp;♡&#8197;<a href="../Acknowledgements.html" target="_blank">致谢</a></small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing"><span class="Latin">↓</span></small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small class="footerLineSpacing">&nbsp;</small>
+                    <small style="font-weight: 700;" id="footerWebsiteName"><a href="../Introduction.html" target="_blank">字无字<span class="Latin">ú–Typography</span></a></small>
+                    <small>张擎天的个人网站</small>
+                    <small>分享排版设计</small>
+                    <small>以及更多</small>
+                    <small><span class="ShengLyueHao">……</span></small>
+                </footer>
+                <!-- 页尾的二级页面模板到此结束 -->
+            </div>
+
+        </main>
+    </div>
+
+    <!-- 脚本的二级页面模板由此开始 -->
+    <script src="../scripts/u-Typography.js"></script>
+    <script src="../scripts/han.js"></script>
+    <script>
+        changeTypeMenu_initialActive()
+        Han(document.querySelector('.entry'))
+            .renderJiya()
+            .renderHWS()
+    </script>
+    <!-- 脚本的二级页面模板到此结束 -->
+
+</body>
+
+</html>

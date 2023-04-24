@@ -205,6 +205,7 @@ See the Mulan PSL v2 for more details. */
 	--colour-paper: rgb(245, 244, 242);
 	--colour-link-active-background: rgb(206, 189, 166);
 	--colour-1: rgb(188, 171, 147);
+	--colour-1-5: rgb(207, 193, 172);
 	--colour-2: rgb(228, 216, 198);
 	--colour-3: rgb(239, 231, 216);
 	--colour-button-hover: rgba(243, 230, 200, 0.5);
@@ -218,7 +219,6 @@ See the Mulan PSL v2 for more details. */
 	--colour-changeType-hover: rgb(123, 117, 106);
 	--colour-changeType-button-hover: rgb(242, 237, 228);
 	--colour-changeType-button-active: rgb(237, 230, 215);
-	--colour-button: rgb(207, 193, 172);
 	--colour-sidenote-mark: rgb(195, 67, 56);
 	--colour-footnote-mark: rgb(177, 132, 69);
 	--colour-code: rgb(230, 227, 226);
@@ -400,7 +400,7 @@ html {
 }
 #changeTypeMenu-ButtonSVG {
 	height: 4px;
-	/* fill: var(--colour-button); */
+	/* fill: var(--colour-1-5); */
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -809,6 +809,7 @@ html {
 	transition-timing-function: ease-in-out;
 	transition-duration: 100ms;
 	text-align: center;
+	overflow-y: auto;
 }
 #tableOfContent:hover {
 	opacity: 1;
@@ -924,6 +925,9 @@ blockquote + p,
 .footnoteNumber + p,
 .noIndentParagraph {
 	text-indent: 0 !important;
+}
+.forcedIndentParagraph {
+	text-indent: 3rem !important;
 }
 /* 边注 */
 .sideNoteMark {
@@ -1128,6 +1132,9 @@ figure {
 figure img {
 	cursor: zoom-in;
 }
+figure p {
+	text-indent: 0rem;
+}
 #fullScreenImageContainer {
 	background-color: var(--colour-paper);
 	display: block;
@@ -1246,7 +1253,9 @@ pre code {
 	padding: auto;
 	line-height: inherit;
 }
-code {
+code,
+kbd,
+samp {
 	font-family: var(--font-code);
 	font-size: 1em;
 	background-color: var(--colour-code);
@@ -1255,9 +1264,15 @@ code {
 	line-height: 0.1rem;
 }
 kbd {
-	font-family: var(--font-code);
-	font-style: italic;
-	font-size: 1em;
+	border: 1px solid var(--colour-light-grey-1);
+	background-color: transparent;
+	border-radius: 3px;
+	/* font-style: italic; */
+}
+samp {
+	background-color: transparent;
+	/* background-color: var(--colour-dark-grey-2);
+	color: var(--colour-paper); */
 }
 article a {
 	/* display: inline; */
@@ -1565,6 +1580,88 @@ strong {
 	/* text-emphasis: filled circle !important; */
 	text-decoration: none;
 }
+
+textarea {
+	font-family: var(--font-hei);
+	line-height: 1.5rem;
+	width: 100%;
+	padding: 1rem;
+	margin: 1rem 0;
+	min-height: 200px;
+	resize: none;
+}
+button {
+	/* input[type="button"] { */
+	font-family: var(--font-hei);
+	font-size: 0.75rem;
+	line-height: 1em;
+	padding: 10px;
+	/* margin: 0 auto; */
+	border-radius: 10px;
+	background-color: var(--colour-2);
+	transition: all 100ms ease-in-out;
+	background-size: auto;
+	background-position: auto;
+}
+button:hover {
+	background-color: var(--colour-3);
+	background-size: auto;
+	background-position: auto;
+}
+button:active {
+	background-color: var(--colour-button-active);
+	background-size: auto;
+	background-position: auto;
+}
+.buttonGroup {
+	width: fit-content;
+	height: fit-content;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.downloadButton {
+	width: 200px;
+	height: 50px;
+	margin: 1rem;
+	display: inline-block;
+}
+.downloadButton a {
+	font-size: 1rem;
+	line-height: 1em;
+	font-family: var(--font-hei);
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	height: 100%;
+	padding: 15px 0;
+	/* margin: 0 auto; */
+	border-radius: 5px;
+	color: var(--colour-2);
+	background: none;
+	background-color: var(--colour-dark-grey-1);
+	transition: all 100ms ease-in-out;
+	background-size: auto;
+	background-position: auto;
+}
+.downloadButton a:hover {
+	color: var(--colour-1-5);
+	background: none;
+	background-color: var(--colour-dark-grey-2);
+}
+.downloadButton a:active {
+	color: var(--colour-1);
+	background: none;
+	background-color: var(--colour-middle-grey-1);
+}
+.downloadIcon {
+	display: inline-block;
+	margin: auto 1rem;
+	font-size: 0.9em;
+	line-height: 0;
+}
+
 /* 拉丁文本 */
 .Latin {
 	hyphens: auto;

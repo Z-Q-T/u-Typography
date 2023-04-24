@@ -371,8 +371,8 @@ window.addEventListener("resize", changeTocPosition);
 changeTocPosition();
 // 点击目录项后自动关闭目录
 window.addEventListener("click", closeMenuAfterClick, false);
-function closeMenuAfterClick(e){
-// window.onclick = function (e) {
+function closeMenuAfterClick(e) {
+    // window.onclick = function (e) {
     console.log(e);
     if (e.target.matches('.tocH2 a') || e.target.matches('.tocH3 a') || e.target.matches('.tocH2 a span') || e.target.matches('.tocH3 a span') || e.target.matches('.tocH2 .biaodian') || e.target.matches('.tocH3 .biaodian') || e.target.matches('.tocH2 h-inner') || e.target.matches('.tocH3 h-inner') || e.target.matches('#toc-backToMainTitle a') || e.target.matches('#toc-skipToFootnote a')) {
         let windowWidth = window.innerWidth;
@@ -431,10 +431,25 @@ chineseGridLine();
 //     })
 // })
 
+// 对非折叠式目录调整它的高度
+function tocHeight() {
+    let MuLu = document.getElementById("tableOfContent");
+    let windowWidth = window.innerWidth;
+    let windowHeight = window.innerHeight;
+    console.log(windowHeight);
+    if (windowWidth >= 1380) {
+        MuLu.style.height = windowHeight - 100 + "px";
+    } else {
+        MuLu.style.cssText = "";
+    }
+}
+window.visualViewport.addEventListener("resize", tocHeight);
+tocHeight();
+
 // 点击放大的图片让它复原
 window.addEventListener("click", resizeImage, false);
-function resizeImage(e){
-// window.onclick = function (e) {
+function resizeImage(e) {
+    // window.onclick = function (e) {
     // let fullScreen = false;
     let container;
     let image;
