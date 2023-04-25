@@ -1135,6 +1135,11 @@ figure img {
 figure p {
 	text-indent: 0rem;
 }
+figure:first-child,
+h2 + figure,
+h3 + figure {
+	margin-top: 0.5rem;
+}
 #fullScreenImageContainer {
 	background-color: var(--colour-paper);
 	display: block;
@@ -1840,7 +1845,7 @@ h-char.bd-consecutive[unicode="30fb"]:not(.end-portion) {
 	#tableOfContent {
 		width: 13rem;
 		top: 0;
-padding-top: 45px;
+		padding-top: 45px;
 		padding-right: 1rem;
 		padding-bottom: 1rem;
 	}
@@ -2327,7 +2332,6 @@ padding-top: 45px;
 	#toc-PlaceHolder {
 		display: none;
 	}
-
 
 	#toc-Switcher {
 		display: block;
