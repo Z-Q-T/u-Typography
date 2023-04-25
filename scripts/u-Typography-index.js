@@ -192,11 +192,11 @@ menuButton.onclick = function () {
     if (menuVisibility == "hidden") {
         menu.style.visibility = "visible";
         menu.style.opacity = "1";
-        menu.style.top = "70px";
+        menu.style.top = "65px";
     } else {
         menu.style.visibility = "hidden";
         menu.style.opacity = "0";
-        menu.style.top = "60px";
+        menu.style.top = "55px";
     }
 }
 
@@ -213,11 +213,11 @@ function closeMenuAfterClick(e){
         if (menuVisibility == "hidden") {
             menu.style.visibility = "visible";
             menu.style.opacity = "1";
-            menu.style.top = "70px";
+            menu.style.top = "65px";
         } else {
             menu.style.visibility = "hidden";
             menu.style.opacity = "0";
-            menu.style.top = "60px";
+            menu.style.top = "55px";
         }
     }
 }

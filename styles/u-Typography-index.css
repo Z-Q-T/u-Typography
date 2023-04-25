@@ -315,8 +315,8 @@ html {
 	width: fit-content;
 	height: fit-content;
 	position: absolute;
-	top: 60px;
-	left: 10px;
+	top: 55px;
+	left: 5px;
 	/* border-right: 1px solid var(--colour-dark-grey-2);
 	border-bottom: 1px solid var(--colour-dark-grey-2); */
 	opacity: 0;
@@ -326,9 +326,9 @@ html {
 	z-index: 5;
 	padding: 0px;
 	background-color: var(--colour-paper);
-	border-radius: 4px;
+	/* border-radius: 4px; */
 	border: 1px solid var(--colour-middle-grey-1);
-	box-shadow: 0 0 5px var(--colour-shadow);
+	/* box-shadow: 0 0 5px var(--colour-shadow); */
 }
 .contentMenuList {
 	font-size: 0.75rem;
