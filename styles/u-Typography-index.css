@@ -1147,7 +1147,7 @@ li::marker {
 	color: var(--colour-dark-grey-1);
 	background-color: var(--colour-1-5);
 	border-radius: 3px;
-	transform: translateY(-5px);
+	transform: translateY(-3px);
 display: inline-block;
 }
 footer {
