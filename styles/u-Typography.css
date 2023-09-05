@@ -2,7 +2,7 @@
 [u-typography.css] is licensed under Mulan PSL v2.
 You can use this software according to the terms and conditions of the Mulan PSL v2.
 You may obtain a copy of Mulan PSL v2 at:
-         http://license.coscl.org.cn/MulanPSL2
+		http://license.coscl.org.cn/MulanPSL2
 THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
 EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
 MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
@@ -68,7 +68,7 @@ See the Mulan PSL v2 for more details. */
 /* 正文标点宋体 */
 @font-face {
 	font-family: "SONG-BiaoDian";
-	src: local("Source Han Serif SC Semibold"), local("Noto Serif SC Semibold"),
+	src: url("../fonts/ZhongwenBiaodian01-Regular.woff2") format("woff2"), local("Source Han Serif SC Semibold"), local("Noto Serif SC Semibold"),
 		local("Source Han Serif CN Semibold");
 	font-weight: 600;
 }
