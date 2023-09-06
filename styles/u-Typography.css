@@ -75,7 +75,7 @@ See the Mulan PSL v2 for more details. */
 /* 标题标点宋体 */
 @font-face {
 	font-family: "SONG-BiaoDian";
-	src: local("Source Han Serif SC Bold"), local("Noto Serif SC Bold"),
+	src: url("../fonts/ZhongwenBiaodian01-Bold.woff2") format("woff2"), local("Source Han Serif SC Bold"), local("Noto Serif SC Bold"),
 		local("Source Han Serif CN Bold");
 	font-weight: 700;
 }
@@ -680,6 +680,9 @@ html {
 	font-family: var(--font-song);
 	font-weight: 700;
 }
+#index .biaodian{
+	font-family: var(--font-song-biaodian);
+}
 /* #indexExplanation {
 	display: block;
 	position: absolute;
@@ -980,7 +983,8 @@ blockquote + p,
 /* 标题标点符号用思源宋体 */
 h1 h-char.biaodian > h-inner,
 h2 h-char.biaodian > h-inner,
-h3 h-char.biaodian > h-inner {
+h3 h-char.biaodian > h-inner,
+#tableOfContent h-char.biaodian > h-inner{
 	font-family: var(--font-song-biaodian) !important;
 	font-weight: 700 !important;
 	line-height: 0.1em;

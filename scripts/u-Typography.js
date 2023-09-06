@@ -62,7 +62,7 @@ document.getElementById('changeTypeMenu-BiaoTi-SONG').onclick = function changef
         e.style.fontSize = "1.05em";
     });//换西文
     // document.body.querySelectorAll("h1 h-char.bd-jiya.bd-open > h-inner, h1 h-char.bd-jiya.bd-close > h-inner, h1 h-char.bd-jiya.bd-cop > h-inner, h1 h-char.bd-jiya[unicode='ff0e'] > h-inner").forEach((e) => {
-    document.body.querySelectorAll("h1 h-char.biaodian > h-inner, h2 h-char.biaodian > h-inner, h3 h-char.biaodian > h-inner, h6 h-char.biaodian > h-inner, #tableOfContent li h-char.biaodian > h-inner").forEach((e) => {
+    document.body.querySelectorAll("h1 h-char.biaodian > h-inner, h2 h-char.biaodian > h-inner, h3 h-char.biaodian > h-inner, h6 h-char.biaodian > h-inner, #tableOfContent h-char.biaodian > h-inner").forEach((e) => {
         e.style.cssText = "font-family: var(--font-song-biaodian) !important; font-weight: 700 !important;";
     });//换标点
 
@@ -79,7 +79,7 @@ document.getElementById('changeTypeMenu-BiaoTi-HEI').onclick = function changefo
         e.style.fontWeight = "600";
         e.style.fontSize = "1.1em";
     });//换西文
-    document.body.querySelectorAll("h1 h-char.biaodian > h-inner, h2 h-char.biaodian > h-inner, h3 h-char.biaodian > h-inner, h6 h-char.biaodian > h-inner, #tableOfContent li h-char.biaodian > h-inner").forEach((e) => {
+    document.body.querySelectorAll("h1 h-char.biaodian > h-inner, h2 h-char.biaodian > h-inner, h3 h-char.biaodian > h-inner, h6 h-char.biaodian > h-inner, #tableOfContent h-char.biaodian > h-inner").forEach((e) => {
         e.style.cssText = "font-family: var(--font-hei-biaodian) !important; font-weight: 700 !important;";
     });//换标点
 
