@@ -68,14 +68,16 @@ See the Mulan PSL v2 for more details. */
 /* 正文标点宋体 */
 @font-face {
 	font-family: "SONG-BiaoDian";
-	src: url("../fonts/ZhongwenBiaodian01-Regular.woff2") format("woff2"), local("Source Han Serif SC Semibold"), local("Noto Serif SC Semibold"),
+	src: url("../fonts/ZhongwenBiaodian01-Regular.woff2") format("woff2"),
+		local("Source Han Serif SC Semibold"), local("Noto Serif SC Semibold"),
 		local("Source Han Serif CN Semibold");
 	font-weight: 600;
 }
 /* 标题标点宋体 */
 @font-face {
 	font-family: "SONG-BiaoDian";
-	src: url("../fonts/ZhongwenBiaodian01-Bold.woff2") format("woff2"), local("Source Han Serif SC Bold"), local("Noto Serif SC Bold"),
+	src: url("../fonts/ZhongwenBiaodian01-Bold.woff2") format("woff2"),
+		local("Source Han Serif SC Bold"), local("Noto Serif SC Bold"),
 		local("Source Han Serif CN Bold");
 	font-weight: 700;
 }
@@ -680,7 +682,7 @@ html {
 	font-family: var(--font-song);
 	font-weight: 700;
 }
-#index .biaodian{
+#index .biaodian {
 	font-family: var(--font-song-biaodian);
 }
 /* #indexExplanation {
@@ -984,7 +986,7 @@ blockquote + p,
 h1 h-char.biaodian > h-inner,
 h2 h-char.biaodian > h-inner,
 h3 h-char.biaodian > h-inner,
-#tableOfContent h-char.biaodian > h-inner{
+#tableOfContent h-char.biaodian > h-inner {
 	font-family: var(--font-song-biaodian) !important;
 	font-weight: 700 !important;
 	line-height: 0.1em;
@@ -1372,6 +1374,12 @@ small {
 	font-size: 0.75rem;
 	/* line-height: 1.5rem; */
 }
+
+.circleSectionDivide {
+	text-indent: 0;
+	text-align: center;
+	line-height: 0;
+}
 .footnoteEntry {
 	margin: 0rem auto;
 }
@@ -1732,7 +1740,8 @@ h-char.bd-jiya.bd-middle.bd-consecutive
 .JianGeHao + h-char.bd-jiya.bd-open.bd-consecutive.end-portion::before,
 .FenGeHao + h-char.bd-jiya.bd-open.bd-consecutive.end-portion::before,
 .BanZiXian + h-char.bd-jiya.bd-open.bd-consecutive.end-portion::before,
-.YiZiXian + h-char.bd-jiya.bd-open.bd-consecutive.end-portion::before {
+.YiZiXian + h-char.bd-jiya.bd-open.bd-consecutive.end-portion::before,
+span.tabulation + h-char.bd-jiya.bd-open.bd-consecutive.end-portion::before {
 	/* margin-left: -0.5em; */
 	content: "";
 }
