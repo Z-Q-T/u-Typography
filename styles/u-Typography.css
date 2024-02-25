@@ -982,31 +982,24 @@ blockquote + p,
 	/* font-family: inherit !important; */
 	text-align: left;
 }
-/* 标题标点符号用思源宋体 */
-h1 h-char.biaodian > h-inner,
-h2 h-char.biaodian > h-inner,
-h3 h-char.biaodian > h-inner,
-#tableOfContent h-char.biaodian > h-inner {
-	font-family: var(--font-song-biaodian) !important;
-	font-weight: 700 !important;
-	line-height: 0.1em;
-} /* h1 h-char.bd-jiya.bd-open > h-inner,
-h1 h-char.bd-jiya.bd-close > h-inner,
-h1 h-char.bd-jiya.bd-cop > h-inner,
-h1 h-char.bd-jiya[unicode="ff0e"] > h-inner {
-	font-family: var(--font-song-biaodian) !important;
-	font-weight: 700 !important;
-	line-height: 0.1em;
-} */
 
-/* 正文标点符号用思源黑体 */
+
+/* 正文标点符号用黑体 */
 article h-char.biaodian > h-inner {
 	font-family: var(--font-hei-biaodian);
 	font-weight: 400;
 	line-height: 0.1em;
 }
-
-/* 边注标点符号用思源黑体 */
+/* 标题标点符号用宋体 */
+h1 h-char.biaodian > h-inner,
+h2 h-char.biaodian > h-inner,
+h3 h-char.biaodian > h-inner,
+#tableOfContent h-char.biaodian > h-inner {
+	font-family: var(--font-song-biaodian) ;
+	font-weight: 700;
+	line-height: 0.1em;
+}
+/* 边注标点符号用黑体 */
 .sideNote h-char.biaodian > h-inner,
 #caption h-char.biaodian > h-inner {
 	font-family: var(--font-hei-biaodian) !important;
@@ -1489,17 +1482,7 @@ footer small .Latin {
 	font-weight: 600;
 	font-size: 1.1em;
 }
-/* 间隔号· */
-.JianGeHao {
-	font-family: var(--font-hei-biaodian) !important;
-	font-weight: 400 !important;
-	font-size: 0.7em;
-	line-height: 0em;
-	vertical-align: 0.15em;
-}
-.JianGeHao h-inner {
-	margin: 0% -0.14286em;
-}
+
 /* 省略号…… */
 .ShengLyueHao {
 	font-family: var(--font-hei-biaodian) !important;
@@ -1513,13 +1496,14 @@ footer small .Latin {
 h-char.bd-end.bd-jiya + .ShengLyueHao::before {
 	content: "";
 }
+
 /* 破折号⸺ */
 .PoZheHao {
-	font-family: var(--font-hei-biaodian) !important;
+	/* font-family: var(--font-hei-biaodian) !important; */
 	font-weight: 400 !important;
 	font-feature-settings: "fwid";
 	line-height: 0em;
-	text-shadow: 0 0.02em;
+	/* text-shadow: 0 0.02em; */
 	/* display: inline-block;
 	text-indent: 0; */
 }
@@ -1530,23 +1514,25 @@ h-char.bd-end.bd-jiya + .ShengLyueHao::before {
 h-char.bd-end.bd-jiya + .PoZheHao::before {
 	content: "";
 }
+
 /* 一字线— */
 .YiZiXian {
-	font-family: var(--font-hei-biaodian) !important;
+	/* font-family: var(--font-song-biaodian) !important; */
 	font-weight: 400 !important;
 	font-feature-settings: "fwid";
 	line-height: 0em;
-	text-shadow: 0 0.02em;
+	/* text-shadow: 0 0.02em; */
 	/* transform: translateY(1rem); */
 	/* margin: -0.5rem 0; */
 }
+
 /* 半字线– */
 .BanZiXian {
-	font-family: var(--font-hei-biaodian) !important;
+	/* font-family: var(--font-song-biaodian) !important; */
 	font-weight: 400 !important;
 	line-height: 0em;
-	vertical-align: 0.08em;
-	margin: 0 -0.0179em;
+	/* vertical-align: 0.08em; */
+	/* margin: 0 -0.0179em; */
 }
 .BanZiXian::before {
 	content: "\FEFF";
@@ -1555,17 +1541,32 @@ h-char.bd-end.bd-jiya + .PoZheHao::before {
 
 /* 分隔号／ */
 .FenGeHao {
-	font-family: var(--font-hei-biaodian) !important;
 	font-weight: 400 !important;
 	line-height: 0em;
 	/* transform: scale(0.5, 1); */
 	display: inline-block;
 	text-indent: 0;
-	transform: scale(0.5, 0.9);
+	/* transform: scale(0.5, 0.9); */
 	margin: 0 -0.25em;
-	text-shadow: 0.01em 0.018em, -0.01em -0.018em;
+	/* text-shadow: 0.01em 0.018em, -0.01em -0.018em; */
 }
 
+/* 间隔号· */
+.JianGeHao {
+	font-weight: 400 !important;
+	/* font-size: 0.7em; */
+	line-height: 0em;
+	/* vertical-align: 0.15em; */
+}
+
+/* 破折号、一字线、半字线、分隔号、间隔号统一设定字体 */
+.PoZheHao, .PoZheHao h-char h-inner,
+.YiZiXian, .BanZiXian,
+.FenGeHao, .FenGeHao h-char h-inner,
+.JianGeHao, .JianGeHao h-char h-inner {
+	font-family: var(--font-song-biaodian) !important;
+	/* margin: 0% -0.14286em; */
+}
 /* em {
 	font-family: inherit;
 	font-weight: inherit;

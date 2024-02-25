@@ -44,78 +44,125 @@ function changeTypeMenu_switchColour(active, inactive) {
     a.style.cssText = "background-color: var(--colour-changeType-selected) !important; color:black";
     let b = document.querySelector(inactive);
     b.style.cssText = "background-color: var(--colour-changeType-unselected); color:white";
-
-
 }
 
-//按钮的换字体功能
+//————————按钮的换字体功能————————
+
+// 换字体的函数
+function HuanZiTi(pageElements, targetType, typeWeight, typeSize){
+	document.body.querySelectorAll(pageElements).forEach((e) => {
+        e.style.fontFamily = targetType;
+        e.style.fontWeight = typeWeight;
+        e.style.fontSize = typeSize;
+    });
+}
+let BiaoTi_ZhongWen="h1,h2,h3,h6,#tableOfContent li";
+let BiaoTi_XiWen="h1 > .Latin, h2 > .Latin, h3 > .Latin, h6 .Latin,#tableOfContent li .Latin";
+let BiaoTi_BiaoDian="h1 h-char.biaodian > h-inner, h2 h-char.biaodian > h-inner, h3 h-char.biaodian > h-inner, h6 h-char.biaodian > h-inner, #tableOfContent h-char.biaodian > h-inner";
+
+let ZhengWen_ZhongWen="p,table";
+let ZhengWen_ZhongWen_QiangDiao="p > strong, p > em";
+let ZhengWen_ZhongWen_BiaoGe_TiTou="th";
+let ZhengWen_XiWen="p > .Latin, p > a .Latin, p > cite > .Latin, p > cite > a > .Latin, p > q > .Latin, p > .orderedListIndex .Latin, table .Latin";
+let ZhengWen_BiaoDian="article p > h-char.biaodian > h-inner, article p .orderedListIndex h-char.biaodian > h-inner";
+
+let BianZhu_ZhongWen=".sideNote, .TuTi, .TuZhu";
+let BianZhu_XiWen=".sideNote > .Latin, .TuTi .Latin, .TuZhu .Latin";
+let BianZhu_BiaoDian=".sideNote h-char.biaodian > h-inner, .TuTi h-char.biaodian > h-inner, .TuZhu h-char.biaodian > h-inner";
+
+let BuHuanZiTiDeBiaoDian="article .PoZheHao h-char h-inner, article .YiZiXian, article .BanZiXian, article .FenGeHao h-char h-inner, article .JianGeHao h-char h-inner";
+
+//破折号、一字线、半字线、分隔号、间隔号始终保持自制宋体
+function BiaoDianBuHuan(){
+	HuanZiTi(BuHuanZiTiDeBiaoDian,"var(--font-song-biaodian)","400","");
+	// document.body.querySelectorAll("article .PoZheHao h-char h-inner, article .YiZiXian, article .BanZiXian, article .FenGeHao h-char h-inner, article .JianGeHao h-char h-inner").forEach((e) => {
+    //     e.style.fontFamily = "var(--font-song-biaodian)";
+    //     e.style.fontWeight = "400";
+	// });
+}
+
 
 // 标题换宋体
 document.getElementById('changeTypeMenu-BiaoTi-SONG').onclick = function changefont_BiaoTi_SONG() {
-    document.body.querySelectorAll("h1,h2,h3,h6,#tableOfContent li").forEach((e) => {
-        e.style.fontFamily = "var(--font-song)";
-        e.style.fontWeight = "700";
-    });//换中文
-    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, h6 .Latin,#tableOfContent li .Latin").forEach((e) => {
-        e.style.fontFamily = "var(--font-serif)";
-        e.style.fontWeight = "600";
-        e.style.fontSize = "1.05em";
-    });//换西文
+	HuanZiTi(BiaoTi_ZhongWen,"var(--font-song)","700","");
+    // document.body.querySelectorAll("h1,h2,h3,h6,#tableOfContent li").forEach((e) => {
+    //     e.style.fontFamily = "var(--font-song)";
+    //     e.style.fontWeight = "700";
+    // });//换中文
+	HuanZiTi(BiaoTi_XiWen,"var(--font-serif)","600","1.05em");
+	HuanZiTi(BiaoTi_BiaoDian,"var(--font-song-biaodian)","700","");
+
+    // document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, h6 .Latin,#tableOfContent li .Latin").forEach((e) => {
+    //     e.style.fontFamily = "var(--font-serif)";
+    //     e.style.fontWeight = "600";
+    //     e.style.fontSize = "1.05em";
+    // });//换西文
     // document.body.querySelectorAll("h1 h-char.bd-jiya.bd-open > h-inner, h1 h-char.bd-jiya.bd-close > h-inner, h1 h-char.bd-jiya.bd-cop > h-inner, h1 h-char.bd-jiya[unicode='ff0e'] > h-inner").forEach((e) => {
-    document.body.querySelectorAll("h1 h-char.biaodian > h-inner, h2 h-char.biaodian > h-inner, h3 h-char.biaodian > h-inner, h6 h-char.biaodian > h-inner, #tableOfContent h-char.biaodian > h-inner").forEach((e) => {
-        e.style.cssText = "font-family: var(--font-song-biaodian) !important; font-weight: 700 !important;";
-    });//换标点
+    // document.body.querySelectorAll("h1 h-char.biaodian > h-inner, h2 h-char.biaodian > h-inner, h3 h-char.biaodian > h-inner, h6 h-char.biaodian > h-inner, #tableOfContent h-char.biaodian > h-inner").forEach((e) => {
+    //     e.style.cssText = "font-family: var(--font-song-biaodian) !important; font-weight: 700 !important;";
+    // });//换标点
 
     changeTypeMenu_switchColour("#changeTypeMenu-BiaoTi-SONG", "#changeTypeMenu-BiaoTi-HEI");
 }
 // 标题换黑体
 document.getElementById('changeTypeMenu-BiaoTi-HEI').onclick = function changefont_BiaoTi_HEI() {
-    document.body.querySelectorAll("h1,h2,h3,h6,#tableOfContent li").forEach((e) => {
-        e.style.fontFamily = "var(--font-hei)";
-        e.style.fontWeight = "700";
-    });//换中文
-    document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, h6 .Latin, #tableOfContent li .Latin").forEach((e) => {
-        e.style.fontFamily = "var(--font-sans)";
-        e.style.fontWeight = "600";
-        e.style.fontSize = "1.1em";
-    });//换西文
-    document.body.querySelectorAll("h1 h-char.biaodian > h-inner, h2 h-char.biaodian > h-inner, h3 h-char.biaodian > h-inner, h6 h-char.biaodian > h-inner, #tableOfContent h-char.biaodian > h-inner").forEach((e) => {
-        e.style.cssText = "font-family: var(--font-hei-biaodian) !important; font-weight: 700 !important;";
-    });//换标点
+	HuanZiTi(BiaoTi_ZhongWen,"var(--font-hei)","700");
+	HuanZiTi(BiaoTi_XiWen,"var(--font-sans)","600","1.1em");
+	HuanZiTi(BiaoTi_BiaoDian,"var(--font-hei-biaodian)","700","");
+    // document.body.querySelectorAll("h1,h2,h3,h6,#tableOfContent li").forEach((e) => {
+    //     e.style.fontFamily = "var(--font-hei)";
+    //     e.style.fontWeight = "700";
+    // });//换中文
+    // document.body.querySelectorAll("h1 > .Latin, h2 > .Latin, h3 > .Latin, h6 .Latin, #tableOfContent li .Latin").forEach((e) => {
+    //     e.style.fontFamily = "var(--font-sans)";
+    //     e.style.fontWeight = "600";
+    //     e.style.fontSize = "1.1em";
+    // });//换西文
+    // document.body.querySelectorAll("h1 h-char.biaodian > h-inner, h2 h-char.biaodian > h-inner, h3 h-char.biaodian > h-inner, h6 h-char.biaodian > h-inner, #tableOfContent h-char.biaodian > h-inner").forEach((e) => {
+    //     e.style.cssText = "font-family: var(--font-hei-biaodian) !important; font-weight: 700 !important;";
+    // });//换标点
 
     changeTypeMenu_switchColour("#changeTypeMenu-BiaoTi-HEI", "#changeTypeMenu-BiaoTi-SONG");
 
 }
 // 正文换宋体
 document.getElementById('changeTypeMenu-ZhengWen-SONG').onclick = function changefont_ZhengWen_SONG() {
-    document.body.querySelectorAll("p,table").forEach((e) => {
-        // e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
-        e.style.fontFamily = "var(--font-song)";
-        e.style.fontWeight = "600";
-    })
-    document.body.querySelectorAll("p > strong, p > em").forEach((e) => {
-        e.style.fontFamily = "'TeShuBiaoDian', var(--font-song)";
-        e.style.fontWeight = "600";
-    });
-    document.body.querySelectorAll("th").forEach((e) => {
-        // e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
-        e.style.fontFamily = "var(--font-song)";
-        e.style.fontWeight = "700";
-    })//换中文
-    document.body.querySelectorAll("p > .Latin, p > a .Latin, p > cite > .Latin, p > cite > a > .Latin, p > q > .Latin, p > .orderedListIndex .Latin, table .Latin").forEach((e) => {
-        e.style.fontFamily = "var(--font-serif)";
-        e.style.fontWeight = "400";
-        e.style.fontSize = "1.05em";
-    });//换西文
-    document.body.querySelectorAll("article h-char.biaodian > h-inner").forEach((e) => {
-        e.style.fontFamily = "var(--font-song-biaodian)";
-        e.style.fontWeight = "600";
-    });
-    document.body.querySelectorAll("article .JianGeHao h-char.biaodian > h-inner").forEach((e) => {
-        e.style.fontFamily = "var(--font-hei-biaodian)";
-        e.style.fontWeight = "400";
-    });
-    //换标点
+	HuanZiTi(ZhengWen_ZhongWen,"var(--font-song)","600","");
+	HuanZiTi(ZhengWen_ZhongWen_QiangDiao,"'TeShuBiaoDian', var(--font-song)","600","");
+	HuanZiTi(ZhengWen_ZhongWen_BiaoGe_TiTou,"var(--font-song)","700","");
+	HuanZiTi(ZhengWen_XiWen,"var(--font-serif)","400","1.05em");
+	HuanZiTi(ZhengWen_BiaoDian,"var(--font-song-biaodian)","600","");
+	BiaoDianBuHuan();//破折号、一字线、半字线、分隔号、间隔号在任何情况下都不换字体
+	// HuanZiTi(BiaoTi_BiaoDian,"var(--font-song-biaodian)","700","");
+
+    // document.body.querySelectorAll("p,table").forEach((e) => {
+    //     // e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
+    //     e.style.fontFamily = "var(--font-song)";
+    //     e.style.fontWeight = "600";
+    // })
+    // document.body.querySelectorAll("p > strong, p > em").forEach((e) => {
+    //     e.style.fontFamily = "'TeShuBiaoDian', var(--font-song)";
+    //     e.style.fontWeight = "600";
+    // });
+    // document.body.querySelectorAll("th").forEach((e) => {
+    //     // e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
+    //     e.style.fontFamily = "var(--font-song)";
+    //     e.style.fontWeight = "700";
+    // })//换中文
+    // document.body.querySelectorAll("p > .Latin, p > a .Latin, p > cite > .Latin, p > cite > a > .Latin, p > q > .Latin, p > .orderedListIndex .Latin, table .Latin").forEach((e) => {
+    //     e.style.fontFamily = "var(--font-serif)";
+    //     e.style.fontWeight = "400";
+    //     e.style.fontSize = "1.05em";
+    // });//换西文
+    // document.body.querySelectorAll("article h-char.biaodian > h-inner").forEach((e) => {
+    //     e.style.fontFamily = "var(--font-song-biaodian)";
+    //     e.style.fontWeight = "600";
+    // });
+    // document.body.querySelectorAll("article .JianGeHao h-char.biaodian > h-inner").forEach((e) => {
+    //     e.style.fontFamily = "var(--font-hei-biaodian)";
+    //     e.style.fontWeight = "400";
+    // });//换标点
+
     document.body.querySelectorAll(".sideNoteMark h-inner").forEach((e) => {
         e.style.fontFamily = "var(--font-hei-biaodian)";
         e.style.fontWeight = "400";
@@ -124,45 +171,58 @@ document.getElementById('changeTypeMenu-ZhengWen-SONG').onclick = function chang
 }
 //正文换黑体
 document.getElementById('changeTypeMenu-ZhengWen-HEI').onclick = function changefont_ZhengWen_HEI() {
-    document.body.querySelectorAll("p, table").forEach((e) => {
-        e.style.fontFamily = "var(--font-hei)";
-        e.style.fontWeight = "400";
-    });
-    document.body.querySelectorAll("p > strong, p > em").forEach((e) => {
-        e.style.fontFamily = "'TeShuBiaoDian', var(--font-hei)";
-        e.style.fontWeight = "400";
-    });
-    document.body.querySelectorAll("th").forEach((e) => {
-        // e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
-        e.style.fontFamily = "var(--font-hei)";
-        e.style.fontWeight = "600";
-    })//换中文
-    document.body.querySelectorAll("p > .Latin, p > a .Latin, p > cite > .Latin, p > cite > a > .Latin, p > q > .Latin, p > .orderedListIndex .Latin, table .Latin").forEach((e) => {
-        e.style.fontFamily = "var(--font-sans)";
-        e.style.fontWeight = "400";
-        e.style.fontSize = "1.1em";
-    });//换西文
-    document.body.querySelectorAll("article h-char.biaodian > h-inner").forEach((e) => {
-        e.style.fontFamily = "var(--font-hei-biaodian)";
-        e.style.fontWeight = "400";
-    });//换标点
+	HuanZiTi(ZhengWen_ZhongWen,"var(--font-hei)","400","");
+	HuanZiTi(ZhengWen_ZhongWen_QiangDiao,"'TeShuBiaoDian', var(--font-hei)","400","");
+	HuanZiTi(ZhengWen_ZhongWen_BiaoGe_TiTou,"var(--font-hei)","600","");
+	HuanZiTi(ZhengWen_XiWen,"var(--font-sans)","400","1.1em");
+	HuanZiTi(ZhengWen_BiaoDian,"var(--font-hei-biaodian)","400","");
+	BiaoDianBuHuan();
+    // document.body.querySelectorAll("p, table").forEach((e) => {
+    //     e.style.fontFamily = "var(--font-hei)";
+    //     e.style.fontWeight = "400";
+    // });
+    // document.body.querySelectorAll("p > strong, p > em").forEach((e) => {
+    //     e.style.fontFamily = "'TeShuBiaoDian', var(--font-hei)";
+    //     e.style.fontWeight = "400";
+    // });
+    // document.body.querySelectorAll("th").forEach((e) => {
+    //     // e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
+    //     e.style.fontFamily = "var(--font-hei)";
+    //     e.style.fontWeight = "600";
+    // })//换中文
+    // document.body.querySelectorAll("p > .Latin, p > a .Latin, p > cite > .Latin, p > cite > a > .Latin, p > q > .Latin, p > .orderedListIndex .Latin, table .Latin").forEach((e) => {
+    //     e.style.fontFamily = "var(--font-sans)";
+    //     e.style.fontWeight = "400";
+    //     e.style.fontSize = "1.1em";
+    // });//换西文
+    // document.body.querySelectorAll("article h-char.biaodian > h-inner").forEach((e) => {
+    //     e.style.fontFamily = "var(--font-hei-biaodian)";
+    //     e.style.fontWeight = "400";
+    // });//换标点
+	// BiaoDianBuHuan();//破折号、一字线、半字线、分隔号、间隔号在任何情况下都不换字体
+	// HuanZiTi(BiaoTi_BiaoDian,"var(--font-song-biaodian)","700","");
 
     changeTypeMenu_switchColour("#changeTypeMenu-ZhengWen-HEI", "#changeTypeMenu-ZhengWen-SONG");
 }
 //边注换宋体
 document.getElementById('changeTypeMenu-BianZhu-SONG').onclick = function changefont_BianZhu_SONG() {
-    document.body.querySelectorAll(".sideNote, .TuTi, .TuZhu").forEach((e) => {
-        e.style.fontFamily = "var(--font-song)";
-        e.style.fontWeight = "600";
-    });//换中文
-    document.body.querySelectorAll(".sideNote > .Latin, .TuTi .Latin, .TuZhu .Latin").forEach((e) => {
-        e.style.fontFamily = "var(--font-serif)";
-        e.style.fontWeight = "400";
-        e.style.fontSize = "1.05em";
-    });//换西文
-    document.body.querySelectorAll(".sideNote h-char.biaodian > h-inner, .TuTi h-char.biaodian > h-inner, .TuZhu h-char.biaodian > h-inner").forEach((e) => {
-        e.style.cssText = "font-family: var(--font-song-biaodian) !important; font-weight: 600 !important;"
-    });//换标点
+	HuanZiTi(BianZhu_ZhongWen,"var(--font-song)","600","");
+	HuanZiTi(BianZhu_XiWen,"var(--font-serif)","400","1.05em");
+	HuanZiTi(BianZhu_BiaoDian,"var(--font-song-biaodian)","600","");
+	BiaoDianBuHuan();
+
+    // document.body.querySelectorAll(".sideNote, .TuTi, .TuZhu").forEach((e) => {
+    //     e.style.fontFamily = "var(--font-song)";
+    //     e.style.fontWeight = "600";
+    // });//换中文
+    // document.body.querySelectorAll(".sideNote > .Latin, .TuTi .Latin, .TuZhu .Latin").forEach((e) => {
+    //     e.style.fontFamily = "var(--font-serif)";
+    //     e.style.fontWeight = "400";
+    //     e.style.fontSize = "1.05em";
+    // });//换西文
+    // document.body.querySelectorAll(".sideNote h-char.biaodian > h-inner, .TuTi h-char.biaodian > h-inner, .TuZhu h-char.biaodian > h-inner").forEach((e) => {
+    //     e.style.cssText = "font-family: var(--font-song-biaodian) !important; font-weight: 600 !important;"
+    // });//换标点
     document.body.querySelectorAll(".tabulation h-inner").forEach((e) => {
         e.style.fontFamily = "var(--font-hei-biaodian)";
         e.style.fontWeight = "400";
@@ -171,18 +231,22 @@ document.getElementById('changeTypeMenu-BianZhu-SONG').onclick = function change
 }
 //边注换黑体
 document.getElementById('changeTypeMenu-BianZhu-HEI').onclick = function changefont_BianZhu_HEI() {
-    document.body.querySelectorAll(".sideNote, .TuTi, .TuZhu").forEach((e) => {
-        e.style.fontFamily = "var(--font-hei)";
-        e.style.fontWeight = "400";
-    });//换中文
-    document.body.querySelectorAll(".sideNote > .Latin, .TuTi .Latin, .TuZhu .Latin").forEach((e) => {
-        e.style.fontFamily = "var(--font-sans)";
-        e.style.fontWeight = "400";
-        e.style.fontSize = "1.1em";
-    });//换西文
-    document.body.querySelectorAll(".sideNote h-char.biaodian > h-inner, .TuTi h-char.biaodian > h-inner, .TuZhu h-char.biaodian > h-inner").forEach((e) => {
-        e.style.cssText = "font-family: var(--font-hei-biaodian) !important; font-weight: 400 !important;"
-    });//换标点
+	HuanZiTi(BianZhu_ZhongWen,"var(--font-hei)","400","");
+	HuanZiTi(BianZhu_XiWen,"var(--font-sans)","400","1.1em");
+	HuanZiTi(BianZhu_BiaoDian,"var(--font-hei-biaodian)","400","");
+	BiaoDianBuHuan();
+    // document.body.querySelectorAll(".sideNote, .TuTi, .TuZhu").forEach((e) => {
+    //     e.style.fontFamily = "var(--font-hei)";
+    //     e.style.fontWeight = "400";
+    // });//换中文
+    // document.body.querySelectorAll(".sideNote > .Latin, .TuTi .Latin, .TuZhu .Latin").forEach((e) => {
+    //     e.style.fontFamily = "var(--font-sans)";
+    //     e.style.fontWeight = "400";
+    //     e.style.fontSize = "1.1em";
+    // });//换西文
+    // document.body.querySelectorAll(".sideNote h-char.biaodian > h-inner, .TuTi h-char.biaodian > h-inner, .TuZhu h-char.biaodian > h-inner").forEach((e) => {
+    //     e.style.cssText = "font-family: var(--font-hei-biaodian) !important; font-weight: 400 !important;"
+    // });//换标点
     changeTypeMenu_switchColour("#changeTypeMenu-BianZhu-HEI", "#changeTypeMenu-BianZhu-SONG");
 }
 
@@ -485,64 +549,3 @@ function resizeImage(e) {
         setTimeout(removeImage, 200);
     }
 }
-    // document.body.querySelectorAll("figure img").forEach((e) => {
-    //     e.onclick = function resizingImage() {
-
-    //         fullScreen = true;
-    //         console.log(el);
-    //     }
-
-    // });
-
-    // el.onclick = function resumeImage() {
-    //     fullScreen = false;
-    // }
-
-
-
-// function changefont_BiaoTi_SONG() {
-//     document.body.querySelectorAll("h1,h2,h3").forEach((e) => {
-//         e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
-//         e.style.fontWeight = "700";
-//     });
-//     changeTypeMenu_switchColour("#changeTypeMenu-BiaoTi-SONG", "#changeTypeMenu-BiaoTi-HEI");
-// }
-// function changefont_BiaoTi_HEI() {
-//     document.body.querySelectorAll("h1,h2,h3").forEach((e) => {
-//         e.style.fontFamily = "HEI" + "," + "Noto Sans SC";
-//         e.style.fontWeight = "500";
-//     });
-//     changeTypeMenu_switchColour("#changeTypeMenu-BiaoTi-HEI", "#changeTypeMenu-BiaoTi-SONG");
-// }
-
-// function changefont_ZhengWen_SONG() {
-//     document.body.querySelectorAll("p").forEach((e) => {
-//         e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
-//         e.style.fontWeight = "600";
-//     });
-//     changeTypeMenu_switchColour("#changeTypeMenu-ZhengWen-SONG", "#changeTypeMenu-ZhengWen-HEI");
-
-// }
-// function changefont_ZhengWen_HEI() {
-//     document.body.querySelectorAll("p").forEach((e) => {
-//         e.style.fontFamily = "HEI" + "," + "Noto Sans SC";
-//         e.style.fontWeight = "400";
-//     });
-//     changeTypeMenu_switchColour("#changeTypeMenu-ZhengWen-HEI", "#changeTypeMenu-ZhengWen-SONG");
-// }
-
-// function changefont_BianZhu_SONG() {
-//     document.body.querySelectorAll(".sideNote").forEach((e) => {
-//         e.style.fontFamily = "SONG" + "," + "Noto Serif SC";
-//         e.style.fontWeight = "600";
-//     });
-//     changeTypeMenu_switchColour("#changeTypeMenu-BianZhu-SONG", "#changeTypeMenu-BianZhu-HEI");
-// }
-
-// function changefont_BianZhu_HEI() {
-//     document.body.querySelectorAll(".sideNote").forEach((e) => {
-//         e.style.fontFamily = "HEI" + "," + "Noto Sans SC";
-//         e.style.fontWeight = "400";
-//     });
-//     changeTypeMenu_switchColour("#changeTypeMenu-BianZhu-HEI", "#changeTypeMenu-BianZhu-SONG");
-// }
