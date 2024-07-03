@@ -363,6 +363,28 @@ function additionalLogo() {
         }
     }
 }
-// window.onscroll = additionalLogo;
-// window.addEventListener("resize", additionalLogo);
-// additionalLogo();
+
+
+//临时加个通知
+let topBar = document.getElementById("bar");
+let notice = document.createElement("div");
+let noticeCloseButton=document.createElement("div");
+
+topBar.appendChild(notice);
+notice.id = "notice";
+notice.style.cssText = "background-color: #f2dc9c;  width: 200px;  height: auto;  position: fixed;  top: 4rem;  left: 4rem;  padding: 1rem;  font-size: 0.6rem;  line-height: 1.5em;  box-shadow: 2px 2px 5px rgba(50,50,50,0.3);  font-family: var(--font-hei);";
+notice.innerHTML = "❗️在使用某些浏览器（例如Edge）浏览此网页时，可能会出现一些排版上的问题。</br>推荐使用Firefox或Safari浏览器。&emsp;&emsp;2024年7月注"
+
+notice.appendChild(noticeCloseButton);
+noticeCloseButton.id = "noticeCloseButton";
+noticeCloseButton.style.cssText = "width: auto;  height: auto;  position: absolute;  top: 0;  right: 0;  padding: 0.2rem;  font-size: 0.5rem;  line-height: 1em;  font-family: var(--font-hei);  cursor: pointer;";
+noticeCloseButton.innerHTML="╳"
+//×❌❎☓✖⨯❕⚠️
+
+window.addEventListener("click", closeNotice);
+function closeNotice(e) {
+	if (e.target.matches('#noticeCloseButton')) {
+		notice.style.display = "none";
+	}
+}
+//临时通知结束
