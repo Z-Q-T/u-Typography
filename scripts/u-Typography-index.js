@@ -381,10 +381,7 @@ noticeCloseButton.style.cssText = "width: auto;  height: auto;  position: absolu
 noticeCloseButton.innerHTML="╳"
 //×❌❎☓✖⨯❕⚠️
 
-window.addEventListener("click", closeNotice);
-function closeNotice(e) {
-	if (e.target.matches('#noticeCloseButton')) {
-		notice.style.display = "none";
-	}
+noticeCloseButton.onclick=function(){
+	notice.style.display = "none";
 }
 //临时通知结束
