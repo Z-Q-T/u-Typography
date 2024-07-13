@@ -8,8 +8,6 @@ EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
 MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
 See the Mulan PSL v2 for more details. */
 
-
-
 /* —————————————————————————————— */
 @counter-style orderedList {
 	system: numeric;
@@ -33,9 +31,6 @@ See the Mulan PSL v2 for more details. */
 	speak-as: bullets;
 	fallback: disc;
 }
-
-
-
 
 /* 基本属性 */
 #whole {
@@ -206,7 +201,6 @@ See the Mulan PSL v2 for more details. */
 	/* margin: 0.25rem auto; */
 	/* padding: 5px; */
 }
-
 
 @media screen and (max-width: 1040px) {
 	#changeTypeMenu {
@@ -656,7 +650,6 @@ blockquote + p,
 	text-align: left;
 }
 
-
 /* 正文标点符号用黑体 */
 article h-char.biaodian > h-inner {
 	font-family: var(--font-hei-biaodian);
@@ -668,14 +661,14 @@ h1 h-char.biaodian > h-inner,
 h2 h-char.biaodian > h-inner,
 h3 h-char.biaodian > h-inner,
 #tableOfContent h-char.biaodian > h-inner {
-	font-family: var(--font-song-biaodian) ;
+	font-family: var(--font-song-biaodian);
 	font-weight: 700;
 	line-height: 0.1em;
 }
 /* 边注标点符号用黑体 */
 .sideNote h-char.biaodian > h-inner,
 #caption h-char.biaodian > h-inner {
-	font-family: var(--font-hei-biaodian) ;
+	font-family: var(--font-hei-biaodian);
 	font-weight: 400;
 	line-height: 0.1em;
 }
@@ -1148,6 +1141,65 @@ footer small .Latin {
 	font-size: 1.1em;
 }
 
+form {
+	/* background-color: var(--colour-paper);
+	box-shadow:  1px 1px 5px var(--colour-shadow);
+	margin: 1rem 0;
+	padding: 0.5rem; */
+	line-height: 1;
+}
+fieldset {
+	background-color: var(--colour-paper);
+	/* box-shadow:  1px 1px 5px var(--colour-shadow); */
+	border: 0;
+	border-top: solid 1px var(--colour-1);
+	padding: 0rem;
+	padding-left: 1rem;
+	margin: 1rem 0;
+	line-height: 1;
+	display: flex;
+	align-items: center;
+}
+.secondaryFieldset{
+	/* margin-top: 2rem; */
+	border-top: solid 1px var(--colour-2);
+} 
+legend {
+	font-size: 1rem;
+	line-height: 1;
+	margin-bottom: 0.5em;
+	padding-right: 0.5rem;
+	margin-left: -1rem;
+}
+.secondaryLegend {
+	font-size: 0.75rem;
+}
+input {
+	font-family: var(--font-hei);
+	line-height: 1;
+	/* width: 100%; */
+	padding: 0 0.25em;
+	margin: 0;
+	margin-right: 0.25em;
+	min-height: 1rem;
+	resize: none;
+}
+input[type=number] {
+	max-width: 8rem;
+}
+label {
+	font-size: 1rem;
+	line-height: 1;
+	margin: 0;
+	margin-right: 1em;
+	/* display: inline-flex; */
+}
+.secondaryLabel {
+	font-size: 0.75rem;
+}
+/* label::after {
+	content: " ";
+} */
 
 textarea {
 	font-family: var(--font-hei);
@@ -1156,7 +1208,9 @@ textarea {
 	padding: 1rem;
 	margin: 1rem 0;
 	min-height: 200px;
-	resize: none;
+	max-height: 1000px;
+	resize: block;
+	/* height: max-content; */
 }
 button {
 	/* input[type="button"] { */
@@ -1164,12 +1218,15 @@ button {
 	font-size: 0.75rem;
 	line-height: 1em;
 	padding: 10px;
-	/* margin: 0 auto; */
+	margin: 0 auto;
 	border-radius: 10px;
 	background-color: var(--colour-2);
 	transition: all 100ms ease-in-out;
 	background-size: auto;
 	background-position: auto;
+	box-shadow: 1px 1px 5px var(--colour-shadow);
+	display: block;
+	min-width: 8rem;
 }
 button:hover {
 	background-color: var(--colour-3);
@@ -1230,8 +1287,6 @@ button:active {
 	line-height: 0;
 }
 
-
-
 /* 引用标签不需要自动加引号 */
 q::after {
 	content: "";
@@ -1246,6 +1301,10 @@ q::before {
 h-char.bd-jiya.bd-middle.bd-consecutive.end-portion{
 	letter-spacing: 0em;
 } */
+
+br {
+	line-height: 1em;
+}
 
 .layout-1-break,
 .layout-2-break,

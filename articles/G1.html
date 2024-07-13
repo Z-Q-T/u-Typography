@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="张擎天（Zhang Qingtian）">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!--开头通用模板到此结束-->
+
+	<meta name="description" content="中文随机文本生成器（真实文字频度，可带标点）">
+	<title>中文随机文本生成器（真实文字频度，可带标点） ｜ 字无字 ú–Typography</title>
+
+	<!-- 字体服务的通用模板由此开始 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet"><!-- 思源黑体 -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"> <!-- Source Sans -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet"> <!-- 思源宋体 -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+	<!-- Source Serif -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+	<!-- Source Code -->
+	<!-- 字体服务的通用模板到此结束 -->
+
+	<!--图标、样式、链接打开方式的二级页面模板由此开始-->
+	<link rel="shortcut icon" href="../images/字无字_网页图标.png" type="image/x-icon">
+	<link rel="stylesheet" media="all" href="../styles/han.css">
+	<link rel="stylesheet" href="../styles/u-Typography.css" type="text/css">
+	<link rel="stylesheet" href="../styles/u-Typography-articles.css" type="text/css">
+	<link rel="stylesheet" href="../styles/additional/u-Typography-A5-additional.css" type="text/css">
+	<!-- <link rel="stylesheet" href="../styles/debug.css" type="text/css"> -->
+	<base target="_self">
+	<!--图标、样式、链接打开方式的二级页面模板到此结束-->
+
+</head>
+
+<body>
+
+	<div id="whole">
+		<!--导航栏的二级页面模板由此开始-->
+		<div id="bar">
+			<div id="decoLine"></div>
+			<a href="../index.html" id="backToHomePage">
+				<img id="backArrow" src="../images/字无字_返回首页箭头-图标.png" alt="返回首页｜back to home page">
+				<img id="home" src="../images/字无字_返回首页房子-图标.png" alt="返回首页｜back to home page">
+			</a>
+			<picture id="logotype">
+				<source srcset="../images/字无字_横竖.png" media="(max-width: 680px)">
+				<source srcset="../images/字无字_横.png" media="(max-width: 1040px)">
+				<img id="logo" src="../images/字无字_竖.png" alt="“字无字”的标志｜logo of ú–typography">
+			</picture>
+			<div id="changeTypeMenu-Button"><svg id="changeTypeMenu-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 4">
+					<g id="changeTypeMenu-ButtonSVGgraphic">
+						<circle cx="2" cy="2" r="1.5" />
+						<circle cx="9" cy="2" r="1.5" />
+						<circle cx="16" cy="2" r="1.5" />
+					</g>
+				</svg></div>
+			<!-- <div id="changeTypeMenu-Hint">该功能在一些情况下会额外下载所需的字体<br>这可能消耗更多的流量</div> -->
+			<menu id="changeTypeMenu" style="visibility: hidden; opacity: 0; ">
+				<div class="changeTypeMenu-Section">
+					<div class="changeTypeMenu-Caption">标题</div>&ensp;<div class="changeTypeMenu-Options">
+						<div id="changeTypeMenu-BiaoTi-SONG">
+							<div class="changeTypeMenu-TypeName">宋</div>
+						</div>&ensp;<div id="changeTypeMenu-BiaoTi-HEI">
+							<div class="changeTypeMenu-TypeName">黑</div>
+						</div>
+					</div>
+				</div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+					<div class="changeTypeMenu-Caption">正文</div>&ensp;<div class="changeTypeMenu-Options">
+						<div id="changeTypeMenu-ZhengWen-SONG">
+							<div class="changeTypeMenu-TypeName">宋</div>
+						</div>&ensp;<div id="changeTypeMenu-ZhengWen-HEI">
+							<div class="changeTypeMenu-TypeName">黑</div>
+						</div>
+					</div>
+				</div>&ensp;<div class="changeTypeMenu-Seperator"></div>&ensp;<div class="changeTypeMenu-Section">
+					<div class="changeTypeMenu-Caption">补充</div>&ensp;<div class="changeTypeMenu-Options">
+						<div id="changeTypeMenu-BianZhu-SONG">
+							<div class="changeTypeMenu-TypeName">宋</div>
+						</div>&ensp;<div id="changeTypeMenu-BianZhu-HEI">
+							<div class="changeTypeMenu-TypeName">黑</div>
+						</div>
+					</div>
+				</div>
+			</menu>
+			<div><a id="pageTypography-Button" href="../Typography_of_this_Site.html" target="_blank">¶</a>
+			</div>
+		</div>
+		<!--导航栏的二级页面模板到此结束-->
+
+		<main id="page">
+			<header id="mainTitleArea">
+				<div id="metaInfo">
+					<div id="index">〚&#8197;实用工具&#8197;·&#8197;壹&#8197;〛
+					</div>
+					<div class="metaInfo-Seperator"></div>
+					<div id="time">
+						<ul>
+							<li><time pubdate datetime="2024-00-00"><span class="number">2024</span>年<span class="number">00</span>月<span class="number">00</span>日</time>&emsp;发布</li>
+						</ul>
+					</div>
+					<div class="metaInfo-Seperator"></div>
+					<div id="author">张擎天</div>
+				</div>
+				<!-- <div id="decoLine"></div> -->
+				<div id="title">
+					<h1>中文随机文本生成器</h1>
+				</div>
+			</header>
+			<div id="toc-PlaceHolder"></div>
+			<!-- 切换目录的按钮模板由此开始 -->
+			<div id="toc-Switcher">
+				<svg id="tocSwitcher-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 4">
+					<g id="tocSwitcher-ButtonSVGgraphic">
+						<path d="M4,4a2.38,2.38,0,0,1-1.67-.69L0,.38.56,0,3,2.64a1.46,1.46,0,0,0,2,0L7.44,0,8,.38,5.67,3.31A2.38,2.38,0,0,1,4,4Z" />
+					</g>
+				</svg>
+			</div>
+			<!-- 切换目录的按钮模板到此结束 -->
+			<div id="toc-Container">
+				<nav id="tableOfContent">
+					<ul>
+						<div id="toc-backToMainTitle"><a href="#">∧</a></div>
+						<li class="tocH2"><a href="#常见的输入带声调符号的字母的方法及其缺点" target="_self">一、常见的输入带声调符号的字母的方法及其缺点</a></li>
+						<li class="tocH2"><a href="#Pinyinia的输入带调字母的巧妙方法及其适用场景" target="_self">二、<span class="Latin">Pinyinia</span>的输入带调字母的巧妙方法及其适用场景</a></li>
+						<li class="tocH2"><a href="#Pinyinia的设计特点" target="_self">三、<span class="Latin">Pinyinia</span>的设计特点</a></li>
+						<li class="tocH3"><a href="#整体设计风格" target="_self"><span class="Latin">1.</span>整体设计风格</a></li>
+						<li class="tocH3"><a href="#字母的风格变体" target="_self"><span class="Latin">2.</span>字母的风格变体</a></li>
+						<li class="tocH3"><a href="#Pinyinia对于标点符号的处理" target="_self"><span class="Latin">3. </span><span class="Latin">Pinyinia</span>对于标点符号的处理</a></li>
+						<li class="tocH2"><a href="#汉语拼音字体和西文字体有何不同？" target="_self">四、汉语拼音字体和西文字体有何不同？</a></li>
+						<li class="tocH3"><a href="#声调符号的易辨认性" target="_self"><span class="Latin">1.</span>声调符号的易辨认性</a></li>
+						<li class="tocH3"><a href="#汉语拼音第二声声调符号写法" target="_self"><span class="Latin">2.</span>汉语拼音第二声声调符号写法</a></li>
+						<li class="tocH3"><a href="#罕见的带声调符号的字母" target="_self"><span class="Latin">3.</span>罕见的带声调符号的字母</a></li>
+						<li class="tocH3"><a href="#特定字母组合的效果" target="_self"><span class="Latin">4.</span>特定字母组合的效果</a></li>
+						<li class="tocH3"><a href="#整体版面肌理的变化带来的其他设计上的差异" target="_self"><span class="Latin">5.</span>整体版面肌理的变化带来的其他设计上的差异</a></li>
+						<li class="tocH2"><a href="#下载" target="_self">下&emsp;载</a></li>
+						<li class="tocH2"><a href="#版权声明" target="_self">版权声明</a></li>
+						<li class="tocH2"><a href="#附录" target="_self">附&emsp;录</a></li>
+						<li class="tocH3"><a href="#合字自动转换列表" target="_self">合字自动转换列表</a></li>
+						<li class="tocH3"><a href="#转换器" target="_self">转换器</a></li>
+						<div id="toc-skipToFootnote"><a href="#footnotesArea">∨</a></div>
+					</ul>
+				</nav>
+			</div>
+			<div id="mainContent">
+				<article>
+					<!-- <p>只有汉字的数量能保持恒定，标点的数量具有一定的随机性。</p> -->
+					<form>
+						<fieldset>
+							<legend>生成多少汉字？<small>（1–1000字）</small></legend>
+							<input type="number" id="ZiShu" name="number of characters to generate" min="0" max="1000" step="10" value="100" required />
+						</fieldset>
+
+						<fieldset>
+							<legend>从多少汉字里选？<small>（10–5000字）</small></legend>
+							<input type="number" id="HouXuanZi" name="number of characters can be chosen" min="10" max="5000" step="10" value="5000" required />
+						</fieldset>
+
+						<fieldset>
+							<legend>加标点？</legend>
+							<input type="radio" id="BiaoDian-no" name="JiaBiaoDian" value="0" />
+							<label for="BiaoDian-no">无</label>
+							<input type="radio" id="BiaoDian-DouHaoJuHao" name="JiaBiaoDian" value="2" checked />
+							<label for="BiaoDian-DouHaoJuHao">只有逗号句号</label>
+							<input type="radio" id="BiaoDian-common" name="JiaBiaoDian" value="5" />
+							<label for="BiaoDian-common">常用标点</label>
+							<input type="radio" id="BiaoDian-all" name="JiaBiaoDian" value="10" />
+							<label for="BiaoDian-all">所有标点</label>
+						</fieldset>
+						<p>&emsp;</p>
+						<fieldset class="secondaryFieldset">
+							<legend class="secondaryLegend">引号样式</legend>
+							<input type="radio" id="YingHao-curve" name="YingHao" value="1" checked />
+							<label class="secondaryLabel" for="YingHao-curve">双弯引号“”</label>
+							<input type="radio" id="YingHao-rect" name="YingHao" value="2" />
+							<label class="secondaryLabel" for="YingHao-rect">单线直角引号「」</label>
+							<input type="radio" id="YingHao-hollowRect" name="YingHao" value="3" />
+							<label class="secondaryLabel" for="YingHao-hollowRect">空心直角引号『』</label>
+						</fieldset>
+
+						<fieldset class="secondaryFieldset">
+							<legend class="secondaryLegend">避讳字</legend>
+							<input type="radio" id="BiHui-no" name="BiHui" value="1" checked />
+							<label class="secondaryLabel" for="BiHui-no">无</label>
+							<input type="radio" id="BiHui-default" name="BiHui" value="2" />
+							<label class="secondaryLabel" for="BiHui-default">默认避讳字</label><!-- 避讳字 死尸骷髅髑殓葬殡柩棺椁粪屎尿屁妓娼嫖肏癌肛睾痔屌屄刑-->
+							<input type="radio" id="BiHui-custom" name="BiHui" value="3" />
+							<label class="secondaryLabel" for="BiHui-custom">自定义避讳字</label>
+							<input type="text" id="BiHui-input" name="BiHui" size="10" />
+						</fieldset>
+					</form>
+
+					<div><button type="button" onclick="javascript:generateChineseLoremIpsum();">生成</button></div>
+					<textarea id="txt"></textarea>
+
+
+					<hr>
+					<section id='footnotesArea'>
+						<h2 id='注释'>注　释</h2>
+						<div class='footnoteEntry'>
+							<div id='footnote-number-1' class='footnoteNumber'>1</div>
+							<p>组合用变音符号（<span class="Latin" lang="en">Combining Diacritical Marks</span>），指<span class="Latin" lang="en">Unicode</span>编号<code>0300</code><span class="BanZiXian">–</span><code>036F</code>的字符。这些字符用于和其他字母组合成带变音符号的字母。对于汉语拼音来说，第一、二、三、四声可分别使用<span class="Latin" lang="en">Combining Macron</span>（<code>0304</code>，<span class="Latin" lang="en"> ̄ </span>）、<span class="Latin" lang="en">Combining Acute Accent</span>（<code>0301</code>，<span class="Latin" lang="en"> ́ </span>）、<span class="Latin" lang="en">Combining Caron</span>（<code>030C</code>，<span class="Latin" lang="en"> ̌ </span>）、<span class="Latin" lang="en">Combining Grave Accent</span>（<code>0300</code>，<span class="Latin" lang="en"> ̀ </span>）。<a href='#footnote-mark-1' title='返回正文' class='reversefootnote'>⇧</a></p>
+						</div>
+						<div class='footnoteEntry'>
+							<div id='footnote-number-2' class='footnoteNumber'>2</div>
+							<p>在各个软件中启用“标准合字”（<span class="Latin" lang="en">Standard Ligatures</span>，<code>liga</code>）<span class="Latin" lang="en">OpenType</span>特性的方法为：</p>
+							<p>在<span class="Latin" lang="en">Adobe InDesign</span>中，在“字符”面板，点击右上角菜单按钮，选择“连笔字”；</p>
+							<p>在<span class="Latin" lang="en">Adobe Illustrator</span>中，在“<span class="Latin" lang="en">OpenType</span>”面板，选择“标准连字”；</p>
+							<p>在<span class="Latin" lang="en">Adobe Photoshop</span>中，在“字符”面板，选择“标准连字”；</p>
+							<p>在<span class="Latin" lang="en">Adobe After Effects</span>中，在“字符”面板，点击右上角菜单按钮，选择“连字”；</p>
+							<p>在<span class="Latin" lang="en">Adobe Premiere Pro</span>中，该功能默认打开，无手动调整选项；</p>
+							<p>在<span class="Latin" lang="en">Microsoft Word</span>中，展开“字体”窗口，在“高级”选项卡，“连字”一栏，选择“仅标准”；</p>
+							<p>在<span class="Latin" lang="en">Microsoft Powerpoint</span>中，该功能的支持不佳，时好时坏；</p>
+							<p>在<span class="Latin" lang="en">Pages</span>文稿中，选择“格式”菜单，选择“字体”<span class="YiZiXian">—</span>“连字”，选择“使用默认值”或“全部使用”（注意“格式”<span class="YiZiXian">—</span>“字体”<span class="YiZiXian">—</span>“字符间距”一项应当选择“都不使用”，否则会影响到该功能）；</p>
+							<p>在<span class="Latin" lang="en">Keynote</span>讲演中，选择“格式”菜单，选择“字体”<span class="YiZiXian">—</span>“连字”，选择“使用默认值”或“全部使用”（注意“格式”<span class="YiZiXian">—</span>“字体”<span class="YiZiXian">—</span>“字符间距”一项应当选择“都不使用”，否则会影响到该功能）；<a href='#footnote-mark-2' title='返回正文' class='reversefootnote'>⇧</a></p>
+						</div>
+						<div class='footnoteEntry'>
+							<div id='footnote-number-3' class='footnoteNumber'>3</div>
+							<p>双层<span class="Latin" lang="en">a</span>的易读性和易辨认性比单层<span class="Latin" lang="en">a</span>更好，这是因为它的造型和其他字母（尤其是<span class="Latin" lang="en">o</span>）的区别更大，不易混淆。并且，有理论认为我们在识读拉丁字母组成的文本时，主要是依靠识读小写字母的上半部分的。这是因为小写字母互相之间在上半部分的差异比下半部分更大。双层<span class="Latin" lang="en">a</span>相比于单层<span class="Latin" lang="en">a</span>，其上半部分相比于其他字母的差异确实更大。详见：《<cite><span class="Latin" lang="en">Detail in typography</span></cite>》，<span class="Latin" lang="en">Jost Hochuli</span>著，<span class="Latin" lang="en">Charles Whitehouse</span>译英，<span class="Latin" lang="en">Hyphen Press</span>，<span class="Latin" lang="en">2008</span>年，第<span class="Latin" lang="en">14</span><span class="YiZiXian">—</span><span class="Latin" lang="en">17</span>页（图<span class="Latin" lang="en">11</span>、<span class="Latin" lang="en">12</span>、<span class="Latin" lang="en">13</span>）；《<cite><span class="Latin" lang="en">Typography: A Very Short Introduction</span></cite>》，<span class="Latin" lang="en">Paul Luna</span>著，牛津大学出版社，<span class="Latin" lang="en">2018</span>年，第<span class="Latin" lang="en">114</span>页。<a href='#footnote-mark-3' title='返回正文' class='reversefootnote'>⇧</a></p>
+						</div>
+
+
+					</section>
+				</article>
+				<!-- 页尾的二级页面模板由此开始 -->
+				<footer>
+					<small>&#8197;如果您喜欢这篇文章，欢迎您给我￥<a href="../Donate.html" target="_blank" style="font-weight: 700;">打赏</a>！</small>
+					<small class="footerLineSpacing">&nbsp;</small>
+					<small>©&#8197;<a href="../Copyright.html" target="_blank">版权声明</a>&emsp;＠&#8197;<a href="../Contact_and_Feedback.html" target="_blank">联系与反馈</a>&emsp;♡&#8197;<a href="../Acknowledgements.html" target="_blank">致谢</a></small>
+					<small class="footerLineSpacing">&nbsp;</small>
+					<small class="footerLineSpacing">&nbsp;</small>
+					<small class="footerLineSpacing">&nbsp;</small>
+					<small class="footerLineSpacing"><span class="Latin">↓</span></small>
+					<small class="footerLineSpacing">&nbsp;</small>
+					<small class="footerLineSpacing">&nbsp;</small>
+					<small style="font-weight: 700;" id="footerWebsiteName"><a href="../Introduction.html" target="_blank">字无字<span class="Latin">ú–Typography</span></a></small>
+					<small>张擎天的个人网站</small>
+					<small>分享排版设计</small>
+					<small>以及更多</small>
+					<small><span class="ShengLyueHao">……</span></small>
+				</footer>
+				<!-- 页尾的二级页面模板到此结束 -->
+			</div>
+
+		</main>
+	</div>
+
+	<!-- 脚本的二级页面模板由此开始 -->
+	<script src="../scripts/u-Typography.js"></script>
+	<script src="../scripts/han.js"></script>
+	<script src="../scripts/additional/G1.js"></script>
+	<script>
+		changeTypeMenu_initialActive()
+		Han(document.querySelector('.entry'))
+			.renderJiya()
+			.renderHWS()
+	</script>
+	<!-- 脚本的二级页面模板到此结束 -->
+
+</body>
+
+</html>
