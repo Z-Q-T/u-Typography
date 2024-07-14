@@ -157,7 +157,7 @@
 							<input type="number" id="HouXuanZi" name="number of characters can be chosen" min="10" max="5000" step="10" value="5000" required />
 						</fieldset>
 
-						<fieldset>
+						<fieldset id="fieldsetChoosePunctuation">
 							<legend>加标点？</legend>
 							<input type="radio" id="BiaoDian-no" name="JiaBiaoDian" value="0" />
 							<label for="BiaoDian-no">无</label>
@@ -168,8 +168,15 @@
 							<input type="radio" id="BiaoDian-all" name="JiaBiaoDian" value="10" />
 							<label for="BiaoDian-all">所有标点</label>
 						</fieldset>
-						<p>&emsp;</p>
-						<fieldset class="secondaryFieldset">
+						<div id="advancedSettings-Switcher">
+							<p><small>更多设置</small></p>
+							<svg id="advancedSettingsSwitcher-ButtonSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 4">
+								<g id="advancedSettingsSwitcher-ButtonSVGgraphic">
+									<path d="M4,4a2.38,2.38,0,0,1-1.67-.69L0,.38.56,0,3,2.64a1.46,1.46,0,0,0,2,0L7.44,0,8,.38,5.67,3.31A2.38,2.38,0,0,1,4,4Z" />
+								</g>
+							</svg>
+						</div>
+						<fieldset class="secondaryFieldset" id="fieldsetQuotationMarkStyle">
 							<legend class="secondaryLegend">引号样式</legend>
 							<input type="radio" id="YingHao-curve" name="YingHao" value="1" checked />
 							<label class="secondaryLabel" for="YingHao-curve">双弯引号“”</label>
@@ -184,13 +191,13 @@
 							<input type="radio" id="BiHui-no" name="BiHui" value="1" checked />
 							<label class="secondaryLabel" for="BiHui-no">无</label>
 							<input type="radio" id="BiHui-default" name="BiHui" value="2" />
-							<label class="secondaryLabel" for="BiHui-default">默认避讳字</label><!-- 避讳字 死尸骷髅髑殓葬殡柩棺椁粪屎尿屁妓娼嫖肏癌肛睾痔屌屄刑-->
+							<label class="secondaryLabel" for="BiHui-default">默认避讳字</label>
 							<input type="radio" id="BiHui-custom" name="BiHui" value="3" />
 							<label class="secondaryLabel" for="BiHui-custom">自定义避讳字</label>
 							<input type="text" id="BiHui-input" name="BiHui" size="10" />
 						</fieldset>
 					</form>
-
+					<p>&emsp;</p>
 					<div><button type="button" onclick="javascript:generateChineseLoremIpsum();">生成</button></div>
 					<textarea id="txt"></textarea>
 
@@ -204,16 +211,7 @@
 						</div>
 						<div class='footnoteEntry'>
 							<div id='footnote-number-2' class='footnoteNumber'>2</div>
-							<p>在各个软件中启用“标准合字”（<span class="Latin" lang="en">Standard Ligatures</span>，<code>liga</code>）<span class="Latin" lang="en">OpenType</span>特性的方法为：</p>
-							<p>在<span class="Latin" lang="en">Adobe InDesign</span>中，在“字符”面板，点击右上角菜单按钮，选择“连笔字”；</p>
-							<p>在<span class="Latin" lang="en">Adobe Illustrator</span>中，在“<span class="Latin" lang="en">OpenType</span>”面板，选择“标准连字”；</p>
-							<p>在<span class="Latin" lang="en">Adobe Photoshop</span>中，在“字符”面板，选择“标准连字”；</p>
-							<p>在<span class="Latin" lang="en">Adobe After Effects</span>中，在“字符”面板，点击右上角菜单按钮，选择“连字”；</p>
-							<p>在<span class="Latin" lang="en">Adobe Premiere Pro</span>中，该功能默认打开，无手动调整选项；</p>
-							<p>在<span class="Latin" lang="en">Microsoft Word</span>中，展开“字体”窗口，在“高级”选项卡，“连字”一栏，选择“仅标准”；</p>
-							<p>在<span class="Latin" lang="en">Microsoft Powerpoint</span>中，该功能的支持不佳，时好时坏；</p>
-							<p>在<span class="Latin" lang="en">Pages</span>文稿中，选择“格式”菜单，选择“字体”<span class="YiZiXian">—</span>“连字”，选择“使用默认值”或“全部使用”（注意“格式”<span class="YiZiXian">—</span>“字体”<span class="YiZiXian">—</span>“字符间距”一项应当选择“都不使用”，否则会影响到该功能）；</p>
-							<p>在<span class="Latin" lang="en">Keynote</span>讲演中，选择“格式”菜单，选择“字体”<span class="YiZiXian">—</span>“连字”，选择“使用默认值”或“全部使用”（注意“格式”<span class="YiZiXian">—</span>“字体”<span class="YiZiXian">—</span>“字符间距”一项应当选择“都不使用”，否则会影响到该功能）；<a href='#footnote-mark-2' title='返回正文' class='reversefootnote'>⇧</a></p>
+							<p>默认的避讳字是：</br><span class="concealedText">死尸骷髅髑殓葬殡柩棺椁粪屎尿屁妓娼嫖肏癌肛睾痔屌屄刑</span></br>（将光标悬浮在色块上来查看）（包含不雅字，请注意）<a href='#footnote-mark-2' title='返回正文' class='reversefootnote'>⇧</a></p>
 						</div>
 						<div class='footnoteEntry'>
 							<div id='footnote-number-3' class='footnoteNumber'>3</div>
