@@ -1,4 +1,4 @@
-// Copyright (c) [2023] [Zhang Qingtian (张擎天) | u-Typography.site]
+// Copyright (c) [2023] [Zhang Qingtian (张擎天) | u-typography.blog]
 // [u-Typography.js] is licensed under Mulan PSL v2.
 // You can use this software according to the terms and conditions of the Mulan PSL v2.
 // You may obtain a copy of Mulan PSL v2 at:
