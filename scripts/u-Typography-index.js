@@ -373,7 +373,7 @@ let noticeCloseButton=document.createElement("div");
 topBar.appendChild(notice);
 notice.id = "notice";
 notice.style.cssText = "background-color: #f2dc9c;  width: 200px;  height: auto;  position: fixed;  top: 4rem;  left: 4rem;  padding: 1rem;  font-size: 0.6rem;  line-height: 1.5em;  box-shadow: 2px 2px 5px rgba(50,50,50,0.3);  font-family: var(--font-hei);";
-notice.innerHTML = "❗️在使用某些浏览器（例如Edge）浏览此网页时，可能会出现一些排版上的问题。</br>推荐使用Firefox或Safari浏览器。&emsp;&emsp;2024年7月注"
+notice.innerHTML = "❗️本网站的域名u-typography.blog即将停用，您可以通过https://Z-Q-T.github.io/u-Typography来继续访问本网站&emsp;（2025年4月注）</br>❗️在使用某些浏览器（例如Edge）浏览此网页时，可能会出现一些排版上的问题。推荐使用Firefox或Safari浏览器。&emsp;（2024年7月注）"
 
 notice.appendChild(noticeCloseButton);
 noticeCloseButton.id = "noticeCloseButton";
